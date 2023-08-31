@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 namespace UnityStandardAssets._2D
@@ -6,10 +7,12 @@ namespace UnityStandardAssets._2D
     public class Camera2DFollow : MonoBehaviour
     {
         public Transform target;
-        public float damping = 1;
+        public float damping = .3f;
         public float lookAheadFactor = 3;
         public float lookAheadReturnSpeed = 0.5f;
         public float lookAheadMoveThreshold = 0.1f;
+        public float shakeDuration = 0.2f;
+        public AnimationCurve animCurve;
 
         private float m_OffsetZ;
         private Vector3 m_LastTargetPosition;
@@ -59,6 +62,27 @@ namespace UnityStandardAssets._2D
             transform.position = newPos;
 
             m_LastTargetPosition = target.position;
+
+            if (target.GetComponentInParent<Conqueror>().m_cameraShake)
+            {
+                target.GetComponentInParent<Conqueror>().m_cameraShake = false;
+                StartCoroutine(Shaking());
+            }
+        }
+
+        IEnumerator Shaking()
+        {
+            Vector3 startPosition = transform.position;
+            float elapsedTime = 0f;
+
+            while (elapsedTime < shakeDuration)
+            {
+                elapsedTime += Time.deltaTime;
+                float strength = animCurve.Evaluate(elapsedTime / target.GetComponentInParent<Conqueror>().m_shakeIntensity);
+                transform.position = startPosition + UnityEngine.Random.insideUnitSphere * strength;
+                yield return null;
+            }
+            transform.position = startPosition;
         }
     }
 }

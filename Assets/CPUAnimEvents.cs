@@ -15,13 +15,23 @@ public class CPUAnimEvents : MonoBehaviour
     public GameObject m_AirSlamDust;
     public GameObject m_ParryEffect;
 
+    public GameObject m_GolemFlick;
+
     private CPUBehavior m_player;
+    private GolemBehavior m_Golem;
+    public CombatManager c_Manager;
     private AudioManager_PrototypeHero m_audioManager;
+    private GameObject activeHitbox;
+
+    [SerializeField]
+    private float lingerDeltaTime;
 
     // Start is called before the first frame update
     void Start()
     {
         m_player = GetComponentInParent<CPUBehavior>();
+        m_Golem = GetComponentInParent<GolemBehavior>();
+        c_Manager = GetComponentInParent<CombatManager>();
         m_audioManager = AudioManager_PrototypeHero.instance;
     }
 
@@ -112,6 +122,11 @@ public class CPUAnimEvents : MonoBehaviour
         m_audioManager.PlaySound("Hurt");
     }
 
+    void AE_Whack()
+    {
+        m_audioManager.PlaySound("Whack");
+    }
+
     void AE_Death()
     {
         m_audioManager.PlaySound("Death");
@@ -157,5 +172,34 @@ public class CPUAnimEvents : MonoBehaviour
     void AE_LedgeClimb()
     {
         m_audioManager.PlaySound("RunStop");
+    }
+
+    void AE_GolemFlick()
+    {
+        //m_audioManager.PlaySound("SwordAttack");
+        Quaternion rotQuat = new Quaternion();
+        float xDisplace = 0.0f;
+        if (m_Golem.m_facingDirection == 1)
+        {
+            rotQuat = new Quaternion(0f, 0f, 0f, 0f);
+            xDisplace = 0.3f;
+        }
+        else
+        {
+            rotQuat = new Quaternion(0f, 180f, 0f, 0f);
+            xDisplace = -0.3f;
+        }
+        activeHitbox = Instantiate(m_GolemFlick, new Vector3((m_Golem.transform.position.x + xDisplace), m_Golem.transform.position.y, m_Golem.transform.position.z),
+            rotQuat, m_Golem.transform);
+        StartCoroutine(Linger(lingerDeltaTime));
+        c_Manager.hitEnemy = "None";
+    }
+
+    private IEnumerator Linger(float lingerDuration)
+    {
+        // TODO: add any logic we want here
+        yield return new WaitForSeconds(lingerDuration);
+        GameObject.Destroy(activeHitbox);
+
     }
 }

@@ -803,11 +803,16 @@ MonoBehaviour:
   inRange: 0
   hotZone: {fileID: 7010029314244373763}
   triggerArea: {fileID: 3301458544982521537}
+  isGrappled: 0
   m_timeSinceAttack: 0
   m_maxSpeed: 4.5
   m_WhatIsPortal:
     serializedVersion: 2
     m_Bits: 64
+  incomingKnockback: 0
+  incomingAngle: 0
+  incomingXMod: 0
+  incomingYMod: 0
   jabPoint: {fileID: 1940207546691718466}
   upTiltPoint: {fileID: 3412981642678722125}
   backPoint: {fileID: 5406676313598051293}
@@ -815,6 +820,7 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 512
+  BlockFX: {fileID: 3569397387010719113, guid: 9300fb4b08a7c0f448a15475613f22d5, type: 3}
   jabRange: 1
   jabDamage: 3.5
   jabKB: 1

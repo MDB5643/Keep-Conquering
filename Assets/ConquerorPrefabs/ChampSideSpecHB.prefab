@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8704984547511526365}
   - component: {fileID: 526453007059125036}
   - component: {fileID: -7675906616830626332}
-  m_Layer: 9
+  m_Layer: 15
   m_Name: ChampSideSpecHB
   m_TagString: AttackHitbox
   m_Icon: {fileID: 0}

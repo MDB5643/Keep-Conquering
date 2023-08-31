@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7562624716108914733}
   - component: {fileID: 3858614146371911249}
   - component: {fileID: -6756045756234753319}
-  m_Layer: 9
+  m_Layer: 15
   m_Name: ProtoDairHB
   m_TagString: AttackHitbox
   m_Icon: {fileID: 0}

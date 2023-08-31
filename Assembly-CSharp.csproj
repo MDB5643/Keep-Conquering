@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F15DE187-15AC-3800-A3B2-20832F4ED5FB}</ProjectGuid>
+    <ProjectGuid>{E4D743EB-0D31-4318-3D48-8F81E4A9E982}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -58,80 +58,130 @@
   <ItemGroup>
     <Compile Include="Assets\2d-mega-pack\Scripts\2D Platformer\Tiling.cs" />
     <Compile Include="Assets\CPUHotZone.cs" />
+    <Compile Include="Assets\Pastelpix\Scripts\MaterialScroller.cs" />
     <Compile Include="Assets\2d-mega-pack\Scripts\WaveSpawner.cs" />
+    <Compile Include="Assets\GolemBehavior.cs" />
     <Compile Include="Assets\CPUAnimEvents.cs" />
+    <Compile Include="Assets\TowerEye.cs" />
+    <Compile Include="Assets\MinionTowerTarget.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\SwatchButton.cs" />
     <Compile Include="Assets\Prototype Hero - Pixel Art\Demo\HookBehavior.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\ExperienceButton.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\Range.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\ExampleController.cs" />
     <Compile Include="Assets\PlayerCombat.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
     <Compile Include="Assets\ShieldBar.cs" />
     <Compile Include="Assets\cScripts\HighLevelScripts\EnemyBehavior.cs" />
+    <Compile Include="Assets\GondolaHotzone.cs" />
     <Compile Include="Assets\Camera2DFollow.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\LoadScene.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\UITabbedWindow.cs" />
     <Compile Include="Assets\TheChampionAnimEvents.cs" />
     <Compile Include="Assets\cScripts\HighLevelScripts\TriggerAreaCheck.cs" />
     <Compile Include="Assets\Dark Knight - Pixel Art\ColorSwap\ColorSwap_DarkKnight.cs" />
     <Compile Include="Assets\CPUCharacter2D.cs" />
     <Compile Include="Assets\PlatformerCharacter2D.cs" />
     <Compile Include="Assets\ChampJab2.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\UIExperienceBar.cs" />
     <Compile Include="Assets\Prototype Hero - Pixel Art\ColorSwap\ColorSwap_Prototype.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\SwatchHandler.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\Rotator.cs" />
     <Compile Include="Assets\TheChampion.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\Singleton.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\ClockDemo.cs" />
+    <Compile Include="Assets\ProtoDSpecHB.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\CombatManager.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\IconDemo.cs" />
+    <Compile Include="Assets\AudioManagerMenu.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\Shake.cs" />
     <Compile Include="Assets\2d-mega-pack\Scripts\Fading.cs" />
     <Compile Include="Assets\Hero Knight - Pixel Art\Demo\HeroKnight.cs" />
     <Compile Include="Assets\PlatformMove.cs" />
     <Compile Include="Assets\Dark Knight - Pixel Art\Demo\Sensor_DarkKnight.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\PingPong.cs" />
     <Compile Include="Assets\ProtoDairHB.cs" />
     <Compile Include="Assets\Prototype Hero - Pixel Art\Demo\Sensor_Prototype.cs" />
     <Compile Include="Assets\Hero Knight - Pixel Art\ColorSwap\ColorSwap_HeroKnight.cs" />
     <Compile Include="Assets\Prototype Hero - Pixel Art\Demo\GrabableLedge.cs" />
     <Compile Include="Assets\tile.cs" />
     <Compile Include="Assets\LevelManagerScript.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\SlimusController.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\MagicTargetController.cs" />
     <Compile Include="Assets\2d-mega-pack\Scripts\2D Platformer\MoveTrail.cs" />
     <Compile Include="Assets\EnemyDeath.cs" />
-    <Compile Include="Assets\Bandits - Pixel Art\Demo\Bandit.cs" />
+    <Compile Include="Assets\Bandits - Pixel Art\Animations\Heavy Bandit\Demo\Bandit.cs" />
+    <Compile Include="Assets\MinionBehavior.cs" />
     <Compile Include="Assets\2d-mega-pack\Scripts\2D Platformer\ArmRotation.cs" />
     <Compile Include="Assets\ProtoJab1HB.cs" />
     <Compile Include="Assets\Hero Knight - Pixel Art\Demo\Sensor_HeroKnight.cs" />
     <Compile Include="Assets\ChampJab1.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\UITooltip.cs" />
     <Compile Include="Assets\Platformer2DUserControl.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\DemoWindow.cs" />
     <Compile Include="Assets\Dark Knight - Pixel Art\Demo\DarkKnight.cs" />
     <Compile Include="Assets\CPUDeath.cs" />
-    <Compile Include="Assets\Bandits - Pixel Art\Demo\Sensor_Bandit.cs" />
+    <Compile Include="Assets\Bandits - Pixel Art\Animations\Heavy Bandit\Demo\Sensor_Bandit.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\CardProfile.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\UITypewriter.cs" />
     <Compile Include="Assets\cScripts\HighLevelScripts\HotZoneCheck.cs" />
+    <Compile Include="Assets\ChallengeTrigger.cs" />
     <Compile Include="Assets\Prototype Hero - Pixel Art\Demo\PrototypeHero.cs" />
     <Compile Include="Assets\PlayerDeath.cs" />
     <Compile Include="Assets\DownAttackCollisions.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\UIClock.cs" />
     <Compile Include="Assets\MenuEvents.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\DemoDialogue.cs" />
     <Compile Include="Assets\ProtoUTiltHB.cs" />
     <Compile Include="Assets\Prototype Hero - Pixel Art\Demo\Dust_DestroyEvent.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\UIStatBar.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\UIDeck.cs" />
     <Compile Include="Assets\ChampSideSpecHB.cs" />
     <Compile Include="Assets\ChampSideSpec.cs" />
+    <Compile Include="Assets\Conqueror.cs" />
     <Compile Include="Assets\CPUBehavior.cs" />
     <Compile Include="Assets\Prototype Hero - Pixel Art\Demo\PrototypeHeroAnimEvents.cs" />
+    <Compile Include="Assets\SpriteShapeDemo.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\LineController.cs" />
+    <Compile Include="Assets\ShutdownLauncher.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\CubitsController.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\PanelController.cs" />
     <Compile Include="Assets\2d-mega-pack\Scripts\2D Platformer\Parallaxing.cs" />
     <Compile Include="Assets\tiling.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\UIDialogueWindow.cs" />
     <Compile Include="Assets\Restarter.cs" />
     <Compile Include="Assets\PlayerManager.cs" />
+    <Compile Include="Assets\MinionJumpPoint.cs" />
     <Compile Include="Assets\Parallax.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\UIRescaler.cs" />
+    <Compile Include="Assets\Cainos\Common\Script\Utils\SecondOrderDynamics.cs" />
     <Compile Include="Assets\ChampSideSHB.cs" />
     <Compile Include="Assets\Prototype Hero - Pixel Art\Demo\AudioManager_PrototypeHero.cs" />
     <Compile Include="Assets\Hero Knight - Pixel Art\Demo\DestroyEvent_HeroKnight.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\UICard.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\ExperienceLabel.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\UIFader.cs" />
     <Compile Include="Assets\CameraFollow.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\2d-mega-pack\README.txt" />
+     <None Include="Assets\Pixel Art\PixelArtRPGVFX\ReadMe.txt" />
+     <None Include="Assets\Cainos\Pixel Art Platformer - Village Props\Changelog.txt" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
      <None Include="Assets\Fonts\OFL.txt" />
+     <None Include="Assets\Pixel Fonts Megapack\_README.txt" />
      <None Include="Assets\Dark Knight - Pixel Art\ColorSwap\Sprites-ColorSwap.shader" />
      <None Include="Assets\Prototype Hero - Pixel Art\ColorSwap\Sprites-ColorSwap.shader" />
+     <None Include="Assets\pack_loreon_char 1.0\Documentation\sprite_sheet_import.txt" />
      <None Include="Assets\Prototype Hero - Pixel Art\Sprites\License.txt" />
+     <None Include="Assets\Pixel UI\Changelog.txt" />
      <None Include="Assets\Hero Knight - Pixel Art\ColorSwap\Sprites-ColorSwap.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.1.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -826,7 +876,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{5CC9F974-762D-021A-BF14-BC59B224823A}</Project>
+      <Project>{5C4EF5C9-ABE4-852B-EE96-3F7EA96C0F7D}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>

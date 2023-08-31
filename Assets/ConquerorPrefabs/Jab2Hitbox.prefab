@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 159623178056290058}
   - component: {fileID: 131079469215645701}
   - component: {fileID: 4005198396215716375}
-  m_Layer: 9
+  m_Layer: 15
   m_Name: Jab2Hitbox
   m_TagString: AttackHitbox
   m_Icon: {fileID: 0}
@@ -58,11 +58,11 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -0.48188508, y: -0.16432244}
-      - {x: -0.19265771, y: -0.13273412}
-      - {x: -0.26222068, y: -0.03892062}
+      - {x: -0.0036667585, y: -0.11344933}
+      - {x: -0.17351061, y: -0.042777576}
       - {x: -0.6922213, y: -0.027283251}
       - {x: -0.9009166, y: -0.041075036}
-      - {x: -1.006105, y: -0.11072618}
+      - {x: -1.1063858, y: -0.1184401}
 --- !u!114 &4005198396215716375
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -661,7 +661,10 @@ MonoBehaviour:
   infoText: {fileID: 2060636864622679918, guid: 4245a2f18ba908e42b8a6a36dd0685ae, type: 3}
   m_DamageDisplay: {fileID: 236395028390467582, guid: c19ad62672c81f54ba64b8f37e2e26d3, type: 3}
   currentDamage: 0
-  m_animator: {fileID: 0}
+  hookDirection: 
+  m_animator: {fileID: 2575716727761948787}
+  m_body2d: {fileID: 0}
+  m_SR: {fileID: 0}
   m_groundSensor: {fileID: 5692587709083937071}
   m_wallSensorR1: {fileID: 1602386506773542423}
   m_wallSensorR0: {fileID: 559020600}
@@ -670,9 +673,44 @@ MonoBehaviour:
   m_wallSensorL2: {fileID: 1792506090958250915}
   m_wallSensorL0: {fileID: 367635281}
   m_grounded: 0
+  m_moving: 0
+  m_dead: 0
+  m_dodging: 0
+  m_wallSlide: 0
+  m_ledgeGrab: 0
+  m_ledgeClimb: 0
+  m_crouching: 0
+  m_inHitStun: 0
+  m_launched: 0
+  m_fSmashCharging: 0
+  m_uSmashCharging: 0
+  m_dSmashCharging: 0
+  m_fullCharge: 0
+  m_isParrying: 0
+  m_maxSmashChargeTime: 2
+  m_chargeModifier: 0
+  m_timeSinceChargeStart: 0
+  m_climbPosition: {x: 0, y: 0, z: 0}
   m_facingDirection: 1
+  m_disableMovementTimer: 0
+  m_parryTimer: 0
+  m_respawnTimer: 0
+  m_respawnPosition: {x: 0, y: 0, z: 0}
+  m_currentAttack: 0
+  m_currentSpecial: 0
   m_jumpCount: 0
+  m_timeSinceAttack: 0
+  m_timeSinceNSpec: 0
+  m_timeSinceSideSpecial: 0
+  m_timeSinceStun: 5
+  m_timeSinceHitStun: 0
+  m_hitStunDuration: 0
+  m_gravity: 0
   m_maxSpeed: 5
+  incomingKnockback: 0
+  incomingAngle: 0
+  incomingXMod: 0
+  incomingYMod: 0
   m_WhatIsPortal:
     serializedVersion: 2
     m_Bits: 64
@@ -683,10 +721,15 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 512
+  KnockoutFX: {fileID: 2071228030341280552, guid: 8277e46428c59ce409a57f50a206b9c6, type: 3}
+  HeavyAttackFX: {fileID: 1724291888056607309, guid: 34e8f2ffa6331ff4b9f7be45413dab33, type: 3}
+  ChargeFlashFX: {fileID: 4204095689380797397, guid: 81ead744f7dafc649a696aa3e0018451, type: 3}
+  BlockFX: {fileID: 3569397387010719113, guid: 9300fb4b08a7c0f448a15475613f22d5, type: 3}
   shieldBar: {fileID: 1527678593}
   hookPrefab: {fileID: 1727778989995994042, guid: 1be6fdbead07b184d999629ddec2db83, type: 3}
   hookChain: {fileID: 543004347}
   launchOffset: {fileID: 214578561146173387}
+  m_SpriteShaper: {fileID: 0}
   hookActive: 0
   jabRange: 1
   jabDamage: 3.5
@@ -697,6 +740,7 @@ MonoBehaviour:
   downAirRange: 0.3
   downAirDamage: 5
   downAirKB: 1.4
+  m_audioManager: {fileID: 4699199415772779553, guid: 8256f17f1004efd40b46f598cabec2ea, type: 3}
 --- !u!50 &7853426713638563735
 Rigidbody2D:
   serializedVersion: 4
@@ -714,7 +758,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1.25
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -845,6 +889,7 @@ GameObject:
   - component: {fileID: 7776102926116477038}
   - component: {fileID: 2575716727761948787}
   - component: {fileID: 8856003979901607121}
+  - component: {fileID: 8663618845936804149}
   m_Layer: 9
   m_Name: Sprite
   m_TagString: Untagged
@@ -907,7 +952,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300164, guid: 300ea1a5869382b43bf6149aba92c4db, type: 3}
+  m_Sprite: {fileID: 1941372285766519268, guid: 9e3a46d71228b4c4aaef1572e9e441e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -957,12 +1002,35 @@ MonoBehaviour:
   m_WallJumpDust: {fileID: 7972526843131001964, guid: 2a6283ef7fbba594caf7888f051f4a2b, type: 3}
   m_AirSlamDust: {fileID: 2943720192077617830, guid: 27cb532070b8c2b4e97001c33cf37429, type: 3}
   m_ParryEffect: {fileID: 3569397387010719113, guid: 9300fb4b08a7c0f448a15475613f22d5, type: 3}
+  m_HeavyHitFX: {fileID: 0}
   c_Manager: {fileID: 0}
   jab1Hitbox: {fileID: 5656061709437811842, guid: 76bd9c2f792edd34791da69ff70dc082, type: 3}
+  fSmashHitbox: {fileID: 9003894730390742882, guid: 0c6a80f2cc0a8e248a6e921f8ad42273, type: 3}
+  uSmashHitbox: {fileID: 2689232740280253140, guid: 3850ffb346a60124baa303acfee18304, type: 3}
+  dSmashHitbox1: {fileID: 5087158234083522335, guid: 1819a79a58ea20c4eae6a527bf605d40, type: 3}
+  dSmashHitbox2: {fileID: 3855104801129330285, guid: 25dc06c33037ae7408b3da5906c0f5ad, type: 3}
   upTiltHitbox: {fileID: 6714514734185759331, guid: 093fcc5d42f7487409ae2d0573497523, type: 3}
+  downSpecHitbox: {fileID: 5866951901490347427, guid: 8e9d18c7fb5cf2e4d9cf935b9eadfc92, type: 3}
+  downTilt1Hitbox: {fileID: 1278216439523846875, guid: edbe3d9e2a056e842bf04dca06af2e17, type: 3}
+  downTilt2Hitbox: {fileID: 224384064098909037, guid: 2499335405868804ba8e7f4305e60160, type: 3}
+  downTilt3Hitbox: {fileID: 7856604176021568304, guid: 3274413c3e371da438aff71211dbcc72, type: 3}
   dairHitbox: {fileID: 1377951757860842415, guid: fbb1cc0d2fb5a444abbaa4bea5ec2256, type: 3}
+  sideSpec1Hitbox: {fileID: 4004671583718560499, guid: a6bf5760a18e9914ab57187ff70aef1b, type: 3}
+  sideSpec2Hitbox: {fileID: 2260828106259116969, guid: 14cc48f74117eb0499d34fd5aa2cdb05, type: 3}
   lingerDeltaTime: 0.03
   lingerDurationSeconds: 0
+--- !u!114 &8663618845936804149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5419930034650718081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc83f482a9ec5c419c18a4ed6aa0b9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5930689989181052918
 GameObject:
   m_ObjectHideFlags: 0

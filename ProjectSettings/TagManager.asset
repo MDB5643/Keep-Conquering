@@ -13,6 +13,32 @@ TagManager:
   - MovingLedge
   - AttackHitbox
   - HotZone
+  - LeftLauncher
+  - RightLauncher
+  - RightGroundJumpPoint
+  - BlastZoneMid
+  - PortalMidground
+  - RedKeepEye
+  - MinionJumpUp
+  - MinionJumpLeft
+  - MinionJumpToMainPlatform
+  - MinionBoardGondola
+  - Gondola
+  - MinionJumpToEnemyPlat
+  - EyeTarget
+  - MinionJumpSmall
+  - MinionAfterEyeTarget
+  - BlueFrontEye
+  - RedFrontEye
+  - BlueKeepEye
+  - MinionBoardRight
+  - MinionBoardLeft
+  - LeftTowerLauncher
+  - MinionJumpToLBottomPlat
+  - MinionJumpToEnemyKeep
+  - BlueMidEye
+  - RedMidEye
+  - RightTowerLauncher
   layers:
   - Default
   - TransparentFX
@@ -21,20 +47,20 @@ TagManager:
   - Water
   - UI
   - PortalForeground
-  - 
-  - 
+  - TowerEye
+  - iFrame
   - Player
   - PlayerMid
   - Background
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - BlastZone
+  - Jumppoint
+  - Minion
+  - AttackHitbox
+  - MidGround
+  - BlastZoneMid
+  - PortalMidGround
+  - AttackHitboxMid
+  - iFrameMid
   - 
   - 
   - 
@@ -50,6 +76,12 @@ TagManager:
   - name: Background
     uniqueID: 2603991477
     locked: 0
+  - name: New Layer 3
+    uniqueID: 220495137
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 2579315715
     locked: 0

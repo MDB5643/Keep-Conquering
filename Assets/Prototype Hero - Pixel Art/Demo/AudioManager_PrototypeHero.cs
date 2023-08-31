@@ -70,6 +70,7 @@ public class AudioManager_PrototypeHero : MonoBehaviour
         {
             instance = this;
         }
+        
     }
 
     private void Start()
@@ -80,6 +81,7 @@ public class AudioManager_PrototypeHero : MonoBehaviour
             go.transform.SetParent(transform);
             m_sounds[i].SetSource(go.AddComponent<AudioSource>());
         }
+        PlaySound("Practice");
     }
 
     public void PlaySound (string name)

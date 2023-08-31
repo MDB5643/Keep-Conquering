@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Demo.unity
     guid: c3dba8a76f24ef8409238cc6858385a1
+  - enabled: 1
+    path: Assets/Scenes/Duel.unity
+    guid: 8d4872a71b1ec66468a4da68bf0fac41
   m_configObjects: {}

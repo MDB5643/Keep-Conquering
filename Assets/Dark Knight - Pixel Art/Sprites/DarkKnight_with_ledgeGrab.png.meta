@@ -1,0 +1,2652 @@
+fileFormatVersion: 2
+guid: 424977df62761dd4ea81bbafb39c2a22
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7296892297210043114
+    second: DarkKnight_with_ledgeGrab_0
+  - first:
+      213: -1609652788190144287
+    second: DarkKnight_with_ledgeGrab_1
+  - first:
+      213: -3793292424084024945
+    second: DarkKnight_with_ledgeGrab_2
+  - first:
+      213: -5796261427490475470
+    second: DarkKnight_with_ledgeGrab_3
+  - first:
+      213: 5503521491483267068
+    second: DarkKnight_with_ledgeGrab_4
+  - first:
+      213: -4576885221915238121
+    second: DarkKnight_with_ledgeGrab_5
+  - first:
+      213: 2029629980349080723
+    second: DarkKnight_with_ledgeGrab_6
+  - first:
+      213: -347683785119577140
+    second: DarkKnight_with_ledgeGrab_7
+  - first:
+      213: -6864160377161331973
+    second: DarkKnight_with_ledgeGrab_8
+  - first:
+      213: -3126878338679526643
+    second: DarkKnight_with_ledgeGrab_9
+  - first:
+      213: -1896153988093692680
+    second: DarkKnight_with_ledgeGrab_10
+  - first:
+      213: 2241450596234570826
+    second: DarkKnight_with_ledgeGrab_11
+  - first:
+      213: 2070259324958702105
+    second: DarkKnight_with_ledgeGrab_12
+  - first:
+      213: -2377750911665862647
+    second: DarkKnight_with_ledgeGrab_13
+  - first:
+      213: 6209514166309425422
+    second: DarkKnight_with_ledgeGrab_14
+  - first:
+      213: 5479082588909974521
+    second: DarkKnight_with_ledgeGrab_15
+  - first:
+      213: 6909518962308998775
+    second: DarkKnight_with_ledgeGrab_16
+  - first:
+      213: 1444236834582929953
+    second: DarkKnight_with_ledgeGrab_17
+  - first:
+      213: -6342600404885898667
+    second: DarkKnight_with_ledgeGrab_18
+  - first:
+      213: 4096585372709299710
+    second: DarkKnight_with_ledgeGrab_19
+  - first:
+      213: 61564463542771631
+    second: DarkKnight_with_ledgeGrab_20
+  - first:
+      213: 289227862945811901
+    second: DarkKnight_with_ledgeGrab_21
+  - first:
+      213: 6606650595251434779
+    second: DarkKnight_with_ledgeGrab_22
+  - first:
+      213: 5964962883506780863
+    second: DarkKnight_with_ledgeGrab_23
+  - first:
+      213: -2121508541634627860
+    second: DarkKnight_with_ledgeGrab_24
+  - first:
+      213: -7385041145437445460
+    second: DarkKnight_with_ledgeGrab_25
+  - first:
+      213: -4398050840033639422
+    second: DarkKnight_with_ledgeGrab_26
+  - first:
+      213: -8181824006071249972
+    second: DarkKnight_with_ledgeGrab_27
+  - first:
+      213: 7409869975625819900
+    second: DarkKnight_with_ledgeGrab_28
+  - first:
+      213: -1898538539509450893
+    second: DarkKnight_with_ledgeGrab_29
+  - first:
+      213: -3306099047746238215
+    second: DarkKnight_with_ledgeGrab_30
+  - first:
+      213: 5570581451614006396
+    second: DarkKnight_with_ledgeGrab_31
+  - first:
+      213: 3586072958896837637
+    second: DarkKnight_with_ledgeGrab_32
+  - first:
+      213: -6868821028642185979
+    second: DarkKnight_with_ledgeGrab_33
+  - first:
+      213: -8758433509176917760
+    second: DarkKnight_with_ledgeGrab_34
+  - first:
+      213: -2458389017135197459
+    second: DarkKnight_with_ledgeGrab_35
+  - first:
+      213: 8272090753442045787
+    second: DarkKnight_with_ledgeGrab_36
+  - first:
+      213: 993093099594169028
+    second: DarkKnight_with_ledgeGrab_37
+  - first:
+      213: 4617648659278021900
+    second: DarkKnight_with_ledgeGrab_38
+  - first:
+      213: 9154303984263880564
+    second: DarkKnight_with_ledgeGrab_39
+  - first:
+      213: -3142028061726508978
+    second: DarkKnight_with_ledgeGrab_40
+  - first:
+      213: 3841563783765532774
+    second: DarkKnight_with_ledgeGrab_41
+  - first:
+      213: 4842787595347557950
+    second: DarkKnight_with_ledgeGrab_42
+  - first:
+      213: -288427871755512881
+    second: DarkKnight_with_ledgeGrab_43
+  - first:
+      213: 804532726830283215
+    second: DarkKnight_with_ledgeGrab_44
+  - first:
+      213: -4666132530536358173
+    second: DarkKnight_with_ledgeGrab_45
+  - first:
+      213: 8380958029544791227
+    second: DarkKnight_with_ledgeGrab_46
+  - first:
+      213: -2467951899393218381
+    second: DarkKnight_with_ledgeGrab_47
+  - first:
+      213: 797768442492867621
+    second: DarkKnight_with_ledgeGrab_48
+  - first:
+      213: 6750715822253217305
+    second: DarkKnight_with_ledgeGrab_49
+  - first:
+      213: 2405556510635977858
+    second: DarkKnight_with_ledgeGrab_50
+  - first:
+      213: -8474663174498107388
+    second: DarkKnight_with_ledgeGrab_51
+  - first:
+      213: 2122871155360102296
+    second: DarkKnight_with_ledgeGrab_52
+  - first:
+      213: -1488175788955395110
+    second: DarkKnight_with_ledgeGrab_53
+  - first:
+      213: -2833107154115138189
+    second: DarkKnight_with_ledgeGrab_54
+  - first:
+      213: -4083519228583822352
+    second: DarkKnight_with_ledgeGrab_55
+  - first:
+      213: -4166898568988870761
+    second: DarkKnight_with_ledgeGrab_56
+  - first:
+      213: 8662120580589253268
+    second: DarkKnight_with_ledgeGrab_57
+  - first:
+      213: -7034189957383844757
+    second: DarkKnight_with_ledgeGrab_58
+  - first:
+      213: -723741547332996891
+    second: DarkKnight_with_ledgeGrab_59
+  - first:
+      213: 2215297260048270346
+    second: DarkKnight_with_ledgeGrab_60
+  - first:
+      213: -1866738316405840124
+    second: DarkKnight_with_ledgeGrab_61
+  - first:
+      213: -5445251174996856500
+    second: DarkKnight_with_ledgeGrab_62
+  - first:
+      213: 5445539730971515197
+    second: DarkKnight_with_ledgeGrab_63
+  - first:
+      213: -4672156421402270980
+    second: DarkKnight_with_ledgeGrab_64
+  - first:
+      213: 5331619192153733389
+    second: DarkKnight_with_ledgeGrab_65
+  - first:
+      213: 4489579547950257458
+    second: DarkKnight_with_ledgeGrab_66
+  - first:
+      213: 7743608751119334328
+    second: DarkKnight_with_ledgeGrab_67
+  - first:
+      213: 7929152874394568882
+    second: DarkKnight_with_ledgeGrab_68
+  - first:
+      213: -7786761208293454505
+    second: DarkKnight_with_ledgeGrab_69
+  - first:
+      213: -988974548060708449
+    second: DarkKnight_with_ledgeGrab_70
+  - first:
+      213: 8072585877924905056
+    second: DarkKnight_with_ledgeGrab_71
+  - first:
+      213: -6254271251046260216
+    second: DarkKnight_with_ledgeGrab_72
+  - first:
+      213: -7970594742949220025
+    second: DarkKnight_with_ledgeGrab_73
+  - first:
+      213: 3008616278706258810
+    second: DarkKnight_with_ledgeGrab_74
+  - first:
+      213: -5699531187356734507
+    second: DarkKnight_with_ledgeGrab_75
+  - first:
+      213: 2838458064597660464
+    second: DarkKnight_with_ledgeGrab_76
+  - first:
+      213: 5700539130842590913
+    second: DarkKnight_with_ledgeGrab_77
+  - first:
+      213: -5756158085475417716
+    second: DarkKnight_with_ledgeGrab_78
+  - first:
+      213: -5123825763374791696
+    second: DarkKnight_with_ledgeGrab_79
+  - first:
+      213: -8962621967866294665
+    second: DarkKnight_with_ledgeGrab_80
+  - first:
+      213: 5843470523762960128
+    second: DarkKnight_with_ledgeGrab_81
+  - first:
+      213: 472351513187905530
+    second: DarkKnight_with_ledgeGrab_82
+  - first:
+      213: 149392188121269631
+    second: DarkKnight_with_ledgeGrab_83
+  - first:
+      213: -655364347011870328
+    second: DarkKnight_with_ledgeGrab_84
+  - first:
+      213: -1743942994838826518
+    second: DarkKnight_with_ledgeGrab_85
+  - first:
+      213: -6784767146648588393
+    second: DarkKnight_with_ledgeGrab_86
+  - first:
+      213: 3590794845555651822
+    second: DarkKnight_with_ledgeGrab_87
+  - first:
+      213: -195156970044754968
+    second: DarkKnight_with_ledgeGrab_88
+  - first:
+      213: -2845776791562530226
+    second: DarkKnight_with_ledgeGrab_89
+  - first:
+      213: -4443935311435263855
+    second: DarkKnight_with_ledgeGrab_90
+  - first:
+      213: -9164653733032131160
+    second: DarkKnight_with_ledgeGrab_91
+  - first:
+      213: 2824876750045979456
+    second: DarkKnight_with_ledgeGrab_92
+  - first:
+      213: 6029329036901215424
+    second: DarkKnight_with_ledgeGrab_93
+  - first:
+      213: -4878936973729846366
+    second: DarkKnight_with_ledgeGrab_94
+  - first:
+      213: 4329435108078308384
+    second: DarkKnight_with_ledgeGrab_95
+  - first:
+      213: 2595692099557377736
+    second: DarkKnight_with_ledgeGrab_96
+  - first:
+      213: -5301833070834771614
+    second: DarkKnight_with_ledgeGrab_97
+  - first:
+      213: 9052964343046549646
+    second: DarkKnight_with_ledgeGrab_98
+  - first:
+      213: -7955414559427611752
+    second: DarkKnight_with_ledgeGrab_99
+  - first:
+      213: -2365438646059915505
+    second: DarkKnight_with_ledgeGrab_100
+  - first:
+      213: -5056961940215982837
+    second: DarkKnight_with_ledgeGrab_101
+  - first:
+      213: -6753466563831859312
+    second: DarkKnight_with_ledgeGrab_102
+  - first:
+      213: -3460542817432770350
+    second: DarkKnight_with_ledgeGrab_103
+  - first:
+      213: -3679129355868922141
+    second: DarkKnight_with_ledgeGrab_104
+  - first:
+      213: 6752591468520897439
+    second: DarkKnight_with_ledgeGrab_105
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 902
+        width: 47
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 615e284cd1b3cba90800000000000000
+      internalID: -7296892297210043114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 902
+        width: 48
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e89534415d59a9e0800000000000000
+      internalID: -1609652788190144287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 902
+        width: 48
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f819a4553a48b5bc0800000000000000
+      internalID: -3793292424084024945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_3
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 902
+        width: 48
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232b12d01fa8f8fa0800000000000000
+      internalID: -5796261427490475470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_4
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 902
+        width: 44
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff869933af606c40800000000000000
+      internalID: 5503521491483267068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_5
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 902
+        width: 55
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711e10ad323ab70c0800000000000000
+      internalID: -4576885221915238121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_6
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 902
+        width: 55
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394a034b6b1ba2c10800000000000000
+      internalID: 2029629980349080723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_7
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 902
+        width: 55
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccbc8c58077cc2bf0800000000000000
+      internalID: -347683785119577140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_8
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 902
+        width: 55
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfaccfd318a9db0a0800000000000000
+      internalID: -6864160377161331973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_9
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 902
+        width: 55
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ba427c7b81b94d0800000000000000
+      internalID: -3126878338679526643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_10
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 827
+        width: 67
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f43c3c7ef18fa5e0800000000000000
+      internalID: -1896153988093692680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_11
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 827
+        width: 67
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c262a017b3b1f10800000000000000
+      internalID: 2241450596234570826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_12
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 827
+        width: 66
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a7a1923e90bbc10800000000000000
+      internalID: 2070259324958702105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_13
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 827
+        width: 66
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9088bc9c428800fd0800000000000000
+      internalID: -2377750911665862647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_14
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 827
+        width: 66
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0111ae1c30ac2650800000000000000
+      internalID: 6209514166309425422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_15
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 827
+        width: 55
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3b10fc59c990c40800000000000000
+      internalID: 5479082588909974521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_16
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 827
+        width: 55
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776e04553ea83ef50800000000000000
+      internalID: 6909518962308998775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_17
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 827
+        width: 55
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 122a9d8cfb5fa0410800000000000000
+      internalID: 1444236834582929953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_18
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 827
+        width: 55
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55af68a498e8af7a0800000000000000
+      internalID: -6342600404885898667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_19
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 827
+        width: 55
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5266c11bef9d830800000000000000
+      internalID: 4096585372709299710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_20
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 752
+        width: 66
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf114cad88bad000800000000000000
+      internalID: 61564463542771631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_21
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 740
+        width: 30
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbdc70e753b830400800000000000000
+      internalID: 289227862945811901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_22
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 752
+        width: 49
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15b51d76b98fab50800000000000000
+      internalID: 6606650595251434779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_23
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 762
+        width: 52
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbabfc9832ec7c250800000000000000
+      internalID: 5964962883506780863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_24
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 753
+        width: 52
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce639ebb833ee82e0800000000000000
+      internalID: -2121508541634627860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_25
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 752
+        width: 54
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2ae82b430138990800000000000000
+      internalID: -7385041145437445460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_26
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 752
+        width: 55
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204cfa7101cf6f2c0800000000000000
+      internalID: -4398050840033639422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_27
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 752
+        width: 55
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc31c576a62547e80800000000000000
+      internalID: -8181824006071249972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_28
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 752
+        width: 55
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf66201db7525d660800000000000000
+      internalID: 7409869975625819900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_29
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 752
+        width: 55
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3777628d14907a5e0800000000000000
+      internalID: -1898538539509450893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_30
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 681
+        width: 46
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f804dabe606e12d0800000000000000
+      internalID: -3306099047746238215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_31
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 681
+        width: 44
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c25d7e05eae4d40800000000000000
+      internalID: 5570581451614006396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_32
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 680
+        width: 54
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5041ea53b5a44c130800000000000000
+      internalID: 3586072958896837637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_33
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 680
+        width: 54
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d9c02caab0da0a0800000000000000
+      internalID: -6868821028642185979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_34
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 677
+        width: 55
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001c1a8a02bc37680800000000000000
+      internalID: -8758433509176917760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_35
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 677
+        width: 54
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de25fe9c63c02edd0800000000000000
+      internalID: -2458389017135197459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_36
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 677
+        width: 52
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5fd4bc76be5cc270800000000000000
+      internalID: 8272090753442045787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_37
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 677
+        width: 51
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cab33699ec28cd00800000000000000
+      internalID: 993093099594169028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_38
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 677
+        width: 51
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0543d18dfe251040800000000000000
+      internalID: 4617648659278021900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_39
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 603
+        width: 31
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fddfbd8fe9a0f70800000000000000
+      internalID: 9154303984263880564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_40
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 602
+        width: 33
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e487b7200264564d0800000000000000
+      internalID: -3142028061726508978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_41
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 604
+        width: 30
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660a95968e9ff4530800000000000000
+      internalID: 3841563783765532774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_42
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 603
+        width: 61
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3efb57e8a9053340800000000000000
+      internalID: 4842787595347557950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_43
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 602
+        width: 55
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3d0b8f06c4ffbf0800000000000000
+      internalID: -288427871755512881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_44
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 602
+        width: 56
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc935e0a0464a2b00800000000000000
+      internalID: 804532726830283215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_45
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 596
+        width: 57
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee5c7a8f219e3fb0800000000000000
+      internalID: -4666132530536358173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_46
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 578
+        width: 85
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc99747ce42f4470800000000000000
+      internalID: 8380958029544791227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_47
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 578
+        width: 86
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8aae1c2d210cdd0800000000000000
+      internalID: -2467951899393218381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_48
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 513
+        width: 67
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524ddc3fb2e321b00800000000000000
+      internalID: 797768442492867621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_49
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 594
+        width: 10
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9161305064c5fad50800000000000000
+      internalID: 6750715822253217305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_50
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 591
+        width: 17
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ce597b6e0426120800000000000000
+      internalID: 2405556510635977858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_51
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 590
+        width: 14
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400c4f45eb2f36a80800000000000000
+      internalID: -8474663174498107388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_52
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 585
+        width: 9
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897792f7114f57d10800000000000000
+      internalID: 2122871155360102296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_53
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 578
+        width: 9
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb1aff2100f85be0800000000000000
+      internalID: -1488175788955395110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_54
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 584
+        width: 6
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d6954cd08cea8d0800000000000000
+      internalID: -2833107154115138189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_55
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 532
+        width: 28
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fbb8c2a5ec6457c0800000000000000
+      internalID: -4083519228583822352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_56
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 565
+        width: 7
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797b55424d33c26c0800000000000000
+      internalID: -4166898568988870761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_57
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 579
+        width: 5
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4927f9f26c8063870800000000000000
+      internalID: 8662120580589253268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_58
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 578
+        width: 8
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c0483a089816e90800000000000000
+      internalID: -7034189957383844757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_59
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 529
+        width: 36
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e07602b5e0c4f5f0800000000000000
+      internalID: -723741547332996891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_60
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 565
+        width: 5
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04c211fe115ebe10800000000000000
+      internalID: 2215297260048270346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_61
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 546
+        width: 5
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407e40244630816e0800000000000000
+      internalID: -1866738316405840124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_62
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 527
+        width: 61
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41b88118e49e64b0800000000000000
+      internalID: -5445251174996856500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_63
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 563
+        width: 6
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3955da9881729b40800000000000000
+      internalID: 5445539730971515197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_64
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 565
+        width: 4
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf2e1472d7a292fb0800000000000000
+      internalID: -4672156421402270980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_65
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 527
+        width: 66
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d097af93867bdf940800000000000000
+      internalID: 5331619192153733389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_66
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 562
+        width: 5
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2351f62efc03e4e30800000000000000
+      internalID: 4489579547950257458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_67
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 527
+        width: 66
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bbf21ab123d67b60800000000000000
+      internalID: 7743608751119334328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_68
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 527
+        width: 61
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b84e0067820a0e60800000000000000
+      internalID: 7929152874394568882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_69
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 544
+        width: 4
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d80e4efeddfe390800000000000000
+      internalID: -7786761208293454505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_70
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 532
+        width: 5
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9160fa63e47642f0800000000000000
+      internalID: -988974548060708449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_71
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 452
+        width: 65
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0608c88e516970070800000000000000
+      internalID: 8072585877924905056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_72
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 452
+        width: 49
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80223780f6d5439a0800000000000000
+      internalID: -6254271251046260216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_73
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 452
+        width: 52
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7417ae1bf42c26190800000000000000
+      internalID: -7970594742949220025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_74
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 452
+        width: 54
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a738ebda090c0c920800000000000000
+      internalID: 3008616278706258810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_75
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 452
+        width: 54
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db675f159237e0b0800000000000000
+      internalID: -5699531187356734507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_76
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 377
+        width: 52
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033bf2a229a346720800000000000000
+      internalID: 2838458064597660464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_77
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 381
+        width: 27
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce261203226c1f40800000000000000
+      internalID: 5700539130842590913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_78
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 377
+        width: 30
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81ce3cf7b40e10b0800000000000000
+      internalID: -5756158085475417716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_79
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 377
+        width: 27
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f30d0b8d9384e8b0800000000000000
+      internalID: -5123825763374791696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_80
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 377
+        width: 31
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e87356ece5e9380800000000000000
+      internalID: -8962621967866294665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_81
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 376
+        width: 60
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0076b583b7d281150800000000000000
+      internalID: 5843470523762960128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_82
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 377
+        width: 30
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affeea8d2312e8600800000000000000
+      internalID: 472351513187905530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_83
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 377
+        width: 34
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f75cf21576fb21200800000000000000
+      internalID: 149392188121269631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_84
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 302
+        width: 63
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881d6e1499da7e6f0800000000000000
+      internalID: -655364347011870328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_85
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 302
+        width: 64
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1d91406154cc7e0800000000000000
+      internalID: -1743942994838826518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_86
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 302
+        width: 83
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f25443a3aa7d1a0800000000000000
+      internalID: -6784767146648588393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_87
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 302
+        width: 84
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4f5ae13e015d130800000000000000
+      internalID: 3590794845555651822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_88
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 302
+        width: 84
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e37a0d05c9aa4df0800000000000000
+      internalID: -195156970044754968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_89
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 227
+        width: 84
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e425ddce515c188d0800000000000000
+      internalID: -2845776791562530226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_90
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 227
+        width: 84
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19016151168f352c0800000000000000
+      internalID: -4443935311435263855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_91
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 227
+        width: 52
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a589297cfb90d080800000000000000
+      internalID: -9164653733032131160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_92
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 227
+        width: 52
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04320c4ff6af33720800000000000000
+      internalID: 2824876750045979456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_93
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 227
+        width: 52
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cce17670da7ca350800000000000000
+      internalID: 6029329036901215424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_94
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 152
+        width: 52
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab205f0ca88a4cb0800000000000000
+      internalID: -4878936973729846366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_95
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 152
+        width: 52
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ccc1fda4e351c30800000000000000
+      internalID: 4329435108078308384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_96
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 152
+        width: 52
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6c7644630c50420800000000000000
+      internalID: 2595692099557377736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_97
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 152
+        width: 52
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269997299ea1c66b0800000000000000
+      internalID: -5301833070834771614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_98
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 152
+        width: 52
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e803197fa1792ad70800000000000000
+      internalID: 9052964343046549646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_99
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 77
+        width: 52
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893b8589b90b89190800000000000000
+      internalID: -7955414559427611752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_100
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 77
+        width: 52
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f072e9385164c2fd0800000000000000
+      internalID: -2365438646059915505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_101
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 77
+        width: 52
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0591c688ef02d9b0800000000000000
+      internalID: -5056961940215982837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_102
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 77
+        width: 59
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097f25c01fdd642a0800000000000000
+      internalID: -6753466563831859312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_103
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 77
+        width: 63
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8e3ec64aea9ffc0800000000000000
+      internalID: -3460542817432770350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_104
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 2
+        width: 67
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee98bcf75b11fcc0800000000000000
+      internalID: -3679129355868922141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkKnight_with_ledgeGrab_105
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 2
+        width: 69
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b7582f92606bd50800000000000000
+      internalID: 6752591468520897439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

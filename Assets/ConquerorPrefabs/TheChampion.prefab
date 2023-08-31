@@ -346,7 +346,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1.25
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -372,7 +372,10 @@ MonoBehaviour:
   infoText: {fileID: 0}
   m_DamageDisplay: {fileID: 0}
   currentDamage: 0
+  hookDirection: 
   m_animator: {fileID: 0}
+  m_body2d: {fileID: 0}
+  m_SR: {fileID: 0}
   m_groundSensor: {fileID: 5692587709083937071}
   m_wallSensorR1: {fileID: 1602386506773542423}
   m_wallSensorR0: {fileID: 559020600}
@@ -381,9 +384,53 @@ MonoBehaviour:
   m_wallSensorL2: {fileID: 1792506090958250915}
   m_wallSensorL0: {fileID: 367635281}
   m_grounded: 0
+  m_moving: 0
+  m_dead: 0
+  m_dodging: 0
+  m_wallSlide: 0
+  m_ledgeGrab: 0
+  m_ledgeClimb: 0
+  m_crouching: 0
+  m_inHitStun: 0
+  m_launched: 0
+  m_fSmashCharging: 0
+  m_uSmashCharging: 0
+  m_dSmashCharging: 0
+  m_fullCharge: 0
+  m_isParrying: 0
+  m_isInKnockback: 0
+  m_cameraShake: 0
+  m_shakeIntensity: 0.1
+  m_maxSmashChargeTime: 2
+  m_chargeModifier: 0
+  m_timeSinceChargeStart: 0
+  m_climbPosition: {x: 0, y: 0, z: 0}
   m_facingDirection: 1
+  m_disableMovementTimer: 0
+  m_parryTimer: 0
+  m_respawnTimer: 0
+  m_respawnPosition: {x: 0, y: 0, z: 0}
+  m_currentAttack: 0
+  m_currentSpecial: 0
   m_jumpCount: 0
+  m_timeSinceAttack: 0
+  m_timeSinceNSpec: 0
+  m_timeSinceSideSpecial: 0
+  m_timeSinceStun: 5
+  m_timeSinceHitStun: 0
+  m_timeSinceKnockBack: 0
+  m_KnockBackDuration: 0.1
+  m_hitStunDuration: 0
+  m_gravity: 0
   m_maxSpeed: 4.5
+  m_isInHitStop: 0
+  m_hitStopDuration: 0
+  m_timeSinceHitStop: 0
+  animSpeed: 0
+  incomingKnockback: 0
+  incomingAngle: 0
+  incomingXMod: 0
+  incomingYMod: 0
   m_WhatIsPortal:
     serializedVersion: 2
     m_Bits: 64
@@ -394,11 +441,19 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 512
+  KnockoutFX: {fileID: 2071228030341280552, guid: 8277e46428c59ce409a57f50a206b9c6, type: 3}
+  HeavyAttackFX: {fileID: 1724291888056607309, guid: 34e8f2ffa6331ff4b9f7be45413dab33, type: 3}
+  ChargeFlashFX: {fileID: 4204095689380797397, guid: 81ead744f7dafc649a696aa3e0018451, type: 3}
+  BlockFX: {fileID: 0}
   shieldBar: {fileID: 1527678593}
+  hookPrefab: {fileID: 0}
+  hookChain: {fileID: 0}
   launchOffset: {fileID: 214578561146173387}
+  m_SpriteShaper: {fileID: 0}
+  hookActive: 0
+  isGrappled: 0
   jabRange: 0
-  jab1Damage: 4.5
-  jab2Damage: 3
+  jabDamage: 3
   jabKB: 0.5
   upTiltRange: 2
   upTiltDamage: 3
@@ -406,6 +461,8 @@ MonoBehaviour:
   downAirRange: 3
   downAirDamage: 5
   downAirKB: 1.4
+  m_audioManager: {fileID: 0}
+  isInUpSpecial: 0
 --- !u!61 &7953872935334828980
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -891,7 +948,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300010, guid: 5142d8c117f1ba94a9859c47f2dafb95, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9882878, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -945,6 +1002,20 @@ MonoBehaviour:
   jab2Hitbox: {fileID: 1923252843108063510, guid: 37af25d8ccd30dc498454cfe3db795d5, type: 3}
   sideSpecialHitbox: {fileID: 8949535772418708054, guid: 1582763f949ed674fa977362650fb8ce, type: 3}
   sideSpecialExplode: {fileID: 6260341956870047123, guid: e20cc05ae6e155f46939887a55029be0, type: 3}
+  upTiltHitbox: {fileID: 89208845791874281, guid: 20a235801870d144285f8daeec1da117, type: 3}
+  dTiltHitbox: {fileID: 903482867419899601, guid: 0f8b9de6945f8b446aae165609d48591, type: 3}
+  upSpecExplosionHitbox: {fileID: 1479459568077918940, guid: 8025620080ae3df4cab72e83af140c05, type: 3}
+  upSpecExplosionHitbox2: {fileID: 1479459568077918940, guid: 8025620080ae3df4cab72e83af140c05, type: 3}
+  upSmashHitbox: {fileID: 8517494380313103611, guid: de4949d02dd03fd41a05f9275bf92cb1, type: 3}
+  dSmashHitbox: {fileID: 1479459568077918940, guid: c5e6bd1cd5edb084193d80d2df81acc9, type: 3}
+  dSmashHitboxBack: {fileID: 1479459568077918940, guid: d5279e9d0a0eaca4f81b4d5df1f9af82, type: 3}
+  downAirHitbox: {fileID: 4352725372097683147, guid: bd3e9c70444005c45bc30740e43264d2, type: 3}
+  upAirHitbox: {fileID: 2191045139679261361, guid: a3b4fdc87afa02d4a97253cb9eeb05df, type: 3}
+  fAirHitbox: {fileID: 8654348693954206893, guid: 7131d89f26cc9e640a9cd51a9f0e1ddd, type: 3}
+  nAirHitbox: {fileID: 1479459568077918940, guid: cb26c4457f23af9478b0fcc3237fc3fc, type: 3}
+  nSpecHitbox: {fileID: 8161338255959051029, guid: afcde9fbb29aa084f87f5e1e0eff7009, type: 3}
+  dSpecExplosionHitbox: {fileID: 8161338255959051029, guid: 7ba0893be82a39445a24ba08e8c0232f, type: 3}
+  dSpecExplosionHitbox2: {fileID: 0}
   lingerDeltaTime: 0.03
   lingerDurationSeconds: 1
 --- !u!1 &6676569791411672975

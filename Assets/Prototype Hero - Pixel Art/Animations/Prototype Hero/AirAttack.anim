@@ -21,11 +21,11 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: -5075516293593976838, guid: 896a61307c5f3814eb816b34751d7e25, type: 3}
-    - time: 0.071428575
-      value: {fileID: -8637584602052014697, guid: 896a61307c5f3814eb816b34751d7e25, type: 3}
     - time: 0.14285715
-      value: {fileID: 5271168786595016743, guid: 896a61307c5f3814eb816b34751d7e25, type: 3}
+      value: {fileID: -8637584602052014697, guid: 896a61307c5f3814eb816b34751d7e25, type: 3}
     - time: 0.21428572
+      value: {fileID: 5271168786595016743, guid: 896a61307c5f3814eb816b34751d7e25, type: 3}
+    - time: 0.2857143
       value: {fileID: -186194409378037465, guid: 896a61307c5f3814eb816b34751d7e25, type: 3}
     attribute: m_Sprite
     path: 
@@ -55,7 +55,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.2857143
+    m_StopTime: 0.35714287
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -75,7 +75,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.071428575
+  - time: 0.14285715
     functionName: AE_JabHitbox
     data: 
     objectReferenceParameter: {fileID: 0}

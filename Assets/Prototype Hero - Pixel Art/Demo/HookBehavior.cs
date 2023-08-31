@@ -12,7 +12,16 @@ public class HookBehavior : MonoBehaviour
     {
         if (latched == false)
         {
-            transform.position += -transform.right * Time.deltaTime * speed;
+
+            if(transform.GetComponentInParent<Conqueror>().hookDirection == "Up")
+            {
+                transform.position += -transform.up * Time.deltaTime * speed;
+            }
+            else
+            {
+                transform.position += -transform.right * Time.deltaTime * speed;
+            }
+            
         }
         activeTime += Time.deltaTime;
         if(activeTime >= .8f)
@@ -23,7 +32,8 @@ public class HookBehavior : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        PrototypeHero m_Character = transform.GetComponentInParent<PrototypeHero>();
+
+        Conqueror m_Character = transform.GetComponentInParent<Conqueror>();
         latched = true;
 
         m_Character.m_jumpCount++;
@@ -42,8 +52,12 @@ public class HookBehavior : MonoBehaviour
         float angleInRadians = Mathf.Atan2(positionDifference.y, positionDifference.x);
         float radians = angleInRadians * Mathf.Deg2Rad;
         Vector2 KBVector = new Vector2(Mathf.Cos(radians), Mathf.Sin(radians));
-
         Vector2 pullForce = KBVector * positionDifference * 2;
+        if (transform.GetComponentInParent<Conqueror>().hookDirection == "Up")
+        {
+            pullForce.y += 10;
+        }
+            
         pullForce.y += 5;
         // Convert the angle to degrees.
         float attackAngle = angleInRadians * Mathf.Rad2Deg;
