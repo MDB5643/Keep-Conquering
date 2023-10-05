@@ -11,20 +11,56 @@ public class CPUBehavior : Conqueror
     private Rect buttonPos2;
     public float attackDistance = 2f;
     public float minDamage = 0.0f;
+    public float smashAttackInterval = 15f;
+    public float timeSinceSmashAttack = 0.0f;
     public Transform leftLimit;
     public Transform rightLimit;
     public Transform target;
     public bool inRange; //check if player is in range
     public GameObject hotZone;
     public GameObject triggerArea;
-    
+
+    //Pathfinding
+    public GameObject firstLauncherTarget;
+    public GameObject MovingPlatformTarget;
+    public GameObject GondolaTarget;
+    public GameObject GondolaEdgeTarget;
+    public GameObject TowerPlatformTarget;
+    public GameObject TowerPlatformEdgeTarget;
+    public GameObject EyeTarget;
+    public GameObject KeepEyeTarget;
+    private string CurrentJumpTarget = "";
+
     private AudioManager_PrototypeHero m_audioManager;
 
     public float m_TimeSinceJab2 = 0.0f;
 
+    public string routine = "Lane";
+
     // Use this for initialization
     void Start()
     {
+        playerNumber = 3;
+        if (playerNumber == 4)
+        {
+            routine = "Lane";
+        }
+        if (playerNumber == 3)
+        {
+            routine = "Lane";
+        }
+        teamColor = "Red";
+        if (teamColor == "Red")
+        {
+            firstLauncherTarget = GameObject.Find("RedMinionLauncherTarget");
+            MovingPlatformTarget = GameObject.Find("RedMinionPlatformTarget");
+            GondolaTarget = GameObject.Find("RedMinionGondolaTarget");
+            EyeTarget = GameObject.Find("RedMinionEyeTarget");
+        }
+        if (GondolaTarget == null)
+        {
+            routine = "HoldGround";
+        }
         m_animator = GetComponentInChildren<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
         m_SR = GetComponentInChildren<SpriteRenderer>();
@@ -47,6 +83,40 @@ public class CPUBehavior : Conqueror
     // Update is called once per frame
     void Update()
     {
+        if (EyeTarget == null && KeepEyeTarget != null)
+        {
+            EyeTarget = KeepEyeTarget;
+        }
+
+        if (teamColor == "Red" && routine == "Lane" && transform.position.x < TowerPlatformTarget.transform.position.x && EyeTarget != null)
+        {
+            if (EyeTarget.name != "MinionKeepEyeTarget" && EyeTarget.name != "BlueMinionKeepEyeTarget")
+            {
+                target = EyeTarget.transform;
+            }
+            else if (transform.position.x < -37 && KeepEyeTarget != null)
+            {
+                target = EyeTarget.transform;
+            }
+        }
+        if (teamColor == "Blue" && routine == "Lane" && transform.position.x > TowerPlatformTarget.transform.position.x && EyeTarget != null)
+        {
+            if (EyeTarget.name != "MinionKeepEyeTarget" && EyeTarget.name != "BlueMinionKeepEyeTarget")
+            {
+                target = EyeTarget.transform;
+            }
+            else if (transform.position.x > 120 && KeepEyeTarget != null)
+            {
+                target = EyeTarget.transform;
+            }
+        }
+
+        if (target == null && routine == "Lane")
+        {
+            target = TowerPlatformTarget.transform;
+            CurrentJumpTarget = "Gondola";
+        }
+
         if (isGrappled)
         {
             m_disableMovementTimer = 1.0f;
@@ -67,6 +137,11 @@ public class CPUBehavior : Conqueror
         // Increase timer that controls attack combo
         m_timeSinceAttack += Time.deltaTime;
         m_TimeSinceJab2 += Time.deltaTime;
+        m_timeSinceSideSpecial += Time.deltaTime;
+        m_timeSinceStun += Time.deltaTime;
+        m_timeSinceNSpec += Time.deltaTime;
+        timeSinceSmashAttack += Time.deltaTime;
+        m_timeSinceChargeStart += Time.deltaTime;
 
         // Decrease timer that checks if we are in parry stance
         m_parryTimer -= Time.deltaTime;
@@ -167,13 +242,7 @@ public class CPUBehavior : Conqueror
                 // Decrease death respawn timer 
                 m_respawnTimer -= Time.deltaTime;
 
-                // Increase timer that controls attack combo
-                m_timeSinceAttack += Time.deltaTime;
-                m_timeSinceSideSpecial += Time.deltaTime;
-                m_timeSinceStun += Time.deltaTime;
-                m_timeSinceNSpec += Time.deltaTime;
-
-                m_timeSinceChargeStart += Time.deltaTime;
+                
 
                 // Decrease timer that checks if we are in parry stance
                 //m_parryTimer -= Time.deltaTime;
@@ -321,45 +390,132 @@ public class CPUBehavior : Conqueror
                     var distance = Vector2.Distance(transform.position, target.position);
 
                     //Attack
-
-                    if (attackDistance >= distance && inRange && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > 0.5f && m_TimeSinceJab2 > 0.9f)
+                    if (m_uSmashCharging == true && !m_fSmashCharging && m_timeSinceChargeStart > m_maxSmashChargeTime)
                     {
-                        if (m_wallSensorR2.State() || m_wallSensorL2.State())
-                        {
-                            m_animator.SetTrigger("UpAttack");
+                        m_animator.SetTrigger("USmash");
+                        m_animator.SetBool("USmashCharge", false);
+                        // Reset timer
+                        m_timeSinceAttack = 0.0f;
+                        timeSinceSmashAttack = 0.0f;
 
+                        m_uSmashCharging = false;
+                        m_fullCharge = false;
+
+                        m_disableMovementTimer = 0.35f;
+                    }
+                    else if (m_fSmashCharging == true && !m_uSmashCharging && m_timeSinceChargeStart > m_maxSmashChargeTime)
+                    {
+                        m_animator.SetTrigger("FSmash");
+                        m_animator.SetBool("FSmashCharge", false);
+                        // Reset timer
+                        m_timeSinceAttack = 0.0f;
+                        timeSinceSmashAttack = 0.0f;
+
+                        m_fSmashCharging = false;
+                        m_fullCharge = false;
+
+                        m_disableMovementTimer = 0.35f;
+                    }
+
+                    if (attackDistance >= distance && inRange && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > 0.15f && m_TimeSinceJab2 > 0.45f)
+                    {
+                        if (m_uSmashCharging == true && !m_fSmashCharging && m_timeSinceChargeStart > 2.0f)
+                        {
+                            m_animator.SetTrigger("USmash");
+                            m_animator.SetBool("USmashCharge", false);
                             // Reset timer
                             m_timeSinceAttack = 0.0f;
+                            timeSinceSmashAttack = 0.0f;
 
-                            //Attack(upTiltDamage, upTiltKB, upTiltRange, 0, 2, upTiltPoint);
+                            m_uSmashCharging = false;
+                            m_fullCharge = false;
 
-                            // Disable movement 
                             m_disableMovementTimer = 0.35f;
+                        }
+                        else if (m_fSmashCharging == true && !m_uSmashCharging && m_timeSinceChargeStart > 2.0f)
+                        {
+                            m_animator.SetTrigger("FSmash");
+                            m_animator.SetBool("FSmashCharge", false);
+                            // Reset timer
+                            m_timeSinceAttack = 0.0f;
+                            timeSinceSmashAttack = 0.0f;
+
+                            m_fSmashCharging = false;
+                            m_fullCharge = false;
+
+                            m_disableMovementTimer = 0.35f;
+                        }
+                        else if (m_wallSensorR2.State() || m_wallSensorL2.State())
+                        {
+                            if (timeSinceSmashAttack > smashAttackInterval)
+                            {
+                                if (m_fSmashCharging != true && !m_uSmashCharging)
+                                {
+                                    m_timeSinceChargeStart = 0.0f;
+                                    m_uSmashCharging = true;
+                                    m_uSmashCharging = true;
+                                    m_animator.SetBool("USmashCharge", true);
+
+                                    
+                                }
+                                // Disable movement 
+                                m_disableMovementTimer = 0.35f;
+                            }
+                            else
+                            {
+                                m_animator.SetTrigger("UpAttack");
+
+                                // Reset timer
+                                m_timeSinceAttack = 0.0f;
+
+                                //Attack(upTiltDamage, upTiltKB, upTiltRange, 0, 2, upTiltPoint);
+
+                                // Disable movement 
+                                m_disableMovementTimer = 0.35f;
+                            }
+                            
                         }
                         else
                         {
-                            // Reset timer
-                            m_timeSinceAttack = 0.0f;
-
-                            m_currentAttack++;
-
-                            if (m_currentAttack == 2)
+                            if (timeSinceSmashAttack > smashAttackInterval)
                             {
-                                m_TimeSinceJab2 = 0.0f;
+                                if (m_fSmashCharging != true && !m_uSmashCharging)
+                                {
+                                    m_timeSinceChargeStart = 0.0f;
+                                    m_fSmashCharging = true;
+                                    m_animator.SetBool("FSmashCharge", true);
+                                    
+                                }
+                                // Disable movement 
+                                m_disableMovementTimer = 0.35f;
+
                             }
+                            else
+                            {
+                                // Reset timer
+                                m_timeSinceAttack = 0.0f;
 
-                            // Loop back to one after second attack
-                            if (m_currentAttack > 2)
-                                m_currentAttack = 1;
+                                m_currentAttack++;
 
-                            // Reset Attack combo if time since last attack is too large
-                            if (m_timeSinceAttack > .8f)
-                                m_currentAttack = 1;
+                                if (m_currentAttack == 2)
+                                {
+                                    m_TimeSinceJab2 = 0.0f;
+                                }
 
-                            // Call one of the two attack animations "Attack1" or "Attack2"
-                            m_animator.SetTrigger("Attack" + m_currentAttack);
+                                // Loop back to one after second attack
+                                if (m_currentAttack > 2)
+                                    m_currentAttack = 1;
 
-                            m_disableMovementTimer = 0.45f;
+                                // Reset Attack combo if time since last attack is too large
+                                if (m_timeSinceAttack > .8f)
+                                    m_currentAttack = 1;
+
+                                // Call one of the two attack animations "Attack1" or "Attack2"
+                                m_animator.SetTrigger("Attack" + m_currentAttack);
+
+                                m_disableMovementTimer = 0.45f;
+                            }
+                           
                         }
                     }
                 }
@@ -379,7 +535,7 @@ public class CPUBehavior : Conqueror
                 }
 
                 // -- Handle input and movement --
-                if (m_disableMovementTimer < 0.0f && m_grounded)
+                if (m_disableMovementTimer < 0.0f && m_grounded && !m_fSmashCharging && !m_uSmashCharging)
                 {
                     Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
 
@@ -387,11 +543,6 @@ public class CPUBehavior : Conqueror
 
                     m_moving = true;
                 }
-
-
-                // Set Animation layer for hiding sword
-                //int boolInt = m_hideSword ? 1 : 0;
-                //m_animator.SetLayerWeight(1, boolInt);
 
 
                 //Run
@@ -433,34 +584,40 @@ public class CPUBehavior : Conqueror
 
                     
                 }
-
-                if (transform.position.x > rightLimit.position.x && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > 0.3f && m_timeSinceSideSpecial > 2.0f
+                if (transform.name.Contains("Prototype"))
+                {
+                    if (transform.position.x > rightLimit.position.x && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > 0.3f && m_timeSinceSideSpecial > 2.0f
                         && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && m_jumpCount >= 1)
-                {
-                    ThrowHook();
-                    m_animator.SetTrigger("Throw");
-                    hookActive = true;
-                    m_timeSinceSideSpecial = 0.0f;
+                    {
+                        ThrowHook();
+                        m_animator.SetTrigger("Throw");
+                        hookActive = true;
+                        m_timeSinceSideSpecial = 0.0f;
 
-                    m_disableMovementTimer = 1.0f;
-                }
-                else if (transform.position.x < leftLimit.position.x && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > 0.3f && m_timeSinceSideSpecial > 2.0f
-                                && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && m_jumpCount >= 1)
-                {
-                    ThrowHook();
-                    m_animator.SetTrigger("Throw");
-                    hookActive = true;
-                    m_timeSinceSideSpecial = 0.0f;
+                        m_disableMovementTimer = 1.0f;
+                    }
+                    else if (transform.position.x < leftLimit.position.x && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > 0.3f && m_timeSinceSideSpecial > 2.0f
+                                    && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && m_jumpCount >= 1)
+                    {
+                        ThrowHook();
+                        m_animator.SetTrigger("Throw");
+                        hookActive = true;
+                        m_timeSinceSideSpecial = 0.0f;
 
-                    m_disableMovementTimer = 1.0f;
+                        m_disableMovementTimer = 1.0f;
+                    }
                 }
+                
             }
             else
             {
+                m_body2d.velocity = Vector2.zero;
+                m_body2d.gravityScale = 0;
                 m_timeSinceHitStop += Time.deltaTime;
                 m_animator.speed = 0;
                 if (m_timeSinceHitStop >= m_hitStopDuration)
                 {
+                    m_body2d.gravityScale = 1.25f;
                     m_isInHitStop = false;
                     m_animator.speed = 1;
                 }
@@ -470,6 +627,7 @@ public class CPUBehavior : Conqueror
         {
             if (m_inHitStun)
             {
+                m_body2d.velocity = Vector2.zero;
                 m_body2d.gravityScale = 0;
                 m_timeSinceHitStun += Time.deltaTime;
                 m_animator.speed = 0;
@@ -737,14 +895,63 @@ public class CPUBehavior : Conqueror
         float distanceToLeft = Vector2.Distance(transform.position, leftLimit.position);
         float distanceToRight = Vector2.Distance(transform.position, rightLimit.position);
 
-        if (distanceToLeft > distanceToRight)
+        if (routine == "Lane")
         {
-            target = leftLimit;
+            if (EyeTarget != null)
+            {
+                float distanceToEye = Vector2.Distance(transform.position, EyeTarget.transform.position);
+            }
+            if (teamColor == "Red")
+            {
+                if (transform.position.x < firstLauncherTarget.transform.position.x && transform.position.x > MovingPlatformTarget.transform.position.x && target.name != "LeftEdge" && target.name != "RightEdge")
+                {
+                    target = MovingPlatformTarget.transform;
+                }
+                else if (transform.position.y >= 0f && transform.position.x < MovingPlatformTarget.transform.position.x && target.name != "LeftEdge" && target.name != "RightEdge" && CurrentJumpTarget != "EnemyPlatform" && CurrentJumpTarget != "EnemyKeep")
+                {
+                    target = GondolaTarget.transform;
+                }
+                else
+                {
+                    if (distanceToLeft > distanceToRight)
+                    {
+                        target = leftLimit;
+                    }
+                    else
+                    {
+                        target = rightLimit;
+                    }
+                }
+            }
+            else if (teamColor == "Blue")
+            {
+                if (transform.position.x > firstLauncherTarget.transform.position.x && transform.position.x < MovingPlatformTarget.transform.position.x && target.name != "LeftEdge" && target.name != "RightEdge")
+                {
+                    target = MovingPlatformTarget.transform;
+                }
+                if (transform.position.y <= 0f && transform.position.x > MovingPlatformTarget.transform.position.x && target.name != "LeftEdge" && target.name != "RightEdge" && CurrentJumpTarget != "EnemyPlatform" && CurrentJumpTarget != "EnemyKeep")
+                {
+                    target = GondolaTarget.transform;
+                }
+            }
+            if (CurrentJumpTarget == "EnemyPlatform")
+            {
+                target = GondolaEdgeTarget.transform;
+            }
         }
-        else
+        
+        else if (routine == "HoldGround")
         {
-            target = rightLimit;
+            if (distanceToLeft > distanceToRight)
+            {
+                target = leftLimit;
+            }
+            else
+            {
+                target = rightLimit;
+            }
         }
+        
 
         Flip();
 
@@ -780,8 +987,191 @@ public class CPUBehavior : Conqueror
         }
         else if (collision.transform.tag == "AttackHitbox")
         {
-            collision.GetComponentInParent<CombatManager>().Hit(transform, collision.transform.name);
+            var targetclosestPoint = new Vector2(collision.transform.position.x, collision.transform.position.y);
+            var sourceclosestPoint = new Vector2(transform.position.x, transform.position.y);
+
+            var midPointX = (targetclosestPoint.x + sourceclosestPoint.x) / 2f;
+            var midPointY = (targetclosestPoint.y + sourceclosestPoint.y) / 2f;
+
+            if (collision.transform.name.Contains("Smash") || collision.transform.name.Contains("Jab1Hitbox"))
+            {
+                Instantiate(HeavyAttackFX, new Vector3(midPointX, midPointY, transform.position.z),
+            new Quaternion(0f, 0f, 0f, 0f), transform);
+            }
+            else
+            {
+                Instantiate(LightAttackFX, new Vector3(midPointX, midPointY, transform.position.z),
+            new Quaternion(0f, 0f, 0f, 0f), transform);
+            }
+            if (collision.transform.name.Contains("ChargeBall"))
+            {
+                GameObject.Destroy(collision.transform.parent.gameObject);
+            }
+            if (collision.GetComponentInParent<CombatManager>())
+            {
+                collision.GetComponentInParent<CombatManager>().Hit(transform, collision.transform.name);
+            }
+            else if (collision.GetComponent<CombatManager>())
+            {
+                collision.GetComponent<CombatManager>().Hit(transform, collision.transform.name);
+            }
+        }
+        if (collision.gameObject.CompareTag("RightLauncher"))
+        {
+            var e_Rigidbody2D = GetComponent<Rigidbody2D>();
+            m_launched = true;
+            m_disableMovementTimer = 0.1f;
+            transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+            e_Rigidbody2D.AddForce(new Vector2(27, 13), ForceMode2D.Impulse);
+        }
+        if (collision.gameObject.CompareTag("LeftLauncher"))
+        {
+            var e_Rigidbody2D = GetComponent<Rigidbody2D>();
+            m_launched = true;
+            m_disableMovementTimer = 0.1f;
+            transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+            e_Rigidbody2D.AddForce(new Vector2(-27, 13), ForceMode2D.Impulse);
+        }
+        if (collision.gameObject.CompareTag("LeftTowerLauncher"))
+        {
+            var e_Rigidbody2D = GetComponent<Rigidbody2D>();
+            m_launched = true;
+            m_disableMovementTimer = 0.1f;
+            transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+            e_Rigidbody2D.AddForce(new Vector2(-7, 21), ForceMode2D.Impulse);
+        }
+        if (collision.gameObject.CompareTag("RightTowerLauncher"))
+        {
+            var e_Rigidbody2D = GetComponent<Rigidbody2D>();
+            m_launched = true;
+            m_disableMovementTimer = 0.1f;
+            transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+            e_Rigidbody2D.AddForce(new Vector2(7, 21), ForceMode2D.Impulse);
+        }
+        else if (collision.transform.tag == "MinionJumpUp" && m_grounded && CurrentJumpTarget == "VerticalPlatform")
+        {
+            transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+            transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(0, 9), ForceMode2D.Impulse);
+            m_launched = true;
+            CurrentJumpTarget = "MainPlatform";
+        }
+        if (collision.transform.tag == "MinionJumpToMainPlatform" && target.name != "RedMinionGondolaTarget" && m_grounded && CurrentJumpTarget == "MainPlatform")
+        {
+            //set velocity to zero to not carry momentum
+            transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+            transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-6f, 6f), ForceMode2D.Impulse);
+            m_launched = true;
+            //SelectTarget();
+            target = GondolaTarget.transform;
+            CurrentJumpTarget = "Gondola";
+        }
+        else if (collision.transform.tag == "MinionJumpToLBottomPlat" && m_grounded && (target.name == "RedMinionGondolaTarget" || target.name == "MinionAfterEyeTarget" || target.name == "LeftEdge") && !m_launched)
+        {
+            transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+            transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-2f, 1f), ForceMode2D.Impulse);
+            m_launched = true;
+            target = GondolaEdgeTarget.transform;
+            CurrentJumpTarget = "EnemyPlatform";
+        }
+        else if (collision.transform.tag == "Gondola" && m_grounded && transform.position.y > collision.transform.position.y)
+        {
+            transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(0f, .5f), ForceMode2D.Impulse);
+            target = GondolaEdgeTarget.transform;
+            if (EyeTarget != null)
+            {
+                CurrentJumpTarget = "EnemyPlatform";
+            }
+            else
+            {
+                CurrentJumpTarget = "EnemyKeep";
+            }
+
+        }
+        else if (collision.transform.tag == "MinionJumpToEnemyPlat" && m_grounded && CurrentJumpTarget == "EnemyPlatform" && EyeTarget != null)
+        {
+            rightLimit = GameObject.Find("CPULimitR2").transform;
+            leftLimit = GameObject.Find("CPULimitL2").transform;
+            transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+            transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-7f, 7), ForceMode2D.Impulse);
+            m_launched = true;
+            target = EyeTarget.transform;
+            CurrentJumpTarget = "None";
+        }
+        else if (collision.transform.tag == "MinionJumpToEnemyKeep" && m_grounded && KeepEyeTarget != null)
+        {
+            transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+            transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-3f, 4), ForceMode2D.Impulse);
+            target = KeepEyeTarget.transform;
+            CurrentJumpTarget = "None";
+        }
+        else if (collision.transform.tag == "MinionJumpSmall" && m_grounded && CurrentJumpTarget == "None" && EyeTarget != null)
+        {
+            transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+            transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-.5f, 0), ForceMode2D.Impulse);
+            target = EyeTarget.transform;
+            CurrentJumpTarget = "None";
+        }
+        if (collision.transform.tag == "MinionJumpLeft")
+        {
+            transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+            transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-6f, 5), ForceMode2D.Impulse);
+            CurrentJumpTarget = "VerticalPlatform";
+            SelectTarget();
+            m_launched = true;
+        }
+        if (collision.transform.tag == "EyeShot" && collision.GetComponentInParent<TowerEye>().teamColor != teamColor)
+        {
+
+            //Detect impact angle
+            var targetclosestPoint = new Vector2(collision.transform.position.x, collision.transform.position.y);
+            var sourceclosestPoint = new Vector2(transform.position.x, transform.position.y);
+
+            var positionDifference = sourceclosestPoint - targetclosestPoint;
+
+            //Must be done to detect y axis angle
+            float angleInRadians = Mathf.Atan2(positionDifference.y, positionDifference.x);
+
+            // Convert the angle to degrees.
+            float attackAngle = angleInRadians * Mathf.Rad2Deg;
+
+            TakeDamage(10f);
+
+            incomingAngle = attackAngle;
+            incomingKnockback = .8f;
+            incomingXMod = 2f;
+            incomingYMod = (2f + (currentDamage / 4));
+            HitStun(.2f);
+
+            Instantiate(EyeShotFX, new Vector3((targetclosestPoint.x), targetclosestPoint.y, transform.position.z),
+            new Quaternion(0f, 0f, 0f, 0f), transform);
+            GameObject.Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.name == "targetingHotzone" && !m_isInHotZone && collision.GetComponentInParent<TowerEye>().teamColor != teamColor)
+        {
+            collision.GetComponentInParent<TowerEye>().enemiesInBounds.Add(transform.gameObject);
+            m_isInHotZone = true;
+        }
+
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.transform.tag == "MinionBoardGondola" && !m_launched)
+        {
+            transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+            transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(0, 17f), ForceMode2D.Impulse);
+            m_launched = true;
+            target = GondolaEdgeTarget.transform;
+            CurrentJumpTarget = "EnemyPlatform";
         }
     }
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "targetingHotzone" && m_isInHotZone && collision.GetComponentInParent<TowerEye>().teamColor != teamColor)
+        {
+            collision.GetComponentInParent<TowerEye>().enemiesInBounds.Remove(transform.gameObject);
+            m_isInHotZone = false;
+        }
+    }
 }

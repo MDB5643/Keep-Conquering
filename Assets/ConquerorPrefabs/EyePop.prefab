@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2072483511998757482}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EyePop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,8 @@ GameObject:
   - component: {fileID: 7259540845220108566}
   - component: {fileID: 8975718310292091426}
   - component: {fileID: 7800698244502819086}
-  m_Layer: 0
+  - component: {fileID: 2819265082383258598}
+  m_Layer: 9
   m_Name: EyePop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,8 +59,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4972339827527596134}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.2}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 2072483511998757482}
   m_RootOrder: 0
@@ -84,7 +85,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -106,7 +107,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 1128346993694676502, guid: 195196694a2b0e34890339d662e98ee4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.72156864}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -147,3 +148,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb07ed6160897e4468b19717ac684f34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2819265082383258598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4972339827527596134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8029d696e5349744f9ba46d4cec1f084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  directions:
+    top: 1
+    bottom: 1
+    left: 1
+    right: 1

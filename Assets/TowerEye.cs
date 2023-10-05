@@ -14,12 +14,21 @@ public class TowerEye : MonoBehaviour
     public GameObject Launcher;
     public GameObject KeepWall;
     public GameObject MinionTarget;
+    public GameObject EyeShot;
+    public string teamColor;
 
     public GameObject Gondola;
 
     public float flashDuration;
     private float timeSinceDamage;
+    public float rotateSpeed;
+    public float rotationModifier = -180f;
+    private float timeSinceTrigger = 0.0f;
+    private float timeBetweenShots = 4f;
 
+    public List<GameObject> enemiesInBounds = new List<GameObject>();
+
+    private AudioManager_PrototypeHero m_audioManager;
     private Color defaultColor;
 
     // Start is called before the first frame update
@@ -27,6 +36,8 @@ public class TowerEye : MonoBehaviour
     {
         m_SR = transform.GetComponentInChildren<SpriteRenderer>();
         defaultColor = m_SR.color;
+
+        m_audioManager = AudioManager_PrototypeHero.instance;
     }
 
     // Update is called once per frame
@@ -37,11 +48,17 @@ public class TowerEye : MonoBehaviour
         {
             m_SR.color = defaultColor;
         }
-        if (currentDamage > 70)
+        if (currentDamage > 100)
         {
             Pop();
         }
+        RotateTowardEnemy();
 
+        if (timeSinceTrigger > timeBetweenShots)
+        {
+            Fire();
+            timeSinceTrigger = 0.0f;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -56,8 +73,27 @@ public class TowerEye : MonoBehaviour
         }
         else if (collision.transform.tag == "AttackHitbox")
         {
-            collision.GetComponentInParent<CombatManager>().Hit(transform, collision.transform.name);
+            if (collision.transform.GetComponentInParent<Conqueror>() && collision.transform.GetComponentInParent<Conqueror>().teamColor == teamColor)
+            {
+                //do nothing
+            }
+            else
+            {
+                collision.GetComponentInParent<CombatManager>().Hit(transform, collision.transform.name);
+            }
+            
         }
+    }
+
+    public void Fire()
+    {
+        Vector2 direction = (Vector2)enemiesInBounds[0].transform.position - (Vector2)transform.position;
+        GameObject eyeShot = Instantiate(EyeShot, transform, false);
+        eyeShot.layer = 0;
+        eyeShot.GetComponent<EyeShot>().target = enemiesInBounds[0].transform;
+
+        m_audioManager.PlaySound("EyeShot");
+        m_SR.color = Color.yellow;
     }
 
     public void TakeDamage(float damage)
@@ -87,7 +123,7 @@ public class TowerEye : MonoBehaviour
             Instantiate(Launcher, new Vector3(66.09f, -10.22f, 0), Quaternion.identity).SetActive(true);
         }
 
-        GameObject newDust = Instantiate(EyePop, dustSpawnPosition, Quaternion.identity) as GameObject;
+        //GameObject newDust = Instantiate(EyePop, dustSpawnPosition, Quaternion.identity) as GameObject;
 
         //Final tower behavior
         if (transform.CompareTag("RedKeepEye") || transform.CompareTag("RedMidEye"))
@@ -118,5 +154,23 @@ public class TowerEye : MonoBehaviour
 
         //ELIMINATE
         Destroy(gameObject);
+    }
+
+    public void RotateTowardEnemy()
+    {
+        if (enemiesInBounds.Count > 0)
+        {
+            timeSinceTrigger += Time.deltaTime;
+            transform.GetComponentInChildren<Animator>().SetBool("EnemyInRange", true);
+            Vector2 vectorToTarget = enemiesInBounds[0].transform.position - transform.position;
+            float angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg - rotationModifier;
+            Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
+            transform.GetComponentInChildren<SpriteRenderer>().transform.rotation = q;
+        }
+        else
+        {
+            timeSinceTrigger = 0.0f;
+            transform.GetComponentInChildren<Animator>().SetBool("EnemyInRange", false);
+        }
     }
 }

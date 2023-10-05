@@ -1,0 +1,2652 @@
+fileFormatVersion: 2
+guid: ac7b6eccc28df77409ac745e0c68edb3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7677770456028482644
+    second: Inquisitor-1.png (2)_0
+  - first:
+      213: 6252094575647871300
+    second: Inquisitor-1.png (2)_1
+  - first:
+      213: -1930034674560504361
+    second: Inquisitor-1.png (2)_2
+  - first:
+      213: 1176197036100694908
+    second: Inquisitor-1.png (2)_3
+  - first:
+      213: 8047015516276415563
+    second: Inquisitor-1.png (2)_4
+  - first:
+      213: 7765471463853136778
+    second: Inquisitor-1.png (2)_5
+  - first:
+      213: -3589832451137079399
+    second: Inquisitor-1.png (2)_6
+  - first:
+      213: -5990198207289275582
+    second: Inquisitor-1.png (2)_7
+  - first:
+      213: -1509741709119102793
+    second: Inquisitor-1.png (2)_8
+  - first:
+      213: 5921766678429250711
+    second: Inquisitor-1.png (2)_9
+  - first:
+      213: 1729654915754758142
+    second: Inquisitor-1.png (2)_10
+  - first:
+      213: -2255789780768191674
+    second: Inquisitor-1.png (2)_11
+  - first:
+      213: 2434400631505865732
+    second: Inquisitor-1.png (2)_12
+  - first:
+      213: 5793538143389051556
+    second: Inquisitor-1.png (2)_13
+  - first:
+      213: -9191385722700015864
+    second: Inquisitor-1.png (2)_14
+  - first:
+      213: -4802894459078995790
+    second: Inquisitor-1.png (2)_15
+  - first:
+      213: -4866574918903399395
+    second: Inquisitor-1.png (2)_16
+  - first:
+      213: 6668963565504929536
+    second: Inquisitor-1.png (2)_17
+  - first:
+      213: -2242629686476243639
+    second: Inquisitor-1.png (2)_18
+  - first:
+      213: 7834121163274771934
+    second: Inquisitor-1.png (2)_19
+  - first:
+      213: 1092890780912486570
+    second: Inquisitor-1.png (2)_20
+  - first:
+      213: -1919532434160139314
+    second: Inquisitor-1.png (2)_21
+  - first:
+      213: -1998862610317165803
+    second: Inquisitor-1.png (2)_22
+  - first:
+      213: -2988960618282809368
+    second: Inquisitor-1.png (2)_23
+  - first:
+      213: -4235595040688317624
+    second: Inquisitor-1.png (2)_24
+  - first:
+      213: -4977404572693860712
+    second: Inquisitor-1.png (2)_25
+  - first:
+      213: -5518210575834996130
+    second: Inquisitor-1.png (2)_26
+  - first:
+      213: -3054004013502782585
+    second: Inquisitor-1.png (2)_27
+  - first:
+      213: 4169398144464088017
+    second: Inquisitor-1.png (2)_28
+  - first:
+      213: -3348730914720955850
+    second: Inquisitor-1.png (2)_29
+  - first:
+      213: -2375505926555469002
+    second: Inquisitor-1.png (2)_30
+  - first:
+      213: 385782256449863764
+    second: Inquisitor-1.png (2)_31
+  - first:
+      213: -5916993742749810321
+    second: Inquisitor-1.png (2)_32
+  - first:
+      213: 2115826236453145625
+    second: Inquisitor-1.png (2)_33
+  - first:
+      213: 6905545167657499496
+    second: Inquisitor-1.png (2)_34
+  - first:
+      213: 9076450950921592265
+    second: Inquisitor-1.png (2)_35
+  - first:
+      213: 2662225296482195440
+    second: Inquisitor-1.png (2)_36
+  - first:
+      213: 8798074784196701378
+    second: Inquisitor-1.png (2)_37
+  - first:
+      213: -7765695348628318366
+    second: Inquisitor-1.png (2)_38
+  - first:
+      213: -977414617876161104
+    second: Inquisitor-1.png (2)_39
+  - first:
+      213: -7423356473173760207
+    second: Inquisitor-1.png (2)_40
+  - first:
+      213: 1595294052334672032
+    second: Inquisitor-1.png (2)_41
+  - first:
+      213: -2979734360101014974
+    second: Inquisitor-1.png (2)_42
+  - first:
+      213: -1218598883825280000
+    second: Inquisitor-1.png (2)_43
+  - first:
+      213: -7401062411390776555
+    second: Inquisitor-1.png (2)_44
+  - first:
+      213: -6703523625002061653
+    second: Inquisitor-1.png (2)_45
+  - first:
+      213: 1548982853100096191
+    second: Inquisitor-1.png (2)_46
+  - first:
+      213: -4518102427110101096
+    second: Inquisitor-1.png (2)_47
+  - first:
+      213: -6730533442433336159
+    second: Inquisitor-1.png (2)_48
+  - first:
+      213: 558603605261774899
+    second: Inquisitor-1.png (2)_49
+  - first:
+      213: -135047286355204101
+    second: Inquisitor-1.png (2)_50
+  - first:
+      213: 4007501076179143560
+    second: Inquisitor-1.png (2)_51
+  - first:
+      213: -2465219766763639218
+    second: Inquisitor-1.png (2)_52
+  - first:
+      213: -5448516201710785544
+    second: Inquisitor-1.png (2)_53
+  - first:
+      213: 8956099605834220320
+    second: Inquisitor-1.png (2)_54
+  - first:
+      213: -6950609502208456947
+    second: Inquisitor-1.png (2)_55
+  - first:
+      213: 5218152782115700860
+    second: Inquisitor-1.png (2)_56
+  - first:
+      213: 2517136847291671759
+    second: Inquisitor-1.png (2)_57
+  - first:
+      213: -81752658404303076
+    second: Inquisitor-1.png (2)_58
+  - first:
+      213: -2745772986771066005
+    second: Inquisitor-1.png (2)_59
+  - first:
+      213: 5533564024746293469
+    second: Inquisitor-1.png (2)_60
+  - first:
+      213: 7940008797746815998
+    second: Inquisitor-1.png (2)_61
+  - first:
+      213: -1771459040987777348
+    second: Inquisitor-1.png (2)_62
+  - first:
+      213: 832783774438919063
+    second: Inquisitor-1.png (2)_63
+  - first:
+      213: -4935109716745196596
+    second: Inquisitor-1.png (2)_64
+  - first:
+      213: 5569215657167066890
+    second: Inquisitor-1.png (2)_65
+  - first:
+      213: -330874108239073363
+    second: Inquisitor-1.png (2)_66
+  - first:
+      213: 5642736832664733753
+    second: Inquisitor-1.png (2)_67
+  - first:
+      213: 7213556367156270743
+    second: Inquisitor-1.png (2)_68
+  - first:
+      213: -6629272107953695578
+    second: Inquisitor-1.png (2)_69
+  - first:
+      213: 2857576161768679981
+    second: Inquisitor-1.png (2)_70
+  - first:
+      213: -5087877742192355645
+    second: Inquisitor-1.png (2)_71
+  - first:
+      213: -7298200312627787861
+    second: Inquisitor-1.png (2)_72
+  - first:
+      213: -3863592273654687142
+    second: Inquisitor-1.png (2)_73
+  - first:
+      213: 6985198103599347598
+    second: Inquisitor-1.png (2)_74
+  - first:
+      213: 7122621607596258598
+    second: Inquisitor-1.png (2)_75
+  - first:
+      213: -7439957899135721040
+    second: Inquisitor-1.png (2)_76
+  - first:
+      213: 7034587967953726718
+    second: Inquisitor-1.png (2)_77
+  - first:
+      213: -4028853997486152637
+    second: Inquisitor-1.png (2)_78
+  - first:
+      213: -458075355353815486
+    second: Inquisitor-1.png (2)_79
+  - first:
+      213: 7302875439161001261
+    second: Inquisitor-1.png (2)_80
+  - first:
+      213: -8168849831763130790
+    second: Inquisitor-1.png (2)_81
+  - first:
+      213: 2924581204965507831
+    second: Inquisitor-1.png (2)_82
+  - first:
+      213: 8808637433909643918
+    second: Inquisitor-1.png (2)_83
+  - first:
+      213: -1776872598743197373
+    second: Inquisitor-1.png (2)_84
+  - first:
+      213: -5464051878658993008
+    second: Inquisitor-1.png (2)_85
+  - first:
+      213: 7524543640947627855
+    second: Inquisitor-1.png (2)_86
+  - first:
+      213: -3812744680967423371
+    second: Inquisitor-1.png (2)_87
+  - first:
+      213: -5007158622786541327
+    second: Inquisitor-1.png (2)_88
+  - first:
+      213: -6779488729046483693
+    second: Inquisitor-1.png (2)_89
+  - first:
+      213: -4478433699485377314
+    second: Inquisitor-1.png (2)_90
+  - first:
+      213: -8657249534623045830
+    second: Inquisitor-1.png (2)_91
+  - first:
+      213: 666916580450848301
+    second: Inquisitor-1.png (2)_92
+  - first:
+      213: -7898482551877678721
+    second: Inquisitor-1.png (2)_93
+  - first:
+      213: 5435313664515999002
+    second: Inquisitor-1.png (2)_94
+  - first:
+      213: -2301431307108890012
+    second: Inquisitor-1.png (2)_95
+  - first:
+      213: 3255621635624553959
+    second: Inquisitor-1.png (2)_96
+  - first:
+      213: -8862117418917407063
+    second: Inquisitor-1.png (2)_97
+  - first:
+      213: -4436040347523952778
+    second: Inquisitor-1.png (2)_98
+  - first:
+      213: -8662523004198004818
+    second: Inquisitor-1.png (2)_99
+  - first:
+      213: -1264913059504666076
+    second: Inquisitor-1.png (2)_100
+  - first:
+      213: -5619856140844179726
+    second: Inquisitor-1.png (2)_101
+  - first:
+      213: 3393202324797938182
+    second: Inquisitor-1.png (2)_102
+  - first:
+      213: 1992348541885223111
+    second: Inquisitor-1.png (2)_103
+  - first:
+      213: 310703728958375654
+    second: Inquisitor-1.png (2)_104
+  - first:
+      213: 3103195445916591648
+    second: Inquisitor-1.png (2)_105
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1120
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3fe65e274137590800000000000000
+      internalID: -7677770456028482644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1120
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44153ab34e6e3c650800000000000000
+      internalID: 6252094575647871300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1120
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd62a270b32735e0800000000000000
+      internalID: -1930034674560504361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1120
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7336aaf8f0b25010800000000000000
+      internalID: 1176197036100694908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1120
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c56b52afdbcaf60800000000000000
+      internalID: 8047015516276415563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1120
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b1664372f74cb60800000000000000
+      internalID: 7765471463853136778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1120
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997fdcac76a5e2ec0800000000000000
+      internalID: -3589832451137079399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1120
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b4758c77a8edca0800000000000000
+      internalID: -5990198207289275582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1040
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b06d5d1ae15c0be0800000000000000
+      internalID: -1509741709119102793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1040
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794358e4b675e2250800000000000000
+      internalID: 5921766678429250711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_10
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1040
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff02955bf7f00810800000000000000
+      internalID: 1729654915754758142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_11
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1040
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b0b556523d1b0e0800000000000000
+      internalID: -2255789780768191674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1040
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40cc4e1f97ab8c120800000000000000
+      internalID: 2434400631505865732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_13
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1040
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa6165fe38c66050800000000000000
+      internalID: 5793538143389051556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1040
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8075edc1263a17080800000000000000
+      internalID: -9191385722700015864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_15
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1040
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b097e0bfe0b85db0800000000000000
+      internalID: -4802894459078995790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1cffed35e3767cb0800000000000000
+      internalID: -4866574918903399395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_17
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 960
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f91f5770bec8c50800000000000000
+      internalID: 6668963565504929536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_18
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 960
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d76de9e2490e0e0800000000000000
+      internalID: -2242629686476243639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_19
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 960
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edddc58e0b368bc60800000000000000
+      internalID: 7834121163274771934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_20
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 960
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa88696ff5aba2f00800000000000000
+      internalID: 1092890780912486570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_21
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 960
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec34b07db637c55e0800000000000000
+      internalID: -1919532434160139314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 960
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b3c3ddb0d9244e0800000000000000
+      internalID: -1998862610317165803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_23
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 960
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e70f9367241586d0800000000000000
+      internalID: -2988960618282809368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 880
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84bdd5b60c42835c0800000000000000
+      internalID: -4235595040688317624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_25
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 880
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e6d2d99e4bceab0800000000000000
+      internalID: -4977404572693860712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_26
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 880
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e522d8fc7b06b63b0800000000000000
+      internalID: -5518210575834996130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_27
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 880
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 783ac80d78ffd95d0800000000000000
+      internalID: -3054004013502782585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_28
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 880
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db64ff958dacd930800000000000000
+      internalID: 4169398144464088017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_29
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 880
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63240b3b9fae681d0800000000000000
+      internalID: -3348730914720955850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_30
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 880
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b73dd12f1880fd0800000000000000
+      internalID: -2375505926555469002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_31
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 880
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450c7541be29a5500800000000000000
+      internalID: 385782256449863764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6140316a8d92eda0800000000000000
+      internalID: -5916993742749810321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_33
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 800
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ccd3e70ccec5d10800000000000000
+      internalID: 2115826236453145625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_34
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 800
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86bf3aa2ebc65df50800000000000000
+      internalID: 6905545167657499496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_35
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 800
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd10fefc0806fd70800000000000000
+      internalID: 9076450950921592265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_36
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 800
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f751e45dcf12f420800000000000000
+      internalID: 2662225296482195440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_37
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 800
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ccad5be66a091a70800000000000000
+      internalID: 8798074784196701378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_38
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 800
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2671b1f8935ba3490800000000000000
+      internalID: -7765695348628318366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_39
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 800
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd973765968f62f0800000000000000
+      internalID: -977414617876161104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137a1674e90faf890800000000000000
+      internalID: -7423356473173760207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_41
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 720
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a893b50d7f932610800000000000000
+      internalID: 1595294052334672032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_42
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 720
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2423725036bd5a6d0800000000000000
+      internalID: -2979734360101014974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_43
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 720
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c18e585caa61fe0800000000000000
+      internalID: -1218598883825280000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_44
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 720
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b8e8803f42a4990800000000000000
+      internalID: -7401062411390776555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_45
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 720
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba03054a7cc48f2a0800000000000000
+      internalID: -6703523625002061653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_46
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 720
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbac332b2b71f7510800000000000000
+      internalID: 1548982853100096191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_47
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 720
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89fa54dc7c97c41c0800000000000000
+      internalID: -4518102427110101096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1acbfd67e775892a0800000000000000
+      internalID: -6730533442433336159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_49
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 640
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33071e5f40f80c700800000000000000
+      internalID: 558603605261774899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_50
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 640
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7eae46537302ef0800000000000000
+      internalID: -135047286355204101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_51
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 640
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b47a20ff08d9730800000000000000
+      internalID: 4007501076179143560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_52
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 640
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e28c4fea7c9cdd0800000000000000
+      internalID: -2465219766763639218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_53
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 640
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb611cc16bf264b0800000000000000
+      internalID: -5448516201710785544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_54
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 640
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023c3cad3257a4c70800000000000000
+      internalID: 8956099605834220320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_55
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 640
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d070960db797a8f90800000000000000
+      internalID: -6950609502208456947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 560
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7009b1fe4a9a6840800000000000000
+      internalID: 5218152782115700860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_57
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 560
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4edd150aaaee220800000000000000
+      internalID: 2517136847291671759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_58
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 560
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f1e5ce36e8ddef0800000000000000
+      internalID: -81752658404303076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_59
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 560
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63b5a9240e05e9d0800000000000000
+      internalID: -2745772986771066005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_60
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 560
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd832e4992b2bcc40800000000000000
+      internalID: 5533564024746293469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_61
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 560
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3ec2ffee3903e60800000000000000
+      internalID: 7940008797746815998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_62
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 560
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb6f4c743638a67e0800000000000000
+      internalID: -1771459040987777348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_63
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 560
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b042a3e64ae8b00800000000000000
+      internalID: 832783774438919063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccbe2d52cd7f28bb0800000000000000
+      internalID: -4935109716745196596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_65
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 480
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a079cfa1224d94d40800000000000000
+      internalID: 5569215657167066890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_66
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 480
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf290960cf786bf0800000000000000
+      internalID: -330874108239073363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_67
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 480
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9388ef7b0470f4e40800000000000000
+      internalID: 5642736832664733753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_68
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 480
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7965b9ffb43bb1460800000000000000
+      internalID: 7213556367156270743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_69
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 480
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4d30624281004a0800000000000000
+      internalID: -6629272107953695578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_70
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 480
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2aa8d8016628a720800000000000000
+      internalID: 2857576161768679981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_71
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 480
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c61204762a3469b0800000000000000
+      internalID: -5087877742192355645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba70d22bb7597ba90800000000000000
+      internalID: -7298200312627787861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_73
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 400
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a5edb1c43c16ac0800000000000000
+      internalID: -3863592273654687142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_74
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 400
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8775c28aa860f060800000000000000
+      internalID: 6985198103599347598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_75
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 400
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625fb466d92a8d260800000000000000
+      internalID: 7122621607596258598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_76
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 400
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b1672695b5ffb890800000000000000
+      internalID: -7439957899135721040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_77
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 400
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc6e1b6c70ef9160800000000000000
+      internalID: 7034587967953726718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_78
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 400
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 344ece392a2a618c0800000000000000
+      internalID: -4028853997486152637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_79
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 400
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24666cb24e694a9f0800000000000000
+      internalID: -458075355353815486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25cd160586095560800000000000000
+      internalID: 7302875439161001261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_81
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 320
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56cf32cb5a62ae80800000000000000
+      internalID: -8168849831763130790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_82
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 320
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2c0ce5c13369820800000000000000
+      internalID: 2924581204965507831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_83
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 320
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a846373119e3a70800000000000000
+      internalID: 8808637433909643918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_84
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 320
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34959c429c74757e0800000000000000
+      internalID: -1776872598743197373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_85
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 320
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094993224c9cb24b0800000000000000
+      internalID: -5464051878658993008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_86
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 320
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f479b9f139c8c6860800000000000000
+      internalID: 7524543640947627855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_87
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 320
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a3da7d9e8661bc0800000000000000
+      internalID: -3812744680967423371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f826caf2cff28ab0800000000000000
+      internalID: -5007158622786541327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_89
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 240
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d7b629bea6ae1a0800000000000000
+      internalID: -6779488729046483693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_90
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 240
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc1900374869d1c0800000000000000
+      internalID: -4478433699485377314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_91
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 240
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37a0e49a654bd780800000000000000
+      internalID: -8657249534623045830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_92
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 240
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e4790b81d514900800000000000000
+      internalID: 666916580450848301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_93
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 240
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79c5be87f3f26290800000000000000
+      internalID: -7898482551877678721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_94
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 240
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a158d48fafc1e6b40800000000000000
+      internalID: 5435313664515999002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_95
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 240
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46acfc07b6caf00e0800000000000000
+      internalID: -2301431307108890012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed4a7ae0aa4e2d20800000000000000
+      internalID: 3255621635624553959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_97
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 160
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a650a7392f630580800000000000000
+      internalID: -8862117418917407063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_98
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 160
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67fc88c9ec40072c0800000000000000
+      internalID: -4436040347523952778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_99
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 160
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7d024493988c780800000000000000
+      internalID: -8662523004198004818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_100
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 160
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ac8703640227ee0800000000000000
+      internalID: -1264913059504666076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_101
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 160
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe5f2c7d924202b0800000000000000
+      internalID: -5619856140844179726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_102
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 160
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a5c945983171f20800000000000000
+      internalID: 3393202324797938182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_103
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 160
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c016d3617e36ab10800000000000000
+      internalID: 1992348541885223111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e604f23567df4400800000000000000
+      internalID: 310703728958375654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inquisitor-1.png (2)_105
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 80
+        width: 100
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 026e77e01d3c01b20800000000000000
+      internalID: 3103195445916591648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

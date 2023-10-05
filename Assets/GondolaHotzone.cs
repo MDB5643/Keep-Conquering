@@ -21,12 +21,12 @@ public class GondolaHotzone : MonoBehaviour
     {
         if (!collision.gameObject.name.Contains("Hook1"))
         {
-            if (collision.gameObject.GetComponent<Conqueror>() )
+            if ((collision.gameObject.GetComponent<Conqueror>() && collision.gameObject.GetComponent<Conqueror>().teamColor == "Blue") || (collision.gameObject.GetComponent<MinionBehavior>() && collision.gameObject.GetComponent<MinionBehavior>().teamColor == "Blue"))
             {
                 //add tags for red vs blue team and update later
                 parentPlatform.blueMinionCount++;
             }
-            if (collision.gameObject.GetComponent<MinionBehavior>())
+            if ((collision.gameObject.GetComponent<Conqueror>() && collision.gameObject.GetComponent<Conqueror>().teamColor == "Red") || (collision.gameObject.GetComponent<MinionBehavior>() && collision.gameObject.GetComponent<MinionBehavior>().teamColor == "Red"))
             {
                 parentPlatform.redMinionCount++;
             }
@@ -37,7 +37,7 @@ public class GondolaHotzone : MonoBehaviour
     {
         if (!collision.gameObject.name.Contains("Hook1"))
         {
-            if (collision.gameObject.GetComponent<Conqueror>() && !collision.gameObject.name.Contains("Hook1"))
+            if ((collision.gameObject.GetComponent<Conqueror>() && collision.gameObject.GetComponent<Conqueror>().teamColor == "Blue") || (collision.gameObject.GetComponent<MinionBehavior>() && collision.gameObject.GetComponent<MinionBehavior>().teamColor == "Blue") && !collision.gameObject.name.Contains("Hook1"))
             {
                 //add tags for red vs blue team and update later
                 if (parentPlatform.blueMinionCount > 0)
@@ -46,7 +46,7 @@ public class GondolaHotzone : MonoBehaviour
                 }
 
             }
-            if (collision.gameObject.GetComponent<MinionBehavior>())
+            if ((collision.gameObject.GetComponent<Conqueror>() && collision.gameObject.GetComponent<Conqueror>().teamColor == "Red") || (collision.gameObject.GetComponent<MinionBehavior>() && collision.gameObject.GetComponent<MinionBehavior>().teamColor == "Red"))
             {
                 if (parentPlatform.redMinionCount > 0)
                 {

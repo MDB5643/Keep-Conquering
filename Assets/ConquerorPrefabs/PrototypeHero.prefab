@@ -112,7 +112,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 67b3467d9e48611469ab34821e7eef17, type: 2}
+  - {fileID: 15303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -435,6 +435,7 @@ GameObject:
   - component: {fileID: 3183573821175429781}
   - component: {fileID: 4800942298591410584}
   - component: {fileID: 1527678593}
+  - component: {fileID: 4681266220763693709}
   m_Layer: 9
   m_Name: ShieldBar
   m_TagString: Untagged
@@ -476,7 +477,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -529,6 +530,25 @@ MonoBehaviour:
   medHealth3: {fileID: 5790225955870995648, guid: cc72ae3343d84db4c96ab2dc716d9039, type: 3}
   lowHealth1: {fileID: -2512460877374131354, guid: cc72ae3343d84db4c96ab2dc716d9039, type: 3}
   lowHealth2: {fileID: 5993966139679350167, guid: cc72ae3343d84db4c96ab2dc716d9039, type: 3}
+--- !u!114 &4681266220763693709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2611625238851077509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8029d696e5349744f9ba46d4cec1f084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  directions:
+    top: 1
+    bottom: 1
+    left: 1
+    right: 1
 --- !u!1 &4860009054595029925
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,6 +671,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a60f39d280f172e44ab73cb24a06b940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  teamColor: Blue
+  playerNumber: 1
   m_runSpeed: 4.5
   m_walkSpeed: 2
   m_jumpForce: 7.5
@@ -687,6 +709,10 @@ MonoBehaviour:
   m_dSmashCharging: 0
   m_fullCharge: 0
   m_isParrying: 0
+  m_isInKnockback: 0
+  m_isInHotZone: 0
+  m_cameraShake: 0
+  m_shakeIntensity: 0.1
   m_maxSmashChargeTime: 2
   m_chargeModifier: 0
   m_timeSinceChargeStart: 0
@@ -704,9 +730,18 @@ MonoBehaviour:
   m_timeSinceSideSpecial: 0
   m_timeSinceStun: 5
   m_timeSinceHitStun: 0
+  m_timeSinceKnockBack: 0
+  m_KnockBackDuration: 0.2
+  m_KnockBackMomentumX: 0
+  m_KnockBackMomentumY: 0
   m_hitStunDuration: 0
   m_gravity: 0
   m_maxSpeed: 5
+  m_isInHitStop: 0
+  isInStartUp: 0
+  m_hitStopDuration: 0
+  m_timeSinceHitStop: 0
+  animSpeed: 0
   incomingKnockback: 0
   incomingAngle: 0
   incomingXMod: 0
@@ -714,6 +749,7 @@ MonoBehaviour:
   m_WhatIsPortal:
     serializedVersion: 2
     m_Bits: 64
+  ledge: {fileID: 0}
   jabPoint: {fileID: 3445639847473644805}
   upTiltPoint: {fileID: 2776925981775119306}
   backPoint: {fileID: 2727378148215394070}
@@ -721,16 +757,19 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 512
-  KnockoutFX: {fileID: 2071228030341280552, guid: 8277e46428c59ce409a57f50a206b9c6, type: 3}
+  KnockoutFX: {fileID: 181668162739009514, guid: a281fa3ea3c817d488e3c8dde98f496d, type: 3}
+  LightAttackFX: {fileID: 3598523154694509901, guid: 4186a8507c8e2dc42a97d7745f3942f8, type: 3}
   HeavyAttackFX: {fileID: 1724291888056607309, guid: 34e8f2ffa6331ff4b9f7be45413dab33, type: 3}
   ChargeFlashFX: {fileID: 4204095689380797397, guid: 81ead744f7dafc649a696aa3e0018451, type: 3}
   BlockFX: {fileID: 3569397387010719113, guid: 9300fb4b08a7c0f448a15475613f22d5, type: 3}
+  EyeShotFX: {fileID: 0}
   shieldBar: {fileID: 1527678593}
   hookPrefab: {fileID: 1727778989995994042, guid: 1be6fdbead07b184d999629ddec2db83, type: 3}
   hookChain: {fileID: 543004347}
   launchOffset: {fileID: 214578561146173387}
   m_SpriteShaper: {fileID: 0}
   hookActive: 0
+  isGrappled: 0
   jabRange: 1
   jabDamage: 3.5
   jabKB: 1
@@ -741,6 +780,7 @@ MonoBehaviour:
   downAirDamage: 5
   downAirKB: 1.4
   m_audioManager: {fileID: 4699199415772779553, guid: 8256f17f1004efd40b46f598cabec2ea, type: 3}
+  m_TimeSinceJab2: 0
 --- !u!50 &7853426713638563735
 Rigidbody2D:
   serializedVersion: 4
@@ -890,6 +930,7 @@ GameObject:
   - component: {fileID: 2575716727761948787}
   - component: {fileID: 8856003979901607121}
   - component: {fileID: 8663618845936804149}
+  - component: {fileID: 3163294721534819861}
   m_Layer: 9
   m_Name: Sprite
   m_TagString: Untagged
@@ -931,7 +972,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6b08ac47c4a3ea14fbc9ab0c8a3375f7, type: 2}
+  - {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -957,7 +998,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.125, y: 2.5}
+  m_Size: {x: 0.59375, y: 1.375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -973,7 +1014,7 @@ Animator:
   m_GameObject: {fileID: 5419930034650718081}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1d4af8c325522f144a3ebdefb8d089f1, type: 2}
+  m_Controller: {fileID: 9100000, guid: d6c8afd3f2bf7a6419f8f3043556a01c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1017,6 +1058,7 @@ MonoBehaviour:
   dairHitbox: {fileID: 1377951757860842415, guid: fbb1cc0d2fb5a444abbaa4bea5ec2256, type: 3}
   sideSpec1Hitbox: {fileID: 4004671583718560499, guid: a6bf5760a18e9914ab57187ff70aef1b, type: 3}
   sideSpec2Hitbox: {fileID: 2260828106259116969, guid: 14cc48f74117eb0499d34fd5aa2cdb05, type: 3}
+  activeHitbox: {fileID: 0}
   lingerDeltaTime: 0.03
   lingerDurationSeconds: 0
 --- !u!114 &8663618845936804149
@@ -1031,6 +1073,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc83f482a9ec5c419c18a4ed6aa0b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3163294721534819861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5419930034650718081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8029d696e5349744f9ba46d4cec1f084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  directions:
+    top: 1
+    bottom: 1
+    left: 1
+    right: 1
 --- !u!1 &5930689989181052918
 GameObject:
   m_ObjectHideFlags: 0

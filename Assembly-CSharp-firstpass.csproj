@@ -56,9 +56,6 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
-    <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\CarSelfRighting.cs" />
-    <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\Mudguard.cs" />
     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\Explosive.cs" />
     <Compile Include="Assets\Standard Assets\Utility\DynamicShadowSettings.cs" />
     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
@@ -68,15 +65,11 @@
     <Compile Include="Assets\Standard Assets\Cameras\Scripts\ProtectCameraFromWallClip.cs" />
     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
     <Compile Include="Assets\Standard Assets\Cameras\Scripts\HandHeldCam.cs" />
-    <Compile Include="Assets\Standard Assets\Vehicles\Aircraft\Scripts\AeroplanePropellerAnimator.cs" />
     <Compile Include="Assets\Standard Assets\Cameras\Scripts\FreeLookCam.cs" />
     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\AfterburnerPhysicsForce.cs" />
-    <Compile Include="Assets\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneController.cs" />
     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\ExplosionPhysicsForce.cs" />
     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\PlanarReflection.cs" />
     <Compile Include="Assets\Standard Assets\Utility\TimedObjectActivator.cs" />
-    <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\BrakeLight.cs" />
-    <Compile Include="Assets\Standard Assets\Vehicles\Aircraft\Scripts\JetParticleEffect.cs" />
     <Compile Include="Assets\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
     <Compile Include="Assets\Standard Assets\Utility\CameraRefocus.cs" />
     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
@@ -84,20 +77,15 @@
     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\SmokeParticles.cs" />
     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
     <Compile Include="Assets\Standard Assets\Cameras\Scripts\AutoCam.cs" />
-    <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\CarAIControl.cs" />
-    <Compile Include="Assets\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneUserControl4Axis.cs" />
-    <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\SkidTrail.cs" />
     <Compile Include="Assets\Standard Assets\Utility\CurveControlledBob.cs" />
     <Compile Include="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
     <Compile Include="Assets\Standard Assets\2D\Scripts\Camera2DFollow.cs" />
-    <Compile Include="Assets\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneControlSurfaceAnimator.cs" />
     <Compile Include="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\GerstnerDisplace.cs" />
     <Compile Include="Assets\Standard Assets\Cameras\Scripts\PivotBasedCameraRig.cs" />
     <Compile Include="Assets\Standard Assets\Utility\AutoMoveAndRotate.cs" />
     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
-    <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\CarAudio.cs" />
     <Compile Include="Assets\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" />
     <Compile Include="Assets\Standard Assets\Utility\FPSCounter.cs" />
     <Compile Include="Assets\Standard Assets\Utility\SimpleActivatorMenu.cs" />
@@ -105,11 +93,8 @@
     <Compile Include="Assets\Standard Assets\Cameras\Scripts\TargetFieldOfView.cs" />
     <Compile Include="Assets\Standard Assets\Utility\SimpleMouseRotator.cs" />
     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\ExplosionFireAndDebris.cs" />
-    <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
     <Compile Include="Assets\Standard Assets\Cameras\Scripts\AbstractTargetFollower.cs" />
-    <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\CarController.cs" />
     <Compile Include="Assets\Standard Assets\Utility\SmoothFollow.cs" />
-    <Compile Include="Assets\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneUserControl2Axis.cs" />
     <Compile Include="Assets\Standard Assets\Utility\WaypointCircuit.cs" />
     <Compile Include="Assets\Standard Assets\Utility\TimedObjectDestructor.cs" />
     <Compile Include="Assets\Standard Assets\Characters\RollerBall\Scripts\Ball.cs" />
@@ -120,16 +105,13 @@
     <Compile Include="Assets\Standard Assets\Utility\WaypointProgressTracker.cs" />
     <Compile Include="Assets\Standard Assets\Utility\DragRigidbody.cs" />
     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
-    <Compile Include="Assets\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneAudio.cs" />
     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\FireLight.cs" />
     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\MeshContainer.cs" />
     <Compile Include="Assets\Standard Assets\Utility\FollowTarget.cs" />
-    <Compile Include="Assets\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneAiControl.cs" />
     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\ExtinguishableParticleSystem.cs" />
     <Compile Include="Assets\Standard Assets\Utility\ForcedReset.cs" />
     <Compile Include="Assets\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
-    <Compile Include="Assets\Standard Assets\Vehicles\Aircraft\Scripts\LandingGear.cs" />
     <Compile Include="Assets\Standard Assets\Utility\ObjectResetter.cs" />
     <Compile Include="Assets\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
     <Compile Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs" />
@@ -138,16 +120,15 @@
     <Compile Include="Assets\Standard Assets\2D\Scripts\Restarter.cs" />
     <Compile Include="Assets\Standard Assets\2D\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\WaterHoseParticles.cs" />
-    <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\CarUserControl.cs" />
     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
     <Compile Include="Assets\Standard Assets\Utility\EventSystemChecker.cs" />
     <Compile Include="Assets\Standard Assets\Utility\ActivateTrigger.cs" />
     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\Water.cs" />
     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
-    <Compile Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" />
     <Compile Include="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
     <Compile Include="Assets\Standard Assets\Cameras\Scripts\LookatTarget.cs" />
+    <Compile Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" />
     <Compile Include="Assets\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs" />
     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
     <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\Hose.cs" />
@@ -160,11 +141,8 @@
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
-     <None Include="Assets\Standard Assets\Vehicles\Car\CarGuidelines.txt" />
-     <None Include="Assets\Standard Assets\Vehicles\Aircraft\AircraftGuidelines.txt" />
      <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
-     <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
      <None Include="Assets\Standard Assets\Environment\Water (Basic)\DO_NOT_WORK_IN_VR.txt" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
@@ -183,9 +161,7 @@
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
-     <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
-     <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpec.shader" />
      <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.1.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -784,11 +760,17 @@
     <Reference Include="Unity.2D.PixelPerfect">
       <HintPath>Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
       <HintPath>Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
@@ -807,6 +789,9 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
@@ -832,11 +817,17 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.001">
+      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
@@ -847,6 +838,12 @@
     <Reference Include="Unity.2D.IK.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
@@ -855,6 +852,12 @@
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
@@ -871,11 +874,17 @@
     <Reference Include="Unity.2D.Common.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

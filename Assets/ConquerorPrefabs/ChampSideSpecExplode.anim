@@ -21,15 +21,15 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: -3593745605823623950, guid: 195196694a2b0e34890339d662e98ee4, type: 3}
-    - time: 0.05
+    - time: 0.033333335
       value: {fileID: 9093815231183945096, guid: 98d773084ad7b614b9a09ae164029883, type: 3}
-    - time: 0.11666667
+    - time: 0.083333336
       value: {fileID: 3697401685734527965, guid: fd59dd872fd234e468c58757d8d419af, type: 3}
-    - time: 0.2
+    - time: 0.16666667
       value: {fileID: 3934958395477235590, guid: 0f6c154412708974187de645163a1c49, type: 3}
-    - time: 0.28333333
+    - time: 0.25
       value: {fileID: 900367903008391018, guid: 8b4631abbcd10874cad9e554ebae65c1, type: 3}
-    - time: 0.38333333
+    - time: 0.35
       value: {fileID: -426902850416973268, guid: a0befc4ec9889724ba419c18c83a7af7, type: 3}
     attribute: m_Sprite
     path: 
@@ -61,7 +61,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.4
+    m_StopTime: 0.36666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -80,4 +80,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.35
+    functionName: destroyEvent
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

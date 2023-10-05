@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8704984547511526365}
   - component: {fileID: 526453007059125036}
-  - component: {fileID: -7675906616830626332}
+  - component: {fileID: 7103773709407798476}
   m_Layer: 15
   m_Name: ChampSideSpecHB
   m_TagString: AttackHitbox
@@ -68,7 +68,7 @@ PolygonCollider2D:
       - {x: 1.5777252, y: -0.20164065}
       - {x: 1.577725, y: -0.20164067}
       - {x: 1.5738304, y: -0.08270702}
---- !u!114 &-7675906616830626332
+--- !u!114 &7103773709407798476
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

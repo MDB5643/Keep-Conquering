@@ -13,6 +13,9 @@ public class PlayerManager : MonoBehaviour
     public GameObject redMinion;
     public GameObject blueMinion;
 
+    public int redMinionCount = 0;
+    public int blueMinionCount = 0;
+
     public Text p1DamageDisplay;
     public Text p2DamageDisplay;
     public Text p3DamageDisplay;
@@ -24,6 +27,7 @@ public class PlayerManager : MonoBehaviour
     public GameObject m_conqueror;
     public GameObject m_conqueror2;
     public GameObject m_CPU;
+    public GameObject m_BB_CPU;
     public float minionSpawnElapsedTime;
     public float secondsBetweenSpawn = 30;
 
@@ -38,20 +42,38 @@ public class PlayerManager : MonoBehaviour
     {
         try
         {
+            
             characterIndex = 0;
             if (MenuEvents.gameModeSelect == 1)
             {
                 m_conqueror = Instantiate(playerPrefabs[MenuEvents.P1Select], new Vector3(-45f, 6f, 0),  //Vector3(76f, 6f, 0),
                                 Quaternion.identity);
-                m_conqueror2 = Instantiate(m_CPU, new Vector3(90f, 6f, 0),  //Vector3(76f, 6f, 0),
+                
+                if (m_CPU != null && MenuEvents.P2Select == 0)
+                {
+                    m_conqueror2 = Instantiate(m_CPU, new Vector3(90f, 6f, 0),  //Vector3(76f, 6f, 0),
                                 Quaternion.identity);
+                }
+                else if (m_BB_CPU != null && MenuEvents.P2Select == 1)
+                {
+                    m_conqueror2 = Instantiate(m_BB_CPU, new Vector3(90f, 6f, 0),  //Vector3(76f, 6f, 0),
+                                Quaternion.identity);
+                }
             }
             else if (MenuEvents.gameModeSelect == 2)
             {
                 m_conqueror = Instantiate(playerPrefabs[MenuEvents.P1Select], new Vector3(-4.72f, 1.5f, 0),  //Vector3(76f, 6f, 0),
                                 Quaternion.identity);
-                m_conqueror2 = Instantiate(m_CPU, new Vector3(4.72f, 1.5f, 0),  //Vector3(76f, 6f, 0),
+                if (m_CPU != null && MenuEvents.P2Select == 0)
+                {
+                    m_conqueror2 = Instantiate(m_CPU, new Vector3(1f, 6f, 0),  //Vector3(76f, 6f, 0),
                                 Quaternion.identity);
+                }
+                else if (m_BB_CPU != null && MenuEvents.P2Select == 1)
+                {
+                    m_conqueror2 = Instantiate(m_BB_CPU, new Vector3(1f, 6f, 0),  //Vector3(76f, 6f, 0),
+                                Quaternion.identity);
+                }
             }
 
             var cam = mainCam.GetComponent<Camera2DFollow>();
@@ -66,8 +88,13 @@ public class PlayerManager : MonoBehaviour
                 m_conqueror.GetComponent<TheChampion>().m_DamageDisplay = p1DamageDisplay;
                 m_conqueror.GetComponent<TheChampion>().infoText = infoText;
             }
-
+            else if (m_conqueror.GetComponent<Conqueror>() != null)
+            {
+                m_conqueror.GetComponent<Conqueror>().m_DamageDisplay = p1DamageDisplay;
+                m_conqueror.GetComponent<Conqueror>().infoText = infoText;
+            }
             mainCam.GetComponent<Camera2DFollow>().target = m_conqueror.transform;
+
             cam.transform.parent = null;
         }
         catch(System.Exception e)
@@ -91,7 +118,7 @@ public class PlayerManager : MonoBehaviour
         {
             var cam = mainCam.GetComponent<Camera2DFollow>();
             cam.maxValue.z = -24;
-            cam.GetComponentInParent<Camera>().fieldOfView = 25;
+            cam.GetComponentInParent<Camera>().fieldOfView = 27;
         }
         if (Input.GetKey("m"))
         {
@@ -107,11 +134,11 @@ public class PlayerManager : MonoBehaviour
         else if (Input.GetKeyUp("m"))
         {
             var cam = mainCam.GetComponent<Camera2DFollow>();
-            cam.GetComponentInParent<Camera>().fieldOfView = 25;
+            cam.GetComponentInParent<Camera>().fieldOfView = 27;
             cam.maxValue.x = 185;
             cam.maxValue.y = 10;
             cam.minValues.z = -24;
-            cam.minValues.x = -50;
+            cam.minValues.x = -90;
             cam.minValues.y = -10;
         }
 
@@ -121,7 +148,7 @@ public class PlayerManager : MonoBehaviour
         {
             minionSpawnElapsedTime = 0;
             Debug.Log(true);
-            if (GameObject.FindObjectsOfType(typeof(MinionBehavior)).Length <= 12)
+            if (redMinionCount <= 9)
             {
                 Vector3 spawnPosition = new Vector3(131f, 4f, 0);
                 Instantiate(redMinion, spawnPosition, Quaternion.identity).SetActive(true);
@@ -129,6 +156,17 @@ public class PlayerManager : MonoBehaviour
                 Instantiate(redMinion, spawnPosition, Quaternion.identity).SetActive(true);
                 spawnPosition = new Vector3(129f, 4f, 0);
                 Instantiate(redMinion, spawnPosition, Quaternion.identity).SetActive(true);
+                redMinionCount += 3;
+            }
+            if (blueMinionCount <= 9)
+            {
+                Vector3 spawnPosition = new Vector3(-46f, 4f, 0);
+                Instantiate(blueMinion, spawnPosition, Quaternion.identity).SetActive(true);
+                spawnPosition = new Vector3(-48f, 4f, 0);
+                Instantiate(blueMinion, spawnPosition, Quaternion.identity).SetActive(true);
+                spawnPosition = new Vector3(-50f, 4f, 0);
+                Instantiate(blueMinion, spawnPosition, Quaternion.identity).SetActive(true);
+                blueMinionCount += 3;
             }
         }
 

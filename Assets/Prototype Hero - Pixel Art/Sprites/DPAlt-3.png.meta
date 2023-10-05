@@ -1,0 +1,2868 @@
+fileFormatVersion: 2
+guid: 5149d2bf53b08324aaa163b30155942d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7832551789522131267
+    second: DPAlt-3_0
+  - first:
+      213: 4642722246578173354
+    second: DPAlt-3_1
+  - first:
+      213: -4841304054972918919
+    second: DPAlt-3_2
+  - first:
+      213: 259623956525055769
+    second: DPAlt-3_3
+  - first:
+      213: -5029994314885978581
+    second: DPAlt-3_4
+  - first:
+      213: -1652555457879740904
+    second: DPAlt-3_5
+  - first:
+      213: 6989845032065462587
+    second: DPAlt-3_6
+  - first:
+      213: 3624789367633146618
+    second: DPAlt-3_7
+  - first:
+      213: 8238638384064640970
+    second: DPAlt-3_8
+  - first:
+      213: -3557577392766228432
+    second: DPAlt-3_9
+  - first:
+      213: 8702730319440018019
+    second: DPAlt-3_10
+  - first:
+      213: -2502324590723726492
+    second: DPAlt-3_11
+  - first:
+      213: 3625465640463019029
+    second: DPAlt-3_12
+  - first:
+      213: 5370434228711913307
+    second: DPAlt-3_13
+  - first:
+      213: -9170389924209635889
+    second: DPAlt-3_14
+  - first:
+      213: 2633803681645188976
+    second: DPAlt-3_15
+  - first:
+      213: -6956760642430385676
+    second: DPAlt-3_16
+  - first:
+      213: -8713736901511956649
+    second: DPAlt-3_17
+  - first:
+      213: 3402680137521620982
+    second: DPAlt-3_18
+  - first:
+      213: 2143785083995055597
+    second: DPAlt-3_19
+  - first:
+      213: 571185514236631296
+    second: DPAlt-3_20
+  - first:
+      213: -3228867191589782355
+    second: DPAlt-3_21
+  - first:
+      213: 8513136015190445666
+    second: DPAlt-3_22
+  - first:
+      213: -5147688137022272745
+    second: DPAlt-3_23
+  - first:
+      213: 2753906298284687946
+    second: DPAlt-3_24
+  - first:
+      213: 1666842473465843489
+    second: DPAlt-3_25
+  - first:
+      213: -98649826361182999
+    second: DPAlt-3_26
+  - first:
+      213: 1628726751925941634
+    second: DPAlt-3_27
+  - first:
+      213: 7608877957604844589
+    second: DPAlt-3_28
+  - first:
+      213: 511825933676610594
+    second: DPAlt-3_29
+  - first:
+      213: -8843169394576301398
+    second: DPAlt-3_30
+  - first:
+      213: -7227232509463820055
+    second: DPAlt-3_31
+  - first:
+      213: 6342859061860061088
+    second: DPAlt-3_32
+  - first:
+      213: 5659630917634443652
+    second: DPAlt-3_33
+  - first:
+      213: 8335574776475355946
+    second: DPAlt-3_34
+  - first:
+      213: 7226414708504483895
+    second: DPAlt-3_35
+  - first:
+      213: -2509119093331885477
+    second: DPAlt-3_36
+  - first:
+      213: 6230589522881888801
+    second: DPAlt-3_37
+  - first:
+      213: -7785688416323600935
+    second: DPAlt-3_38
+  - first:
+      213: -5350778525070275742
+    second: DPAlt-3_39
+  - first:
+      213: -237857085408637586
+    second: DPAlt-3_40
+  - first:
+      213: -2920555676621118959
+    second: DPAlt-3_41
+  - first:
+      213: 2612125597752009994
+    second: DPAlt-3_42
+  - first:
+      213: 741273831746487604
+    second: DPAlt-3_43
+  - first:
+      213: -4386365514107595222
+    second: DPAlt-3_44
+  - first:
+      213: 4767453358746956222
+    second: DPAlt-3_45
+  - first:
+      213: -334435564274970364
+    second: DPAlt-3_46
+  - first:
+      213: 8793618867678515595
+    second: DPAlt-3_47
+  - first:
+      213: 5956133975584858022
+    second: DPAlt-3_48
+  - first:
+      213: -3909084008577853672
+    second: DPAlt-3_49
+  - first:
+      213: 9010188612036558105
+    second: DPAlt-3_50
+  - first:
+      213: 7886226993730248539
+    second: DPAlt-3_51
+  - first:
+      213: 5079617201162080255
+    second: DPAlt-3_52
+  - first:
+      213: -196085316173193617
+    second: DPAlt-3_53
+  - first:
+      213: -6870968014799920586
+    second: DPAlt-3_54
+  - first:
+      213: -3082275984545412349
+    second: DPAlt-3_55
+  - first:
+      213: -7554182253196166612
+    second: DPAlt-3_56
+  - first:
+      213: -8517792034411876491
+    second: DPAlt-3_57
+  - first:
+      213: -415681478032214436
+    second: DPAlt-3_58
+  - first:
+      213: 916503896869229000
+    second: DPAlt-3_59
+  - first:
+      213: -6524039331697752015
+    second: DPAlt-3_60
+  - first:
+      213: -8151437850790204999
+    second: DPAlt-3_61
+  - first:
+      213: -4630841094012444362
+    second: DPAlt-3_62
+  - first:
+      213: -7992359953187348355
+    second: DPAlt-3_63
+  - first:
+      213: -2021887411576940508
+    second: DPAlt-3_64
+  - first:
+      213: 3787947168677649572
+    second: DPAlt-3_65
+  - first:
+      213: 5386288915776119084
+    second: DPAlt-3_66
+  - first:
+      213: 8419404663443568714
+    second: DPAlt-3_67
+  - first:
+      213: 1457663802048978843
+    second: DPAlt-3_68
+  - first:
+      213: 6234570553501373299
+    second: DPAlt-3_69
+  - first:
+      213: -4959792082495398112
+    second: DPAlt-3_70
+  - first:
+      213: -3605731988797320240
+    second: DPAlt-3_71
+  - first:
+      213: -7088879537099589926
+    second: DPAlt-3_72
+  - first:
+      213: -8564245265245269424
+    second: DPAlt-3_73
+  - first:
+      213: 1494411808892455665
+    second: DPAlt-3_74
+  - first:
+      213: 6905609815018184043
+    second: DPAlt-3_75
+  - first:
+      213: -775111604024269683
+    second: DPAlt-3_76
+  - first:
+      213: -1059385700049673255
+    second: DPAlt-3_77
+  - first:
+      213: -5619041583862520522
+    second: DPAlt-3_78
+  - first:
+      213: -8483715530382463094
+    second: DPAlt-3_79
+  - first:
+      213: 7312682082450411603
+    second: DPAlt-3_80
+  - first:
+      213: -598755066129758574
+    second: DPAlt-3_81
+  - first:
+      213: 8202023137387608143
+    second: DPAlt-3_82
+  - first:
+      213: 1878197893537209424
+    second: DPAlt-3_83
+  - first:
+      213: 9016379137310372922
+    second: DPAlt-3_84
+  - first:
+      213: 4951132852472268316
+    second: DPAlt-3_85
+  - first:
+      213: 5395551510193522682
+    second: DPAlt-3_86
+  - first:
+      213: -8069433006889192359
+    second: DPAlt-3_87
+  - first:
+      213: 3198422944435241551
+    second: DPAlt-3_88
+  - first:
+      213: -8421826979185036174
+    second: DPAlt-3_89
+  - first:
+      213: 7973259090423133963
+    second: DPAlt-3_90
+  - first:
+      213: 1285188601089311407
+    second: DPAlt-3_91
+  - first:
+      213: 9060124206961052622
+    second: DPAlt-3_92
+  - first:
+      213: -7912241412795035447
+    second: DPAlt-3_93
+  - first:
+      213: -7932134973015875644
+    second: DPAlt-3_94
+  - first:
+      213: 1898084838276034077
+    second: DPAlt-3_95
+  - first:
+      213: -3338696177209892951
+    second: DPAlt-3_96
+  - first:
+      213: 4106176305871843262
+    second: DPAlt-3_97
+  - first:
+      213: 8705828132682141608
+    second: DPAlt-3_98
+  - first:
+      213: -2149800436008376585
+    second: DPAlt-3_99
+  - first:
+      213: 8060990619730281725
+    second: DPAlt-3_100
+  - first:
+      213: 6445771057230577449
+    second: DPAlt-3_101
+  - first:
+      213: -4198232242500927551
+    second: DPAlt-3_102
+  - first:
+      213: -1815300167959749058
+    second: DPAlt-3_103
+  - first:
+      213: 6470817061577897209
+    second: DPAlt-3_104
+  - first:
+      213: -5478493836112671490
+    second: DPAlt-3_105
+  - first:
+      213: -4148124195740709089
+    second: DPAlt-3_106
+  - first:
+      213: 6329200134160619154
+    second: DPAlt-3_107
+  - first:
+      213: -2511102883119536022
+    second: DPAlt-3_108
+  - first:
+      213: -3635606008311751894
+    second: DPAlt-3_109
+  - first:
+      213: 4480986040254006507
+    second: DPAlt-3_110
+  - first:
+      213: -3652260863729613791
+    second: DPAlt-3_111
+  - first:
+      213: -4824081564625647450
+    second: DPAlt-3_112
+  - first:
+      213: 4452655578331972840
+    second: DPAlt-3_113
+  - first:
+      213: 7986314554619419667
+    second: DPAlt-3_114
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DPAlt-3_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1122
+        width: 19
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349115b9a50d2bc60800000000000000
+      internalID: 7832551789522131267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1122
+        width: 19
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa5781af8434e6040800000000000000
+      internalID: 4642722246578173354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_2
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1122
+        width: 19
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9735ea1cc9b30dcb0800000000000000
+      internalID: -4841304054972918919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_3
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1122
+        width: 19
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f7bd7ec9e5a9300800000000000000
+      internalID: 259623956525055769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_4
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1122
+        width: 19
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26acf612ded13ab0800000000000000
+      internalID: -5029994314885978581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_5
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1122
+        width: 19
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ee1711191f019e0800000000000000
+      internalID: -1652555457879740904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_6
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1122
+        width: 18
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b317a4bd50be00160800000000000000
+      internalID: 6989845032065462587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_7
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 1122
+        width: 21
+        height: 46
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af2f26399b6dd4230800000000000000
+      internalID: 3624789367633146618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_8
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1042
+        width: 37
+        height: 46
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7321bc5f5855270800000000000000
+      internalID: 8238638384064640970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1043
+        width: 39
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038653bc532f0aec0800000000000000
+      internalID: -3557577392766228432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_10
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1042
+        width: 35
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a7e32dd1f46c870800000000000000
+      internalID: 8702730319440018019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_11
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1042
+        width: 27
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4630039ea05f54dd0800000000000000
+      internalID: -2502324590723726492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_12
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1042
+        width: 37
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51cae2d9acd305230800000000000000
+      internalID: 3625465640463019029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_13
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 1043
+        width: 38
+        height: 42
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b57f8fb2a7d978a40800000000000000
+      internalID: 5370434228711913307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_14
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1042
+        width: 33
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcdc9a363fa3cb080800000000000000
+      internalID: -9170389924209635889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_15
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 1042
+        width: 30
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077d3947e762d8420800000000000000
+      internalID: 2633803681645188976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_16
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 962
+        width: 18
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1c480ed0f947f90800000000000000
+      internalID: -6956760642430385676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_17
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 962
+        width: 22
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757ba279476921780800000000000000
+      internalID: -8713736901511956649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_18
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 962
+        width: 20
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f7e0419e8fb83f20800000000000000
+      internalID: 3402680137521620982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_19
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 962
+        width: 22
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de56e46fc2140cd10800000000000000
+      internalID: 2143785083995055597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_20
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 964
+        width: 24
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0095cece2324de700800000000000000
+      internalID: 571185514236631296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_21
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 967
+        width: 25
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dacb0628562c033d0800000000000000
+      internalID: -3228867191589782355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_22
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 967
+        width: 27
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ec20ee91cb42670800000000000000
+      internalID: 8513136015190445666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_23
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 962
+        width: 29
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b8b4ab9ecbf88b0800000000000000
+      internalID: -5147688137022272745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_24
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 882
+        width: 67
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4248fdff27d73620800000000000000
+      internalID: 2753906298284687946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_25
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 882
+        width: 32
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f0777f560d12710800000000000000
+      internalID: 1666842473465843489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_26
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 896
+        width: 29
+        height: 16
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4769e618681aef0800000000000000
+      internalID: -98649826361182999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_27
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 882
+        width: 28
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285b8bcf9566a9610800000000000000
+      internalID: 1628726751925941634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_28
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 882
+        width: 27
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24265a503a289960800000000000000
+      internalID: 7608877957604844589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_29
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 882
+        width: 30
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22480a399fe5a1700800000000000000
+      internalID: 511825933676610594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_30
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 882
+        width: 78
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa26cabe940c64580800000000000000
+      internalID: -8843169394576301398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_31
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 882
+        width: 74
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8014cf256b3bb90800000000000000
+      internalID: -7227232509463820055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_32
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 882
+        width: 45
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af498af5bc560850800000000000000
+      internalID: 6342859061860061088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_33
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 795
+        width: 76
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4894b65655c0b8e40800000000000000
+      internalID: 5659630917634443652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_34
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 795
+        width: 65
+        height: 79
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b058e6819eda370800000000000000
+      internalID: 8335574776475355946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_35
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 751
+        width: 21
+        height: 28
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7385114e3e1694460800000000000000
+      internalID: 7226414708504483895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_36
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 795
+        width: 63
+        height: 79
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b528dce7a71dd2dd0800000000000000
+      internalID: -2509119093331885477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_37
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 749
+        width: 24
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12245a4f820877650800000000000000
+      internalID: 6230589522881888801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_38
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 794
+        width: 64
+        height: 79
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd782db2ada3f390800000000000000
+      internalID: -7785688416323600935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_39
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 751
+        width: 25
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26bc565f7473eb5b0800000000000000
+      internalID: -5350778525070275742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_40
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 795
+        width: 34
+        height: 79
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d88e4bd36f2bcf0800000000000000
+      internalID: -237857085408637586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_41
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 795
+        width: 87
+        height: 79
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1126f3cf51a1877d0800000000000000
+      internalID: -2920555676621118959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_42
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 795
+        width: 84
+        height: 79
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05a6ba3462204420800000000000000
+      internalID: 2612125597752009994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_43
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 795
+        width: 52
+        height: 79
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435ca8e5f98894a00800000000000000
+      internalID: 741273831746487604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_44
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 726
+        width: 50
+        height: 66
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a26d79c0ecf7023c0800000000000000
+      internalID: -4386365514107595222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_45
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 726
+        width: 46
+        height: 65
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1fa5b1295692240800000000000000
+      internalID: 4767453358746956222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_46
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 726
+        width: 22
+        height: 47
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401122f40a8db5bf0800000000000000
+      internalID: -334435564274970364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_47
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 726
+        width: 22
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81962205c5390a70800000000000000
+      internalID: 8793618867678515595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_48
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 726
+        width: 19
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6afde593b4078a250800000000000000
+      internalID: 5956133975584858022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_49
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 726
+        width: 19
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8179e8f2ec420c9c0800000000000000
+      internalID: -3909084008577853672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_50
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 726
+        width: 23
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d75bbfdce9a0d70800000000000000
+      internalID: 9010188612036558105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_51
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 726
+        width: 22
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f5363faa1817d60800000000000000
+      internalID: 7886226993730248539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_52
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 642
+        width: 28
+        height: 79
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fffca367eec6e7640800000000000000
+      internalID: 5079617201162080255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_53
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 642
+        width: 43
+        height: 79
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e93df917d574df0800000000000000
+      internalID: -196085316173193617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_54
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 642
+        width: 27
+        height: 79
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632a7c69efa65a0a0800000000000000
+      internalID: -6870968014799920586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_55
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 642
+        width: 20
+        height: 79
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b0479925e8935d0800000000000000
+      internalID: -3082275984545412349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_56
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 641
+        width: 19
+        height: 79
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2abea5b3472a2790800000000000000
+      internalID: -7554182253196166612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_57
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 642
+        width: 16
+        height: 79
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f6a3e1649bac980800000000000000
+      internalID: -8517792034411876491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_58
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 641
+        width: 18
+        height: 79
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c563e2ae5e33b3af0800000000000000
+      internalID: -415681478032214436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_59
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 640
+        width: 17
+        height: 79
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1d628307318bc00800000000000000
+      internalID: 916503896869229000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_60
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 562
+        width: 16
+        height: 76
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1388a7d2bc4f575a0800000000000000
+      internalID: -6524039331697752015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_61
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 562
+        width: 16
+        height: 76
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b9e9fe767640ee80800000000000000
+      internalID: -8151437850790204999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_62
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 563
+        width: 18
+        height: 76
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6316b1c6f82fbbfb0800000000000000
+      internalID: -4630841094012444362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_63
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 565
+        width: 22
+        height: 74
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70e539c7fe651190800000000000000
+      internalID: -7992359953187348355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_64
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 564
+        width: 24
+        height: 75
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4285f119c10d0f3e0800000000000000
+      internalID: -2021887411576940508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_65
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 563
+        width: 24
+        height: 76
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac5af861ed719430800000000000000
+      internalID: 3787947168677649572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_66
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 566
+        width: 23
+        height: 71
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21a57a2b31ffba40800000000000000
+      internalID: 5386288915776119084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_67
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 563
+        width: 26
+        height: 72
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4832d8feebb7d470800000000000000
+      internalID: 8419404663443568714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_68
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 483
+        width: 25
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f13134189aa3410800000000000000
+      internalID: 1457663802048978843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_69
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 483
+        width: 26
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3735f80e2e4a58650800000000000000
+      internalID: 6234570553501373299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_70
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 483
+        width: 25
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f111b01674b2bb0800000000000000
+      internalID: -4959792082495398112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_71
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 483
+        width: 19
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d319743cddd5fdc0800000000000000
+      internalID: -3605731988797320240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_72
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 483
+        width: 30
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6b4a79e9d3f9d90800000000000000
+      internalID: -7088879537099589926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_73
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 496
+        width: 52
+        height: 61
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0521cbb7e40b52980800000000000000
+      internalID: -8564245265245269424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_74
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 483
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa0f295f973db410800000000000000
+      internalID: 1494411808892455665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_75
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 483
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d1c9d0a87a5df50800000000000000
+      internalID: 6905609815018184043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_76
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 499
+        width: 41
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84a9d45a104e35f0800000000000000
+      internalID: -775111604024269683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_77
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 483
+        width: 32
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d32964915e4c41f0800000000000000
+      internalID: -1059385700049673255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_78
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 402
+        width: 30
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635e9bf43772502b0800000000000000
+      internalID: -5619041583862520522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_79
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 402
+        width: 23
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8fa61c7ca9c34a80800000000000000
+      internalID: -8483715530382463094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_80
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 409
+        width: 26
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35012d71c9ddb7560800000000000000
+      internalID: 7312682082450411603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_81
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 407
+        width: 19
+        height: 34
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 296cedf807bc0b7f0800000000000000
+      internalID: -598755066129758574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_82
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 402
+        width: 22
+        height: 28
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48f587569073d170800000000000000
+      internalID: 8202023137387608143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_83
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 402
+        width: 21
+        height: 29
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c1c267803b01a10800000000000000
+      internalID: 1878197893537209424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_84
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 402
+        width: 20
+        height: 29
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34b0a7fd0d902d70800000000000000
+      internalID: 9016379137310372922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_85
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 402
+        width: 22
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c16406bd815f5b440800000000000000
+      internalID: 4951132852472268316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_86
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 306
+        width: 28
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af7486cf289d0ea40800000000000000
+      internalID: 5395551510193522682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_87
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 303
+        width: 69
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954be851f6d930090800000000000000
+      internalID: -8069433006889192359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_88
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 303
+        width: 32
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f428584d8b4136c20800000000000000
+      internalID: 3198422944435241551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_89
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 321
+        width: 30
+        height: 16
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274ffd1bbf8af1b80800000000000000
+      internalID: -8421826979185036174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_90
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 303
+        width: 27
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0733da06e4b6ae60800000000000000
+      internalID: 7973259090423133963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_91
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 305
+        width: 34
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa24f453938e5d110800000000000000
+      internalID: 1285188601089311407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_92
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 318
+        width: 53
+        height: 61
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecbc4d0b6f60cbd70800000000000000
+      internalID: 9060124206961052622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_93
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 303
+        width: 22
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0973d1b52123290800000000000000
+      internalID: -7912241412795035447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_94
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 320
+        width: 40
+        height: 59
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf9feea4456be190800000000000000
+      internalID: -7932134973015875644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_95
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 303
+        width: 22
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e6ffa9a1a575a10800000000000000
+      internalID: 1898084838276034077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_96
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 303
+        width: 26
+        height: 42
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af137814819aa1d0800000000000000
+      internalID: -3338696177209892951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_97
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 215
+        width: 33
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfed9048911cf830800000000000000
+      internalID: 4106176305871843262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_98
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 215
+        width: 34
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af0f1caf8051d870800000000000000
+      internalID: 8705828132682141608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_99
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 215
+        width: 27
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6adb1c4ef5a22e0800000000000000
+      internalID: -2149800436008376585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_100
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 215
+        width: 29
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df487ca72446edf60800000000000000
+      internalID: 8060990619730281725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_101
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 215
+        width: 26
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ff8b910aaf37950800000000000000
+      internalID: 6445771057230577449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_102
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 215
+        width: 31
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cff325c402ecb5c0800000000000000
+      internalID: -4198232242500927551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_103
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 215
+        width: 31
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e5d087d12cec6e0800000000000000
+      internalID: -1815300167959749058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_104
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 215
+        width: 31
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f433e965d5fcc950800000000000000
+      internalID: 6470817061577897209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_105
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 114
+        width: 34
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc4652e1ea78f3b0800000000000000
+      internalID: -5478493836112671490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_106
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 114
+        width: 30
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f0cac8507ee66c0800000000000000
+      internalID: -4148124195740709089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_107
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 114
+        width: 49
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2969ffc0df5d5d750800000000000000
+      internalID: 6329200134160619154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_108
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 114
+        width: 31
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6863317b35c62dd0800000000000000
+      internalID: -2511102883119536022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_109
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 114
+        width: 24
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b5d43099bbb8dc0800000000000000
+      internalID: -3635606008311751894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_110
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 115
+        width: 45
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be403d4ff09af2e30800000000000000
+      internalID: 4480986040254006507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_111
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 116
+        width: 29
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124c55e4810905dc0800000000000000
+      internalID: -3652260863729613791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_112
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 116
+        width: 58
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a84af4406b6d0db0800000000000000
+      internalID: -4824081564625647450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_113
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 10
+        width: 60
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e483a548a20bcd30800000000000000
+      internalID: 4452655578331972840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPAlt-3_114
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 11
+        width: 58
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c5f9c26c615de60800000000000000
+      internalID: 7986314554619419667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

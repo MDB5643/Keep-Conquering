@@ -39,6 +39,8 @@ TagManager:
   - BlueMidEye
   - RedMidEye
   - RightTowerLauncher
+  - MinionJumpRight
+  - EyeShot
   layers:
   - Default
   - TransparentFX
@@ -61,11 +63,11 @@ TagManager:
   - PortalMidGround
   - AttackHitboxMid
   - iFrameMid
-  - 
-  - 
-  - 
-  - 
-  - 
+  - MidGroundEye
+  - Hotzone
+  - HotzoneMid
+  - Projectile
+  - ProjectileMid
   - 
   - 
   - 

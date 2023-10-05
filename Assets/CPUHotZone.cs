@@ -56,7 +56,8 @@ public class CPUHotZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.name.StartsWith("PrototypeHeroCPU") || collider.gameObject.name.StartsWith("RedSwordMinion") || collider.gameObject.name.Contains("Golem"))
+        if (collider.gameObject.name.StartsWith("PrototypeHeroCPU") || (MinionParent != null && collider.GetComponent<MinionBehavior>() != null && MinionParent.teamColor == collider.GetComponent<MinionBehavior>().teamColor) || collider.gameObject.name.Contains("Golem") 
+            || (collider.GetComponent<Conqueror>() != null && MinionParent != null && collider.GetComponent<Conqueror>().teamColor == MinionParent.teamColor) || (CPUParent != null && collider.GetComponent<MinionBehavior>() != null && CPUParent.teamColor == collider.GetComponent<MinionBehavior>().teamColor))
         {
             //do nothing
 
@@ -89,6 +90,7 @@ public class CPUHotZone : MonoBehaviour
         }
         else if (collider.gameObject.CompareTag("EyeTarget"))
         {
+            string enemyTeam = collider.GetComponentInParent<TowerEye>().teamColor;
             inRange = true;
 
             if (enemyParent != null)
@@ -98,13 +100,20 @@ public class CPUHotZone : MonoBehaviour
             }
             if (CPUParent != null)
             {
-                CPUParent.inRange = true;
-                CPUParent.target = collider.transform;
+                if (CPUParent.teamColor != enemyTeam)
+                {
+                    CPUParent.inRange = true;
+                    CPUParent.target = collider.transform;
+                }
+                
             }
             if (MinionParent != null)
             {
-                MinionParent.inRange = true;
-                MinionParent.target = collider.transform;
+                if (MinionParent.teamColor != enemyTeam)
+                {
+                    MinionParent.inRange = true;
+                    MinionParent.target = collider.transform;
+                }
             }
 
         }
@@ -122,14 +131,23 @@ public class CPUHotZone : MonoBehaviour
             CPUParent.inRange = false;
             CPUParent.SelectTarget();
         }
-        else if (collider.gameObject.CompareTag("Player")  && MinionParent != null)
+        else if (collider.gameObject.CompareTag("Player")  && MinionParent != null )
         {
-            inRange = false;
-            //gameObject.SetActive(false);
+            if ((collider.GetComponentInParent<Conqueror>() != null && collider.GetComponentInParent<Conqueror>().teamColor == MinionParent.teamColor) || (MinionParent != null && collider.GetComponent<MinionBehavior>() != null && MinionParent.teamColor == collider.GetComponent<MinionBehavior>().teamColor)
+                || (collider.GetComponent<MinionBehavior>() != null && !collider.GetComponent<MinionBehavior>().m_dead))
+            {
+                //do nothing
+            }
+            else
+            {
+                inRange = false;
+                //gameObject.SetActive(false);
 
-            MinionParent.triggerArea.SetActive(true);
-            MinionParent.inRange = false;
-            MinionParent.SelectTarget();
+                MinionParent.triggerArea.SetActive(true);
+                MinionParent.inRange = false;
+                MinionParent.SelectTarget();
+            }
+            
         }
         else if (collider.gameObject.CompareTag("PlayerMid") && GolemParent != null)
         {

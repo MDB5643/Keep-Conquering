@@ -6,6 +6,8 @@ using System.Collections.Generic;
 
 public class Conqueror : MonoBehaviour
 {
+    public string teamColor = "Blue";
+    public int playerNumber = 1;
 
     public float m_runSpeed = 4.5f;
     public float m_walkSpeed = 2.0f;
@@ -46,7 +48,9 @@ public class Conqueror : MonoBehaviour
     public bool m_fullCharge = false;
     public bool m_isParrying = false;
     public bool m_isInKnockback = false;
+    public bool m_isInHotZone = false;
     public bool m_cameraShake = false;
+    public bool preview = false;
 
     public float m_shakeIntensity = .1f;
 
@@ -70,11 +74,14 @@ public class Conqueror : MonoBehaviour
     public float m_timeSinceStun = 5.0f;
     public float m_timeSinceHitStun = 0.0f;
     public float m_timeSinceKnockBack = 0.0f;
-    public float m_KnockBackDuration = 0.1f;
+    public float m_KnockBackDuration = 0.2f;
+    public float m_KnockBackMomentumX = 0.0f;
+    public float m_KnockBackMomentumY = 0.0f;
     public float m_hitStunDuration = 0.0f;
     public float m_gravity;
     public float m_maxSpeed = 4.5f;
     public bool m_isInHitStop;
+    public bool isInStartUp = false;
     public float m_hitStopDuration;
     public float m_timeSinceHitStop = 0.0f;
     public float animSpeed;
@@ -88,7 +95,7 @@ public class Conqueror : MonoBehaviour
     //float BaseKB, float contactAngle, float modifierx, float modifiery
 
     public LayerMask m_WhatIsPortal;
-    private GrabableLedge ledge;
+    public GrabableLedge ledge;
 
     //Combat
     public Transform jabPoint;
@@ -98,9 +105,11 @@ public class Conqueror : MonoBehaviour
     public LayerMask enemyLayers;
 
     public GameObject KnockoutFX;
+    public GameObject LightAttackFX;
     public GameObject HeavyAttackFX;
     public GameObject ChargeFlashFX;
     public GameObject BlockFX;
+    public GameObject EyeShotFX;
 
     public ShieldBar shieldBar;
     public HookBehavior hookPrefab;
@@ -180,7 +189,76 @@ public class Conqueror : MonoBehaviour
         }
         if (coll.transform.tag == "AttackHitbox")
         {
+            if (transform.GetComponent<PrototypeHero>())
+            {
+                GameObject.Destroy(transform.GetComponentInChildren<PrototypeHeroAnimEvents>().activeHitbox);
+            }
+            var targetclosestPoint = new Vector2(coll.transform.position.x, coll.transform.position.y);
+            var sourceclosestPoint = new Vector2(transform.position.x, transform.position.y);
+
+            var midPointX = (targetclosestPoint.x + sourceclosestPoint.x) / 2f;
+            var midPointY = (targetclosestPoint.y + sourceclosestPoint.y) / 2f;
+
+            if (coll.transform.name.Contains("Smash") || coll.transform.name.Contains("Jab1Hitbox"))
+            {
+                Instantiate(HeavyAttackFX, new Vector3(midPointX, midPointY, transform.position.z),
+            new Quaternion(0f, 0f, 0f, 0f), transform);
+            }
+            else
+            {
+                Instantiate(LightAttackFX, new Vector3(midPointX, midPointY, transform.position.z),
+            new Quaternion(0f, 0f, 0f, 0f), transform);
+            }
+            if (coll.transform.name.Contains("ChargeBall"))
+            {
+                GameObject.Destroy(coll.transform.parent.gameObject);
+            }
             coll.GetComponentInParent<CombatManager>().Hit(transform, coll.transform.name);
+        }
+        if (coll.gameObject.name == "targetingHotzone" && !m_isInHotZone && coll.GetComponentInParent<TowerEye>().teamColor != teamColor)
+        {
+            coll.GetComponentInParent<TowerEye>().enemiesInBounds.Add(transform.gameObject);
+            m_isInHotZone = true;
+        }
+        if (coll.transform.tag == "EyeShot" && coll.GetComponentInParent<TowerEye>().teamColor != teamColor)
+        {
+
+            //Detect impact angle
+            var targetclosestPoint = new Vector2(coll.transform.position.x, coll.transform.position.y);
+            var sourceclosestPoint = new Vector2(transform.position.x, transform.position.y);
+
+            var positionDifference = sourceclosestPoint - targetclosestPoint;
+
+            //Must be done to detect y axis angle
+            float angleInRadians = Mathf.Atan2(positionDifference.y, positionDifference.x);
+
+            // Convert the angle to degrees.
+            float attackAngle = angleInRadians * Mathf.Rad2Deg;
+
+            TakeDamage(10f);
+
+            incomingAngle = attackAngle;
+            incomingKnockback = .8f;
+            incomingXMod = 2f;
+            incomingYMod = (2f + (currentDamage / 4));
+            HitStun(.2f);
+
+            m_audioManager = AudioManager_PrototypeHero.instance;
+            m_audioManager.PlaySound("EnergyHit");
+            Instantiate(HeavyAttackFX, new Vector3((coll.transform.position.x), coll.transform.position.y, transform.position.z),
+            new Quaternion(0f, 0f, 0f, 0f), transform);
+            Instantiate(EyeShotFX, new Vector3((targetclosestPoint.x), targetclosestPoint.y, transform.position.z),
+            new Quaternion(0f, 0f, 0f, 0f), transform);
+            GameObject.Destroy(coll.gameObject);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D coll)
+    {
+        if (coll.gameObject.name == "targetingHotzone" && m_isInHotZone && coll.GetComponentInParent<TowerEye>().teamColor != teamColor)
+        {
+            coll.GetComponentInParent<TowerEye>().enemiesInBounds.Remove(transform.gameObject);
+            m_isInHotZone = false;
         }
     }
 
@@ -380,8 +458,18 @@ public class Conqueror : MonoBehaviour
     public void RespawnHero()
     {
         SetLayerRecursively(gameObject, LayerMask.NameToLayer("Player"));
-        Transform spawnPoint = GameObject.Find("P2RespawnPoint").transform;
-        transform.position = spawnPoint.position;
+        if (playerNumber == 1)
+        {
+            Transform spawnPoint = GameObject.Find("P1RespawnPoint").transform;
+            transform.position = spawnPoint.position;
+        }
+        else if (playerNumber == 3)
+        {
+            Transform spawnPoint = GameObject.Find("P2RespawnPoint").transform;
+            transform.position = spawnPoint.position;
+        }
+        
+        
         transform.tag = "Player";
         m_dead = false;
         m_launched = false;
@@ -400,6 +488,7 @@ public class Conqueror : MonoBehaviour
 
     public void HitStun(float stunTime)
     {
+        m_fSmashCharging = false;
         m_animator.SetBool("FSmashCharge", false);
         m_uSmashCharging = false;
         m_animator.SetBool("USmashCharge", false);

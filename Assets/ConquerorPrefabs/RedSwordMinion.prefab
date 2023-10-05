@@ -284,6 +284,7 @@ GameObject:
   - component: {fileID: 5659445310094380423}
   - component: {fileID: 7344237778501599264}
   - component: {fileID: 7958570871091958}
+  - component: {fileID: 491641117}
   m_Layer: 14
   m_Name: Sprite
   m_TagString: Untagged
@@ -325,7 +326,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6b08ac47c4a3ea14fbc9ab0c8a3375f7, type: 2}
+  - {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -412,6 +413,28 @@ MonoBehaviour:
   m_WallJumpDust: {fileID: 7972526843131001964, guid: 2a6283ef7fbba594caf7888f051f4a2b, type: 3}
   m_AirSlamDust: {fileID: 2943720192077617830, guid: 27cb532070b8c2b4e97001c33cf37429, type: 3}
   m_ParryEffect: {fileID: 3569397387010719113, guid: 9300fb4b08a7c0f448a15475613f22d5, type: 3}
+  m_GolemFlick: {fileID: 0}
+  c_Manager: {fileID: 0}
+  lingerDeltaTime: 0
+--- !u!114 &491641117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898239111491598386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8029d696e5349744f9ba46d4cec1f084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  directions:
+    top: 1
+    bottom: 1
+    left: 1
+    right: 1
 --- !u!1 &3234636803878206297
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,7 +450,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4421686617800032254
 Transform:
   m_ObjectHideFlags: 0
@@ -783,8 +806,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8027770208182965427}
   - component: {fileID: 1840656756704295547}
-  - component: {fileID: 5043524178514261636}
   - component: {fileID: 3087347723526248752}
+  - component: {fileID: 286654869}
   m_Layer: 14
   m_Name: RedSwordMinion
   m_TagString: Player
@@ -839,32 +862,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!61 &5043524178514261636
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8487095468842958979}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.125, y: 2.5}
-    newSize: {x: 3.125, y: 2.5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.5, y: 1.28125}
-  m_EdgeRadius: 0
 --- !u!114 &3087347723526248752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -877,6 +874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7479ef265e7d5546804bef9bed3e85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  teamColor: Red
   m_runSpeed: 3.5
   m_walkSpeed: 2
   m_jumpForce: 7.5
@@ -895,12 +893,18 @@ MonoBehaviour:
   MovingPlatformTarget: {fileID: 0}
   GondolaTarget: {fileID: 0}
   GondolaEdgeTarget: {fileID: 0}
+  TowerPlatformTarget: {fileID: 0}
+  TowerPlatformEdgeTarget: {fileID: 0}
   EyeTarget: {fileID: 0}
+  KeepEyeTarget: {fileID: 0}
+  EyeShotFX: {fileID: 4688236407413030439, guid: f624889d211fc02468f395791ab3a471, type: 3}
   inRange: 0
   hotZone: {fileID: 833441539481210744}
   triggerArea: {fileID: 964820301091128306}
   isGrappled: 0
+  m_isInHotZone: 0
   m_grounded: 0
+  m_dead: 0
   m_inHitStun: 0
   m_launched: 0
   m_idle: 0
@@ -926,3 +930,19 @@ MonoBehaviour:
   upTiltRange: 2
   upTiltDamage: 3
   upTiltKB: 1.2
+--- !u!70 &286654869
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8487095468842958979}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.03}
+  m_Size: {x: 0.5, y: 1.2}
+  m_Direction: 0

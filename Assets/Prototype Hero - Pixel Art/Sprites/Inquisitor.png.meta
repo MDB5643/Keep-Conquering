@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 896a61307c5f3814eb816b34751d7e25
+guid: 72c197ba54621b740bbb2acc97167fd5
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -347,30 +347,6 @@ TextureImporter:
   - first:
       213: -5773082246683810626
     second: Inquisitor_114
-  - first:
-      213: -1638598697525435474
-    second: Inquisitor_115
-  - first:
-      213: 7327490534619001880
-    second: Inquisitor_116
-  - first:
-      213: -3700571032113209726
-    second: Inquisitor_117
-  - first:
-      213: 3660611580134093073
-    second: Inquisitor_118
-  - first:
-      213: 8515070131928452683
-    second: Inquisitor_119
-  - first:
-      213: -9018480587650641944
-    second: Inquisitor_120
-  - first:
-      213: 578339348549000530
-    second: Inquisitor_121
-  - first:
-      213: 1409103145496080133
-    second: Inquisitor_122
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -437,7 +413,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -449,7 +425,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -463,10 +439,10 @@ TextureImporter:
       name: Inquisitor_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1120
-        width: 100
-        height: 80
+        x: 40
+        y: 1122
+        width: 19
+        height: 64
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -484,10 +460,10 @@ TextureImporter:
       name: Inquisitor_1
       rect:
         serializedVersion: 2
-        x: 100
-        y: 1120
-        width: 100
-        height: 80
+        x: 140
+        y: 1122
+        width: 19
+        height: 78
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -505,10 +481,10 @@ TextureImporter:
       name: Inquisitor_2
       rect:
         serializedVersion: 2
-        x: 200
-        y: 1120
-        width: 100
-        height: 80
+        x: 240
+        y: 1122
+        width: 19
+        height: 78
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -526,10 +502,10 @@ TextureImporter:
       name: Inquisitor_3
       rect:
         serializedVersion: 2
-        x: 300
-        y: 1120
-        width: 100
-        height: 80
+        x: 340
+        y: 1122
+        width: 19
+        height: 78
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -547,10 +523,10 @@ TextureImporter:
       name: Inquisitor_4
       rect:
         serializedVersion: 2
-        x: 400
-        y: 1120
-        width: 100
-        height: 80
+        x: 440
+        y: 1122
+        width: 19
+        height: 78
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -568,10 +544,10 @@ TextureImporter:
       name: Inquisitor_5
       rect:
         serializedVersion: 2
-        x: 500
-        y: 1120
-        width: 100
-        height: 80
+        x: 540
+        y: 1122
+        width: 19
+        height: 78
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -589,10 +565,10 @@ TextureImporter:
       name: Inquisitor_6
       rect:
         serializedVersion: 2
-        x: 600
-        y: 1120
-        width: 100
-        height: 80
+        x: 641
+        y: 1122
+        width: 18
+        height: 78
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -610,10 +586,10 @@ TextureImporter:
       name: Inquisitor_7
       rect:
         serializedVersion: 2
-        x: 700
-        y: 1120
-        width: 100
-        height: 80
+        x: 741
+        y: 1122
+        width: 21
+        height: 78
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -631,10 +607,10 @@ TextureImporter:
       name: Inquisitor_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1040
-        width: 100
-        height: 80
+        x: 29
+        y: 1042
+        width: 37
+        height: 78
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -652,10 +628,10 @@ TextureImporter:
       name: Inquisitor_9
       rect:
         serializedVersion: 2
-        x: 100
-        y: 1040
-        width: 100
-        height: 80
+        x: 128
+        y: 1043
+        width: 39
+        height: 78
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -673,10 +649,10 @@ TextureImporter:
       name: Inquisitor_10
       rect:
         serializedVersion: 2
-        x: 200
-        y: 1040
-        width: 100
-        height: 80
+        x: 229
+        y: 1042
+        width: 35
+        height: 78
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -694,10 +670,10 @@ TextureImporter:
       name: Inquisitor_11
       rect:
         serializedVersion: 2
-        x: 300
-        y: 1040
-        width: 100
-        height: 80
+        x: 334
+        y: 1042
+        width: 27
+        height: 78
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -715,10 +691,10 @@ TextureImporter:
       name: Inquisitor_12
       rect:
         serializedVersion: 2
-        x: 400
-        y: 1040
-        width: 100
-        height: 80
+        x: 428
+        y: 1042
+        width: 37
+        height: 78
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -736,10 +712,10 @@ TextureImporter:
       name: Inquisitor_13
       rect:
         serializedVersion: 2
-        x: 500
-        y: 1040
-        width: 100
-        height: 80
+        x: 526
+        y: 1043
+        width: 38
+        height: 78
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -757,10 +733,10 @@ TextureImporter:
       name: Inquisitor_14
       rect:
         serializedVersion: 2
-        x: 600
-        y: 1040
-        width: 100
-        height: 80
+        x: 630
+        y: 1042
+        width: 33
+        height: 78
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -778,10 +754,10 @@ TextureImporter:
       name: Inquisitor_15
       rect:
         serializedVersion: 2
-        x: 700
-        y: 1040
-        width: 100
-        height: 80
+        x: 735
+        y: 1042
+        width: 30
+        height: 78
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -799,10 +775,10 @@ TextureImporter:
       name: Inquisitor_16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 960
-        width: 100
-        height: 80
+        x: 42
+        y: 962
+        width: 18
+        height: 78
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -820,10 +796,10 @@ TextureImporter:
       name: Inquisitor_17
       rect:
         serializedVersion: 2
-        x: 100
-        y: 960
-        width: 100
-        height: 80
+        x: 139
+        y: 962
+        width: 22
+        height: 78
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -841,10 +817,10 @@ TextureImporter:
       name: Inquisitor_18
       rect:
         serializedVersion: 2
-        x: 200
-        y: 960
-        width: 100
-        height: 80
+        x: 240
+        y: 962
+        width: 20
+        height: 78
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -862,10 +838,10 @@ TextureImporter:
       name: Inquisitor_19
       rect:
         serializedVersion: 2
-        x: 300
-        y: 960
-        width: 100
-        height: 80
+        x: 340
+        y: 962
+        width: 22
+        height: 78
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -883,10 +859,10 @@ TextureImporter:
       name: Inquisitor_20
       rect:
         serializedVersion: 2
-        x: 400
-        y: 960
-        width: 100
-        height: 80
+        x: 439
+        y: 964
+        width: 24
+        height: 43
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -904,10 +880,10 @@ TextureImporter:
       name: Inquisitor_21
       rect:
         serializedVersion: 2
-        x: 500
-        y: 960
-        width: 100
-        height: 80
+        x: 538
+        y: 967
+        width: 25
+        height: 40
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -925,10 +901,10 @@ TextureImporter:
       name: Inquisitor_22
       rect:
         serializedVersion: 2
-        x: 600
-        y: 960
-        width: 100
-        height: 80
+        x: 636
+        y: 967
+        width: 27
+        height: 40
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -946,10 +922,10 @@ TextureImporter:
       name: Inquisitor_23
       rect:
         serializedVersion: 2
-        x: 700
-        y: 960
-        width: 100
-        height: 80
+        x: 735
+        y: 962
+        width: 29
+        height: 44
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -967,10 +943,10 @@ TextureImporter:
       name: Inquisitor_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 880
-        width: 100
-        height: 80
+        x: 28
+        y: 882
+        width: 67
+        height: 38
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -988,10 +964,10 @@ TextureImporter:
       name: Inquisitor_25
       rect:
         serializedVersion: 2
-        x: 100
-        y: 880
-        width: 100
-        height: 80
+        x: 128
+        y: 882
+        width: 32
+        height: 38
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1009,10 +985,10 @@ TextureImporter:
       name: Inquisitor_26
       rect:
         serializedVersion: 2
-        x: 200
-        y: 880
-        width: 100
-        height: 80
+        x: 163
+        y: 896
+        width: 29
+        height: 16
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1030,10 +1006,10 @@ TextureImporter:
       name: Inquisitor_27
       rect:
         serializedVersion: 2
-        x: 300
-        y: 880
-        width: 100
-        height: 80
+        x: 231
+        y: 882
+        width: 28
+        height: 38
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1051,10 +1027,10 @@ TextureImporter:
       name: Inquisitor_28
       rect:
         serializedVersion: 2
-        x: 400
-        y: 880
-        width: 100
-        height: 80
+        x: 333
+        y: 882
+        width: 27
+        height: 38
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1072,10 +1048,10 @@ TextureImporter:
       name: Inquisitor_29
       rect:
         serializedVersion: 2
-        x: 500
-        y: 880
-        width: 100
-        height: 80
+        x: 436
+        y: 882
+        width: 30
+        height: 41
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1093,10 +1069,10 @@ TextureImporter:
       name: Inquisitor_30
       rect:
         serializedVersion: 2
-        x: 600
-        y: 880
-        width: 100
-        height: 80
+        x: 517
+        y: 882
+        width: 78
+        height: 35
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1114,10 +1090,10 @@ TextureImporter:
       name: Inquisitor_31
       rect:
         serializedVersion: 2
-        x: 700
-        y: 880
-        width: 100
-        height: 80
+        x: 617
+        y: 882
+        width: 74
+        height: 35
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1135,10 +1111,10 @@ TextureImporter:
       name: Inquisitor_32
       rect:
         serializedVersion: 2
-        x: 0
-        y: 800
-        width: 100
-        height: 80
+        x: 718
+        y: 882
+        width: 45
+        height: 35
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1156,10 +1132,10 @@ TextureImporter:
       name: Inquisitor_33
       rect:
         serializedVersion: 2
-        x: 100
-        y: 800
-        width: 100
-        height: 80
+        x: 21
+        y: 819
+        width: 76
+        height: 38
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1177,10 +1153,10 @@ TextureImporter:
       name: Inquisitor_34
       rect:
         serializedVersion: 2
-        x: 200
-        y: 800
-        width: 100
-        height: 80
+        x: 134
+        y: 819
+        width: 48
+        height: 39
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1198,10 +1174,10 @@ TextureImporter:
       name: Inquisitor_35
       rect:
         serializedVersion: 2
-        x: 300
-        y: 800
-        width: 100
-        height: 80
+        x: 164
+        y: 822
+        width: 21
+        height: 28
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1219,10 +1195,10 @@ TextureImporter:
       name: Inquisitor_36
       rect:
         serializedVersion: 2
-        x: 400
-        y: 800
-        width: 100
-        height: 80
+        x: 233
+        y: 819
+        width: 38
+        height: 55
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1240,10 +1216,10 @@ TextureImporter:
       name: Inquisitor_37
       rect:
         serializedVersion: 2
-        x: 500
-        y: 800
-        width: 100
-        height: 80
+        x: 256
+        y: 838
+        width: 24
+        height: 36
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1261,10 +1237,10 @@ TextureImporter:
       name: Inquisitor_38
       rect:
         serializedVersion: 2
-        x: 600
-        y: 800
-        width: 100
-        height: 80
+        x: 338
+        y: 818
+        width: 38
+        height: 56
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1282,10 +1258,10 @@ TextureImporter:
       name: Inquisitor_39
       rect:
         serializedVersion: 2
-        x: 700
-        y: 800
-        width: 100
-        height: 80
+        x: 361
+        y: 840
+        width: 25
+        height: 33
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1303,10 +1279,10 @@ TextureImporter:
       name: Inquisitor_40
       rect:
         serializedVersion: 2
-        x: 0
-        y: 720
-        width: 100
-        height: 80
+        x: 432
+        y: 819
+        width: 34
+        height: 41
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1324,10 +1300,10 @@ TextureImporter:
       name: Inquisitor_41
       rect:
         serializedVersion: 2
-        x: 100
-        y: 720
-        width: 100
-        height: 80
+        x: 510
+        y: 819
+        width: 87
+        height: 35
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1345,10 +1321,10 @@ TextureImporter:
       name: Inquisitor_42
       rect:
         serializedVersion: 2
-        x: 200
-        y: 720
-        width: 100
-        height: 80
+        x: 610
+        y: 819
+        width: 84
+        height: 35
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1366,10 +1342,10 @@ TextureImporter:
       name: Inquisitor_43
       rect:
         serializedVersion: 2
-        x: 300
-        y: 720
-        width: 100
-        height: 80
+        x: 712
+        y: 813
+        width: 52
+        height: 35
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1387,10 +1363,10 @@ TextureImporter:
       name: Inquisitor_44
       rect:
         serializedVersion: 2
-        x: 400
-        y: 720
-        width: 100
-        height: 80
+        x: 12
+        y: 739
+        width: 50
+        height: 35
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1408,10 +1384,10 @@ TextureImporter:
       name: Inquisitor_45
       rect:
         serializedVersion: 2
-        x: 500
-        y: 720
-        width: 100
-        height: 80
+        x: 114
+        y: 739
+        width: 46
+        height: 38
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1429,10 +1405,10 @@ TextureImporter:
       name: Inquisitor_46
       rect:
         serializedVersion: 2
-        x: 600
-        y: 720
-        width: 100
-        height: 80
+        x: 237
+        y: 739
+        width: 22
+        height: 47
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1450,10 +1426,10 @@ TextureImporter:
       name: Inquisitor_47
       rect:
         serializedVersion: 2
-        x: 700
-        y: 720
-        width: 100
-        height: 80
+        x: 337
+        y: 739
+        width: 22
+        height: 45
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1471,10 +1447,10 @@ TextureImporter:
       name: Inquisitor_48
       rect:
         serializedVersion: 2
-        x: 0
-        y: 640
-        width: 100
-        height: 80
+        x: 440
+        y: 739
+        width: 19
+        height: 45
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1492,10 +1468,10 @@ TextureImporter:
       name: Inquisitor_49
       rect:
         serializedVersion: 2
-        x: 100
-        y: 640
-        width: 100
-        height: 80
+        x: 542
+        y: 739
+        width: 19
+        height: 44
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1513,10 +1489,10 @@ TextureImporter:
       name: Inquisitor_50
       rect:
         serializedVersion: 2
-        x: 200
-        y: 640
-        width: 100
-        height: 80
+        x: 635
+        y: 739
+        width: 23
+        height: 45
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1534,10 +1510,10 @@ TextureImporter:
       name: Inquisitor_51
       rect:
         serializedVersion: 2
-        x: 300
-        y: 640
-        width: 100
-        height: 80
+        x: 738
+        y: 739
+        width: 22
+        height: 45
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1555,10 +1531,10 @@ TextureImporter:
       name: Inquisitor_52
       rect:
         serializedVersion: 2
-        x: 400
-        y: 640
-        width: 100
-        height: 80
+        x: 25
+        y: 671
+        width: 28
+        height: 35
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1576,10 +1552,10 @@ TextureImporter:
       name: Inquisitor_53
       rect:
         serializedVersion: 2
-        x: 500
-        y: 640
-        width: 100
-        height: 80
+        x: 119
+        y: 671
+        width: 43
+        height: 25
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1597,10 +1573,10 @@ TextureImporter:
       name: Inquisitor_54
       rect:
         serializedVersion: 2
-        x: 600
-        y: 640
-        width: 100
-        height: 80
+        x: 232
+        y: 671
+        width: 27
+        height: 27
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1618,10 +1594,10 @@ TextureImporter:
       name: Inquisitor_55
       rect:
         serializedVersion: 2
-        x: 0
-        y: 560
-        width: 100
-        height: 80
+        x: 330
+        y: 671
+        width: 20
+        height: 43
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1639,10 +1615,10 @@ TextureImporter:
       name: Inquisitor_56
       rect:
         serializedVersion: 2
-        x: 100
-        y: 560
-        width: 100
-        height: 80
+        x: 429
+        y: 670
+        width: 19
+        height: 48
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1660,10 +1636,10 @@ TextureImporter:
       name: Inquisitor_57
       rect:
         serializedVersion: 2
-        x: 200
-        y: 560
-        width: 100
-        height: 80
+        x: 529
+        y: 671
+        width: 16
+        height: 49
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1681,10 +1657,10 @@ TextureImporter:
       name: Inquisitor_58
       rect:
         serializedVersion: 2
-        x: 300
-        y: 560
-        width: 100
-        height: 80
+        x: 635
+        y: 670
+        width: 18
+        height: 47
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1702,10 +1678,10 @@ TextureImporter:
       name: Inquisitor_59
       rect:
         serializedVersion: 2
-        x: 400
-        y: 560
-        width: 100
-        height: 80
+        x: 737
+        y: 669
+        width: 17
+        height: 48
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1723,10 +1699,10 @@ TextureImporter:
       name: Inquisitor_60
       rect:
         serializedVersion: 2
-        x: 500
-        y: 560
-        width: 100
-        height: 80
+        x: 36
+        y: 589
+        width: 16
+        height: 48
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1744,10 +1720,10 @@ TextureImporter:
       name: Inquisitor_61
       rect:
         serializedVersion: 2
-        x: 600
-        y: 560
-        width: 100
-        height: 80
+        x: 136
+        y: 589
+        width: 16
+        height: 48
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1765,10 +1741,10 @@ TextureImporter:
       name: Inquisitor_62
       rect:
         serializedVersion: 2
-        x: 700
-        y: 560
-        width: 100
-        height: 80
+        x: 234
+        y: 590
+        width: 18
+        height: 47
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1786,10 +1762,10 @@ TextureImporter:
       name: Inquisitor_63
       rect:
         serializedVersion: 2
-        x: 0
-        y: 480
-        width: 100
-        height: 80
+        x: 330
+        y: 603
+        width: 22
+        height: 41
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1807,10 +1783,10 @@ TextureImporter:
       name: Inquisitor_64
       rect:
         serializedVersion: 2
-        x: 100
-        y: 480
-        width: 100
-        height: 80
+        x: 428
+        y: 607
+        width: 24
+        height: 45
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1828,10 +1804,10 @@ TextureImporter:
       name: Inquisitor_65
       rect:
         serializedVersion: 2
-        x: 200
-        y: 480
-        width: 100
-        height: 80
+        x: 530
+        y: 626
+        width: 24
+        height: 39
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1849,10 +1825,10 @@ TextureImporter:
       name: Inquisitor_66
       rect:
         serializedVersion: 2
-        x: 300
-        y: 480
-        width: 100
-        height: 80
+        x: 646
+        y: 636
+        width: 23
+        height: 33
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1870,10 +1846,10 @@ TextureImporter:
       name: Inquisitor_67
       rect:
         serializedVersion: 2
-        x: 400
-        y: 480
-        width: 100
-        height: 80
+        x: 751
+        y: 635
+        width: 26
+        height: 33
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1891,10 +1867,10 @@ TextureImporter:
       name: Inquisitor_68
       rect:
         serializedVersion: 2
-        x: 500
-        y: 480
-        width: 100
-        height: 80
+        x: 28
+        y: 511
+        width: 25
+        height: 35
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1912,10 +1888,10 @@ TextureImporter:
       name: Inquisitor_69
       rect:
         serializedVersion: 2
-        x: 600
-        y: 480
-        width: 100
-        height: 80
+        x: 127
+        y: 511
+        width: 26
+        height: 33
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1933,10 +1909,10 @@ TextureImporter:
       name: Inquisitor_70
       rect:
         serializedVersion: 2
-        x: 700
-        y: 480
-        width: 100
-        height: 80
+        x: 228
+        y: 511
+        width: 25
+        height: 35
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1954,10 +1930,10 @@ TextureImporter:
       name: Inquisitor_71
       rect:
         serializedVersion: 2
-        x: 0
-        y: 400
-        width: 100
-        height: 80
+        x: 332
+        y: 511
+        width: 19
+        height: 43
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1975,10 +1951,10 @@ TextureImporter:
       name: Inquisitor_72
       rect:
         serializedVersion: 2
-        x: 100
-        y: 400
-        width: 100
-        height: 80
+        x: 419
+        y: 511
+        width: 30
+        height: 44
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1996,10 +1972,10 @@ TextureImporter:
       name: Inquisitor_73
       rect:
         serializedVersion: 2
-        x: 200
-        y: 400
-        width: 100
-        height: 80
+        x: 517
+        y: 524
+        width: 52
+        height: 61
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2017,10 +1993,10 @@ TextureImporter:
       name: Inquisitor_74
       rect:
         serializedVersion: 2
-        x: 300
-        y: 400
-        width: 100
-        height: 80
+        x: 524
+        y: 511
+        width: 32
+        height: 32
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2038,10 +2014,10 @@ TextureImporter:
       name: Inquisitor_75
       rect:
         serializedVersion: 2
-        x: 400
-        y: 400
-        width: 100
-        height: 80
+        x: 624
+        y: 511
+        width: 32
+        height: 32
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2059,10 +2035,10 @@ TextureImporter:
       name: Inquisitor_76
       rect:
         serializedVersion: 2
-        x: 500
-        y: 400
-        width: 100
-        height: 80
+        x: 628
+        y: 527
+        width: 41
+        height: 58
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2080,10 +2056,10 @@ TextureImporter:
       name: Inquisitor_77
       rect:
         serializedVersion: 2
-        x: 600
-        y: 400
-        width: 100
-        height: 80
+        x: 724
+        y: 511
+        width: 32
+        height: 33
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2101,10 +2077,10 @@ TextureImporter:
       name: Inquisitor_78
       rect:
         serializedVersion: 2
-        x: 700
-        y: 400
-        width: 100
-        height: 80
+        x: 23
+        y: 431
+        width: 30
+        height: 39
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2122,10 +2098,10 @@ TextureImporter:
       name: Inquisitor_79
       rect:
         serializedVersion: 2
-        x: 0
-        y: 320
-        width: 100
-        height: 80
+        x: 126
+        y: 431
+        width: 23
+        height: 40
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2143,10 +2119,10 @@ TextureImporter:
       name: Inquisitor_80
       rect:
         serializedVersion: 2
-        x: 100
-        y: 320
-        width: 100
-        height: 80
+        x: 226
+        y: 438
+        width: 26
+        height: 43
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2164,10 +2140,10 @@ TextureImporter:
       name: Inquisitor_81
       rect:
         serializedVersion: 2
-        x: 200
-        y: 320
-        width: 100
-        height: 80
+        x: 327
+        y: 436
+        width: 19
+        height: 34
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2185,10 +2161,10 @@ TextureImporter:
       name: Inquisitor_82
       rect:
         serializedVersion: 2
-        x: 300
-        y: 320
-        width: 100
-        height: 80
+        x: 427
+        y: 431
+        width: 22
+        height: 28
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2206,10 +2182,10 @@ TextureImporter:
       name: Inquisitor_83
       rect:
         serializedVersion: 2
-        x: 400
-        y: 320
-        width: 100
-        height: 80
+        x: 527
+        y: 431
+        width: 21
+        height: 29
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2227,10 +2203,10 @@ TextureImporter:
       name: Inquisitor_84
       rect:
         serializedVersion: 2
-        x: 500
-        y: 320
-        width: 100
-        height: 80
+        x: 627
+        y: 431
+        width: 20
+        height: 29
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2248,10 +2224,10 @@ TextureImporter:
       name: Inquisitor_85
       rect:
         serializedVersion: 2
-        x: 600
-        y: 320
-        width: 100
-        height: 80
+        x: 726
+        y: 431
+        width: 22
+        height: 32
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2269,10 +2245,10 @@ TextureImporter:
       name: Inquisitor_86
       rect:
         serializedVersion: 2
-        x: 700
-        y: 320
-        width: 100
-        height: 80
+        x: 30
+        y: 352
+        width: 28
+        height: 40
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2290,10 +2266,10 @@ TextureImporter:
       name: Inquisitor_87
       rect:
         serializedVersion: 2
-        x: 0
-        y: 240
-        width: 100
-        height: 80
+        x: 115
+        y: 349
+        width: 69
+        height: 41
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2311,10 +2287,10 @@ TextureImporter:
       name: Inquisitor_88
       rect:
         serializedVersion: 2
-        x: 100
-        y: 240
-        width: 100
-        height: 80
+        x: 216
+        y: 349
+        width: 32
+        height: 41
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2332,10 +2308,10 @@ TextureImporter:
       name: Inquisitor_89
       rect:
         serializedVersion: 2
-        x: 200
-        y: 240
-        width: 100
-        height: 80
+        x: 251
+        y: 367
+        width: 30
+        height: 16
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2353,10 +2329,10 @@ TextureImporter:
       name: Inquisitor_90
       rect:
         serializedVersion: 2
-        x: 300
-        y: 240
-        width: 100
-        height: 80
+        x: 320
+        y: 349
+        width: 27
+        height: 41
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2374,10 +2350,10 @@ TextureImporter:
       name: Inquisitor_91
       rect:
         serializedVersion: 2
-        x: 400
-        y: 240
-        width: 100
-        height: 80
+        x: 416
+        y: 351
+        width: 34
+        height: 44
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2395,10 +2371,10 @@ TextureImporter:
       name: Inquisitor_92
       rect:
         serializedVersion: 2
-        x: 500
-        y: 240
-        width: 100
-        height: 80
+        x: 514
+        y: 364
+        width: 53
+        height: 61
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2416,10 +2392,10 @@ TextureImporter:
       name: Inquisitor_93
       rect:
         serializedVersion: 2
-        x: 600
-        y: 240
-        width: 100
-        height: 80
+        x: 532
+        y: 349
+        width: 22
+        height: 41
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2437,10 +2413,10 @@ TextureImporter:
       name: Inquisitor_94
       rect:
         serializedVersion: 2
-        x: 700
-        y: 240
-        width: 100
-        height: 80
+        x: 627
+        y: 366
+        width: 40
+        height: 59
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2458,10 +2434,10 @@ TextureImporter:
       name: Inquisitor_95
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
-        width: 100
-        height: 80
+        x: 632
+        y: 349
+        width: 22
+        height: 41
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2479,10 +2455,10 @@ TextureImporter:
       name: Inquisitor_96
       rect:
         serializedVersion: 2
-        x: 100
-        y: 160
-        width: 100
-        height: 80
+        x: 729
+        y: 349
+        width: 26
+        height: 42
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2500,10 +2476,10 @@ TextureImporter:
       name: Inquisitor_97
       rect:
         serializedVersion: 2
-        x: 200
-        y: 160
-        width: 100
-        height: 80
+        x: 18
+        y: 271
+        width: 33
+        height: 38
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2521,10 +2497,10 @@ TextureImporter:
       name: Inquisitor_98
       rect:
         serializedVersion: 2
-        x: 300
-        y: 160
-        width: 100
-        height: 80
+        x: 121
+        y: 271
+        width: 34
+        height: 36
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2542,10 +2518,10 @@ TextureImporter:
       name: Inquisitor_99
       rect:
         serializedVersion: 2
-        x: 400
-        y: 160
-        width: 100
-        height: 80
+        x: 228
+        y: 271
+        width: 27
+        height: 43
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2563,10 +2539,10 @@ TextureImporter:
       name: Inquisitor_100
       rect:
         serializedVersion: 2
-        x: 500
-        y: 160
-        width: 100
-        height: 80
+        x: 328
+        y: 271
+        width: 29
+        height: 44
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2584,10 +2560,10 @@ TextureImporter:
       name: Inquisitor_101
       rect:
         serializedVersion: 2
-        x: 600
-        y: 160
-        width: 100
-        height: 80
+        x: 425
+        y: 271
+        width: 26
+        height: 43
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2605,10 +2581,10 @@ TextureImporter:
       name: Inquisitor_102
       rect:
         serializedVersion: 2
-        x: 700
-        y: 160
-        width: 100
-        height: 80
+        x: 523
+        y: 271
+        width: 31
+        height: 41
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2626,10 +2602,10 @@ TextureImporter:
       name: Inquisitor_103
       rect:
         serializedVersion: 2
-        x: 0
-        y: 80
-        width: 100
-        height: 80
+        x: 623
+        y: 271
+        width: 31
+        height: 41
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2647,10 +2623,10 @@ TextureImporter:
       name: Inquisitor_104
       rect:
         serializedVersion: 2
-        x: 100
-        y: 80
-        width: 100
-        height: 80
+        x: 723
+        y: 271
+        width: 31
+        height: 40
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2668,10 +2644,10 @@ TextureImporter:
       name: Inquisitor_105
       rect:
         serializedVersion: 2
-        x: 200
-        y: 80
-        width: 100
-        height: 80
+        x: 20
+        y: 191
+        width: 34
+        height: 38
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2689,10 +2665,10 @@ TextureImporter:
       name: Inquisitor_106
       rect:
         serializedVersion: 2
-        x: 300
-        y: 80
-        width: 100
-        height: 80
+        x: 119
+        y: 191
+        width: 30
+        height: 44
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2710,10 +2686,10 @@ TextureImporter:
       name: Inquisitor_107
       rect:
         serializedVersion: 2
-        x: 400
-        y: 80
-        width: 100
-        height: 80
+        x: 218
+        y: 191
+        width: 49
+        height: 41
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2731,10 +2707,10 @@ TextureImporter:
       name: Inquisitor_108
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 100
-        height: 80
+        x: 318
+        y: 191
+        width: 31
+        height: 41
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2752,10 +2728,10 @@ TextureImporter:
       name: Inquisitor_109
       rect:
         serializedVersion: 2
-        x: 100
-        y: 0
-        width: 100
-        height: 80
+        x: 424
+        y: 191
+        width: 24
+        height: 45
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2773,10 +2749,10 @@ TextureImporter:
       name: Inquisitor_110
       rect:
         serializedVersion: 2
-        x: 200
-        y: 0
-        width: 100
-        height: 80
+        x: 507
+        y: 192
+        width: 45
+        height: 35
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2794,10 +2770,10 @@ TextureImporter:
       name: Inquisitor_111
       rect:
         serializedVersion: 2
-        x: 300
-        y: 0
-        width: 100
-        height: 80
+        x: 626
+        y: 193
+        width: 29
+        height: 35
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2815,10 +2791,10 @@ TextureImporter:
       name: Inquisitor_112
       rect:
         serializedVersion: 2
-        x: 400
-        y: 0
-        width: 100
-        height: 80
+        x: 725
+        y: 193
+        width: 58
+        height: 35
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2836,10 +2812,10 @@ TextureImporter:
       name: Inquisitor_113
       rect:
         serializedVersion: 2
-        x: 500
-        y: 0
-        width: 100
-        height: 80
+        x: 17
+        y: 137
+        width: 60
+        height: 35
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2857,10 +2833,10 @@ TextureImporter:
       name: Inquisitor_114
       rect:
         serializedVersion: 2
-        x: 600
-        y: 0
-        width: 100
-        height: 80
+        x: 113
+        y: 138
+        width: 58
+        height: 35
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2870,27 +2846,6 @@ TextureImporter:
       bones: []
       spriteID: eb42c43a844e1efa0800000000000000
       internalID: -5773082246683810626
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inquisitor_115
-      rect:
-        serializedVersion: 2
-        x: 700
-        y: 0
-        width: 100
-        height: 80
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea324909a278249e0800000000000000
-      internalID: -1638598697525435474
       vertices: []
       indices: 
       edges: []

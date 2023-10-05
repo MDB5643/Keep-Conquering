@@ -6,6 +6,14 @@ public class Dust_DestroyEvent : MonoBehaviour
 {
     public void destroyEvent()
     {
-        Destroy(gameObject);
+        if (gameObject.transform.parent != null && !gameObject.transform.parent.GetComponent<Conqueror>())
+        {
+            Destroy(gameObject.transform.parent.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        
     }
 }

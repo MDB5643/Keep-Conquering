@@ -5,6 +5,8 @@ using UnityEngine;
 public class ChampSideSpec : MonoBehaviour
 {
     private PolygonCollider2D pCollider;
+    private float lingerTime = 0.0f;
+    private float maxLingerTime = 0.51f;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +17,11 @@ public class ChampSideSpec : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        lingerTime += Time.deltaTime;
+        if (lingerTime >= maxLingerTime && gameObject != null)
+        {
+            GameObject.Destroy(gameObject);
+        }
         pCollider = transform.GetComponent<PolygonCollider2D>();
         LineRenderer lr = transform.GetComponent<LineRenderer>();
         if (lr == null)

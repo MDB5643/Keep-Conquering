@@ -62,12 +62,15 @@ namespace UnityStandardAssets._2D
             transform.position = newPos;
 
             m_LastTargetPosition = target.position;
-
-            if (target.GetComponentInParent<Conqueror>().m_cameraShake)
+            if (target != null)
             {
-                target.GetComponentInParent<Conqueror>().m_cameraShake = false;
-                StartCoroutine(Shaking());
+                if (target.GetComponentInParent<Conqueror>().m_cameraShake)
+                {
+                    target.GetComponentInParent<Conqueror>().m_cameraShake = false;
+                    StartCoroutine(Shaking());
+                }
             }
+            
         }
 
         IEnumerator Shaking()

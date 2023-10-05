@@ -362,6 +362,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cdc8fa253fc4494fb6262debb9adb81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  teamColor: Blue
+  playerNumber: 1
   m_runSpeed: 4.5
   m_walkSpeed: 2
   m_jumpForce: 7.5
@@ -399,6 +401,7 @@ MonoBehaviour:
   m_fullCharge: 0
   m_isParrying: 0
   m_isInKnockback: 0
+  m_isInHotZone: 0
   m_cameraShake: 0
   m_shakeIntensity: 0.1
   m_maxSmashChargeTime: 2
@@ -420,10 +423,13 @@ MonoBehaviour:
   m_timeSinceHitStun: 0
   m_timeSinceKnockBack: 0
   m_KnockBackDuration: 0.1
+  m_KnockBackMomentumX: 0
+  m_KnockBackMomentumY: 0
   m_hitStunDuration: 0
   m_gravity: 0
   m_maxSpeed: 4.5
   m_isInHitStop: 0
+  isInStartUp: 0
   m_hitStopDuration: 0
   m_timeSinceHitStop: 0
   animSpeed: 0
@@ -434,6 +440,7 @@ MonoBehaviour:
   m_WhatIsPortal:
     serializedVersion: 2
     m_Bits: 64
+  ledge: {fileID: 0}
   jabPoint: {fileID: 0}
   upTiltPoint: {fileID: 2776925981775119306}
   backPoint: {fileID: 2727378148215394070}
@@ -441,10 +448,12 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 512
-  KnockoutFX: {fileID: 2071228030341280552, guid: 8277e46428c59ce409a57f50a206b9c6, type: 3}
+  KnockoutFX: {fileID: 181668162739009514, guid: a281fa3ea3c817d488e3c8dde98f496d, type: 3}
+  LightAttackFX: {fileID: 3598523154694509901, guid: 4186a8507c8e2dc42a97d7745f3942f8, type: 3}
   HeavyAttackFX: {fileID: 1724291888056607309, guid: 34e8f2ffa6331ff4b9f7be45413dab33, type: 3}
   ChargeFlashFX: {fileID: 4204095689380797397, guid: 81ead744f7dafc649a696aa3e0018451, type: 3}
   BlockFX: {fileID: 0}
+  EyeShotFX: {fileID: 4688236407413030439, guid: f624889d211fc02468f395791ab3a471, type: 3}
   shieldBar: {fileID: 1527678593}
   hookPrefab: {fileID: 0}
   hookChain: {fileID: 0}
@@ -529,6 +538,7 @@ GameObject:
   - component: {fileID: 3183573821175429781}
   - component: {fileID: 4800942298591410584}
   - component: {fileID: 1527678593}
+  - component: {fileID: 4946500873877376955}
   m_Layer: 9
   m_Name: ShieldBar
   m_TagString: Untagged
@@ -570,7 +580,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -623,6 +633,25 @@ MonoBehaviour:
   medHealth3: {fileID: 5790225955870995648, guid: cc72ae3343d84db4c96ab2dc716d9039, type: 3}
   lowHealth1: {fileID: -2512460877374131354, guid: cc72ae3343d84db4c96ab2dc716d9039, type: 3}
   lowHealth2: {fileID: 5993966139679350167, guid: cc72ae3343d84db4c96ab2dc716d9039, type: 3}
+--- !u!114 &4946500873877376955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2611625238851077509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8029d696e5349744f9ba46d4cec1f084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  directions:
+    top: 1
+    bottom: 1
+    left: 1
+    right: 1
 --- !u!1 &2861955291983879146
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,6 +914,8 @@ GameObject:
   - component: {fileID: 7776102926116477038}
   - component: {fileID: 6560684437174769846}
   - component: {fileID: 7231592727529175942}
+  - component: {fileID: 6474512883784404575}
+  - component: {fileID: 6598370772909759098}
   m_Layer: 9
   m_Name: Sprite
   m_TagString: Untagged
@@ -926,7 +957,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6b08ac47c4a3ea14fbc9ab0c8a3375f7, type: 2}
+  - {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -948,7 +979,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300010, guid: 5142d8c117f1ba94a9859c47f2dafb95, type: 3}
-  m_Color: {r: 0.9882878, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -989,10 +1020,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03eb6f6b51dec8840941ec2e4a1ed06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RunStopDust: {fileID: 0}
-  m_JumpDust: {fileID: 0}
-  m_LandingDust: {fileID: 0}
-  m_DodgeDust: {fileID: 0}
+  m_RunStopDust: {fileID: 7310271610845027193, guid: 39afca3c109b26049a80bc07593eb271, type: 3}
+  m_JumpDust: {fileID: 8935918012585647707, guid: 4a4123fbc8b39d441868897a71d2b2b1, type: 3}
+  m_LandingDust: {fileID: 9076098953984712191, guid: 0b745be9abb3a6d4dadd8705950196d1, type: 3}
+  m_DodgeDust: {fileID: 8590431080485398814, guid: da52102717e04414e812836f28ae21bb, type: 3}
   m_WallSlideDust: {fileID: 0}
   m_WallJumpDust: {fileID: 0}
   m_AirSlamDust: {fileID: 0}
@@ -1018,6 +1049,43 @@ MonoBehaviour:
   dSpecExplosionHitbox2: {fileID: 0}
   lingerDeltaTime: 0.03
   lingerDurationSeconds: 1
+--- !u!114 &6474512883784404575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5419930034650718081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae9be2d7a1e5353458c0bcb0b89f67ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_sourceColors:
+  - {r: 0.32156864, g: 0.09411766, b: 0.36862746, a: 1}
+  - {r: 0.4784314, g: 0.098039225, b: 0.5803922, a: 1}
+  m_newColors:
+  - {r: 0.43137258, g: 0.078431375, b: 0.078431375, a: 1}
+  - {r: 0.6039216, g: 0.1254902, b: 0.0627451, a: 1}
+--- !u!114 &6598370772909759098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5419930034650718081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8029d696e5349744f9ba46d4cec1f084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  directions:
+    top: 1
+    bottom: 1
+    left: 1
+    right: 1
 --- !u!1 &6676569791411672975
 GameObject:
   m_ObjectHideFlags: 0

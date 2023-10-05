@@ -42,7 +42,7 @@ public class PrototypeHero : Conqueror {
     {
         
 
-        if (!m_inHitStun)
+        if (!m_inHitStun )
         {
             if (!m_isInHitStop)
             {
@@ -122,7 +122,10 @@ public class PrototypeHero : Conqueror {
                     m_fullCharge = true;
                 }
                 //Update damage
-                m_DamageDisplay.text = currentDamage + "%";
+                if (m_DamageDisplay)
+                {
+                    m_DamageDisplay.text = currentDamage + "%";
+                }
                 // Check for interactable overlapping objects
                 CheckOverlaps();
                 // Decrease death respawn timer 
@@ -180,7 +183,7 @@ public class PrototypeHero : Conqueror {
                 // -- Handle input and movement --
                 float inputX = 0.0f;
 
-                if (m_disableMovementTimer < 0.0f)
+                if (m_disableMovementTimer < 0.0f && !preview)
                     inputX = Input.GetAxis("Horizontal");
 
                 // GetAxisRaw returns either -1, 0 or 1
@@ -193,7 +196,7 @@ public class PrototypeHero : Conqueror {
                     m_moving = false;
 
                 // Swap direction of sprite depending on move direction
-                if (inputRaw > 0 && !m_dodging && !m_wallSlide && !m_ledgeGrab && !m_ledgeClimb)
+                if (inputRaw > 0 && !m_dodging && !m_wallSlide && !m_ledgeGrab && !m_ledgeClimb && !preview)
                 {
                     if (m_SR.flipX == true)
                     {
@@ -203,7 +206,7 @@ public class PrototypeHero : Conqueror {
                     m_facingDirection = 1;
                 }
 
-                else if (inputRaw < 0 && !m_dodging && !m_wallSlide && !m_ledgeGrab && !m_ledgeClimb)
+                else if (inputRaw < 0 && !m_dodging && !m_wallSlide && !m_ledgeGrab && !m_ledgeClimb && !preview)
                 {
                     if (m_SR.flipX == false)
                     {
@@ -215,30 +218,45 @@ public class PrototypeHero : Conqueror {
 
                 // SlowDownSpeed helps decelerate the characters when stopping
                 float SlowDownSpeed = m_moving ? 1.0f : 0.5f;
-                float KBSlowDownSpeed = 0.5f;
+                float KBSlowDownSpeed = 0.8f;
                 // Set movement
                 if (!m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_animator.GetBool("isParrying") && m_disableMovementTimer < 0.0f && !m_launched && m_fSmashCharging == false
-                    && m_uSmashCharging == false && m_dSmashCharging == false)
+                    && m_uSmashCharging == false && m_dSmashCharging == false && !preview)
                 {
                     if (!m_isInKnockback)
                     {
-                        m_body2d.velocity = new Vector2(inputX * m_maxSpeed * SlowDownSpeed, m_body2d.velocity.y);
                         m_timeSinceKnockBack = 0.0f;
+                        if (m_KnockBackMomentumX <= 1 && m_KnockBackMomentumY <= 1)
+                        {
+                            m_body2d.velocity = new Vector2(inputX * m_maxSpeed * SlowDownSpeed, m_body2d.velocity.y);
+
+                        }
+                        else
+                        {
+                            m_body2d.velocity = new Vector2(m_KnockBackMomentumX, m_KnockBackMomentumY);
+
+
+                            m_KnockBackMomentumX = m_KnockBackMomentumX * KBSlowDownSpeed;
+                            m_KnockBackMomentumY = m_KnockBackMomentumY * KBSlowDownSpeed;
+                        }
+
                     }
                     else
                     {
                         m_timeSinceKnockBack += Time.deltaTime;
                         if (m_timeSinceKnockBack > m_KnockBackDuration)
                         {
-
-                            m_body2d.velocity = new Vector2(inputX * m_maxSpeed * KBSlowDownSpeed, 0);
+                            //
+                            //    m_body2d.velocity = new Vector2(m_body2d.velocity.x * KBSlowDownSpeed, 0);
                             m_isInKnockback = false;
-
+                            m_KnockBackMomentumX = m_body2d.velocity.x;
+                            m_KnockBackMomentumY = m_body2d.velocity.y;
+                            //
                         }
-                        else
-                        {
-                            m_body2d.velocity = new Vector2(m_body2d.velocity.x * KBSlowDownSpeed, m_body2d.velocity.y * KBSlowDownSpeed);
-                        }
+                        //else
+                        //{
+                        //    m_body2d.velocity = new Vector2(m_body2d.velocity.x * KBSlowDownSpeed, m_body2d.velocity.y * KBSlowDownSpeed);
+                        //}
 
                     }
                 }
@@ -312,7 +330,7 @@ public class PrototypeHero : Conqueror {
 
                 // -- Handle Animations --
 
-                if (m_timeSinceStun > 4.0f)
+                if (m_timeSinceStun > 4.0f && !preview)
                 {
                     if (m_animator.GetBool("isStunned"))
                     {
@@ -470,7 +488,7 @@ public class PrototypeHero : Conqueror {
                     }
 
                     //Jab Attack
-                    else if (Input.GetMouseButtonDown(0) && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > 0.15f && m_TimeSinceJab2 > 0.45f && m_timeSinceNSpec > 1.1f
+                    else if (Input.GetMouseButtonDown(0) && !Input.GetKey("w") && !Input.GetKey("s") && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > 0.15f && m_TimeSinceJab2 > 0.45f && m_timeSinceNSpec > 1.1f
                         && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
                     {
                         // Reset timer
@@ -704,10 +722,13 @@ public class PrototypeHero : Conqueror {
             }
             else
             {
+                m_body2d.velocity = Vector2.zero;
+                m_body2d.gravityScale = 0;
                 m_timeSinceHitStop += Time.deltaTime;
                 m_animator.speed = 0;
                 if (m_timeSinceHitStop >= m_hitStopDuration)
                 {
+                    m_body2d.gravityScale = 1.25f;
                     m_isInHitStop = false;
                     m_animator.speed = 1;
                 }
@@ -717,6 +738,7 @@ public class PrototypeHero : Conqueror {
         {
             if (m_inHitStun)
             {
+                m_body2d.velocity = Vector2.zero;
                 m_body2d.gravityScale = 0;
                 m_timeSinceHitStun += Time.deltaTime;
                 m_animator.speed = 0;
@@ -825,7 +847,7 @@ public class PrototypeHero : Conqueror {
         Quaternion rotQuat = new Quaternion();
         if (hookDirection == "Up")
         {
-            rotQuat = new Quaternion(180f, 0f, 0f, 0f);
+            rotQuat = new Quaternion(90f, 0f, 0f, 0f);
         }
         else if (m_facingDirection == 1)
         {

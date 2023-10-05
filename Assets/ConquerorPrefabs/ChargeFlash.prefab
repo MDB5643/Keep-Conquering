@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7759734335275219379}
   - component: {fileID: 1156857226930686294}
   - component: {fileID: 2899559985229810788}
+  - component: {fileID: 1350216897112700900}
   m_Layer: 0
   m_Name: ChargeFlash
   m_TagString: Untagged
@@ -53,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -116,6 +117,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb07ed6160897e4468b19717ac684f34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1350216897112700900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3163735766146733122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8029d696e5349744f9ba46d4cec1f084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  directions:
+    top: 1
+    bottom: 1
+    left: 1
+    right: 1
 --- !u!1 &4204095689380797397
 GameObject:
   m_ObjectHideFlags: 0

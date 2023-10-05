@@ -15,7 +15,7 @@ public class TheChampionAnimEvents : MonoBehaviour
     public GameObject m_AirSlamDust;
     public GameObject m_ParryEffect;
 
-    private TheChampion m_player;
+    private Conqueror m_player;
     private AudioManager_PrototypeHero m_audioManager;
 
     public CombatManager c_Manager;
@@ -49,7 +49,7 @@ public class TheChampionAnimEvents : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        m_player = GetComponentInParent<TheChampion>();
+        m_player = GetComponentInParent<Conqueror>();
         c_Manager = GetComponentInParent<CombatManager>();
         m_audioManager = AudioManager_PrototypeHero.instance;
     }
@@ -62,6 +62,15 @@ public class TheChampionAnimEvents : MonoBehaviour
         float dustXOffset = 0.6f;
         float dustYOffset = 0.078125f;
         m_player.SpawnDustEffect(m_RunStopDust, dustXOffset, dustYOffset);
+
+        if (m_player.transform.position.z > 10f)
+        {
+            m_player.SetLayerRecursively(m_player.gameObject, LayerMask.NameToLayer("PlayerMid"));
+        }
+        else
+        {
+            m_player.SetLayerRecursively(m_player.gameObject, LayerMask.NameToLayer("Player"));
+        }
     }
 
     void AE_setPositionToClimbPosition()
@@ -131,11 +140,18 @@ public class TheChampionAnimEvents : MonoBehaviour
             rotQuat = new Quaternion(0f, 180f, 0f, 0f);
             xDisplace = -0.1f;
         }
-        activeHitbox = Instantiate(downAirHitbox, new Vector2((m_player.transform.position.x + xDisplace), m_player.transform.position.y - 1.3f),
+        activeHitbox = Instantiate(downAirHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y - 1.3f, m_player.transform.position.z),
             rotQuat, m_player.transform);
         if (m_player.transform.CompareTag("PlayerMid"))
         {
-            activeHitbox.layer = 19;
+            if (m_player.transform.CompareTag("PlayerMid"))
+            {
+                activeHitbox.layer = 19;
+                if (activeHitbox.transform.GetChild(0) != null)
+                {
+                    activeHitbox.transform.GetChild(0).gameObject.layer = 19;
+                }
+            }
         }
         StartCoroutine(Linger(lingerDeltaTime));
         c_Manager.hitEnemy = "None";
@@ -156,11 +172,18 @@ public class TheChampionAnimEvents : MonoBehaviour
             rotQuat = new Quaternion(0f, 180f, 0f, 0f);
             xDisplace = 0.7f;
         }
-        activeHitbox = Instantiate(upAirHitbox, new Vector2((m_player.transform.position.x + xDisplace), m_player.transform.position.y + .5f),
+        activeHitbox = Instantiate(upAirHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + .5f, m_player.transform.position.z),
             rotQuat, m_player.transform);
         if (m_player.transform.CompareTag("PlayerMid"))
         {
-            activeHitbox.layer = 19;
+            if (m_player.transform.CompareTag("PlayerMid"))
+            {
+                activeHitbox.layer = 19;
+                if (activeHitbox.transform.GetChild(0) != null)
+                {
+                    activeHitbox.transform.GetChild(0).gameObject.layer = 19;
+                }
+            }
         }
         StartCoroutine(Linger(lingerDeltaTime));
         c_Manager.hitEnemy = "None";
@@ -181,11 +204,18 @@ public class TheChampionAnimEvents : MonoBehaviour
             rotQuat = new Quaternion(0f, 180f, 0f, 0f);
             xDisplace = -4.5f;
         }
-        activeHitbox = Instantiate(fAirHitbox, new Vector2((m_player.transform.position.x + xDisplace), m_player.transform.position.y + .9f),
+        activeHitbox = Instantiate(fAirHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + .9f, m_player.transform.position.z),
             rotQuat, m_player.transform);
         if (m_player.transform.CompareTag("PlayerMid"))
         {
-            activeHitbox.layer = 19;
+            if (m_player.transform.CompareTag("PlayerMid"))
+            {
+                activeHitbox.layer = 19;
+                if (activeHitbox.transform.GetChild(0) != null)
+                {
+                    activeHitbox.transform.GetChild(0).gameObject.layer = 19;
+                }
+            }
         }
         StartCoroutine(Linger(lingerDeltaTime));
         c_Manager.hitEnemy = "None";
@@ -209,7 +239,10 @@ public class TheChampionAnimEvents : MonoBehaviour
             rotQuat, m_player.transform);
         if (m_player.transform.CompareTag("PlayerMid"))
         {
-            activeHitbox.layer = 19;
+            if (m_player.transform.CompareTag("PlayerMid"))
+            {
+                activeHitbox.layer = 19;
+            }
         }
         c_Manager.hitEnemy = "None";
     }
@@ -237,7 +270,10 @@ public class TheChampionAnimEvents : MonoBehaviour
         
         if (m_player.transform.CompareTag("PlayerMid"))
         {
-            activeHitbox.layer = 19;
+            if (m_player.transform.CompareTag("PlayerMid"))
+            {
+                activeHitbox.layer = 19;
+            }
         }
         c_Manager.hitEnemy = "None";
     }
@@ -289,11 +325,18 @@ public class TheChampionAnimEvents : MonoBehaviour
             rotQuat = new Quaternion(0f, 180f, 0f, 0f);
             xDisplace = 0.0f;
         }
-        activeHitbox = Instantiate(upTiltHitbox, new Vector2((m_player.transform.position.x + xDisplace), m_player.transform.position.y - 1f),
+        activeHitbox = Instantiate(upTiltHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y - 1f, m_player.transform.position.z),
             rotQuat, m_player.transform);
         if (m_player.transform.CompareTag("PlayerMid"))
         {
-            activeHitbox.layer = 19;
+            if (m_player.transform.CompareTag("PlayerMid"))
+            {
+                activeHitbox.layer = 19;
+                if (activeHitbox.transform.GetChild(0) != null)
+                {
+                    activeHitbox.transform.GetChild(0).gameObject.layer = 19;
+                }
+            }
         }
         StartCoroutine(Linger(lingerDeltaTime));
         c_Manager.hitEnemy = "None";
@@ -316,7 +359,7 @@ public class TheChampionAnimEvents : MonoBehaviour
             xDisplace = 0f;
             pushForce = -pushForce;
         }
-        activeHitbox = Instantiate(upSpecExplosionHitbox, new Vector2((m_player.transform.position.x + xDisplace), m_player.transform.position.y + .5f),
+        activeHitbox = Instantiate(upSpecExplosionHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + .5f, m_player.transform.position.z),
             rotQuat, m_player.transform);
         //activeHitbox2 = Instantiate(upSpecExplosionHitbox2, new Vector2(-(m_player.transform.position.x + xDisplace), m_player.transform.position.y),
         //    rotQuat);
@@ -325,11 +368,14 @@ public class TheChampionAnimEvents : MonoBehaviour
         m_player.transform.GetComponentInChildren<Rigidbody2D>().AddForce(new Vector2(pushForce, 13), ForceMode2D.Impulse);
         m_player.m_launched = true;
         m_player.m_SR.color = Color.white;
-        m_player.isInUpSpecial = true;
+        m_player.GetComponent<TheChampion>().isInUpSpecial = true;
+        m_player.isInStartUp = false;
         if (m_player.transform.CompareTag("PlayerMid"))
         {
-            activeHitbox.layer = 19;
-            //activeHitbox2.layer = 19;
+            if (m_player.transform.CompareTag("PlayerMid"))
+            {
+                activeHitbox.layer = 19;
+            }
         }
         c_Manager.hitEnemy = "None";
     }
@@ -352,12 +398,14 @@ public class TheChampionAnimEvents : MonoBehaviour
             xDisplace = 0f;
             pushForce = -pushForce;
         }
-        Instantiate(dSpecExplosionHitbox, new Vector2((m_player.transform.position.x + xDisplace), m_player.transform.position.y),
+        activeHitbox = Instantiate(dSpecExplosionHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y, m_player.transform.position.z),
             rotQuat, m_player.transform);
         if (m_player.transform.CompareTag("PlayerMid"))
         {
-            activeHitbox.layer = 19;
-            //activeHitbox2.layer = 19;
+            if (m_player.transform.CompareTag("PlayerMid"))
+            {
+                activeHitbox.layer = 19;
+            }
         }
         c_Manager.hitEnemy = "None";
     }
@@ -378,7 +426,7 @@ public class TheChampionAnimEvents : MonoBehaviour
             rotQuat = new Quaternion(0f, 180f, 0f, 0f);
             xDisplace = 0f;
         }
-        Instantiate(upSpecExplosionHitbox, new Vector2((m_player.transform.position.x + xDisplace), m_player.transform.position.y + .5f),
+        activeHitbox = Instantiate(upSpecExplosionHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + .5f, m_player.transform.position.z),
             rotQuat, m_player.transform);
         //activeHitbox2 = Instantiate(upSpecExplosionHitbox2, new Vector2(-(m_player.transform.position.x + xDisplace), m_player.transform.position.y),
         //    rotQuat);
@@ -408,11 +456,14 @@ public class TheChampionAnimEvents : MonoBehaviour
             rotQuat = new Quaternion(0f, 180f, 0f, 0f);
             xDisplace = -3.0f;
         }
-        activeHitbox = Instantiate(jab1Hitbox, new Vector2((m_player.transform.position.x + xDisplace), m_player.transform.position.y + .74f),
+        activeHitbox = Instantiate(jab1Hitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + .74f, m_player.transform.position.z),
             rotQuat, m_player.transform);
         if (m_player.transform.CompareTag("PlayerMid"))
         {
-            activeHitbox.layer = 19;
+            if (m_player.transform.CompareTag("PlayerMid"))
+            {
+                activeHitbox.layer = 19;
+            }
         }
         StartCoroutine(Linger(lingerDeltaTime));
         c_Manager.hitEnemy = "None";
@@ -435,12 +486,18 @@ public class TheChampionAnimEvents : MonoBehaviour
         }
         if (m_player.m_grounded)
         {
-            Instantiate(nSpecHitbox, new Vector2((m_player.transform.position.x + xDisplace), m_player.transform.position.y - .41f),
-            rotQuat, m_player.transform);
-            if (m_player.transform.CompareTag("PlayerMid"))
+            if (m_player.tag == "PlayerMid")
             {
-                activeHitbox.layer = 19;
+                Instantiate(nSpecHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y - .41f, m_player.transform.position.z),
+            rotQuat, m_player.transform).layer = 19;
             }
+            else
+            {
+                Instantiate(nSpecHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y - .41f, m_player.transform.position.z),
+            rotQuat, m_player.transform);
+            }
+            
+            
             c_Manager.hitEnemy = "None";
         }
         
@@ -493,8 +550,12 @@ public class TheChampionAnimEvents : MonoBehaviour
             rotQuat = new Quaternion(0f, 180f, 0f, 0f);
             xDisplace = -2.7f;
         }
-        activeHitbox = Instantiate(jab2Hitbox, new Vector2((m_player.transform.position.x + xDisplace), m_player.transform.position.y),
+        activeHitbox = Instantiate(jab2Hitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y, m_player.transform.position.z),
             rotQuat, m_player.transform);
+        if (m_player.transform.CompareTag("PlayerMid"))
+        {
+            activeHitbox.layer = 19;
+        }
         StartCoroutine(Linger(lingerDeltaTime));
         c_Manager.hitEnemy = "None";
     }
@@ -537,11 +598,15 @@ public class TheChampionAnimEvents : MonoBehaviour
             pushForce = -pushForce;
             xDisplaceExplode = -xDisplaceExplode;
         }
-        activeHitbox = Instantiate(sideSpecialHitbox, new Vector2((m_player.transform.position.x + xDisplace), m_player.transform.position.y),
+        activeHitbox = Instantiate(sideSpecialHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y, m_player.transform.position.z),
             rotQuat, m_player.transform);
         m_player.GetComponent<Rigidbody2D>().AddForce(new Vector2(pushForce, 0.0f), ForceMode2D.Impulse);
+        if (m_player.transform.CompareTag("PlayerMid"))
+        {
+            activeHitbox.layer = 19;
+        }
         StartCoroutine(Linger(0.5f));
-        c_Manager.hitEnemy = "None";
+        //c_Manager.hitEnemy = "None";
     }
 
     void SideSpecialExplode()
@@ -560,12 +625,19 @@ public class TheChampionAnimEvents : MonoBehaviour
             pushForce = -pushForce;
             xDisplaceExplode = -xDisplaceExplode;
         }
-        activeHitbox = Instantiate(sideSpecialExplode, new Vector2((m_player.transform.position.x + xDisplaceExplode), m_player.transform.position.y),
-            rotQuat, m_player.transform);
         m_player.m_disableMovementTimer = .5f;
         m_player.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
         m_player.GetComponent<Rigidbody2D>().AddForce(new Vector2(-pushForce, 0.0f), ForceMode2D.Impulse);
-        StartCoroutine(Linger(0.3f));
+        if (m_player.transform.CompareTag("PlayerMid"))
+        {
+            Instantiate(sideSpecialExplode, new Vector3((m_player.transform.position.x + xDisplaceExplode), m_player.transform.position.y, m_player.transform.position.z),
+            rotQuat, m_player.transform).layer = 19;
+        }
+        else
+        {
+            Instantiate(sideSpecialExplode, new Vector3((m_player.transform.position.x + xDisplaceExplode), m_player.transform.position.y, m_player.transform.position.z),
+            rotQuat, m_player.transform);
+        }
         c_Manager.hitEnemy = "None";
     }
 
@@ -576,8 +648,18 @@ public class TheChampionAnimEvents : MonoBehaviour
 
     void AE_Dodge()
     {
+        m_audioManager.PlaySound("Dodge");
         float dustYOffset = 0.078125f;
         m_player.SpawnDustEffect(m_DodgeDust, 0.0f, dustYOffset);
+        if (m_player.transform.position.z == 20)
+        {
+            m_player.SetLayerRecursively(m_player.gameObject, LayerMask.NameToLayer("iFrameMid"));
+        }
+        else
+        {
+
+            m_player.SetLayerRecursively(m_player.gameObject, LayerMask.NameToLayer("iFrame"));
+        }
     }
 
     void AE_WallSlide()

@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.1/staging' branch; Version is '2021.1.5f1 (3737af19df53) revision 3618735'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19045.3324; Version 2009; 64bit' Language: 'en' Physical Memory: 8141 MB
+OS: 'Windows 10 Home; OS build 19045.3448; Version 2009; 64bit' Language: 'en' Physical Memory: 8141 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ M:/GameDev/KeepConquering-repo/Keep-Conquering
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49164
+63897
 Successfully changed project path to: M:/GameDev/KeepConquering-repo/Keep-Conquering
 M:/GameDev/KeepConquering-repo/Keep-Conquering
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 193.38 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 184.04 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.5f1 (3737af19df53)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/Resources/UnitySubsystems
@@ -31,51 +31,53 @@ Direct3D:
     Vendor:   NVIDIA
     VRAM:     5968 MB
     Driver:   31.0.15.3623
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56420
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56136
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003328 seconds.
+Registered in 0.003268 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 218.03 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 199.42 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.273 seconds
+- Completed reload, in  1.927 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005205 seconds.
+Registered in 0.004834 seconds.
 Begin MonoManager ReloadAssembly
 OnLevelWasLoaded was found on Fading
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
 
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 177.31 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 202.11 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.457 seconds
+- Completed reload, in  1.557 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 1.37 ms, found 2 plugins.
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.65 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3613 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.5 MB.
-System memory in use after: 172.6 MB.
+Unloading 4715 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 216.0 MB.
+System memory in use after: 216.1 MB.
 
-Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 4110.
-Total: 3.286100 ms (FindLiveObjects: 0.337700 ms CreateObjectMapping: 0.098800 ms MarkObjects: 2.609000 ms  DeleteObjects: 0.238800 ms)
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 5212.
+Total: 3.178400 ms (FindLiveObjects: 0.424200 ms CreateObjectMapping: 0.140100 ms MarkObjects: 2.446200 ms  DeleteObjects: 0.166600 ms)
 
 ========================================================================
 Received Import Request.
   path: Assets/ConquerorPrefabs/Battlemaster.prefab
   artifactKey: Guid(0d8ac43ce9f501247a34cb01d02b546b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ConquerorPrefabs/Battlemaster.prefab using Guid(0d8ac43ce9f501247a34cb01d02b546b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'PrototypeHero': Transition 'AnyState -> AttackUpHold' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+Start importing Assets/ConquerorPrefabs/Battlemaster.prefab using Guid(0d8ac43ce9f501247a34cb01d02b546b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'PrototypeHero 1': Transition 'AnyState -> AttackUpHold' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
 UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
@@ -89,61 +91,13 @@ UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityE
 
 [C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
 
- -> (artifact id: '4422af0ddaa13f7ff99bb33a39d2234d') in 0.600809 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005506 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.84 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.253 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.30 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.2 MB.
-System memory in use after: 174.3 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4121.
-Total: 2.657600 ms (FindLiveObjects: 0.331300 ms CreateObjectMapping: 0.094600 ms MarkObjects: 2.094900 ms  DeleteObjects: 0.135800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.024602 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.29 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.142 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.64 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.3 MB.
-System memory in use after: 174.4 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4125.
-Total: 3.307800 ms (FindLiveObjects: 0.362700 ms CreateObjectMapping: 0.130900 ms MarkObjects: 2.641200 ms  DeleteObjects: 0.171800 ms)
-
+ -> (artifact id: '63b3eb202c6506bd5e0891dc2b466693') in 1.097398 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1823.151104 seconds.
+  Time since last request: 0.000350 seconds.
   path: Assets/ConquerorPrefabs/PrototypeHero.prefab
   artifactKey: Guid(e481822248898d04e9808a3d3ca78e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ConquerorPrefabs/PrototypeHero.prefab using Guid(e481822248898d04e9808a3d3ca78e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'PrototypeHero': Transition 'AnyState -> AttackUpHold' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+Start importing Assets/ConquerorPrefabs/PrototypeHero.prefab using Guid(e481822248898d04e9808a3d3ca78e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'PrototypeHero 1': Transition 'AnyState -> AttackUpHold' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
 UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
@@ -157,1009 +111,306 @@ UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityE
 
 [C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
 
- -> (artifact id: '0a89656f2ca7288e03c582bcb602d9ae') in 0.651094 seconds 
+ -> (artifact id: '326e43b4c43a137c52cb6cfad698fc98') in 0.095172 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000410 seconds.
-  path: Assets/ConquerorPrefabs/PrototypeHeroCPU.prefab
-  artifactKey: Guid(4790448164922de47a391d4864e01f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ConquerorPrefabs/PrototypeHeroCPU.prefab using Guid(4790448164922de47a391d4864e01f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'PrototypeHero': Transition 'AnyState -> AttackUpHold' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
-
- -> (artifact id: '33c57c6e743c5bba972d892dc4711daa') in 0.083127 seconds 
+  Time since last request: 228.914884 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt.png
+  artifactKey: Guid(c6c73563d53c7a54e88ca8a2dd5c0688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt.png using Guid(c6c73563d53c7a54e88ca8a2dd5c0688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '481a00267330963f5b4578e1b229544d') in 0.423054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 334.679094 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
+  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81080692b79c4a9f9b00214d562b0c05') in 0.064663 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.247554 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
+  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f78d795fb303318ca12bb4734821409') in 0.403226 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 107.089536 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
+  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae3a4f6032afd60880c597bd16988731') in 0.324704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.312109 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
+  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68ebb5307823f166bd08fc13976aa01f') in 0.357079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 102.223804 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
+  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '639d8a6fde1a2c2ae5e15c05b78aad75') in 0.407092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 481.742190 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
+  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab222369f9b8b863c506e49c8cde3ec7') in 0.334616 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.715199 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
+  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b7c297f0844293ab02de5c19bb52d43') in 0.354195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 669.913009 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
+  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fd50f7487f3543c9e9d920cf24bfdb3') in 0.247482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 608.628946 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
+  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d6a4e6a8e572fd82ae589b88345f8d0') in 0.318469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.239767 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
+  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c10557d5a7bb588b8f384552f9359a07') in 0.385047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.971120 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
+  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd0ea4fd23f21bc4b24fc0b15ae50983') in 0.346332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.717910 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
+  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17b817912cc3079e27ed57c0b1a7c066') in 0.345827 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.062511 seconds.
+Registered in 0.005307 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.52 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.59 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.679 seconds
+- Completed reload, in  1.445 seconds
 Platform modules already initialized, skipping
 OnLevelWasLoaded was found on Fading
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
 
-Refreshing native plugins compatible for Editor in 1.32 ms, found 2 plugins.
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.74 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.3 MB.
-System memory in use after: 174.5 MB.
+Unloading 4627 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 222.0 MB.
+System memory in use after: 222.4 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4130.
-Total: 2.654800 ms (FindLiveObjects: 0.333000 ms CreateObjectMapping: 0.093100 ms MarkObjects: 2.089500 ms  DeleteObjects: 0.137800 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 5680.
+Total: 4.151600 ms (FindLiveObjects: 0.480800 ms CreateObjectMapping: 0.141300 ms MarkObjects: 3.345600 ms  DeleteObjects: 0.182400 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 412.151588 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
+  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81e6815c581a095f843f39eb687b2cde') in 0.374289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.384548 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
+  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc85582466cdbb7d79e7b67c877da7ce') in 0.289761 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 82.066042 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
+  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ca0b88a5d6059cb28814c7c3464352c') in 0.458314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 62.789947 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
+  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75cdf0eaeab1cc45e751f227d74466f0') in 0.310785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.717914 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
+  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6edb246acf8e53a3c0f6f51065767d4b') in 0.319369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 175.858489 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
+  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b541bc857eb2524ddebf11585a0cefc5') in 0.333492 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004813 seconds.
+Registered in 0.018334 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.33 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 3.99 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.164 seconds
+- Completed reload, in  4.662 seconds
 Platform modules already initialized, skipping
 OnLevelWasLoaded was found on Fading
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
 
-Refreshing native plugins compatible for Editor in 1.99 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.4 MB.
-System memory in use after: 174.5 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4134.
-Total: 3.383600 ms (FindLiveObjects: 0.352100 ms CreateObjectMapping: 0.103200 ms MarkObjects: 2.759200 ms  DeleteObjects: 0.167400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006222 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.146 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 1.56 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.5 MB.
-System memory in use after: 174.6 MB.
+Unloading 4625 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 224.5 MB.
+System memory in use after: 224.8 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4138.
-Total: 3.218400 ms (FindLiveObjects: 0.427200 ms CreateObjectMapping: 0.129800 ms MarkObjects: 2.503400 ms  DeleteObjects: 0.156200 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 5783.
+Total: 3.321400 ms (FindLiveObjects: 0.482500 ms CreateObjectMapping: 0.130800 ms MarkObjects: 2.561600 ms  DeleteObjects: 0.145500 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 629.346161 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Animations/Prototype Hero/PrototypeHero.controller
-  artifactKey: Guid(1d4af8c325522f144a3ebdefb8d089f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Animations/Prototype Hero/PrototypeHero.controller using Guid(1d4af8c325522f144a3ebdefb8d089f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e5e104479d282d17083bb00e1d2a60d') in 0.061311 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005104 seconds.
+Registered in 0.004996 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.37 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.54 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.149 seconds
+- Completed reload, in  1.296 seconds
 Platform modules already initialized, skipping
 OnLevelWasLoaded was found on Fading
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
 
-Refreshing native plugins compatible for Editor in 1.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.5 MB.
-System memory in use after: 174.6 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4142.
-Total: 3.015400 ms (FindLiveObjects: 0.367900 ms CreateObjectMapping: 0.104100 ms MarkObjects: 2.371800 ms  DeleteObjects: 0.170500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 198.625545 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Animations/Prototype Hero/PrototypeHero.controller
-  artifactKey: Guid(1d4af8c325522f144a3ebdefb8d089f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Animations/Prototype Hero/PrototypeHero.controller using Guid(1d4af8c325522f144a3ebdefb8d089f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d814c987d7e7c12ccac0fec6b7af56c') in 0.053082 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004585 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.30 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.159 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.36 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.4 MB.
-System memory in use after: 174.5 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4146.
-Total: 2.811700 ms (FindLiveObjects: 0.341500 ms CreateObjectMapping: 0.097400 ms MarkObjects: 2.226900 ms  DeleteObjects: 0.144600 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.608700 seconds.
-  path: Assets/ConquerorPrefabs/DPNair.anim
-  artifactKey: Guid(87ea0d4f20422534bba201648089ca1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ConquerorPrefabs/DPNair.anim using Guid(87ea0d4f20422534bba201648089ca1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '004f1c0dea4ef07f8a52a384ffb454ed') in 0.033838 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004953 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.26 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.161 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.38 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.4 MB.
-System memory in use after: 174.6 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4150.
-Total: 2.706400 ms (FindLiveObjects: 0.335800 ms CreateObjectMapping: 0.098200 ms MarkObjects: 2.119500 ms  DeleteObjects: 0.151800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004587 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.76 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.148 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.51 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.4 MB.
-System memory in use after: 174.6 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4154.
-Total: 2.976100 ms (FindLiveObjects: 0.354400 ms CreateObjectMapping: 0.098400 ms MarkObjects: 2.373500 ms  DeleteObjects: 0.148400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.079256 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.89 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.694 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.38 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.4 MB.
-System memory in use after: 174.6 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4158.
-Total: 3.001200 ms (FindLiveObjects: 0.342000 ms CreateObjectMapping: 0.098100 ms MarkObjects: 2.366800 ms  DeleteObjects: 0.192600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004798 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.127 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.65 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.4 MB.
-System memory in use after: 174.6 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4162.
-Total: 2.837300 ms (FindLiveObjects: 0.351700 ms CreateObjectMapping: 0.096300 ms MarkObjects: 2.246200 ms  DeleteObjects: 0.141600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005229 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.39 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.185 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 2.75 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.4 MB.
-System memory in use after: 174.6 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4166.
-Total: 12.647600 ms (FindLiveObjects: 0.540800 ms CreateObjectMapping: 0.141900 ms MarkObjects: 11.766500 ms  DeleteObjects: 0.196600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006618 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.65 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.415 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.5 MB.
-System memory in use after: 174.6 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4170.
-Total: 2.981200 ms (FindLiveObjects: 0.360500 ms CreateObjectMapping: 0.108300 ms MarkObjects: 2.357000 ms  DeleteObjects: 0.154000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004811 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.143 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.65 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.5 MB.
-System memory in use after: 174.6 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4174.
-Total: 3.260300 ms (FindLiveObjects: 0.376000 ms CreateObjectMapping: 0.106900 ms MarkObjects: 2.594600 ms  DeleteObjects: 0.181400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 9484.037070 seconds.
-  path: Assets/Scenes/Duel.unity
-  artifactKey: Guid(8d4872a71b1ec66468a4da68bf0fac41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Duel.unity using Guid(8d4872a71b1ec66468a4da68bf0fac41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '817907c155721972b469625fa3f5d8a4') in 0.056554 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004718 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.31 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.151 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.5 MB.
-System memory in use after: 174.6 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4178.
-Total: 3.038300 ms (FindLiveObjects: 0.398500 ms CreateObjectMapping: 0.101000 ms MarkObjects: 2.379700 ms  DeleteObjects: 0.156700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 166.052595 seconds.
-  path: Assets/Scenes/Duel.unity
-  artifactKey: Guid(8d4872a71b1ec66468a4da68bf0fac41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Duel.unity using Guid(8d4872a71b1ec66468a4da68bf0fac41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96e0a91e7df777bc157a2c01539c166e') in 0.021569 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004810 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.28 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.216 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.38 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.5 MB.
-System memory in use after: 174.7 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4182.
-Total: 2.880600 ms (FindLiveObjects: 0.378100 ms CreateObjectMapping: 0.102100 ms MarkObjects: 2.250300 ms  DeleteObjects: 0.148800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004582 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.158 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.42 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.5 MB.
-System memory in use after: 174.7 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4186.
-Total: 2.751000 ms (FindLiveObjects: 0.353300 ms CreateObjectMapping: 0.101100 ms MarkObjects: 2.152800 ms  DeleteObjects: 0.142700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004660 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.17 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.177 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.76 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.5 MB.
-System memory in use after: 174.7 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4190.
-Total: 3.175300 ms (FindLiveObjects: 0.430400 ms CreateObjectMapping: 0.099700 ms MarkObjects: 2.463600 ms  DeleteObjects: 0.179200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004874 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.42 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.151 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.37 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.5 MB.
-System memory in use after: 174.7 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4194.
-Total: 2.775200 ms (FindLiveObjects: 0.351200 ms CreateObjectMapping: 0.099700 ms MarkObjects: 2.165500 ms  DeleteObjects: 0.157300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1563.397411 seconds.
-  path: Assets/Scenes/Duel.unity
-  artifactKey: Guid(8d4872a71b1ec66468a4da68bf0fac41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Duel.unity using Guid(8d4872a71b1ec66468a4da68bf0fac41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee71de9a90ff407ec4c9152eda94df41') in 0.032448 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004695 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.148 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 2.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.6 MB.
-System memory in use after: 174.7 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4198.
-Total: 3.114500 ms (FindLiveObjects: 0.384000 ms CreateObjectMapping: 0.105900 ms MarkObjects: 2.462000 ms  DeleteObjects: 0.160700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004652 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.30 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.398 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.30 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.6 MB.
-System memory in use after: 174.7 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4202.
-Total: 2.703200 ms (FindLiveObjects: 0.342700 ms CreateObjectMapping: 0.099700 ms MarkObjects: 2.117100 ms  DeleteObjects: 0.142100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004618 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.34 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.158 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.6 MB.
-System memory in use after: 174.7 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4206.
-Total: 3.177100 ms (FindLiveObjects: 0.354800 ms CreateObjectMapping: 0.094100 ms MarkObjects: 2.537700 ms  DeleteObjects: 0.188800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1190.996394 seconds.
-  path: Assets/Scenes/Duel.unity
-  artifactKey: Guid(8d4872a71b1ec66468a4da68bf0fac41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Duel.unity using Guid(8d4872a71b1ec66468a4da68bf0fac41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3bde10938017675b2f858cbc1511616') in 0.039625 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004695 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.40 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.154 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 1.57 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.6 MB.
-System memory in use after: 174.7 MB.
+Unloading 4625 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 224.5 MB.
+System memory in use after: 224.9 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4210.
-Total: 3.508000 ms (FindLiveObjects: 0.500000 ms CreateObjectMapping: 0.148700 ms MarkObjects: 2.687900 ms  DeleteObjects: 0.169600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004751 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.29 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.148 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.85 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.6 MB.
-System memory in use after: 174.7 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4214.
-Total: 3.084000 ms (FindLiveObjects: 0.432500 ms CreateObjectMapping: 0.103100 ms MarkObjects: 2.381500 ms  DeleteObjects: 0.165100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004729 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.134 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.45 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.6 MB.
-System memory in use after: 174.7 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4218.
-Total: 3.349400 ms (FindLiveObjects: 0.397400 ms CreateObjectMapping: 0.107400 ms MarkObjects: 2.678200 ms  DeleteObjects: 0.164900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005469 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.133 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.40 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.6 MB.
-System memory in use after: 174.8 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4222.
-Total: 3.158800 ms (FindLiveObjects: 0.349400 ms CreateObjectMapping: 0.097600 ms MarkObjects: 2.552600 ms  DeleteObjects: 0.157400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005713 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.130 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.66 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.6 MB.
-System memory in use after: 174.7 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4226.
-Total: 3.133200 ms (FindLiveObjects: 0.447300 ms CreateObjectMapping: 0.102500 ms MarkObjects: 2.382400 ms  DeleteObjects: 0.199600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004640 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.29 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.126 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.92 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.6 MB.
-System memory in use after: 174.7 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4230.
-Total: 2.985500 ms (FindLiveObjects: 0.447200 ms CreateObjectMapping: 0.128600 ms MarkObjects: 2.258900 ms  DeleteObjects: 0.149300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004937 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.30 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.147 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.6 MB.
-System memory in use after: 174.7 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4234.
-Total: 3.458900 ms (FindLiveObjects: 0.382500 ms CreateObjectMapping: 0.136800 ms MarkObjects: 2.758300 ms  DeleteObjects: 0.179900 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 5787.
+Total: 3.818700 ms (FindLiveObjects: 0.491300 ms CreateObjectMapping: 0.141900 ms MarkObjects: 3.032800 ms  DeleteObjects: 0.151300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1533.735111 seconds.
-  path: Assets/Scenes/Duel.unity
-  artifactKey: Guid(8d4872a71b1ec66468a4da68bf0fac41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Duel.unity using Guid(8d4872a71b1ec66468a4da68bf0fac41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c14e16539809a09cd8b1b0ad3032101e') in 0.047966 seconds 
+  Time since last request: 504.791880 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
+  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f303e04d3714069a9e0d51c7d3f77d3') in 0.297024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 55.475329 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
+  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '107cf9e2e68054c72fb03e2c9cc39333') in 0.390221 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004560 seconds.
+Registered in 0.004994 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.38 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.173 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.97 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.6 MB.
-System memory in use after: 174.7 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4238.
-Total: 2.992000 ms (FindLiveObjects: 0.411900 ms CreateObjectMapping: 0.103600 ms MarkObjects: 2.311500 ms  DeleteObjects: 0.163600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004644 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.40 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.134 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.87 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.7 MB.
-System memory in use after: 174.8 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4242.
-Total: 2.842500 ms (FindLiveObjects: 0.359200 ms CreateObjectMapping: 0.107800 ms MarkObjects: 2.219600 ms  DeleteObjects: 0.154400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005149 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.87 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.216 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.47 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.7 MB.
-System memory in use after: 174.9 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4246.
-Total: 3.013900 ms (FindLiveObjects: 0.357500 ms CreateObjectMapping: 0.105500 ms MarkObjects: 2.347000 ms  DeleteObjects: 0.202100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005590 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.26 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.582 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.29 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.6 MB.
-System memory in use after: 174.8 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4250.
-Total: 4.016400 ms (FindLiveObjects: 0.352400 ms CreateObjectMapping: 0.095400 ms MarkObjects: 3.352400 ms  DeleteObjects: 0.214200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004852 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.160 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.44 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.6 MB.
-System memory in use after: 174.8 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4254.
-Total: 3.408700 ms (FindLiveObjects: 0.447300 ms CreateObjectMapping: 0.154900 ms MarkObjects: 2.644500 ms  DeleteObjects: 0.160200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004634 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.10 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.181 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.6 MB.
-System memory in use after: 174.8 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4258.
-Total: 3.592000 ms (FindLiveObjects: 0.695400 ms CreateObjectMapping: 0.133000 ms MarkObjects: 2.532900 ms  DeleteObjects: 0.229300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005020 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.36 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.162 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Refreshing native plugins compatible for Editor in 1.75 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.7 MB.
-System memory in use after: 174.8 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4262.
-Total: 3.316300 ms (FindLiveObjects: 0.405400 ms CreateObjectMapping: 0.099200 ms MarkObjects: 2.640000 ms  DeleteObjects: 0.170100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005351 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.172 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
 Refreshing native plugins compatible for Editor in 2.26 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.7 MB.
-System memory in use after: 174.8 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4266.
-Total: 4.566500 ms (FindLiveObjects: 0.538100 ms CreateObjectMapping: 0.110200 ms MarkObjects: 3.676000 ms  DeleteObjects: 0.239600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005303 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.10 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.218 seconds
+- Completed reload, in  1.288 seconds
 Platform modules already initialized, skipping
 OnLevelWasLoaded was found on Fading
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
 
-Refreshing native plugins compatible for Editor in 2.15 ms, found 2 plugins.
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.70 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.7 MB.
-System memory in use after: 174.8 MB.
+Unloading 4625 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 225.3 MB.
+System memory in use after: 225.7 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4270.
-Total: 3.188600 ms (FindLiveObjects: 0.427700 ms CreateObjectMapping: 0.094700 ms MarkObjects: 2.498900 ms  DeleteObjects: 0.165300 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 5828.
+Total: 4.177300 ms (FindLiveObjects: 0.592400 ms CreateObjectMapping: 0.182800 ms MarkObjects: 3.244200 ms  DeleteObjects: 0.156200 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004630 seconds.
+Registered in 0.004912 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 3.29 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 2.44 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.152 seconds
+- Completed reload, in  1.259 seconds
 Platform modules already initialized, skipping
 OnLevelWasLoaded was found on Fading
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
 
-Refreshing native plugins compatible for Editor in 1.40 ms, found 2 plugins.
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.67 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.7 MB.
-System memory in use after: 174.8 MB.
+Unloading 4625 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 225.2 MB.
+System memory in use after: 225.5 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4274.
-Total: 3.419800 ms (FindLiveObjects: 0.356400 ms CreateObjectMapping: 0.098800 ms MarkObjects: 2.795900 ms  DeleteObjects: 0.167300 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 5832.
+Total: 3.445800 ms (FindLiveObjects: 0.519300 ms CreateObjectMapping: 0.143700 ms MarkObjects: 2.631300 ms  DeleteObjects: 0.150100 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004733 seconds.
+Registered in 0.005002 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.29 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 2.25 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.138 seconds
+- Completed reload, in  1.263 seconds
 Platform modules already initialized, skipping
 OnLevelWasLoaded was found on Fading
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
 
-Refreshing native plugins compatible for Editor in 1.44 ms, found 2 plugins.
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.58 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.7 MB.
-System memory in use after: 174.8 MB.
+Unloading 4625 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 225.3 MB.
+System memory in use after: 225.6 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4278.
-Total: 2.840500 ms (FindLiveObjects: 0.348700 ms CreateObjectMapping: 0.098800 ms MarkObjects: 2.242300 ms  DeleteObjects: 0.149500 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 5836.
+Total: 4.709300 ms (FindLiveObjects: 0.615600 ms CreateObjectMapping: 0.204200 ms MarkObjects: 3.665600 ms  DeleteObjects: 0.223000 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004700 seconds.
+Registered in 0.005106 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.29 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.59 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.175 seconds
+- Completed reload, in  1.307 seconds
 Platform modules already initialized, skipping
 OnLevelWasLoaded was found on Fading
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
 
-Refreshing native plugins compatible for Editor in 1.40 ms, found 2 plugins.
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.58 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.7 MB.
-System memory in use after: 174.8 MB.
+Unloading 4625 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 225.3 MB.
+System memory in use after: 225.6 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4282.
-Total: 2.894100 ms (FindLiveObjects: 0.394000 ms CreateObjectMapping: 0.100700 ms MarkObjects: 2.238300 ms  DeleteObjects: 0.159600 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 5840.
+Total: 4.669400 ms (FindLiveObjects: 0.661700 ms CreateObjectMapping: 0.214000 ms MarkObjects: 3.579500 ms  DeleteObjects: 0.212300 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

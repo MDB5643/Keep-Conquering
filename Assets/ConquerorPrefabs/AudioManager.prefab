@@ -88,7 +88,7 @@ MonoBehaviour:
     m_loop: 0
   - m_name: Hurt
     m_clips:
-    - {fileID: 8300000, guid: 4acaf282c31675042873963419dc479d, type: 3}
+    - {fileID: 8300000, guid: 680125810a591ef4b81305b22170f488, type: 3}
     volume: 0.8
     pitch: 1
     m_randomVolumeRange: {x: 1, y: 1}
@@ -96,11 +96,11 @@ MonoBehaviour:
     m_loop: 0
   - m_name: Death
     m_clips:
-    - {fileID: 8300000, guid: 628c4205ac542644b9286a339010668f, type: 3}
+    - {fileID: 8300000, guid: 0c720cb0a66f795439edf563658c48e2, type: 3}
     volume: 0.8
-    pitch: 1
-    m_randomVolumeRange: {x: 1, y: 1}
-    m_randomPitchRange: {x: 1, y: 1}
+    pitch: 0.7
+    m_randomVolumeRange: {x: 0.6, y: 0.6}
+    m_randomPitchRange: {x: 0.7, y: 0.7}
     m_loop: 0
   - m_name: SheathSword
     m_clips:
@@ -160,7 +160,7 @@ MonoBehaviour:
     m_loop: 0
   - m_name: Whack
     m_clips:
-    - {fileID: 8300000, guid: 1c340262e068a47c389751948074d203, type: 3}
+    - {fileID: 8300000, guid: 65a262ab448f0734c9e9b45778a5ba8f, type: 3}
     volume: 0.25
     pitch: 0.9
     m_randomVolumeRange: {x: 0.95, y: 1.05}
@@ -176,7 +176,7 @@ MonoBehaviour:
     m_loop: 0
   - m_name: ProxySlice
     m_clips:
-    - {fileID: 8300000, guid: e34de6f3a3343466293fd0143be91cc3, type: 3}
+    - {fileID: 8300000, guid: 7d3fb39e90032c04db7b8342d875c886, type: 3}
     volume: 0.25
     pitch: 0.9
     m_randomVolumeRange: {x: 0.95, y: 1.05}
@@ -188,5 +188,157 @@ MonoBehaviour:
     volume: 0.25
     pitch: 0.9
     m_randomVolumeRange: {x: 0.95, y: 1.05}
+    m_randomPitchRange: {x: 0.95, y: 1.05}
+    m_loop: 0
+  - m_name: BBSword
+    m_clips:
+    - {fileID: 8300000, guid: 952f4e06b9fc14a4abd72725f0c66eb2, type: 3}
+    volume: 0.25
+    pitch: 0.9
+    m_randomVolumeRange: {x: 0.95, y: 1.05}
+    m_randomPitchRange: {x: 0.9, y: 1.05}
+    m_loop: 0
+  - m_name: BBHeavy
+    m_clips:
+    - {fileID: 8300000, guid: df538b6b26c78f7429d7e9532368f4f8, type: 3}
+    volume: 0.25
+    pitch: 1.04
+    m_randomVolumeRange: {x: 0.95, y: 1.05}
+    m_randomPitchRange: {x: 0.9, y: 1.05}
+    m_loop: 0
+  - m_name: BBExplode
+    m_clips:
+    - {fileID: 8300000, guid: 385b47ba63a0676488f803fc1a367b54, type: 3}
+    volume: 0.25
+    pitch: 0.95
+    m_randomVolumeRange: {x: 0.95, y: 1.05}
+    m_randomPitchRange: {x: 0.9, y: 1.05}
+    m_loop: 0
+  - m_name: BBExplode2
+    m_clips:
+    - {fileID: 8300000, guid: 87ed8591b9e124205856a255b109856c, type: 3}
+    volume: 0.25
+    pitch: 1.03
+    m_randomVolumeRange: {x: 0.95, y: 1.05}
+    m_randomPitchRange: {x: 0.9, y: 1.05}
+    m_loop: 0
+  - m_name: BBFireSword
+    m_clips:
+    - {fileID: 8300000, guid: 7f76fa11118567d449df836fef54cc9b, type: 3}
+    volume: 0.25
+    pitch: 0.97
+    m_randomVolumeRange: {x: 0.95, y: 1.05}
+    m_randomPitchRange: {x: 0.9, y: 1.05}
+    m_loop: 0
+  - m_name: MainMenu
+    m_clips:
+    - {fileID: 8300000, guid: 44e45dcb2ffc00545b5d38d22953d650, type: 3}
+    volume: 0.25
+    pitch: 0.54
+    m_randomVolumeRange: {x: 0.95, y: 1.05}
+    m_randomPitchRange: {x: 0.54, y: 0.7}
+    m_loop: 1
+  - m_name: Practice
+    m_clips:
+    - {fileID: 8300000, guid: 44e45dcb2ffc00545b5d38d22953d650, type: 3}
+    volume: 0.52
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.95, y: 1.05}
+    m_randomPitchRange: {x: 0.54, y: 0.7}
+    m_loop: 1
+  - m_name: BBFire
+    m_clips:
+    - {fileID: 8300000, guid: ae9bb27bc512f42fa9a4da3a49484290, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.85, y: 0.85}
+    m_randomPitchRange: {x: 0.95, y: 1.05}
+    m_loop: 0
+  - m_name: EyeShot
+    m_clips:
+    - {fileID: 8300000, guid: ac8442f04e7c48044af73f825b821225, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.85, y: 0.85}
+    m_randomPitchRange: {x: 0.95, y: 1.05}
+    m_loop: 0
+  - m_name: EnergyHit
+    m_clips:
+    - {fileID: 8300000, guid: 48e3f0354ffa97748a8212aa5ed1123b, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.85, y: 0.85}
+    m_randomPitchRange: {x: 0.95, y: 1.05}
+    m_loop: 0
+  - m_name: ProxyHeavy
+    m_clips:
+    - {fileID: 8300000, guid: 763af7adc4fdc534ba1af18553daa5a9, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.85, y: 0.85}
+    m_randomPitchRange: {x: 0.95, y: 1.05}
+    m_loop: 0
+  - m_name: Block
+    m_clips:
+    - {fileID: 8300000, guid: 870b0f24060c3424eb4e78c8e317eb9f, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.85, y: 0.85}
+    m_randomPitchRange: {x: 0.95, y: 1.05}
+    m_loop: 0
+  - m_name: Arrow
+    m_clips:
+    - {fileID: 8300000, guid: 6f1d0037ebced3c479ce2c71152e67ec, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.85, y: 0.85}
+    m_randomPitchRange: {x: 0.95, y: 1.05}
+    m_loop: 0
+  - m_name: RRJab
+    m_clips:
+    - {fileID: 8300000, guid: fe1d6712daf52d746b56acbb6c44e98b, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.85, y: 0.85}
+    m_randomPitchRange: {x: 0.95, y: 1.05}
+    m_loop: 0
+  - m_name: MagicHit
+    m_clips:
+    - {fileID: 8300000, guid: 1228c31680358481fa6cc393b546d44c, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.85, y: 0.85}
+    m_randomPitchRange: {x: 0.95, y: 1.05}
+    m_loop: 0
+  - m_name: RRSpellcast
+    m_clips:
+    - {fileID: 8300000, guid: 62782129f24ef4df99c21e2067798caa, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.85, y: 0.85}
+    m_randomPitchRange: {x: 0.95, y: 1.05}
+    m_loop: 0
+  - m_name: RRMagicHeavy
+    m_clips:
+    - {fileID: 8300000, guid: 66df686a9675a2c43a20003ad2507378, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.85, y: 0.85}
+    m_randomPitchRange: {x: 0.95, y: 1.05}
+    m_loop: 0
+  - m_name: RRMagicExplode
+    m_clips:
+    - {fileID: 8300000, guid: 17b6409cb883da44191ae8cd24998598, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.85, y: 0.85}
+    m_randomPitchRange: {x: 0.95, y: 1.05}
+    m_loop: 0
+  - m_name: RRSmash
+    m_clips:
+    - {fileID: 8300000, guid: ac8442f04e7c48044af73f825b821225, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.85, y: 0.85}
     m_randomPitchRange: {x: 0.95, y: 1.05}
     m_loop: 0

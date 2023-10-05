@@ -37,7 +37,7 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
     public GameObject sideSpec1Hitbox;
     public GameObject sideSpec2Hitbox;
 
-    private GameObject activeHitbox;
+    public GameObject activeHitbox;
     private GameObject activeHitbox2;
     private GameObject activeHitbox3;
     [SerializeField]
@@ -256,7 +256,7 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
         m_audioManager.PlaySound("SwordAttack");
         
         
-        //StartCoroutine(Linger(lingerDeltaTime));
+        StartCoroutine(Linger(lingerDeltaTime));
         c_Manager.hitEnemy = "None";
     }
 
@@ -508,7 +508,6 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
             }
         }
         
-        StartCoroutine(Linger(.4f));
         c_Manager.hitEnemy = "None";
     }
 
@@ -620,7 +619,10 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
         {
             GameObject.Destroy(activeHitbox3);
         }
-        GameObject.Destroy(activeHitbox);
+        if (activeHitbox != null)
+        {
+            GameObject.Destroy(activeHitbox);
+        }
         
     }
 

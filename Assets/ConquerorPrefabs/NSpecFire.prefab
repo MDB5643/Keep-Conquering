@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3500733257571144837}
   - component: {fileID: 1677783700342477466}
   - component: {fileID: 4901355151693439027}
+  - component: {fileID: 4752848560970363787}
   m_Layer: 0
   m_Name: NSpecFire1
   m_TagString: AttackHitbox
@@ -54,7 +55,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -147,6 +148,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb07ed6160897e4468b19717ac684f34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4752848560970363787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674120913331074043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8029d696e5349744f9ba46d4cec1f084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  directions:
+    top: 1
+    bottom: 1
+    left: 1
+    right: 1
 --- !u!1 &1069446154348761079
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,6 +180,7 @@ GameObject:
   - component: {fileID: 5503037767397264221}
   - component: {fileID: 589966974021778275}
   - component: {fileID: 8222850081737628840}
+  - component: {fileID: 5060071003966835593}
   m_Layer: 0
   m_Name: NSpecFire2
   m_TagString: AttackHitbox
@@ -201,7 +222,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -294,6 +315,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb07ed6160897e4468b19717ac684f34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5060071003966835593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069446154348761079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8029d696e5349744f9ba46d4cec1f084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  directions:
+    top: 1
+    bottom: 1
+    left: 1
+    right: 1
 --- !u!1 &1292737174817122439
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,6 +347,7 @@ GameObject:
   - component: {fileID: 6475562336153596893}
   - component: {fileID: 1034926742914392154}
   - component: {fileID: 1770306936748517267}
+  - component: {fileID: 4718262357700996404}
   m_Layer: 0
   m_Name: NSpecFire1 (2)
   m_TagString: AttackHitbox
@@ -348,7 +389,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -441,6 +482,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb07ed6160897e4468b19717ac684f34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4718262357700996404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292737174817122439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8029d696e5349744f9ba46d4cec1f084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  directions:
+    top: 1
+    bottom: 1
+    left: 1
+    right: 1
 --- !u!1 &2833174631578268785
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +514,7 @@ GameObject:
   - component: {fileID: 5932680196453655361}
   - component: {fileID: 217258368716515103}
   - component: {fileID: 7493070391391439619}
+  - component: {fileID: 7439420230062124717}
   m_Layer: 0
   m_Name: NSpecFire2 (1)
   m_TagString: AttackHitbox
@@ -495,7 +556,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -588,6 +649,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7439420230062124717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2833174631578268785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8029d696e5349744f9ba46d4cec1f084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  directions:
+    top: 1
+    bottom: 1
+    left: 1
+    right: 1
 --- !u!1 &3412297053213893287
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,6 +681,7 @@ GameObject:
   - component: {fileID: 5631053771404038316}
   - component: {fileID: 2641837786206145636}
   - component: {fileID: 6047937116326039586}
+  - component: {fileID: 3868717919487700511}
   m_Layer: 0
   m_Name: NSpecFire1 (3)
   m_TagString: AttackHitbox
@@ -642,7 +723,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -735,6 +816,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb07ed6160897e4468b19717ac684f34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3868717919487700511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3412297053213893287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8029d696e5349744f9ba46d4cec1f084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  directions:
+    top: 1
+    bottom: 1
+    left: 1
+    right: 1
 --- !u!1 &5876327908201172152
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,6 +848,7 @@ GameObject:
   - component: {fileID: 4090449242016896659}
   - component: {fileID: 1817638443182184078}
   - component: {fileID: 4514279046683767785}
+  - component: {fileID: 8712591741103685391}
   m_Layer: 0
   m_Name: NSpecFire1 (1)
   m_TagString: AttackHitbox
@@ -789,7 +890,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -882,6 +983,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb07ed6160897e4468b19717ac684f34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8712591741103685391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5876327908201172152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8029d696e5349744f9ba46d4cec1f084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  directions:
+    top: 1
+    bottom: 1
+    left: 1
+    right: 1
 --- !u!1 &8161338255959051029
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,6 +1012,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8342749207659358166}
   - component: {fileID: 1246155200467836976}
+  - component: {fileID: 2793841900083160357}
   m_Layer: 0
   m_Name: NSpecFire
   m_TagString: AttackHitbox
@@ -941,6 +1062,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2793841900083160357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8161338255959051029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad7e2d9d5ce24c448c1129a85f39a28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9185097608339124217
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,6 +1087,7 @@ GameObject:
   - component: {fileID: 7651164900696036545}
   - component: {fileID: 609886377362279988}
   - component: {fileID: 6169847521648996175}
+  - component: {fileID: 1304534384360947934}
   m_Layer: 0
   m_Name: NSpecFire2 (2)
   m_TagString: AttackHitbox
@@ -995,7 +1129,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1088,3 +1222,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb07ed6160897e4468b19717ac684f34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1304534384360947934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9185097608339124217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8029d696e5349744f9ba46d4cec1f084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  directions:
+    top: 1
+    bottom: 1
+    left: 1
+    right: 1
