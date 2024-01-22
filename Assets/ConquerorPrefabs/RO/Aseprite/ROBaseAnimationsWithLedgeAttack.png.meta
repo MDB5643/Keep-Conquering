@@ -1,0 +1,6420 @@
+fileFormatVersion: 2
+guid: 2206eb0544312ad4cbbce615baa122e8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6317823170476442612
+    second: ROBaseAnimationsWithLedgeAttack_0
+  - first:
+      213: -7887785549049760059
+    second: ROBaseAnimationsWithLedgeAttack_1
+  - first:
+      213: -1134956225404293259
+    second: ROBaseAnimationsWithLedgeAttack_2
+  - first:
+      213: -6096369931674740067
+    second: ROBaseAnimationsWithLedgeAttack_3
+  - first:
+      213: -6829163180899798950
+    second: ROBaseAnimationsWithLedgeAttack_4
+  - first:
+      213: 320778664737236286
+    second: ROBaseAnimationsWithLedgeAttack_5
+  - first:
+      213: -6273117292946719519
+    second: ROBaseAnimationsWithLedgeAttack_6
+  - first:
+      213: 874437801389912005
+    second: ROBaseAnimationsWithLedgeAttack_7
+  - first:
+      213: 319241921377346341
+    second: ROBaseAnimationsWithLedgeAttack_8
+  - first:
+      213: -8799408296112136068
+    second: ROBaseAnimationsWithLedgeAttack_9
+  - first:
+      213: 6317928567696401324
+    second: ROBaseAnimationsWithLedgeAttack_10
+  - first:
+      213: -6965861599456991514
+    second: ROBaseAnimationsWithLedgeAttack_11
+  - first:
+      213: -7062253841248351470
+    second: ROBaseAnimationsWithLedgeAttack_12
+  - first:
+      213: -9162800849285356334
+    second: ROBaseAnimationsWithLedgeAttack_13
+  - first:
+      213: -2048198072318268554
+    second: ROBaseAnimationsWithLedgeAttack_14
+  - first:
+      213: -2367487870793153124
+    second: ROBaseAnimationsWithLedgeAttack_15
+  - first:
+      213: 6924923524880386786
+    second: ROBaseAnimationsWithLedgeAttack_16
+  - first:
+      213: -6881021537928776770
+    second: ROBaseAnimationsWithLedgeAttack_17
+  - first:
+      213: -2494750545935962040
+    second: ROBaseAnimationsWithLedgeAttack_18
+  - first:
+      213: -5979004147138340732
+    second: ROBaseAnimationsWithLedgeAttack_19
+  - first:
+      213: 353082414226457523
+    second: ROBaseAnimationsWithLedgeAttack_20
+  - first:
+      213: -7727021016555724481
+    second: ROBaseAnimationsWithLedgeAttack_21
+  - first:
+      213: -8079461614481989804
+    second: ROBaseAnimationsWithLedgeAttack_22
+  - first:
+      213: 7635914160989101808
+    second: ROBaseAnimationsWithLedgeAttack_23
+  - first:
+      213: -4154574247097960660
+    second: ROBaseAnimationsWithLedgeAttack_24
+  - first:
+      213: 1889127813480905607
+    second: ROBaseAnimationsWithLedgeAttack_25
+  - first:
+      213: -8133730731475435094
+    second: ROBaseAnimationsWithLedgeAttack_26
+  - first:
+      213: 7405892295637531963
+    second: ROBaseAnimationsWithLedgeAttack_27
+  - first:
+      213: -1409831244808408792
+    second: ROBaseAnimationsWithLedgeAttack_28
+  - first:
+      213: -8332395299711952100
+    second: ROBaseAnimationsWithLedgeAttack_29
+  - first:
+      213: 469858611898106106
+    second: ROBaseAnimationsWithLedgeAttack_30
+  - first:
+      213: -1977053147985123521
+    second: ROBaseAnimationsWithLedgeAttack_31
+  - first:
+      213: -7029059012800701179
+    second: ROBaseAnimationsWithLedgeAttack_32
+  - first:
+      213: -1171476850740180770
+    second: ROBaseAnimationsWithLedgeAttack_33
+  - first:
+      213: 3486780245846238761
+    second: ROBaseAnimationsWithLedgeAttack_34
+  - first:
+      213: -8253474067027640293
+    second: ROBaseAnimationsWithLedgeAttack_35
+  - first:
+      213: -2726373619820366616
+    second: ROBaseAnimationsWithLedgeAttack_36
+  - first:
+      213: 6106357685778023216
+    second: ROBaseAnimationsWithLedgeAttack_37
+  - first:
+      213: 5354418628363841627
+    second: ROBaseAnimationsWithLedgeAttack_38
+  - first:
+      213: 4831555204993391164
+    second: ROBaseAnimationsWithLedgeAttack_39
+  - first:
+      213: 2464815043513300180
+    second: ROBaseAnimationsWithLedgeAttack_40
+  - first:
+      213: 2156505255784880950
+    second: ROBaseAnimationsWithLedgeAttack_41
+  - first:
+      213: 8005804139678296534
+    second: ROBaseAnimationsWithLedgeAttack_42
+  - first:
+      213: 7779359052524079104
+    second: ROBaseAnimationsWithLedgeAttack_43
+  - first:
+      213: -7870743787223244889
+    second: ROBaseAnimationsWithLedgeAttack_44
+  - first:
+      213: -4252499832960149151
+    second: ROBaseAnimationsWithLedgeAttack_45
+  - first:
+      213: -5677274761921639924
+    second: ROBaseAnimationsWithLedgeAttack_46
+  - first:
+      213: 1539596081426228074
+    second: ROBaseAnimationsWithLedgeAttack_47
+  - first:
+      213: -1547531721468615756
+    second: ROBaseAnimationsWithLedgeAttack_48
+  - first:
+      213: -2472912924936936104
+    second: ROBaseAnimationsWithLedgeAttack_49
+  - first:
+      213: 1517285973716451253
+    second: ROBaseAnimationsWithLedgeAttack_50
+  - first:
+      213: -4961969379168430579
+    second: ROBaseAnimationsWithLedgeAttack_51
+  - first:
+      213: 4736161558518824907
+    second: ROBaseAnimationsWithLedgeAttack_52
+  - first:
+      213: -5283427145368444469
+    second: ROBaseAnimationsWithLedgeAttack_53
+  - first:
+      213: 7224286980210888126
+    second: ROBaseAnimationsWithLedgeAttack_54
+  - first:
+      213: -3857554228389372854
+    second: ROBaseAnimationsWithLedgeAttack_55
+  - first:
+      213: -1224187287302657050
+    second: ROBaseAnimationsWithLedgeAttack_56
+  - first:
+      213: -5964763508886417338
+    second: ROBaseAnimationsWithLedgeAttack_57
+  - first:
+      213: -8266475399148203645
+    second: ROBaseAnimationsWithLedgeAttack_58
+  - first:
+      213: 5075899627069732942
+    second: ROBaseAnimationsWithLedgeAttack_59
+  - first:
+      213: -7038614592079061342
+    second: ROBaseAnimationsWithLedgeAttack_60
+  - first:
+      213: -2228779975283782158
+    second: ROBaseAnimationsWithLedgeAttack_61
+  - first:
+      213: -1683068628682578820
+    second: ROBaseAnimationsWithLedgeAttack_62
+  - first:
+      213: 4813386455378842698
+    second: ROBaseAnimationsWithLedgeAttack_63
+  - first:
+      213: -1884376237827613358
+    second: ROBaseAnimationsWithLedgeAttack_64
+  - first:
+      213: 2472876655819750972
+    second: ROBaseAnimationsWithLedgeAttack_65
+  - first:
+      213: -1934132488907239483
+    second: ROBaseAnimationsWithLedgeAttack_66
+  - first:
+      213: 3653154408364925498
+    second: ROBaseAnimationsWithLedgeAttack_67
+  - first:
+      213: -3007833021996802246
+    second: ROBaseAnimationsWithLedgeAttack_68
+  - first:
+      213: -8356437485399424066
+    second: ROBaseAnimationsWithLedgeAttack_69
+  - first:
+      213: -8304497197462351869
+    second: ROBaseAnimationsWithLedgeAttack_70
+  - first:
+      213: 7795447133345048912
+    second: ROBaseAnimationsWithLedgeAttack_71
+  - first:
+      213: 3920295839629982476
+    second: ROBaseAnimationsWithLedgeAttack_72
+  - first:
+      213: -3202543013951534753
+    second: ROBaseAnimationsWithLedgeAttack_73
+  - first:
+      213: 5302178094076981943
+    second: ROBaseAnimationsWithLedgeAttack_74
+  - first:
+      213: -7296205165379753594
+    second: ROBaseAnimationsWithLedgeAttack_75
+  - first:
+      213: 672702016271958157
+    second: ROBaseAnimationsWithLedgeAttack_76
+  - first:
+      213: -6045267284653789159
+    second: ROBaseAnimationsWithLedgeAttack_77
+  - first:
+      213: 878422684043272126
+    second: ROBaseAnimationsWithLedgeAttack_78
+  - first:
+      213: 5196601011021826083
+    second: ROBaseAnimationsWithLedgeAttack_79
+  - first:
+      213: -8908530722111174060
+    second: ROBaseAnimationsWithLedgeAttack_80
+  - first:
+      213: 2873572910980591814
+    second: ROBaseAnimationsWithLedgeAttack_81
+  - first:
+      213: 7853023887784017316
+    second: ROBaseAnimationsWithLedgeAttack_82
+  - first:
+      213: -2408233672091001647
+    second: ROBaseAnimationsWithLedgeAttack_83
+  - first:
+      213: 7343347504538727054
+    second: ROBaseAnimationsWithLedgeAttack_84
+  - first:
+      213: -2820796786358983910
+    second: ROBaseAnimationsWithLedgeAttack_85
+  - first:
+      213: 7684739283706468315
+    second: ROBaseAnimationsWithLedgeAttack_86
+  - first:
+      213: -8340638694019059884
+    second: ROBaseAnimationsWithLedgeAttack_87
+  - first:
+      213: -2332453415785474824
+    second: ROBaseAnimationsWithLedgeAttack_88
+  - first:
+      213: -6656360508141251690
+    second: ROBaseAnimationsWithLedgeAttack_89
+  - first:
+      213: 2269498899213569254
+    second: ROBaseAnimationsWithLedgeAttack_90
+  - first:
+      213: 3910775238605746293
+    second: ROBaseAnimationsWithLedgeAttack_91
+  - first:
+      213: 2055584197556199108
+    second: ROBaseAnimationsWithLedgeAttack_92
+  - first:
+      213: -7060686056025280642
+    second: ROBaseAnimationsWithLedgeAttack_93
+  - first:
+      213: -2766904997368850577
+    second: ROBaseAnimationsWithLedgeAttack_94
+  - first:
+      213: -3506525283347130176
+    second: ROBaseAnimationsWithLedgeAttack_95
+  - first:
+      213: 2386116820217607982
+    second: ROBaseAnimationsWithLedgeAttack_96
+  - first:
+      213: 106840773560458360
+    second: ROBaseAnimationsWithLedgeAttack_97
+  - first:
+      213: 2364846568963084240
+    second: ROBaseAnimationsWithLedgeAttack_98
+  - first:
+      213: 4891591652357281981
+    second: ROBaseAnimationsWithLedgeAttack_99
+  - first:
+      213: 4895251366970819990
+    second: ROBaseAnimationsWithLedgeAttack_100
+  - first:
+      213: -1279792661255975522
+    second: ROBaseAnimationsWithLedgeAttack_101
+  - first:
+      213: -3115813195649765807
+    second: ROBaseAnimationsWithLedgeAttack_102
+  - first:
+      213: -8203740274031259018
+    second: ROBaseAnimationsWithLedgeAttack_103
+  - first:
+      213: 4006067716275106344
+    second: ROBaseAnimationsWithLedgeAttack_104
+  - first:
+      213: 3955423766128527042
+    second: ROBaseAnimationsWithLedgeAttack_105
+  - first:
+      213: 672201603735311126
+    second: ROBaseAnimationsWithLedgeAttack_106
+  - first:
+      213: -6113746388396035331
+    second: ROBaseAnimationsWithLedgeAttack_107
+  - first:
+      213: -5208228489288900841
+    second: ROBaseAnimationsWithLedgeAttack_108
+  - first:
+      213: -188477977920245704
+    second: ROBaseAnimationsWithLedgeAttack_109
+  - first:
+      213: -619573532505684468
+    second: ROBaseAnimationsWithLedgeAttack_110
+  - first:
+      213: 6101631568234614120
+    second: ROBaseAnimationsWithLedgeAttack_111
+  - first:
+      213: 5935533769483772276
+    second: ROBaseAnimationsWithLedgeAttack_112
+  - first:
+      213: 1932970249523321563
+    second: ROBaseAnimationsWithLedgeAttack_113
+  - first:
+      213: 7371207688608788162
+    second: ROBaseAnimationsWithLedgeAttack_114
+  - first:
+      213: 2283690715220959369
+    second: ROBaseAnimationsWithLedgeAttack_115
+  - first:
+      213: -2454448311817975012
+    second: ROBaseAnimationsWithLedgeAttack_116
+  - first:
+      213: -3625939142434047155
+    second: ROBaseAnimationsWithLedgeAttack_117
+  - first:
+      213: 2048062558753954633
+    second: ROBaseAnimationsWithLedgeAttack_118
+  - first:
+      213: 1464923162117072358
+    second: ROBaseAnimationsWithLedgeAttack_119
+  - first:
+      213: 4351160420828330437
+    second: ROBaseAnimationsWithLedgeAttack_120
+  - first:
+      213: -6614256027035592232
+    second: ROBaseAnimationsWithLedgeAttack_121
+  - first:
+      213: 7754482595728834405
+    second: ROBaseAnimationsWithLedgeAttack_122
+  - first:
+      213: 376530168530188681
+    second: ROBaseAnimationsWithLedgeAttack_123
+  - first:
+      213: -1271687863223979392
+    second: ROBaseAnimationsWithLedgeAttack_124
+  - first:
+      213: 2379503901917005126
+    second: ROBaseAnimationsWithLedgeAttack_125
+  - first:
+      213: 7450578270902944291
+    second: ROBaseAnimationsWithLedgeAttack_126
+  - first:
+      213: -8134465231274473824
+    second: ROBaseAnimationsWithLedgeAttack_127
+  - first:
+      213: 754683991196162690
+    second: ROBaseAnimationsWithLedgeAttack_128
+  - first:
+      213: -9181662992973479067
+    second: ROBaseAnimationsWithLedgeAttack_129
+  - first:
+      213: -5297332525633810403
+    second: ROBaseAnimationsWithLedgeAttack_130
+  - first:
+      213: -1363963968238912418
+    second: ROBaseAnimationsWithLedgeAttack_131
+  - first:
+      213: 4740620778935919874
+    second: ROBaseAnimationsWithLedgeAttack_132
+  - first:
+      213: 3137843527049838708
+    second: ROBaseAnimationsWithLedgeAttack_133
+  - first:
+      213: 7380600612896916145
+    second: ROBaseAnimationsWithLedgeAttack_134
+  - first:
+      213: 1439541451196627069
+    second: ROBaseAnimationsWithLedgeAttack_135
+  - first:
+      213: -5493821569118257679
+    second: ROBaseAnimationsWithLedgeAttack_136
+  - first:
+      213: -7508439640075571547
+    second: ROBaseAnimationsWithLedgeAttack_137
+  - first:
+      213: -2183606728706268866
+    second: ROBaseAnimationsWithLedgeAttack_138
+  - first:
+      213: 372827422658723049
+    second: ROBaseAnimationsWithLedgeAttack_139
+  - first:
+      213: 2579692015466857361
+    second: ROBaseAnimationsWithLedgeAttack_140
+  - first:
+      213: -4292996747830258937
+    second: ROBaseAnimationsWithLedgeAttack_141
+  - first:
+      213: -3298010717829170300
+    second: ROBaseAnimationsWithLedgeAttack_142
+  - first:
+      213: 4055345162423958739
+    second: ROBaseAnimationsWithLedgeAttack_143
+  - first:
+      213: -7016641613016808443
+    second: ROBaseAnimationsWithLedgeAttack_144
+  - first:
+      213: -1568744255617624401
+    second: ROBaseAnimationsWithLedgeAttack_145
+  - first:
+      213: -1847358510433856426
+    second: ROBaseAnimationsWithLedgeAttack_146
+  - first:
+      213: -6309723592347201553
+    second: ROBaseAnimationsWithLedgeAttack_147
+  - first:
+      213: 2598945774399708396
+    second: ROBaseAnimationsWithLedgeAttack_148
+  - first:
+      213: 6293255060968503212
+    second: ROBaseAnimationsWithLedgeAttack_149
+  - first:
+      213: -4958500901830176871
+    second: ROBaseAnimationsWithLedgeAttack_150
+  - first:
+      213: -8751254837841566912
+    second: ROBaseAnimationsWithLedgeAttack_151
+  - first:
+      213: -970041025455228079
+    second: ROBaseAnimationsWithLedgeAttack_152
+  - first:
+      213: -6943818861655577320
+    second: ROBaseAnimationsWithLedgeAttack_153
+  - first:
+      213: 2101708491700491458
+    second: ROBaseAnimationsWithLedgeAttack_154
+  - first:
+      213: 97897964306166160
+    second: ROBaseAnimationsWithLedgeAttack_155
+  - first:
+      213: -2715056309126544306
+    second: ROBaseAnimationsWithLedgeAttack_156
+  - first:
+      213: 5012026257822196960
+    second: ROBaseAnimationsWithLedgeAttack_157
+  - first:
+      213: 7555665029009681236
+    second: ROBaseAnimationsWithLedgeAttack_158
+  - first:
+      213: 1945145768289812868
+    second: ROBaseAnimationsWithLedgeAttack_159
+  - first:
+      213: 7173284454425787022
+    second: ROBaseAnimationsWithLedgeAttack_160
+  - first:
+      213: -3816001372925230245
+    second: ROBaseAnimationsWithLedgeAttack_161
+  - first:
+      213: 7485681508944098773
+    second: ROBaseAnimationsWithLedgeAttack_162
+  - first:
+      213: 6239472348582213079
+    second: ROBaseAnimationsWithLedgeAttack_163
+  - first:
+      213: 2950557632490119024
+    second: ROBaseAnimationsWithLedgeAttack_164
+  - first:
+      213: -3073034038633073369
+    second: ROBaseAnimationsWithLedgeAttack_165
+  - first:
+      213: 7947437276287226413
+    second: ROBaseAnimationsWithLedgeAttack_166
+  - first:
+      213: -1390033705151157318
+    second: ROBaseAnimationsWithLedgeAttack_167
+  - first:
+      213: -777540087558534753
+    second: ROBaseAnimationsWithLedgeAttack_168
+  - first:
+      213: 2317273623455869144
+    second: ROBaseAnimationsWithLedgeAttack_169
+  - first:
+      213: 5336444249579751410
+    second: ROBaseAnimationsWithLedgeAttack_170
+  - first:
+      213: 4531464286405957830
+    second: ROBaseAnimationsWithLedgeAttack_171
+  - first:
+      213: -4258726159073738742
+    second: ROBaseAnimationsWithLedgeAttack_172
+  - first:
+      213: -2634138328905739724
+    second: ROBaseAnimationsWithLedgeAttack_173
+  - first:
+      213: 5658214491011809927
+    second: ROBaseAnimationsWithLedgeAttack_174
+  - first:
+      213: -6706112187400237564
+    second: ROBaseAnimationsWithLedgeAttack_175
+  - first:
+      213: 7080911086540012862
+    second: ROBaseAnimationsWithLedgeAttack_176
+  - first:
+      213: -466488641337591055
+    second: ROBaseAnimationsWithLedgeAttack_177
+  - first:
+      213: -3824285521597340900
+    second: ROBaseAnimationsWithLedgeAttack_178
+  - first:
+      213: -3529187166749292395
+    second: ROBaseAnimationsWithLedgeAttack_179
+  - first:
+      213: -6837095573453704834
+    second: ROBaseAnimationsWithLedgeAttack_180
+  - first:
+      213: 2228045906253814737
+    second: ROBaseAnimationsWithLedgeAttack_181
+  - first:
+      213: 5626135943149962154
+    second: ROBaseAnimationsWithLedgeAttack_182
+  - first:
+      213: -2657836000382208400
+    second: ROBaseAnimationsWithLedgeAttack_183
+  - first:
+      213: 1012998615261317681
+    second: ROBaseAnimationsWithLedgeAttack_184
+  - first:
+      213: 4263430882830188159
+    second: ROBaseAnimationsWithLedgeAttack_185
+  - first:
+      213: -5872840286657692065
+    second: ROBaseAnimationsWithLedgeAttack_186
+  - first:
+      213: -2688084171453367561
+    second: ROBaseAnimationsWithLedgeAttack_187
+  - first:
+      213: -2899741574369075475
+    second: ROBaseAnimationsWithLedgeAttack_188
+  - first:
+      213: 1926129841159164141
+    second: ROBaseAnimationsWithLedgeAttack_189
+  - first:
+      213: 7502151328327073984
+    second: ROBaseAnimationsWithLedgeAttack_190
+  - first:
+      213: -7797946964258223346
+    second: ROBaseAnimationsWithLedgeAttack_191
+  - first:
+      213: -7367105625030308257
+    second: ROBaseAnimationsWithLedgeAttack_192
+  - first:
+      213: 6668781357694517563
+    second: ROBaseAnimationsWithLedgeAttack_193
+  - first:
+      213: 3442511016835264642
+    second: ROBaseAnimationsWithLedgeAttack_194
+  - first:
+      213: 5887386443092613198
+    second: ROBaseAnimationsWithLedgeAttack_195
+  - first:
+      213: 8732619197945210712
+    second: ROBaseAnimationsWithLedgeAttack_196
+  - first:
+      213: -2483557902474042173
+    second: ROBaseAnimationsWithLedgeAttack_197
+  - first:
+      213: 2204086941301841451
+    second: ROBaseAnimationsWithLedgeAttack_198
+  - first:
+      213: 3410960225061079454
+    second: ROBaseAnimationsWithLedgeAttack_199
+  - first:
+      213: -5934873144870621942
+    second: ROBaseAnimationsWithLedgeAttack_200
+  - first:
+      213: -4668291186986489477
+    second: ROBaseAnimationsWithLedgeAttack_201
+  - first:
+      213: 1423184135970746146
+    second: ROBaseAnimationsWithLedgeAttack_202
+  - first:
+      213: 1891251314892918684
+    second: ROBaseAnimationsWithLedgeAttack_203
+  - first:
+      213: 3131541232684333097
+    second: ROBaseAnimationsWithLedgeAttack_204
+  - first:
+      213: -4176901269310106783
+    second: ROBaseAnimationsWithLedgeAttack_205
+  - first:
+      213: 416272995408443310
+    second: ROBaseAnimationsWithLedgeAttack_206
+  - first:
+      213: 1616854150388710719
+    second: ROBaseAnimationsWithLedgeAttack_207
+  - first:
+      213: 6680167366675304774
+    second: ROBaseAnimationsWithLedgeAttack_208
+  - first:
+      213: -2044747815676905671
+    second: ROBaseAnimationsWithLedgeAttack_209
+  - first:
+      213: 2090387607869547779
+    second: ROBaseAnimationsWithLedgeAttack_210
+  - first:
+      213: -7947726093815701277
+    second: ROBaseAnimationsWithLedgeAttack_211
+  - first:
+      213: 3430423294238878920
+    second: ROBaseAnimationsWithLedgeAttack_212
+  - first:
+      213: -7208842347025762515
+    second: ROBaseAnimationsWithLedgeAttack_213
+  - first:
+      213: -3373438202858768088
+    second: ROBaseAnimationsWithLedgeAttack_214
+  - first:
+      213: 3238034133726828766
+    second: ROBaseAnimationsWithLedgeAttack_215
+  - first:
+      213: 2875458153255780851
+    second: ROBaseAnimationsWithLedgeAttack_216
+  - first:
+      213: 1499843534262257545
+    second: ROBaseAnimationsWithLedgeAttack_217
+  - first:
+      213: -4218687769521343473
+    second: ROBaseAnimationsWithLedgeAttack_218
+  - first:
+      213: -5379937919734000394
+    second: ROBaseAnimationsWithLedgeAttack_219
+  - first:
+      213: 1913240069048066567
+    second: ROBaseAnimationsWithLedgeAttack_220
+  - first:
+      213: 2872430179042789824
+    second: ROBaseAnimationsWithLedgeAttack_221
+  - first:
+      213: -1518640571113483608
+    second: ROBaseAnimationsWithLedgeAttack_222
+  - first:
+      213: 2657572153266059401
+    second: ROBaseAnimationsWithLedgeAttack_223
+  - first:
+      213: -2265427587838456322
+    second: ROBaseAnimationsWithLedgeAttack_224
+  - first:
+      213: 4697087834181382449
+    second: ROBaseAnimationsWithLedgeAttack_225
+  - first:
+      213: 5977048977929449594
+    second: ROBaseAnimationsWithLedgeAttack_226
+  - first:
+      213: 6720508122111649551
+    second: ROBaseAnimationsWithLedgeAttack_227
+  - first:
+      213: -2175611561850690771
+    second: ROBaseAnimationsWithLedgeAttack_228
+  - first:
+      213: -7088866631916859038
+    second: ROBaseAnimationsWithLedgeAttack_229
+  - first:
+      213: -7589408975525372667
+    second: ROBaseAnimationsWithLedgeAttack_230
+  - first:
+      213: 9088332463769788826
+    second: ROBaseAnimationsWithLedgeAttack_231
+  - first:
+      213: -6255659858468673154
+    second: ROBaseAnimationsWithLedgeAttack_232
+  - first:
+      213: -8090998818797509100
+    second: ROBaseAnimationsWithLedgeAttack_233
+  - first:
+      213: 4725577969852066026
+    second: ROBaseAnimationsWithLedgeAttack_234
+  - first:
+      213: -6249389828457241347
+    second: ROBaseAnimationsWithLedgeAttack_235
+  - first:
+      213: -7506347113404780389
+    second: ROBaseAnimationsWithLedgeAttack_236
+  - first:
+      213: -4808511798407084706
+    second: ROBaseAnimationsWithLedgeAttack_237
+  - first:
+      213: 146328418258103225
+    second: ROBaseAnimationsWithLedgeAttack_238
+  - first:
+      213: -2965447499721443401
+    second: ROBaseAnimationsWithLedgeAttack_239
+  - first:
+      213: 949420204192756221
+    second: ROBaseAnimationsWithLedgeAttack_240
+  - first:
+      213: -8917791729244745141
+    second: ROBaseAnimationsWithLedgeAttack_241
+  - first:
+      213: 4950172485623521520
+    second: ROBaseAnimationsWithLedgeAttack_242
+  - first:
+      213: 6383245548162277189
+    second: ROBaseAnimationsWithLedgeAttack_243
+  - first:
+      213: -9110639882252837168
+    second: ROBaseAnimationsWithLedgeAttack_244
+  - first:
+      213: -7219832888733173636
+    second: ROBaseAnimationsWithLedgeAttack_245
+  - first:
+      213: 5547372596882207426
+    second: ROBaseAnimationsWithLedgeAttack_246
+  - first:
+      213: 1483013779661279920
+    second: ROBaseAnimationsWithLedgeAttack_247
+  - first:
+      213: -8366558332335930528
+    second: ROBaseAnimationsWithLedgeAttack_248
+  - first:
+      213: -428954957557164426
+    second: ROBaseAnimationsWithLedgeAttack_249
+  - first:
+      213: -1462399469926278380
+    second: ROBaseAnimationsWithLedgeAttack_250
+  - first:
+      213: 5873431620925095862
+    second: ROBaseAnimationsWithLedgeAttack_251
+  - first:
+      213: -2274961125311876104
+    second: ROBaseAnimationsWithLedgeAttack_252
+  - first:
+      213: 768706775094052971
+    second: ROBaseAnimationsWithLedgeAttack_253
+  - first:
+      213: -1709674360399274520
+    second: ROBaseAnimationsWithLedgeAttack_254
+  - first:
+      213: -2777751051448226705
+    second: ROBaseAnimationsWithLedgeAttack_255
+  - first:
+      213: 5784513071154920916
+    second: ROBaseAnimationsWithLedgeAttack_256
+  - first:
+      213: -3098504077255543947
+    second: ROBaseAnimationsWithLedgeAttack_257
+  - first:
+      213: -936968036346433839
+    second: ROBaseAnimationsWithLedgeAttack_258
+  - first:
+      213: 4270996547027692637
+    second: ROBaseAnimationsWithLedgeAttack_259
+  - first:
+      213: 909981607852346052
+    second: ROBaseAnimationsWithLedgeAttack_260
+  - first:
+      213: 5214435540076305
+    second: ROBaseAnimationsWithLedgeAttack_261
+  - first:
+      213: 6605044127849985758
+    second: ROBaseAnimationsWithLedgeAttack_262
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1428
+        width: 14
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f30bf543ba6da750800000000000000
+      internalID: 6317823170476442612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_1
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1428
+        width: 17
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6fd6c95d4f88290800000000000000
+      internalID: -7887785549049760059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_2
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1428
+        width: 18
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57fa8258353df30f0800000000000000
+      internalID: -1134956225404293259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_3
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1428
+        width: 18
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a972bd8d7556ba0800000000000000
+      internalID: -6096369931674740067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_4
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1428
+        width: 19
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a507a49f440f931a0800000000000000
+      internalID: -6829163180899798950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_5
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1428
+        width: 20
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35ef2bfe72a37400800000000000000
+      internalID: 320778664737236286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_6
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1428
+        width: 19
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ecfc87fe0961f8a0800000000000000
+      internalID: -6273117292946719519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_7
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 1428
+        width: 18
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cfe4022c80a22c00800000000000000
+      internalID: 874437801389912005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_8
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1428
+        width: 31
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5232c1906dc2e6400800000000000000
+      internalID: 319241921377346341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_9
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 1428
+        width: 23
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c706c94a6c832e580800000000000000
+      internalID: -8799408296112136068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_10
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 1428
+        width: 27
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca326d9fe8acda750800000000000000
+      internalID: 6317928567696401324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_11
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 1428
+        width: 18
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6e4d138c9445f90800000000000000
+      internalID: -6965861599456991514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_12
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 1428
+        width: 29
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b01ce7c85ddfd90800000000000000
+      internalID: -7062253841248351470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_13
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 1431
+        width: 29
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4e2b69c2137d080800000000000000
+      internalID: -9162800849285356334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_14
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 1428
+        width: 29
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b64dd74b65393e0800000000000000
+      internalID: -2048198072318268554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_15
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1344
+        width: 21
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c950453335ef42fd0800000000000000
+      internalID: -2367487870793153124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_16
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1344
+        width: 25
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eacd3d81454a1060800000000000000
+      internalID: 6924923524880386786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_17
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1348
+        width: 27
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb371f35e53b180a0800000000000000
+      internalID: -6881021537928776770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_18
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1344
+        width: 24
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8407642a89dd06dd0800000000000000
+      internalID: -2494750545935962040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_19
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1344
+        width: 23
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4885b33086f460da0800000000000000
+      internalID: -5979004147138340732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_20
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1344
+        width: 19
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3c764c59666e400800000000000000
+      internalID: 353082414226457523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_21
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1344
+        width: 14
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31e730335b14c490800000000000000
+      internalID: -7727021016555724481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_22
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1344
+        width: 22
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f956ce77cffdf80800000000000000
+      internalID: -8079461614481989804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_23
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 1344
+        width: 20
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe512df87738f960800000000000000
+      internalID: 7635914160989101808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_24
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 1344
+        width: 16
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c277db0fbbcf756c0800000000000000
+      internalID: -4154574247097960660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_25
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1344
+        width: 18
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78bf6d1ccb7873a10800000000000000
+      internalID: 1889127813480905607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_26
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 1344
+        width: 18
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa18abb7efe2f1f80800000000000000
+      internalID: -8133730731475435094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_27
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 1344
+        width: 22
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3df6460ec307c660800000000000000
+      internalID: 7405892295637531963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_28
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 1344
+        width: 21
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821b2f3d3f54f6ce0800000000000000
+      internalID: -1409831244808408792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_29
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1344
+        width: 22
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1bd8803f926d5c80800000000000000
+      internalID: -8332395299711952100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_30
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1260
+        width: 25
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af048d80be5458600800000000000000
+      internalID: 469858611898106106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_31
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1267
+        width: 27
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37674403a81094e0800000000000000
+      internalID: -1977053147985123521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_32
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1261
+        width: 23
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d91c4c114c37e90800000000000000
+      internalID: -7029059012800701179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_33
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1260
+        width: 22
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8c901d2041ebfe0800000000000000
+      internalID: -1171476850740180770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_34
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1260
+        width: 17
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926a38be828836030800000000000000
+      internalID: 3486780245846238761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_35
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1265
+        width: 22
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b104be79015c57d80800000000000000
+      internalID: -8253474067027640293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_36
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1275
+        width: 20
+        height: 25
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e47c9143a9f92ad0800000000000000
+      internalID: -2726373619820366616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_37
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 1282
+        width: 21
+        height: 17
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033864c56f32eb450800000000000000
+      internalID: 6106357685778023216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_38
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 1280
+        width: 25
+        height: 17
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b507c52af57be4a40800000000000000
+      internalID: 5354418628363841627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_39
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1277
+        width: 17
+        height: 24
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a125a3cd12d0340800000000000000
+      internalID: 4831555204993391164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_40
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1279
+        width: 22
+        height: 22
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d436a11938c43220800000000000000
+      internalID: 2464815043513300180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_41
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 1280
+        width: 24
+        height: 19
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b125fba127ded10800000000000000
+      internalID: 2156505255784880950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_42
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 1276
+        width: 17
+        height: 23
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d960eec2745a1f60800000000000000
+      internalID: 8005804139678296534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_43
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 1271
+        width: 17
+        height: 27
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008cae967d5d5fb60800000000000000
+      internalID: 7779359052524079104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_44
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 1264
+        width: 19
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af127cf93085c290800000000000000
+      internalID: -7870743787223244889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_45
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1176
+        width: 15
+        height: 25
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1699001cee51cf4c0800000000000000
+      internalID: -4252499832960149151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_46
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1176
+        width: 15
+        height: 24
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ace5bfea44631b0800000000000000
+      internalID: -5677274761921639924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_47
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1176
+        width: 15
+        height: 23
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a636efa9a7ebd5510800000000000000
+      internalID: 1539596081426228074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_48
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1176
+        width: 15
+        height: 23
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3e6373910168ae0800000000000000
+      internalID: -1547531721468615756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_49
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1176
+        width: 15
+        height: 24
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85569acfbc27eadd0800000000000000
+      internalID: -2472912924936936104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_50
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1176
+        width: 15
+        height: 25
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf3d0edd8b7e0510800000000000000
+      internalID: 1517285973716451253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_51
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1176
+        width: 17
+        height: 25
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06dc48a32b832bb0800000000000000
+      internalID: -4961969379168430579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_52
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 1176
+        width: 17
+        height: 23
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcfff5e18d93ab140800000000000000
+      internalID: 4736161558518824907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_53
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 1176
+        width: 18
+        height: 26
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc168ab010f7da6b0800000000000000
+      internalID: -5283427145368444469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_54
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 1176
+        width: 18
+        height: 26
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd03fa8bb2d14460800000000000000
+      internalID: 7224286980210888126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_55
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 1176
+        width: 17
+        height: 26
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c9b031ed6377ac0800000000000000
+      internalID: -3857554228389372854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_56
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 1176
+        width: 26
+        height: 26
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eba6c1f520d20fe0800000000000000
+      internalID: -1224187287302657050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_57
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 1176
+        width: 26
+        height: 27
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640dc9bf037e83da0800000000000000
+      internalID: -5964763508886417338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_58
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 1176
+        width: 26
+        height: 27
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38114411c64974d80800000000000000
+      internalID: -8266475399148203645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_59
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 1176
+        width: 18
+        height: 26
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48770b41d7317640800000000000000
+      internalID: 5075899627069732942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_60
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1094
+        width: 40
+        height: 20
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae1f381251d15e90800000000000000
+      internalID: -7038614592079061342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_61
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1092
+        width: 29
+        height: 15
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fdc4bacb68c111e0800000000000000
+      internalID: -2228779975283782158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_62
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1092
+        width: 22
+        height: 18
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7465cedff984a8e0800000000000000
+      internalID: -1683068628682578820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_63
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 1092
+        width: 19
+        height: 21
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44588f8a759cc240800000000000000
+      internalID: 4813386455378842698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_64
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 1092
+        width: 20
+        height: 20
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d1919abc959d5e0800000000000000
+      internalID: -1884376237827613358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_65
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 1092
+        width: 25
+        height: 17
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3efd73773c615220800000000000000
+      internalID: 2472876655819750972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_66
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 1092
+        width: 29
+        height: 19
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf4422bfb49825e0800000000000000
+      internalID: -1934132488907239483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_67
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 1092
+        width: 30
+        height: 21
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a326e34449c92b230800000000000000
+      internalID: 3653154408364925498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_68
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 1092
+        width: 23
+        height: 26
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fd03c7dc70246d0800000000000000
+      internalID: -3007833021996802246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_69
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 1092
+        width: 17
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3420f9168f70c80800000000000000
+      internalID: -8356437485399424066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_70
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 1093
+        width: 29
+        height: 28
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300970b4ccf70cc80800000000000000
+      internalID: -8304497197462351869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_71
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 1093
+        width: 29
+        height: 28
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0596e50adddfe2c60800000000000000
+      internalID: 7795447133345048912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_72
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 1093
+        width: 29
+        height: 28
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b3697ab40b76630800000000000000
+      internalID: 3920295839629982476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_73
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 1093
+        width: 29
+        height: 28
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59828bb8184e83d0800000000000000
+      internalID: -3202543013951534753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_74
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 1092
+        width: 44
+        height: 24
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2f05962ee159940800000000000000
+      internalID: 5302178094076981943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_75
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1008
+        width: 24
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6896b2d1f0caeba90800000000000000
+      internalID: -7296205165379753594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_76
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1008
+        width: 24
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80449f6beae55900800000000000000
+      internalID: 672702016271958157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_77
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 1008
+        width: 24
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910bbed0f65ea1ca0800000000000000
+      internalID: -6045267284653789159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_78
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 1008
+        width: 24
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf5b0de6c8c03c00800000000000000
+      internalID: 878422684043272126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_79
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 1008
+        width: 24
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328446536190e1840800000000000000
+      internalID: 5196601011021826083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_80
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 1008
+        width: 24
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ac8e5f18a8e5480800000000000000
+      internalID: -8908530722111174060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_81
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 1008
+        width: 24
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0fe23765bf0e720800000000000000
+      internalID: 2873572910980591814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_82
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 1014
+        width: 17
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4adf50c6e9b8bfc60800000000000000
+      internalID: 7853023887784017316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_83
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 1014
+        width: 17
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc91ee0c3c349ed0800000000000000
+      internalID: -2408233672091001647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_84
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 1035
+        width: 24
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82384e06afc8e560800000000000000
+      internalID: 7343347504538727054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_85
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 1044
+        width: 21
+        height: 31
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13628d94448ad8d0800000000000000
+      internalID: -2820796786358983910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_86
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 1045
+        width: 22
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd750dcb9ada5aa60800000000000000
+      internalID: 7684739283706468315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_87
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1008
+        width: 44
+        height: 24
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45fad136c49104c80800000000000000
+      internalID: -8340638694019059884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_88
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 1008
+        width: 44
+        height: 23
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4d5f8e9f571afd0800000000000000
+      internalID: -2332453415785474824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_89
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1008
+        width: 44
+        height: 24
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6935d4f726bdf93a0800000000000000
+      internalID: -6656360508141251690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_90
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 964
+        width: 16
+        height: 34
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ecc3c97931ee7f10800000000000000
+      internalID: 2269498899213569254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_91
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 964
+        width: 17
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5703d7dfb5dd54630800000000000000
+      internalID: 3910775238605746293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_92
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 964
+        width: 16
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce5e3dcfe6e68c10800000000000000
+      internalID: 2055584197556199108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_93
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 950
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f2f00f077630e90800000000000000
+      internalID: -7060686056025280642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_94
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 952
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f679398809af999d0800000000000000
+      internalID: -2766904997368850577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_95
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 951
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c81b2a45d1565fc0800000000000000
+      internalID: -3506525283347130176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_96
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 960
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27b7a51b903d1120800000000000000
+      internalID: 2386116820217607982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_97
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 964
+        width: 16
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5090866, y: 1.0455483}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c59931e139b7100800000000000000
+      internalID: 106840773560458360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_98
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 964
+        width: 17
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df885bcc6f91d020800000000000000
+      internalID: 2364846568963084240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_99
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 964
+        width: 16
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db89509e0bc62e340800000000000000
+      internalID: 4891591652357281981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_100
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 926
+        width: 14
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6958a8e9e2d6fe340800000000000000
+      internalID: 4895251366970819990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_101
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 926
+        width: 14
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d8fafea534d3ee0800000000000000
+      internalID: -1279792661255975522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_102
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 926
+        width: 14
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e22d6286862c4d0800000000000000
+      internalID: -3115813195649765807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_103
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 926
+        width: 14
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6721dc0afa5762e80800000000000000
+      internalID: -8203740274031259018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_104
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 926
+        width: 14
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822fcb6ec59689730800000000000000
+      internalID: 4006067716275106344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_105
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 842
+        width: 14
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c68a3465fc74e630800000000000000
+      internalID: 3955423766128527042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_106
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 840
+        width: 15
+        height: 47
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61357101cc3245900800000000000000
+      internalID: 672201603735311126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_107
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 845
+        width: 22
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2b3d04d0c972ba0800000000000000
+      internalID: -6113746388396035331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_108
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 855
+        width: 20
+        height: 25
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f9dda88c7a8b7b0800000000000000
+      internalID: -5208228489288900841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_109
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 862
+        width: 21
+        height: 17
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83074161744626df0800000000000000
+      internalID: -188477977920245704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_110
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 860
+        width: 25
+        height: 17
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06c3c2a725d667f0800000000000000
+      internalID: -619573532505684468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_111
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 857
+        width: 17
+        height: 24
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d0fee55995da450800000000000000
+      internalID: 6101631568234614120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_112
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 859
+        width: 22
+        height: 22
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4716a6af3804f5250800000000000000
+      internalID: 5935533769483772276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_113
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 860
+        width: 24
+        height: 19
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda5c3c533a43da10800000000000000
+      internalID: 1932970249523321563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_114
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 856
+        width: 17
+        height: 23
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cea725a65acb4660800000000000000
+      internalID: 7371207688608788162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_115
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 851
+        width: 17
+        height: 27
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9806a912b9c41bf10800000000000000
+      internalID: 2283690715220959369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_116
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 844
+        width: 19
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b488eb34c00fdd0800000000000000
+      internalID: -2454448311817975012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_117
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 840
+        width: 18
+        height: 50
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4bb80e9f831eadc0800000000000000
+      internalID: -3625939142434047155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_118
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 845
+        width: 19
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b9e4ccb0e2c6c10800000000000000
+      internalID: 2048062558753954633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_119
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 845
+        width: 19
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5ea3dbad3745410800000000000000
+      internalID: 1464923162117072358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_120
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 757
+        width: 19
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c9363c695d626c30800000000000000
+      internalID: 4351160420828330437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_121
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 756
+        width: 18
+        height: 50
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d99e0fef217534a0800000000000000
+      internalID: -6614256027035592232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_122
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 762
+        width: 18
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56fbd57f5d47d9b60800000000000000
+      internalID: 7754482595728834405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_123
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 762
+        width: 18
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989b57e7134b93500800000000000000
+      internalID: 376530168530188681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_124
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 757
+        width: 19
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082fb5740ae0a5ee0800000000000000
+      internalID: -1271687863223979392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_125
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 776
+        width: 19
+        height: 28
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6454b6f0132b50120800000000000000
+      internalID: 2379503901917005126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_126
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 784
+        width: 24
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3220a686675c56760800000000000000
+      internalID: 7450578270902944291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_127
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 792
+        width: 20
+        height: 31
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a68e1c68f29c1f80800000000000000
+      internalID: -8134465231274473824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_128
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 794
+        width: 19
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28adbec671d297a00800000000000000
+      internalID: 754683991196162690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_129
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 796
+        width: 15
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5634778872e249080800000000000000
+      internalID: -9181662992973479067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_130
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 796
+        width: 16
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10597862281c76b0800000000000000
+      internalID: -5297332525633810403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_131
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 761
+        width: 22
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5cffaa5ff9321de0800000000000000
+      internalID: -1363963968238912418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_132
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 761
+        width: 13
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205af474b711ac140800000000000000
+      internalID: 4740620778935919874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_133
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 763
+        width: 20
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4708096101cdb8b20800000000000000
+      internalID: 3137843527049838708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_134
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 763
+        width: 23
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b240c047292d6660800000000000000
+      internalID: 7380600612896916145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_135
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 678
+        width: 17
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d787606a2574af310800000000000000
+      internalID: 1439541451196627069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_136
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 678
+        width: 14
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fdb351f36602c3b0800000000000000
+      internalID: -5493821569118257679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_137
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 677
+        width: 19
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae65d3cde9acc790800000000000000
+      internalID: -7508439640075571547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_138
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 680
+        width: 40
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e316f4edf3542b1e0800000000000000
+      internalID: -2183606728706268866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_139
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 677
+        width: 46
+        height: 46
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ecf81ac09c8c2500800000000000000
+      internalID: 372827422658723049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_140
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 678
+        width: 39
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19340d36838ecc320800000000000000
+      internalID: 2579692015466857361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_141
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 675
+        width: 46
+        height: 46
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7039baff3363c64c0800000000000000
+      internalID: -4292996747830258937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_142
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 679
+        width: 41
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b7c5ac9bc1b32d0800000000000000
+      internalID: -3298010717829170300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_143
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 675
+        width: 47
+        height: 46
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dcf0e760fa774830800000000000000
+      internalID: 4055345162423958739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_144
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 679
+        width: 38
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 504c8e3f0a1ef9e90800000000000000
+      internalID: -7016641613016808443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_145
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 672
+        width: 18
+        height: 50
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa61a7c3963ba3ae0800000000000000
+      internalID: -1568744255617624401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_146
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 672
+        width: 24
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6549bc4f83ddc56e0800000000000000
+      internalID: -1847358510433856426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_147
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 672
+        width: 25
+        height: 24
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef4e37b2db5f68a0800000000000000
+      internalID: -6309723592347201553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_148
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 672
+        width: 18
+        height: 30
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cecd899796f411420800000000000000
+      internalID: 2598945774399708396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_149
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 672
+        width: 17
+        height: 47
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7f4f58222265750800000000000000
+      internalID: 6293255060968503212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_150
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 595
+        width: 26
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f45f773bddf2bb0800000000000000
+      internalID: -4958500901830176871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_151
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 592
+        width: 19
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043e883571c4d8680800000000000000
+      internalID: -8751254837841566912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_152
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 594
+        width: 17
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b7f2ca3d8b982f0800000000000000
+      internalID: -970041025455228079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_153
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 595
+        width: 22
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81dac56098992af90800000000000000
+      internalID: -6943818861655577320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_154
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 594
+        width: 15
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4da35ecb4ca2d10800000000000000
+      internalID: 2101708491700491458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_155
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 600
+        width: 22
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091f3ba0eadcb5100800000000000000
+      internalID: 97897964306166160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_156
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 600
+        width: 20
+        height: 29
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44445dfbae225ad0800000000000000
+      internalID: -2715056309126544306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_157
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 606
+        width: 22
+        height: 25
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e42c6e935b4e8540800000000000000
+      internalID: 5012026257822196960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_158
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 602
+        width: 17
+        height: 25
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ba6ffef4d1bd860800000000000000
+      internalID: 7555665029009681236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_159
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 595
+        width: 26
+        height: 31
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481c44b35cb8efa10800000000000000
+      internalID: 1945145768289812868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_160
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 589
+        width: 23
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a71e2a430ac8360800000000000000
+      internalID: 7173284454425787022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_161
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 594
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53836828f6da0bc0800000000000000
+      internalID: -3816001372925230245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_162
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 594
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5b25aebab72e760800000000000000
+      internalID: 7485681508944098773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_163
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 594
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d57d1bfa0f079650800000000000000
+      internalID: 6239472348582213079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_164
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 594
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f14e5b88c72f820800000000000000
+      internalID: 2950557632490119024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_165
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 510
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7257790d2d36a55d0800000000000000
+      internalID: -3073034038633073369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_166
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 510
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d225ccf6818fa4e60800000000000000
+      internalID: 7947437276287226413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_167
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 510
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb25aab5bb95bce0800000000000000
+      internalID: -1390033705151157318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_168
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 510
+        width: 22
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f998272f86f9535f0800000000000000
+      internalID: -777540087558534753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_169
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 511
+        width: 18
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d82875451c982020800000000000000
+      internalID: 2317273623455869144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_170
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 513
+        width: 20
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f780e375cbde0a40800000000000000
+      internalID: 5336444249579751410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_171
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 518
+        width: 18
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8989f72cef2ee30800000000000000
+      internalID: 4531464286405957830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_172
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 527
+        width: 18
+        height: 31
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a000fbc3f17f5e4c0800000000000000
+      internalID: -4258726159073738742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_173
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 526
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43215586529a17bd0800000000000000
+      internalID: -2634138328905739724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_174
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 526
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7820abfd914068e40800000000000000
+      internalID: 5658214491011809927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_175
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 526
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e471efe7a1fe2a0800000000000000
+      internalID: -6706112187400237564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_176
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 510
+        width: 22
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3db75fed13744260800000000000000
+      internalID: 7080911086540012862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_177
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 511
+        width: 18
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa71516d03b689f0800000000000000
+      internalID: -466488641337591055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_178
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 513
+        width: 20
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13658d74986deac0800000000000000
+      internalID: -3824285521597340900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_179
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 518
+        width: 18
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5988a0468fec50fc0800000000000000
+      internalID: -3529187166749292395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_180
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 443
+        width: 18
+        height: 31
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7175e8ecc1cd11a0800000000000000
+      internalID: -6837095573453704834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_181
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 442
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db958172fb9bee10800000000000000
+      internalID: 2228045906253814737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_182
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 442
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3c28de4dc041e40800000000000000
+      internalID: 5626135943149962154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_183
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 442
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07639fd4d387d1bd0800000000000000
+      internalID: -2657836000382208400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_184
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 434
+        width: 18
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a0d9c9fd4ee0e00800000000000000
+      internalID: 1012998615261317681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_185
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 429
+        width: 20
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ef58f9ccfba2b30800000000000000
+      internalID: 4263430882830188159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_186
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 427
+        width: 18
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e3a2bffda7f7ea0800000000000000
+      internalID: -5872840286657692065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_187
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 426
+        width: 22
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fafb2a20b102bad0800000000000000
+      internalID: -2688084171453367561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_188
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 427
+        width: 18
+        height: 31
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee9c4fc66c02c7d0800000000000000
+      internalID: -2899741574369075475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_189
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 426
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0529da2ecfaba10800000000000000
+      internalID: 1926129841159164141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_190
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 426
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0092092eefc1860800000000000000
+      internalID: 7502151328327073984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_191
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 426
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b8d022d8028c390800000000000000
+      internalID: -7797946964258223346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_192
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 434
+        width: 18
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e49457778c2c990800000000000000
+      internalID: -7367105625030308257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_193
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 429
+        width: 20
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b310126ef454c8c50800000000000000
+      internalID: 6668781357694517563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_194
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 427
+        width: 18
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280b5d5d78146cf20800000000000000
+      internalID: 3442511016835264642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_195
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 342
+        width: 22
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e485cfbf6c234b150800000000000000
+      internalID: 5887386443092613198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_196
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 343
+        width: 18
+        height: 31
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857e744a4ee703970800000000000000
+      internalID: 8732619197945210712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_197
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 342
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4abe30f31a88dd0800000000000000
+      internalID: -2483557902474042173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_198
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 342
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e9f56356d769e10800000000000000
+      internalID: 2204086941301841451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_199
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 342
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9980cda04a265f20800000000000000
+      internalID: 3410960225061079454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_200
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 342
+        width: 24
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d2bfca15813ada0800000000000000
+      internalID: -5934873144870621942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_201
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 342
+        width: 25
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79659b26e5e63fb0800000000000000
+      internalID: -4668291186986489477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_202
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 342
+        width: 26
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22fe18a6e6a20c310800000000000000
+      internalID: 1423184135970746146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_203
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 341
+        width: 29
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9fce25fc031f3a10800000000000000
+      internalID: 1891251314892918684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_204
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 336
+        width: 27
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92873a5d828757b20800000000000000
+      internalID: 3131541232684333097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_205
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 338
+        width: 18
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16394ecfc6aa806c0800000000000000
+      internalID: -4176901269310106783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_206
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 342
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea778e47516e6c500800000000000000
+      internalID: 416272995408443310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_207
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 342
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3df8878848307610800000000000000
+      internalID: 1616854150388710719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_208
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 342
+        width: 24
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64196d2b3d8b4bc50800000000000000
+      internalID: 6680167366675304774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_209
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 342
+        width: 25
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9377257f1b89f93e0800000000000000
+      internalID: -2044747815676905671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_210
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 258
+        width: 26
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30561f9347c820d10800000000000000
+      internalID: 2090387607869547779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_211
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 257
+        width: 29
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0230ef93104b190800000000000000
+      internalID: -7947726093815701277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_212
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 252
+        width: 27
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc655a9fcf4b9f20800000000000000
+      internalID: 3430423294238878920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_213
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 254
+        width: 18
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d277cb7541c05fb90800000000000000
+      internalID: -7208842347025762515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_214
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 258
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829fed6e3d32f21d0800000000000000
+      internalID: -3373438202858768088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_215
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 258
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8906783eecfec20800000000000000
+      internalID: 3238034133726828766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_216
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 266
+        width: 23
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f1cf4f94fda7e720800000000000000
+      internalID: 2875458153255780851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_217
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 265
+        width: 23
+        height: 34
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9874e567fb380d410800000000000000
+      internalID: 1499843534262257545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_218
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 252
+        width: 30
+        height: 51
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04356f33d53475c0800000000000000
+      internalID: -4218687769521343473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_219
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 254
+        width: 28
+        height: 49
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4d99457fe9655b0800000000000000
+      internalID: -5379937919734000394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_220
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 253
+        width: 27
+        height: 50
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70267adb4b13d8a10800000000000000
+      internalID: 1913240069048066567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_221
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 259
+        width: 18
+        height: 31
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c905ff670cecd720800000000000000
+      internalID: 2872430179042789824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_222
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 258
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2d8495274bceae0800000000000000
+      internalID: -1518640571113483608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_223
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 258
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988b4600bc791e420800000000000000
+      internalID: 2657572153266059401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_224
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 258
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efdc4829c959f80e0800000000000000
+      internalID: -2265427587838456322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_225
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 168
+        width: 16
+        height: 51
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 131b03bbf786f2140800000000000000
+      internalID: 4697087834181382449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_226
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 173
+        width: 16
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70b89ea06eb2f250800000000000000
+      internalID: 5977048977929449594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_227
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 175
+        width: 16
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f07a790c78a044d50800000000000000
+      internalID: 6720508122111649551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_228
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 170
+        width: 16
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2328a6bfccaec1e0800000000000000
+      internalID: -2175611561850690771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_229
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 168
+        width: 17
+        height: 51
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261d9705b594f9d90800000000000000
+      internalID: -7088866631916859038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_230
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 173
+        width: 17
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d16a64fb00da690800000000000000
+      internalID: -7589408975525372667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_231
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 175
+        width: 16
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9126a7493e302e70800000000000000
+      internalID: 9088332463769788826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_232
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 170
+        width: 16
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79ed4ca08e6f29a0800000000000000
+      internalID: -6255659858468673154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_233
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 174
+        width: 15
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4162877317ff6bf80800000000000000
+      internalID: -8090998818797509100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_234
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 174
+        width: 15
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8a17b5020a49140800000000000000
+      internalID: 4725577969852066026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_235
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 174
+        width: 15
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df4eddbcf05b549a0800000000000000
+      internalID: -6249389828457241347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_236
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 174
+        width: 15
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90bab8121914d790800000000000000
+      internalID: -7506347113404780389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_237
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 174
+        width: 15
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55cba5fefbb44db0800000000000000
+      internalID: -4808511798407084706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_238
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 174
+        width: 15
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bba1decbecd70200800000000000000
+      internalID: 146328418258103225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_239
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 168
+        width: 16
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7780be53d98d6d0800000000000000
+      internalID: -2965447499721443401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_240
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 86
+        width: 37
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1fc7d35a40d2d00800000000000000
+      internalID: 949420204192756221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_241
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 96
+        width: 41
+        height: 23
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b425375bba3ad3480800000000000000
+      internalID: -8917791729244745141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_242
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 87
+        width: 29
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0a08606ab82b440800000000000000
+      internalID: 4950172485623521520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_243
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 84
+        width: 23
+        height: 24
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f5e449108d59850800000000000000
+      internalID: 6383245548162277189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_244
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 84
+        width: 14
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de10dd1c41809180800000000000000
+      internalID: -9110639882252837168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_245
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 84
+        width: 27
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7870617d300ecb90800000000000000
+      internalID: -7219832888733173636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_246
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 84
+        width: 27
+        height: 31
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c276e15cf93cfc40800000000000000
+      internalID: 5547372596882207426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_247
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 84
+        width: 26
+        height: 24
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b258bddc29b49410800000000000000
+      internalID: 1483013779661279920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_248
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 84
+        width: 28
+        height: 25
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0634880568304eb80800000000000000
+      internalID: -8366558332335930528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_249
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 84
+        width: 28
+        height: 26
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67699222dbb0c0af0800000000000000
+      internalID: -428954957557164426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_250
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 84
+        width: 26
+        height: 23
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b13532e6384bbe0800000000000000
+      internalID: -1462399469926278380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_251
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 84
+        width: 27
+        height: 21
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf79c1c0fe928150800000000000000
+      internalID: 5873431620925095862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_252
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 84
+        width: 27
+        height: 20
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f376f7e8e6bd60e0800000000000000
+      internalID: -2274961125311876104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_253
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 84
+        width: 14
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68cae93dbefaaa00800000000000000
+      internalID: 768706775094052971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_254
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 84
+        width: 44
+        height: 6
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eddeca3a340648e0800000000000000
+      internalID: -1709674360399274520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_255
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 14
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ce5f7c2227379d0800000000000000
+      internalID: -2777751051448226705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_256
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 0
+        width: 14
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ddfac49df7b64050800000000000000
+      internalID: 5784513071154920916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_257
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 0
+        width: 14
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573751455f6eff4d0800000000000000
+      internalID: -3098504077255543947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_258
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 0
+        width: 17
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1deeca309883ff2f0800000000000000
+      internalID: -936968036346433839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_259
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 0
+        width: 26
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c61861bb0a54b30800000000000000
+      internalID: 4270996547027692637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_260
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 0
+        width: 34
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca8d287377e0ac00800000000000000
+      internalID: 909981607852346052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_261
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 0
+        width: 35
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11702126086821000800000000000000
+      internalID: 5214435540076305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimationsWithLedgeAttack_262
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 0
+        width: 28
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed63746a3a4d9ab50800000000000000
+      internalID: 6605044127849985758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

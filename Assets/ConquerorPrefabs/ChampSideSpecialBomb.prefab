@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7834705219324800811}
   - component: {fileID: -5870243892665554897}
   - component: {fileID: 3609697973651389729}
+  - component: {fileID: 5179798417840979733}
   - component: {fileID: -3757172902363448075}
   - component: {fileID: 7740669382346111767}
   - component: {fileID: 4556512457754477695}
@@ -106,6 +107,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5179798417840979733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6260341956870047123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitEnemies: []
 --- !u!60 &-3757172902363448075
 PolygonCollider2D:
   m_ObjectHideFlags: 0

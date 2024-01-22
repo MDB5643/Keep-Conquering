@@ -3,23 +3,35 @@ using System.Collections;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.InputSystem;
 
-public class Conqueror : MonoBehaviour
+public abstract class Conqueror : MonoBehaviour
 {
+    public PlayerInput playerInput;
+    //public KeepConqueringP1 playerActions;
+
+    public List<Conqueror> grabbedPlayers;
+    public List<MinionBehavior> grabbedMinions;
+
     public string teamColor = "Blue";
     public int playerNumber = 1;
+    public bool isPlayer = false;
 
     public float m_runSpeed = 4.5f;
     public float m_walkSpeed = 2.0f;
     public float m_jumpForce = 7.5f;
-    public float m_dodgeForce = 6.0f;
+    public float m_dodgeForce = 7.0f;
     public float m_parryKnockbackForce = 4.0f;
     public bool m_noBlood = false;
     public bool m_hideSword = false;
     public Text infoText;
     public Text m_DamageDisplay;
+    public Text m_StockDisplay;
+
+    //Damage/Stocks
     public float currentDamage = 0.0f;
-    public string hookDirection = "";
+    public float m_StockCount = 3;
+    public bool isEliminated;
 
     public Animator m_animator;
     public Rigidbody2D m_body2d;
@@ -32,7 +44,11 @@ public class Conqueror : MonoBehaviour
     public Sensor_Prototype m_wallSensorL2;
     public Sensor_Prototype m_wallSensorL0;
 
+    public bool heavy = false;
+
     public bool m_grounded = false;
+    public bool m_fallingdown = false;
+    public bool m_down = false;
     public bool m_moving = false;
     public bool m_dead = false;
     public bool m_dodging = false;
@@ -69,6 +85,7 @@ public class Conqueror : MonoBehaviour
     public int m_currentSpecial = 0;
     public int m_jumpCount = 0;
     public float m_timeSinceAttack = 0.0f;
+    public float m_LagTime = 0.0f;
     public float m_timeSinceNSpec = 0.0f;
     public float m_timeSinceSideSpecial = 0.0f;
     public float m_timeSinceStun = 5.0f;
@@ -85,6 +102,14 @@ public class Conqueror : MonoBehaviour
     public float m_hitStopDuration;
     public float m_timeSinceHitStop = 0.0f;
     public float animSpeed;
+    public float inputX;
+    public float inputY;
+    public bool jump = false;
+    public bool attack = false;
+    public bool special = false;
+    public bool shield = false;
+    public bool smash = false;
+    public bool submit = false;
 
     //Knockback after hitstun
     public float incomingKnockback = 0.0f;
@@ -102,6 +127,7 @@ public class Conqueror : MonoBehaviour
     public Transform upTiltPoint;
     public Transform backPoint;
     public Transform downPoint;
+    
     public LayerMask enemyLayers;
 
     public GameObject KnockoutFX;
@@ -116,7 +142,10 @@ public class Conqueror : MonoBehaviour
     public LineController hookChain;
     public Transform launchOffset;
     public SpriteShapeDemo m_SpriteShaper;
+    
+    public string hookDirection = "";
     public bool hookActive = false;
+
     public bool isGrappled;
 
     public float jabRange;
@@ -131,11 +160,27 @@ public class Conqueror : MonoBehaviour
     public float downAirDamage = 5.0f;
     public float downAirKB = 1.4f;
 
+    public bool FSmashInput = false;
+    public bool ReverseFSmashInput = false;
+    public bool DSmashInput = false;
+    public bool USmashInput = false;
+
     public AudioManager_PrototypeHero m_audioManager;
+
+    Vector2 _movement;
+    Rigidbody2D _rb;
+
+    private InputAction jumpAction;
+
+    private void Awake()
+    {
+        playerInput = GetComponent<PlayerInput>();
+    }
 
     // Use this for initialization
     void Start()
     {
+        
         m_animator = GetComponentInChildren<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
         m_SR = GetComponentInChildren<SpriteRenderer>();
@@ -151,7 +196,164 @@ public class Conqueror : MonoBehaviour
         m_wallSensorL2 = transform.Find("WallSensor_L2").GetComponent<Sensor_Prototype>();
 
         m_audioManager = AudioManager_PrototypeHero.instance;
+
+        
     }
+
+    private void OnEnable()
+    {
+    }
+    private void OnDisable()
+    {
+    }
+
+    private void FixedUpdate()
+    {
+        if (m_StockCount == 0)
+        {
+            isEliminated = true;
+        }
+        if (m_disableMovementTimer < 0.0f && !preview && isPlayer)
+        {
+
+            // -- Handle input and movement --
+
+            // GetAxisRaw returns either -1, 0 or 1
+            float inputRaw = Input.GetAxisRaw("Horizontal");
+
+            // check if character is currently moving
+            if (Mathf.Abs(inputX) > Mathf.Epsilon && Mathf.Sign(inputX) == m_facingDirection)
+            {
+                m_moving = true;
+                m_animator.SetBool("StayDown", false);
+            }
+
+            else
+                m_moving = false;
+
+            // Swap direction of sprite depending on move direction
+            if (inputX > 0 && !m_dodging && !m_wallSlide && !m_ledgeGrab && !m_ledgeClimb && !preview && m_grounded)
+            {
+                if (m_SR.flipX == true)
+                {
+                    launchOffset.position = new Vector3(transform.position.x + .6f, transform.position.y + .13f, transform.position.z + 0.0f);
+                }
+                m_SR.flipX = false;
+                m_facingDirection = 1;
+            }
+
+            else if (inputX < 0 && !m_dodging && !m_wallSlide && !m_ledgeGrab && !m_ledgeClimb && !preview && m_grounded)
+            {
+                if (m_SR.flipX == false)
+                {
+                    launchOffset.position = new Vector3(transform.position.x - .6f, transform.position.y + .13f, transform.position.z + 0.0f);
+                }
+                m_SR.flipX = true;
+                m_facingDirection = -1;
+            }
+
+            // SlowDownSpeed helps decelerate the characters when stopping
+            float SlowDownSpeed = m_moving ? 1.0f : 0.5f;
+            float KBSlowDownSpeed = 0.8f;
+            // Set movement
+            if (!m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && (!m_animator.GetBool("isParrying") || heavy) && m_disableMovementTimer < 0.0f && !m_launched && m_fSmashCharging == false
+                && m_uSmashCharging == false && m_dSmashCharging == false && !preview)
+            {
+                if (!m_isInKnockback)
+                {
+                    m_timeSinceKnockBack = 0.0f;
+                    if (m_KnockBackMomentumX <= 1 && m_KnockBackMomentumY <= 1)
+                    {
+                        if (m_animator.GetBool("isParrying") && heavy)
+                        {
+                            m_body2d.velocity = new Vector2(inputX * m_walkSpeed * SlowDownSpeed, m_body2d.velocity.y);
+                        }
+                        else
+                        {
+                            m_body2d.velocity = new Vector2(inputX * m_maxSpeed * SlowDownSpeed, m_body2d.velocity.y);
+                        }
+                        
+                    }
+                    else
+                    {
+                        m_body2d.velocity = new Vector2(m_KnockBackMomentumX, m_KnockBackMomentumY);
+
+
+                        m_KnockBackMomentumX = m_KnockBackMomentumX * KBSlowDownSpeed;
+                        m_KnockBackMomentumY = m_KnockBackMomentumY * KBSlowDownSpeed;
+                    }
+
+                }
+                else
+                {
+                    m_timeSinceKnockBack += Time.deltaTime;
+                    if (m_timeSinceKnockBack > m_KnockBackDuration)
+                    {
+                        m_isInKnockback = false;
+                        m_KnockBackMomentumX = m_body2d.velocity.x;
+                        m_KnockBackMomentumY = m_body2d.velocity.y;
+                        m_animator.SetBool("Knockback", false);
+                        //
+                    }
+
+                }
+            }
+            // Ledge Climb
+            else if (inputY > 0 && m_ledgeGrab)
+            {
+                DisableWallSensors();
+                m_ledgeClimb = true;
+                m_body2d.gravityScale = 0;
+                m_disableMovementTimer = 6.0f / 14.0f;
+                m_animator.SetTrigger("LedgeClimb");
+
+                if (transform.gameObject.layer == 27)
+                {
+                    SetLayerRecursively(gameObject, LayerMask.NameToLayer("PlayerMid"));
+                }
+                else if (transform.gameObject.layer == 26)
+                {
+                    SetLayerRecursively(gameObject, LayerMask.NameToLayer("Player"));
+                }
+            }
+
+            // Ledge Drop
+            else if (inputY < 0 && m_ledgeGrab)
+            {
+                DisableWallSensors();
+                if (transform.gameObject.layer == 27)
+                {
+                    SetLayerRecursively(gameObject, LayerMask.NameToLayer("PlayerMid"));
+                }
+                else if (transform.gameObject.layer == 26)
+                {
+                    SetLayerRecursively(gameObject, LayerMask.NameToLayer("Player"));
+                }
+            }
+
+            //Crouch / Stand up
+            else if (inputY < 0 && m_grounded && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_disableMovementTimer < 0.0f
+                && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
+            {
+                m_crouching = true;
+                m_animator.SetBool("Crouching", true);
+                m_body2d.velocity = new Vector2(m_body2d.velocity.x / 2.0f, m_body2d.velocity.y);
+            }
+            else if (inputY < 0 && m_crouching)
+            {
+                m_crouching = false;
+                m_animator.SetBool("Crouching", false);
+            }
+        }
+    }
+
+    private void PlayerInput_onActionTriggered(InputAction.CallbackContext obj)
+    {
+
+    }
+
+    
+
 
     private void OnTriggerEnter2D(Collider2D coll)
     {
@@ -212,6 +414,10 @@ public class Conqueror : MonoBehaviour
             if (coll.transform.name.Contains("ChargeBall"))
             {
                 GameObject.Destroy(coll.transform.parent.gameObject);
+            }
+            if (coll.transform.name.Contains("MagicArrow") && coll.GetComponentInParent<ProjectileBehavior>().teamColor != teamColor)
+            {
+                GameObject.Destroy(coll.transform.gameObject);
             }
             coll.GetComponentInParent<CombatManager>().Hit(transform, coll.transform.name);
         }
@@ -275,15 +481,32 @@ public class Conqueror : MonoBehaviour
             }
 
         }
-        if (coll.gameObject.CompareTag("BlastZone") || coll.gameObject.CompareTag("BlastZoneMid"))
+        if ((coll.gameObject.CompareTag("BlastZone") || coll.gameObject.CompareTag("BlastZoneMid")) && !m_dead)
         {
             currentDamage = 0.0f;
+            m_isInKnockback = false;
+            m_animator.SetBool("Knockback", false);
             m_animator.SetBool("noBlood", m_noBlood);
             m_animator.SetTrigger("Death");
             m_respawnTimer = 2.5f;
             DisableWallSensors();
             m_dead = true;
+            m_StockCount--;
+            gameObject.SetActive(false);
         }
+        if (coll.gameObject.CompareTag("Ground") && m_animator.GetBool("Knockback") && transform.position.y >= coll.transform.position.y && transform.GetComponent<Rigidbody2D>().velocity.y <= 0)
+        {
+            m_animator.SetTrigger("FallToProne");
+            m_animator.SetBool("StayDown", true);
+            m_fallingdown = true;
+            m_isInKnockback = false;
+            m_animator.SetBool("Knockback", false);
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D coll)
+    {
+        
     }
 
     private void CheckOverlaps()
@@ -461,15 +684,17 @@ public class Conqueror : MonoBehaviour
         if (playerNumber == 1)
         {
             Transform spawnPoint = GameObject.Find("P1RespawnPoint").transform;
+            
             transform.position = spawnPoint.position;
         }
         else if (playerNumber == 3)
         {
             Transform spawnPoint = GameObject.Find("P2RespawnPoint").transform;
+            
             transform.position = spawnPoint.position;
         }
-        
-        
+
+        gameObject.SetActive(true);
         transform.tag = "Player";
         m_dead = false;
         m_launched = false;
@@ -501,6 +726,15 @@ public class Conqueror : MonoBehaviour
         m_parryTimer = -1.0f;
         m_isParrying = false;
 
+        if (transform.gameObject.layer == 27)
+        {
+            SetLayerRecursively(gameObject, LayerMask.NameToLayer("PlayerMid"));
+        }
+        else if (transform.gameObject.layer == 26)
+        {
+            SetLayerRecursively(gameObject, LayerMask.NameToLayer("Player"));
+        }
+
         if (!m_inHitStun)
         {
             ResetDodging();
@@ -524,6 +758,11 @@ public class Conqueror : MonoBehaviour
         float radians = contactAngle * Mathf.Deg2Rad;
         Vector2 KBVector = new Vector2(Mathf.Cos(radians), Mathf.Sin(radians));
         BaseKB *= (currentDamage * 0.75f);
+
+        if (BaseKB > 2)
+        {
+            m_animator.SetBool("Knockback", true);
+        }
 
         //Calculate knockback force
         Vector2 KBForce = KBVector * BaseKB;
@@ -550,4 +789,204 @@ public class Conqueror : MonoBehaviour
 
     }
 
+    public void MoveX(InputAction.CallbackContext ctx)
+    {
+        if (!preview)
+        {
+            inputX = ctx.ReadValue<float>();
+        }
+    }
+    public void MoveY(InputAction.CallbackContext ctx)
+    {
+        if (!preview)
+        {
+            inputY = ctx.ReadValue<float>();
+        }
+    }
+    public void Jump(InputAction.CallbackContext ctx)
+    {
+        //Jump
+        if ((m_grounded || m_wallSlide || m_jumpCount <= 1) && !m_dodging && !m_ledgeClimb && !m_crouching && m_disableMovementTimer < 0.0f
+             && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && m_launched == false && m_timeSinceAttack > m_LagTime && ctx.phase == InputActionPhase.Started)
+        {
+            m_LagTime = .08f;
+            m_jumpCount++;
+
+            if (m_ledgeGrab)
+            {
+                DisableWallSensors();
+                m_wallSensorR0.Disable(0.8f);
+                m_wallSensorL0.Disable(0.8f);
+                if (transform.gameObject.layer == 27)
+                {
+                    SetLayerRecursively(gameObject, LayerMask.NameToLayer("PlayerMid"));
+                }
+                else if (transform.gameObject.layer == 26)
+                {
+                    SetLayerRecursively(gameObject, LayerMask.NameToLayer("Player"));
+                }
+            }
+
+            // Check if it's a normal jump or a wall jump
+            if (!m_wallSlide)
+                m_body2d.velocity = new Vector2(m_body2d.velocity.x, m_jumpForce);
+            else
+            {
+                m_body2d.velocity = new Vector2(-m_facingDirection * m_jumpForce / 2.0f, m_jumpForce);
+                m_facingDirection = -m_facingDirection;
+                m_SR.flipX = !m_SR.flipX;
+            }
+
+            m_animator.SetTrigger("Jump");
+            m_grounded = false;
+            m_animator.SetBool("Grounded", m_grounded);
+            m_groundSensor.Disable(0.2f);
+        }
+    }
+
+    protected abstract void BasicAction(InputAction.CallbackContext ctx);
+    protected abstract void SpecialAction(InputAction.CallbackContext ctx);
+
+    protected abstract void ForwardSmashAction(InputAction.CallbackContext ctx);
+
+    protected abstract void UpSmashAction(InputAction.CallbackContext ctx);
+
+    protected abstract void DownSmashAction(InputAction.CallbackContext ctx);
+
+    protected abstract void ReverseForwardSmashAction(InputAction.CallbackContext ctx);
+
+    protected abstract void ShieldAction(InputAction.CallbackContext ctx);
+
+    protected abstract void DodgeAction(InputAction.CallbackContext ctx);
+
+    public void Basic(InputAction.CallbackContext ctx)
+    {
+        if (transform.gameObject.layer == 27)
+        {
+            SetLayerRecursively(gameObject, LayerMask.NameToLayer("PlayerMid"));
+        }
+        else if (transform.gameObject.layer == 26)
+        {
+            SetLayerRecursively(gameObject, LayerMask.NameToLayer("Player"));
+        }
+        if (FSmashInput || m_fSmashCharging)
+        {
+            ForwardSmashAction(ctx);
+        }
+        else if (USmashInput || m_uSmashCharging)
+        {
+            UpSmashAction(ctx);
+        }
+        else if (DSmashInput || m_dSmashCharging)
+        {
+            DownSmashAction(ctx);
+        }
+        else
+        {
+            BasicAction(ctx);
+        }
+        
+    }
+
+    public void Special(InputAction.CallbackContext ctx)
+    {
+        if (m_isParrying)
+        {
+            DodgeAction(ctx);
+        }
+        else
+        {
+            SpecialAction(ctx);
+        }
+        
+    }
+
+    public void ForwardSmash(InputAction.CallbackContext ctx)
+    {
+        if (ctx.phase == InputActionPhase.Performed)
+        {
+            if (FSmashInput)
+            {
+                FSmashInput = false;
+            }
+            else
+            {
+                FSmashInput = true;
+            }
+            
+        }
+    }
+
+    public void UpSmash(InputAction.CallbackContext ctx)
+    {
+        if (ctx.phase == InputActionPhase.Performed)
+        {
+            if (USmashInput)
+            {
+                USmashInput = false;
+            }
+            else
+            {
+                USmashInput = true;
+            }
+
+        }
+    }
+
+    public void DownSmash(InputAction.CallbackContext ctx)
+    {
+        if (ctx.phase == InputActionPhase.Performed)
+        {
+            if (DSmashInput)
+            {
+                DSmashInput = false;
+            }
+            else
+            {
+                DSmashInput = true;
+            }
+
+        }
+    }
+
+    public void InstantForwardSmash(InputAction.CallbackContext ctx)
+    {
+        if (m_facingDirection == -1)
+        {
+            m_facingDirection = -m_facingDirection;
+            m_SR.flipX = !m_SR.flipX;
+        }
+        ForwardSmashAction(ctx);
+    }
+
+    public void InstantUpSmash(InputAction.CallbackContext ctx)
+    {
+        UpSmashAction(ctx);
+    }
+
+    public void InstantDownSmash(InputAction.CallbackContext ctx)
+    {
+        DownSmashAction(ctx);
+    }
+
+    public void ReverseForwardSmash(InputAction.CallbackContext ctx)
+    {
+        if (m_facingDirection == 1)
+        {
+            m_facingDirection = -m_facingDirection;
+            m_SR.flipX = !m_SR.flipX;
+        }
+        
+        ForwardSmashAction(ctx);
+    }
+
+    public void Shield(InputAction.CallbackContext ctx)
+    {
+        ShieldAction(ctx);
+    }
+
+    public void Dodge(InputAction.CallbackContext ctx)
+    {
+        DodgeAction(ctx);
+    }
 }

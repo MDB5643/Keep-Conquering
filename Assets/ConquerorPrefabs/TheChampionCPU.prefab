@@ -382,10 +382,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7406940022571400231}
   - component: {fileID: 7853426713638563735}
-  - component: {fileID: 7953872935334828980}
   - component: {fileID: 611183573}
   - component: {fileID: 7765592113557340732}
   - component: {fileID: 4882518042797763156}
+  - component: {fileID: 7959714508348515081}
   m_Layer: 9
   m_Name: TheChampionCPU
   m_TagString: Player
@@ -444,32 +444,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!61 &7953872935334828980
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2087058974638004175}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.125, y: 2.5}
-    newSize: {x: 3.125, y: 2.5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.5, y: 1.28125}
-  m_EdgeRadius: 0
 --- !u!114 &611183573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -499,6 +473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitEnemy: 
+  crosshair: {fileID: 0}
 --- !u!114 &4882518042797763156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,8 +486,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7059a56390ccda4b9e71c51792d24a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInput: {fileID: 0}
+  grabbedPlayers: []
+  grabbedMinions: []
   teamColor: Blue
   playerNumber: 1
+  isPlayer: 0
   m_runSpeed: 4.5
   m_walkSpeed: 2
   m_jumpForce: 7.5
@@ -522,8 +501,10 @@ MonoBehaviour:
   m_hideSword: 0
   infoText: {fileID: 0}
   m_DamageDisplay: {fileID: 0}
+  m_StockDisplay: {fileID: 0}
   currentDamage: 0
-  hookDirection: 
+  m_StockCount: 3
+  isEliminated: 0
   m_animator: {fileID: 0}
   m_body2d: {fileID: 0}
   m_SR: {fileID: 0}
@@ -535,6 +516,8 @@ MonoBehaviour:
   m_wallSensorL2: {fileID: 1792506090958250915}
   m_wallSensorL0: {fileID: 367635281}
   m_grounded: 0
+  m_fallingdown: 0
+  m_down: 0
   m_moving: 0
   m_dead: 0
   m_dodging: 0
@@ -552,6 +535,7 @@ MonoBehaviour:
   m_isInKnockback: 0
   m_isInHotZone: 0
   m_cameraShake: 0
+  preview: 0
   m_shakeIntensity: 0.1
   m_maxSmashChargeTime: 2
   m_chargeModifier: 0
@@ -566,6 +550,7 @@ MonoBehaviour:
   m_currentSpecial: 0
   m_jumpCount: 0
   m_timeSinceAttack: 0
+  m_LagTime: 0
   m_timeSinceNSpec: 0
   m_timeSinceSideSpecial: 0
   m_timeSinceStun: 5
@@ -582,6 +567,14 @@ MonoBehaviour:
   m_hitStopDuration: 0
   m_timeSinceHitStop: 0
   animSpeed: 0
+  inputX: 0
+  inputY: 0
+  jump: 0
+  attack: 0
+  special: 0
+  shield: 0
+  smash: 0
+  submit: 0
   incomingKnockback: 0
   incomingAngle: 0
   incomingXMod: 0
@@ -598,7 +591,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   KnockoutFX: {fileID: 181668162739009514, guid: a281fa3ea3c817d488e3c8dde98f496d, type: 3}
-  LightAttackFX: {fileID: 3598523154694509901, guid: 4186a8507c8e2dc42a97d7745f3942f8, type: 3}
+  LightAttackFX: {fileID: 7739218506307758710, guid: def5e69ebc4224c4798d087ee545a5b0, type: 3}
   HeavyAttackFX: {fileID: 1724291888056607309, guid: 34e8f2ffa6331ff4b9f7be45413dab33, type: 3}
   ChargeFlashFX: {fileID: 4204095689380797397, guid: 81ead744f7dafc649a696aa3e0018451, type: 3}
   BlockFX: {fileID: 0}
@@ -608,6 +601,7 @@ MonoBehaviour:
   hookChain: {fileID: 0}
   launchOffset: {fileID: 0}
   m_SpriteShaper: {fileID: 0}
+  hookDirection: 
   hookActive: 0
   isGrappled: 0
   jabRange: 0
@@ -619,6 +613,10 @@ MonoBehaviour:
   downAirRange: 3
   downAirDamage: 5
   downAirKB: 1.4
+  FSmashInput: 0
+  ReverseFSmashInput: 0
+  DSmashInput: 0
+  USmashInput: 0
   m_audioManager: {fileID: 0}
   attackDistance: 2
   minDamage: 0
@@ -640,6 +638,22 @@ MonoBehaviour:
   KeepEyeTarget: {fileID: 0}
   m_TimeSinceJab2: 0
   routine: Lane
+--- !u!70 &7959714508348515081
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087058974638004175}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.6, y: 1.3}
+  m_Direction: 0
 --- !u!1 &2611625238851077509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,7 +1085,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300010, guid: 5142d8c117f1ba94a9859c47f2dafb95, type: 3}
+  m_Sprite: {fileID: -5154348430580253192, guid: 8194f875cf3707f42955c1738806b8a3, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1138,6 +1152,7 @@ MonoBehaviour:
   fAirHitbox: {fileID: 8654348693954206893, guid: 7131d89f26cc9e640a9cd51a9f0e1ddd, type: 3}
   nAirHitbox: {fileID: 1479459568077918940, guid: cb26c4457f23af9478b0fcc3237fc3fc, type: 3}
   nSpecHitbox: {fileID: 8161338255959051029, guid: afcde9fbb29aa084f87f5e1e0eff7009, type: 3}
+  dashAttackHitbox: {fileID: 0}
   dSpecExplosionHitbox: {fileID: 8161338255959051029, guid: 7ba0893be82a39445a24ba08e8c0232f, type: 3}
   dSpecExplosionHitbox2: {fileID: 0}
   lingerDeltaTime: 0.03
@@ -1310,7 +1325,7 @@ GameObject:
   - component: {fileID: 4821898429035222517}
   - component: {fileID: 5566055105145225007}
   - component: {fileID: 3028699006861981242}
-  m_Layer: 9
+  m_Layer: 22
   m_Name: TriggerArea
   m_TagString: HotZone
   m_Icon: {fileID: 0}

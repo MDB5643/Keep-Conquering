@@ -81,7 +81,7 @@ public class AudioManager_PrototypeHero : MonoBehaviour
             go.transform.SetParent(transform);
             m_sounds[i].SetSource(go.AddComponent<AudioSource>());
         }
-        PlaySound("Practice");
+        //PlaySound("Practice");
     }
 
     public void PlaySound (string name)

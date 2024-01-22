@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 using System.Collections.Generic;
 
 public class PrototypeHero : Conqueror {
@@ -10,12 +11,18 @@ public class PrototypeHero : Conqueror {
     private GrabableLedge ledge;
     private Rect buttonPos1;
     private Rect buttonPos2;
+    public GameObject activeDairHitbox;
+
+    public GameObject currentHookTarget;
+    private float crosshairLingerTime = 0.0f;
+    public float maxCrosshairLingerTime = 1.5f;
 
     public float m_TimeSinceJab2 = 0.0f;
 
     // Use this for initialization
     void Start ()
     {
+        isPlayer = true;
         m_animator = GetComponentInChildren<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
         m_SR = GetComponentInChildren<SpriteRenderer>();
@@ -40,7 +47,15 @@ public class PrototypeHero : Conqueror {
     // Update is called once per frame
     void Update ()
     {
-        
+        if (currentHookTarget != null)
+        {
+            crosshairLingerTime += Time.deltaTime;
+            if (crosshairLingerTime >= maxCrosshairLingerTime && gameObject != null)
+            {
+                currentHookTarget = null;
+                crosshairLingerTime = 0;
+            }
+        }
 
         if (!m_inHitStun )
         {
@@ -126,6 +141,11 @@ public class PrototypeHero : Conqueror {
                 {
                     m_DamageDisplay.text = currentDamage + "%";
                 }
+                //Update stock count
+                if (m_StockDisplay)
+                {
+                    m_StockDisplay.text = "x" + m_StockCount;
+                }
                 // Check for interactable overlapping objects
                 CheckOverlaps();
                 // Decrease death respawn timer 
@@ -145,12 +165,24 @@ public class PrototypeHero : Conqueror {
                 // Decrease timer that disables input movement. Used when attacking
                 m_disableMovementTimer -= Time.deltaTime;
 
+                if (m_StockCount == 0)
+                {
+                    isEliminated = true;
+                }
+
                 // Respawn Hero if dead
-                if (m_dead && m_respawnTimer < 0.0f)
+                if (m_dead && m_respawnTimer < 0.0f && !isEliminated)
                     RespawnHero();
 
                 if (m_dead)
+                {
+                    if (activeDairHitbox)
+                    {
+                        GameObject.Destroy(activeDairHitbox);
+                    }
                     return;
+                }
+                    
 
                 //Check if character just landed on the ground
                 if (!m_grounded && m_groundSensor.State())
@@ -159,6 +191,11 @@ public class PrototypeHero : Conqueror {
                     m_grounded = true;
                     m_animator.SetBool("Grounded", m_grounded);
                     m_launched = false;
+                    if (activeDairHitbox)
+                    {
+                        GameObject.Destroy(activeDairHitbox);
+                    }
+                    
                     //m_SpriteShaper.DrawDebug();
                 }
 
@@ -180,86 +217,7 @@ public class PrototypeHero : Conqueror {
                     m_isParrying = false;
                 }
 
-                // -- Handle input and movement --
-                float inputX = 0.0f;
-
-                if (m_disableMovementTimer < 0.0f && !preview)
-                    inputX = Input.GetAxis("Horizontal");
-
-                // GetAxisRaw returns either -1, 0 or 1
-                float inputRaw = Input.GetAxisRaw("Horizontal");
-
-                // Check if character is currently moving
-                if (Mathf.Abs(inputRaw) > Mathf.Epsilon && Mathf.Sign(inputRaw) == m_facingDirection)
-                    m_moving = true;
-                else
-                    m_moving = false;
-
-                // Swap direction of sprite depending on move direction
-                if (inputRaw > 0 && !m_dodging && !m_wallSlide && !m_ledgeGrab && !m_ledgeClimb && !preview)
-                {
-                    if (m_SR.flipX == true)
-                    {
-                        launchOffset.position = new Vector3(transform.position.x + .6f, transform.position.y + .13f, transform.position.z + 0.0f);
-                    }
-                    m_SR.flipX = false;
-                    m_facingDirection = 1;
-                }
-
-                else if (inputRaw < 0 && !m_dodging && !m_wallSlide && !m_ledgeGrab && !m_ledgeClimb && !preview)
-                {
-                    if (m_SR.flipX == false)
-                    {
-                        launchOffset.position = new Vector3(transform.position.x - .6f, transform.position.y + .13f, transform.position.z + 0.0f);
-                    }
-                    m_SR.flipX = true;
-                    m_facingDirection = -1;
-                }
-
-                // SlowDownSpeed helps decelerate the characters when stopping
-                float SlowDownSpeed = m_moving ? 1.0f : 0.5f;
-                float KBSlowDownSpeed = 0.8f;
-                // Set movement
-                if (!m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_animator.GetBool("isParrying") && m_disableMovementTimer < 0.0f && !m_launched && m_fSmashCharging == false
-                    && m_uSmashCharging == false && m_dSmashCharging == false && !preview)
-                {
-                    if (!m_isInKnockback)
-                    {
-                        m_timeSinceKnockBack = 0.0f;
-                        if (m_KnockBackMomentumX <= 1 && m_KnockBackMomentumY <= 1)
-                        {
-                            m_body2d.velocity = new Vector2(inputX * m_maxSpeed * SlowDownSpeed, m_body2d.velocity.y);
-
-                        }
-                        else
-                        {
-                            m_body2d.velocity = new Vector2(m_KnockBackMomentumX, m_KnockBackMomentumY);
-
-
-                            m_KnockBackMomentumX = m_KnockBackMomentumX * KBSlowDownSpeed;
-                            m_KnockBackMomentumY = m_KnockBackMomentumY * KBSlowDownSpeed;
-                        }
-
-                    }
-                    else
-                    {
-                        m_timeSinceKnockBack += Time.deltaTime;
-                        if (m_timeSinceKnockBack > m_KnockBackDuration)
-                        {
-                            //
-                            //    m_body2d.velocity = new Vector2(m_body2d.velocity.x * KBSlowDownSpeed, 0);
-                            m_isInKnockback = false;
-                            m_KnockBackMomentumX = m_body2d.velocity.x;
-                            m_KnockBackMomentumY = m_body2d.velocity.y;
-                            //
-                        }
-                        //else
-                        //{
-                        //    m_body2d.velocity = new Vector2(m_body2d.velocity.x * KBSlowDownSpeed, m_body2d.velocity.y * KBSlowDownSpeed);
-                        //}
-
-                    }
-                }
+                
                 // Set AirSpeed in animator
                 m_animator.SetFloat("AirSpeedY", m_body2d.velocity.y);
 
@@ -270,17 +228,17 @@ public class PrototypeHero : Conqueror {
                 // Check if all sensors are setup properly
                 if (m_wallSensorR1 && m_wallSensorR2 && m_wallSensorL1 && m_wallSensorL2)
                 {
-                    bool prevWallSlide = m_wallSlide;
-                    //Wall Slide
-                    // True if TWO right sensors are colliding and character is facing right
-                    // OR if TWO left sensors are colliding and character is facing left
-                    m_wallSlide = (m_wallSensorR1.State() && m_wallSensorR2.State() && m_facingDirection == 1) || (m_wallSensorR1.State() && m_wallSensorR0.State() && m_facingDirection == 1) || (m_wallSensorL1.State() && m_wallSensorL2.State() && m_facingDirection == -1) || (m_wallSensorL1.State() && m_wallSensorL0.State() && m_facingDirection == -1);
-                    if (m_grounded)
-                        m_wallSlide = false;
-                    m_animator.SetBool("WallSlide", m_wallSlide);
-                    //Play wall slide sound
-                    if (prevWallSlide && !m_wallSlide)
-                        AudioManager_PrototypeHero.instance.StopSound("WallSlide");
+                    //bool prevWallSlide = m_wallSlide;
+                    ////Wall Slide
+                    //// True if TWO right sensors are colliding and character is facing right
+                    //// OR if TWO left sensors are colliding and character is facing left
+                    //m_wallSlide = (m_wallSensorR1.State() && m_wallSensorR2.State() && m_facingDirection == 1) || (m_wallSensorR1.State() && m_wallSensorR0.State() && m_facingDirection == 1) || (m_wallSensorL1.State() && m_wallSensorL2.State() && m_facingDirection == -1) || (m_wallSensorL1.State() && m_wallSensorL0.State() && m_facingDirection == -1);
+                    //if (m_grounded)
+                    //    m_wallSlide = false;
+                    //m_animator.SetBool("WallSlide", m_wallSlide);
+                    ////Play wall slide sound
+                    //if (prevWallSlide && !m_wallSlide)
+                    //    AudioManager_PrototypeHero.instance.StopSound("WallSlide");
 
 
                     //Grab Ledge
@@ -290,7 +248,7 @@ public class PrototypeHero : Conqueror {
                     {
                         m_climbPosition = ledge.transform.position + new Vector3(ledge.topClimbPosition.x, ledge.topClimbPosition.y, 0);
                     }
-                    bool shouldGrab = !m_ledgeClimb && !m_ledgeGrab && ((m_wallSensorR1.State() && !m_wallSensorR2.State()) || (m_wallSensorL1.State() && !m_wallSensorL2.State()) || (m_wallSensorR0.State() && !m_wallSensorR1.State()) || (m_wallSensorL0.State() && !m_wallSensorL1.State()));
+                    bool shouldGrab = !m_ledgeClimb && !m_ledgeGrab && (m_wallSensorR1.State() || m_wallSensorL1.State() || m_wallSensorR0.State() || m_wallSensorL0.State() || m_wallSensorR2.State() || m_wallSensorL2.State());
                     if (shouldGrab)
                     {
                         Vector3 rayStart;
@@ -321,386 +279,32 @@ public class PrototypeHero : Conqueror {
                             {
                                 transform.SetParent(hit.transform.parent);
                             }
+                            m_jumpCount = 0;
+                            if (transform.tag == "PlayerMid")
+                            {
+                                SetLayerRecursively(gameObject, LayerMask.NameToLayer("LedgeGrabMid"));
+                            }
+                            else if (transform.tag == "Player")
+                            {
+                                SetLayerRecursively(gameObject, LayerMask.NameToLayer("LedgeGrab"));
+                            }
                         }
                         m_animator.SetBool("LedgeGrab", m_ledgeGrab);
+                        
+
                     }
 
                 }
 
-
                 // -- Handle Animations --
 
-                if (m_timeSinceStun > 4.0f && !preview)
+                if (m_timeSinceStun > 4.0f && !preview && !m_isInKnockback)
                 {
                     if (m_animator.GetBool("isStunned"))
                     {
                         m_animator.SetBool("isStunned", false);
                     }
-                    if (Input.GetKeyUp("left shift"))
-                    {
-                        m_animator.SetBool("isParrying", false);
-                        m_parryTimer = -1.0f;
-                        m_isParrying = false;
-                    }
-                    //Self destruct
-                    //if (Input.GetKeyDown("e") && !m_dodging)
-                    //{
-                    //    m_animator.SetBool("noBlood", m_noBlood);
-                    //    m_animator.SetTrigger("Death");
-                    //    m_respawnTimer = 2.5f;
-                    //    DisableWallSensors();
-                    //    m_dead = true;
-                    //}
-
-                    // Parry & parry stance
-                    else if (Input.GetKeyDown("left shift") && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false)
-                    {
-                        // Parry
-                        // Used when you are in parry stance and something hits you
-                        //if (m_parryTimer > 0.0f)
-                        //{
-                        //    m_animator.SetTrigger("Parry");
-                        //    //m_body2d.velocity = new Vector2(-m_facingDirection * m_parryKnockbackForce, m_body2d.velocity.y);
-                        //}
-
-                        // Parry Stance
-                        // Ready to parry in case something hits you
-                        if (!m_animator.GetCurrentAnimatorStateInfo(0).IsName("ParryStance"))
-                        {
-                            m_animator.SetTrigger("ParryStance");
-                            m_animator.SetBool("isParrying", true);
-                            m_parryTimer = 7.0f / 12.0f;
-                            m_isParrying = true;
-                        }
-
-                    }
-
-                    //Up Smash Attack
-                    else if (Input.GetMouseButton(0) && ((Input.GetKey("w") && Input.GetKey("left alt")) || Input.GetKey("2")) && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded
-                        && m_timeSinceAttack > 0.2f && m_fSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
-                    {
-
-                        if (m_uSmashCharging != true)
-                        {
-                            m_timeSinceChargeStart = 0.0f;
-                            m_uSmashCharging = true;
-                        }
-
-                        m_uSmashCharging = true;
-                        m_animator.SetBool("USmashCharge", true);
-
-                        // Disable movement 
-                        m_disableMovementTimer = 0.35f;
-                    }
-
-                    else if (Input.GetMouseButtonUp(0) && m_uSmashCharging == true && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > 0.2f
-                        && m_timeSinceNSpec > 1.1f)
-                    {
-                        m_animator.SetTrigger("USmash");
-                        m_animator.SetBool("USmashCharge", false);
-                        // Reset timer
-                        m_timeSinceAttack = 0.0f;
-
-                        m_uSmashCharging = false;
-                        m_fullCharge = false;
-
-                        m_disableMovementTimer = 0.35f;
-                    }
-
-                    //Down Smash Attack
-                    else if (Input.GetMouseButton(0) && ((Input.GetKey("s") && Input.GetKey("left alt")) || Input.GetKey("x")) && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded
-                        && m_timeSinceAttack > 0.2f && m_fSmashCharging == false && m_uSmashCharging == false && m_isParrying == false)
-                    {
-
-                        if (m_dSmashCharging != true)
-                        {
-                            m_timeSinceChargeStart = 0.0f;
-                            m_dSmashCharging = true;
-                        }
-
-                        m_dSmashCharging = true;
-                        m_animator.SetBool("DSmashCharge", true);
-
-                        // Disable movement 
-                        m_disableMovementTimer = 0.35f;
-                    }
-
-                    else if (Input.GetMouseButtonUp(0) && m_dSmashCharging == true && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > 0.2f
-                        && m_timeSinceNSpec > 1.1f)
-                    {
-                        m_animator.SetTrigger("DSmash");
-                        m_animator.SetBool("DSmashCharge", false);
-                        // Reset timer
-                        m_timeSinceAttack = 0.0f;
-
-                        m_dSmashCharging = false;
-                        m_fullCharge = false;
-
-                        m_disableMovementTimer = 0.35f;
-                    }
-
-                    //Forward Smash Attack
-                    else if (Input.GetMouseButton(0) && (Input.GetKey("left alt") || Input.GetKey("f")) && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded
-                        && m_timeSinceAttack > 0.2f && m_timeSinceNSpec > 1.1f && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
-                    {
-                        if (m_fSmashCharging != true)
-                        {
-                            m_timeSinceChargeStart = 0.0f;
-                            m_fSmashCharging = true;
-                        }
-
-                        m_animator.SetBool("FSmashCharge", true);
-
-
-                        // Disable movement 
-                        m_disableMovementTimer = 0.35f;
-                    }
-
-                    else if (Input.GetMouseButtonUp(0) && m_fSmashCharging == true && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > 0.2f)
-                    {
-                        m_animator.SetTrigger("FSmash");
-                        m_animator.SetBool("FSmashCharge", false);
-                        // Reset timer
-                        m_timeSinceAttack = 0.0f;
-
-                        m_fSmashCharging = false;
-                        m_timeSinceChargeStart = 0.0f;
-                        m_fullCharge = false;
-
-                        // Call one of the two attack animations "Attack1" or "Attack2"
-
-                        m_disableMovementTimer = 0.35f;
-                    }
-
-                    //Up Attack
-                    else if (Input.GetMouseButtonDown(0) && Input.GetKey("w") && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > 0.2f
-                        && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
-                    {
-                        m_animator.SetTrigger("UpAttack");
-
-                        // Reset timer
-                        m_timeSinceAttack = 0.0f;
-
-                        //Attack(upTiltDamage, upTiltKB, upTiltRange, 0, 2, upTiltPoint);
-
-                        // Disable movement 
-                        m_disableMovementTimer = 0.35f;
-                    }
-
-                    //Jab Attack
-                    else if (Input.GetMouseButtonDown(0) && !Input.GetKey("w") && !Input.GetKey("s") && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > 0.15f && m_TimeSinceJab2 > 0.45f && m_timeSinceNSpec > 1.1f
-                        && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
-                    {
-                        // Reset timer
-                        m_timeSinceAttack = 0.0f;
-
-                        m_currentAttack++;
-
-                        if (m_currentAttack == 2)
-                        {
-                            m_TimeSinceJab2 = 0.0f;
-                        }
-
-                        // Loop back to one after second attack
-                        if (m_currentAttack > 2)
-                            m_currentAttack = 1;
-
-                        // Reset Attack combo if time since last attack is too large
-                        if (m_timeSinceAttack > .8f)
-                            m_currentAttack = 1;
-
-                        // Call one of the two attack animations "Attack1" or "Attack2"
-                        m_animator.SetTrigger("Attack" + m_currentAttack);
-
-                        m_disableMovementTimer = 0.45f;
-                    }
-
-                    //Air Slam Attack
-                    else if (Input.GetMouseButtonDown(0) && Input.GetKey("s") && !m_ledgeGrab && !m_ledgeClimb && !m_grounded)
-                    {
-                        m_animator.SetTrigger("AttackAirSlam");
-                        m_body2d.velocity = new Vector2(0.0f, -m_jumpForce);
-                        m_disableMovementTimer = 0.8f;
-
-                        // Reset timer
-                        m_timeSinceAttack = 0.0f;
-                    }
-
-                    //Down Tilt Attack
-                    else if (Input.GetMouseButtonDown(0) && Input.GetKey("s") && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_grounded && m_timeSinceAttack > 0.3f
-                        && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
-                    {
-                        m_animator.SetTrigger("DTiltAttack");
-
-                        // Reset timer
-                        m_timeSinceAttack = 0.0f;
-
-                        //Attack(upTiltDamage, upTiltKB, upTiltRange, 0, 2, upTiltPoint);
-
-                        // Disable movement 
-                        m_disableMovementTimer = 0.45f;
-                        m_animator.SetBool("Crouching", false);
-                    }
-
-                    // Air Attack Up
-                    else if (Input.GetMouseButtonDown(0) && Input.GetKey("w") && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && m_timeSinceAttack > 0.2f)
-                    {
-                        Debug.Log("Air attack up");
-                        m_animator.SetTrigger("AirAttackUp");
-
-                        // Reset timer
-                        m_timeSinceAttack = 0.0f;
-                    }
-
-                    // Air Attack forward
-                    else if (Input.GetMouseButtonDown(0) && (Input.GetKey("d") || Input.GetKey("a")) && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && m_timeSinceAttack > 0.65f)
-                    {
-                        m_animator.SetTrigger("AirAttack");
-
-                        // Reset timer
-                        m_timeSinceAttack = 0.0f;
-                    }
-
-                    // Air Attack Neutral
-                    else if (Input.GetMouseButtonDown(0) && !(Input.GetKey("d") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("w")) && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && m_timeSinceAttack > 0.65f)
-                    {
-
-                        m_animator.SetTrigger("Nair");
-                        //// Reset timer
-                        m_timeSinceAttack = 0.0f;
-                        m_disableMovementTimer = .65f;
-                    }
-
-                    // Throw
-                    else if ((Input.GetKey("d") || Input.GetKey("a")) && Input.GetMouseButtonDown(1) && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > 0.3f && m_timeSinceSideSpecial > 2.0f
-                        && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
-                    {
-                        hookDirection = "Side";
-                        m_animator.SetTrigger("Throw");
-                        hookActive = true;
-                        m_timeSinceSideSpecial = 0.0f;
-
-                        ThrowHook();
-                        // Disable movement 
-                        m_disableMovementTimer = 1.0f;
-                    }
-
-                    else if ((Input.GetKey("s")) && Input.GetMouseButtonDown(1) && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > 0.3f && m_timeSinceSideSpecial > 2.0f
-                        && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
-                    {
-                        m_animator.SetTrigger("Slide");
-                        m_dodging = true;
-                        m_crouching = false;
-                        m_animator.SetBool("Crouching", false);
-                        m_body2d.velocity = new Vector2(m_facingDirection * 10f, m_body2d.velocity.y);
-                    }
-                    else if ((Input.GetKey("w")) && Input.GetMouseButtonDown(1) && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > 0.3f && m_timeSinceSideSpecial > 2.0f
-                        && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
-                    {
-                        hookDirection = "Up";
-                        m_animator.SetTrigger("Throw");
-                        hookActive = true;
-                        m_timeSinceSideSpecial = 0.0f;
-
-                        ThrowHook();
-                        // Disable movement 
-                        m_disableMovementTimer = 1.0f;
-                    }
-
-                    else if (Input.GetMouseButtonDown(1) && m_animator.GetBool("isParrying"))
-                    {
-                        m_dodging = true;
-                        m_crouching = false;
-                        m_animator.SetBool("isParrying", false);
-                        m_animator.SetBool("Crouching", false);
-                        m_animator.SetTrigger("Dodge");
-                        m_body2d.velocity = new Vector2(-m_facingDirection * m_dodgeForce, m_body2d.velocity.y);
-                    }
-
-                    else if (Input.GetMouseButtonDown(1) && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > 0.5f && m_timeSinceSideSpecial > 2.0f
-                        && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
-                    {
-                        // Reset timer
-
-
-                        m_currentSpecial++;
-
-                        // Loop back to one after second attack
-                        if (m_currentSpecial > 2)
-                            m_currentSpecial = 1;
-
-                        // Reset Attack combo if time since last attack is too large
-                        if (m_timeSinceNSpec > 1.1f)
-                            m_currentSpecial = 1;
-
-                        // Call one of the two attack animations "Attack1" or "Attack2"
-                        m_animator.SetTrigger("SideSpec" + m_currentSpecial);
-                        m_timeSinceNSpec = 0.0f;
-                        m_timeSinceAttack = 0.0f;
-                        //if (m_facingDirection == -1)
-                        //{
-                        //    Attack(jabDamage, jabKB, jabRange, 0, 2, backPoint);
-                        //}
-                        //else
-                        //{
-                        //    Attack(jabDamage, jabKB, jabRange, 0, 2, jabPoint);
-                        //}
-
-
-                        // Disable movement 
-                        m_disableMovementTimer = 0.5f;
-                    }
-
-                    // Ledge Climb
-                    else if (Input.GetKeyDown("w") && m_ledgeGrab)
-                    {
-                        DisableWallSensors();
-                        m_ledgeClimb = true;
-                        m_body2d.gravityScale = 0;
-                        m_disableMovementTimer = 6.0f / 14.0f;
-                        m_animator.SetTrigger("LedgeClimb");
-                    }
-
-                    // Ledge Drop
-                    else if (Input.GetKeyDown("s") && m_ledgeGrab)
-                    {
-                        DisableWallSensors();
-                    }
-
-                    //Jump
-                    else if (Input.GetButtonDown("Jump") && (m_grounded || m_wallSlide || m_jumpCount <= 1) && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_disableMovementTimer < 0.0f
-                        && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && m_launched == false)
-                    {
-                        m_jumpCount++;
-                        // Check if it's a normal jump or a wall jump
-                        if (!m_wallSlide)
-                            m_body2d.velocity = new Vector2(m_body2d.velocity.x, m_jumpForce);
-                        else
-                        {
-                            m_body2d.velocity = new Vector2(-m_facingDirection * m_jumpForce / 2.0f, m_jumpForce);
-                            m_facingDirection = -m_facingDirection;
-                            m_SR.flipX = !m_SR.flipX;
-                        }
-
-                        m_animator.SetTrigger("Jump");
-                        m_grounded = false;
-                        m_animator.SetBool("Grounded", m_grounded);
-                        m_groundSensor.Disable(0.2f);
-                    }
-
-                    //Crouch / Stand up
-                    else if (Input.GetKeyDown("s") && m_grounded && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_disableMovementTimer < 0.0f
-                        && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
-                    {
-                        m_crouching = true;
-                        m_animator.SetBool("Crouching", true);
-                        m_body2d.velocity = new Vector2(m_body2d.velocity.x / 2.0f, m_body2d.velocity.y);
-                    }
-                    else if (Input.GetKeyUp("s") && m_crouching)
-                    {
-                        m_crouching = false;
-                        m_animator.SetBool("Crouching", false);
-                    }
+                    
                     //Walk
                     else if (m_moving && Input.GetKey(KeyCode.LeftControl))
                     {
@@ -742,6 +346,10 @@ public class PrototypeHero : Conqueror {
                 m_body2d.gravityScale = 0;
                 m_timeSinceHitStun += Time.deltaTime;
                 m_animator.speed = 0;
+                if (activeDairHitbox)
+                {
+                    GameObject.Destroy(activeDairHitbox);
+                }
                 if (m_timeSinceHitStun >= m_hitStunDuration)
                 {
                     m_body2d.gravityScale = 1.25f;
@@ -752,6 +360,10 @@ public class PrototypeHero : Conqueror {
             else if (isGrappled)
             {
                 m_animator.speed = 0;
+                if (activeDairHitbox)
+                {
+                    GameObject.Destroy(activeDairHitbox);
+                }
             }
         }
     }
@@ -771,14 +383,17 @@ public class PrototypeHero : Conqueror {
             }
     
         }
-        if (coll.gameObject.CompareTag("BlastZone") || coll.gameObject.CompareTag("BlastZoneMid"))
+        if (coll.gameObject.CompareTag("BlastZone") || coll.gameObject.CompareTag("BlastZoneMid") && !m_dead)
         {
             currentDamage = 0.0f;
+            m_isInKnockback = false;
+            m_animator.SetBool("Knockback", false);
             m_animator.SetBool("noBlood", m_noBlood);
             m_animator.SetTrigger("Death");
             m_respawnTimer = 2.5f;
             DisableWallSensors();
             m_dead = true;
+            m_StockCount--;
         }
         if (coll.gameObject.CompareTag("RightLauncher"))
         {
@@ -793,6 +408,14 @@ public class PrototypeHero : Conqueror {
             m_launched = true;
             m_disableMovementTimer = 0.1f;
             e_Rigidbody2D.AddForce(new Vector2(-42, 8), ForceMode2D.Impulse);
+        }
+        if (coll.gameObject.CompareTag("Ground") && m_animator.GetBool("Knockback") && transform.position.y >= coll.transform.position.y && transform.GetComponent<Rigidbody2D>().velocity.y <= 0)
+        {
+            m_animator.SetTrigger("FallToProne");
+            m_animator.SetBool("StayDown", true);
+            m_fallingdown = true;
+            m_isInKnockback = false;
+            m_animator.SetBool("Knockback", false);
         }
     }
 
@@ -813,7 +436,7 @@ public class PrototypeHero : Conqueror {
             if (coll.gameObject.CompareTag("PortalForeground"))
             {
                 atPortal = true;
-                infoText.text = "Press Tab";
+                //infoText.text = "Press Tab";
                 if (CrossPlatformInputManager.GetButtonDown("Submit"))
                 {
                     transform.position = new Vector3(transform.position.x, transform.position.y + 15, 20);
@@ -836,7 +459,7 @@ public class PrototypeHero : Conqueror {
                 }
             }
         }
-        if (atPortal == false)
+        if (atPortal == false && infoText != null)
         {
             infoText.text = "";
         }
@@ -845,11 +468,8 @@ public class PrototypeHero : Conqueror {
     public void ThrowHook()
     {
         Quaternion rotQuat = new Quaternion();
-        if (hookDirection == "Up")
-        {
-            rotQuat = new Quaternion(90f, 0f, 0f, 0f);
-        }
-        else if (m_facingDirection == 1)
+        
+        if (m_facingDirection == 1)
         {
             rotQuat = new Quaternion(0f, 180f, 0f, 0f);
         }
@@ -859,6 +479,16 @@ public class PrototypeHero : Conqueror {
         }
 
         HookBehavior hookShot = Instantiate(hookPrefab, launchOffset.position, rotQuat);
+
+        if (hookDirection == "Up")
+        {
+            hookShot.transform.rotation *= Quaternion.Euler(0, 0, -90);
+        }
+        if (hookDirection == "Up" && currentHookTarget != null)
+        {
+            hookShot.homing = true;
+            hookShot.target = currentHookTarget;
+        }
 
         if (transform.CompareTag("PlayerMid"))
         {
@@ -871,5 +501,420 @@ public class PrototypeHero : Conqueror {
 
         hookShot.transform.parent = transform;
         hookChain.SetUpLine(pointArr);
+    }
+
+    protected override void BasicAction(InputAction.CallbackContext ctx)
+    {
+        //Dash Attack
+         if (Mathf.Abs(inputX) > 0 && !Input.GetKey("s") && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && m_timeSinceNSpec > 1.1f
+            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && !isInStartUp && ctx.phase == InputActionPhase.Started)
+        {
+            m_LagTime = .45f;
+            // Reset timer
+            m_timeSinceAttack = 0.0f;
+
+            m_currentAttack = 1;
+
+            // Call one of the two attack animations "Attack1" or "Attack2"
+            m_animator.SetTrigger("DashAttack");
+
+            m_body2d.velocity = new Vector2(m_facingDirection * m_dodgeForce + m_facingDirection * 3, m_body2d.velocity.y);
+
+            m_disableMovementTimer = 0.45f;
+        }
+
+        //Jab Attack
+        else if ( inputX == 0 && inputY == 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && m_TimeSinceJab2 > 0.45f && m_timeSinceNSpec > 1.1f
+            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
+        {
+
+            m_LagTime = .24f;
+            m_currentAttack++;
+
+            if (m_currentAttack == 2)
+            {
+                m_TimeSinceJab2 = 0.0f;
+            }
+
+            // Loop back to one after second attack
+            if (m_currentAttack > 2)
+                m_currentAttack = 1;
+
+            // Reset Attack combo if time since last attack is too large
+            if (m_timeSinceAttack > .5f)
+                m_currentAttack = 1;
+
+            // Call one of the two attack animations "Attack1" or "Attack2"
+            m_animator.SetTrigger("Attack" + m_currentAttack);
+
+            // Reset timer
+            m_timeSinceAttack = 0.0f;
+            m_disableMovementTimer = 0.45f;
+        }
+
+        //Air Slam Attack
+        else if (inputY < 0 && !m_ledgeGrab && !m_ledgeClimb && !m_grounded && ctx.phase == InputActionPhase.Started)
+        {
+            m_animator.SetTrigger("AttackAirSlam");
+            m_body2d.velocity = new Vector2(0.0f, -m_jumpForce);
+            m_disableMovementTimer = 0.8f;
+
+            // Reset timer
+            m_timeSinceAttack = 0.0f;
+        }
+
+        //Down Tilt Attack
+        else if (inputY < 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_grounded && m_timeSinceAttack > m_LagTime
+            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
+        {
+            m_LagTime = .35f;
+            m_animator.SetTrigger("DTiltAttack");
+
+            // Reset timer
+            m_timeSinceAttack = 0.0f;
+
+            //Attack(upTiltDamage, upTiltKB, upTiltRange, 0, 2, upTiltPoint);
+
+            // Disable movement 
+            m_disableMovementTimer = 0.45f;
+            m_animator.SetBool("Crouching", false);
+        }
+
+        // Air Attack Up
+        else if (inputY > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && m_timeSinceAttack > m_LagTime && ctx.phase == InputActionPhase.Started)
+        {
+            m_LagTime = .65f;
+            Debug.Log("Air attack up");
+            m_animator.SetTrigger("AirAttackUp");
+
+            // Reset timer
+            m_timeSinceAttack = 0.0f;
+        }
+
+        // Air Attack forward
+        else if (Mathf.Abs(inputX) > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && 
+            m_timeSinceAttack > m_LagTime && ctx.phase == InputActionPhase.Started)
+        {
+            if (m_facingDirection == 1 && inputX < 0)
+            {
+                m_SR.flipX = true;
+                m_facingDirection = -1;
+            }
+            else if (m_facingDirection == -1 && inputX > 0)
+            {
+                m_SR.flipX = false;
+                m_facingDirection = 1;
+            }
+            m_LagTime = .6f;
+            m_animator.SetTrigger("AirAttack");
+
+            // Reset timer
+            m_timeSinceAttack = 0.0f;
+        }
+
+        // Air Attack Neutral
+        else if (inputX == 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && m_timeSinceAttack > m_LagTime && ctx.phase == InputActionPhase.Started)
+        {
+            m_LagTime = .65f;
+            m_animator.SetTrigger("Nair");
+            //// Reset timer
+            m_timeSinceAttack = 0.0f;
+            m_disableMovementTimer = .65f;
+        }
+
+        //Up Attack
+        else if (inputY > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime
+            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
+        {
+            m_LagTime = .3f;
+            m_animator.SetTrigger("UpAttack");
+
+            // Reset timer
+            m_timeSinceAttack = 0.0f;
+
+            //Attack(upTiltDamage, upTiltKB, upTiltRange, 0, 2, upTiltPoint);
+
+            // Disable movement 
+            m_disableMovementTimer = 0.35f;
+        }
+
+        //Ledge Attack
+        else if (!m_dodging && m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_timeSinceAttack > m_LagTime
+            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
+        {
+            DisableWallSensors();
+            m_ledgeClimb = true;
+            m_body2d.gravityScale = 0;
+            m_disableMovementTimer = 6.0f / 14.0f;
+            m_LagTime = .3f;
+            m_animator.SetTrigger("LedgeAttack");
+
+            // Reset timer
+            m_timeSinceAttack = 0.0f;
+
+
+            // Disable movement 
+            m_disableMovementTimer = 0.35f;
+        }
+    }
+
+    protected override void SpecialAction(InputAction.CallbackContext ctx)
+    {
+        // Throw
+        if (Mathf.Abs(inputX) > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > 2.0f
+            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
+        {
+            if (m_facingDirection == 1 && inputX < 0)
+            {
+                m_SR.flipX = true;
+                m_facingDirection = -1;
+            }
+            else if (m_facingDirection == -1 && inputX > 0)
+            {
+                m_SR.flipX = false;
+                m_facingDirection = 1;
+            }
+            m_LagTime = .65f;
+            hookDirection = "Side";
+            m_animator.SetTrigger("Throw");
+            hookActive = true;
+            m_timeSinceSideSpecial = 0.0f;
+
+            ThrowHook();
+            // Disable movement 
+            m_disableMovementTimer = 1.0f;
+        }
+
+        else if (inputY < 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > 2.0f
+            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
+        {
+            m_LagTime = .45f;
+            m_animator.SetTrigger("Slide");
+            m_dodging = true;
+            m_crouching = false;
+            m_animator.SetBool("Crouching", false);
+            m_body2d.velocity = new Vector2(m_facingDirection * 10f, m_body2d.velocity.y);
+        }
+        else if (inputY > 0  && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > 2.0f
+            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
+        {
+            m_LagTime = .65f;
+            hookDirection = "Up";
+            m_animator.SetTrigger("Throw");
+            hookActive = true;
+            m_timeSinceSideSpecial = 0.0f;
+
+            ThrowHook();
+            // Disable movement 
+            m_disableMovementTimer = 1.0f;
+        }
+
+        else if ( !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > 2.0f
+                        && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
+        {
+            // Reset timer
+
+            m_LagTime = .45f;
+            m_currentSpecial++;
+
+            // Loop back to one after second attack
+            if (m_currentSpecial > 2)
+                m_currentSpecial = 1;
+
+            // Reset Attack combo if time since last attack is too large
+            if (m_timeSinceNSpec > 1.1f)
+                m_currentSpecial = 1;
+
+            // Call one of the two attack animations "Attack1" or "Attack2"
+            m_animator.SetTrigger("SideSpec" + m_currentSpecial);
+            m_timeSinceNSpec = 0.0f;
+            m_timeSinceAttack = 0.0f;
+
+            // Disable movement 
+            m_disableMovementTimer = 0.5f;
+        }
+    }
+
+    protected override void ForwardSmashAction(InputAction.CallbackContext ctx)
+    {
+        //Forward Smash Attack
+        if (ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded
+            && m_timeSinceAttack > m_LagTime && m_timeSinceNSpec > 1.1f && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
+        {
+            m_LagTime = .2f;
+            if (m_fSmashCharging != true)
+            {
+                m_timeSinceChargeStart = 0.0f;
+                m_fSmashCharging = true;
+            }
+
+            m_animator.SetBool("FSmashCharge", true);
+
+
+            // Disable movement 
+            m_disableMovementTimer = 0.35f;
+        }
+
+        else if (ctx.phase == InputActionPhase.Canceled && m_fSmashCharging == true && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime)
+        {
+            m_LagTime = .4f;
+            m_animator.SetTrigger("FSmash");
+            m_animator.SetBool("FSmashCharge", false);
+            // Reset timer
+            m_timeSinceAttack = 0.0f;
+
+            m_fSmashCharging = false;
+            m_timeSinceChargeStart = 0.0f;
+            m_fullCharge = false;
+
+            // Call one of the two attack animations "Attack1" or "Attack2"
+
+            m_disableMovementTimer = 0.35f;
+        }
+    }
+
+    protected override void UpSmashAction(InputAction.CallbackContext ctx)
+    {
+        //Up Smash Attack
+        if (ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded
+                        && m_timeSinceAttack > m_LagTime && m_fSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
+        {
+            m_LagTime = .25f;
+            if (m_uSmashCharging != true)
+            {
+                m_timeSinceChargeStart = 0.0f;
+                m_uSmashCharging = true;
+            }
+
+            m_uSmashCharging = true;
+            m_animator.SetBool("USmashCharge", true);
+
+            // Disable movement 
+            m_disableMovementTimer = 0.35f;
+        }
+
+        else if (ctx.phase == InputActionPhase.Canceled && m_uSmashCharging == true && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime
+            && m_timeSinceNSpec > 1.1f)
+        {
+            m_LagTime = .4f;
+            m_animator.SetTrigger("USmash");
+            m_animator.SetBool("USmashCharge", false);
+            // Reset timer
+            m_timeSinceAttack = 0.0f;
+
+            m_uSmashCharging = false;
+            m_fullCharge = false;
+
+            m_disableMovementTimer = 0.35f;
+        }
+    }
+
+    protected override void DownSmashAction(InputAction.CallbackContext ctx)
+    {
+        //Down Smash Attack
+        if (ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded
+                        && m_timeSinceAttack > m_LagTime && m_fSmashCharging == false && m_uSmashCharging == false && m_isParrying == false)
+        {
+            m_LagTime = .25f;
+            if (m_dSmashCharging != true)
+            {
+                m_timeSinceChargeStart = 0.0f;
+                m_dSmashCharging = true;
+            }
+
+            m_dSmashCharging = true;
+            m_animator.SetBool("DSmashCharge", true);
+
+            // Disable movement 
+            m_disableMovementTimer = 0.35f;
+        }
+
+        else if (ctx.phase == InputActionPhase.Canceled && m_dSmashCharging == true && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime
+            && m_timeSinceNSpec > 1.1f)
+        {
+            m_LagTime = .4f;
+            m_animator.SetTrigger("DSmash");
+            m_animator.SetBool("DSmashCharge", false);
+            // Reset timer
+            m_timeSinceAttack = 0.0f;
+
+            m_dSmashCharging = false;
+            m_fullCharge = false;
+
+            m_disableMovementTimer = 0.35f;
+        }
+    }
+
+    protected override void ReverseForwardSmashAction(InputAction.CallbackContext ctx)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    protected override void ShieldAction(InputAction.CallbackContext ctx)
+    {
+        if (ctx.phase == InputActionPhase.Canceled)
+        {
+            m_animator.SetBool("isParrying", false);
+            m_parryTimer = -1.0f;
+            m_isParrying = false;
+        }
+
+        // Parry & parry stance
+        else if (ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false)
+        {
+            // Parry
+            // Used when you are in parry stance and something hits you
+            //if (m_parryTimer > 0.0f)
+            //{
+            //    m_animator.SetTrigger("Parry");
+            //    //m_body2d.velocity = new Vector2(-m_facingDirection * m_parryKnockbackForce, m_body2d.velocity.y);
+            //}
+
+            // Parry Stance
+            // Ready to parry in case something hits you
+            if (!m_animator.GetCurrentAnimatorStateInfo(0).IsName("ParryStance"))
+            {
+                m_animator.SetTrigger("ParryStance");
+                m_animator.SetBool("isParrying", true);
+                m_parryTimer = 7.0f / 12.0f;
+                m_isParrying = true;
+            }
+
+        }
+
+        else if (!m_grounded && ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false
+            && !m_isInKnockback && !m_inHitStun && !m_isInHitStop)
+        {
+            m_dodging = true;
+            m_crouching = false;
+            m_animator.SetBool("isParrying", false);
+            m_animator.SetBool("Crouching", false);
+            m_animator.SetTrigger("AirDodge");
+        }
+    }
+
+    protected override void DodgeAction(InputAction.CallbackContext ctx)
+    {
+        if (ctx.phase == InputActionPhase.Started && m_animator.GetBool("isParrying") && Mathf.Abs(inputX) > 0)
+        {
+            m_dodging = true;
+            m_crouching = false;
+            m_animator.SetBool("isParrying", false);
+            m_animator.SetBool("Crouching", false);
+            m_animator.SetTrigger("Dodge");
+            m_body2d.velocity = new Vector2(m_facingDirection * m_dodgeForce, m_body2d.velocity.y);
+            m_SR.flipX = !m_SR.flipX;
+        }
+
+        else if (ctx.phase == InputActionPhase.Started && m_animator.GetBool("isParrying"))
+        {
+            m_dodging = true;
+            m_crouching = false;
+            m_animator.SetBool("isParrying", false);
+            m_animator.SetBool("Crouching", false);
+            m_animator.SetTrigger("Dodge");
+            m_body2d.velocity = new Vector2(-m_facingDirection * m_dodgeForce, m_body2d.velocity.y);
+
+        }
     }
 }

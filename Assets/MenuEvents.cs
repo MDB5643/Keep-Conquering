@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Threading;
+using UnityEngine.InputSystem;
 
 public class MenuEvents : MonoBehaviour
 {
@@ -36,17 +38,21 @@ public class MenuEvents : MonoBehaviour
     public Conqueror DPPrefab;
     public Conqueror BBPrefab;
     public Conqueror RRPrefab;
+    public Conqueror ROPrefab;
 
     public Conqueror P1Active;
     public Conqueror P2Active;
     public Conqueror P3Active;
     public Conqueror P4Active;
 
+    public bool P3Enabled;
+    public bool P4Enabled;
+
     public bool levelLoaded = false;
 
-    public string currentSelector = "P1";
+    public string currentSelector = "";
 
-    public AudioManagerMenu AudioMenu;
+    public AudioManager_PrototypeHero audioManager;
 
     public static int gameModeSelect;
 
@@ -55,6 +61,7 @@ public class MenuEvents : MonoBehaviour
 
     private int readyPlayers = 0;
 
+   
     private void Update()
     {
         if (readyPlayers >= 2)
@@ -78,14 +85,40 @@ public class MenuEvents : MonoBehaviour
         gameModeSelect = selectedMode;
     }
 
-    public void SetConqueror(int conq)
+    public void SetConqueror(int conq, string whichPlayer)
+    {
+        readyPlayers++;
+        if (whichPlayer == "P1")
+        {
+            P1Select = conq;
+            P1Set = true;
+            //P1Active.preview = false;
+        }
+        if (whichPlayer == "P2")
+        {
+            P2Select = conq;
+            P2Set = true;
+        }
+        if (whichPlayer == "P3")
+        {
+            P3Select = conq;
+            P3Set = true;
+        }
+        if (whichPlayer == "P4")
+        {
+            P4Select = conq;
+            P4Set = true;
+        }
+    }
+
+    public void SetThisConqueror(int conq)
     {
         readyPlayers++;
         if (currentSelector == "P1")
         {
             P1Select = conq;
             P1Set = true;
-            P1Active.preview = false;
+            //P1Active.preview = false;
         }
         if (currentSelector == "P2")
         {
@@ -109,12 +142,282 @@ public class MenuEvents : MonoBehaviour
         StartButton.GetComponent<Button>().interactable = false;
     }
 
+    private void Start()
+    {
+        Thread.Sleep(1000);
+        audioManager.PlaySound("MainMenu");
+    }
+
     public void changeSelector (string selector)
     {
         currentSelector = selector;
     }
 
-    public void PreviewConq(string conqName)
+    public void PreviewConq(string conqName, string whichPlayer)
+    {
+        if (conqName == "TheChampion")
+        {
+            if (whichPlayer == "P1" && P1Set == false)
+            {
+
+                if (P1Active)
+                {
+                    GameObject.Destroy(P1Active.gameObject);
+                }
+                P1Preview.GetComponent<Image>().sprite = DPSprite;
+                P1Active = GameObject.Instantiate(BBPrefab, new Vector3(P1Preview.transform.position.x, P1Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P1Active.preview = true;
+                P1Active.GetComponent<PlayerInput>().DeactivateInput();
+                P1Text.text = "Burning Belligerent";
+                P1Text.gameObject.SetActive(true);
+            }
+            if (whichPlayer == "P2" && P2Set == false)
+            {
+                if (P2Active)
+                {
+                    GameObject.Destroy(P2Active.gameObject);
+                }
+                P2Preview.GetComponent<Image>().sprite = DPSprite;
+                P2Active = GameObject.Instantiate(BBPrefab, new Vector3(P2Preview.transform.position.x, P2Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P2Active.preview = true;
+                P2Active.GetComponent<PlayerInput>().DeactivateInput();
+                P2Text.text = "Burning Belligerent";
+                P2Text.gameObject.SetActive(true);
+            }
+            if (whichPlayer == "P3" && P3Set == false)
+            {
+                if (P3Active)
+                {
+                    GameObject.Destroy(P3Active.gameObject);
+                }
+                P3Preview.GetComponent<Image>().sprite = DPSprite;
+                P3Active = GameObject.Instantiate(BBPrefab, new Vector3(P3Preview.transform.position.x, P3Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P3Active.preview = true;
+                P3Active.GetComponent<PlayerInput>().DeactivateInput();
+                P3Text.text = "Burning Belligerent";
+                P3Text.gameObject.SetActive(true);
+            }
+            if (whichPlayer == "P4" && P4Set == false)
+            {
+                if (P4Active)
+                {
+                    GameObject.Destroy(P4Active.gameObject);
+                }
+                P4Preview.GetComponent<Image>().sprite = DPSprite;
+                P4Active = GameObject.Instantiate(BBPrefab, new Vector3(P4Preview.transform.position.x, P4Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P4Active.preview = true;
+                P4Active.GetComponent<PlayerInput>().DeactivateInput();
+                P4Text.text = "Burning Belligerent";
+                P4Text.gameObject.SetActive(true);
+            }
+            
+        }
+        if (conqName == "PrototypeHero")
+        {
+            if (whichPlayer == "P1" && P1Set == false)
+            {
+                if (P1Active)
+                {
+                    GameObject.Destroy(P1Active.gameObject);
+                }
+                //P1Preview.GetComponent<Image>().sprite = DPSprite;
+                P1Active = GameObject.Instantiate(DPPrefab, new Vector3(P1Preview.transform.position.x, P1Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P1Active.preview = true;
+                P1Active.GetComponent<PlayerInput>().DeactivateInput();
+                P1Text.text = "Death's Proxy";
+                //P1Preview.GetComponent<Image>().gameObject.SetActive(true);
+                P1Text.gameObject.SetActive(true);
+            }
+            if (whichPlayer == "P2" && P2Set == false)
+            {
+                if (P2Active)
+                {
+                    GameObject.Destroy(P2Active.gameObject);
+                }
+                //P2Preview.GetComponent<Image>().sprite = RRSprite;
+                P2Active = GameObject.Instantiate(DPPrefab, new Vector3(P2Preview.transform.position.x, P2Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P2Active.preview = true;
+                P2Active.GetComponent<PlayerInput>().DeactivateInput();
+                P2Text.gameObject.SetActive(true);
+                P2Text.text = "Death's Proxy";
+            }
+            if (whichPlayer == "P3" && P3Set == false)
+            {
+                if (P3Active)
+                {
+                    GameObject.Destroy(P3Active.gameObject);
+                }
+                P2Preview.GetComponent<Image>().sprite = RRSprite;
+                P3Active = GameObject.Instantiate(DPPrefab, new Vector3(P3Preview.transform.position.x, P3Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P3Active.preview = true;
+                P3Active.GetComponent<PlayerInput>().DeactivateInput();
+                P3Text.gameObject.SetActive(true);
+                P3Text.text = "Death's Proxy";
+            }
+            if (whichPlayer == "P4" && P4Set == false)
+            {
+                if (P4Active)
+                {
+                    GameObject.Destroy(P4Active.gameObject);
+                }
+                //P2Preview.GetComponent<Image>().sprite = RRSprite;
+                P4Active = GameObject.Instantiate(DPPrefab, new Vector3(P4Preview.transform.position.x, P4Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P4Active.preview = true;
+                P4Active.GetComponent<PlayerInput>().DeactivateInput();
+                P4Text.gameObject.SetActive(true);
+                P4Text.text = "Death's Proxy";
+            }
+        }
+        if (conqName == "Lumiknight")
+        {
+            if (whichPlayer == "P1" && P1Set == false)
+            {
+                if (P1Active)
+                {
+                    GameObject.Destroy(P1Active);
+                }
+                P1Preview.GetComponent<Image>().sprite = LKSprite;
+                P1Text.text = "Fighter/Support";
+                P1Preview.GetComponent<Image>().gameObject.SetActive(true);
+                P1Text.gameObject.SetActive(true);
+            }
+            if (whichPlayer == "P2" && P2Set == false)
+            {
+                P2Preview.GetComponent<Image>().gameObject.SetActive(true);
+                P2Text.gameObject.SetActive(true);
+                P2Preview.GetComponent<Image>().sprite = LKSprite;
+                P2Text.text = "Fighter/Support";
+            }
+            if (whichPlayer == "P3" && P3Set == false)
+            {
+                P3Preview.GetComponent<Image>().sprite = LKSprite;
+                P3Text.text = "Fighter/Support";
+                P3Preview.GetComponent<Image>().gameObject.SetActive(true);
+                P3Text.gameObject.SetActive(true);
+            }
+            if (whichPlayer == "P4" && P4Set == false)
+            {
+                P4Preview.GetComponent<Image>().sprite = LKSprite;
+                P4Text.text = "Fighter/Support";
+                P4Preview.GetComponent<Image>().gameObject.SetActive(true);
+                P4Text.gameObject.SetActive(true);
+            }
+        }
+        if (conqName == "RunebornRanger")
+        {
+            if (whichPlayer == "P1" && P1Set == false)
+            {
+                if (P1Active)
+                {
+                    GameObject.Destroy(P1Active.gameObject);
+                }
+                //P2Preview.GetComponent<Image>().sprite = RRSprite;
+                P1Active = GameObject.Instantiate(RRPrefab, new Vector3(P1Preview.transform.position.x, P1Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P1Active.preview = true;
+                P1Active.GetComponent<PlayerInput>().DeactivateInput();
+                P1Text.gameObject.SetActive(true);
+                P1Text.text = "Runeborn Ranger";
+            }
+            if (whichPlayer == "P2" && P2Set == false)
+            {
+                if (P2Active)
+                {
+                    GameObject.Destroy(P2Active.gameObject);
+                }
+                //P2Preview.GetComponent<Image>().sprite = RRSprite;
+                P2Active = GameObject.Instantiate(RRPrefab, new Vector3(P2Preview.transform.position.x, P2Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P2Active.preview = true;
+                P2Active.GetComponent<PlayerInput>().DeactivateInput();
+                P2Text.gameObject.SetActive(true);
+                P2Text.text = "Runeborn Ranger";
+            }
+            if (whichPlayer == "P3" && P3Set == false)
+            {
+                if (P3Active)
+                {
+                    GameObject.Destroy(P3Active.gameObject);
+                }
+                //P2Preview.GetComponent<Image>().sprite = RRSprite;
+                P3Active = GameObject.Instantiate(RRPrefab, new Vector3(P3Preview.transform.position.x, P3Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P3Active.preview = true;
+                P3Active.GetComponent<PlayerInput>().DeactivateInput();
+                P3Text.gameObject.SetActive(true);
+                P3Text.text = "Runeborn Ranger";
+            }
+            if (whichPlayer == "P4" && P4Set == false)
+            {
+                if (P4Active)
+                {
+                    GameObject.Destroy(P4Active.gameObject);
+                }
+                //P2Preview.GetComponent<Image>().sprite = RRSprite;
+                P4Active = GameObject.Instantiate(RRPrefab, new Vector3(P4Preview.transform.position.x, P4Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P4Active.preview = true;
+                P4Active.GetComponent<PlayerInput>().DeactivateInput();
+                P4Text.gameObject.SetActive(true);
+                P4Text.text = "Runeborn Ranger";
+            }
+        }
+        if (conqName == "RagingOrc")
+        {
+            if (whichPlayer == "P1" && P1Set == false)
+            {
+
+                if (P1Active)
+                {
+                    GameObject.Destroy(P1Active.gameObject);
+                }
+                P1Preview.GetComponent<Image>().sprite = DPSprite;
+                P1Active = GameObject.Instantiate(ROPrefab, new Vector3(P1Preview.transform.position.x, P1Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P1Active.preview = true;
+                P1Active.GetComponent<PlayerInput>().DeactivateInput();
+                P1Text.text = "Raging Orc";
+                P1Text.gameObject.SetActive(true);
+            }
+            if (whichPlayer == "P2" && P2Set == false)
+            {
+                if (P2Active)
+                {
+                    GameObject.Destroy(P2Active.gameObject);
+                }
+                P2Preview.GetComponent<Image>().sprite = DPSprite;
+                P2Active = GameObject.Instantiate(ROPrefab, new Vector3(P2Preview.transform.position.x, P2Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P2Active.preview = true;
+                P2Active.GetComponent<PlayerInput>().DeactivateInput();
+                P2Text.text = "Raging Orc";
+                P2Text.gameObject.SetActive(true);
+            }
+            if (whichPlayer == "P3" && P3Set == false)
+            {
+                if (P3Active)
+                {
+                    GameObject.Destroy(P3Active.gameObject);
+                }
+                P3Preview.GetComponent<Image>().sprite = DPSprite;
+                P3Active = GameObject.Instantiate(ROPrefab, new Vector3(P3Preview.transform.position.x, P3Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P3Active.preview = true;
+                P3Active.GetComponent<PlayerInput>().DeactivateInput();
+                P3Text.text = "Raging Orc";
+                P3Text.gameObject.SetActive(true);
+            }
+            if (whichPlayer == "P4" && P4Set == false)
+            {
+                if (P4Active)
+                {
+                    GameObject.Destroy(P4Active.gameObject);
+                }
+                P4Preview.GetComponent<Image>().sprite = DPSprite;
+                P4Active = GameObject.Instantiate(ROPrefab, new Vector3(P4Preview.transform.position.x, P4Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P4Active.preview = true;
+                P4Active.GetComponent<PlayerInput>().DeactivateInput();
+                P4Text.text = "Raging Orc";
+                P4Text.gameObject.SetActive(true);
+            }
+
+        }
+    }
+
+    public void PreviewThisConq(string conqName)
     {
         if (conqName == "BurningBelligerent")
         {
@@ -126,8 +429,8 @@ public class MenuEvents : MonoBehaviour
                     GameObject.Destroy(P1Active.gameObject);
                 }
                 P1Preview.GetComponent<Image>().sprite = DPSprite;
-                P1Active = GameObject.Instantiate(BBPrefab, new Vector3(P1Preview.transform.position.x, P1Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
-                P1Active.preview = true;
+                //P1Active = GameObject.Instantiate(BBPrefab, new Vector3(P1Preview.transform.position.x, P1Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                //P1Active.preview = true;
                 P1Text.text = "Heavy";
                 P1Text.gameObject.SetActive(true);
             }
@@ -138,8 +441,8 @@ public class MenuEvents : MonoBehaviour
                     GameObject.Destroy(P2Active.gameObject);
                 }
                 P2Preview.GetComponent<Image>().sprite = DPSprite;
-                P2Active = GameObject.Instantiate(BBPrefab, new Vector3(P2Preview.transform.position.x, P2Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
-                P2Active.preview = true;
+                //P2Active = GameObject.Instantiate(BBPrefab, new Vector3(P2Preview.transform.position.x, P2Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                //P2Active.preview = true;
                 P2Text.text = "Heavy";
                 P2Text.gameObject.SetActive(true);
             }
@@ -150,8 +453,8 @@ public class MenuEvents : MonoBehaviour
                     GameObject.Destroy(P3Active.gameObject);
                 }
                 P3Preview.GetComponent<Image>().sprite = DPSprite;
-                P3Active = GameObject.Instantiate(BBPrefab, new Vector3(P3Preview.transform.position.x, P3Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
-                P3Active.preview = true;
+                //P3Active = GameObject.Instantiate(BBPrefab, new Vector3(P3Preview.transform.position.x, P3Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                //P3Active.preview = true;
                 P3Text.text = "Heavy";
                 P3Text.gameObject.SetActive(true);
             }
@@ -162,12 +465,12 @@ public class MenuEvents : MonoBehaviour
                     GameObject.Destroy(P4Active.gameObject);
                 }
                 P4Preview.GetComponent<Image>().sprite = DPSprite;
-                P4Active = GameObject.Instantiate(BBPrefab, new Vector3(P4Preview.transform.position.x, P4Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
-                P4Active.preview = true;
+                //P4Active = GameObject.Instantiate(BBPrefab, new Vector3(P4Preview.transform.position.x, P4Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                //P4Active.preview = true;
                 P4Text.text = "Heavy";
                 P4Text.gameObject.SetActive(true);
             }
-            
+
         }
         if (conqName == "DeathsProxy")
         {
@@ -178,8 +481,8 @@ public class MenuEvents : MonoBehaviour
                     GameObject.Destroy(P1Active.gameObject);
                 }
                 P1Preview.GetComponent<Image>().sprite = DPSprite;
-                P1Active = GameObject.Instantiate(DPPrefab, new Vector3(P1Preview.transform.position.x, P1Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
-                P1Active.preview = true;
+                //P1Active = GameObject.Instantiate(DPPrefab, new Vector3(P1Preview.transform.position.x, P1Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                //P1Active.preview = true;
                 P1Text.text = "Acrobat";
                 //P1Preview.GetComponent<Image>().gameObject.SetActive(true);
                 P1Text.gameObject.SetActive(true);
@@ -191,8 +494,8 @@ public class MenuEvents : MonoBehaviour
                     GameObject.Destroy(P2Active.gameObject);
                 }
                 //P2Preview.GetComponent<Image>().sprite = RRSprite;
-                P2Active = GameObject.Instantiate(DPPrefab, new Vector3(P2Preview.transform.position.x, P2Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
-                P2Active.preview = true;
+                //P2Active = GameObject.Instantiate(DPPrefab, new Vector3(P2Preview.transform.position.x, P2Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                //P2Active.preview = true;
                 P2Text.gameObject.SetActive(true);
                 P2Text.text = "Acrobat";
             }
@@ -203,8 +506,8 @@ public class MenuEvents : MonoBehaviour
                     GameObject.Destroy(P3Active.gameObject);
                 }
                 //P2Preview.GetComponent<Image>().sprite = RRSprite;
-                P3Active = GameObject.Instantiate(DPPrefab, new Vector3(P3Preview.transform.position.x, P3Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
-                P3Active.preview = true;
+                //P3Active = GameObject.Instantiate(DPPrefab, new Vector3(P3Preview.transform.position.x, P3Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                //P3Active.preview = true;
                 P3Text.gameObject.SetActive(true);
                 P3Text.text = "Acrobat";
             }
@@ -215,8 +518,8 @@ public class MenuEvents : MonoBehaviour
                     GameObject.Destroy(P4Active.gameObject);
                 }
                 //P2Preview.GetComponent<Image>().sprite = RRSprite;
-                P4Active = GameObject.Instantiate(DPPrefab, new Vector3(P4Preview.transform.position.x, P4Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
-                P4Active.preview = true;
+                //P4Active = GameObject.Instantiate(DPPrefab, new Vector3(P4Preview.transform.position.x, P4Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                //P4Active.preview = true;
                 P4Text.gameObject.SetActive(true);
                 P4Text.text = "Acrobat";
             }
@@ -265,8 +568,8 @@ public class MenuEvents : MonoBehaviour
                     GameObject.Destroy(P1Active.gameObject);
                 }
                 //P2Preview.GetComponent<Image>().sprite = RRSprite;
-                P1Active = GameObject.Instantiate(RRPrefab, new Vector3(P1Preview.transform.position.x, P1Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
-                P1Active.preview = true;
+                //P1Active = GameObject.Instantiate(RRPrefab, new Vector3(P1Preview.transform.position.x, P1Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                //P1Active.preview = true;
                 P1Text.gameObject.SetActive(true);
                 P1Text.text = "Sharpshooter/Caster";
             }
@@ -277,8 +580,8 @@ public class MenuEvents : MonoBehaviour
                     GameObject.Destroy(P2Active.gameObject);
                 }
                 //P2Preview.GetComponent<Image>().sprite = RRSprite;
-                P2Active = GameObject.Instantiate(RRPrefab, new Vector3(P2Preview.transform.position.x, P2Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
-                P2Active.preview = true;
+                //P2Active = GameObject.Instantiate(RRPrefab, new Vector3(P2Preview.transform.position.x, P2Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                //P2Active.preview = true;
                 P2Text.gameObject.SetActive(true);
                 P2Text.text = "Sharpshooter/Caster";
             }
@@ -289,8 +592,8 @@ public class MenuEvents : MonoBehaviour
                     GameObject.Destroy(P3Active.gameObject);
                 }
                 //P2Preview.GetComponent<Image>().sprite = RRSprite;
-                P3Active = GameObject.Instantiate(RRPrefab, new Vector3(P3Preview.transform.position.x, P3Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
-                P3Active.preview = true;
+                //P3Active = GameObject.Instantiate(RRPrefab, new Vector3(P3Preview.transform.position.x, P3Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                //P3Active.preview = true;
                 P3Text.gameObject.SetActive(true);
                 P3Text.text = "Sharpshooter/Caster";
             }
@@ -301,36 +604,86 @@ public class MenuEvents : MonoBehaviour
                     GameObject.Destroy(P4Active.gameObject);
                 }
                 //P2Preview.GetComponent<Image>().sprite = RRSprite;
-                P4Active = GameObject.Instantiate(RRPrefab, new Vector3(P4Preview.transform.position.x, P4Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
-                P4Active.preview = true;
+                //P4Active = GameObject.Instantiate(RRPrefab, new Vector3(P4Preview.transform.position.x, P4Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                //P4Active.preview = true;
                 P4Text.gameObject.SetActive(true);
                 P4Text.text = "Sharpshooter/Caster";
             }
         }
-    }
-
-    public void ClearConq()
-    {
+        if (conqName == "RagingOrc")
+        {
             if (currentSelector == "P1" && P1Set == false)
             {
-                P1Preview.GetComponent<Image>().gameObject.SetActive(false);
-                P1Text.gameObject.SetActive(false);
-        }
+
+                if (P1Active)
+                {
+                    GameObject.Destroy(P1Active.gameObject);
+                }
+                P1Preview.GetComponent<Image>().sprite = DPSprite;
+                //P1Active = GameObject.Instantiate(BBPrefab, new Vector3(P1Preview.transform.position.x, P1Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                //P1Active.preview = true;
+                P1Text.text = "Brawler";
+                P1Text.gameObject.SetActive(true);
+            }
             if (currentSelector == "P2" && P2Set == false)
             {
-                P2Preview.GetComponent<Image>().gameObject.SetActive(false);
-            P2Text.gameObject.SetActive(false);
-        }
+                if (P2Active)
+                {
+                    GameObject.Destroy(P2Active.gameObject);
+                }
+                P2Preview.GetComponent<Image>().sprite = DPSprite;
+                //P2Active = GameObject.Instantiate(BBPrefab, new Vector3(P2Preview.transform.position.x, P2Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                //P2Active.preview = true;
+                P2Text.text = "Brawler";
+                P2Text.gameObject.SetActive(true);
+            }
             if (currentSelector == "P3" && P3Set == false)
             {
-                P3Preview.GetComponent<Image>().gameObject.SetActive(false);
-            P3Text.gameObject.SetActive(false);
-        }
+                if (P3Active)
+                {
+                    GameObject.Destroy(P3Active.gameObject);
+                }
+                P3Preview.GetComponent<Image>().sprite = DPSprite;
+                //P3Active = GameObject.Instantiate(BBPrefab, new Vector3(P3Preview.transform.position.x, P3Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                //P3Active.preview = true;
+                P3Text.text = "Brawler";
+                P3Text.gameObject.SetActive(true);
+            }
             if (currentSelector == "P4" && P4Set == false)
             {
-                P4Preview.GetComponent<Image>().gameObject.SetActive(false);
-            P4Text.gameObject.SetActive(false);
+                if (P4Active)
+                {
+                    GameObject.Destroy(P4Active.gameObject);
+                }
+                P4Preview.GetComponent<Image>().sprite = DPSprite;
+                //P4Active = GameObject.Instantiate(BBPrefab, new Vector3(P4Preview.transform.position.x, P4Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                //P4Active.preview = true;
+                P4Text.text = "Brawler";
+                P4Text.gameObject.SetActive(true);
+            }
+
+        }
+    }
+
+    public void ClearConq(string whichPlayer)
+    {
+            if (whichPlayer == "P1" && P1Active)
+            {
+            GameObject.Destroy(P1Active.gameObject);
+        }
+            if (whichPlayer == "P2" && P2Active)
+            {
+            GameObject.Destroy(P2Active.gameObject);
+        }
+            if (whichPlayer == "P3" && P3Active)
+            {
+            GameObject.Destroy(P3Active.gameObject);
+        }
+            if (whichPlayer == "P4" && P4Active)
+            {
+            GameObject.Destroy(P4Active.gameObject);
         }
 
     }
+
 }

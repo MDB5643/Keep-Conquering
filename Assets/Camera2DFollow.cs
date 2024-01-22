@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace UnityStandardAssets._2D
@@ -14,6 +15,8 @@ namespace UnityStandardAssets._2D
         public float shakeDuration = 0.2f;
         public AnimationCurve animCurve;
 
+        public List<Conqueror> playerList;
+
         private float m_OffsetZ;
         private Vector3 m_LastTargetPosition;
         private Vector3 m_CurrentVelocity;
@@ -23,6 +26,11 @@ namespace UnityStandardAssets._2D
         // Use this for initialization
         private void Start()
         {
+            if (MenuEvents.gameModeSelect == 2)
+            {
+                playerList.AddRange(GameObject.FindObjectsOfType<Conqueror>());
+            }
+            
             m_LastTargetPosition = target.position;
             m_OffsetZ = (transform.position - target.position).z;
             transform.parent = null;
@@ -33,43 +41,103 @@ namespace UnityStandardAssets._2D
         //TODO: Should this be fixed update?
         private void Update()
         {
-            // only update lookahead pos if accelerating or changed direction
-            float xMoveDelta = (target.position - m_LastTargetPosition).x;
-
-            bool updateLookAheadTarget = Mathf.Abs(xMoveDelta) > lookAheadMoveThreshold;
-
-            if (updateLookAheadTarget)
+            if (MenuEvents.gameModeSelect == 2)
             {
-                m_LookAheadPos = lookAheadFactor*Vector3.right*Mathf.Sign(xMoveDelta);
-            }
-            else
-            {
-                m_LookAheadPos = Vector3.MoveTowards(m_LookAheadPos, Vector3.zero, Time.deltaTime*lookAheadReturnSpeed);
-            }
+                float midpointX = 0;
+                float midpointY = 0;
 
-            //Define minimum x,y,z values
-            //Vector3 targetPos = target.position;
-            Vector3 aheadTargetPos = target.position + m_LookAheadPos + Vector3.forward*m_OffsetZ;
-            //Verify target pos is out of bounds or not
-            //Limit it to the min and max
-            Vector3 boundPosition = new Vector3(Mathf.Clamp(aheadTargetPos.x, minValues.x, maxValue.x),
-                Mathf.Clamp(aheadTargetPos.y, minValues.y, maxValue.y),
-                Mathf.Clamp(aheadTargetPos.z, minValues.z, maxValue.z));
-
-            Vector3 newPos = Vector3.SmoothDamp(transform.position, boundPosition, ref m_CurrentVelocity, damping);
-            //Vector3 smoothPos = Vector3.Lerp(transform.position, boundPosition, damping*Time)
-
-            transform.position = newPos;
-
-            m_LastTargetPosition = target.position;
-            if (target != null)
-            {
-                if (target.GetComponentInParent<Conqueror>().m_cameraShake)
+                foreach (Conqueror conq in playerList)
                 {
-                    target.GetComponentInParent<Conqueror>().m_cameraShake = false;
-                    StartCoroutine(Shaking());
+                    midpointX += conq.transform.position.x;
+                    midpointY += conq.transform.position.y;
+                }
+
+                midpointX = midpointX / playerList.Count;
+                midpointY = midpointY / playerList.Count;
+                Vector3 midpoint = new Vector3(midpointX, midpointY, -10);
+
+                float xMoveDelta = (midpoint - m_LastTargetPosition).x;
+
+                bool updateLookAheadTarget = Mathf.Abs(xMoveDelta) > lookAheadMoveThreshold;
+
+                if (updateLookAheadTarget)
+                {
+                    m_LookAheadPos = lookAheadFactor * Vector3.right * Mathf.Sign(xMoveDelta);
+                }
+                else
+                {
+                    m_LookAheadPos = Vector3.MoveTowards(m_LookAheadPos, Vector3.zero, Time.deltaTime * lookAheadReturnSpeed);
+                }
+
+                //Define minimum x,y,z values
+                //Vector3 targetPos = midpoint;
+                Vector3 aheadTargetPos = midpoint + m_LookAheadPos + Vector3.forward * m_OffsetZ;
+                //Verify target pos is out of bounds or not
+                //Limit it to the min and max
+                Vector3 boundPosition = new Vector3(Mathf.Clamp(aheadTargetPos.x, minValues.x, maxValue.x),
+                    Mathf.Clamp(aheadTargetPos.y, minValues.y, maxValue.y),
+                    Mathf.Clamp(aheadTargetPos.z, minValues.z, maxValue.z));
+
+                Vector3 newPos = Vector3.SmoothDamp(transform.position, boundPosition, ref m_CurrentVelocity, damping);
+                //Vector3 smoothPos = Vector3.Lerp(transform.position, boundPosition, damping*Time)
+
+                transform.position = newPos;
+
+                m_LastTargetPosition = midpoint;
+                if (target != null)
+                {
+                    if (target.GetComponentInParent<Conqueror>() && target.GetComponentInParent<Conqueror>().m_cameraShake)
+                    {
+                        target.GetComponentInParent<Conqueror>().m_cameraShake = false;
+                        StartCoroutine(Shaking());
+                    }
                 }
             }
+            
+
+
+
+            else
+            {
+                // only update lookahead pos if accelerating or changed direction
+                float xMoveDelta = (target.position - m_LastTargetPosition).x;
+
+                bool updateLookAheadTarget = Mathf.Abs(xMoveDelta) > lookAheadMoveThreshold;
+
+                if (updateLookAheadTarget)
+                {
+                    m_LookAheadPos = lookAheadFactor * Vector3.right * Mathf.Sign(xMoveDelta);
+                }
+                else
+                {
+                    m_LookAheadPos = Vector3.MoveTowards(m_LookAheadPos, Vector3.zero, Time.deltaTime * lookAheadReturnSpeed);
+                }
+
+                //Define minimum x,y,z values
+                //Vector3 targetPos = target.position;
+                Vector3 aheadTargetPos = target.position + m_LookAheadPos + Vector3.forward * m_OffsetZ;
+                //Verify target pos is out of bounds or not
+                //Limit it to the min and max
+                Vector3 boundPosition = new Vector3(Mathf.Clamp(aheadTargetPos.x, minValues.x, maxValue.x),
+                    Mathf.Clamp(aheadTargetPos.y, minValues.y, maxValue.y),
+                    Mathf.Clamp(aheadTargetPos.z, minValues.z, maxValue.z));
+
+                Vector3 newPos = Vector3.SmoothDamp(transform.position, boundPosition, ref m_CurrentVelocity, damping);
+                //Vector3 smoothPos = Vector3.Lerp(transform.position, boundPosition, damping*Time)
+
+                transform.position = newPos;
+
+                m_LastTargetPosition = target.position;
+                if (target != null)
+                {
+                    if (target.GetComponentInParent<Conqueror>() && target.GetComponentInParent<Conqueror>().m_cameraShake)
+                    {
+                        target.GetComponentInParent<Conqueror>().m_cameraShake = false;
+                        StartCoroutine(Shaking());
+                    }
+                }
+            }
+            
             
         }
 

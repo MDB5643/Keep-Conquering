@@ -41,6 +41,12 @@ TagManager:
   - RightTowerLauncher
   - MinionJumpRight
   - EyeShot
+  - Ground
+  - PlayerCursor
+  - TheChampion
+  - PrototypeHero
+  - RunebornRanger
+  - RagingOrc
   layers:
   - Default
   - TransparentFX
@@ -68,17 +74,20 @@ TagManager:
   - HotzoneMid
   - Projectile
   - ProjectileMid
-  - 
-  - 
-  - 
+  - LedgeGrab
+  - LedgeGrabMid
+  - PlayerObjects
   - 
   - 
   - 
   m_SortingLayers:
+  - name: backback
+    uniqueID: 1341584773
+    locked: 0
   - name: Background
     uniqueID: 2603991477
     locked: 0
-  - name: New Layer 3
+  - name: Mid
     uniqueID: 220495137
     locked: 0
   - name: Default
@@ -86,4 +95,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 2579315715
+    locked: 0
+  - name: UI
+    uniqueID: 3679020567
     locked: 0

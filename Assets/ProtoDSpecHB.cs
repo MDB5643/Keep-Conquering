@@ -5,9 +5,12 @@ using UnityEngine;
 public class ProtoDSpecHB : MonoBehaviour
 {
     private PolygonCollider2D pCollider;
+    private float lingerTime = 0.0f;
+    public float maxLingerTime = 0.22f;
     // Start is called before the first frame update
     void Start()
     {
+        
         pCollider = transform.GetComponent<PolygonCollider2D>();
         LineRenderer lr = transform.GetComponent<LineRenderer>();
         if (lr == null)
@@ -65,6 +68,10 @@ public class ProtoDSpecHB : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        lingerTime += Time.deltaTime;
+        if (lingerTime >= maxLingerTime && gameObject != null)
+        {
+            GameObject.Destroy(gameObject.transform.parent.gameObject);
+        }
     }
 }

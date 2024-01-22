@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8704984547511526365}
   - component: {fileID: 526453007059125036}
   - component: {fileID: 7103773709407798476}
+  - component: {fileID: 6691874453486347825}
   m_Layer: 15
   m_Name: ChampSideSpecHB
   m_TagString: AttackHitbox
@@ -48,26 +49,27 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2.09375, y: 1.21875}
+    newSize: {x: 2.09375, y: 1.21875}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.6035769, y: 0.01823685}
-      - {x: 1.2291592, y: 0.14842576}
-      - {x: 0.73649323, y: 0.2828889}
-      - {x: 0.40572497, y: 0.119978905}
-      - {x: 0.556712, y: -0.30411646}
-      - {x: 0.6577627, y: -0.36619848}
-      - {x: 0.91377413, y: -0.36619827}
-      - {x: 1.1941705, y: -0.31510383}
-      - {x: 1.5777252, y: -0.20164065}
-      - {x: 1.577725, y: -0.20164067}
-      - {x: 1.5738304, y: -0.08270702}
+    - - {x: 1.4026378, y: 0.0014919173}
+      - {x: 1.2291592, y: 0.106563434}
+      - {x: 0.73649323, y: 0.12381205}
+      - {x: 0.20478582, y: -0.0056080744}
+      - {x: 0.20861399, y: -0.17179367}
+      - {x: 0.539967, y: -0.23713675}
+      - {x: 0.6912526, y: -0.26572892}
+      - {x: 0.9640089, y: -0.27410117}
+      - {x: 1.185798, y: -0.25649658}
+      - {x: 1.3684134, y: -0.21001314}
+      - {x: 1.4605107, y: -0.15977836}
+      - {x: 1.4733609, y: -0.07433453}
 --- !u!114 &7103773709407798476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,3 +82,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38a75f239864b04ca3265494f75a758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6691874453486347825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8949535772418708054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitEnemies: []

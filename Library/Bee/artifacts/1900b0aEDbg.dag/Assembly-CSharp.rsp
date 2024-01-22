@@ -105,6 +105,7 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
+-define:ENABLE_INPUT_SYSTEM
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CROSS_PLATFORM_INPUT
 -define:CSHARP_7_OR_LATER
@@ -379,24 +380,32 @@
 "Assets/CPUCharacter2D.cs"
 "Assets/CPUDeath.cs"
 "Assets/CPUHotZone.cs"
+"Assets/Crosshair.cs"
 "Assets/cScripts/HighLevelScripts/EnemyBehavior.cs"
 "Assets/cScripts/HighLevelScripts/HotZoneCheck.cs"
 "Assets/cScripts/HighLevelScripts/TriggerAreaCheck.cs"
 "Assets/Dark Knight - Pixel Art/ColorSwap/ColorSwap_DarkKnight.cs"
 "Assets/Dark Knight - Pixel Art/Demo/DarkKnight.cs"
 "Assets/Dark Knight - Pixel Art/Demo/Sensor_DarkKnight.cs"
+"Assets/DeadRevolver/PixelPrototypePlayerSprites/Demo/Scripts/DemoUIManager.cs"
+"Assets/DeadRevolver/PixelPrototypePlayerSprites/Demo/Scripts/PlayerPreviewManager.cs"
 "Assets/DownAttackCollisions.cs"
 "Assets/EnemyDeath.cs"
 "Assets/EyeShot.cs"
 "Assets/GolemBehavior.cs"
 "Assets/GondolaHotzone.cs"
-"Assets/Hero Knight - Pixel Art/ColorSwap/ColorSwap_HeroKnight.cs"
-"Assets/Hero Knight - Pixel Art/Demo/DestroyEvent_HeroKnight.cs"
-"Assets/Hero Knight - Pixel Art/Demo/HeroKnight.cs"
-"Assets/Hero Knight - Pixel Art/Demo/Sensor_HeroKnight.cs"
+"Assets/KeepConqueringP1.cs"
 "Assets/LevelManagerScript.cs"
 "Assets/LineController.cs"
+"Assets/MenuAssets/Samples/Input System/1.4.4/Simple Multiplayer/SimpleMultiplayerPlayer.cs"
+"Assets/MenuAssets/Scripts/CursorBehavior.cs"
+"Assets/MenuAssets/Scripts/GamepadJoinBehavior.cs"
+"Assets/MenuAssets/Scripts/KeepAlive.cs"
+"Assets/MenuAssets/Scripts/PlayerControls.cs"
+"Assets/MenuAssets/Scripts/PlayerObjectHandler.cs"
+"Assets/MenuAssets/Scripts/SceneInitialization.cs"
 "Assets/MenuEvents.cs"
+"Assets/MenuEventsExtra.cs"
 "Assets/MinionBehavior.cs"
 "Assets/MinionJumpPoint.cs"
 "Assets/MinionTowerTarget.cs"
@@ -453,6 +462,7 @@
 "Assets/Prototype Hero - Pixel Art/Demo/PrototypeHeroAnimEvents.cs"
 "Assets/Prototype Hero - Pixel Art/Demo/Sensor_Prototype.cs"
 "Assets/ProtoUTiltHB.cs"
+"Assets/RagingOrc.cs"
 "Assets/Restarter.cs"
 "Assets/RRAnimEvents.cs"
 "Assets/RRFSpecZone.cs"

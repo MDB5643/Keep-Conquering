@@ -36,6 +36,7 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
     public GameObject dairHitbox;
     public GameObject sideSpec1Hitbox;
     public GameObject sideSpec2Hitbox;
+    public GameObject dashAttackHitbox;
 
     public GameObject activeHitbox;
     private GameObject activeHitbox2;
@@ -237,13 +238,13 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
             //xDisplace = -3.0f;
         }
 
-        activeHitbox = Instantiate(dairHitbox, new Vector3((m_player.transform.position.x), m_player.transform.position.y, m_player.transform.position.z),
+        m_player.GetComponent<PrototypeHero>().activeDairHitbox = Instantiate(dairHitbox, new Vector3((m_player.transform.position.x), m_player.transform.position.y, m_player.transform.position.z),
             rotQuat, m_player.transform);
         if (m_player.transform.CompareTag("PlayerMid"))
         {
-            activeHitbox.layer = 19;
+            m_player.GetComponent<PrototypeHero>().activeDairHitbox.layer = 19;
         }
-        activeHitbox.transform.SetParent(m_player.transform);
+        m_player.GetComponent<PrototypeHero>().activeDairHitbox.transform.SetParent(m_player.transform);
     }
 
     void AE_AttackAirLanding()
@@ -256,7 +257,7 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
         m_audioManager.PlaySound("SwordAttack");
         
         
-        StartCoroutine(Linger(lingerDeltaTime));
+        GameObject.Destroy(m_player.GetComponent<PrototypeHero>().activeDairHitbox);
         c_Manager.hitEnemy = "None";
     }
 
@@ -308,6 +309,36 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
         {
             m_player.m_SR.flipX = true;
         }
+    }
+
+    void AE_FellDown()
+    {
+        m_player.m_fallingdown = false;
+    }
+
+    void AE_dashAttack()
+    {
+        m_audioManager.PlaySound("UnarmedAttack");
+        Quaternion rotQuat = new Quaternion();
+        float xDisplace = 0.0f;
+        if (m_player.m_facingDirection == 1)
+        {
+            rotQuat = new Quaternion(0f, 0f, 0f, 0f);
+            xDisplace = .7f;
+        }
+        else
+        {
+            rotQuat = new Quaternion(0f, 180f, 0f, 0f);
+            xDisplace = -.7f;
+        }
+        activeHitbox = Instantiate(dashAttackHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + 1.85f, m_player.transform.position.z),
+            rotQuat, m_player.transform);
+        if (m_player.transform.CompareTag("PlayerMid"))
+        {
+            activeHitbox.layer = 19;
+        }
+        StartCoroutine(Linger(lingerDeltaTime));
+        c_Manager.hitEnemy = "None";
     }
 
     void AE_JabHitbox()
@@ -461,12 +492,12 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
         if (m_player.m_facingDirection == 1)
         {
             rotQuat = new Quaternion(0f, 0f, 0f, 0f);
-            xDisplace = -2f;
+            xDisplace = -2.2f;
         }
         else
         {
             rotQuat = new Quaternion(0f, 180f, 0f, 0f);
-            xDisplace = 2f;
+            xDisplace = 2.2f;
         }
         if (activeHitbox == null)
         {
@@ -571,6 +602,23 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
     }
 
     void AE_Dodge()
+    {
+        m_audioManager.PlaySound("Dodge");
+        float dustYOffset = 0.078125f;
+        m_player.SpawnDustEffect(m_DodgeDust, 0.0f, dustYOffset);
+        if (m_player.transform.position.z == 20)
+        {
+            m_player.SetLayerRecursively(m_player.gameObject, LayerMask.NameToLayer("iFrameMid"));
+        }
+        else
+        {
+
+            m_player.SetLayerRecursively(m_player.gameObject, LayerMask.NameToLayer("iFrame"));
+        }
+
+    }
+
+    void AE_AirDodge()
     {
         m_audioManager.PlaySound("Dodge");
         float dustYOffset = 0.078125f;

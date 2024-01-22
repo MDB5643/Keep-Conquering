@@ -1,0 +1,3732 @@
+fileFormatVersion: 2
+guid: e7f32f710e1bb1d42ae59347131ae9b6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2162361660067704592
+    second: OrcCombatAnimationsaseprite2_0
+  - first:
+      213: 3583209691210863572
+    second: OrcCombatAnimationsaseprite2_1
+  - first:
+      213: -829725467869349017
+    second: OrcCombatAnimationsaseprite2_2
+  - first:
+      213: 7719067899816434973
+    second: OrcCombatAnimationsaseprite2_3
+  - first:
+      213: -4674429719032475824
+    second: OrcCombatAnimationsaseprite2_4
+  - first:
+      213: 9102726650692537639
+    second: OrcCombatAnimationsaseprite2_5
+  - first:
+      213: 589936327941142463
+    second: OrcCombatAnimationsaseprite2_6
+  - first:
+      213: 1625359638946792321
+    second: OrcCombatAnimationsaseprite2_7
+  - first:
+      213: 8690773196794326739
+    second: OrcCombatAnimationsaseprite2_8
+  - first:
+      213: 2069654669363434939
+    second: OrcCombatAnimationsaseprite2_9
+  - first:
+      213: 3212279895915652487
+    second: OrcCombatAnimationsaseprite2_10
+  - first:
+      213: -2630242121382022938
+    second: OrcCombatAnimationsaseprite2_11
+  - first:
+      213: 9101464256540488152
+    second: OrcCombatAnimationsaseprite2_12
+  - first:
+      213: 837271101978354404
+    second: OrcCombatAnimationsaseprite2_13
+  - first:
+      213: 2121949768798420002
+    second: OrcCombatAnimationsaseprite2_14
+  - first:
+      213: 8731191175885623860
+    second: OrcCombatAnimationsaseprite2_15
+  - first:
+      213: -2445092060827589249
+    second: OrcCombatAnimationsaseprite2_16
+  - first:
+      213: -5324609762598767639
+    second: OrcCombatAnimationsaseprite2_17
+  - first:
+      213: 1080578322763016988
+    second: OrcCombatAnimationsaseprite2_18
+  - first:
+      213: -3921075179298383848
+    second: OrcCombatAnimationsaseprite2_19
+  - first:
+      213: -7701186820418391352
+    second: OrcCombatAnimationsaseprite2_20
+  - first:
+      213: -7862467014433564909
+    second: OrcCombatAnimationsaseprite2_21
+  - first:
+      213: -1360914856272882006
+    second: OrcCombatAnimationsaseprite2_22
+  - first:
+      213: 1842730217476438791
+    second: OrcCombatAnimationsaseprite2_23
+  - first:
+      213: 4812397277829948904
+    second: OrcCombatAnimationsaseprite2_24
+  - first:
+      213: -3029560198243188593
+    second: OrcCombatAnimationsaseprite2_25
+  - first:
+      213: -2983371209176176388
+    second: OrcCombatAnimationsaseprite2_26
+  - first:
+      213: -7208353801949540162
+    second: OrcCombatAnimationsaseprite2_27
+  - first:
+      213: -8986558834129218597
+    second: OrcCombatAnimationsaseprite2_28
+  - first:
+      213: 7558623692835445656
+    second: OrcCombatAnimationsaseprite2_29
+  - first:
+      213: -8715498872900810331
+    second: OrcCombatAnimationsaseprite2_30
+  - first:
+      213: 4652556592308798703
+    second: OrcCombatAnimationsaseprite2_31
+  - first:
+      213: -5727822119676044319
+    second: OrcCombatAnimationsaseprite2_32
+  - first:
+      213: 9058705994743979262
+    second: OrcCombatAnimationsaseprite2_33
+  - first:
+      213: 6046013122083941031
+    second: OrcCombatAnimationsaseprite2_34
+  - first:
+      213: -671619791568071213
+    second: OrcCombatAnimationsaseprite2_35
+  - first:
+      213: 8165565178177832381
+    second: OrcCombatAnimationsaseprite2_36
+  - first:
+      213: 5504015869486971753
+    second: OrcCombatAnimationsaseprite2_37
+  - first:
+      213: -5880372543942424759
+    second: OrcCombatAnimationsaseprite2_38
+  - first:
+      213: 7541020960355161747
+    second: OrcCombatAnimationsaseprite2_39
+  - first:
+      213: 8741114554698058204
+    second: OrcCombatAnimationsaseprite2_40
+  - first:
+      213: -923753794984097803
+    second: OrcCombatAnimationsaseprite2_41
+  - first:
+      213: -4850523730920711390
+    second: OrcCombatAnimationsaseprite2_42
+  - first:
+      213: -2161316064615675851
+    second: OrcCombatAnimationsaseprite2_43
+  - first:
+      213: -4860970391420592896
+    second: OrcCombatAnimationsaseprite2_44
+  - first:
+      213: -6955835218596954649
+    second: OrcCombatAnimationsaseprite2_45
+  - first:
+      213: 2952115587099510047
+    second: OrcCombatAnimationsaseprite2_46
+  - first:
+      213: 5878491202316753877
+    second: OrcCombatAnimationsaseprite2_47
+  - first:
+      213: 8095435404453686944
+    second: OrcCombatAnimationsaseprite2_48
+  - first:
+      213: 4811676300139528152
+    second: OrcCombatAnimationsaseprite2_49
+  - first:
+      213: -3570775531619638235
+    second: OrcCombatAnimationsaseprite2_50
+  - first:
+      213: 4631957134261138601
+    second: OrcCombatAnimationsaseprite2_51
+  - first:
+      213: 7977260766757754627
+    second: OrcCombatAnimationsaseprite2_52
+  - first:
+      213: -728013547858401733
+    second: OrcCombatAnimationsaseprite2_53
+  - first:
+      213: -4590210304852550664
+    second: OrcCombatAnimationsaseprite2_54
+  - first:
+      213: -8429323154049859823
+    second: OrcCombatAnimationsaseprite2_55
+  - first:
+      213: 2545399325539240462
+    second: OrcCombatAnimationsaseprite2_56
+  - first:
+      213: -1365049828218510559
+    second: OrcCombatAnimationsaseprite2_57
+  - first:
+      213: 8413903812467307146
+    second: OrcCombatAnimationsaseprite2_58
+  - first:
+      213: -7276879280486259683
+    second: OrcCombatAnimationsaseprite2_59
+  - first:
+      213: -5769518887386205672
+    second: OrcCombatAnimationsaseprite2_60
+  - first:
+      213: 8895761785216924908
+    second: OrcCombatAnimationsaseprite2_61
+  - first:
+      213: 5200337883776380696
+    second: OrcCombatAnimationsaseprite2_62
+  - first:
+      213: 2450822161619655336
+    second: OrcCombatAnimationsaseprite2_63
+  - first:
+      213: 8949051839780717268
+    second: OrcCombatAnimationsaseprite2_64
+  - first:
+      213: -7945987243286708261
+    second: OrcCombatAnimationsaseprite2_65
+  - first:
+      213: 2991707657352477111
+    second: OrcCombatAnimationsaseprite2_66
+  - first:
+      213: -6994397717673873339
+    second: OrcCombatAnimationsaseprite2_67
+  - first:
+      213: 3216001754991208690
+    second: OrcCombatAnimationsaseprite2_68
+  - first:
+      213: -2482057527437659955
+    second: OrcCombatAnimationsaseprite2_69
+  - first:
+      213: 733848956386486416
+    second: OrcCombatAnimationsaseprite2_70
+  - first:
+      213: 7992988235603384425
+    second: OrcCombatAnimationsaseprite2_71
+  - first:
+      213: 3614872135470859636
+    second: OrcCombatAnimationsaseprite2_72
+  - first:
+      213: -6154551197875865979
+    second: OrcCombatAnimationsaseprite2_73
+  - first:
+      213: 3660967751888967442
+    second: OrcCombatAnimationsaseprite2_74
+  - first:
+      213: -49274224975491786
+    second: OrcCombatAnimationsaseprite2_75
+  - first:
+      213: 2549874460908053591
+    second: OrcCombatAnimationsaseprite2_76
+  - first:
+      213: 1108493234592368608
+    second: OrcCombatAnimationsaseprite2_77
+  - first:
+      213: 8274569930509876046
+    second: OrcCombatAnimationsaseprite2_78
+  - first:
+      213: 2878057875751112461
+    second: OrcCombatAnimationsaseprite2_79
+  - first:
+      213: 3470832175293229782
+    second: OrcCombatAnimationsaseprite2_80
+  - first:
+      213: -5417735851662472552
+    second: OrcCombatAnimationsaseprite2_81
+  - first:
+      213: 5492231246713520851
+    second: OrcCombatAnimationsaseprite2_82
+  - first:
+      213: 8378710147589394899
+    second: OrcCombatAnimationsaseprite2_83
+  - first:
+      213: 7553148739951755046
+    second: OrcCombatAnimationsaseprite2_84
+  - first:
+      213: 1608265497942900243
+    second: OrcCombatAnimationsaseprite2_85
+  - first:
+      213: 7742050791611192361
+    second: OrcCombatAnimationsaseprite2_86
+  - first:
+      213: 5639900706581886350
+    second: OrcCombatAnimationsaseprite2_87
+  - first:
+      213: -1722196376735208272
+    second: OrcCombatAnimationsaseprite2_88
+  - first:
+      213: 5517515232577468661
+    second: OrcCombatAnimationsaseprite2_89
+  - first:
+      213: 3159900486920783398
+    second: OrcCombatAnimationsaseprite2_90
+  - first:
+      213: -7892494301345612541
+    second: OrcCombatAnimationsaseprite2_91
+  - first:
+      213: 5424964813123813485
+    second: OrcCombatAnimationsaseprite2_92
+  - first:
+      213: 8891638385908110414
+    second: OrcCombatAnimationsaseprite2_93
+  - first:
+      213: -1796360605683161096
+    second: OrcCombatAnimationsaseprite2_94
+  - first:
+      213: -869459534184389852
+    second: OrcCombatAnimationsaseprite2_95
+  - first:
+      213: -2292836675472940842
+    second: OrcCombatAnimationsaseprite2_96
+  - first:
+      213: -8053122667193019527
+    second: OrcCombatAnimationsaseprite2_97
+  - first:
+      213: -688949107963995463
+    second: OrcCombatAnimationsaseprite2_98
+  - first:
+      213: 3041290395085532210
+    second: OrcCombatAnimationsaseprite2_99
+  - first:
+      213: 5196021809752650398
+    second: OrcCombatAnimationsaseprite2_100
+  - first:
+      213: 7976034213186500214
+    second: OrcCombatAnimationsaseprite2_101
+  - first:
+      213: -3976694673229247265
+    second: OrcCombatAnimationsaseprite2_102
+  - first:
+      213: -4175610861472717378
+    second: OrcCombatAnimationsaseprite2_103
+  - first:
+      213: -4201022237547204582
+    second: OrcCombatAnimationsaseprite2_104
+  - first:
+      213: 8412933534533416963
+    second: OrcCombatAnimationsaseprite2_105
+  - first:
+      213: 7388747087574061830
+    second: OrcCombatAnimationsaseprite2_106
+  - first:
+      213: -3674863306529910007
+    second: OrcCombatAnimationsaseprite2_107
+  - first:
+      213: -641299071300353256
+    second: OrcCombatAnimationsaseprite2_108
+  - first:
+      213: 624085332886393172
+    second: OrcCombatAnimationsaseprite2_109
+  - first:
+      213: 2891856886772668055
+    second: OrcCombatAnimationsaseprite2_110
+  - first:
+      213: -7439624321935679888
+    second: OrcCombatAnimationsaseprite2_111
+  - first:
+      213: 4040628894043109116
+    second: OrcCombatAnimationsaseprite2_112
+  - first:
+      213: -4752831700332962106
+    second: OrcCombatAnimationsaseprite2_113
+  - first:
+      213: -3980125563300981090
+    second: OrcCombatAnimationsaseprite2_114
+  - first:
+      213: 1002648012093925853
+    second: OrcCombatAnimationsaseprite2_115
+  - first:
+      213: 4420017354622694834
+    second: OrcCombatAnimationsaseprite2_116
+  - first:
+      213: -8900468686006305616
+    second: OrcCombatAnimationsaseprite2_117
+  - first:
+      213: -64794658943867385
+    second: OrcCombatAnimationsaseprite2_118
+  - first:
+      213: -593488315200995664
+    second: OrcCombatAnimationsaseprite2_119
+  - first:
+      213: 7530822575040551361
+    second: OrcCombatAnimationsaseprite2_120
+  - first:
+      213: -952963456741645885
+    second: OrcCombatAnimationsaseprite2_121
+  - first:
+      213: -8347320095846404178
+    second: OrcCombatAnimationsaseprite2_122
+  - first:
+      213: 3382870888785135135
+    second: OrcCombatAnimationsaseprite2_123
+  - first:
+      213: -8771885518844953954
+    second: OrcCombatAnimationsaseprite2_124
+  - first:
+      213: -400893190556433314
+    second: OrcCombatAnimationsaseprite2_125
+  - first:
+      213: -6696528173843625513
+    second: OrcCombatAnimationsaseprite2_126
+  - first:
+      213: 4323892372205780162
+    second: OrcCombatAnimationsaseprite2_127
+  - first:
+      213: 524381737201600800
+    second: OrcCombatAnimationsaseprite2_128
+  - first:
+      213: 9190084618274549948
+    second: OrcCombatAnimationsaseprite2_129
+  - first:
+      213: -5296664968991235892
+    second: OrcCombatAnimationsaseprite2_130
+  - first:
+      213: 4516430365867839064
+    second: OrcCombatAnimationsaseprite2_131
+  - first:
+      213: 4804741211182152700
+    second: OrcCombatAnimationsaseprite2_132
+  - first:
+      213: 4121291416609270441
+    second: OrcCombatAnimationsaseprite2_133
+  - first:
+      213: 5013215949098859639
+    second: OrcCombatAnimationsaseprite2_134
+  - first:
+      213: 1034650701493360029
+    second: OrcCombatAnimationsaseprite2_135
+  - first:
+      213: 7522308717024288274
+    second: OrcCombatAnimationsaseprite2_136
+  - first:
+      213: 2924916308752036428
+    second: OrcCombatAnimationsaseprite2_137
+  - first:
+      213: -8162854569012199069
+    second: OrcCombatAnimationsaseprite2_138
+  - first:
+      213: -4678814611547779420
+    second: OrcCombatAnimationsaseprite2_139
+  - first:
+      213: 5380701919696076547
+    second: OrcCombatAnimationsaseprite2_140
+  - first:
+      213: -7641326517206347924
+    second: OrcCombatAnimationsaseprite2_141
+  - first:
+      213: -8230459044751824795
+    second: OrcCombatAnimationsaseprite2_142
+  - first:
+      213: 8393339105306672723
+    second: OrcCombatAnimationsaseprite2_143
+  - first:
+      213: 5970318342121752428
+    second: OrcCombatAnimationsaseprite2_144
+  - first:
+      213: 4332247460655835536
+    second: OrcCombatAnimationsaseprite2_145
+  - first:
+      213: 2655425891473008575
+    second: OrcCombatAnimationsaseprite2_146
+  - first:
+      213: -3154307572814314046
+    second: OrcCombatAnimationsaseprite2_147
+  - first:
+      213: 895379305493504132
+    second: OrcCombatAnimationsaseprite2_148
+  - first:
+      213: 157688704552532190
+    second: OrcCombatAnimationsaseprite2_149
+  - first:
+      213: -576595616479609730
+    second: OrcCombatAnimationsaseprite2_150
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 756
+        width: 24
+        height: 48
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f62402970420e10800000000000000
+      internalID: 2162361660067704592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 756
+        width: 20
+        height: 49
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d35c50ca3e1ab130800000000000000
+      internalID: 3583209691210863572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_2
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 756
+        width: 40
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b7d8245193c74f0800000000000000
+      internalID: -829725467869349017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_3
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 756
+        width: 26
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ddda58b53af1b60800000000000000
+      internalID: 7719067899816434973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_4
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 756
+        width: 26
+        height: 34
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f4a8dcfe6112fb0800000000000000
+      internalID: -4674429719032475824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_5
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 756
+        width: 24
+        height: 34
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d820619a1635e70800000000000000
+      internalID: 9102726650692537639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_6
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 756
+        width: 13
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7b703f6ffdf2800800000000000000
+      internalID: 589936327941142463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_7
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 756
+        width: 14
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1834ea7eaff6e8610800000000000000
+      internalID: 1625359638946792321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_8
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 756
+        width: 33
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de69624d24db9870800000000000000
+      internalID: 8690773196794326739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_9
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 756
+        width: 38
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5d22fc4f3e8bc10800000000000000
+      internalID: 2069654669363434939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_10
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 756
+        width: 42
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7856e23cb8f449c20800000000000000
+      internalID: 3212279895915652487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_11
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 756
+        width: 41
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e031c9e9b08f7bd0800000000000000
+      internalID: -2630242121382022938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_12
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 756
+        width: 42
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1b20b0585ee4e70800000000000000
+      internalID: 9101464256540488152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_13
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 756
+        width: 83
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2ae1691a59e9b00800000000000000
+      internalID: 837271101978354404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_14
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 756
+        width: 93
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22cb378721ea27d10800000000000000
+      internalID: 2121949768798420002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_15
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 724
+        width: 10
+        height: 9
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43210b85d1c6b2970800000000000000
+      internalID: 8731191175885623860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_16
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 714
+        width: 6
+        height: 6
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f756e3fa9b9411ed0800000000000000
+      internalID: -2445092060827589249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 92
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e339b4c1af2b16b0800000000000000
+      internalID: -5324609762598767639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_18
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 724
+        width: 6
+        height: 11
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1be648624cfefe00800000000000000
+      internalID: 1080578322763016988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_19
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 672
+        width: 64
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 818915036ea8599c0800000000000000
+      internalID: -3921075179298383848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_20
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 672
+        width: 64
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2ba04b363ef1590800000000000000
+      internalID: -7701186820418391352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_21
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 672
+        width: 18
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317167258e7e2e290800000000000000
+      internalID: -7862467014433564909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_22
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 672
+        width: 30
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa69d4e062f0d1de0800000000000000
+      internalID: -1360914856272882006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_23
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 672
+        width: 31
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70bbf8d9e51b29910800000000000000
+      internalID: 1842730217476438791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_24
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 672
+        width: 50
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e56c17b3d119c240800000000000000
+      internalID: 4812397277829948904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_25
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 672
+        width: 34
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f808d0e0d07d4f5d0800000000000000
+      internalID: -3029560198243188593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_26
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 672
+        width: 22
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf82deb11bfe896d0800000000000000
+      internalID: -2983371209176176388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_27
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 672
+        width: 23
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb0167b9868c6fb90800000000000000
+      internalID: -7208353801949540162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_28
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 672
+        width: 35
+        height: 34
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3549a6a54594380800000000000000
+      internalID: -8986558834129218597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_29
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 672
+        width: 35
+        height: 52
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89bde4a8330a5e860800000000000000
+      internalID: 7558623692835445656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_30
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 672
+        width: 28
+        height: 42
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a90e68a3f35c0780800000000000000
+      internalID: -8715498872900810331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_31
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 672
+        width: 31
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4c7f50293319040800000000000000
+      internalID: 4652556592308798703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_32
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 672
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb95142120b280b0800000000000000
+      internalID: -5727822119676044319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_33
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 588
+        width: 28
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc9a6d6b1df6bd70800000000000000
+      internalID: 9058705994743979262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_34
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 588
+        width: 36
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aae921c6e0c7e350800000000000000
+      internalID: 6046013122083941031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_35
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 588
+        width: 52
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d59673ab5deda6f0800000000000000
+      internalID: -671619791568071213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_36
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 588
+        width: 26
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db5c69b344ae15170800000000000000
+      internalID: 8165565178177832381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_37
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 588
+        width: 24
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b32e29541326c40800000000000000
+      internalID: 5504015869486971753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_38
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 588
+        width: 24
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9470a5ba358b46ea0800000000000000
+      internalID: -5880372543942424759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_39
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 588
+        width: 16
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3969eb10c9617a860800000000000000
+      internalID: 7541020960355161747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_40
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 588
+        width: 14
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd946c5006dae4970800000000000000
+      internalID: 8741114554698058204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_41
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 588
+        width: 18
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7cd0651da2e23f0800000000000000
+      internalID: -923753794984097803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_42
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 588
+        width: 17
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b5edbad5a7facb0800000000000000
+      internalID: -4850523730920711390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_43
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 588
+        width: 16
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538cc398d767102e0800000000000000
+      internalID: -2161316064615675851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_44
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 588
+        width: 18
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d1fabfe2d5a8cb0800000000000000
+      internalID: -4860970391420592896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_45
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 588
+        width: 24
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed7067e8b8e77f90800000000000000
+      internalID: -6955835218596954649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_46
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 590
+        width: 22
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15c5f84c7508f820800000000000000
+      internalID: 2952115587099510047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_47
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 592
+        width: 31
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db59595a98949150800000000000000
+      internalID: 5878491202316753877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_48
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 504
+        width: 39
+        height: 42
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae2590eb93c85070800000000000000
+      internalID: 8095435404453686944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_49
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 504
+        width: 39
+        height: 29
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df7bf30a1286c240800000000000000
+      internalID: 4811676300139528152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_50
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 504
+        width: 39
+        height: 24
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524a721a29e027ec0800000000000000
+      internalID: -3570775531619638235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_51
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 504
+        width: 32
+        height: 22
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a4b872f874084040800000000000000
+      internalID: 4631957134261138601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_52
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 504
+        width: 29
+        height: 27
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307914be66ce4be60800000000000000
+      internalID: 7977260766757754627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_53
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 504
+        width: 27
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b366a30198395e5f0800000000000000
+      internalID: -728013547858401733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_54
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 504
+        width: 31
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb1de63c0c4c40c0800000000000000
+      internalID: -4590210304852550664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_55
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 504
+        width: 34
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ff1e97047050b80800000000000000
+      internalID: -8429323154049859823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_56
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 504
+        width: 46
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a09425333135320800000000000000
+      internalID: 2545399325539240462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_57
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 504
+        width: 45
+        height: 42
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123e350e96e5e0de0800000000000000
+      internalID: -1365049828218510559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_58
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 504
+        width: 44
+        height: 42
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a823b6c40f034c470800000000000000
+      internalID: 8413903812467307146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_59
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 504
+        width: 43
+        height: 42
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d14673559d4530b90800000000000000
+      internalID: -7276879280486259683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_60
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 504
+        width: 44
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8123070e32d8eefa0800000000000000
+      internalID: -5769518887386205672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_61
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 505
+        width: 39
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec795e3638147b70800000000000000
+      internalID: 8895761785216924908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_62
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 504
+        width: 35
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f6f72b0cf4b2840800000000000000
+      internalID: 5200337883776380696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_63
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 420
+        width: 51
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa9efe55c1130220800000000000000
+      internalID: 2450822161619655336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_64
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 420
+        width: 50
+        height: 46
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d28fa2fb3b613c70800000000000000
+      internalID: 8949051839780717268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_65
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 420
+        width: 50
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf3c1ea3be2ab190800000000000000
+      internalID: -7945987243286708261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_66
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 420
+        width: 44
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b97f4c734ea48920800000000000000
+      internalID: 2991707657352477111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_67
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 421
+        width: 39
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 540fe3c6558eeee90800000000000000
+      internalID: -6994397717673873339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_68
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 420
+        width: 37
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8a84b9e8881ac20800000000000000
+      internalID: 3216001754991208690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_69
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 420
+        width: 23
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc07efc44d5fd8dd0800000000000000
+      internalID: -2482057527437659955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_70
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 420
+        width: 27
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098253cdcb72f2a00800000000000000
+      internalID: 733848956386486416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_71
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 420
+        width: 26
+        height: 42
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 968140d937cccee60800000000000000
+      internalID: 7992988235603384425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_72
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 420
+        width: 31
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475c2370e0b9a2230800000000000000
+      internalID: 3614872135470859636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_73
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 420
+        width: 52
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58677a23b44a69aa0800000000000000
+      internalID: -6154551197875865979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_74
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 420
+        width: 52
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 217908116ce5ec230800000000000000
+      internalID: 3660967751888967442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_75
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 420
+        width: 52
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63dc0cb7a51f05ff0800000000000000
+      internalID: -49274224975491786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_76
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 420
+        width: 26
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754e348ff49f26320800000000000000
+      internalID: 2549874460908053591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_77
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 420
+        width: 18
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e74dcb49b8226f00800000000000000
+      internalID: 1108493234592368608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_78
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 336
+        width: 23
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b7b21e28d25d270800000000000000
+      internalID: 8274569930509876046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_79
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 336
+        width: 20
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f092fa36ae0f720800000000000000
+      internalID: 2878057875751112461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_80
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 336
+        width: 23
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da6953697fda2030800000000000000
+      internalID: 3470832175293229782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_81
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 336
+        width: 53
+        height: 58
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a82c282f550d4b0800000000000000
+      internalID: -5417735851662472552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_82
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 336
+        width: 46
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d209a44833583c40800000000000000
+      internalID: 5492231246713520851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_83
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 336
+        width: 33
+        height: 46
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1d607ac78274470800000000000000
+      internalID: 8378710147589394899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_84
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 336
+        width: 22
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f738cb2cc22d860800000000000000
+      internalID: 7553148739951755046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_85
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 336
+        width: 25
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e376d03f4b15610800000000000000
+      internalID: 1608265497942900243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_86
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 336
+        width: 30
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92454030d2a417b60800000000000000
+      internalID: 7742050791611192361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_87
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 336
+        width: 26
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85b948afc3f44e40800000000000000
+      internalID: 5639900706581886350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_88
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 336
+        width: 34
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bcab3b15878918e0800000000000000
+      internalID: -1722196376735208272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_89
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 336
+        width: 35
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f83698fed6229c40800000000000000
+      internalID: 5517515232577468661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_90
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 336
+        width: 22
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6264f7040c83adb20800000000000000
+      internalID: 3159900486920783398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_91
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 336
+        width: 27
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30dff78cf3a387290800000000000000
+      internalID: -7892494301345612541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_92
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 336
+        width: 30
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d600d3d31c8594b40800000000000000
+      internalID: 5424964813123813485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_93
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 252
+        width: 46
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44d7478002756b70800000000000000
+      internalID: 8891638385908110414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_94
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 252
+        width: 22
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7efb1fb8b0217e0800000000000000
+      internalID: -1796360605683161096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_95
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 252
+        width: 21
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423ec56092f0fe3f0800000000000000
+      internalID: -869459534184389852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_96
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 252
+        width: 20
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0a27e01353e20e0800000000000000
+      internalID: -2292836675472940842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_97
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 252
+        width: 25
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9735059f99f8d3090800000000000000
+      internalID: -8053122667193019527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_98
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 252
+        width: 24
+        height: 47
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9badb7fbf6c5076f0800000000000000
+      internalID: -688949107963995463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_99
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 252
+        width: 36
+        height: 47
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c61e93085d43a20800000000000000
+      internalID: 3041290395085532210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_100
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 252
+        width: 31
+        height: 48
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e923d776e4afb1840800000000000000
+      internalID: 5196021809752650398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_101
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 252
+        width: 31
+        height: 50
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676f759abd090be60800000000000000
+      internalID: 7976034213186500214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_102
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 252
+        width: 25
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc8bfd9341ffc8c0800000000000000
+      internalID: -3976694673229247265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_103
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 252
+        width: 20
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb5e7a97b004d06c0800000000000000
+      internalID: -4175610861472717378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_104
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 252
+        width: 34
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a107b7d6888f2b5c0800000000000000
+      internalID: -4201022237547204582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_105
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 252
+        width: 34
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308f5dcd97eb0c470800000000000000
+      internalID: 8412933534533416963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_106
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 252
+        width: 57
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603dd02345a1a8660800000000000000
+      internalID: 7388747087574061830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_107
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 252
+        width: 10
+        height: 4
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903da200b43400dc0800000000000000
+      internalID: -3674863306529910007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_108
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 252
+        width: 56
+        height: 30
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813ca5474e5a917f0800000000000000
+      internalID: -641299071300353256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_109
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 168
+        width: 61
+        height: 28
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4519930cd4239a800800000000000000
+      internalID: 624085332886393172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_110
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 168
+        width: 25
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7961a5d4480f12820800000000000000
+      internalID: 2891856886772668055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_111
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 168
+        width: 14
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07edaa4981521c890800000000000000
+      internalID: -7439624321935679888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_112
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 191
+        width: 22
+        height: 7
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf67e9a2292331830800000000000000
+      internalID: 4040628894043109116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_113
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 168
+        width: 25
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce107800cc8a0eb0800000000000000
+      internalID: -4752831700332962106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_114
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 168
+        width: 23
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e965ef543e0c3c8c0800000000000000
+      internalID: -3980125563300981090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_115
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 168
+        width: 19
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd92c930e0f1aed00800000000000000
+      internalID: 1002648012093925853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_116
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 168
+        width: 22
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5f853ad5e075d30800000000000000
+      internalID: 4420017354622694834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_117
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 168
+        width: 24
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc3b1403ee2b7480800000000000000
+      internalID: -8900468686006305616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_118
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 168
+        width: 25
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706ee4ad99dc91ff0800000000000000
+      internalID: -64794658943867385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_119
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 168
+        width: 23
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be7912958183c7f0800000000000000
+      internalID: -593488315200995664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_120
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 168
+        width: 23
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c9d8c36b3bd28860800000000000000
+      internalID: 7530822575040551361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_121
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 168
+        width: 23
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c16cfcf8c466c2f0800000000000000
+      internalID: -952963456741645885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_122
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 168
+        width: 23
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf689c499c582c80800000000000000
+      internalID: -8347320095846404178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_123
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 168
+        width: 24
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f164c0f662f52fe20800000000000000
+      internalID: 3382870888785135135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_124
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 84
+        width: 23
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a7ad69890044680800000000000000
+      internalID: -8771885518844953954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_125
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 84
+        width: 23
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54c20864cdbf6af0800000000000000
+      internalID: -400893190556433314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_126
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 84
+        width: 25
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9c7a90b172113a0800000000000000
+      internalID: -6696528173843625513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_127
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 84
+        width: 14
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ccb85c143d810c30800000000000000
+      internalID: 4323892372205780162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_128
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 84
+        width: 31
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0298a94696af64700800000000000000
+      internalID: 524381737201600800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_129
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 84
+        width: 30
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb03908e44db98f70800000000000000
+      internalID: 9190084618274549948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_130
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 84
+        width: 27
+        height: 51
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0a50d06477e76b0800000000000000
+      internalID: -5296664968991235892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_131
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 84
+        width: 24
+        height: 52
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e075a1d759dae30800000000000000
+      internalID: 4516430365867839064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_132
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 84
+        width: 33
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb313accaedda240800000000000000
+      internalID: 4804741211182152700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_133
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 84
+        width: 29
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aaacd635b4c13930800000000000000
+      internalID: 4121291416609270441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_134
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 84
+        width: 33
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c3c543855829540800000000000000
+      internalID: 5013215949098859639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_135
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 84
+        width: 32
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d95de19c451db5e00800000000000000
+      internalID: 1034650701493360029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_136
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 84
+        width: 33
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e9e095ceb946860800000000000000
+      internalID: 7522308717024288274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_137
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 84
+        width: 32
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4279ecc2e3679820800000000000000
+      internalID: 2924916308752036428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_138
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 84
+        width: 28
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3618ad4a407b7be80800000000000000
+      internalID: -8162854569012199069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_139
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 53
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae89c476e2811fb0800000000000000
+      internalID: -4678814611547779420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_140
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 49
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f3fb543e71caa40800000000000000
+      internalID: 5380701919696076547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_141
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 24
+        width: 7
+        height: 5
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f8421a40e84f590800000000000000
+      internalID: -7641326517206347924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_142
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 0
+        width: 40
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568aa2b0b1987cd80800000000000000
+      internalID: -8230459044751824795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_143
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 0
+        width: 40
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ef23b42712b7470800000000000000
+      internalID: 8393339105306672723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_144
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 0
+        width: 12
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c678a2a66e4dad250800000000000000
+      internalID: 5970318342121752428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_145
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 25
+        width: 12
+        height: 5
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099aa7bbc1c3f1c30800000000000000
+      internalID: 4332247460655835536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_146
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 25
+        width: 13
+        height: 5
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7af9c77c7f9d420800000000000000
+      internalID: 2655425891473008575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_147
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 0
+        width: 47
+        height: 31
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5041a89f5a934d0800000000000000
+      internalID: -3154307572814314046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_148
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 0
+        width: 44
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4802d230cb60d6c00800000000000000
+      internalID: 895379305493504132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_149
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 0
+        width: 37
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8f1f39a09303200800000000000000
+      internalID: 157688704552532190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrcCombatAnimationsaseprite2_150
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 0
+        width: 35
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c7fac77558ff7f0800000000000000
+      internalID: -576595616479609730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

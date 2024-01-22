@@ -6,6 +6,7 @@ public class CombatManager : MonoBehaviour
 {
     public string hitEnemy;
     private AudioManager_PrototypeHero m_audioManager;
+    public GameObject crosshair;
 
     // Start is called before the first frame update
     void Start()
@@ -76,6 +77,13 @@ public class CombatManager : MonoBehaviour
                     modifiery = .05f;
                     m_audioManager.PlaySound("Hurt");
                 }
+                if (attackType.StartsWith("MagicArrowUp"))
+                {
+                    baseDmg = 3.0f;
+                    baseKB = 0.1f;
+                    modifiery = .1f;
+                    m_audioManager.PlaySound("Hurt");
+                }
 
                 ProjectileHit(attackType, enemy, m_player, baseDmg, baseKB, modifierx, modifiery, multmodifiery, hitstun);
             }
@@ -121,6 +129,14 @@ public class CombatManager : MonoBehaviour
 
                     modifiery = 2f;
                     m_audioManager.PlaySound("Hurt");
+                }
+                if (attackType.StartsWith("BBDAHB"))
+                {
+                    baseDmg = 3.0f;
+                    baseKB = .18f;
+                    modifiery = .14f;
+                    modifierx = .15f;
+                    m_audioManager.PlaySound("BluntHit");
                 }
                 if (attackType.StartsWith("ChampSideSpecialBomb"))
                 {
@@ -261,6 +277,13 @@ public class CombatManager : MonoBehaviour
                     modifiery = 1f;
                     m_audioManager.PlaySound("Hurt");
                 }
+                if (attackType.StartsWith("DPDash"))
+                {
+                    baseDmg = 3.3f;
+                    baseKB = .23f;
+                    modifiery = 1.5f;
+                    m_audioManager.PlaySound("BluntHit");
+                }
                 if (attackType.StartsWith("ProtoUTilt"))
                 {
                     baseDmg = 3.2f;
@@ -303,6 +326,13 @@ public class CombatManager : MonoBehaviour
                     baseKB = 0.1f;
                     modifiery = 8f;
                     m_audioManager.PlaySound("Hurt");
+
+                    if (m_player.GetComponent<PrototypeHero>().currentHookTarget == null)
+                    {
+                        GameObject.Instantiate(crosshair, enemy);
+                        m_player.GetComponent<PrototypeHero>().currentHookTarget = enemy.gameObject;
+                    }
+                    
                 }
                 if (attackType.StartsWith("FSmash"))
                 {
@@ -367,13 +397,7 @@ public class CombatManager : MonoBehaviour
                     modifiery = .1f;
                     m_audioManager.PlaySound("Hurt");
                 }
-                if (attackType.StartsWith("MagicArrowUp"))
-                {
-                    baseDmg = 3.0f;
-                    baseKB = 0.1f;
-                    modifiery = .1f;
-                    m_audioManager.PlaySound("Hurt");
-                }
+                
                 if (attackType.StartsWith("RRJabHB"))
                 {
                     baseDmg = 3.2f;
@@ -439,6 +463,14 @@ public class CombatManager : MonoBehaviour
                     modifierx = .1f;
                     m_audioManager.PlaySound("MagicHit");
                 }
+                if (attackType.StartsWith("RRDAHB"))
+                {
+                    baseDmg = 2.0f;
+                    baseKB = .15f;
+                    modifiery = .15f;
+                    modifierx = .1f;
+                    m_audioManager.PlaySound("MagicHit");
+                }
                 if (attackType.StartsWith("GolemFlick"))
                 {
                     baseDmg = 7f;
@@ -461,6 +493,7 @@ public class CombatManager : MonoBehaviour
                 {
                     enemy.parent = m_player;
                     enemy.GetComponentInParent<Conqueror>().isGrappled = true;
+                    
                 }
                 else
                 {
@@ -506,11 +539,11 @@ public class CombatManager : MonoBehaviour
 
             }
 
-            //hit a player
+            //hit a playera
             else if (enemy.GetComponentInParent<Conqueror>() != null && enemy.GetComponentInParent<Conqueror>().teamColor != m_player.GetComponentInParent<Conqueror>().teamColor && enemy.tag.StartsWith("Player") && hitEnemy != enemy.name && !alreadyHit)
             {
 
-
+                enemy.GetComponentInParent<Conqueror>().m_fallingdown = false;
                 if (attackType.StartsWith("NSpecFire") || attackType.StartsWith("ChargeBall") || attackType.StartsWith("RR") || attackType.StartsWith("MagicArrow"))
                 {
                     hitEnemy = "None";
@@ -521,11 +554,12 @@ public class CombatManager : MonoBehaviour
                 }
 
                 var above = false;
-
+                
                 if (isGrab)
                 {
                     enemy.parent = m_player;
                     enemy.GetComponentInParent<Conqueror>().isGrappled = true;
+                    m_player.GetComponentInParent<Conqueror>().grabbedPlayers.Add(enemy.GetComponentInParent<Conqueror>());
                 }
                 else
                 {
@@ -533,6 +567,18 @@ public class CombatManager : MonoBehaviour
                     if (enemy.GetComponentInParent<Conqueror>() != null)
                     {
                         enemy.GetComponentInParent<Conqueror>().isGrappled = false;
+                        foreach(var c in enemy.GetComponentInParent<Conqueror>().grabbedPlayers)
+                        {
+                            c.transform.parent = null;
+                            c.isGrappled = false;
+                        }
+                        foreach (var c in enemy.GetComponentInParent<Conqueror>().grabbedMinions)
+                        {
+                            c.transform.parent = null;
+                            c.isGrappled = false;
+                        }
+                        enemy.GetComponentInParent<Conqueror>().grabbedPlayers.Clear();
+                        enemy.GetComponentInParent<Conqueror>().grabbedMinions.Clear();
                     }
 
                 }
@@ -745,7 +791,7 @@ public class CombatManager : MonoBehaviour
         if (enemy.GetComponentInParent<Conqueror>() != null && enemy.GetComponentInParent<Conqueror>().teamColor != m_projectile.GetComponentInParent<ProjectileBehavior>().teamColor && enemy.tag.StartsWith("Player") && hitEnemy != enemy.name)
         {
 
-
+            enemy.GetComponentInParent<Conqueror>().m_fallingdown = false;
             hitEnemy = "None";
 
             var above = false;
@@ -754,6 +800,18 @@ public class CombatManager : MonoBehaviour
                 if (enemy.GetComponentInParent<Conqueror>() != null)
                 {
                     enemy.GetComponentInParent<Conqueror>().isGrappled = false;
+                    foreach (var c in enemy.GetComponentInParent<Conqueror>().grabbedPlayers)
+                    {
+                        c.transform.parent = null;
+                        c.isGrappled = false;
+                    }
+                    foreach (var c in enemy.GetComponentInParent<Conqueror>().grabbedMinions)
+                    {
+                        c.transform.parent = null;
+                        c.isGrappled = false;
+                    }
+                    enemy.GetComponentInParent<Conqueror>().grabbedPlayers.Clear();
+                    enemy.GetComponentInParent<Conqueror>().grabbedMinions.Clear();
                 }
 
             //Detect impact angle

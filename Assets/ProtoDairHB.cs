@@ -4,17 +4,9 @@ using UnityEngine;
 
 public class ProtoDairHB : MonoBehaviour
 {
-    private PolygonCollider2D pCollider;
     // Start is called before the first frame update
     void Start()
     {
-        pCollider = transform.GetComponent<PolygonCollider2D>();
-        LineRenderer lr = transform.GetComponent<LineRenderer>();
-        if (lr == null)
-        {
-            lr = pCollider.gameObject.AddComponent<LineRenderer>();
-        //
-        }
         //
         ////2. Assign Material to the new Line Renderer
         ////lr.material = new Material(Shader.Find("Particles/Additive"));

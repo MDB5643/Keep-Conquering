@@ -3,6 +3,7 @@ using System.Collections;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.InputSystem;
 
 public class CPUBehavior : Conqueror
 {
@@ -40,6 +41,7 @@ public class CPUBehavior : Conqueror
     // Use this for initialization
     void Start()
     {
+        isPlayer = false;
         playerNumber = 3;
         if (playerNumber == 4)
         {
@@ -56,6 +58,7 @@ public class CPUBehavior : Conqueror
             MovingPlatformTarget = GameObject.Find("RedMinionPlatformTarget");
             GondolaTarget = GameObject.Find("RedMinionGondolaTarget");
             EyeTarget = GameObject.Find("RedMinionEyeTarget");
+            TowerPlatformTarget = GameObject.Find("Jumppoint5");
         }
         if (GondolaTarget == null)
         {
@@ -75,351 +78,374 @@ public class CPUBehavior : Conqueror
 
         leftLimit = GameObject.Find("CPULimitL").transform;
         rightLimit = GameObject.Find("CPULimitR").transform;
-        m_DamageDisplay = GameObject.Find("DmgDisplayP2").GetComponentInChildren<Text>();
+        if (routine == "Lane")
+        {
+            m_DamageDisplay = GameObject.Find("DmgDisplayP2").GetComponentInChildren<Text>();
+        }
+        //
 
         SelectTarget();
     }
 
     // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
-        if (EyeTarget == null && KeepEyeTarget != null)
+        if (!m_fallingdown)
         {
-            EyeTarget = KeepEyeTarget;
-        }
-
-        if (teamColor == "Red" && routine == "Lane" && transform.position.x < TowerPlatformTarget.transform.position.x && EyeTarget != null)
-        {
-            if (EyeTarget.name != "MinionKeepEyeTarget" && EyeTarget.name != "BlueMinionKeepEyeTarget")
+            if (EyeTarget == null && KeepEyeTarget != null)
             {
-                target = EyeTarget.transform;
+                EyeTarget = KeepEyeTarget;
             }
-            else if (transform.position.x < -37 && KeepEyeTarget != null)
+
+            if (teamColor == "Red" && routine == "Lane" && transform.position.x < TowerPlatformTarget.transform.position.x && EyeTarget != null)
             {
-                target = EyeTarget.transform;
+                if (EyeTarget.name != "MinionKeepEyeTarget" && EyeTarget.name != "BlueMinionKeepEyeTarget")
+                {
+                    target = EyeTarget.transform;
+                }
+                else if (transform.position.x < -37 && KeepEyeTarget != null)
+                {
+                    target = EyeTarget.transform;
+                }
             }
-        }
-        if (teamColor == "Blue" && routine == "Lane" && transform.position.x > TowerPlatformTarget.transform.position.x && EyeTarget != null)
-        {
-            if (EyeTarget.name != "MinionKeepEyeTarget" && EyeTarget.name != "BlueMinionKeepEyeTarget")
+            if (teamColor == "Blue" && routine == "Lane" && transform.position.x > TowerPlatformTarget.transform.position.x && EyeTarget != null)
             {
-                target = EyeTarget.transform;
+                if (EyeTarget.name != "MinionKeepEyeTarget" && EyeTarget.name != "BlueMinionKeepEyeTarget")
+                {
+                    target = EyeTarget.transform;
+                }
+                else if (transform.position.x > 120 && KeepEyeTarget != null)
+                {
+                    target = EyeTarget.transform;
+                }
             }
-            else if (transform.position.x > 120 && KeepEyeTarget != null)
+
+            if (target == null && routine == "Lane")
             {
-                target = EyeTarget.transform;
+                target = TowerPlatformTarget.transform;
+                CurrentJumpTarget = "Gondola";
             }
-        }
 
-        if (target == null && routine == "Lane")
-        {
-            target = TowerPlatformTarget.transform;
-            CurrentJumpTarget = "Gondola";
-        }
-
-        if (isGrappled)
-        {
-            m_disableMovementTimer = 1.0f;
-        }
-        // Check for interactable overlapping objects
-        CheckOverlaps();
-
-        m_DamageDisplay.text = currentDamage + "%";
-
-        if (!InsideofLimits() && !inRange && m_timeSinceAttack > 0.2f)
-        {
-            SelectTarget();
-        }
-
-        // Decrease death respawn timer 
-        m_respawnTimer -= Time.deltaTime;
-
-        // Increase timer that controls attack combo
-        m_timeSinceAttack += Time.deltaTime;
-        m_TimeSinceJab2 += Time.deltaTime;
-        m_timeSinceSideSpecial += Time.deltaTime;
-        m_timeSinceStun += Time.deltaTime;
-        m_timeSinceNSpec += Time.deltaTime;
-        timeSinceSmashAttack += Time.deltaTime;
-        m_timeSinceChargeStart += Time.deltaTime;
-
-        // Decrease timer that checks if we are in parry stance
-        m_parryTimer -= Time.deltaTime;
-
-        // Decrease timer that disables input movement. Used when attacking
-        m_disableMovementTimer -= Time.deltaTime;
-
-        // Respawn Hero if dead
-        if (m_dead && m_respawnTimer < 0.0f)
-            RespawnHero();
-
-        if (m_dead)
-            return;
-
-        if (!m_inHitStun && !isGrappled)
-        {
-            if (!m_isInHitStop)
+            if (isGrappled)
             {
-                m_animator.speed = 1;
-                if (m_animator.GetBool("isParrying"))
+                m_disableMovementTimer = 1.0f;
+            }
+            // Check for interactable overlapping objects
+            CheckOverlaps();
+
+            m_DamageDisplay.text = currentDamage + "%";
+
+            if (!InsideofLimits() && !inRange && m_timeSinceAttack > 0.2f)
+            {
+                SelectTarget();
+            }
+
+            // Decrease death respawn timer 
+            m_respawnTimer -= Time.deltaTime;
+
+            // Increase timer that controls attack combo
+            m_timeSinceAttack += Time.deltaTime;
+            m_TimeSinceJab2 += Time.deltaTime;
+            m_timeSinceSideSpecial += Time.deltaTime;
+            m_timeSinceStun += Time.deltaTime;
+            m_timeSinceNSpec += Time.deltaTime;
+            timeSinceSmashAttack += Time.deltaTime;
+            m_timeSinceChargeStart += Time.deltaTime;
+
+            // Decrease timer that checks if we are in parry stance
+            m_parryTimer -= Time.deltaTime;
+
+            // Decrease timer that disables input movement. Used when attacking
+            m_disableMovementTimer -= Time.deltaTime;
+
+
+            if (!m_inHitStun && !isGrappled && !m_fallingdown)
+            {
+                if (!m_isInHitStop)
                 {
-                    if (shieldBar.shieldHealth > 0.0f)
+                    m_animator.speed = 1;
+                    if (m_animator.GetBool("isParrying"))
                     {
-                        shieldBar.shieldHealth -= .02f;
-                        shieldBar.GetComponent<SpriteRenderer>().enabled = true;
-                    }
-                    else
-                    {
-                        m_animator.SetBool("isParrying", false);
-                        m_isParrying = false;
-                        m_animator.SetTrigger("ShieldBreak");
-                        m_animator.SetBool("isStunned", true);
-                        m_timeSinceStun = 0.0f;
-                        m_disableMovementTimer = 4.0f;
-                        shieldBar.shieldHealth = 1.0f;
-                        shieldBar.GetComponent<SpriteRenderer>().enabled = false;
-                    }
-                    if (m_facingDirection == 1)
-                    {
-                        shieldBar.transform.position = new Vector3(transform.position.x + 0.64f, transform.position.y + 0.15f, transform.position.z + 0.0f);
-                        shieldBar.GetComponent<SpriteRenderer>().flipX = false;
-                    }
-                    else
-                    {
-                        shieldBar.transform.position = new Vector3(transform.position.x - 0.64f, transform.position.y + 0.15f, transform.position.z + 0.0f);
-                        shieldBar.GetComponent<SpriteRenderer>().flipX = true;
-                    }
-
-                }
-                else
-                {
-                    shieldBar.GetComponent<SpriteRenderer>().enabled = false;
-                    if (shieldBar.shieldHealth < 56)
-                    {
-                        shieldBar.shieldHealth += .02f;
-                    }
-                    //shieldBarFrame.enabled = false;
-                }
-                if (m_timeSinceSideSpecial > .08f && hookActive == true && hookPrefab != null)
-                {
-                    hookActive = false;
-                }
-                if (hookPrefab != null)
-                {
-                    //Actions while hook is out
-                    if (hookPrefab.latched == true)
-                    {
-
-                    }
-
-                }
-                if ((m_fSmashCharging || m_uSmashCharging || m_dSmashCharging) && m_timeSinceChargeStart <= m_maxSmashChargeTime)
-                {
-                    m_chargeModifier += .01f;
-                }
-                else if ((m_fSmashCharging) && m_timeSinceChargeStart > m_maxSmashChargeTime && m_fullCharge == false)
-                {
-                    Instantiate(ChargeFlashFX, new Vector3(transform.position.x + (.6f * -m_facingDirection), transform.position.y - .3f, transform.position.z),
-                new Quaternion(0f, 0f, 0f, 0f), transform);
-                    m_fullCharge = true;
-                }
-                else if ((m_uSmashCharging) && m_timeSinceChargeStart > m_maxSmashChargeTime && m_fullCharge == false)
-                {
-                    Instantiate(ChargeFlashFX, new Vector3(transform.position.x + (.5f * m_facingDirection), transform.position.y - .2f, transform.position.z),
-                new Quaternion(0f, 0f, 0f, 0f), transform);
-                    m_fullCharge = true;
-                }
-                else if ((m_dSmashCharging) && m_timeSinceChargeStart > m_maxSmashChargeTime && m_fullCharge == false)
-                {
-                    Instantiate(ChargeFlashFX, new Vector3(transform.position.x + (.65f * -m_facingDirection), transform.position.y - .23f, transform.position.z),
-                new Quaternion(0f, 0f, 0f, 0f), transform);
-                    m_fullCharge = true;
-                }
-                //Update damage
-                m_DamageDisplay.text = currentDamage + "%";
-                // Check for interactable overlapping objects
-                CheckOverlaps();
-                // Decrease death respawn timer 
-                m_respawnTimer -= Time.deltaTime;
-
-                
-
-                // Decrease timer that checks if we are in parry stance
-                //m_parryTimer -= Time.deltaTime;
-
-                // Decrease timer that disables input movement. Used when attacking
-                m_disableMovementTimer -= Time.deltaTime;
-
-                // Respawn Hero if dead
-                if (m_dead && m_respawnTimer < 0.0f)
-                    RespawnHero();
-
-                if (m_dead)
-                    return;
-
-                //Check if character just landed on the ground
-                if (!m_grounded && m_groundSensor.State())
-                {
-                    m_jumpCount = 0;
-                    m_grounded = true;
-                    m_animator.SetBool("Grounded", m_grounded);
-                    m_launched = false;
-                    //m_SpriteShaper.DrawDebug();
-                }
-
-                //Check if character just started falling
-                if (m_grounded && !m_groundSensor.State())
-                {
-                    m_grounded = false;
-                    m_animator.SetBool("Grounded", m_grounded);
-                    m_fSmashCharging = false;
-                    m_animator.SetBool("FSmashCharge", false);
-                    m_uSmashCharging = false;
-                    m_animator.SetBool("USmashCharge", false);
-                    m_crouching = false;
-                    m_dSmashCharging = false;
-                    m_animator.SetBool("DSmashCharge", false);
-                    m_animator.SetBool("Crouching", false);
-                    m_animator.SetBool("isParrying", false);
-                    m_parryTimer = -1.0f;
-                    m_isParrying = false;
-                }
-
-                // -- Handle input and movement --
-                float inputX = 0.0f;
-
-                // Check if character is currently moving
-
-                // SlowDownSpeed helps decelerate the characters when stopping
-                float SlowDownSpeed = m_moving ? 1.0f : 0.5f;
-                float KBSlowDownSpeed = 0.5f;
-                // Set movement
-
-                // Set AirSpeed in animator
-                m_animator.SetFloat("AirSpeedY", m_body2d.velocity.y);
-
-                // Set Animation layer for hiding sword
-                int boolInt = m_hideSword ? 1 : 0;
-                m_animator.SetLayerWeight(1, boolInt);
-
-                // Check if all sensors are setup properly
-                if (m_wallSensorR1 && m_wallSensorR2 && m_wallSensorL1 && m_wallSensorL2)
-                {
-                    bool prevWallSlide = m_wallSlide;
-                    //Wall Slide
-                    // True if TWO right sensors are colliding and character is facing right
-                    // OR if TWO left sensors are colliding and character is facing left
-                    m_wallSlide = (m_wallSensorR1.State() && m_wallSensorR2.State() && m_facingDirection == 1) || (m_wallSensorR1.State() && m_wallSensorR0.State() && m_facingDirection == 1) || (m_wallSensorL1.State() && m_wallSensorL2.State() && m_facingDirection == -1) || (m_wallSensorL1.State() && m_wallSensorL0.State() && m_facingDirection == -1);
-                    if (m_grounded)
-                        m_wallSlide = false;
-                    m_animator.SetBool("WallSlide", m_wallSlide);
-                    //Play wall slide sound
-                    if (prevWallSlide && !m_wallSlide)
-                        AudioManager_PrototypeHero.instance.StopSound("WallSlide");
-
-
-                    //Grab Ledge
-                    // True if either bottom right sensor is colliding and top right sensor is not colliding 
-                    // OR if bottom left sensor is colliding and top left sensor is not colliding 
-                    if (m_ledgeGrab)
-                    {
-                        m_climbPosition = ledge.transform.position + new Vector3(ledge.topClimbPosition.x, ledge.topClimbPosition.y, 0);
-                    }
-                    bool shouldGrab = !m_ledgeClimb && !m_ledgeGrab && ((m_wallSensorR1.State() && !m_wallSensorR2.State()) || (m_wallSensorL1.State() && !m_wallSensorL2.State()) || (m_wallSensorR0.State() && !m_wallSensorR1.State()) || (m_wallSensorL0.State() && !m_wallSensorL1.State()));
-                    if (shouldGrab)
-                    {
-                        Vector3 rayStart;
-                        if (m_facingDirection == 1)
-                            rayStart = m_wallSensorR2.transform.position + new Vector3(0.2f, 0.0f, 0.0f);
-                        else
-                            rayStart = m_wallSensorL2.transform.position - new Vector3(0.2f, 0.0f, 0.0f);
-
-                        var hit = Physics2D.Raycast(rayStart, Vector2.down, 1.0f);
-
-                        ledge = null;
-                        if (hit)
-                            ledge = hit.transform.GetComponent<GrabableLedge>();
-
-                        if (ledge)
+                        if (shieldBar.shieldHealth > 0.0f)
                         {
-                            m_ledgeGrab = true;
-                            m_body2d.velocity = Vector2.zero;
-                            m_body2d.gravityScale = 0;
-
-                            m_climbPosition = ledge.transform.position + new Vector3(ledge.topClimbPosition.x, ledge.topClimbPosition.y, 0);
-                            if (m_facingDirection == 1)
-                                transform.position = ledge.transform.position + new Vector3(ledge.leftGrabPosition.x, ledge.leftGrabPosition.y, 0);
-                            else
-                                transform.position = ledge.transform.position + new Vector3(ledge.rightGrabPosition.x, ledge.rightGrabPosition.y, 0);
-
-                            if (hit.transform.tag == "MovingLedge")
-                            {
-                                transform.SetParent(hit.transform.parent);
-                            }
+                            shieldBar.shieldHealth -= .02f;
+                            shieldBar.GetComponent<SpriteRenderer>().enabled = true;
                         }
-                        m_animator.SetBool("LedgeGrab", m_ledgeGrab);
+                        else
+                        {
+                            m_animator.SetBool("isParrying", false);
+                            m_isParrying = false;
+                            m_animator.SetTrigger("ShieldBreak");
+                            m_animator.SetBool("isStunned", true);
+                            m_timeSinceStun = 0.0f;
+                            m_disableMovementTimer = 4.0f;
+                            shieldBar.shieldHealth = 1.0f;
+                            shieldBar.GetComponent<SpriteRenderer>().enabled = false;
+                        }
+                        if (m_facingDirection == 1)
+                        {
+                            shieldBar.transform.position = new Vector3(transform.position.x + 0.64f, transform.position.y + 0.15f, transform.position.z + 0.0f);
+                            shieldBar.GetComponent<SpriteRenderer>().flipX = false;
+                        }
+                        else
+                        {
+                            shieldBar.transform.position = new Vector3(transform.position.x - 0.64f, transform.position.y + 0.15f, transform.position.z + 0.0f);
+                            shieldBar.GetComponent<SpriteRenderer>().flipX = true;
+                        }
+
+                    }
+                    else
+                    {
+                        shieldBar.GetComponent<SpriteRenderer>().enabled = false;
+                        if (shieldBar.shieldHealth < 56)
+                        {
+                            shieldBar.shieldHealth += .02f;
+                        }
+                        //shieldBarFrame.enabled = false;
+                    }
+                    if (m_timeSinceSideSpecial > .08f && hookActive == true && hookPrefab != null)
+                    {
+                        hookActive = false;
+                    }
+                    if (hookPrefab != null)
+                    {
+                        //Actions while hook is out
+                        if (hookPrefab.latched == true)
+                        {
+
+                        }
+
+                    }
+                    if ((m_fSmashCharging || m_uSmashCharging || m_dSmashCharging) && m_timeSinceChargeStart <= m_maxSmashChargeTime)
+                    {
+                        m_chargeModifier += .01f;
+                    }
+                    else if ((m_fSmashCharging) && m_timeSinceChargeStart > m_maxSmashChargeTime && m_fullCharge == false)
+                    {
+                        Instantiate(ChargeFlashFX, new Vector3(transform.position.x + (.6f * -m_facingDirection), transform.position.y - .3f, transform.position.z),
+                    new Quaternion(0f, 0f, 0f, 0f), transform);
+                        m_fullCharge = true;
+                    }
+                    else if ((m_uSmashCharging) && m_timeSinceChargeStart > m_maxSmashChargeTime && m_fullCharge == false)
+                    {
+                        Instantiate(ChargeFlashFX, new Vector3(transform.position.x + (.5f * m_facingDirection), transform.position.y - .2f, transform.position.z),
+                    new Quaternion(0f, 0f, 0f, 0f), transform);
+                        m_fullCharge = true;
+                    }
+                    else if ((m_dSmashCharging) && m_timeSinceChargeStart > m_maxSmashChargeTime && m_fullCharge == false)
+                    {
+                        Instantiate(ChargeFlashFX, new Vector3(transform.position.x + (.65f * -m_facingDirection), transform.position.y - .23f, transform.position.z),
+                    new Quaternion(0f, 0f, 0f, 0f), transform);
+                        m_fullCharge = true;
+                    }
+                    //Update damage
+                    m_DamageDisplay.text = currentDamage + "%";
+
+                    //Update stock count
+                    if (m_StockDisplay)
+                    {
+                        m_StockDisplay.text = "x" + m_StockCount;
+                    }
+                    // Check for interactable overlapping objects
+                    CheckOverlaps();
+                    // Decrease death respawn timer 
+                    m_respawnTimer -= Time.deltaTime;
+
+
+
+                    // Decrease timer that checks if we are in parry stance
+                    //m_parryTimer -= Time.deltaTime;
+
+                    // Decrease timer that disables input movement. Used when attacking
+                    m_disableMovementTimer -= Time.deltaTime;
+
+                    if (m_StockCount == 0)
+                    {
+                        isEliminated = true;
                     }
 
-                }
+                    // Respawn Hero if dead
+                    if (m_dead && m_respawnTimer < 0.0f && !isEliminated)
+                        RespawnHero();
 
+                    if (m_dead)
+                        return;
 
-                // -- Handle Animations --
-
-                if (m_timeSinceStun > 4.0f)
-                {
-                    if (m_animator.GetBool("isStunned"))
+                    //Check if character just landed on the ground
+                    if (!m_grounded && m_groundSensor.State())
                     {
-                        m_animator.SetBool("isStunned", false);
+                        m_jumpCount = 0;
+                        m_grounded = true;
+                        m_animator.SetBool("Grounded", m_grounded);
+                        m_launched = false;
+                        //m_SpriteShaper.DrawDebug();
                     }
-                    if (Input.GetKeyUp("left shift"))
+
+                    //Check if character just started falling
+                    if (m_grounded && !m_groundSensor.State())
                     {
+                        m_grounded = false;
+                        m_animator.SetBool("Grounded", m_grounded);
+                        m_fSmashCharging = false;
+                        m_animator.SetBool("FSmashCharge", false);
+                        m_uSmashCharging = false;
+                        m_animator.SetBool("USmashCharge", false);
+                        m_crouching = false;
+                        m_dSmashCharging = false;
+                        m_animator.SetBool("DSmashCharge", false);
+                        m_animator.SetBool("Crouching", false);
                         m_animator.SetBool("isParrying", false);
                         m_parryTimer = -1.0f;
                         m_isParrying = false;
                     }
-                    //Self destruct
-                    //if (Input.GetKeyDown("e") && !m_dodging)
-                    //{
-                    //    m_animator.SetBool("noBlood", m_noBlood);
-                    //    m_animator.SetTrigger("Death");
-                    //    m_respawnTimer = 2.5f;
-                    //    DisableWallSensors();
-                    //    m_dead = true;
-                    //}
 
-                    var distance = Vector2.Distance(transform.position, target.position);
+                    // -- Handle input and movement --
+                    float inputX = 0.0f;
 
-                    //Attack
-                    if (m_uSmashCharging == true && !m_fSmashCharging && m_timeSinceChargeStart > m_maxSmashChargeTime)
+                    // Check if character is currently moving
+
+                    // SlowDownSpeed helps decelerate the characters when stopping
+                    float SlowDownSpeed = m_moving ? 1.0f : 0.5f;
+                    float KBSlowDownSpeed = 0.5f;
+                    // Set movement
+                    if (!m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_animator.GetBool("isParrying") && m_disableMovementTimer < 0.0f && !m_launched && m_fSmashCharging == false
+                        && m_uSmashCharging == false && m_dSmashCharging == false && !preview)
                     {
-                        m_animator.SetTrigger("USmash");
-                        m_animator.SetBool("USmashCharge", false);
-                        // Reset timer
-                        m_timeSinceAttack = 0.0f;
-                        timeSinceSmashAttack = 0.0f;
+                        if (!m_isInKnockback)
+                        {
+                            m_timeSinceKnockBack = 0.0f;
+                            if (m_KnockBackMomentumX <= 1 && m_KnockBackMomentumY <= 1)
+                            {
+                                //m_body2d.velocity = new Vector2(m_maxSpeed * SlowDownSpeed, m_body2d.velocity.y);
 
-                        m_uSmashCharging = false;
-                        m_fullCharge = false;
+                            }
+                            else
+                            {
+                                m_body2d.velocity = new Vector2(m_KnockBackMomentumX, m_KnockBackMomentumY);
 
-                        m_disableMovementTimer = 0.35f;
+
+                                m_KnockBackMomentumX = m_KnockBackMomentumX * KBSlowDownSpeed;
+                                m_KnockBackMomentumY = m_KnockBackMomentumY * KBSlowDownSpeed;
+                            }
+
+                        }
+                        else
+                        {
+                            m_timeSinceKnockBack += Time.deltaTime;
+                            if (m_timeSinceKnockBack > m_KnockBackDuration)
+                            {
+                                //
+                                //    m_body2d.velocity = new Vector2(m_body2d.velocity.x * KBSlowDownSpeed, 0);
+                                m_isInKnockback = false;
+                                m_KnockBackMomentumX = m_body2d.velocity.x;
+                                m_KnockBackMomentumY = m_body2d.velocity.y;
+                                m_animator.SetBool("Knockback", false);
+                                //
+                            }
+                            //else
+                            //{
+                            //    m_body2d.velocity = new Vector2(m_body2d.velocity.x * KBSlowDownSpeed, m_body2d.velocity.y * KBSlowDownSpeed);
+                            //}
+
+                        }
                     }
-                    else if (m_fSmashCharging == true && !m_uSmashCharging && m_timeSinceChargeStart > m_maxSmashChargeTime)
+
+                    // Set AirSpeed in animator
+                    m_animator.SetFloat("AirSpeedY", m_body2d.velocity.y);
+
+                    // Set Animation layer for hiding sword
+                    int boolInt = m_hideSword ? 1 : 0;
+                    m_animator.SetLayerWeight(1, boolInt);
+
+                    // Check if all sensors are setup properly
+                    if (m_wallSensorR1 && m_wallSensorR2 && m_wallSensorL1 && m_wallSensorL2)
                     {
-                        m_animator.SetTrigger("FSmash");
-                        m_animator.SetBool("FSmashCharge", false);
-                        // Reset timer
-                        m_timeSinceAttack = 0.0f;
-                        timeSinceSmashAttack = 0.0f;
+                        bool prevWallSlide = m_wallSlide;
+                        //Wall Slide
+                        // True if TWO right sensors are colliding and character is facing right
+                        // OR if TWO left sensors are colliding and character is facing left
+                        m_wallSlide = (m_wallSensorR1.State() && m_wallSensorR2.State() && m_facingDirection == 1) || (m_wallSensorR1.State() && m_wallSensorR0.State() && m_facingDirection == 1) || (m_wallSensorL1.State() && m_wallSensorL2.State() && m_facingDirection == -1) || (m_wallSensorL1.State() && m_wallSensorL0.State() && m_facingDirection == -1);
+                        if (m_grounded)
+                            m_wallSlide = false;
+                        m_animator.SetBool("WallSlide", m_wallSlide);
+                        //Play wall slide sound
+                        if (prevWallSlide && !m_wallSlide)
+                            AudioManager_PrototypeHero.instance.StopSound("WallSlide");
 
-                        m_fSmashCharging = false;
-                        m_fullCharge = false;
 
-                        m_disableMovementTimer = 0.35f;
+                        //Grab Ledge
+                        // True if either bottom right sensor is colliding and top right sensor is not colliding 
+                        // OR if bottom left sensor is colliding and top left sensor is not colliding 
+                        if (m_ledgeGrab)
+                        {
+                            m_climbPosition = ledge.transform.position + new Vector3(ledge.topClimbPosition.x, ledge.topClimbPosition.y, 0);
+                        }
+                        bool shouldGrab = !m_ledgeClimb && !m_ledgeGrab && ((m_wallSensorR1.State() && !m_wallSensorR2.State()) || (m_wallSensorL1.State() && !m_wallSensorL2.State()) || (m_wallSensorR0.State() && !m_wallSensorR1.State()) || (m_wallSensorL0.State() && !m_wallSensorL1.State()));
+                        if (shouldGrab)
+                        {
+                            Vector3 rayStart;
+                            if (m_facingDirection == 1)
+                                rayStart = m_wallSensorR2.transform.position + new Vector3(0.2f, 0.0f, 0.0f);
+                            else
+                                rayStart = m_wallSensorL2.transform.position - new Vector3(0.2f, 0.0f, 0.0f);
+
+                            var hit = Physics2D.Raycast(rayStart, Vector2.down, 1.0f);
+
+                            ledge = null;
+                            if (hit)
+                                ledge = hit.transform.GetComponent<GrabableLedge>();
+
+                            if (ledge)
+                            {
+                                m_ledgeGrab = true;
+                                m_body2d.velocity = Vector2.zero;
+                                m_body2d.gravityScale = 0;
+
+                                m_climbPosition = ledge.transform.position + new Vector3(ledge.topClimbPosition.x, ledge.topClimbPosition.y, 0);
+                                if (m_facingDirection == 1)
+                                    transform.position = ledge.transform.position + new Vector3(ledge.leftGrabPosition.x, ledge.leftGrabPosition.y, 0);
+                                else
+                                    transform.position = ledge.transform.position + new Vector3(ledge.rightGrabPosition.x, ledge.rightGrabPosition.y, 0);
+
+                                if (hit.transform.tag == "MovingLedge")
+                                {
+                                    transform.SetParent(hit.transform.parent);
+                                }
+                            }
+                            m_animator.SetBool("LedgeGrab", m_ledgeGrab);
+                        }
+
                     }
 
-                    if (attackDistance >= distance && inRange && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > 0.15f && m_TimeSinceJab2 > 0.45f)
+
+                    // -- Handle Animations --
+
+                    if (m_timeSinceStun > 4.0f && !m_isInKnockback)
                     {
-                        if (m_uSmashCharging == true && !m_fSmashCharging && m_timeSinceChargeStart > 2.0f)
+                        if (m_animator.GetBool("isStunned"))
+                        {
+                            m_animator.SetBool("isStunned", false);
+                        }
+                        if (Input.GetKeyUp("left shift"))
+                        {
+                            m_animator.SetBool("isParrying", false);
+                            m_parryTimer = -1.0f;
+                            m_isParrying = false;
+                        }
+                        //Self destruct
+                        //if (Input.GetKeyDown("e") && !m_dodging)
+                        //{
+                        //    m_animator.SetBool("noBlood", m_noBlood);
+                        //    m_animator.SetTrigger("Death");
+                        //    m_respawnTimer = 2.5f;
+                        //    DisableWallSensors();
+                        //    m_dead = true;
+                        //}
+
+                        var distance = Vector2.Distance(transform.position, target.position);
+
+                        //Attack
+                        if (m_uSmashCharging == true && !m_fSmashCharging && m_timeSinceChargeStart > m_maxSmashChargeTime)
                         {
                             m_animator.SetTrigger("USmash");
                             m_animator.SetBool("USmashCharge", false);
@@ -432,7 +458,7 @@ public class CPUBehavior : Conqueror
 
                             m_disableMovementTimer = 0.35f;
                         }
-                        else if (m_fSmashCharging == true && !m_uSmashCharging && m_timeSinceChargeStart > 2.0f)
+                        else if (m_fSmashCharging == true && !m_uSmashCharging && m_timeSinceChargeStart > m_maxSmashChargeTime)
                         {
                             m_animator.SetTrigger("FSmash");
                             m_animator.SetBool("FSmashCharge", false);
@@ -445,204 +471,240 @@ public class CPUBehavior : Conqueror
 
                             m_disableMovementTimer = 0.35f;
                         }
-                        else if (m_wallSensorR2.State() || m_wallSensorL2.State())
-                        {
-                            if (timeSinceSmashAttack > smashAttackInterval)
-                            {
-                                if (m_fSmashCharging != true && !m_uSmashCharging)
-                                {
-                                    m_timeSinceChargeStart = 0.0f;
-                                    m_uSmashCharging = true;
-                                    m_uSmashCharging = true;
-                                    m_animator.SetBool("USmashCharge", true);
 
-                                    
-                                }
-                                // Disable movement 
+                        if (attackDistance >= distance && inRange && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > 0.15f && m_TimeSinceJab2 > 0.45f)
+                        {
+                            if (m_uSmashCharging == true && !m_fSmashCharging && m_timeSinceChargeStart > 2.0f)
+                            {
+                                m_animator.SetTrigger("USmash");
+                                m_animator.SetBool("USmashCharge", false);
+                                // Reset timer
+                                m_timeSinceAttack = 0.0f;
+                                timeSinceSmashAttack = 0.0f;
+
+                                m_uSmashCharging = false;
+                                m_fullCharge = false;
+
                                 m_disableMovementTimer = 0.35f;
+                            }
+                            else if (m_fSmashCharging == true && !m_uSmashCharging && m_timeSinceChargeStart > 2.0f)
+                            {
+                                m_animator.SetTrigger("FSmash");
+                                m_animator.SetBool("FSmashCharge", false);
+                                // Reset timer
+                                m_timeSinceAttack = 0.0f;
+                                timeSinceSmashAttack = 0.0f;
+
+                                m_fSmashCharging = false;
+                                m_fullCharge = false;
+
+                                m_disableMovementTimer = 0.35f;
+                            }
+                            else if (m_wallSensorR2.State() || m_wallSensorL2.State() && !m_fSmashCharging && !m_uSmashCharging)
+                            {
+                                if (timeSinceSmashAttack > smashAttackInterval)
+                                {
+                                    if (m_fSmashCharging != true && !m_uSmashCharging)
+                                    {
+                                        m_timeSinceChargeStart = 0.0f;
+                                        m_uSmashCharging = true;
+                                        m_uSmashCharging = true;
+                                        m_animator.SetBool("USmashCharge", true);
+
+
+                                    }
+                                    // Disable movement 
+                                    m_disableMovementTimer = 0.35f;
+                                }
+                                else
+                                {
+                                    m_animator.SetTrigger("UpAttack");
+
+                                    // Reset timer
+                                    m_timeSinceAttack = 0.0f;
+
+                                    //Attack(upTiltDamage, upTiltKB, upTiltRange, 0, 2, upTiltPoint);
+
+                                    // Disable movement 
+                                    m_disableMovementTimer = 0.35f;
+                                }
+
                             }
                             else
                             {
-                                m_animator.SetTrigger("UpAttack");
-
-                                // Reset timer
-                                m_timeSinceAttack = 0.0f;
-
-                                //Attack(upTiltDamage, upTiltKB, upTiltRange, 0, 2, upTiltPoint);
-
-                                // Disable movement 
-                                m_disableMovementTimer = 0.35f;
-                            }
-                            
-                        }
-                        else
-                        {
-                            if (timeSinceSmashAttack > smashAttackInterval)
-                            {
-                                if (m_fSmashCharging != true && !m_uSmashCharging)
+                                if (timeSinceSmashAttack > smashAttackInterval)
                                 {
-                                    m_timeSinceChargeStart = 0.0f;
-                                    m_fSmashCharging = true;
-                                    m_animator.SetBool("FSmashCharge", true);
-                                    
+                                    if (m_fSmashCharging != true && !m_uSmashCharging)
+                                    {
+                                        m_timeSinceChargeStart = 0.0f;
+                                        m_fSmashCharging = true;
+                                        m_animator.SetBool("FSmashCharge", true);
+
+                                    }
+                                    // Disable movement 
+                                    m_disableMovementTimer = 0.35f;
+
                                 }
-                                // Disable movement 
-                                m_disableMovementTimer = 0.35f;
-
-                            }
-                            else
-                            {
-                                // Reset timer
-                                m_timeSinceAttack = 0.0f;
-
-                                m_currentAttack++;
-
-                                if (m_currentAttack == 2)
+                                else
                                 {
-                                    m_TimeSinceJab2 = 0.0f;
+                                    // Reset timer
+                                    m_timeSinceAttack = 0.0f;
+
+                                    m_currentAttack++;
+
+                                    if (m_currentAttack == 2)
+                                    {
+                                        m_TimeSinceJab2 = 0.0f;
+                                    }
+
+                                    // Loop back to one after second attack
+                                    if (m_currentAttack > 2)
+                                        m_currentAttack = 1;
+
+                                    // Reset Attack combo if time since last attack is too large
+                                    if (m_timeSinceAttack > .8f)
+                                        m_currentAttack = 1;
+
+                                    // Call one of the two attack animations "Attack1" or "Attack2"
+                                    m_animator.SetTrigger("Attack" + m_currentAttack);
+
+                                    m_disableMovementTimer = 0.45f;
                                 }
 
-                                // Loop back to one after second attack
-                                if (m_currentAttack > 2)
-                                    m_currentAttack = 1;
-
-                                // Reset Attack combo if time since last attack is too large
-                                if (m_timeSinceAttack > .8f)
-                                    m_currentAttack = 1;
-
-                                // Call one of the two attack animations "Attack1" or "Attack2"
-                                m_animator.SetTrigger("Attack" + m_currentAttack);
-
-                                m_disableMovementTimer = 0.45f;
                             }
-                           
                         }
                     }
+
+                    //Check if character just landed on the ground
+                    if (!m_grounded && m_groundSensor.State())
+                    {
+                        m_grounded = true;
+                        m_animator.SetBool("Grounded", m_grounded);
+                    }
+
+                    //Check if character just started falling
+                    if (m_grounded && !m_groundSensor.State())
+                    {
+                        m_grounded = false;
+                        m_animator.SetBool("Grounded", m_grounded);
+                    }
+
+                    // -- Handle input and movement --
+                    if (m_disableMovementTimer < 0.0f && m_grounded && !m_fSmashCharging && !m_uSmashCharging)
+                    {
+                        Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
+
+                        transform.position = Vector2.MoveTowards(transform.position, targetPosition, m_runSpeed * Time.deltaTime);
+
+                        m_moving = true;
+                    }
+
+
+                    //Run
+                    if (m_moving)
+                    {
+                        m_animator.SetInteger("AnimState", 1);
+                        m_maxSpeed = m_runSpeed;
+                        m_animator.SetBool("StayDown", false);
+                    }
+
+                    //Idle
+                    else
+                    {
+                        m_animator.SetInteger("AnimState", 0);
+                    }
+
+                    //jump to recover
+                    if (transform.position.y < -2 && m_jumpCount < 2 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > 0.3f && m_timeSinceSideSpecial > 2.0f
+                            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
+                    {
+
+                        if (transform.position.x > rightLimit.position.x)
+                        {
+                            m_body2d.velocity = new Vector2(-1, m_jumpForce);
+                            m_animator.SetTrigger("Jump");
+                            m_grounded = false;
+                            m_animator.SetBool("Grounded", m_grounded);
+                            m_groundSensor.Disable(0.2f);
+                            m_jumpCount++;
+                        }
+                        else if (transform.position.x < leftLimit.position.x)
+                        {
+                            m_body2d.velocity = new Vector2(-1, m_jumpForce);
+                            m_animator.SetTrigger("Jump");
+                            m_grounded = false;
+                            m_animator.SetBool("Grounded", m_grounded);
+                            m_groundSensor.Disable(0.2f);
+                            m_jumpCount++;
+                        }
+
+
+                    }
+                    if (transform.name.Contains("Prototype"))
+                    {
+                        if (transform.position.x > rightLimit.position.x && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > 0.3f && m_timeSinceSideSpecial > 2.0f
+                            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && m_jumpCount >= 1)
+                        {
+                            ThrowHook();
+                            m_animator.SetTrigger("Throw");
+                            hookActive = true;
+                            m_timeSinceSideSpecial = 0.0f;
+
+                            m_disableMovementTimer = 1.0f;
+                        }
+                        else if (transform.position.x < leftLimit.position.x && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > 0.3f && m_timeSinceSideSpecial > 2.0f
+                                        && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && m_jumpCount >= 1)
+                        {
+                            ThrowHook();
+                            m_animator.SetTrigger("Throw");
+                            hookActive = true;
+                            m_timeSinceSideSpecial = 0.0f;
+
+                            m_disableMovementTimer = 1.0f;
+                        }
+                    }
+
                 }
-
-                //Check if character just landed on the ground
-                if (!m_grounded && m_groundSensor.State())
-                {
-                    m_grounded = true;
-                    m_animator.SetBool("Grounded", m_grounded);
-                }
-
-                //Check if character just started falling
-                if (m_grounded && !m_groundSensor.State())
-                {
-                    m_grounded = false;
-                    m_animator.SetBool("Grounded", m_grounded);
-                }
-
-                // -- Handle input and movement --
-                if (m_disableMovementTimer < 0.0f && m_grounded && !m_fSmashCharging && !m_uSmashCharging)
-                {
-                    Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
-
-                    transform.position = Vector2.MoveTowards(transform.position, targetPosition, m_runSpeed * Time.deltaTime);
-
-                    m_moving = true;
-                }
-
-
-                //Run
-                if (m_moving)
-                {
-                    m_animator.SetInteger("AnimState", 1);
-                    m_maxSpeed = m_runSpeed;
-                }
-
-                //Idle
                 else
                 {
-                    m_animator.SetInteger("AnimState", 0);
-                }
-                
-                //jump to recover
-                if (transform.position.y < -2 && m_jumpCount < 2 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > 0.3f && m_timeSinceSideSpecial > 2.0f
-                        && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
-                {
-                    
-                    if (transform.position.x > rightLimit.position.x)
+                    m_body2d.velocity = Vector2.zero;
+                    m_body2d.gravityScale = 0;
+                    m_timeSinceHitStop += Time.deltaTime;
+                    m_animator.speed = 0;
+                    if (m_timeSinceHitStop >= m_hitStopDuration)
                     {
-                        m_body2d.velocity = new Vector2(-1, m_jumpForce);
-                        m_animator.SetTrigger("Jump");
-                        m_grounded = false;
-                        m_animator.SetBool("Grounded", m_grounded);
-                        m_groundSensor.Disable(0.2f);
-                        m_jumpCount++;
-                    }
-                    else if (transform.position.x < leftLimit.position.x)
-                    {
-                        m_body2d.velocity = new Vector2(-1, m_jumpForce);
-                        m_animator.SetTrigger("Jump");
-                        m_grounded = false;
-                        m_animator.SetBool("Grounded", m_grounded);
-                        m_groundSensor.Disable(0.2f);
-                        m_jumpCount++;
-                    }
-
-                    
-                }
-                if (transform.name.Contains("Prototype"))
-                {
-                    if (transform.position.x > rightLimit.position.x && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > 0.3f && m_timeSinceSideSpecial > 2.0f
-                        && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && m_jumpCount >= 1)
-                    {
-                        ThrowHook();
-                        m_animator.SetTrigger("Throw");
-                        hookActive = true;
-                        m_timeSinceSideSpecial = 0.0f;
-
-                        m_disableMovementTimer = 1.0f;
-                    }
-                    else if (transform.position.x < leftLimit.position.x && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > 0.3f && m_timeSinceSideSpecial > 2.0f
-                                    && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && m_jumpCount >= 1)
-                    {
-                        ThrowHook();
-                        m_animator.SetTrigger("Throw");
-                        hookActive = true;
-                        m_timeSinceSideSpecial = 0.0f;
-
-                        m_disableMovementTimer = 1.0f;
+                        m_body2d.gravityScale = 1.25f;
+                        m_isInHitStop = false;
+                        m_animator.speed = 1;
                     }
                 }
-                
             }
             else
             {
-                m_body2d.velocity = Vector2.zero;
-                m_body2d.gravityScale = 0;
-                m_timeSinceHitStop += Time.deltaTime;
-                m_animator.speed = 0;
-                if (m_timeSinceHitStop >= m_hitStopDuration)
+                if (m_inHitStun)
                 {
-                    m_body2d.gravityScale = 1.25f;
-                    m_isInHitStop = false;
-                    m_animator.speed = 1;
+                    m_body2d.velocity = Vector2.zero;
+                    m_body2d.gravityScale = 0;
+                    m_timeSinceHitStun += Time.deltaTime;
+                    m_animator.speed = 0;
+                    if (m_timeSinceHitStun >= m_hitStunDuration)
+                    {
+                        m_body2d.gravityScale = 1.25f;
+                        Knockback(incomingKnockback, incomingAngle, incomingXMod, incomingYMod);
+                        m_isInKnockback = true;
+                    }
+                }
+                else if (isGrappled)
+                {
+                    m_animator.speed = 0;
                 }
             }
         }
         else
         {
-            if (m_inHitStun)
-            {
-                m_body2d.velocity = Vector2.zero;
-                m_body2d.gravityScale = 0;
-                m_timeSinceHitStun += Time.deltaTime;
-                m_animator.speed = 0;
-                if (m_timeSinceHitStun >= m_hitStunDuration)
-                {
-                    m_body2d.gravityScale = 1.25f;
-                    Knockback(incomingKnockback, incomingAngle, incomingXMod, incomingYMod);
-                    m_isInKnockback = true;
-                }
-            }
-            else if (isGrappled)
-            {
-                m_animator.speed = 0;
-            }
+            m_animator.speed = 1;
         }
+        
     }
     //
     //Handle collisions w/o sensor
@@ -659,14 +721,17 @@ public class CPUBehavior : Conqueror
             }
 
         }
-        if (coll.gameObject.CompareTag("BlastZone") || coll.gameObject.CompareTag("BlastZoneMid"))
+        if ((coll.gameObject.CompareTag("BlastZone") || coll.gameObject.CompareTag("BlastZoneMid")) && !m_dead)
         {
             currentDamage = 0.0f;
+            m_animator.SetBool("Knockback", false);
             m_animator.SetBool("noBlood", m_noBlood);
             m_animator.SetTrigger("Death");
             m_respawnTimer = 2.5f;
             DisableWallSensors();
             m_dead = true;
+            m_StockCount--;
+            //gameObject.SetActive(false);
         }
         if (coll.gameObject.CompareTag("RightLauncher"))
         {
@@ -674,13 +739,22 @@ public class CPUBehavior : Conqueror
             m_launched = true;
             m_disableMovementTimer = 0.1f;
             e_Rigidbody2D.AddForce(new Vector2(42, 8), ForceMode2D.Impulse);
-        }
+        }  
         if (coll.gameObject.CompareTag("LeftLauncher"))
         {
             var e_Rigidbody2D = GetComponent<Rigidbody2D>();
             m_launched = true;
             m_disableMovementTimer = 0.1f;
             e_Rigidbody2D.AddForce(new Vector2(-42, 8), ForceMode2D.Impulse);
+        }
+
+        if (coll.gameObject.CompareTag("Ground") && m_animator.GetBool("Knockback") && transform.position.y >= coll.transform.position.y && transform.GetComponent<Rigidbody2D>().velocity.y <= 0)
+        {
+            m_animator.SetTrigger("FallToProne");
+            m_animator.SetBool("StayDown", true);
+            m_fallingdown = true;
+            m_isInKnockback = false;
+            m_animator.SetBool("Knockback", false);
         }
     }
 
@@ -903,7 +977,11 @@ public class CPUBehavior : Conqueror
             }
             if (teamColor == "Red")
             {
-                if (transform.position.x < firstLauncherTarget.transform.position.x && transform.position.x > MovingPlatformTarget.transform.position.x && target.name != "LeftEdge" && target.name != "RightEdge")
+                if (target == null)
+                {
+                    target = MovingPlatformTarget.transform;
+                }
+                else if (transform.position.x < firstLauncherTarget.transform.position.x && transform.position.x > MovingPlatformTarget.transform.position.x && target.name != "LeftEdge" && target.name != "RightEdge")
                 {
                     target = MovingPlatformTarget.transform;
                 }
@@ -1006,6 +1084,10 @@ public class CPUBehavior : Conqueror
             if (collision.transform.name.Contains("ChargeBall"))
             {
                 GameObject.Destroy(collision.transform.parent.gameObject);
+            }
+            if (collision.transform.name.Contains("MagicArrow") && collision.GetComponentInParent<ProjectileBehavior>().teamColor != teamColor)
+            {
+                GameObject.Destroy(collision.transform.gameObject);
             }
             if (collision.GetComponentInParent<CombatManager>())
             {
@@ -1173,5 +1255,45 @@ public class CPUBehavior : Conqueror
             collision.GetComponentInParent<TowerEye>().enemiesInBounds.Remove(transform.gameObject);
             m_isInHotZone = false;
         }
+    }
+
+    protected override void BasicAction(InputAction.CallbackContext ctx)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    protected override void SpecialAction(InputAction.CallbackContext ctx)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    protected override void ForwardSmashAction(InputAction.CallbackContext ctx)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    protected override void UpSmashAction(InputAction.CallbackContext ctx)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    protected override void DownSmashAction(InputAction.CallbackContext ctx)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    protected override void ReverseForwardSmashAction(InputAction.CallbackContext ctx)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    protected override void ShieldAction(InputAction.CallbackContext ctx)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    protected override void DodgeAction(InputAction.CallbackContext ctx)
+    {
+        throw new System.NotImplementedException();
     }
 }

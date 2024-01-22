@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 368131403649467742}
   - component: {fileID: 7718535721606742631}
-  - component: {fileID: -4840073906975623093}
   m_Layer: 15
   m_Name: ProtoUTiltHB
   m_TagString: AttackHitbox
@@ -73,15 +72,3 @@ PolygonCollider2D:
       - {x: 0.4949177, y: -0.4891275}
       - {x: 0.5631784, y: -0.68598247}
       - {x: 0.9510565, y: 0.30901712}
---- !u!114 &-4840073906975623093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6714514734185759331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f68a9ae4a3b708743ae6ee2697f4abce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

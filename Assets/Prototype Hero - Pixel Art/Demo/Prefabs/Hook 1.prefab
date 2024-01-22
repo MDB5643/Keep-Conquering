@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9169704136410324180}
   - component: {fileID: 5697949801499143375}
   - component: {fileID: 1727778989995994042}
+  - component: {fileID: 9151286251221196093}
   m_Layer: 0
   m_Name: Hook 1
   m_TagString: Untagged
@@ -102,7 +103,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.32, y: 0.32}
     newSize: {x: 0.32, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -126,3 +127,28 @@ MonoBehaviour:
   latched: 0
   speed: 20
   activeTime: 0
+  homing: 0
+  target: {fileID: 0}
+  rb: {fileID: 0}
+  rotateSpeed: 1500
+--- !u!50 &9151286251221196093
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4633592600095981275}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.01
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

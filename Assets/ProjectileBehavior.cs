@@ -16,6 +16,7 @@ public class ProjectileBehavior : MonoBehaviour
     private void Start()
     {
         startingYpos = transform.position.y;
+
     }
     void Update()
     {
@@ -27,6 +28,16 @@ public class ProjectileBehavior : MonoBehaviour
         {
             transform.position += transform.right * Time.deltaTime * speed / 2;
             transform.position += transform.up * Time.deltaTime * speed / 2;
+        }
+        if (transform.name.Contains("MagicArrowUp"))
+        {
+            transform.position += transform.right * Time.deltaTime * speed / 2;
+            transform.position += transform.up * Time.deltaTime * speed / 2;
+            activeTime += Time.deltaTime;
+            if (activeTime >= .6f)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
@@ -47,11 +58,27 @@ public class ProjectileBehavior : MonoBehaviour
             {
                 Physics2D.IgnoreCollision(collision.collider, transform.GetComponent<PolygonCollider2D>());
             }
-            else if (!collision.transform.name.Contains("Platform"))
+            else if (!collision.transform.name.Contains("Platform") && !collision.transform.GetComponent<Conqueror>())
             {
                 Destroy(gameObject);
             }
-            else
+            else if (!collision.transform.GetComponent<Conqueror>())
+            {
+                Physics2D.IgnoreCollision(collision.collider, transform.GetComponent<PolygonCollider2D>());
+            }
+        }
+        if (transform.name == "MagicArrowUp")
+        {
+            if (collision.transform.GetComponent<Conqueror>() && collision.transform.GetComponent<Conqueror>().teamColor == teamColor)
+            {
+                Physics2D.IgnoreCollision(collision.collider, transform.GetComponent<PolygonCollider2D>());
+            }
+            else if (!collision.transform.name.Contains("Platform") && !collision.transform.GetComponent<Conqueror>())
+            {
+                Destroy(gameObject);
+                transform.GetComponentInChildren<RunebornRanger>().upSpecActive = false;
+            }
+            else if (!collision.transform.GetComponent<Conqueror>())
             {
                 Physics2D.IgnoreCollision(collision.collider, transform.GetComponent<PolygonCollider2D>());
             }

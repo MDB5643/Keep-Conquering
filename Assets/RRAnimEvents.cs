@@ -44,6 +44,7 @@ public class RRAnimEvents : MonoBehaviour
     public GameObject fSpecDangerZone;
     public GameObject fSpecHitbox;
     public GameObject dSpecHitbox;
+    public GameObject dashAttackHitbox;
 
     public GameObject activeHitbox;
     private GameObject activeHitbox2;
@@ -99,6 +100,30 @@ public class RRAnimEvents : MonoBehaviour
             xDisplace = -0.8f;
         }
         activeHitbox = Instantiate(downTilt1Hitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y - .16f, m_player.transform.position.z),
+            rotQuat, m_player.transform);
+        if (m_player.transform.CompareTag("PlayerMid"))
+        {
+            activeHitbox.layer = 19;
+        }
+        c_Manager.hitEnemy = "None";
+    }
+
+    void AE_dashAttack()
+    {
+        m_audioManager.PlaySound("RRJab");
+        Quaternion rotQuat = new Quaternion();
+        float xDisplace = 0.0f;
+        if (m_player.m_facingDirection == 1)
+        {
+            rotQuat = new Quaternion(0f, 0f, 0f, 0f);
+            xDisplace = 0f;
+        }
+        else
+        {
+            rotQuat = new Quaternion(0f, 180f, 0f, 0f);
+            xDisplace = 0f;
+        }
+        activeHitbox = Instantiate(dashAttackHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y - .4f, m_player.transform.position.z),
             rotQuat, m_player.transform);
         if (m_player.transform.CompareTag("PlayerMid"))
         {
@@ -209,6 +234,11 @@ public class RRAnimEvents : MonoBehaviour
     void AE_Throw()
     {
         m_audioManager.PlaySound("Jump");
+    }
+
+    void AE_FellDown()
+    {
+        m_player.m_fallingdown = false;
     }
 
     void AE_Parry()
@@ -707,7 +737,10 @@ public class RRAnimEvents : MonoBehaviour
             xDisplace = -0.4f;
         }
         activeHitbox = Instantiate(upSpecHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + .29f, m_player.transform.position.z),
-            rotQuat, m_player.transform);
+            rotQuat, null);
+        activeHitbox.GetComponent<ProjectileBehavior>().teamColor = m_player.teamColor;
+        transform.GetComponentInParent<RunebornRanger>().m_ActiveArrow = activeHitbox.GetComponent<ProjectileBehavior>();
+        transform.GetComponentInParent<RunebornRanger>().upSpecActive = true;
         if (m_player.transform.CompareTag("PlayerMid"))
         {
             activeHitbox.layer = 19;

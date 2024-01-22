@@ -232,19 +232,19 @@ MonoBehaviour:
     m_loop: 0
   - m_name: MainMenu
     m_clips:
-    - {fileID: 8300000, guid: 44e45dcb2ffc00545b5d38d22953d650, type: 3}
-    volume: 0.25
-    pitch: 0.54
-    m_randomVolumeRange: {x: 0.95, y: 1.05}
-    m_randomPitchRange: {x: 0.54, y: 0.7}
+    - {fileID: 8300000, guid: 99dc369b6d32b4b4fa02dccc1d5ecb7d, type: 3}
+    volume: 0.703
+    pitch: 1.049
+    m_randomVolumeRange: {x: 0.703, y: 0.703}
+    m_randomPitchRange: {x: 1.049, y: 1.049}
     m_loop: 1
   - m_name: Practice
     m_clips:
-    - {fileID: 8300000, guid: 44e45dcb2ffc00545b5d38d22953d650, type: 3}
+    - {fileID: 8300000, guid: a9d3c296d364c564ba62f02344293a01, type: 3}
     volume: 0.52
     pitch: 0.86
-    m_randomVolumeRange: {x: 0.95, y: 1.05}
-    m_randomPitchRange: {x: 0.54, y: 0.7}
+    m_randomVolumeRange: {x: 0.7, y: 0.7}
+    m_randomPitchRange: {x: 0.7, y: 0.7}
     m_loop: 1
   - m_name: BBFire
     m_clips:
@@ -272,7 +272,7 @@ MonoBehaviour:
     m_loop: 0
   - m_name: ProxyHeavy
     m_clips:
-    - {fileID: 8300000, guid: 763af7adc4fdc534ba1af18553daa5a9, type: 3}
+    - {fileID: 8300000, guid: 6ac94b35ed1204b2087c9c3f623a006d, type: 3}
     volume: 0.69
     pitch: 0.86
     m_randomVolumeRange: {x: 0.85, y: 0.85}
@@ -337,6 +337,38 @@ MonoBehaviour:
   - m_name: RRSmash
     m_clips:
     - {fileID: 8300000, guid: ac8442f04e7c48044af73f825b821225, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.85, y: 0.85}
+    m_randomPitchRange: {x: 0.95, y: 1.05}
+    m_loop: 0
+  - m_name: UnarmedAttack
+    m_clips:
+    - {fileID: 8300000, guid: 826654b8e712057458963c6c39a759a4, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.85, y: 0.85}
+    m_randomPitchRange: {x: 0.95, y: 1.05}
+    m_loop: 0
+  - m_name: ShieldBash
+    m_clips:
+    - {fileID: 8300000, guid: 4ce36bfb54d32254b977ac3ca89f693d, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.85, y: 0.85}
+    m_randomPitchRange: {x: 0.95, y: 1.05}
+    m_loop: 0
+  - m_name: BluntHit
+    m_clips:
+    - {fileID: 8300000, guid: bba2595bf59d843f9aed21046295d561, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.85, y: 0.85}
+    m_randomPitchRange: {x: 0.95, y: 1.05}
+    m_loop: 0
+  - m_name: PunchSwing
+    m_clips:
+    - {fileID: 8300000, guid: 53e4574c66187bf47a64cb28865a927e, type: 3}
     volume: 0.69
     pitch: 0.86
     m_randomVolumeRange: {x: 0.85, y: 0.85}

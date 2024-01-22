@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 476066568592810516}
   - component: {fileID: 8928037522972363180}
-  - component: {fileID: 8263043355369797224}
   - component: {fileID: 661394659576654878}
   - component: {fileID: 6748551009921527699}
+  - component: {fileID: 1147882398994494082}
+  - component: {fileID: 134172439751066391}
   m_Layer: 15
   m_Name: MagicArrowUp
   m_TagString: AttackHitbox
@@ -86,22 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8263043355369797224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1484496523145175099}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f2590721bce38345a4efbc1456a7380, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  latched: 0
-  speed: 20
-  activeTime: 0
-  startingYpos: 0
 --- !u!60 &661394659576654878
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -154,3 +139,34 @@ MonoBehaviour:
     bottom: 1
     left: 1
     right: 1
+--- !u!114 &1147882398994494082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484496523145175099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3626d1067387f4b9a736358c059c60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  latched: 0
+  speed: 20
+  activeTime: 0
+  startingYpos: 0
+  explosion: {fileID: 0}
+  teamColor: 
+--- !u!114 &134172439751066391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484496523145175099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b19c873a7a694e54e8a39ecf9c6b42f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitEnemy: 

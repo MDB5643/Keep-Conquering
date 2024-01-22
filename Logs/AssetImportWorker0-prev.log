@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.1/staging' branch; Version is '2021.1.5f1 (3737af19df53) revision 3618735'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19045.3448; Version 2009; 64bit' Language: 'en' Physical Memory: 8141 MB
+OS: 'Windows 10 Home; OS build 19045.3930; Version 2009; 64bit' Language: 'en' Physical Memory: 16333 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ M:/GameDev/KeepConquering-repo/Keep-Conquering
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63897
+49375
 Successfully changed project path to: M:/GameDev/KeepConquering-repo/Keep-Conquering
 M:/GameDev/KeepConquering-repo/Keep-Conquering
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 184.04 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 221.46 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.5f1 (3737af19df53)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/Resources/UnitySubsystems
@@ -30,387 +30,352 @@ Direct3D:
     Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
     Vendor:   NVIDIA
     VRAM:     5968 MB
-    Driver:   31.0.15.3623
+    Driver:   31.0.15.3667
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56136
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56508
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003268 seconds.
+Registered in 0.003602 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 199.42 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 227.01 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.927 seconds
+- Completed reload, in  2.013 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004834 seconds.
+Registered in 0.005491 seconds.
 Begin MonoManager ReloadAssembly
 OnLevelWasLoaded was found on Fading
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
 
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 202.11 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 228.43 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.557 seconds
+- Completed reload, in  1.702 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 1.65 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.75 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4715 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 216.0 MB.
-System memory in use after: 216.1 MB.
+Unloading 5031 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 229.0 MB.
+System memory in use after: 229.3 MB.
 
-Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 5212.
-Total: 3.178400 ms (FindLiveObjects: 0.424200 ms CreateObjectMapping: 0.140100 ms MarkObjects: 2.446200 ms  DeleteObjects: 0.166600 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/ConquerorPrefabs/Battlemaster.prefab
-  artifactKey: Guid(0d8ac43ce9f501247a34cb01d02b546b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ConquerorPrefabs/Battlemaster.prefab using Guid(0d8ac43ce9f501247a34cb01d02b546b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'PrototypeHero 1': Transition 'AnyState -> AttackUpHold' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
-
- -> (artifact id: '63b3eb202c6506bd5e0891dc2b466693') in 1.097398 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000350 seconds.
-  path: Assets/ConquerorPrefabs/PrototypeHero.prefab
-  artifactKey: Guid(e481822248898d04e9808a3d3ca78e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ConquerorPrefabs/PrototypeHero.prefab using Guid(e481822248898d04e9808a3d3ca78e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'PrototypeHero 1': Transition 'AnyState -> AttackUpHold' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
-
- -> (artifact id: '326e43b4c43a137c52cb6cfad698fc98') in 0.095172 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 228.914884 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt.png
-  artifactKey: Guid(c6c73563d53c7a54e88ca8a2dd5c0688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt.png using Guid(c6c73563d53c7a54e88ca8a2dd5c0688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '481a00267330963f5b4578e1b229544d') in 0.423054 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 334.679094 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
-  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81080692b79c4a9f9b00214d562b0c05') in 0.064663 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.247554 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
-  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f78d795fb303318ca12bb4734821409') in 0.403226 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 107.089536 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
-  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae3a4f6032afd60880c597bd16988731') in 0.324704 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 31.312109 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
-  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68ebb5307823f166bd08fc13976aa01f') in 0.357079 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 102.223804 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
-  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '639d8a6fde1a2c2ae5e15c05b78aad75') in 0.407092 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 481.742190 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
-  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab222369f9b8b863c506e49c8cde3ec7') in 0.334616 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 29.715199 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
-  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b7c297f0844293ab02de5c19bb52d43') in 0.354195 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 669.913009 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
-  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fd50f7487f3543c9e9d920cf24bfdb3') in 0.247482 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 608.628946 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
-  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d6a4e6a8e572fd82ae589b88345f8d0') in 0.318469 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 39.239767 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
-  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c10557d5a7bb588b8f384552f9359a07') in 0.385047 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 29.971120 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
-  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd0ea4fd23f21bc4b24fc0b15ae50983') in 0.346332 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 34.717910 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
-  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17b817912cc3079e27ed57c0b1a7c066') in 0.345827 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005307 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.445 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.74 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4627 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 222.0 MB.
-System memory in use after: 222.4 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 5680.
-Total: 4.151600 ms (FindLiveObjects: 0.480800 ms CreateObjectMapping: 0.141300 ms MarkObjects: 3.345600 ms  DeleteObjects: 0.182400 ms)
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 5530.
+Total: 3.414300 ms (FindLiveObjects: 0.450200 ms CreateObjectMapping: 0.140100 ms MarkObjects: 2.642400 ms  DeleteObjects: 0.180600 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 412.151588 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
-  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81e6815c581a095f843f39eb687b2cde') in 0.374289 seconds 
+  path: Assets/ConquerorPrefabs/RO/RagingOrContrl.controller
+  artifactKey: Guid(1998130de94f52b45885b2f9037bb7c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/RagingOrContrl.controller using Guid(1998130de94f52b45885b2f9037bb7c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79bf6b0d2bfbde71f22c86eda89a5eff') in 0.087497 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.384548 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
-  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc85582466cdbb7d79e7b67c877da7ce') in 0.289761 seconds 
+  Time since last request: 54.099108 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '161afd277fec82bb4c714d0dd298731d') in 0.078208 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 82.066042 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
-  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ca0b88a5d6059cb28814c7c3464352c') in 0.458314 seconds 
+  Time since last request: 18.592696 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4d2b94935f8acba293988a3abee996c') in 0.476214 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 62.789947 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
-  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75cdf0eaeab1cc45e751f227d74466f0') in 0.310785 seconds 
+  Time since last request: 103.186090 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0181f5fae14f269d1623e7b2101a2138') in 0.489575 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.717914 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
-  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6edb246acf8e53a3c0f6f51065767d4b') in 0.319369 seconds 
+  Time since last request: 12.490124 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af446f1382337b4cf5b5683670e5e170') in 0.435999 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 175.858489 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
-  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b541bc857eb2524ddebf11585a0cefc5') in 0.333492 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.018334 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 3.99 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  4.662 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4625 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 224.5 MB.
-System memory in use after: 224.8 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 5783.
-Total: 3.321400 ms (FindLiveObjects: 0.482500 ms CreateObjectMapping: 0.130800 ms MarkObjects: 2.561600 ms  DeleteObjects: 0.145500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004996 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.54 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.296 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4625 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 224.5 MB.
-System memory in use after: 224.9 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 5787.
-Total: 3.818700 ms (FindLiveObjects: 0.491300 ms CreateObjectMapping: 0.141900 ms MarkObjects: 3.032800 ms  DeleteObjects: 0.151300 ms)
-
+  Time since last request: 14.590964 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7308ad77776ece673c6726c59ab06d51') in 0.449709 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 504.791880 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
-  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f303e04d3714069a9e0d51c7d3f77d3') in 0.297024 seconds 
+  Time since last request: 8.147842 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79b1555ad0f6ad0dfc371fda6020084f') in 0.277602 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 55.475329 seconds.
-  path: Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png
-  artifactKey: Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prototype Hero - Pixel Art/Sprites/DPAlt-2.png using Guid(510e6752d95b4fd4293a8d55f8b988ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '107cf9e2e68054c72fb03e2c9cc39333') in 0.390221 seconds 
+  Time since last request: 7.532958 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c19e453bd9fbcaf1c5785db16b46df1') in 0.428253 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004994 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.26 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.288 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.70 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4625 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 225.3 MB.
-System memory in use after: 225.7 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 5828.
-Total: 4.177300 ms (FindLiveObjects: 0.592400 ms CreateObjectMapping: 0.182800 ms MarkObjects: 3.244200 ms  DeleteObjects: 0.156200 ms)
-
+Received Import Request.
+  Time since last request: 35.833555 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24202ce78d06d12d7d8ef70027766a6d') in 0.253617 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004912 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.44 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.259 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4625 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 225.2 MB.
-System memory in use after: 225.5 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 5832.
-Total: 3.445800 ms (FindLiveObjects: 0.519300 ms CreateObjectMapping: 0.143700 ms MarkObjects: 2.631300 ms  DeleteObjects: 0.150100 ms)
-
+Received Import Request.
+  Time since last request: 15.356851 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd56b747f7cb96c45cb9b434718af6738') in 0.426579 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005002 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.25 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.263 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4625 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 225.3 MB.
-System memory in use after: 225.6 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 5836.
-Total: 4.709300 ms (FindLiveObjects: 0.615600 ms CreateObjectMapping: 0.204200 ms MarkObjects: 3.665600 ms  DeleteObjects: 0.223000 ms)
-
+Received Import Request.
+  Time since last request: 5.845910 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '721611a88b437fe355ca593d34266715') in 0.454165 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005106 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.307 seconds
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on Fading
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4625 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 225.3 MB.
-System memory in use after: 225.6 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 5840.
-Total: 4.669400 ms (FindLiveObjects: 0.661700 ms CreateObjectMapping: 0.214000 ms MarkObjects: 3.579500 ms  DeleteObjects: 0.212300 ms)
-
+Received Import Request.
+  Time since last request: 8.385842 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1f29a28ac3d50a311669fdb73a33fd7') in 0.445101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 73.160648 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aeec7b521b8a901aeb1fc7541adcef0') in 0.432623 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.188184 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f376a9db7f26da3e9186fa9a3c8d694b') in 0.440902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.729586 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fb5ae2d0af791a6c33706ac5196aef7') in 0.429534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.256642 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9489ff88610476d40d842c1db0c6ee3') in 0.277550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.385322 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b7dae82e189c2c4a12e21c631f3cfa0') in 0.435262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.698963 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f83286f5dab0628c9b665e2a0293640') in 0.417013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.017462 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84288d15772c1bae39efce5e644a2c50') in 0.505278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.690491 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6359f4363b3ef44739cc1629624a12ed') in 0.287151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 97.006236 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a302dae95fe4d3a5fb187f311bf65743') in 0.426430 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.149670 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2bd73a4e7515c4b860ad2dc9b8e2407') in 0.429179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.575123 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e263963ef07dab27a7ec8d08d50df1') in 0.471122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.714005 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '877a3d653171ddaa1c4e4b9cd755eb1b') in 0.384181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.432585 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c72b05fefff6ac9b57cfd8f361f1ea8') in 0.453369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.580305 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '151e67e9dd84f15f4537900487f43938') in 0.419156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.653082 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png
+  artifactKey: Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/OrcCombatAnimationsaseprite2.png using Guid(e7f32f710e1bb1d42ae59347131ae9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef1a09fda1efdd5b29310d814d69ecb9') in 0.412131 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 274.094337 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebcc2501dec1f4c658318d161c5c87ae') in 0.040790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.543941 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dd67e888e92917d6a615103ae486208') in 0.024473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.932600 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b608f02ad15e57d0c54ee548eb89eb70') in 0.786100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 56.849800 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7e8ded1cc8573079a6c215796a4cfae') in 0.601151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.321990 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1c6b44ebfa759f85cbeeba402011145') in 0.614527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.615491 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c39bdc70d4878111bc5e4e40c8291dd9') in 0.531764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 52.312903 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcf9fef776184de26b37127caf24fd24') in 0.558967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.176172 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4798cf0d2aace5788f08eeb9dc40b83') in 0.513904 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.985429 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83cb03d93c092f24bb91ee15ed424546') in 0.664494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.870750 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6c0fe6301b6e789f818624835143abf') in 0.660400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.321573 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49bf226b1275ecad50a43bbd8ba2df43') in 0.429713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.022607 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fe53994eefcadd02261ad7b28c037bb') in 0.619175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.942817 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4c2d2ce07d1591fe1e7685e4469eca4') in 0.660414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.964317 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b57dde5dbdf3110c58959883c1a55526') in 0.414892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.045941 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df0d8f6f40479b2cbd964d92901373fe') in 0.658453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.349611 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e80831f13a30b3351a0d2bd01799b5d') in 0.642776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.793143 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac129e480c70e8ac6355df4a2007c013') in 0.423823 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.872931 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba74f4010b460357fdd7c9712451afc0') in 0.501009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.802742 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b56fa67cb968732503180d1552ccc36') in 0.570862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.309854 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a027916304703e825d2b1cd10e73241d') in 0.595034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.679312 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5664946b6f6dd0ef73694f8013e9ee7e') in 0.424428 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.833494 seconds.
+  path: Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png
+  artifactKey: Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/Aseprite/ROBaseAnimationsEdit2.png using Guid(727bb9cf68f99194e9c68530c56e8da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1268e8d4c50444652f27f52470eadae7') in 0.615038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 227.587190 seconds.
+  path: Assets/Prototype Hero - Pixel Art/Animations/Prototype Hero/Stun.anim
+  artifactKey: Guid(94fe56449ac1e4f40b41b177c935ba2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prototype Hero - Pixel Art/Animations/Prototype Hero/Stun.anim using Guid(94fe56449ac1e4f40b41b177c935ba2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b5bf4d230c845b7e6144c42aa47568e') in 0.014387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 612.422471 seconds.
+  path: Assets/ConquerorPrefabs/RO/ROFallProne.anim
+  artifactKey: Guid(7c788e906e16d9a45824e0fd076df926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ConquerorPrefabs/RO/ROFallProne.anim using Guid(7c788e906e16d9a45824e0fd076df926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '284736077b0898b57e232a15fd82b3b7') in 0.013623 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -1,0 +1,6132 @@
+fileFormatVersion: 2
+guid: cc4503ffa5cb126488abebc50df0703b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7755470094510287648
+    second: ROBaseAnimations_0
+  - first:
+      213: 275201893522592609
+    second: ROBaseAnimations_1
+  - first:
+      213: 5151028898717632634
+    second: ROBaseAnimations_2
+  - first:
+      213: -2416249888397813153
+    second: ROBaseAnimations_3
+  - first:
+      213: -612082708951676393
+    second: ROBaseAnimations_4
+  - first:
+      213: -5894235532647118978
+    second: ROBaseAnimations_5
+  - first:
+      213: 4188297212570483843
+    second: ROBaseAnimations_6
+  - first:
+      213: -78490434776040066
+    second: ROBaseAnimations_7
+  - first:
+      213: 127563720678509943
+    second: ROBaseAnimations_8
+  - first:
+      213: -8710530978369169253
+    second: ROBaseAnimations_9
+  - first:
+      213: -6991571025580128073
+    second: ROBaseAnimations_10
+  - first:
+      213: 7058319884894852174
+    second: ROBaseAnimations_11
+  - first:
+      213: 4811731002640304732
+    second: ROBaseAnimations_12
+  - first:
+      213: 7236991871099776466
+    second: ROBaseAnimations_13
+  - first:
+      213: -8961169171999501208
+    second: ROBaseAnimations_14
+  - first:
+      213: -8429228920066208610
+    second: ROBaseAnimations_15
+  - first:
+      213: 9210612982074844647
+    second: ROBaseAnimations_16
+  - first:
+      213: 1846216636278076944
+    second: ROBaseAnimations_17
+  - first:
+      213: 4919741126576667669
+    second: ROBaseAnimations_18
+  - first:
+      213: -3852709450965735819
+    second: ROBaseAnimations_19
+  - first:
+      213: -7187888782532333085
+    second: ROBaseAnimations_20
+  - first:
+      213: -3817433395814281429
+    second: ROBaseAnimations_21
+  - first:
+      213: 5783764954379348208
+    second: ROBaseAnimations_22
+  - first:
+      213: 2920032658763966649
+    second: ROBaseAnimations_23
+  - first:
+      213: 5581365208427914259
+    second: ROBaseAnimations_24
+  - first:
+      213: 178297772850547492
+    second: ROBaseAnimations_25
+  - first:
+      213: -5296250300891223385
+    second: ROBaseAnimations_26
+  - first:
+      213: -1987143604246630843
+    second: ROBaseAnimations_27
+  - first:
+      213: 7324233447101817268
+    second: ROBaseAnimations_28
+  - first:
+      213: -3691926863238474784
+    second: ROBaseAnimations_29
+  - first:
+      213: -6469211637768386789
+    second: ROBaseAnimations_30
+  - first:
+      213: 6293969396504334525
+    second: ROBaseAnimations_31
+  - first:
+      213: -5194178965882158558
+    second: ROBaseAnimations_32
+  - first:
+      213: 2852267438818334358
+    second: ROBaseAnimations_33
+  - first:
+      213: 7405305754456149262
+    second: ROBaseAnimations_34
+  - first:
+      213: 2797712203722423069
+    second: ROBaseAnimations_35
+  - first:
+      213: 3033216271011597288
+    second: ROBaseAnimations_36
+  - first:
+      213: -1052363344246727179
+    second: ROBaseAnimations_37
+  - first:
+      213: -2591707805664294374
+    second: ROBaseAnimations_38
+  - first:
+      213: -5180031453032077527
+    second: ROBaseAnimations_39
+  - first:
+      213: 3010831666743141747
+    second: ROBaseAnimations_40
+  - first:
+      213: 2523172443098024320
+    second: ROBaseAnimations_41
+  - first:
+      213: -4003931342226514984
+    second: ROBaseAnimations_42
+  - first:
+      213: -335691570609765177
+    second: ROBaseAnimations_43
+  - first:
+      213: 822583989842872214
+    second: ROBaseAnimations_44
+  - first:
+      213: -4903408078858391183
+    second: ROBaseAnimations_45
+  - first:
+      213: -4513739996762786793
+    second: ROBaseAnimations_46
+  - first:
+      213: 1690462110018189468
+    second: ROBaseAnimations_47
+  - first:
+      213: -8228203197549680669
+    second: ROBaseAnimations_48
+  - first:
+      213: -4900589323324778406
+    second: ROBaseAnimations_49
+  - first:
+      213: -935570100198250051
+    second: ROBaseAnimations_50
+  - first:
+      213: -8635371899787221688
+    second: ROBaseAnimations_51
+  - first:
+      213: -1239125469461466184
+    second: ROBaseAnimations_52
+  - first:
+      213: 6147601854302604201
+    second: ROBaseAnimations_53
+  - first:
+      213: -812962578877711679
+    second: ROBaseAnimations_54
+  - first:
+      213: 1799167547498605200
+    second: ROBaseAnimations_55
+  - first:
+      213: 5108879014834541143
+    second: ROBaseAnimations_56
+  - first:
+      213: 5485643724395628351
+    second: ROBaseAnimations_57
+  - first:
+      213: 1607666504426364536
+    second: ROBaseAnimations_58
+  - first:
+      213: -4570698727060120079
+    second: ROBaseAnimations_59
+  - first:
+      213: -4913416478038123945
+    second: ROBaseAnimations_60
+  - first:
+      213: 3656657309452719169
+    second: ROBaseAnimations_61
+  - first:
+      213: 6403893237807365599
+    second: ROBaseAnimations_62
+  - first:
+      213: -6101851061538551078
+    second: ROBaseAnimations_63
+  - first:
+      213: -3085205521258777191
+    second: ROBaseAnimations_64
+  - first:
+      213: 4540072300261814590
+    second: ROBaseAnimations_65
+  - first:
+      213: 8400069494874917115
+    second: ROBaseAnimations_66
+  - first:
+      213: -2164751322015034010
+    second: ROBaseAnimations_67
+  - first:
+      213: 8550629598589176520
+    second: ROBaseAnimations_68
+  - first:
+      213: -2153130026309300864
+    second: ROBaseAnimations_69
+  - first:
+      213: -4263690123225727566
+    second: ROBaseAnimations_70
+  - first:
+      213: 2091966698000302023
+    second: ROBaseAnimations_71
+  - first:
+      213: 1054293671158375190
+    second: ROBaseAnimations_72
+  - first:
+      213: 3749661456365740817
+    second: ROBaseAnimations_73
+  - first:
+      213: 2922028269079180917
+    second: ROBaseAnimations_74
+  - first:
+      213: 6336785242838795230
+    second: ROBaseAnimations_75
+  - first:
+      213: 7340630649395210971
+    second: ROBaseAnimations_76
+  - first:
+      213: 7591653483512183089
+    second: ROBaseAnimations_77
+  - first:
+      213: -3445475433307577877
+    second: ROBaseAnimations_78
+  - first:
+      213: -9010535618423417981
+    second: ROBaseAnimations_79
+  - first:
+      213: -4573604788157415717
+    second: ROBaseAnimations_80
+  - first:
+      213: 2904400589828381359
+    second: ROBaseAnimations_81
+  - first:
+      213: -1404392418360944903
+    second: ROBaseAnimations_82
+  - first:
+      213: 8019101562682525338
+    second: ROBaseAnimations_83
+  - first:
+      213: -7656000278439228628
+    second: ROBaseAnimations_84
+  - first:
+      213: 783719937842507526
+    second: ROBaseAnimations_85
+  - first:
+      213: -5289004293129895958
+    second: ROBaseAnimations_86
+  - first:
+      213: -3635167683113461788
+    second: ROBaseAnimations_87
+  - first:
+      213: 8832833684978924173
+    second: ROBaseAnimations_88
+  - first:
+      213: 9113115612242787074
+    second: ROBaseAnimations_89
+  - first:
+      213: -3772742335843861499
+    second: ROBaseAnimations_90
+  - first:
+      213: -4305097434363073631
+    second: ROBaseAnimations_91
+  - first:
+      213: -2524867317775077557
+    second: ROBaseAnimations_92
+  - first:
+      213: 3008186736659978807
+    second: ROBaseAnimations_93
+  - first:
+      213: -8825166602623821763
+    second: ROBaseAnimations_94
+  - first:
+      213: -3196915145158983661
+    second: ROBaseAnimations_95
+  - first:
+      213: -6264568161948968242
+    second: ROBaseAnimations_96
+  - first:
+      213: -5422066270513838970
+    second: ROBaseAnimations_97
+  - first:
+      213: 8138294987430931253
+    second: ROBaseAnimations_98
+  - first:
+      213: 2296924810642259386
+    second: ROBaseAnimations_99
+  - first:
+      213: 4508096645745543432
+    second: ROBaseAnimations_100
+  - first:
+      213: -450430419360553741
+    second: ROBaseAnimations_101
+  - first:
+      213: -1634961359702927393
+    second: ROBaseAnimations_102
+  - first:
+      213: 9018326805297761079
+    second: ROBaseAnimations_103
+  - first:
+      213: -7405007668550119360
+    second: ROBaseAnimations_104
+  - first:
+      213: -2369961879801798184
+    second: ROBaseAnimations_105
+  - first:
+      213: -3770809544887487656
+    second: ROBaseAnimations_106
+  - first:
+      213: -545565659028479240
+    second: ROBaseAnimations_107
+  - first:
+      213: -233402458496693314
+    second: ROBaseAnimations_108
+  - first:
+      213: -4495282854905272491
+    second: ROBaseAnimations_109
+  - first:
+      213: -6949508956332678319
+    second: ROBaseAnimations_110
+  - first:
+      213: 3962680326119295259
+    second: ROBaseAnimations_111
+  - first:
+      213: -4360777585766930313
+    second: ROBaseAnimations_112
+  - first:
+      213: 2618286873196654188
+    second: ROBaseAnimations_113
+  - first:
+      213: 3942368493766385622
+    second: ROBaseAnimations_114
+  - first:
+      213: 8817527002255310058
+    second: ROBaseAnimations_115
+  - first:
+      213: -7348608674183140516
+    second: ROBaseAnimations_116
+  - first:
+      213: 2884601866373223521
+    second: ROBaseAnimations_117
+  - first:
+      213: 2943704971567079872
+    second: ROBaseAnimations_118
+  - first:
+      213: -1144218524078497196
+    second: ROBaseAnimations_119
+  - first:
+      213: -2840459870493231420
+    second: ROBaseAnimations_120
+  - first:
+      213: 3111659090769100354
+    second: ROBaseAnimations_121
+  - first:
+      213: 8100008467494628665
+    second: ROBaseAnimations_122
+  - first:
+      213: -3786754419876896349
+    second: ROBaseAnimations_123
+  - first:
+      213: -2607630174420012530
+    second: ROBaseAnimations_124
+  - first:
+      213: -5929746712477393346
+    second: ROBaseAnimations_125
+  - first:
+      213: -5817712993644219051
+    second: ROBaseAnimations_126
+  - first:
+      213: 2914419256260525927
+    second: ROBaseAnimations_127
+  - first:
+      213: 8656646512855022997
+    second: ROBaseAnimations_128
+  - first:
+      213: -2293665237334826905
+    second: ROBaseAnimations_129
+  - first:
+      213: -1591524910852661112
+    second: ROBaseAnimations_130
+  - first:
+      213: -7548950788631020231
+    second: ROBaseAnimations_131
+  - first:
+      213: -2780260628825992882
+    second: ROBaseAnimations_132
+  - first:
+      213: 1477431604050789660
+    second: ROBaseAnimations_133
+  - first:
+      213: -5128717942230115623
+    second: ROBaseAnimations_134
+  - first:
+      213: 3186842014323470986
+    second: ROBaseAnimations_135
+  - first:
+      213: 5886446713624254062
+    second: ROBaseAnimations_136
+  - first:
+      213: 2733202903846902409
+    second: ROBaseAnimations_137
+  - first:
+      213: 288690078105119045
+    second: ROBaseAnimations_138
+  - first:
+      213: -5372688191100910111
+    second: ROBaseAnimations_139
+  - first:
+      213: 6508450395213363333
+    second: ROBaseAnimations_140
+  - first:
+      213: -6572164009719299789
+    second: ROBaseAnimations_141
+  - first:
+      213: -8500783765104754457
+    second: ROBaseAnimations_142
+  - first:
+      213: 3431353630202973626
+    second: ROBaseAnimations_143
+  - first:
+      213: -5148354751744437732
+    second: ROBaseAnimations_144
+  - first:
+      213: -642041285812710749
+    second: ROBaseAnimations_145
+  - first:
+      213: -7606300044745626431
+    second: ROBaseAnimations_146
+  - first:
+      213: -753976701610530357
+    second: ROBaseAnimations_147
+  - first:
+      213: -1637658402213793415
+    second: ROBaseAnimations_148
+  - first:
+      213: 8197036390987250656
+    second: ROBaseAnimations_149
+  - first:
+      213: 6193626714837054090
+    second: ROBaseAnimations_150
+  - first:
+      213: 750683251394244296
+    second: ROBaseAnimations_151
+  - first:
+      213: 7690241716316400432
+    second: ROBaseAnimations_152
+  - first:
+      213: -8019586556412633028
+    second: ROBaseAnimations_153
+  - first:
+      213: 8378140878731929441
+    second: ROBaseAnimations_154
+  - first:
+      213: -6455077345169387103
+    second: ROBaseAnimations_155
+  - first:
+      213: 4588576314551618562
+    second: ROBaseAnimations_156
+  - first:
+      213: -3050735533721551267
+    second: ROBaseAnimations_157
+  - first:
+      213: -7105738416031574813
+    second: ROBaseAnimations_158
+  - first:
+      213: 9171391879701537320
+    second: ROBaseAnimations_159
+  - first:
+      213: -7784113178381484135
+    second: ROBaseAnimations_160
+  - first:
+      213: 3070994631487435193
+    second: ROBaseAnimations_161
+  - first:
+      213: -8068050933359563921
+    second: ROBaseAnimations_162
+  - first:
+      213: -266055479053131925
+    second: ROBaseAnimations_163
+  - first:
+      213: -7749282966436025316
+    second: ROBaseAnimations_164
+  - first:
+      213: -3561561566372256888
+    second: ROBaseAnimations_165
+  - first:
+      213: 2089283298336305289
+    second: ROBaseAnimations_166
+  - first:
+      213: 6973006044266883866
+    second: ROBaseAnimations_167
+  - first:
+      213: 2588675230639345836
+    second: ROBaseAnimations_168
+  - first:
+      213: 8781550178142509542
+    second: ROBaseAnimations_169
+  - first:
+      213: 8625489814842928223
+    second: ROBaseAnimations_170
+  - first:
+      213: -8523500968336683360
+    second: ROBaseAnimations_171
+  - first:
+      213: 3043467180667243884
+    second: ROBaseAnimations_172
+  - first:
+      213: -7411643094980691042
+    second: ROBaseAnimations_173
+  - first:
+      213: -5627794482292989646
+    second: ROBaseAnimations_174
+  - first:
+      213: -935037369601935024
+    second: ROBaseAnimations_175
+  - first:
+      213: -8393100895426386573
+    second: ROBaseAnimations_176
+  - first:
+      213: 7678269571151161918
+    second: ROBaseAnimations_177
+  - first:
+      213: 6468482455340018880
+    second: ROBaseAnimations_178
+  - first:
+      213: 1150802618422120128
+    second: ROBaseAnimations_179
+  - first:
+      213: -1994979713255138443
+    second: ROBaseAnimations_180
+  - first:
+      213: -4436524811954411402
+    second: ROBaseAnimations_181
+  - first:
+      213: -6356338961649375312
+    second: ROBaseAnimations_182
+  - first:
+      213: 5419067950047297910
+    second: ROBaseAnimations_183
+  - first:
+      213: 6217094243124690782
+    second: ROBaseAnimations_184
+  - first:
+      213: -3561413511455081290
+    second: ROBaseAnimations_185
+  - first:
+      213: -3453069317361640034
+    second: ROBaseAnimations_186
+  - first:
+      213: -7204758744538972464
+    second: ROBaseAnimations_187
+  - first:
+      213: 5644702143765927831
+    second: ROBaseAnimations_188
+  - first:
+      213: -3404767225676952963
+    second: ROBaseAnimations_189
+  - first:
+      213: 6903953464337826672
+    second: ROBaseAnimations_190
+  - first:
+      213: -7098579680388769148
+    second: ROBaseAnimations_191
+  - first:
+      213: -644390540349236713
+    second: ROBaseAnimations_192
+  - first:
+      213: 6794409899148821207
+    second: ROBaseAnimations_193
+  - first:
+      213: 2015483178502499543
+    second: ROBaseAnimations_194
+  - first:
+      213: -7595715052688661175
+    second: ROBaseAnimations_195
+  - first:
+      213: 5824994057445028096
+    second: ROBaseAnimations_196
+  - first:
+      213: 128507898940954430
+    second: ROBaseAnimations_197
+  - first:
+      213: 1642032763974519029
+    second: ROBaseAnimations_198
+  - first:
+      213: -936651158152133564
+    second: ROBaseAnimations_199
+  - first:
+      213: 5005686026092594674
+    second: ROBaseAnimations_200
+  - first:
+      213: -5683979730551931210
+    second: ROBaseAnimations_201
+  - first:
+      213: 8278070873417593149
+    second: ROBaseAnimations_202
+  - first:
+      213: 5718445460775726255
+    second: ROBaseAnimations_203
+  - first:
+      213: 6759667893732518879
+    second: ROBaseAnimations_204
+  - first:
+      213: 4951526284936097430
+    second: ROBaseAnimations_205
+  - first:
+      213: -5860365560514330392
+    second: ROBaseAnimations_206
+  - first:
+      213: 190441942761035393
+    second: ROBaseAnimations_207
+  - first:
+      213: 4416110149162414528
+    second: ROBaseAnimations_208
+  - first:
+      213: -5080206128541851233
+    second: ROBaseAnimations_209
+  - first:
+      213: 819336196315524497
+    second: ROBaseAnimations_210
+  - first:
+      213: -8182856305000028071
+    second: ROBaseAnimations_211
+  - first:
+      213: -1987997219778254320
+    second: ROBaseAnimations_212
+  - first:
+      213: 6234875182608267547
+    second: ROBaseAnimations_213
+  - first:
+      213: 7212429542935984257
+    second: ROBaseAnimations_214
+  - first:
+      213: -7459797084653127246
+    second: ROBaseAnimations_215
+  - first:
+      213: -6079332742734610987
+    second: ROBaseAnimations_216
+  - first:
+      213: 1112979238748188394
+    second: ROBaseAnimations_217
+  - first:
+      213: -7409151089671829909
+    second: ROBaseAnimations_218
+  - first:
+      213: 4105797094847277421
+    second: ROBaseAnimations_219
+  - first:
+      213: 3858355580018402804
+    second: ROBaseAnimations_220
+  - first:
+      213: 4965505832311973704
+    second: ROBaseAnimations_221
+  - first:
+      213: 6501379074185633618
+    second: ROBaseAnimations_222
+  - first:
+      213: 5249533806764369010
+    second: ROBaseAnimations_223
+  - first:
+      213: -1865563803571716322
+    second: ROBaseAnimations_224
+  - first:
+      213: 6300978356030517370
+    second: ROBaseAnimations_225
+  - first:
+      213: 8451422204061352548
+    second: ROBaseAnimations_226
+  - first:
+      213: 6697188062026941965
+    second: ROBaseAnimations_227
+  - first:
+      213: -3689289574645968411
+    second: ROBaseAnimations_228
+  - first:
+      213: 6125413666855947349
+    second: ROBaseAnimations_229
+  - first:
+      213: -3947200499256090260
+    second: ROBaseAnimations_230
+  - first:
+      213: 5635638468765931240
+    second: ROBaseAnimations_231
+  - first:
+      213: -6337335072934862608
+    second: ROBaseAnimations_232
+  - first:
+      213: 6575377599947378570
+    second: ROBaseAnimations_233
+  - first:
+      213: 8415846228045214536
+    second: ROBaseAnimations_234
+  - first:
+      213: 1269637845887608093
+    second: ROBaseAnimations_235
+  - first:
+      213: 5429763432857544511
+    second: ROBaseAnimations_236
+  - first:
+      213: -6854846014459817521
+    second: ROBaseAnimations_237
+  - first:
+      213: -1891871765098320204
+    second: ROBaseAnimations_238
+  - first:
+      213: 8455468508299112552
+    second: ROBaseAnimations_239
+  - first:
+      213: -3823947692528384567
+    second: ROBaseAnimations_240
+  - first:
+      213: -2238007825297290885
+    second: ROBaseAnimations_241
+  - first:
+      213: -3783523920011687240
+    second: ROBaseAnimations_242
+  - first:
+      213: -5138383012554314525
+    second: ROBaseAnimations_243
+  - first:
+      213: 4834316453302114865
+    second: ROBaseAnimations_244
+  - first:
+      213: -1616297037339378395
+    second: ROBaseAnimations_245
+  - first:
+      213: 7446663189040164872
+    second: ROBaseAnimations_246
+  - first:
+      213: -5333688051289049112
+    second: ROBaseAnimations_247
+  - first:
+      213: 6350912396170024792
+    second: ROBaseAnimations_248
+  - first:
+      213: -8285667477744590296
+    second: ROBaseAnimations_249
+  - first:
+      213: -7691633840723098841
+    second: ROBaseAnimations_250
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 2
+  spritePivot: {x: 0.5, y: 1}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ROBaseAnimations_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1344
+        width: 14
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e49c8e0a090f5490800000000000000
+      internalID: -7755470094510287648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_1
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1344
+        width: 17
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163dde00aa6b1d300800000000000000
+      internalID: 275201893522592609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_2
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1344
+        width: 18
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7806d7fd712c7740800000000000000
+      internalID: 5151028898717632634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_3
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1344
+        width: 18
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a98714781c77ed0800000000000000
+      internalID: -2416249888397813153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_4
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1344
+        width: 19
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ac6c7e4027187f0800000000000000
+      internalID: -612082708951676393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_5
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1344
+        width: 20
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7745161308733ea0800000000000000
+      internalID: -5894235532647118978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_6
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1344
+        width: 19
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38cb501df12df1a30800000000000000
+      internalID: 4188297212570483843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_7
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 1344
+        width: 18
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d78ec8d5529eef0800000000000000
+      internalID: -78490434776040066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_8
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1344
+        width: 31
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d0541378235c100800000000000000
+      internalID: 127563720678509943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_9
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 1344
+        width: 23
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98154db93afd1780800000000000000
+      internalID: -8710530978369169253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_10
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 1344
+        width: 27
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b80266f133f8fe90800000000000000
+      internalID: -6991571025580128073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_11
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 1344
+        width: 18
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44db3ae98034f160800000000000000
+      internalID: 7058319884894852174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_12
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 1344
+        width: 29
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a0c1f6ad3b6c240800000000000000
+      internalID: 4811731002640304732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_13
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 1347
+        width: 29
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ddaa4773c5fe6460800000000000000
+      internalID: 7236991871099776466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_14
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 1344
+        width: 29
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864d9cacd1883a380800000000000000
+      internalID: -8961169171999501208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_15
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1260
+        width: 21
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c010905fc550b80800000000000000
+      internalID: -8429228920066208610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_16
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1260
+        width: 25
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e52c2015bba2df70800000000000000
+      internalID: 9210612982074844647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_17
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1264
+        width: 27
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01675cfbf341f9910800000000000000
+      internalID: 1846216636278076944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_18
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1260
+        width: 24
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c7b7c1d7e664440800000000000000
+      internalID: 4919741126576667669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_19
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1260
+        width: 23
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576a568ba2d688ac0800000000000000
+      internalID: -3852709450965735819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_20
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1260
+        width: 19
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e135204c3d7f3c90800000000000000
+      internalID: -7187888782532333085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_21
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1260
+        width: 14
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2fc6c85d80c50bc0800000000000000
+      internalID: -3817433395814281429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_22
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1260
+        width: 22
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f86222159f044050800000000000000
+      internalID: 5783764954379348208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_23
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 1260
+        width: 20
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b86a2e6b3a068820800000000000000
+      internalID: 2920032658763966649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_24
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 1260
+        width: 16
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314e112f51ef47d40800000000000000
+      internalID: 5581365208427914259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_25
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1260
+        width: 18
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b000731e0797200800000000000000
+      internalID: 178297772850547492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_26
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 1260
+        width: 25
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aaa2dd7960ff76b0800000000000000
+      internalID: -5296250300891223385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_27
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 1267
+        width: 27
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ea0379b6f3c64e0800000000000000
+      internalID: -1987143604246630843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_28
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 1261
+        width: 23
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1e982c387e4a560800000000000000
+      internalID: 7324233447101817268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_29
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 1260
+        width: 22
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3d2fb1414a3ccc0800000000000000
+      internalID: -3691926863238474784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_30
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1176
+        width: 17
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b170ef17a4eb836a0800000000000000
+      internalID: -6469211637768386789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_31
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1181
+        width: 22
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db012d9b1dba85750800000000000000
+      internalID: 6293969396504334525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_32
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 1191
+        width: 20
+        height: 25
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222c9ce10c19ae7b0800000000000000
+      internalID: -5194178965882158558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_33
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1198
+        width: 21
+        height: 17
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6961e27af1a459720800000000000000
+      internalID: 2852267438818334358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_34
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 1196
+        width: 25
+        height: 17
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0dc383495ee4c660800000000000000
+      internalID: 7405305754456149262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_35
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1193
+        width: 17
+        height: 24
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b76a62d6873d620800000000000000
+      internalID: 2797712203722423069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_36
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1195
+        width: 22
+        height: 22
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ebc498b026281a20800000000000000
+      internalID: 3033216271011597288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_37
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 1196
+        width: 24
+        height: 19
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd18833d114561f0800000000000000
+      internalID: -1052363344246727179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_38
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1192
+        width: 17
+        height: 23
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ac5c17b77680cd0800000000000000
+      internalID: -2591707805664294374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_39
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 1187
+        width: 17
+        height: 27
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9272ca4a6d4dc18b0800000000000000
+      internalID: -5180031453032077527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_40
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1180
+        width: 19
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375e8b6e27f98c920800000000000000
+      internalID: 3010831666743141747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_41
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 1176
+        width: 15
+        height: 25
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08989e9f7fb140320800000000000000
+      internalID: 2523172443098024320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_42
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 1176
+        width: 15
+        height: 24
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db198178ad2f68c0800000000000000
+      internalID: -4003931342226514984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_43
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 1176
+        width: 15
+        height: 23
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c446bb8b42675bf0800000000000000
+      internalID: -335691570609765177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_44
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 1176
+        width: 15
+        height: 23
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6970280d7c76a6b00800000000000000
+      internalID: 822583989842872214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_45
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1092
+        width: 15
+        height: 24
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1717dd6e45893fbb0800000000000000
+      internalID: -4903408078858391183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_46
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1092
+        width: 15
+        height: 25
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7143b744369fb51c0800000000000000
+      internalID: -4513739996762786793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_47
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1092
+        width: 17
+        height: 25
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9834e5255ab57710800000000000000
+      internalID: 1690462110018189468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_48
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1092
+        width: 17
+        height: 23
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7615669cc8fcd80800000000000000
+      internalID: -8228203197549680669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_49
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1092
+        width: 18
+        height: 26
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58972199fb9dfbb0800000000000000
+      internalID: -4900589323324778406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_50
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1092
+        width: 18
+        height: 26
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9e43363ff2403f0800000000000000
+      internalID: -935570100198250051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_51
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1092
+        width: 17
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845eac1620ff82880800000000000000
+      internalID: -8635371899787221688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_52
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 1092
+        width: 36
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b33c9063fdbdcee0800000000000000
+      internalID: -1239125469461466184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_53
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 1092
+        width: 36
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab4d3aa05ba05550800000000000000
+      internalID: 6147601854302604201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_54
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 1092
+        width: 33
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cafe4e77d6c7b4f0800000000000000
+      internalID: -812962578877711679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_55
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 1092
+        width: 18
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09aa0102a5de7f810800000000000000
+      internalID: 1799167547498605200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_56
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 1094
+        width: 40
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75219af556266e640800000000000000
+      internalID: 5108879014834541143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_57
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 1092
+        width: 29
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37c3f437ebe02c40800000000000000
+      internalID: 5485643724395628351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_58
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 1092
+        width: 22
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e90a10b249f4610800000000000000
+      internalID: 1607666504426364536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_59
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 1092
+        width: 19
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd504e69bd9190c0800000000000000
+      internalID: -4570698727060120079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_60
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1008
+        width: 20
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a9cf0eeb900dbb0800000000000000
+      internalID: -4913416478038123945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_61
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1008
+        width: 25
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144d34bf27e0fb230800000000000000
+      internalID: 3656657309452719169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_62
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1008
+        width: 29
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fddb80378f23fd850800000000000000
+      internalID: 6403893237807365599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_63
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 1008
+        width: 30
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada87acd9ced15ba0800000000000000
+      internalID: -6101851061538551078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_64
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1008
+        width: 23
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995fb4eace52f25d0800000000000000
+      internalID: -3085205521258777191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_65
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1008
+        width: 17
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3132b7e3b3910f30800000000000000
+      internalID: 4540072300261814590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_66
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1009
+        width: 29
+        height: 28
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf84d9a33ba039470800000000000000
+      internalID: 8400069494874917115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_67
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 1009
+        width: 29
+        height: 28
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6659c38542245f1e0800000000000000
+      internalID: -2164751322015034010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_68
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 1009
+        width: 29
+        height: 28
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca49d51150f9a670800000000000000
+      internalID: 8550629598589176520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_69
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 1009
+        width: 29
+        height: 28
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d4b9a16ab8e12e0800000000000000
+      internalID: -2153130026309300864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_70
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 1008
+        width: 44
+        height: 24
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bdf9c44c6454d4c0800000000000000
+      internalID: -4263690123225727566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_71
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 1008
+        width: 44
+        height: 24
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf314cc0a8280d10800000000000000
+      internalID: 2091966698000302023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_72
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1008
+        width: 44
+        height: 23
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613665e028a91ae00800000000000000
+      internalID: 1054293671158375190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_73
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 1008
+        width: 44
+        height: 24
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11367ae5a39790430800000000000000
+      internalID: 3749661456365740817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_74
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 1008
+        width: 24
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5763d1aaa312d8820800000000000000
+      internalID: 2922028269079180917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_75
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 924
+        width: 24
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed30859ca98c0f750800000000000000
+      internalID: 6336785242838795230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_76
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 924
+        width: 24
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdaeb8ceea82fd560800000000000000
+      internalID: 7340630649395210971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_77
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 924
+        width: 24
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139b996fe98fa5960800000000000000
+      internalID: 7591653483512183089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_78
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 924
+        width: 24
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1ed5b29563f20d0800000000000000
+      internalID: -3445475433307577877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_79
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 924
+        width: 24
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3831edb489524f280800000000000000
+      internalID: -9010535618423417981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_80
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 924
+        width: 24
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdef9da5daa4780c0800000000000000
+      internalID: -4573604788157415717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_81
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 930
+        width: 17
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faad722c2f08e4820800000000000000
+      internalID: 2904400589828381359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_82
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 951
+        width: 24
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6185a4988928ce0800000000000000
+      internalID: -1404392418360944903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_83
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 960
+        width: 21
+        height: 31
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a96c87d5262994f60800000000000000
+      internalID: 8019101562682525338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_84
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 961
+        width: 22
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b865b5f4c60c590800000000000000
+      internalID: -7656000278439228628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_85
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 964
+        width: 16
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f6e72912550ea00800000000000000
+      internalID: 783719937842507526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_86
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 964
+        width: 17
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeff9742e9ea996b0800000000000000
+      internalID: -5289004293129895958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_87
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 964
+        width: 16
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7da0d804a4d8dc0800000000000000
+      internalID: -3635167683113461788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_88
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 926
+        width: 14
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8af5492077849a70800000000000000
+      internalID: 8832833684978924173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_89
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 926
+        width: 14
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b3cc0bd5a487e70800000000000000
+      internalID: 9113115612242787074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_90
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 842
+        width: 14
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50cf2fa95d684abc0800000000000000
+      internalID: -3772742335843861499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_91
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 842
+        width: 14
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1abe75d51b83144c0800000000000000
+      internalID: -4305097434363073631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_92
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 842
+        width: 14
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4fe5034d8ed5fcd0800000000000000
+      internalID: -2524867317775077557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_93
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 842
+        width: 14
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ad8a026e93fb920800000000000000
+      internalID: 3008186736659978807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_94
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 840
+        width: 15
+        height: 47
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3857fe8bb5b68580800000000000000
+      internalID: -8825166602623821763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_95
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 845
+        width: 22
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3108bbb0d9642a3d0800000000000000
+      internalID: -3196915145158983661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_96
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 855
+        width: 20
+        height: 25
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca5fc3a278cf09a0800000000000000
+      internalID: -6264568161948968242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_97
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 862
+        width: 21
+        height: 17
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684456d4473f0c4b0800000000000000
+      internalID: -5422066270513838970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_98
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 860
+        width: 25
+        height: 17
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ba92b2c2801f070800000000000000
+      internalID: 8138294987430931253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_99
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 857
+        width: 17
+        height: 24
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abdfc1612f050ef10800000000000000
+      internalID: 2296924810642259386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_100
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 859
+        width: 22
+        height: 22
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8090bcea30aff8e30800000000000000
+      internalID: 4508096645745543432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_101
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 860
+        width: 24
+        height: 19
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4ebf98befbfb9f0800000000000000
+      internalID: -450430419360553741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_102
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 856
+        width: 17
+        height: 23
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7da654e437f49e0800000000000000
+      internalID: -1634961359702927393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_103
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 851
+        width: 17
+        height: 27
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b0822c278872d70800000000000000
+      internalID: 9018326805297761079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_104
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 844
+        width: 19
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040d60542c02c3990800000000000000
+      internalID: -7405007668550119360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_105
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 756
+        width: 18
+        height: 50
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d162371a343c1fd0800000000000000
+      internalID: -2369961879801798184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_106
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 761
+        width: 19
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853345192b46babc0800000000000000
+      internalID: -3770809544887487656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_107
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 761
+        width: 19
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2a4f37ce2cd68f0800000000000000
+      internalID: -545565659028479240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_108
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 757
+        width: 19
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb0a9b53b9c2ccf0800000000000000
+      internalID: -233402458496693314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_109
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 756
+        width: 18
+        height: 50
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557a77c7f0c8d91c0800000000000000
+      internalID: -4495282854905272491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_110
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 762
+        width: 18
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153256e9c626e8f90800000000000000
+      internalID: -6949508956332678319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_111
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 762
+        width: 18
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1905cce2c44ef630800000000000000
+      internalID: 3962680326119295259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_112
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 757
+        width: 19
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77860efd3e76b73c0800000000000000
+      internalID: -4360777585766930313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_113
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 776
+        width: 19
+        height: 28
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e64f4f906065420800000000000000
+      internalID: 2618286873196654188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_114
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 784
+        width: 24
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df13ace14b16b630800000000000000
+      internalID: 3942368493766385622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_115
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 792
+        width: 20
+        height: 31
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aecb7de57162e5a70800000000000000
+      internalID: 8817527002255310058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_116
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 794
+        width: 19
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ba5fd685f740a90800000000000000
+      internalID: -7348608674183140516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_117
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 796
+        width: 15
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164da9b3d1a280820800000000000000
+      internalID: 2884601866373223521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_118
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 796
+        width: 16
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1aec143142ad820800000000000000
+      internalID: 2943704971567079872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_119
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 761
+        width: 22
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45221ee805bee10f0800000000000000
+      internalID: -1144218524078497196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_120
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 677
+        width: 13
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6bf741cc8a498d0800000000000000
+      internalID: -2840459870493231420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_121
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 679
+        width: 20
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e386fe475de2b20800000000000000
+      internalID: 3111659090769100354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_122
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 679
+        width: 23
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d6ca619c2096070800000000000000
+      internalID: 8100008467494628665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_123
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 678
+        width: 17
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1e89f0beeb27bc0800000000000000
+      internalID: -3786754419876896349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_124
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 678
+        width: 14
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02fa141c26dfcbd0800000000000000
+      internalID: -2607630174420012530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_125
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 677
+        width: 19
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e9eba38ce45bda0800000000000000
+      internalID: -5929746712477393346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_126
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 680
+        width: 40
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55579a81bd4534fa0800000000000000
+      internalID: -5817712993644219051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_127
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 677
+        width: 46
+        height: 46
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76f77ff4fd8127820800000000000000
+      internalID: 2914419256260525927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_128
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 678
+        width: 39
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59df8d87326922870800000000000000
+      internalID: 8656646512855022997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_129
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 675
+        width: 46
+        height: 46
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 760eef67e934b20e0800000000000000
+      internalID: -2293665237334826905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_130
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 679
+        width: 41
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880217d9684c9e9e0800000000000000
+      internalID: -1591524910852661112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_131
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 675
+        width: 47
+        height: 46
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d3eb8f04dbc3790800000000000000
+      internalID: -7548950788631020231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_132
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 679
+        width: 38
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4192d340b78a69d0800000000000000
+      internalID: -2780260628825992882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_133
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 672
+        width: 18
+        height: 50
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1502635734e08410800000000000000
+      internalID: 1477431604050789660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_134
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 672
+        width: 24
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da9334643223d8b0800000000000000
+      internalID: -5128717942230115623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_135
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 588
+        width: 25
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a827a0b6defe93c20800000000000000
+      internalID: 3186842014323470986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_136
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 588
+        width: 18
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66d6da291cd0b150800000000000000
+      internalID: 5886446713624254062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_137
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 588
+        width: 17
+        height: 47
+      alignment: 9
+      pivot: {x: 0.48481482, y: 0.8187516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a5cd65f894ee520800000000000000
+      internalID: 2733202903846902409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_138
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 595
+        width: 26
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8917791}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549a2a3b812a10400800000000000000
+      internalID: 288690078105119045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_139
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 592
+        width: 19
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: 0.81589854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e58e705e806075b0800000000000000
+      internalID: -5372688191100910111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_140
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 594
+        width: 17
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5000036, y: 0.88390046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58871f4b629a25a50800000000000000
+      internalID: 6508450395213363333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_141
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 595
+        width: 22
+        height: 39
+      alignment: 9
+      pivot: {x: 0.48153132, y: 0.8645505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 331031b67abfac4a0800000000000000
+      internalID: -6572164009719299789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_142
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 594
+        width: 15
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5078776, y: 0.9223071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e006886436270a80800000000000000
+      internalID: -8500783765104754457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_143
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 600
+        width: 22
+        height: 36
+      alignment: 9
+      pivot: {x: 0.49483144, y: 0.9368184}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abdcef252fd9e9f20800000000000000
+      internalID: 3431353630202973626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_144
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 600
+        width: 20
+        height: 29
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c12149461ae5d88b0800000000000000
+      internalID: -5148354751744437732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_145
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 606
+        width: 22
+        height: 25
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a29ffb2ad20717f0800000000000000
+      internalID: -642041285812710749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_146
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 602
+        width: 17
+        height: 25
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc26e1c86ef07690800000000000000
+      internalID: -7606300044745626431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_147
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 595
+        width: 26
+        height: 31
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc965934f265985f0800000000000000
+      internalID: -753976701610530357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_148
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 589
+        width: 23
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971fc902c5ed549e0800000000000000
+      internalID: -1637658402213793415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_149
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 594
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ebbeb7fa29b1c170800000000000000
+      internalID: 8197036390987250656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_150
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 510
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a827b319eae24f550800000000000000
+      internalID: 6193626714837054090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_151
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 510
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce603a9076fa6a00800000000000000
+      internalID: 750683251394244296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_152
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 510
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03bede9a81a39ba60800000000000000
+      internalID: 7690241716316400432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_153
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 510
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30e68b3484b4b090800000000000000
+      internalID: -8019586556412633028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_154
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 510
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167eefa6db2254470800000000000000
+      internalID: 8378140878731929441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_155
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 510
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1d183ea55fa66a0800000000000000
+      internalID: -6455077345169387103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_156
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 510
+        width: 22
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20cce95c8d5edaf30800000000000000
+      internalID: 4588576314551618562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_157
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 511
+        width: 18
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e7dd0123c99a5d0800000000000000
+      internalID: -3050735533721551267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_158
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 513
+        width: 20
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e45795fe88536d90800000000000000
+      internalID: -7105738416031574813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_159
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 518
+        width: 18
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822238d8254574f70800000000000000
+      internalID: 9171391879701537320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_160
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 527
+        width: 18
+        height: 31
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f72276e4649f390800000000000000
+      internalID: -7784113178381484135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_161
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 526
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1b0f4b85d5e9a20800000000000000
+      internalID: 3070994631487435193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_162
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 526
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b28572c66880090800000000000000
+      internalID: -8068050933359563921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_163
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 526
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6fdd7093f7ce4cf0800000000000000
+      internalID: -266055479053131925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_164
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 510
+        width: 22
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c68911334057490800000000000000
+      internalID: -7749282966436025316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_165
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 427
+        width: 18
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883a2b610aac29ec0800000000000000
+      internalID: -3561561566372256888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_166
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 429
+        width: 20
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980fd702710aefc10800000000000000
+      internalID: 2089283298336305289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_167
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 434
+        width: 18
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1bed2d7d0815c060800000000000000
+      internalID: 6973006044266883866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_168
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 443
+        width: 18
+        height: 31
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca05c192862dce320800000000000000
+      internalID: 2588675230639345836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_169
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 442
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9d3714c555ed970800000000000000
+      internalID: 8781550178142509542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_170
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 442
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c667b6945e3b770800000000000000
+      internalID: 8625489814842928223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_171
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 442
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae089b570176b980800000000000000
+      internalID: -8523500968336683360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_172
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 434
+        width: 18
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d0b3d96419c3a20800000000000000
+      internalID: 3043467180667243884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_173
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 429
+        width: 20
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9bf2b9afdd842990800000000000000
+      internalID: -7411643094980691042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_174
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 427
+        width: 18
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231e5065cbe06e1b0800000000000000
+      internalID: -5627794482292989646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_175
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 426
+        width: 22
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059392567741603f0800000000000000
+      internalID: -935037369601935024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_176
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 427
+        width: 18
+        height: 31
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375e8144437b58b80800000000000000
+      internalID: -8393100895426386573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_177
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 426
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ae7266e71be8a60800000000000000
+      internalID: 7678269571151161918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_178
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 426
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc636a858aa4c950800000000000000
+      internalID: 6468482455340018880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_179
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 426
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cec3ad52e878ff00800000000000000
+      internalID: 1150802618422120128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_180
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 350
+        width: 18
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b115945886054e0800000000000000
+      internalID: -1994979713255138443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_181
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 345
+        width: 20
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6782042703c4e62c0800000000000000
+      internalID: -4436524811954411402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_182
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 343
+        width: 18
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7e9e6446fb9c7a0800000000000000
+      internalID: -6356338961649375312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_183
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 342
+        width: 22
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6710640d695643b40800000000000000
+      internalID: 5419067950047297910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_184
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 343
+        width: 18
+        height: 31
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5fb298464e874650800000000000000
+      internalID: 6217094243124690782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_185
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 342
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc717fc741539ec0800000000000000
+      internalID: -3561413511455081290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_186
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 342
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ddbd140cb3410d0800000000000000
+      internalID: -3453069317361640034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_187
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 342
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de7d53281e830c90800000000000000
+      internalID: -7204758744538972464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_188
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 342
+        width: 24
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797dd0e51b2065e40800000000000000
+      internalID: 5644702143765927831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_189
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 342
+        width: 25
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a02aa5f36dfb0d0800000000000000
+      internalID: -3404767225676952963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_190
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 342
+        width: 26
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0730fabd815cfcf50800000000000000
+      internalID: 6903953464337826672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_191
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 341
+        width: 29
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a1f9cf367cc7d90800000000000000
+      internalID: -7098579680388769148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_192
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 336
+        width: 27
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a9cd9b73aae07f0800000000000000
+      internalID: -644390540349236713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_193
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 338
+        width: 18
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2c9211ec79a4e50800000000000000
+      internalID: 6794409899148821207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_194
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 342
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dcaa69b54f68fb10800000000000000
+      internalID: 2015483178502499543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_195
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 258
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945a7654769969690800000000000000
+      internalID: -7595715052688661175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_196
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 258
+        width: 24
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001b5ccab3986d050800000000000000
+      internalID: 5824994057445028096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_197
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 258
+        width: 25
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e371533d04d88c100800000000000000
+      internalID: 128507898940954430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_198
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 258
+        width: 26
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f80146591ca9c610800000000000000
+      internalID: 1642032763974519029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_199
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 257
+        width: 29
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44442e7fbb85003f0800000000000000
+      internalID: -936651158152133564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_200
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 252
+        width: 27
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5c2626be4c77540800000000000000
+      internalID: 5005686026092594674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_201
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 254
+        width: 18
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be7ee1dc827e11b0800000000000000
+      internalID: -5683979730551931210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_202
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 258
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31309ba99d91e270800000000000000
+      internalID: 8278070873417593149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_203
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 258
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac6bf459dffb5f40800000000000000
+      internalID: 5718445460775726255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_204
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 266
+        width: 22
+        height: 29
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb2a85922a2fcd50800000000000000
+      internalID: 6759667893732518879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_205
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 265
+        width: 22
+        height: 31
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e20adfbea57b440800000000000000
+      internalID: 4951526284936097430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_206
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 252
+        width: 28
+        height: 48
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e04c9f729ccbaea0800000000000000
+      internalID: -5860365560514330392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_207
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 254
+        width: 26
+        height: 46
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1865b9c10f594a200800000000000000
+      internalID: 190441942761035393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_208
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 253
+        width: 26
+        height: 47
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1b2d978cc294d30800000000000000
+      internalID: 4416110149162414528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_209
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 259
+        width: 18
+        height: 31
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f912082317b7f79b0800000000000000
+      internalID: -5080206128541851233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_210
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 174
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19da105fdedde5b00800000000000000
+      internalID: 819336196315524497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_211
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 174
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95868649b87a07e80800000000000000
+      internalID: -8182856305000028071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_212
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 174
+        width: 21
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a27acbf073964e0800000000000000
+      internalID: -1987997219778254320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_213
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 168
+        width: 16
+        height: 51
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19b34ed1f9b68650800000000000000
+      internalID: 6234875182608267547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_214
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 173
+        width: 16
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1887b3ac472b71460800000000000000
+      internalID: 7212429542935984257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_215
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 175
+        width: 16
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b971c0431a797890800000000000000
+      internalID: -7459797084653127246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_216
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 170
+        width: 16
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ddf6e5841fd1aba0800000000000000
+      internalID: -6079332742734610987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_217
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 168
+        width: 17
+        height: 51
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee68f788b8127f00800000000000000
+      internalID: 1112979238748188394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_218
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 173
+        width: 17
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6689ecd6586d2990800000000000000
+      internalID: -7409151089671829909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_219
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 175
+        width: 16
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69e33e44b8baf830800000000000000
+      internalID: 4105797094847277421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_220
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 170
+        width: 16
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5a42425f1ab8530800000000000000
+      internalID: 3858355580018402804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_221
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 174
+        width: 15
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847e5110f3509e440800000000000000
+      internalID: 4965505832311973704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_222
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 174
+        width: 15
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f1efa72d9893a50800000000000000
+      internalID: 6501379074185633618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_223
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 174
+        width: 15
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274289c1f271ad840800000000000000
+      internalID: 5249533806764369010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_224
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 174
+        width: 15
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ff746da9f2c16e0800000000000000
+      internalID: -1865563803571716322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_225
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 90
+        width: 15
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70bf984e62917750800000000000000
+      internalID: 6300978356030517370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_226
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 90
+        width: 15
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4620def87bb794570800000000000000
+      internalID: 8451422204061352548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_227
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 84
+        width: 16
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d064a172f0131fc50800000000000000
+      internalID: 6697188062026941965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_228
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 86
+        width: 37
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1dca5bda20dccc0800000000000000
+      internalID: -3689289574645968411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_229
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 96
+        width: 41
+        height: 23
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c8543b647d10550800000000000000
+      internalID: 6125413666855947349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_230
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 87
+        width: 29
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61a8902f0ab839c0800000000000000
+      internalID: -3947200499256090260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_231
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 84
+        width: 23
+        height: 24
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6d155145fc53e40800000000000000
+      internalID: 5635638468765931240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_232
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 84
+        width: 14
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0e71be3534d08a0800000000000000
+      internalID: -6337335072934862608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_233
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 84
+        width: 27
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f8cecd61f604b50800000000000000
+      internalID: 6575377599947378570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_234
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 84
+        width: 27
+        height: 31
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84332fa2e871bc470800000000000000
+      internalID: 8415846228045214536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_235
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 84
+        width: 26
+        height: 24
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15e58dd4e8ae9110800000000000000
+      internalID: 1269637845887608093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_236
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 84
+        width: 28
+        height: 25
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3721e5f2156a5b40800000000000000
+      internalID: 5429763432857544511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_237
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 84
+        width: 28
+        height: 26
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1de1e4ed1bed0a0800000000000000
+      internalID: -6854846014459817521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_238
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 84
+        width: 26
+        height: 23
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be29b837a8beb5e0800000000000000
+      internalID: -1891871765098320204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_239
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 84
+        width: 44
+        height: 6
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860bbae2fcbd75570800000000000000
+      internalID: 8455468508299112552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_240
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 27
+        height: 21
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c5cb2375db9eeac0800000000000000
+      internalID: -3823947692528384567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_241
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 27
+        height: 20
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b794c988dbff0f0e0800000000000000
+      internalID: -2238007825297290885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_242
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 0
+        width: 14
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba828c6a093e7bc0800000000000000
+      internalID: -3783523920011687240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_243
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 0
+        width: 14
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec6cc8dfdbc0b8b0800000000000000
+      internalID: -5138383012554314525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_244
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 0
+        width: 14
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a16e27331f61340800000000000000
+      internalID: 4834316453302114865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_245
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 0
+        width: 14
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52dbed57862c199e0800000000000000
+      internalID: -1616297037339378395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_246
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 0
+        width: 17
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80077b067bcd75760800000000000000
+      internalID: 7446663189040164872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_247
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 0
+        width: 26
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7bb28f9feeaf5b0800000000000000
+      internalID: -5333688051289049112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_248
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 0
+        width: 34
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857d65dfc29f22850800000000000000
+      internalID: 6350912396170024792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_249
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 0
+        width: 35
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822e60e0455630d80800000000000000
+      internalID: -8285667477744590296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBaseAnimations_250
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 0
+        width: 28
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723835d16c3d14590800000000000000
+      internalID: -7691633840723098841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

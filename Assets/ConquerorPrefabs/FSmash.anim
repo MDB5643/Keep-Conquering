@@ -20,18 +20,18 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 385782256449863764, guid: ac7b6eccc28df77409ac745e0c68edb3, type: 3}
-    - time: 0.3
-      value: {fileID: -4235595040688317624, guid: ac7b6eccc28df77409ac745e0c68edb3, type: 3}
+      value: {fileID: 6017389751092554920, guid: 5bd16f3dd25be4f43bf966fc2ecfdf97, type: 3}
+    - time: 0.26666668
+      value: {fileID: -2548792286434701177, guid: 5bd16f3dd25be4f43bf966fc2ecfdf97, type: 3}
+    - time: 0.36666667
+      value: {fileID: -1371572420176461169, guid: 5bd16f3dd25be4f43bf966fc2ecfdf97, type: 3}
+    - time: 0.45
+      value: {fileID: 1406211576547027475, guid: 5bd16f3dd25be4f43bf966fc2ecfdf97, type: 3}
     - time: 0.51666665
-      value: {fileID: -4977404572693860712, guid: ac7b6eccc28df77409ac745e0c68edb3, type: 3}
-    - time: 0.6666667
-      value: {fileID: -5518210575834996130, guid: ac7b6eccc28df77409ac745e0c68edb3, type: 3}
-    - time: 0.81666666
-      value: {fileID: -3054004013502782585, guid: ac7b6eccc28df77409ac745e0c68edb3, type: 3}
-    - time: 1
+      value: {fileID: 6526892977933154067, guid: 5bd16f3dd25be4f43bf966fc2ecfdf97, type: 3}
+    - time: 0.7
       value: {fileID: 4169398144464088017, guid: ac7b6eccc28df77409ac745e0c68edb3, type: 3}
-    - time: 1.2166667
+    - time: 0.85
       value: {fileID: 4169398144464088017, guid: ac7b6eccc28df77409ac745e0c68edb3, type: 3}
     attribute: m_Sprite
     path: 
@@ -52,11 +52,11 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 385782256449863764, guid: ac7b6eccc28df77409ac745e0c68edb3, type: 3}
-    - {fileID: -4235595040688317624, guid: ac7b6eccc28df77409ac745e0c68edb3, type: 3}
-    - {fileID: -4977404572693860712, guid: ac7b6eccc28df77409ac745e0c68edb3, type: 3}
-    - {fileID: -5518210575834996130, guid: ac7b6eccc28df77409ac745e0c68edb3, type: 3}
-    - {fileID: -3054004013502782585, guid: ac7b6eccc28df77409ac745e0c68edb3, type: 3}
+    - {fileID: 6017389751092554920, guid: 5bd16f3dd25be4f43bf966fc2ecfdf97, type: 3}
+    - {fileID: -2548792286434701177, guid: 5bd16f3dd25be4f43bf966fc2ecfdf97, type: 3}
+    - {fileID: -1371572420176461169, guid: 5bd16f3dd25be4f43bf966fc2ecfdf97, type: 3}
+    - {fileID: 1406211576547027475, guid: 5bd16f3dd25be4f43bf966fc2ecfdf97, type: 3}
+    - {fileID: 6526892977933154067, guid: 5bd16f3dd25be4f43bf966fc2ecfdf97, type: 3}
     - {fileID: 4169398144464088017, guid: ac7b6eccc28df77409ac745e0c68edb3, type: 3}
     - {fileID: 4169398144464088017, guid: ac7b6eccc28df77409ac745e0c68edb3, type: 3}
   m_AnimationClipSettings:
@@ -64,7 +64,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.2333333
+    m_StopTime: 0.8666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -84,7 +84,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.3
+  - time: 0.26666668
     functionName: AE_FSmashHitbox
     data: 
     objectReferenceParameter: {fileID: 0}
