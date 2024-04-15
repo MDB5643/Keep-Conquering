@@ -23,14 +23,20 @@ namespace UnityStandardAssets._2D
         private Vector3 m_LookAheadPos;
         public Vector3 minValues, maxValue;
 
+        bool zoomOut = false;
+        bool zoomIn = false;
+        private GameObject farthestObject;
+
         // Use this for initialization
         private void Start()
         {
-            if (MenuEvents.gameModeSelect == 2)
+            if (MenuEvents.gameModeSelect == 2 || MenuEvents.gameModeSelect == 3)
             {
                 playerList.AddRange(GameObject.FindObjectsOfType<Conqueror>());
             }
             
+
+
             m_LastTargetPosition = target.position;
             m_OffsetZ = (transform.position - target.position).z;
             transform.parent = null;
@@ -41,8 +47,13 @@ namespace UnityStandardAssets._2D
         //TODO: Should this be fixed update?
         private void Update()
         {
-            if (MenuEvents.gameModeSelect == 2)
+
+            if (MenuEvents.gameModeSelect == 2 || MenuEvents.gameModeSelect == 3)
             {
+                if (playerList.Count <= 0)
+                {
+                    playerList.AddRange(GameObject.FindObjectsOfType<Conqueror>());
+                }
                 float midpointX = 0;
                 float midpointY = 0;
 
@@ -55,6 +66,29 @@ namespace UnityStandardAssets._2D
                 midpointX = midpointX / playerList.Count;
                 midpointY = midpointY / playerList.Count;
                 Vector3 midpoint = new Vector3(midpointX, midpointY, -10);
+
+                GameObject farthestObject = new GameObject();
+
+                if (playerList[0].transform.position.x > midpointX + 4)
+                {
+                    if (playerList[0].transform.position.x - midpointX <= 25)
+                    {
+                        GetComponent<Camera>().fieldOfView = (playerList[0].transform.position.x - midpointX + 6.7f) * 2.5f;
+                    }
+                    
+                }
+                else if (playerList[0].transform.position.x < midpointX - 4)
+                {
+                    if (midpointX - playerList[0].transform.position.x <= 25)
+                    {
+                        GetComponent<Camera>().fieldOfView = (midpointX - playerList[0].transform.position.x + 6.7f) * 2.5f;
+                    }
+                    
+                }
+                else
+                {
+                    GetComponent<Camera>().fieldOfView = 26.8f;
+                }
 
                 float xMoveDelta = (midpoint - m_LastTargetPosition).x;
 
@@ -88,8 +122,8 @@ namespace UnityStandardAssets._2D
                 {
                     if (target.GetComponentInParent<Conqueror>() && target.GetComponentInParent<Conqueror>().m_cameraShake)
                     {
-                        target.GetComponentInParent<Conqueror>().m_cameraShake = false;
-                        StartCoroutine(Shaking());
+                        //target.GetComponentInParent<Conqueror>().m_cameraShake = false;
+                        //StartCoroutine(Shaking());
                     }
                 }
             }
@@ -132,8 +166,8 @@ namespace UnityStandardAssets._2D
                 {
                     if (target.GetComponentInParent<Conqueror>() && target.GetComponentInParent<Conqueror>().m_cameraShake)
                     {
-                        target.GetComponentInParent<Conqueror>().m_cameraShake = false;
-                        StartCoroutine(Shaking());
+                        //target.GetComponentInParent<Conqueror>().m_cameraShake = false;
+                        //StartCoroutine(Shaking());
                     }
                 }
             }
@@ -141,7 +175,7 @@ namespace UnityStandardAssets._2D
             
         }
 
-        IEnumerator Shaking()
+        public IEnumerator Shaking(float shakeIntensity)
         {
             Vector3 startPosition = transform.position;
             float elapsedTime = 0f;
@@ -149,7 +183,7 @@ namespace UnityStandardAssets._2D
             while (elapsedTime < shakeDuration)
             {
                 elapsedTime += Time.deltaTime;
-                float strength = animCurve.Evaluate(elapsedTime / target.GetComponentInParent<Conqueror>().m_shakeIntensity);
+                float strength = animCurve.Evaluate(elapsedTime / shakeIntensity);
                 transform.position = startPosition + UnityEngine.Random.insideUnitSphere * strength;
                 yield return null;
             }

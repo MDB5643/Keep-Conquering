@@ -110,65 +110,90 @@ public class MinionBehavior : MonoBehaviour
         m_wallSensorL1 = transform.Find("WallSensor_L1").GetComponent<Sensor_Prototype>();
         m_wallSensorL2 = transform.Find("WallSensor_L2").GetComponent<Sensor_Prototype>();
 
-        if (teamColor == "Red")
+        if (MenuEvents.gameModeSelect == 1)
         {
-            firstLauncherTarget = GameObject.Find("RedMinionLauncherTarget");
-            MovingPlatformTarget = GameObject.Find("RedMinionPlatformTarget");
-            GondolaTarget = GameObject.Find("RedMinionGondolaTarget");
-            EyeTarget = GameObject.Find("RedMinionEyeTarget");
+            if (teamColor == "Red")
+            {
+                firstLauncherTarget = GameObject.Find("RedMinionLauncherTarget");
+                MovingPlatformTarget = GameObject.Find("RedMinionPlatformTarget");
+                GondolaTarget = GameObject.Find("RedMinionGondolaTarget");
+                EyeTarget = GameObject.Find("RedMinionEyeTarget");
+            }
+            else if (teamColor == "Blue")
+            {
+                firstLauncherTarget = GameObject.Find("BlueMinionLauncherTarget");
+                MovingPlatformTarget = GameObject.Find("BlueMinionPlatformTarget");
+                GondolaTarget = GameObject.Find("BlueMinionGondolaTarget");
+                EyeTarget = GameObject.Find("BlueMinionEyeTarget");
+                KeepEyeTarget = GameObject.Find("BlueMinionKeepEyeTarget");
+                TowerPlatformTarget = GameObject.Find("Jumppoint5Left");
+                GondolaEdgeTarget = GameObject.Find("RightEdge");
+            }
+            target = firstLauncherTarget.transform;
         }
-        else if (teamColor == "Blue")
+        if (MenuEvents.gameModeSelect == 3)
         {
-            firstLauncherTarget = GameObject.Find("BlueMinionLauncherTarget");
-            MovingPlatformTarget = GameObject.Find("BlueMinionPlatformTarget");
-            GondolaTarget = GameObject.Find("BlueMinionGondolaTarget");
-            EyeTarget = GameObject.Find("BlueMinionEyeTarget");
-            KeepEyeTarget = GameObject.Find("BlueMinionKeepEyeTarget");
-            TowerPlatformTarget = GameObject.Find("Jumppoint5Left");
-            GondolaEdgeTarget = GameObject.Find("RightEdge");
+            if (teamColor == "Red")
+            {
+                EyeTarget = GameObject.Find("RedMinionEyeTarget");
+            }
+            else if (teamColor == "Blue")
+            {
+                EyeTarget = GameObject.Find("BlueMinionEyeTarget");
+            }
+            target = EyeTarget.transform;
         }
-       
 
-        target = firstLauncherTarget.transform;
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-
-        if (EyeTarget == null && KeepEyeTarget != null)
+        if (MenuEvents.gameModeSelect == 1)
         {
-            EyeTarget = KeepEyeTarget;
+            if (EyeTarget == null && KeepEyeTarget != null)
+            {
+                EyeTarget = KeepEyeTarget;
+            }
+
+            if (teamColor == "Red" && transform.position.x < TowerPlatformTarget.transform.position.x && EyeTarget != null)
+            {
+                if (EyeTarget.name != "MinionKeepEyeTarget" && EyeTarget.name != "BlueMinionKeepEyeTarget")
+                {
+                    target = EyeTarget.transform;
+                }
+                else if (transform.position.x < -37 && KeepEyeTarget != null)
+                {
+                    target = EyeTarget.transform;
+                }
+            }
+            if (teamColor == "Blue" && transform.position.x > TowerPlatformTarget.transform.position.x && EyeTarget != null)
+            {
+                if (EyeTarget.name != "MinionKeepEyeTarget" && EyeTarget.name != "BlueMinionKeepEyeTarget")
+                {
+                    target = EyeTarget.transform;
+                }
+                else if (transform.position.x > 120 && KeepEyeTarget != null)
+                {
+                    target = EyeTarget.transform;
+                }
+            }
+
+            if (target == null)
+            {
+                target = TowerPlatformTarget.transform;
+                CurrentJumpTarget = "Gondola";
+            }
         }
 
-        if (teamColor == "Red" && transform.position.x < TowerPlatformTarget.transform.position.x && EyeTarget != null)
+        else if (MenuEvents.gameModeSelect == 3)
         {
-            if (EyeTarget.name != "MinionKeepEyeTarget" && EyeTarget.name != "BlueMinionKeepEyeTarget")
+            if (target == null)
             {
                 target = EyeTarget.transform;
             }
-            else if (transform.position.x < -37 && KeepEyeTarget != null)
-            {
-                target = EyeTarget.transform;
-            }
-        }
-        if (teamColor == "Blue" && transform.position.x > TowerPlatformTarget.transform.position.x && EyeTarget != null)
-        {
-            if (EyeTarget.name != "MinionKeepEyeTarget" && EyeTarget.name != "BlueMinionKeepEyeTarget")
-            {
-                target = EyeTarget.transform;
-            }
-            else if (transform.position.x > 120 && KeepEyeTarget != null)
-            {
-                target = EyeTarget.transform;
-            }
-        }
-
-        if (target == null)
-        {
-            target = TowerPlatformTarget.transform;
-            CurrentJumpTarget = "Gondola";
         }
 
         if (isGrappled)
@@ -694,42 +719,46 @@ public class MinionBehavior : MonoBehaviour
 
     public void SelectTarget()
     {
-        float distanceToLaunch = Vector2.Distance(transform.position, firstLauncherTarget.transform.position);
-        float distanceToPlatform = Vector2.Distance(transform.position, MovingPlatformTarget.transform.position);
-        float distanceToGondola = Vector2.Distance(transform.position, GondolaTarget.transform.position);
         if (EyeTarget != null)
         {
             float distanceToEye = Vector2.Distance(transform.position, EyeTarget.transform.position);
         }
-        if (teamColor == "Red")
+        if (MenuEvents.gameModeSelect == 1)
         {
-            if (transform.position.x < firstLauncherTarget.transform.position.x && transform.position.x > MovingPlatformTarget.transform.position.x && target.name != "LeftEdge" && target.name != "RightEdge")
+            if (teamColor == "Red")
             {
-                target = MovingPlatformTarget.transform;
+                if (transform.position.x < firstLauncherTarget.transform.position.x && transform.position.x > MovingPlatformTarget.transform.position.x && target.name != "LeftEdge" && target.name != "RightEdge")
+                {
+                    target = MovingPlatformTarget.transform;
+                }
+                if (transform.position.y >= 0f && transform.position.x < MovingPlatformTarget.transform.position.x && target.name != "LeftEdge" && target.name != "RightEdge" && CurrentJumpTarget != "EnemyPlatform" && CurrentJumpTarget != "EnemyKeep")
+                {
+                    m_idle = false;
+                    target = GondolaTarget.transform;
+                }
             }
-            if (transform.position.y >= 0f && transform.position.x < MovingPlatformTarget.transform.position.x && target.name != "LeftEdge" && target.name != "RightEdge" && CurrentJumpTarget != "EnemyPlatform" && CurrentJumpTarget != "EnemyKeep")
+            else if (teamColor == "Blue")
             {
-                m_idle = false;
-                target = GondolaTarget.transform;
+                if (transform.position.x > firstLauncherTarget.transform.position.x && transform.position.x < MovingPlatformTarget.transform.position.x && target.name != "LeftEdge" && target.name != "RightEdge")
+                {
+                    target = MovingPlatformTarget.transform;
+                }
+                if (transform.position.y <= 0f && transform.position.x > MovingPlatformTarget.transform.position.x && target.name != "LeftEdge" && target.name != "RightEdge" && CurrentJumpTarget != "EnemyPlatform" && CurrentJumpTarget != "EnemyKeep")
+                {
+                    m_idle = false;
+                    target = GondolaTarget.transform;
+                }
+            }
+            if (CurrentJumpTarget == "EnemyPlatform")
+            {
+                target = GondolaEdgeTarget.transform;
             }
         }
-        else if (teamColor == "Blue")
+        
+        else if (MenuEvents.gameModeSelect == 3)
         {
-            if (transform.position.x > firstLauncherTarget.transform.position.x && transform.position.x < MovingPlatformTarget.transform.position.x && target.name != "LeftEdge" && target.name != "RightEdge")
-            {
-                target = MovingPlatformTarget.transform;
-            }
-            if (transform.position.y <= 0f && transform.position.x > MovingPlatformTarget.transform.position.x && target.name != "LeftEdge" && target.name != "RightEdge" && CurrentJumpTarget != "EnemyPlatform" && CurrentJumpTarget != "EnemyKeep")
-            {
-                m_idle = false;
-                target = GondolaTarget.transform;
-            }
+            target = EyeTarget.transform;
         }
-        if (CurrentJumpTarget == "EnemyPlatform")
-        {
-            target = GondolaEdgeTarget.transform;
-        }
-
         Flip();
     }
 
@@ -851,7 +880,7 @@ public class MinionBehavior : MonoBehaviour
         }
         else if (collision.transform.tag == "AttackHitbox" && !m_dead)
         {
-            collision.GetComponentInParent<CombatManager>().Hit(transform, collision.transform.name);
+            collision.GetComponentInParent<CombatManager>().Hit(transform, collision.GetComponent<CollisionTracker>());
         }
         if (collision.transform.tag == "EyeShot" && collision.GetComponentInParent<TowerEye>().teamColor != teamColor)
         {
@@ -918,216 +947,257 @@ public class MinionBehavior : MonoBehaviour
             target = GondolaTarget.transform;
             CurrentJumpTarget = "Gondola";
         }
-        if (teamColor == "Red")
+        if (MenuEvents.gameModeSelect == 1)
         {
-            if (collision.transform.tag == "MinionBoardRight" && m_grounded && target.name != "RedMinionPlatformTarget" && !target.name.Contains("EyeTarget"))
+            if (teamColor == "Red")
             {
-                //set velocity to zero to not carry momentum
-                transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-5.5f, 18f), ForceMode2D.Impulse);
-                //SelectTarget();
-                target = GondolaEdgeTarget.transform;
-                CurrentJumpTarget = "EnemyPlatform";
-                m_grounded = false;
-                m_launched = true;
-                DisableWallSensors();
-                m_groundSensor.Disable(.2f);
-            }
-            if (collision.transform.tag == "MinionBoardLeft" && m_grounded && target.name != "RedMinionPlatformTarget" && !target.name.Contains("EyeTarget"))
-            {
-                //set velocity to zero to not carry momentum
-                transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(5.5f, 18f), ForceMode2D.Impulse);
-                //SelectTarget();
-                target = GondolaEdgeTarget.transform;
-                CurrentJumpTarget = "EnemyPlatform";
-                m_grounded = false;
-                m_launched = true;
-                DisableWallSensors();
-                m_groundSensor.Disable(.2f);
-            }
-            if (collision.transform.tag == "MinionJumpToMainPlatform" && target.name != "RedMinionGondolaTarget" && m_grounded && CurrentJumpTarget == "MainPlatform")
-            {
-                //set velocity to zero to not carry momentum
-                transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-6f, 6f), ForceMode2D.Impulse);
-                m_launched = true;
-                //SelectTarget();
-                target = GondolaTarget.transform;
-                CurrentJumpTarget = "Gondola";
-            }
-            if (collision.transform.tag == "MinionJumpLeft")
-            {
-                transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-6f, 5), ForceMode2D.Impulse);
-                CurrentJumpTarget = "VerticalPlatform";
-                SelectTarget();
-            }
-            else if (collision.transform.tag == "MinionJumpUp" && !m_idle && m_grounded && CurrentJumpTarget == "VerticalPlatform")
-            {
-                transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(0, 9), ForceMode2D.Impulse);
-                m_launched = true;
-                CurrentJumpTarget = "MainPlatform";
-            }
-            //else if (collision.transform.tag == "MinionBoardGondola" && m_grounded && (target.name == "RedMinionGondolaTarget" || target.name == "MinionAfterEyeTarget" || target.name == "LeftEdge") && !m_launched)
-            //{
-            //    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-            //    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(0, 17f), ForceMode2D.Impulse);
-            //    m_launched = true;
-            //    target = GondolaEdgeTarget.transform;
-            //    CurrentJumpTarget = "EnemyPlatform";
-            //}
-            else if (collision.transform.tag == "MinionJumpToLBottomPlat" && m_grounded && (target.name == "RedMinionGondolaTarget" || target.name == "MinionAfterEyeTarget" || target.name == "LeftEdge") && !m_launched)
-            {
-                transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-2f, 1f), ForceMode2D.Impulse);
-                m_launched = true;
-                target = GondolaEdgeTarget.transform;
-                CurrentJumpTarget = "EnemyPlatform";
-            }
-            else if (collision.transform.tag == "Gondola" && m_grounded && transform.position.y > collision.transform.position.y)
-            {
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(0f, .5f), ForceMode2D.Impulse);
-                target = GondolaEdgeTarget.transform;
-                if (EyeTarget != null)
+                if (collision.transform.tag == "MinionBoardRight" && m_grounded && target.name != "RedMinionPlatformTarget" && !target.name.Contains("EyeTarget"))
                 {
+                    //set velocity to zero to not carry momentum
+                    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-5.5f, 18f), ForceMode2D.Impulse);
+                    //SelectTarget();
+                    target = GondolaEdgeTarget.transform;
+                    CurrentJumpTarget = "EnemyPlatform";
+                    m_grounded = false;
+                    m_launched = true;
+                    DisableWallSensors();
+                    m_groundSensor.Disable(.2f);
+                }
+                if (collision.transform.tag == "MinionBoardLeft" && m_grounded && target.name != "RedMinionPlatformTarget" && !target.name.Contains("EyeTarget"))
+                {
+                    //set velocity to zero to not carry momentum
+                    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(5.5f, 18f), ForceMode2D.Impulse);
+                    //SelectTarget();
+                    target = GondolaEdgeTarget.transform;
+                    CurrentJumpTarget = "EnemyPlatform";
+                    m_grounded = false;
+                    m_launched = true;
+                    DisableWallSensors();
+                    m_groundSensor.Disable(.2f);
+                }
+                if (collision.transform.tag == "MinionJumpToMainPlatform" && target.name != "RedMinionGondolaTarget" && m_grounded && CurrentJumpTarget == "MainPlatform")
+                {
+                    //set velocity to zero to not carry momentum
+                    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-6f, 6f), ForceMode2D.Impulse);
+                    m_launched = true;
+                    //SelectTarget();
+                    target = GondolaTarget.transform;
+                    CurrentJumpTarget = "Gondola";
+                }
+                if (collision.transform.tag == "MinionJumpLeft")
+                {
+                    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-6f, 5), ForceMode2D.Impulse);
+                    CurrentJumpTarget = "VerticalPlatform";
+                    SelectTarget();
+                }
+                else if (collision.transform.tag == "MinionJumpUp" && !m_idle && m_grounded && CurrentJumpTarget == "VerticalPlatform")
+                {
+                    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(0, 9), ForceMode2D.Impulse);
+                    m_launched = true;
+                    CurrentJumpTarget = "MainPlatform";
+                }
+                //else if (collision.transform.tag == "MinionBoardGondola" && m_grounded && (target.name == "RedMinionGondolaTarget" || target.name == "MinionAfterEyeTarget" || target.name == "LeftEdge") && !m_launched)
+                //{
+                //    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                //    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(0, 17f), ForceMode2D.Impulse);
+                //    m_launched = true;
+                //    target = GondolaEdgeTarget.transform;
+                //    CurrentJumpTarget = "EnemyPlatform";
+                //}
+                else if (collision.transform.tag == "MinionJumpToLBottomPlat" && m_grounded && (target.name == "RedMinionGondolaTarget" || target.name == "MinionAfterEyeTarget" || target.name == "LeftEdge") && !m_launched)
+                {
+                    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-2f, 1f), ForceMode2D.Impulse);
+                    m_launched = true;
+                    target = GondolaEdgeTarget.transform;
                     CurrentJumpTarget = "EnemyPlatform";
                 }
-                else
+                else if (collision.transform.tag == "Gondola" && m_grounded && transform.position.y > collision.transform.position.y)
                 {
-                    CurrentJumpTarget = "EnemyKeep";
-                }
+                    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(0f, .5f), ForceMode2D.Impulse);
+                    target = GondolaEdgeTarget.transform;
+                    if (EyeTarget != null)
+                    {
+                        CurrentJumpTarget = "EnemyPlatform";
+                    }
+                    else
+                    {
+                        CurrentJumpTarget = "EnemyKeep";
+                    }
 
+                }
+                else if (collision.transform.tag == "MinionJumpToEnemyPlat" && m_grounded && CurrentJumpTarget == "EnemyPlatform" && EyeTarget != null)
+                {
+                    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-7f, 7), ForceMode2D.Impulse);
+                    m_launched = true;
+                    target = EyeTarget.transform;
+                    CurrentJumpTarget = "None";
+                }
+                else if (collision.transform.tag == "MinionJumpToEnemyKeep" && m_grounded && KeepEyeTarget != null)
+                {
+                    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-3f, 4), ForceMode2D.Impulse);
+                    target = KeepEyeTarget.transform;
+                    CurrentJumpTarget = "None";
+                }
+                else if (collision.transform.tag == "MinionJumpSmall" && m_grounded && CurrentJumpTarget == "None" && EyeTarget != null)
+                {
+                    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-.5f, 0), ForceMode2D.Impulse);
+                    target = EyeTarget.transform;
+                    CurrentJumpTarget = "None";
+                }
             }
-            else if (collision.transform.tag == "MinionJumpToEnemyPlat" && m_grounded && CurrentJumpTarget == "EnemyPlatform" && EyeTarget != null)
+            else if (teamColor == "Blue")
+            {
+                if (collision.transform.tag == "MinionBoardRight" && m_grounded && target.name != "BlueMinionPlatformTarget" && !target.name.Contains("EyeTarget"))
+                {
+                    //set velocity to zero to not carry momentum
+                    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-5.5f, 18f), ForceMode2D.Impulse);
+                    //SelectTarget();
+                    target = GondolaEdgeTarget.transform;
+                    CurrentJumpTarget = "EnemyPlatform";
+                    m_grounded = false;
+                    m_launched = true;
+                    DisableWallSensors();
+                    m_groundSensor.Disable(.2f);
+                }
+                if (collision.transform.tag == "MinionBoardLeft" && m_grounded && target.name != "BlueMinionPlatformTarget" && !target.name.Contains("EyeTarget"))
+                {
+                    //set velocity to zero to not carry momentum
+                    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(5.5f, 18f), ForceMode2D.Impulse);
+                    //SelectTarget();
+                    target = GondolaEdgeTarget.transform;
+                    CurrentJumpTarget = "EnemyPlatform";
+                    m_grounded = false;
+                    m_launched = true;
+                    DisableWallSensors();
+                    m_groundSensor.Disable(.2f);
+                }
+                if (collision.transform.tag == "MinionJumpToMainPlatform" && m_grounded && target.name != "BlueMinionGondolaTarget" && CurrentJumpTarget == "MainPlatform")
+                {
+                    //set velocity to zero to not carry momentum
+                    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(6f, 6f), ForceMode2D.Impulse);
+                    m_launched = true;
+                    //SelectTarget();
+                    target = GondolaTarget.transform;
+                    CurrentJumpTarget = "Gondola";
+                }
+                if (collision.transform.tag == "MinionJumpRight")
+                {
+                    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(6.5f, 5), ForceMode2D.Impulse);
+                    CurrentJumpTarget = "VerticalPlatform";
+                    SelectTarget();
+                }
+                else if (collision.transform.tag == "MinionJumpUp" && !m_idle && m_grounded && CurrentJumpTarget == "VerticalPlatform")
+                {
+                    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(0, 9), ForceMode2D.Impulse);
+                    m_launched = true;
+                    CurrentJumpTarget = "MainPlatform";
+                }
+                //else if (collision.transform.tag == "MinionBoardGondola" && m_grounded && (target.name == "RedMinionGondolaTarget" || target.name == "MinionAfterEyeTarget" || target.name == "LeftEdge") && !m_launched)
+                //{
+                //    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                //    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(0, 17f), ForceMode2D.Impulse);
+                //    m_launched = true;
+                //    target = GondolaEdgeTarget.transform;
+                //    CurrentJumpTarget = "EnemyPlatform";
+                //}
+                else if (collision.transform.tag == "MinionJumpToRBottomPlat" && m_grounded && (target.name == "BlueMinionGondolaTarget" || target.name == "MinionAfterEyeTarget" || target.name == "RightEdge") && !m_launched)
+                {
+                    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-2f, 1f), ForceMode2D.Impulse);
+                    m_launched = true;
+                    target = GondolaEdgeTarget.transform;
+                    CurrentJumpTarget = "EnemyPlatform";
+                }
+                else if (collision.transform.tag == "Gondola" && m_grounded && transform.position.y > collision.transform.position.y)
+                {
+                    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(0f, .5f), ForceMode2D.Impulse);
+                    target = GondolaEdgeTarget.transform;
+                    if (EyeTarget != null)
+                    {
+                        CurrentJumpTarget = "EnemyPlatform";
+                    }
+                    else
+                    {
+                        CurrentJumpTarget = "EnemyKeep";
+                    }
+
+                }
+                else if (collision.transform.tag == "MinionJumpToEnemyPlat" && m_grounded && CurrentJumpTarget == "EnemyPlatform" && EyeTarget != null)
+                {
+                    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(7f, 7), ForceMode2D.Impulse);
+                    m_launched = true;
+                    target = EyeTarget.transform;
+                    CurrentJumpTarget = "None";
+                }
+                else if (collision.transform.tag == "MinionJumpToEnemyKeep" && m_grounded && KeepEyeTarget != null)
+                {
+                    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(3f, 4), ForceMode2D.Impulse);
+                    target = KeepEyeTarget.transform;
+                    CurrentJumpTarget = "None";
+                }
+                else if (collision.transform.tag == "MinionJumpSmall" && m_grounded && CurrentJumpTarget == "None" && EyeTarget != null)
+                {
+                    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(.5f, 0), ForceMode2D.Impulse);
+                    target = EyeTarget.transform;
+                    CurrentJumpTarget = "None";
+                }
+            }
+        }
+        
+        else if (MenuEvents.gameModeSelect == 3)
+        {
+            if (collision.transform.tag == "MinionJumpRight" && teamColor == "Blue" && m_grounded && EyeTarget != null)
             {
                 transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-7f, 7), ForceMode2D.Impulse);
+                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(7f, 8), ForceMode2D.Impulse);
                 m_launched = true;
                 target = EyeTarget.transform;
                 CurrentJumpTarget = "None";
             }
-            else if (collision.transform.tag == "MinionJumpToEnemyKeep" && m_grounded && KeepEyeTarget != null)
+            else if (collision.transform.tag == "MinionJumpRight" && teamColor == "Red" && m_grounded && EyeTarget != null)
             {
                 transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-3f, 4), ForceMode2D.Impulse);
-                target = KeepEyeTarget.transform;
+                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-7f, 8), ForceMode2D.Impulse);
+                m_launched = true;
+                target = EyeTarget.transform;
                 CurrentJumpTarget = "None";
             }
-            else if (collision.transform.tag == "MinionJumpSmall" && m_grounded && CurrentJumpTarget == "None" && EyeTarget != null)
+            else if (collision.transform.tag == "MinionJumpLeft" && teamColor == "Red" && m_grounded && EyeTarget != null)
             {
                 transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-.5f, 0), ForceMode2D.Impulse);
+                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-7f, 8), ForceMode2D.Impulse);
+                m_launched = true;
+                target = EyeTarget.transform;
+                CurrentJumpTarget = "None";
+            }
+            else if (collision.transform.tag == "MinionJumpLeft" && teamColor == "Blue" && m_grounded && EyeTarget != null)
+            {
+                transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(7f, 8), ForceMode2D.Impulse);
+                m_launched = true;
                 target = EyeTarget.transform;
                 CurrentJumpTarget = "None";
             }
         }
-        else if (teamColor == "Blue")
-        {
-            if (collision.transform.tag == "MinionBoardRight" && m_grounded && target.name != "BlueMinionPlatformTarget" && !target.name.Contains("EyeTarget"))
-            {
-                //set velocity to zero to not carry momentum
-                transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-5.5f, 18f), ForceMode2D.Impulse);
-                //SelectTarget();
-                target = GondolaEdgeTarget.transform;
-                CurrentJumpTarget = "EnemyPlatform";
-                m_grounded = false;
-                m_launched = true;
-                DisableWallSensors();
-                m_groundSensor.Disable(.2f);
-            }
-            if (collision.transform.tag == "MinionBoardLeft" && m_grounded && target.name != "BlueMinionPlatformTarget" && !target.name.Contains("EyeTarget"))
-            {
-                //set velocity to zero to not carry momentum
-                transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(5.5f, 18f), ForceMode2D.Impulse);
-                //SelectTarget();
-                target = GondolaEdgeTarget.transform;
-                CurrentJumpTarget = "EnemyPlatform";
-                m_grounded = false;
-                m_launched = true;
-                DisableWallSensors();
-                m_groundSensor.Disable(.2f);
-            }
-            if (collision.transform.tag == "MinionJumpToMainPlatform" && m_grounded && target.name != "BlueMinionGondolaTarget" && CurrentJumpTarget == "MainPlatform")
-            {
-                //set velocity to zero to not carry momentum
-                transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(6f, 6f), ForceMode2D.Impulse);
-                m_launched = true;
-                //SelectTarget();
-                target = GondolaTarget.transform;
-                CurrentJumpTarget = "Gondola";
-            }
-            if (collision.transform.tag == "MinionJumpRight")
-            {
-                transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(6.5f, 5), ForceMode2D.Impulse);
-                CurrentJumpTarget = "VerticalPlatform";
-                SelectTarget();
-            }
-            else if (collision.transform.tag == "MinionJumpUp" && !m_idle && m_grounded && CurrentJumpTarget == "VerticalPlatform")
-            {
-                transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(0, 9), ForceMode2D.Impulse);
-                m_launched = true;
-                CurrentJumpTarget = "MainPlatform";
-            }
-            //else if (collision.transform.tag == "MinionBoardGondola" && m_grounded && (target.name == "RedMinionGondolaTarget" || target.name == "MinionAfterEyeTarget" || target.name == "LeftEdge") && !m_launched)
-            //{
-            //    transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-            //    transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(0, 17f), ForceMode2D.Impulse);
-            //    m_launched = true;
-            //    target = GondolaEdgeTarget.transform;
-            //    CurrentJumpTarget = "EnemyPlatform";
-            //}
-            else if (collision.transform.tag == "MinionJumpToRBottomPlat" && m_grounded && (target.name == "BlueMinionGondolaTarget" || target.name == "MinionAfterEyeTarget" || target.name == "RightEdge") && !m_launched)
-            {
-                transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-2f, 1f), ForceMode2D.Impulse);
-                m_launched = true;
-                target = GondolaEdgeTarget.transform;
-                CurrentJumpTarget = "EnemyPlatform";
-            }
-            else if (collision.transform.tag == "Gondola" && m_grounded && transform.position.y > collision.transform.position.y)
-            {
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(0f, .5f), ForceMode2D.Impulse);
-                target = GondolaEdgeTarget.transform;
-                if (EyeTarget != null)
-                {
-                    CurrentJumpTarget = "EnemyPlatform";
-                }
-                else
-                {
-                    CurrentJumpTarget = "EnemyKeep";
-                }
 
-            }
-            else if (collision.transform.tag == "MinionJumpToEnemyPlat" && m_grounded && CurrentJumpTarget == "EnemyPlatform" && EyeTarget != null)
-            {
-                transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(7f, 7), ForceMode2D.Impulse);
-                m_launched = true;
-                target = EyeTarget.transform;
-                CurrentJumpTarget = "None";
-            }
-            else if (collision.transform.tag == "MinionJumpToEnemyKeep" && m_grounded && KeepEyeTarget != null)
-            {
-                transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(3f, 4), ForceMode2D.Impulse);
-                target = KeepEyeTarget.transform;
-                CurrentJumpTarget = "None";
-            }
-            else if (collision.transform.tag == "MinionJumpSmall" && m_grounded && CurrentJumpTarget == "None" && EyeTarget != null)
-            {
-                transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(.5f, 0), ForceMode2D.Impulse);
-                target = EyeTarget.transform;
-                CurrentJumpTarget = "None";
-            }
-        }
+
     }
 
 }

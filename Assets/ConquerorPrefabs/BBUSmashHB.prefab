@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1186636257495359999}
   - component: {fileID: 6039426008789306663}
   - component: {fileID: 4847776727476834673}
+  - component: {fileID: 2167423206312711754}
   m_Layer: 15
   m_Name: BBUSmashHB
   m_TagString: AttackHitbox
@@ -77,6 +78,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262f864e5d4c9484fa0ee03fdd9a72aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxLingerTime: 0.05
+--- !u!114 &2167423206312711754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975136323397336317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 8.6
+  baseKB: 0.5
+  hitStun: 0.2
+  damageModifier: 1.2
+  KBModifier: 0.05
+  modifierY: 6.5
+  modifierX: 0.16
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0.2
+  shakeScreen: 1
+  smash: 1
+  grab: 0
+  soundName: Hurt
+  hitEnemies: []
 --- !u!1 &8517494380313103611
 GameObject:
   m_ObjectHideFlags: 0

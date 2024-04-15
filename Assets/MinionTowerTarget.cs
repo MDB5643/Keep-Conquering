@@ -29,7 +29,7 @@ public class MinionTowerTarget : MonoBehaviour
         }
         else if (collision.transform.tag == "AttackHitbox" && collision.GetComponentInParent<MinionBehavior>())
         {
-            collision.GetComponentInParent<CombatManager>().Hit(TowerEye.transform, collision.transform.name);
+            collision.GetComponentInParent<CombatManager>().Hit(TowerEye.transform, collision.GetComponent<CollisionTracker>());
         }
     }
 }

@@ -34,7 +34,7 @@ public class ChampJab2 : MonoBehaviour
         //2. Assign Material to the new Line Renderer
         //lr.material = new Material(Shader.Find("Particles/Additive"));
 
-        float zPos = 10f;//Since this is 2D. Make sure it is in the front
+        float zPos = 0f;//Since this is 2D. Make sure it is in the front
 
         if (pCollider is PolygonCollider2D)
         {

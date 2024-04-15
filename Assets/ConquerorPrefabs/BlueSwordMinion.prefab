@@ -348,7 +348,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f2ed27d6c1c3ccc48959bcca269d88f0, type: 3}
-  m_Color: {r: 0.49043253, g: 0.5919663, b: 0.9716981, a: 1}
+  m_Color: {r: 0.5613208, g: 0.59605676, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -390,7 +390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_sourceColors:
-  - {r: 0.827451, g: 0.827451, b: 0.827451, a: 1}
+  - {r: 0.87843144, g: 0.8941177, b: 0.8000001, a: 1}
   m_newColors:
   - {r: 0.254717, g: 0.07896812, b: 0.056470275, a: 0}
 --- !u!114 &7958570871091958
@@ -431,10 +431,10 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   outlineColor: {r: 0, g: 0, b: 0, a: 1}
   directions:
-    top: 1
-    bottom: 1
+    top: 0
+    bottom: 0
     left: 1
-    right: 1
+    right: 0
 --- !u!1 &3234636803878206297
 GameObject:
   m_ObjectHideFlags: 0

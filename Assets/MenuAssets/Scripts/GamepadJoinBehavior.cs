@@ -31,11 +31,17 @@ public class GamepadJoinBehavior : MonoBehaviour
         myAction.Enable();
     }
 
+    private void Update()
+    {
+        if (currentCanvas == null)
+        {
+            currentCanvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+        }
+    }
 
 
 
- 
- 
+
     void AddPlayer(InputDevice device)
     {
         // Avoid running if the device is already paired to a player

@@ -62,7 +62,7 @@ public class CPUHotZone : MonoBehaviour
             //do nothing
 
         }
-        else if (collider.gameObject.CompareTag("Player") || collider.gameObject.CompareTag("PlayerMid"))
+        else if (collider.gameObject.CompareTag("Player") || collider.gameObject.CompareTag("PlayerMid") || collider.GetComponent<MinionBehavior>() != null)
         {
             inRange = true;
             

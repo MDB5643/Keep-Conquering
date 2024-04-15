@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3123685471063480376}
   - component: {fileID: 400189445545839498}
   - component: {fileID: 1629326089108387601}
+  - component: {fileID: 1227209669351511615}
   m_Layer: 15
   m_Name: RRFSpecExplode
   m_TagString: AttackHitbox
@@ -79,7 +80,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7209487516264346233, guid: 2fbaf1d5a728add46a820f8dd1c5da91, type: 3}
-  m_Color: {r: 0, g: 0.981899, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.8615718, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -130,7 +131,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0031746924, y: -0.095241815}
@@ -149,6 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitEnemy: 
+  crosshair: {fileID: 0}
 --- !u!114 &400189445545839498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,9 +182,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
-  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineColor: {r: 0, g: 1, b: 0.99215686, a: 1}
   directions:
-    top: 1
-    bottom: 1
+    top: 0
+    bottom: 0
     left: 1
-    right: 1
+    right: 0
+--- !u!114 &1227209669351511615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6260341956870047123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 5.1
+  baseKB: 0.15
+  hitStun: 0.12
+  damageModifier: 0
+  KBModifier: 0
+  modifierY: 0.1
+  modifierX: 0.1
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0
+  shakeScreen: 0
+  smash: 0
+  grab: 0
+  continuous: 0
+  groundPound: 0
+  noHitStop: 1
+  soundName: MagicHit
+  hitEnemies: []

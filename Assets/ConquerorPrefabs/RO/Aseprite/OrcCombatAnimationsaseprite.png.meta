@@ -2065,7 +2065,7 @@ TextureImporter:
         x: 1375
         y: 336
         width: 26
-        height: 39
+        height: 41
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2086,7 +2086,7 @@ TextureImporter:
         x: 23
         y: 252
         width: 47
-        height: 40
+        height: 41
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2107,7 +2107,7 @@ TextureImporter:
         x: 120
         y: 252
         width: 47
-        height: 39
+        height: 40
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2149,7 +2149,7 @@ TextureImporter:
         x: 322
         y: 252
         width: 27
-        height: 39
+        height: 41
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2170,7 +2170,7 @@ TextureImporter:
         x: 416
         y: 252
         width: 30
-        height: 40
+        height: 41
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2191,7 +2191,7 @@ TextureImporter:
         x: 495
         y: 252
         width: 68
-        height: 39
+        height: 41
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2209,10 +2209,10 @@ TextureImporter:
       name: OrcCombatAnimationsaseprite_81
       rect:
         serializedVersion: 2
-        x: 616
+        x: 617
         y: 252
         width: 22
-        height: 40
+        height: 41
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2233,7 +2233,7 @@ TextureImporter:
         x: 713
         y: 252
         width: 21
-        height: 40
+        height: 41
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}

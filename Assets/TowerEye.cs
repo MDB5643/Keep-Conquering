@@ -79,7 +79,7 @@ public class TowerEye : MonoBehaviour
             }
             else
             {
-                collision.GetComponentInParent<CombatManager>().Hit(transform, collision.transform.name);
+                collision.GetComponentInParent<CombatManager>().Hit(transform, collision.GetComponent<CollisionTracker>());
             }
             
         }
@@ -115,12 +115,12 @@ public class TowerEye : MonoBehaviour
         if (transform.name == "FrontLeftEye")
         {
             Instantiate(EyePop, new Vector3(dustSpawnPosition.x + 3.2f, dustSpawnPosition.y + 1.85f), Quaternion.identity);
-            Instantiate(Launcher, new Vector3(14.72f, -10.22f, 0), Quaternion.identity).SetActive(true);
+            //Instantiate(Launcher, new Vector3(14.72f, -10.22f, 0), Quaternion.identity).SetActive(true);
         }
         if (transform.name == "FrontRightEye")
         {
             Instantiate(EyePop, new Vector3(dustSpawnPosition.x + 3.2f, dustSpawnPosition.y + 1.85f), Quaternion.identity);
-            Instantiate(Launcher, new Vector3(66.09f, -10.22f, 0), Quaternion.identity).SetActive(true);
+            //Instantiate(Launcher, new Vector3(66.09f, -10.22f, 0), Quaternion.identity).SetActive(true);
         }
 
         //GameObject newDust = Instantiate(EyePop, dustSpawnPosition, Quaternion.identity) as GameObject;
@@ -130,25 +130,25 @@ public class TowerEye : MonoBehaviour
         {
             if (eyePartner == null)
             {
-                KeepWall.SetActive(false);
+                //KeepWall.SetActive(false);
             }
         }
         else if (transform.CompareTag("RedFrontEye"))
         {
             //Move gondola limit
-            Gondola.GetComponent<PlatformMove>().points[0].SetPositionAndRotation(new Vector3(108f, 5.5f), new Quaternion(0f, 0f, 0f, 0f));
+            //Gondola.GetComponent<PlatformMove>().points[0].SetPositionAndRotation(new Vector3(108f, 5.5f), new Quaternion(0f, 0f, 0f, 0f));
         }
         else if (transform.CompareTag("BlueKeepEye") || transform.CompareTag("BlueMidEye"))
         {
             if (eyePartner == null)
             {
-                KeepWall.SetActive(false);
+                //KeepWall.SetActive(false);
             }
         }
         else if (transform.CompareTag("BlueFrontEye"))
         {
             //Move gondola limit
-            Gondola.GetComponent<PlatformMove>().points[1].SetPositionAndRotation(new Vector3(-25f, 5.5f), new Quaternion(0f, 0f, 0f, 0f));
+            //Gondola.GetComponent<PlatformMove>().points[1].SetPositionAndRotation(new Vector3(-25f, 5.5f), new Quaternion(0f, 0f, 0f, 0f));
         }
 
 

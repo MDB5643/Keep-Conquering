@@ -43,6 +43,8 @@ public class Sound
         m_source.Stop();
     }
 
+    
+
     public bool IsPlaying()
     {
         if (m_source.isPlaying)
@@ -64,7 +66,7 @@ public class AudioManager_PrototypeHero : MonoBehaviour
     {
         if(instance != null)
         {
-            Debug.LogError("More than one AudioManger in scene");
+            GameObject.Destroy(gameObject);
         }
         else
         {
@@ -82,6 +84,11 @@ public class AudioManager_PrototypeHero : MonoBehaviour
             m_sounds[i].SetSource(go.AddComponent<AudioSource>());
         }
         //PlaySound("Practice");
+    }
+
+    public void SetSoundArray(Sound[] soundArray)
+    {
+        m_sounds = soundArray;
     }
 
     public void PlaySound (string name)
@@ -122,4 +129,6 @@ public class AudioManager_PrototypeHero : MonoBehaviour
 
         return false;
     }
+
+    
 }

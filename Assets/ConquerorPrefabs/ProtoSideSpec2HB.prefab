@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5251638421178243361}
   - component: {fileID: 5815965900084159815}
+  - component: {fileID: 8013320794376977442}
+  - component: {fileID: 7268451823668598315}
   m_Layer: 15
   m_Name: ProtoSideSpec2HB
   m_TagString: AttackHitbox
@@ -68,3 +70,46 @@ PolygonCollider2D:
       - {x: 0.62469566, y: -0.42761025}
       - {x: 0.96620834, y: -0.12219867}
       - {x: 1.0248772, y: 0.2721068}
+--- !u!114 &8013320794376977442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2260828106259116969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 262f864e5d4c9484fa0ee03fdd9a72aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxLingerTime: 0.05
+--- !u!114 &7268451823668598315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2260828106259116969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 3.8
+  baseKB: 0.1
+  hitStun: 0.16
+  damageModifier: 0
+  KBModifier: 0
+  modifierY: 8
+  modifierX: 0.16
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0
+  shakeScreen: 0
+  smash: 0
+  grab: 0
+  continuous: 0
+  groundPound: 0
+  noHitStop: 0
+  soundName: Hurt
+  hitEnemies: []

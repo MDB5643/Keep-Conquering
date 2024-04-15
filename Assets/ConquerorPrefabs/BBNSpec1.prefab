@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1923252843108063510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 159623178056290058}
+  - component: {fileID: 4005198396215716375}
+  - component: {fileID: 2318076629354685625}
+  - component: {fileID: 2485408556687164452}
+  m_Layer: 15
+  m_Name: BBNSpec1
+  m_TagString: AttackHitbox
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &159623178056290058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923252843108063510}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4005198396215716375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923252843108063510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 262f864e5d4c9484fa0ee03fdd9a72aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxLingerTime: 0.05
+--- !u!60 &2318076629354685625
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923252843108063510}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2.15625, y: 1.15625}
+    newSize: {x: 0.15625, y: 0.71875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.7483069, y: 0.63092566}
+      - {x: 1.1287287, y: 1.0202558}
+      - {x: 1.1691791, y: 1.1175219}
+      - {x: 1.0772729, y: 1.2175357}
+      - {x: 0.661532, y: 1.1789207}
+      - {x: 0.25607154, y: 1.1729147}
+      - {x: 0.05155924, y: 1.1485114}
+      - {x: -0.12342329, y: 1.1381941}
+      - {x: -0.24539958, y: 1.1007844}
+      - {x: -0.3210575, y: 1.0934281}
+      - {x: -0.39162457, y: 1.1005223}
+      - {x: -0.5022335, y: 1.1148775}
+      - {x: -0.73363155, y: 0.9451802}
+      - {x: -0.7791751, y: 0.7998635}
+      - {x: -0.69065523, y: 0.6842724}
+      - {x: -0.36530948, y: 0.4839206}
+      - {x: -0.18678033, y: 0.49567485}
+      - {x: -0.09131077, y: 0.48923382}
+      - {x: 0.08880137, y: 0.49390945}
+      - {x: 0.3204334, y: 0.49782184}
+      - {x: 0.5535555, y: 0.57700783}
+--- !u!114 &2485408556687164452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923252843108063510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 6.9
+  baseKB: 0.3
+  hitStun: 0.2
+  damageModifier: 0
+  KBModifier: 0
+  modifierY: 0
+  modifierX: 0.16
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0.1
+  shakeScreen: 1
+  smash: 0
+  grab: 0
+  soundName: Hurt
+  hitEnemies: []

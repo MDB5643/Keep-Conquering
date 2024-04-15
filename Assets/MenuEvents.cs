@@ -18,6 +18,8 @@ public class MenuEvents : MonoBehaviour
     public static bool P3Set = false;
     public static bool P4Set = false;
 
+    public static bool ReturningToMenu = false;
+
     public GameObject P1Preview;
     public GameObject P2Preview;
     public GameObject P3Preview;
@@ -45,14 +47,21 @@ public class MenuEvents : MonoBehaviour
     public Conqueror P3Active;
     public Conqueror P4Active;
 
+    public Button FFAButton;
+    public Button JoustButton;
+
     public bool P3Enabled;
     public bool P4Enabled;
 
-    public bool levelLoaded = false;
+    public static bool levelLoaded = false;
 
     public string currentSelector = "";
 
-    public AudioManager_PrototypeHero audioManager;
+    public AudioManager_PrototypeHero audioManagerPrefab;
+    public static AudioManager_PrototypeHero audioManager;
+    public Sound[] audioManagerSounds;
+    bool audioStarted = false;
+    float audioCounter = 0f;
 
     public static int gameModeSelect;
 
@@ -60,7 +69,7 @@ public class MenuEvents : MonoBehaviour
     public Vector3 Player1Spawn = new Vector3(0, 1, 0);
 
     private int readyPlayers = 0;
-
+    private GameObject menu_events;
    
     private void Update()
     {
@@ -68,12 +77,23 @@ public class MenuEvents : MonoBehaviour
         {
             StartButton.GetComponent<Button>().interactable = true;
         }
+        if (audioStarted == false)
+        {
+            audioCounter++;
+            if (audioCounter == 10)
+            {
+                audioStarted = true;
+                audioManager.PlaySound("Practice");
+            }
+        }
     }
 
-    public void LoadLevel()
+    public static void LoadLevel()
     {
         if (!levelLoaded)
         {
+            ReturningToMenu = false;
+            audioManager.StopSound("Practice");
             SceneManager.LoadScene(gameModeSelect);
             levelLoaded = true;
         }
@@ -83,6 +103,14 @@ public class MenuEvents : MonoBehaviour
     public void SetMode(int selectedMode)
     {
         gameModeSelect = selectedMode;
+        if (selectedMode == 2)
+        {
+            FFAButton.Select();
+        }
+        if (selectedMode == 3)
+        {
+            JoustButton.Select();
+        }
     }
 
     public void SetConqueror(int conq, string whichPlayer)
@@ -137,15 +165,22 @@ public class MenuEvents : MonoBehaviour
         }
     }
 
+    public static void DestroyAudio()
+    {
+        GameObject.Destroy(audioManager);
+    }
+
     public void Awake()
     {
+        audioManager = GameObject.Instantiate(audioManagerPrefab);
+        audioManager.SetSoundArray(audioManagerSounds);
         StartButton.GetComponent<Button>().interactable = false;
     }
 
     private void Start()
     {
         Thread.Sleep(1000);
-        audioManager.PlaySound("MainMenu");
+        //audioManager.PlaySound("Practice");
     }
 
     public void changeSelector (string selector)
@@ -164,7 +199,7 @@ public class MenuEvents : MonoBehaviour
                 {
                     GameObject.Destroy(P1Active.gameObject);
                 }
-                P1Preview.GetComponent<Image>().sprite = DPSprite;
+                //P3Preview.GetComponent<Image>().sprite = DPSprite;
                 P1Active = GameObject.Instantiate(BBPrefab, new Vector3(P1Preview.transform.position.x, P1Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
                 P1Active.preview = true;
                 P1Active.GetComponent<PlayerInput>().DeactivateInput();
@@ -177,7 +212,7 @@ public class MenuEvents : MonoBehaviour
                 {
                     GameObject.Destroy(P2Active.gameObject);
                 }
-                P2Preview.GetComponent<Image>().sprite = DPSprite;
+                //P2Preview.GetComponent<Image>().sprite = DPSprite;
                 P2Active = GameObject.Instantiate(BBPrefab, new Vector3(P2Preview.transform.position.x, P2Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
                 P2Active.preview = true;
                 P2Active.GetComponent<PlayerInput>().DeactivateInput();
@@ -190,7 +225,7 @@ public class MenuEvents : MonoBehaviour
                 {
                     GameObject.Destroy(P3Active.gameObject);
                 }
-                P3Preview.GetComponent<Image>().sprite = DPSprite;
+                //P3Preview.GetComponent<Image>().sprite = DPSprite;
                 P3Active = GameObject.Instantiate(BBPrefab, new Vector3(P3Preview.transform.position.x, P3Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
                 P3Active.preview = true;
                 P3Active.GetComponent<PlayerInput>().DeactivateInput();
@@ -203,7 +238,7 @@ public class MenuEvents : MonoBehaviour
                 {
                     GameObject.Destroy(P4Active.gameObject);
                 }
-                P4Preview.GetComponent<Image>().sprite = DPSprite;
+                //P3Preview.GetComponent<Image>().sprite = DPSprite;
                 P4Active = GameObject.Instantiate(BBPrefab, new Vector3(P4Preview.transform.position.x, P4Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
                 P4Active.preview = true;
                 P4Active.GetComponent<PlayerInput>().DeactivateInput();
@@ -220,7 +255,7 @@ public class MenuEvents : MonoBehaviour
                 {
                     GameObject.Destroy(P1Active.gameObject);
                 }
-                //P1Preview.GetComponent<Image>().sprite = DPSprite;
+                ////P3Preview.GetComponent<Image>().sprite = DPSprite;
                 P1Active = GameObject.Instantiate(DPPrefab, new Vector3(P1Preview.transform.position.x, P1Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
                 P1Active.preview = true;
                 P1Active.GetComponent<PlayerInput>().DeactivateInput();
@@ -247,7 +282,7 @@ public class MenuEvents : MonoBehaviour
                 {
                     GameObject.Destroy(P3Active.gameObject);
                 }
-                P2Preview.GetComponent<Image>().sprite = RRSprite;
+                //P2Preview.GetComponent<Image>().sprite = RRSprite;
                 P3Active = GameObject.Instantiate(DPPrefab, new Vector3(P3Preview.transform.position.x, P3Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
                 P3Active.preview = true;
                 P3Active.GetComponent<PlayerInput>().DeactivateInput();
@@ -276,7 +311,7 @@ public class MenuEvents : MonoBehaviour
                 {
                     GameObject.Destroy(P1Active);
                 }
-                P1Preview.GetComponent<Image>().sprite = LKSprite;
+                //P3Preview.GetComponent<Image>().sprite = DPSprite;
                 P1Text.text = "Fighter/Support";
                 P1Preview.GetComponent<Image>().gameObject.SetActive(true);
                 P1Text.gameObject.SetActive(true);
@@ -367,7 +402,6 @@ public class MenuEvents : MonoBehaviour
                 {
                     GameObject.Destroy(P1Active.gameObject);
                 }
-                P1Preview.GetComponent<Image>().sprite = DPSprite;
                 P1Active = GameObject.Instantiate(ROPrefab, new Vector3(P1Preview.transform.position.x, P1Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
                 P1Active.preview = true;
                 P1Active.GetComponent<PlayerInput>().DeactivateInput();
@@ -380,7 +414,6 @@ public class MenuEvents : MonoBehaviour
                 {
                     GameObject.Destroy(P2Active.gameObject);
                 }
-                P2Preview.GetComponent<Image>().sprite = DPSprite;
                 P2Active = GameObject.Instantiate(ROPrefab, new Vector3(P2Preview.transform.position.x, P2Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
                 P2Active.preview = true;
                 P2Active.GetComponent<PlayerInput>().DeactivateInput();
@@ -393,7 +426,6 @@ public class MenuEvents : MonoBehaviour
                 {
                     GameObject.Destroy(P3Active.gameObject);
                 }
-                P3Preview.GetComponent<Image>().sprite = DPSprite;
                 P3Active = GameObject.Instantiate(ROPrefab, new Vector3(P3Preview.transform.position.x, P3Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
                 P3Active.preview = true;
                 P3Active.GetComponent<PlayerInput>().DeactivateInput();
@@ -406,7 +438,6 @@ public class MenuEvents : MonoBehaviour
                 {
                     GameObject.Destroy(P4Active.gameObject);
                 }
-                P4Preview.GetComponent<Image>().sprite = DPSprite;
                 P4Active = GameObject.Instantiate(ROPrefab, new Vector3(P4Preview.transform.position.x, P4Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
                 P4Active.preview = true;
                 P4Active.GetComponent<PlayerInput>().DeactivateInput();
@@ -428,9 +459,8 @@ public class MenuEvents : MonoBehaviour
                 {
                     GameObject.Destroy(P1Active.gameObject);
                 }
-                P1Preview.GetComponent<Image>().sprite = DPSprite;
-                //P1Active = GameObject.Instantiate(BBPrefab, new Vector3(P1Preview.transform.position.x, P1Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
-                //P1Active.preview = true;
+                P1Active = GameObject.Instantiate(BBPrefab, new Vector3(P1Preview.transform.position.x, P1Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P1Active.preview = true;
                 P1Text.text = "Heavy";
                 P1Text.gameObject.SetActive(true);
             }
@@ -440,9 +470,8 @@ public class MenuEvents : MonoBehaviour
                 {
                     GameObject.Destroy(P2Active.gameObject);
                 }
-                P2Preview.GetComponent<Image>().sprite = DPSprite;
-                //P2Active = GameObject.Instantiate(BBPrefab, new Vector3(P2Preview.transform.position.x, P2Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
-                //P2Active.preview = true;
+                P2Active = GameObject.Instantiate(BBPrefab, new Vector3(P2Preview.transform.position.x, P2Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P2Active.preview = true;
                 P2Text.text = "Heavy";
                 P2Text.gameObject.SetActive(true);
             }
@@ -452,9 +481,9 @@ public class MenuEvents : MonoBehaviour
                 {
                     GameObject.Destroy(P3Active.gameObject);
                 }
-                P3Preview.GetComponent<Image>().sprite = DPSprite;
-                //P3Active = GameObject.Instantiate(BBPrefab, new Vector3(P3Preview.transform.position.x, P3Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
-                //P3Active.preview = true;
+                //P3Preview.GetComponent<Image>().sprite = DPSprite;
+                P3Active = GameObject.Instantiate(BBPrefab, new Vector3(P3Preview.transform.position.x, P3Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P3Active.preview = true;
                 P3Text.text = "Heavy";
                 P3Text.gameObject.SetActive(true);
             }
@@ -464,9 +493,9 @@ public class MenuEvents : MonoBehaviour
                 {
                     GameObject.Destroy(P4Active.gameObject);
                 }
-                P4Preview.GetComponent<Image>().sprite = DPSprite;
-                //P4Active = GameObject.Instantiate(BBPrefab, new Vector3(P4Preview.transform.position.x, P4Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
-                //P4Active.preview = true;
+                //P3Preview.GetComponent<Image>().sprite = DPSprite;
+                P4Active = GameObject.Instantiate(BBPrefab, new Vector3(P4Preview.transform.position.x, P4Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P4Active.preview = true;
                 P4Text.text = "Heavy";
                 P4Text.gameObject.SetActive(true);
             }
@@ -480,9 +509,9 @@ public class MenuEvents : MonoBehaviour
                 {
                     GameObject.Destroy(P1Active.gameObject);
                 }
-                P1Preview.GetComponent<Image>().sprite = DPSprite;
-                //P1Active = GameObject.Instantiate(DPPrefab, new Vector3(P1Preview.transform.position.x, P1Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
-                //P1Active.preview = true;
+                //P3Preview.GetComponent<Image>().sprite = DPSprite;
+                P1Active = GameObject.Instantiate(DPPrefab, new Vector3(P1Preview.transform.position.x, P1Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P1Active.preview = true;
                 P1Text.text = "Acrobat";
                 //P1Preview.GetComponent<Image>().gameObject.SetActive(true);
                 P1Text.gameObject.SetActive(true);
@@ -494,8 +523,8 @@ public class MenuEvents : MonoBehaviour
                     GameObject.Destroy(P2Active.gameObject);
                 }
                 //P2Preview.GetComponent<Image>().sprite = RRSprite;
-                //P2Active = GameObject.Instantiate(DPPrefab, new Vector3(P2Preview.transform.position.x, P2Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
-                //P2Active.preview = true;
+                P2Active = GameObject.Instantiate(DPPrefab, new Vector3(P2Preview.transform.position.x, P2Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P2Active.preview = true;
                 P2Text.gameObject.SetActive(true);
                 P2Text.text = "Acrobat";
             }
@@ -506,8 +535,8 @@ public class MenuEvents : MonoBehaviour
                     GameObject.Destroy(P3Active.gameObject);
                 }
                 //P2Preview.GetComponent<Image>().sprite = RRSprite;
-                //P3Active = GameObject.Instantiate(DPPrefab, new Vector3(P3Preview.transform.position.x, P3Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
-                //P3Active.preview = true;
+                P3Active = GameObject.Instantiate(DPPrefab, new Vector3(P3Preview.transform.position.x, P3Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P3Active.preview = true;
                 P3Text.gameObject.SetActive(true);
                 P3Text.text = "Acrobat";
             }
@@ -518,8 +547,8 @@ public class MenuEvents : MonoBehaviour
                     GameObject.Destroy(P4Active.gameObject);
                 }
                 //P2Preview.GetComponent<Image>().sprite = RRSprite;
-                //P4Active = GameObject.Instantiate(DPPrefab, new Vector3(P4Preview.transform.position.x, P4Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
-                //P4Active.preview = true;
+                P4Active = GameObject.Instantiate(DPPrefab, new Vector3(P4Preview.transform.position.x, P4Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P4Active.preview = true;
                 P4Text.gameObject.SetActive(true);
                 P4Text.text = "Acrobat";
             }
@@ -532,7 +561,7 @@ public class MenuEvents : MonoBehaviour
                 {
                     GameObject.Destroy(P1Active);
                 }
-                P1Preview.GetComponent<Image>().sprite = LKSprite;
+                //P3Preview.GetComponent<Image>().sprite = DPSprite;
                 P1Text.text = "Fighter/Support";
                 P1Preview.GetComponent<Image>().gameObject.SetActive(true);
                 P1Text.gameObject.SetActive(true);
@@ -568,7 +597,7 @@ public class MenuEvents : MonoBehaviour
                     GameObject.Destroy(P1Active.gameObject);
                 }
                 //P2Preview.GetComponent<Image>().sprite = RRSprite;
-                //P1Active = GameObject.Instantiate(RRPrefab, new Vector3(P1Preview.transform.position.x, P1Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P1Active = GameObject.Instantiate(RRPrefab, new Vector3(P1Preview.transform.position.x, P1Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
                 //P1Active.preview = true;
                 P1Text.gameObject.SetActive(true);
                 P1Text.text = "Sharpshooter/Caster";
@@ -580,7 +609,7 @@ public class MenuEvents : MonoBehaviour
                     GameObject.Destroy(P2Active.gameObject);
                 }
                 //P2Preview.GetComponent<Image>().sprite = RRSprite;
-                //P2Active = GameObject.Instantiate(RRPrefab, new Vector3(P2Preview.transform.position.x, P2Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P2Active = GameObject.Instantiate(RRPrefab, new Vector3(P2Preview.transform.position.x, P2Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
                 //P2Active.preview = true;
                 P2Text.gameObject.SetActive(true);
                 P2Text.text = "Sharpshooter/Caster";
@@ -592,7 +621,7 @@ public class MenuEvents : MonoBehaviour
                     GameObject.Destroy(P3Active.gameObject);
                 }
                 //P2Preview.GetComponent<Image>().sprite = RRSprite;
-                //P3Active = GameObject.Instantiate(RRPrefab, new Vector3(P3Preview.transform.position.x, P3Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P3Active = GameObject.Instantiate(RRPrefab, new Vector3(P3Preview.transform.position.x, P3Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
                 //P3Active.preview = true;
                 P3Text.gameObject.SetActive(true);
                 P3Text.text = "Sharpshooter/Caster";
@@ -604,7 +633,7 @@ public class MenuEvents : MonoBehaviour
                     GameObject.Destroy(P4Active.gameObject);
                 }
                 //P2Preview.GetComponent<Image>().sprite = RRSprite;
-                //P4Active = GameObject.Instantiate(RRPrefab, new Vector3(P4Preview.transform.position.x, P4Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
+                P4Active = GameObject.Instantiate(RRPrefab, new Vector3(P4Preview.transform.position.x, P4Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
                 //P4Active.preview = true;
                 P4Text.gameObject.SetActive(true);
                 P4Text.text = "Sharpshooter/Caster";
@@ -619,7 +648,7 @@ public class MenuEvents : MonoBehaviour
                 {
                     GameObject.Destroy(P1Active.gameObject);
                 }
-                P1Preview.GetComponent<Image>().sprite = DPSprite;
+                //P3Preview.GetComponent<Image>().sprite = DPSprite;
                 //P1Active = GameObject.Instantiate(BBPrefab, new Vector3(P1Preview.transform.position.x, P1Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
                 //P1Active.preview = true;
                 P1Text.text = "Brawler";
@@ -643,7 +672,7 @@ public class MenuEvents : MonoBehaviour
                 {
                     GameObject.Destroy(P3Active.gameObject);
                 }
-                P3Preview.GetComponent<Image>().sprite = DPSprite;
+                //P3Preview.GetComponent<Image>().sprite = DPSprite;
                 //P3Active = GameObject.Instantiate(BBPrefab, new Vector3(P3Preview.transform.position.x, P3Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
                 //P3Active.preview = true;
                 P3Text.text = "Brawler";
@@ -655,7 +684,7 @@ public class MenuEvents : MonoBehaviour
                 {
                     GameObject.Destroy(P4Active.gameObject);
                 }
-                P4Preview.GetComponent<Image>().sprite = DPSprite;
+                //P3Preview.GetComponent<Image>().sprite = DPSprite;
                 //P4Active = GameObject.Instantiate(BBPrefab, new Vector3(P4Preview.transform.position.x, P4Preview.transform.position.y, 0f), new Quaternion(0, 0, 0, 0));
                 //P4Active.preview = true;
                 P4Text.text = "Brawler";
@@ -670,18 +699,22 @@ public class MenuEvents : MonoBehaviour
             if (whichPlayer == "P1" && P1Active)
             {
             GameObject.Destroy(P1Active.gameObject);
+            P1Text.text = "";
         }
             if (whichPlayer == "P2" && P2Active)
             {
             GameObject.Destroy(P2Active.gameObject);
+            P2Text.text = "";
         }
             if (whichPlayer == "P3" && P3Active)
             {
             GameObject.Destroy(P3Active.gameObject);
+            P3Text.text = "";
         }
             if (whichPlayer == "P4" && P4Active)
             {
             GameObject.Destroy(P4Active.gameObject);
+            P4Text.text = "";
         }
 
     }

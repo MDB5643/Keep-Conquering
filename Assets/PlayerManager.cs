@@ -64,7 +64,7 @@ public class PlayerManager : MonoBehaviour
         {
             initializer = GameObject.Find("SelectionScreenInputManager").GetComponent<SceneInitialization>();
             initializer.Init();
-            m_audioManager.PlaySound("Practice");
+            //m_audioManager.PlaySound("MainMenu");
 
             //characterIndex = 0;
             if (MenuEvents.gameModeSelect == 1)
@@ -167,6 +167,7 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        var cam = mainCam.GetComponent<Camera2DFollow>();
         RenderSettings.skybox.SetFloat("_Rotation", Time.time * skyBoxSpeed);
         //if (m_conqueror.transform.position.z > 10 && !Input.GetKey("m"))
         //{
@@ -182,7 +183,6 @@ public class PlayerManager : MonoBehaviour
         //}
         if (Input.GetKey("m"))
         {
-            var cam = mainCam.GetComponent<Camera2DFollow>();
             cam.GetComponentInParent<Camera>().fieldOfView = 100;
             cam.maxValue.z = -28;
             cam.maxValue.x = 40;
@@ -193,7 +193,6 @@ public class PlayerManager : MonoBehaviour
         }
         else if (Input.GetKeyUp("m"))
         {
-            var cam = mainCam.GetComponent<Camera2DFollow>();
             cam.GetComponentInParent<Camera>().fieldOfView = 27;
             cam.maxValue.x = 185;
             cam.maxValue.y = 10;
@@ -204,12 +203,32 @@ public class PlayerManager : MonoBehaviour
 
         minionSpawnElapsedTime += Time.deltaTime;
 
+        var foundPlayersObjects = FindObjectsOfType<Conqueror>();
+        foreach (Conqueror c in foundPlayersObjects)
+        {
+            if (c.m_cameraShake)
+            {
+                StartCoroutine(cam.Shaking(c.m_shakeIntensity));
+                c.m_cameraShake = false;
+            }
+        }
+
         if (m_conqueror)
         {
+            if (m_conqueror.GetComponent<Conqueror>().m_cameraShake)
+            {
+                m_conqueror.GetComponent<Conqueror>().m_cameraShake = false;
+                StartCoroutine(cam.Shaking(m_conqueror.GetComponent<Conqueror>().m_shakeIntensity));
+            }
             P1Defeated = p1StockDisplay.text.Substring(1, 1) == "0";
         }
         if (m_conqueror2)
         {
+            if (m_conqueror2.GetComponent<Conqueror>().m_cameraShake)
+            {
+                m_conqueror2.GetComponent<Conqueror>().m_cameraShake = false;
+                StartCoroutine(cam.Shaking(m_conqueror2.GetComponent<Conqueror>().m_shakeIntensity));
+            }
             P2Defeated = p2StockDisplay.text.Substring(1, 1) == "0";
         }
         else
@@ -218,6 +237,11 @@ public class PlayerManager : MonoBehaviour
         }
         if (m_conqueror3)
         {
+            if (m_conqueror3.GetComponent<Conqueror>().m_cameraShake)
+            {
+                m_conqueror3.GetComponent<Conqueror>().m_cameraShake = false;
+                StartCoroutine(cam.Shaking(m_conqueror3.GetComponent<Conqueror>().m_shakeIntensity));
+            }
             P3Defeated = p3StockDisplay.text.Substring(1, 1) == "0";
         }
         else
@@ -226,6 +250,11 @@ public class PlayerManager : MonoBehaviour
         }
         if (m_conqueror4)
         {
+            if (m_conqueror4.GetComponent<Conqueror>().m_cameraShake)
+            {
+                m_conqueror4.GetComponent<Conqueror>().m_cameraShake = false;
+                StartCoroutine(cam.Shaking(m_conqueror4.GetComponent<Conqueror>().m_shakeIntensity));
+            }
             P4Defeated = p4StockDisplay.text.Substring(1, 1) == "0";
         }
         else
@@ -238,6 +267,11 @@ public class PlayerManager : MonoBehaviour
             EndScreenLinger += Time.deltaTime;
             if (EndScreenLinger > 7.0f)
             {
+                MenuEvents.audioManager.StopSound("Scrap");
+                MenuEvents.audioManager.StopSound("Joust");
+                MenuEvents.DestroyAudio();
+                MenuEvents.ReturningToMenu = true;
+                MenuEvents.gameModeSelect = 0;
                 SceneManager.LoadScene(0);
                 MenuEvents.P1Set = false;
                 MenuEvents.P2Set = false;
@@ -307,6 +341,31 @@ public class PlayerManager : MonoBehaviour
                 spawnPosition = new Vector3(-48f, 4f, 0);
                 Instantiate(blueMinion, spawnPosition, Quaternion.identity).SetActive(true);
                 spawnPosition = new Vector3(-50f, 4f, 0);
+                Instantiate(blueMinion, spawnPosition, Quaternion.identity).SetActive(true);
+                blueMinionCount += 3;
+            }
+        }
+        if (minionSpawnElapsedTime > secondsBetweenSpawn && MenuEvents.gameModeSelect == 3)
+        {
+            minionSpawnElapsedTime = 0;
+            Debug.Log(true);
+            if (redMinionCount <= 9)
+            {
+                Vector3 spawnPosition = new Vector3(30.5f, 3f, 0);
+                Instantiate(redMinion, spawnPosition, Quaternion.identity).SetActive(true);
+                spawnPosition = new Vector3(32f, 3f, 0);
+                Instantiate(redMinion, spawnPosition, Quaternion.identity).SetActive(true);
+                spawnPosition = new Vector3(29f, 3f, 0);
+                Instantiate(redMinion, spawnPosition, Quaternion.identity).SetActive(true);
+                redMinionCount += 3;
+            }
+            if (blueMinionCount <= 9)
+            {
+                Vector3 spawnPosition = new Vector3(-30.5f, 3f, 0);
+                Instantiate(blueMinion, spawnPosition, Quaternion.identity).SetActive(true);
+                spawnPosition = new Vector3(-32f, 3f, 0);
+                Instantiate(blueMinion, spawnPosition, Quaternion.identity).SetActive(true);
+                spawnPosition = new Vector3(-29f, 3f, 0);
                 Instantiate(blueMinion, spawnPosition, Quaternion.identity).SetActive(true);
                 blueMinionCount += 3;
             }

@@ -41,6 +41,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8606839687141148603}
   - component: {fileID: 5101530500080529315}
+  - component: {fileID: 7726895896116564145}
+  - component: {fileID: 8182017992828182498}
   m_Layer: 15
   m_Name: BBUTiltHitbox
   m_TagString: AttackHitbox
@@ -102,3 +104,43 @@ PolygonCollider2D:
       - {x: -0.16680539, y: 1.235466}
       - {x: -0.20478126, y: 1.4294531}
       - {x: 0.19238329, y: 1.6107649}
+--- !u!114 &7726895896116564145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184183365875442142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 262f864e5d4c9484fa0ee03fdd9a72aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxLingerTime: 0.05
+--- !u!114 &8182017992828182498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184183365875442142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 4.2
+  baseKB: 0.2
+  hitStun: 0.16
+  damageModifier: 0
+  KBModifier: 0
+  modifierY: 6.5
+  modifierX: 0.16
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0
+  shakeScreen: 0
+  smash: 0
+  grab: 0
+  soundName: Hurt
+  hitEnemies: []

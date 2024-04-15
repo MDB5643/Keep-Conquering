@@ -1091,11 +1091,11 @@ public class CPUBehavior : Conqueror
             }
             if (collision.GetComponentInParent<CombatManager>())
             {
-                collision.GetComponentInParent<CombatManager>().Hit(transform, collision.transform.name);
+                collision.GetComponentInParent<CombatManager>().Hit(transform, collision.GetComponent<CollisionTracker>());
             }
             else if (collision.GetComponent<CombatManager>())
             {
-                collision.GetComponent<CombatManager>().Hit(transform, collision.transform.name);
+                collision.GetComponent<CombatManager>().Hit(transform, collision.GetComponent<CollisionTracker>());
             }
         }
         if (collision.gameObject.CompareTag("RightLauncher"))

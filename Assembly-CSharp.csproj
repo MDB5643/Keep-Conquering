@@ -71,6 +71,7 @@
     <Compile Include="Assets\Pixel UI\Demo\Scripts\ExampleController.cs" />
     <Compile Include="Assets\PlayerCombat.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\OrcSlam.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
     <Compile Include="Assets\ShieldBar.cs" />
@@ -105,10 +106,12 @@
     <Compile Include="Assets\CombatManager.cs" />
     <Compile Include="Assets\Pixel UI\Demo\Scripts\IconDemo.cs" />
     <Compile Include="Assets\OutlineSprite.cs" />
+    <Compile Include="Assets\RagingOrc.cs" />
     <Compile Include="Assets\AudioManagerMenu.cs" />
     <Compile Include="Assets\Pixel UI\Demo\Scripts\Shake.cs" />
     <Compile Include="Assets\2d-mega-pack\Scripts\Fading.cs" />
     <Compile Include="Assets\PlatformMove.cs" />
+    <Compile Include="Assets\RepelBox.cs" />
     <Compile Include="Assets\Dark Knight - Pixel Art\Demo\Sensor_DarkKnight.cs" />
     <Compile Include="Assets\Pixel UI\Demo\Scripts\PingPong.cs" />
     <Compile Include="Assets\ProtoDairHB.cs" />
@@ -162,6 +165,7 @@
     <Compile Include="Assets\SpriteShapeDemo.cs" />
     <Compile Include="Assets\MenuAssets\Scripts\PlayerObjectHandler.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
+    <Compile Include="Assets\HitboxShaper.cs" />
     <Compile Include="Assets\LineController.cs" />
     <Compile Include="Assets\ShutdownLauncher.cs" />
     <Compile Include="Assets\Pixel UI\Demo\Scripts\CubitsController.cs" />
@@ -181,13 +185,13 @@
     <Compile Include="Assets\ChampSideSHB.cs" />
     <Compile Include="Assets\VisualHBHandler.cs" />
     <Compile Include="Assets\Crosshair.cs" />
+    <Compile Include="Assets\ROAnimEvents.cs" />
     <Compile Include="Assets\Prototype Hero - Pixel Art\Demo\AudioManager_PrototypeHero.cs" />
     <Compile Include="Assets\DeadRevolver\PixelPrototypePlayerSprites\Demo\Scripts\PlayerPreviewManager.cs" />
     <Compile Include="Assets\Pixel UI\Scripts\UICard.cs" />
     <Compile Include="Assets\Pixel UI\Demo\Scripts\ExperienceLabel.cs" />
     <Compile Include="Assets\Pixel UI\Scripts\UIFader.cs" />
     <Compile Include="Assets\CameraFollow.cs" />
-    <Compile Include="Assets\RagingOrc.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\MenuAssets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8475881752779555465}
   - component: {fileID: 4840811504590059212}
   - component: {fileID: 4898633441550239610}
+  - component: {fileID: 4584523556307579962}
   m_Layer: 15
   m_Name: BBFair
   m_TagString: AttackHitbox
@@ -44,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262f864e5d4c9484fa0ee03fdd9a72aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxLingerTime: 0.05
 --- !u!60 &4898633441550239610
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -80,6 +82,33 @@ PolygonCollider2D:
       - {x: -2.017732, y: 0.062155217}
       - {x: -1.8820264, y: -0.22485758}
       - {x: -1.7430212, y: -0.68911225}
+--- !u!114 &4584523556307579962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758198625046050120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 7.5
+  baseKB: 0.5
+  hitStun: 0.3
+  damageModifier: 1.2
+  KBModifier: 0.05
+  modifierY: 2
+  modifierX: 0.16
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0.2
+  shakeScreen: 1
+  smash: 0
+  grab: 0
+  soundName: Whack
+  hitEnemies: []
 --- !u!1 &8590945499187253257
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,6 +120,7 @@ GameObject:
   - component: {fileID: 3942693015016817296}
   - component: {fileID: 6062362754191640603}
   - component: {fileID: 1409184222670963766}
+  - component: {fileID: 8358240263065482634}
   m_Layer: 15
   m_Name: BBFairSpikeHB
   m_TagString: AttackHitbox
@@ -124,6 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262f864e5d4c9484fa0ee03fdd9a72aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxLingerTime: 0.05
 --- !u!60 &1409184222670963766
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -160,6 +191,33 @@ PolygonCollider2D:
       - {x: -0.8977138, y: -1.2084534}
       - {x: -1.1290728, y: -1.1566372}
       - {x: -1.2724253, y: -1.159708}
+--- !u!114 &8358240263065482634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8590945499187253257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 7.5
+  baseKB: 0.5
+  hitStun: 0.3
+  damageModifier: 1.2
+  KBModifier: 0.05
+  modifierY: 8
+  modifierX: 0.16
+  multModY: -1
+  multModX: 1
+  shakeIntensity: 0.23
+  shakeScreen: 1
+  smash: 0
+  grab: 0
+  soundName: Whack
+  hitEnemies: []
 --- !u!1 &8654348693954206893
 GameObject:
   m_ObjectHideFlags: 0

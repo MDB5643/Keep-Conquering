@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4699199415772779552}
   - component: {fileID: 4699199415772779553}
+  - component: {fileID: 578126265}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -256,7 +257,7 @@ MonoBehaviour:
     m_loop: 0
   - m_name: EyeShot
     m_clips:
-    - {fileID: 8300000, guid: ac8442f04e7c48044af73f825b821225, type: 3}
+    - {fileID: 8300000, guid: 3f2550dca08e64b59b5cecfd2a36038f, type: 3}
     volume: 0.69
     pitch: 0.86
     m_randomVolumeRange: {x: 0.85, y: 0.85}
@@ -264,7 +265,7 @@ MonoBehaviour:
     m_loop: 0
   - m_name: EnergyHit
     m_clips:
-    - {fileID: 8300000, guid: 48e3f0354ffa97748a8212aa5ed1123b, type: 3}
+    - {fileID: 8300000, guid: cafba6874bf2547c4baa8dcf57e46781, type: 3}
     volume: 0.69
     pitch: 0.86
     m_randomVolumeRange: {x: 0.85, y: 0.85}
@@ -374,3 +375,79 @@ MonoBehaviour:
     m_randomVolumeRange: {x: 0.85, y: 0.85}
     m_randomPitchRange: {x: 0.95, y: 1.05}
     m_loop: 0
+  - m_name: Whooshing
+    m_clips:
+    - {fileID: 8300000, guid: fb8119b75baa15843aa34e8c61a14d43, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.85, y: 0.85}
+    m_randomPitchRange: {x: 0.95, y: 1.05}
+    m_loop: 0
+  - m_name: UnarmedHeavy
+    m_clips:
+    - {fileID: 8300000, guid: 1f63f4349bb0c4122a2e7c84757607eb, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.85, y: 0.85}
+    m_randomPitchRange: {x: 0.95, y: 1.05}
+    m_loop: 0
+  - m_name: UnarmedSmash
+    m_clips:
+    - {fileID: 8300000, guid: 0cd21117ebe304139ba7cddac847b520, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.85, y: 0.85}
+    m_randomPitchRange: {x: 0.95, y: 1.05}
+    m_loop: 0
+  - m_name: Scrap
+    m_clips:
+    - {fileID: 8300000, guid: 97229ab584e3dbd4ab1075ab0462f970, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 1, y: 1}
+    m_randomPitchRange: {x: 1, y: 1}
+    m_loop: 1
+  - m_name: Joust
+    m_clips:
+    - {fileID: 8300000, guid: 2762a8f84aed0244dbef1ccd74208be5, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 1, y: 1}
+    m_randomPitchRange: {x: 1, y: 1}
+    m_loop: 1
+  - m_name: BBStep
+    m_clips:
+    - {fileID: 8300000, guid: 5fa10259d63684e4aa5360a0cff313eb, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.6, y: 1}
+    m_randomPitchRange: {x: 0.6, y: 0.9}
+    m_loop: 0
+  - m_name: ROStep
+    m_clips:
+    - {fileID: 8300000, guid: 5d469d6b3eb440547b39908add67867f, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.6, y: 1}
+    m_randomPitchRange: {x: 0.6, y: 0.9}
+    m_loop: 0
+  - m_name: ArrowHit
+    m_clips:
+    - {fileID: 8300000, guid: 755d103741ac9de4f95677ce49115e89, type: 3}
+    volume: 0.69
+    pitch: 0.86
+    m_randomVolumeRange: {x: 0.6, y: 0.9}
+    m_randomPitchRange: {x: 0.6, y: 0.9}
+    m_loop: 0
+--- !u!114 &578126265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4699199415772779554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49861f3b3b0377b4d8aa14837bff6cf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

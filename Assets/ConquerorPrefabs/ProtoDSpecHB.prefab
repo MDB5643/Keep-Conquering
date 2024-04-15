@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4600388439082811051}
   - component: {fileID: 2371827095196316669}
   - component: {fileID: 2835294508146530807}
+  - component: {fileID: 7458998412581158945}
   m_Layer: 15
   m_Name: ProtoDSpecHB
   m_TagString: AttackHitbox
@@ -191,6 +192,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLingerTime: 0.2
+--- !u!114 &7458998412581158945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919331287901522361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 1.2
+  baseKB: 0.18
+  hitStun: 0.16
+  damageModifier: 0
+  KBModifier: 0
+  modifierY: 3
+  modifierX: 0.16
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0
+  shakeScreen: 0
+  smash: 0
+  grab: 0
+  continuous: 0
+  groundPound: 0
+  noHitStop: 1
+  soundName: Hurt
+  hitEnemies: []
 --- !u!1 &5866951901490347427
 GameObject:
   m_ObjectHideFlags: 0

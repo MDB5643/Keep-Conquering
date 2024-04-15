@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 368131403649467742}
   - component: {fileID: 7718535721606742631}
+  - component: {fileID: 2639575628822044150}
+  - component: {fileID: 980032191713960801}
   m_Layer: 15
   m_Name: ProtoUTiltHB
   m_TagString: AttackHitbox
@@ -47,28 +49,68 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 1}
+    oldSize: {x: 0.84375, y: 2.4375}
+    newSize: {x: 0.84375, y: 2.4375}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.848778, y: 1.1044154}
-      - {x: 0.6885782, y: 1.3530636}
-      - {x: 0.19685505, y: 1.7628133}
-      - {x: -0.45891887, y: 1.6500921}
-      - {x: -0.7383838, y: 1.271178}
-      - {x: -0.7900333, y: 0.65964645}
-      - {x: -0.514367, y: 1.2353582}
-      - {x: -0.16060066, y: 1.4357674}
-      - {x: 0.18591428, y: 1.3566394}
-      - {x: 0.41956523, y: 1.1669912}
-      - {x: 0.5701059, y: 0.772336}
-      - {x: 0.60997736, y: 0.32747948}
-      - {x: 0.5308404, y: 0.00031135976}
-      - {x: 0.4949177, y: -0.4891275}
-      - {x: 0.5631784, y: -0.68598247}
-      - {x: 0.9510565, y: 0.30901712}
+    - - {x: 0.14593339, y: -0.48607215}
+      - {x: 0.14380732, y: -0.30886588}
+      - {x: 0.14343253, y: -0.17984171}
+      - {x: 0.14004552, y: -0.16078731}
+      - {x: 0.122987, y: -0.13912329}
+      - {x: 0.07865177, y: -0.13726482}
+      - {x: 0.03831163, y: -0.16583595}
+      - {x: -0.171875, y: -0.75}
+      - {x: -0.25944388, y: -1.8000848}
+      - {x: -0.19697028, y: -1.8627436}
+      - {x: -0.059184402, y: -1.625344}
+      - {x: 0.047033906, y: -1.3691897}
+      - {x: 0.10950735, y: -1.0938294}
+--- !u!114 &2639575628822044150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6714514734185759331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 262f864e5d4c9484fa0ee03fdd9a72aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxLingerTime: 0.05
+--- !u!114 &980032191713960801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6714514734185759331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 4.7
+  baseKB: 0.28
+  hitStun: 0.16
+  damageModifier: 0
+  KBModifier: 0
+  modifierY: 3
+  modifierX: 0.16
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0
+  shakeScreen: 0
+  smash: 0
+  grab: 0
+  continuous: 0
+  groundPound: 0
+  noHitStop: 0
+  soundName: Hurt
+  hitEnemies: []

@@ -33,9 +33,9 @@ public class TheChampion : Conqueror
     // Update is called once per frame
     void Update()
     {
-        if (!m_inHitStun)
+        if (!m_inHitStun && !isGrappled)
         {
-            if (!m_isInHitStop && !m_fallingdown)
+            if (!m_isInHitStop && !m_fallingdown )
             {
                 m_animator.speed = 1;
                 if (m_animator.GetBool("isParrying"))
@@ -566,23 +566,8 @@ public class TheChampion : Conqueror
 
     protected override void BasicAction(InputAction.CallbackContext ctx)
     {
-        //Dash Attack
-        if (ctx.phase == InputActionPhase.Started && inputY == 0 && Mathf.Abs(inputX) > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime
-                        && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && !isInStartUp)
-        {
-            m_LagTime = .55f;
-            // Reset timer
-            m_timeSinceAttack = 0.0f;
-
-            // Call one of the two attack animations "Attack1" or "Attack2"
-            m_animator.SetTrigger("DashAttack");
-
-            m_body2d.velocity = new Vector2(m_facingDirection * m_dodgeForce + m_facingDirection * 3, m_body2d.velocity.y);
-
-            m_disableMovementTimer = 0.45f;
-        }
         //Up Attack
-        if (ctx.phase == InputActionPhase.Started && inputY > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime
+        if (ctx.phase == InputActionPhase.Started && inputXY.y > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y)
                         && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && !isInStartUp && !isInUpSpecial)
         {
             m_LagTime = .4f;
@@ -597,91 +582,8 @@ public class TheChampion : Conqueror
             m_disableMovementTimer = 0.45f;
         }
 
-        //Attack
-        else if (ctx.phase == InputActionPhase.Started && inputY == 0 && inputX == 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && !m_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack1")
-            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && !m_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack2") && !isInStartUp && !isInUpSpecial)
-        {
-            m_LagTime = .35f;
-            // Reset timer
-            m_timeSinceAttack = 0.0f;
-
-            // Call one of the two attack animations "Attack1" or "Attack2"
-            m_animator.SetTrigger("Attack2");
-
-            // Disable movement 
-            m_disableMovementTimer = 0.32f;
-        }
-
-        //down air Attack
-        else if (ctx.phase == InputActionPhase.Started && inputY < 0 && !m_ledgeGrab && !m_ledgeClimb && !m_grounded && m_timeSinceAttack > m_LagTime && !isInStartUp && !isInUpSpecial)
-        {
-            m_LagTime = .3f;
-            m_animator.SetTrigger("Dair");
-            //m_body2d.velocity = new Vector2(0.0f, -m_jumpForce);
-            //m_disableMovementTimer = 0.8f;
-            //
-            //// Reset timer
-            m_timeSinceAttack = 0.0f;
-        }
-
-        // Air Attack Up
-        else if (ctx.phase == InputActionPhase.Started && inputY > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && m_timeSinceAttack > m_LagTime && !isInStartUp && !isInUpSpecial)
-        {
-            m_LagTime = .4f;
-            //Debug.Log("Air attack up");
-            if (m_facingDirection == 1)
-            {
-                m_animator.SetTrigger("UAir");
-            }
-            else
-            {
-                m_animator.SetTrigger("UAirBack");
-            }
-            //
-            //// Reset timer
-            m_timeSinceAttack = 0.0f;
-        }
-
-        // Air Attack Forward
-        else if (ctx.phase == InputActionPhase.Started && Mathf.Abs(inputX) > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && m_timeSinceAttack > m_LagTime && !isInStartUp && !isInUpSpecial)
-        {
-            if (m_facingDirection == 1 && inputX < 0)
-            {
-                m_SR.flipX = true;
-                m_facingDirection = -1;
-            }
-            else if (m_facingDirection == -1 && inputX > 0)
-            {
-                m_SR.flipX = false;
-                m_facingDirection = 1;
-            }
-            m_LagTime = .8f;
-            //Debug.Log("Air attack up");
-            if (m_facingDirection == 1)
-            {
-                m_animator.SetTrigger("Fair");
-            }
-            else
-            {
-                m_animator.SetTrigger("FairBack");
-            }
-            //
-            //// Reset timer
-            m_timeSinceAttack = 0.0f;
-            m_disableMovementTimer = .8f;
-        }
-        // Air Attack Neutral
-        else if (ctx.phase == InputActionPhase.Started && inputY == 0 && inputX == 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && m_timeSinceAttack > m_LagTime && !isInStartUp && !isInUpSpecial)
-        {
-            m_LagTime = .65f;
-            m_animator.SetTrigger("Nair");
-            //// Reset timer
-            m_timeSinceAttack = 0.0f;
-            m_disableMovementTimer = .65f;
-        }
-
         //Down Tilt Attack
-        else if (ctx.phase == InputActionPhase.Started && inputY < 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_grounded && m_timeSinceAttack > m_LagTime
+        else if (ctx.phase == InputActionPhase.Started && inputXY.y < 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_grounded && m_timeSinceAttack > m_LagTime && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y)
             && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && !isInStartUp && !isInUpSpecial)
         {
             m_LagTime = .31f;
@@ -696,6 +598,94 @@ public class TheChampion : Conqueror
             m_disableMovementTimer = 0.45f;
             m_animator.SetBool("Crouching", false);
         }
+        //Dash Attack
+        if (ctx.phase == InputActionPhase.Started && Mathf.Abs(inputXY.x) > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime
+                        && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && !isInStartUp)
+        {
+            m_LagTime = .55f;
+            // Reset timer
+            m_timeSinceAttack = 0.0f;
+
+            // Call one of the two attack animations "Attack1" or "Attack2"
+            m_animator.SetTrigger("DashAttack");
+
+            m_body2d.velocity = new Vector2(m_facingDirection * m_dodgeForce + m_facingDirection * 3, m_body2d.velocity.y);
+
+            m_disableMovementTimer = 0.45f;
+        }
+        
+
+        //Attack
+        else if (ctx.phase == InputActionPhase.Started && inputXY.y == 0 && inputXY.x == 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && !m_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack1")
+            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && !m_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack2") && !isInStartUp && !isInUpSpecial)
+        {
+            m_LagTime = .35f;
+            // Reset timer
+            m_timeSinceAttack = 0.0f;
+
+            // Call one of the two attack animations "Attack1" or "Attack2"
+            m_animator.SetTrigger("Attack2");
+
+            // Disable movement 
+            m_disableMovementTimer = 0.32f;
+        }
+
+
+        //down air Attack
+        else if (ctx.phase == InputActionPhase.Started && inputXY.y < 0 && !m_ledgeGrab && !m_ledgeClimb && !m_grounded && m_timeSinceAttack > m_LagTime && !isInStartUp && !isInUpSpecial && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y))
+        {
+            m_LagTime = .3f;
+            m_animator.SetTrigger("Dair");
+            //m_body2d.velocity = new Vector2(0.0f, -m_jumpForce);
+            //m_disableMovementTimer = 0.8f;
+            //
+            //// Reset timer
+            m_timeSinceAttack = 0.0f;
+        }
+
+        // Air Attack Up
+        else if (ctx.phase == InputActionPhase.Started && inputXY.y > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && m_timeSinceAttack > m_LagTime && !isInStartUp && !isInUpSpecial && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y))
+        {
+            m_LagTime = .4f;
+            m_animator.SetTrigger("UAir");
+
+            //
+            //// Reset timer
+            m_timeSinceAttack = 0.0f;
+        }
+
+        // Air Attack Forward
+        else if (ctx.phase == InputActionPhase.Started && Mathf.Abs(inputXY.x) > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && m_timeSinceAttack > m_LagTime && !isInStartUp && !isInUpSpecial)
+        {
+            if (m_facingDirection == 1 && inputXY.x < 0)
+            {
+                m_SR.flipX = true;
+                m_facingDirection = -1;
+            }
+            else if (m_facingDirection == -1 && inputXY.x > 0)
+            {
+                m_SR.flipX = false;
+                m_facingDirection = 1;
+            }
+            m_LagTime = .8f;
+            m_animator.SetTrigger("Fair");
+            //
+            //// Reset timer
+            m_timeSinceAttack = 0.0f;
+            m_disableMovementTimer = .8f;
+        }
+
+
+        // Air Attack Neutral
+        else if (ctx.phase == InputActionPhase.Started && inputXY.y == 0 && inputXY.x == 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && m_timeSinceAttack > m_LagTime && !isInStartUp && !isInUpSpecial)
+        {
+            m_LagTime = .65f;
+            m_animator.SetTrigger("Nair");
+            //// Reset timer
+            m_timeSinceAttack = 0.0f;
+            m_disableMovementTimer = .65f;
+        }
+
 
         //Ledge Attack
         else if (!m_dodging && m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_timeSinceAttack > m_LagTime
@@ -746,14 +736,36 @@ public class TheChampion : Conqueror
             //// Disable movement 
             m_disableMovementTimer = 1.0f;
         }
-        else if (Mathf.Abs(inputX) > 0 && ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > 2.0f && !m_animator.GetBool("isParrying") && !isInStartUp && !isInUpSpecial)
+
+        else if (inputXY.y < 0 && ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && !m_animator.GetBool("isParrying") && !isInStartUp && !isInUpSpecial && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y))
         {
-            if (m_facingDirection == 1 && inputX < 0)
+            m_LagTime = .5f;
+            m_animator.SetTrigger("DSpecTrigger");
+            m_animator.SetBool("DSpec", true);
+            //m_dodging = true;
+            //m_crouching = false;
+            //m_animator.SetBool("Crouching", false);
+            //m_body2d.velocity = new Vector2(m_facingDirection * 10f, m_body2d.velocity.y);
+        }
+
+        else if (inputXY.y > 0 && ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_launched && m_timeSinceAttack > m_LagTime && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y)
+            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && !m_launched && !isInStartUp && !isInUpSpecial)
+        {
+            hookDirection = "Up";
+            m_animator.SetTrigger("UpSpecial");
+            m_launched = true;
+            m_disableMovementTimer = 1.0f;
+
+            isInStartUp = true;
+        }
+        else if (Mathf.Abs(inputXY.x) > 0 && ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > 2.0f && !m_animator.GetBool("isParrying") && !isInStartUp && !isInUpSpecial)
+        {
+            if (m_facingDirection == 1 && inputXY.x < 0)
             {
                 m_SR.flipX = true;
                 m_facingDirection = -1;
             }
-            else if (m_facingDirection == -1 && inputX > 0)
+            else if (m_facingDirection == -1 && inputXY.x > 0)
             {
                 m_SR.flipX = false;
                 m_facingDirection = 1;
@@ -765,28 +777,6 @@ public class TheChampion : Conqueror
             //SideSpecial();
             //// Disable movement 
             m_disableMovementTimer = 1.0f;
-        }
-
-        else if (inputY < 0 && ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > 2.0f && !m_animator.GetBool("isParrying") && !isInStartUp && !isInUpSpecial)
-        {
-            m_LagTime = .3f;
-            m_animator.SetTrigger("DSpecTrigger");
-            m_animator.SetBool("DSpec", true);
-            //m_dodging = true;
-            //m_crouching = false;
-            //m_animator.SetBool("Crouching", false);
-            //m_body2d.velocity = new Vector2(m_facingDirection * 10f, m_body2d.velocity.y);
-        }
-
-        else if (inputY > 0 && ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_launched && m_timeSinceAttack > m_LagTime
-            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && !m_launched && !isInStartUp && !isInUpSpecial)
-        {
-            hookDirection = "Up";
-            m_animator.SetTrigger("UpSpecial");
-            m_launched = true;
-            m_disableMovementTimer = 1.0f;
-
-            isInStartUp = true;
         }
 
 
@@ -959,10 +949,11 @@ public class TheChampion : Conqueror
     protected override void DodgeAction(InputAction.CallbackContext ctx)
     {
 
-        if (ctx.phase == InputActionPhase.Started && m_animator.GetBool("isParrying") && Mathf.Abs(inputX) > 0)
+        if (ctx.phase == InputActionPhase.Started && m_animator.GetBool("isParrying") && Mathf.Abs(inputXY.x) > 0)
         {
             m_dodging = true;
             m_crouching = false;
+            m_isParrying = false;
             m_animator.SetBool("isParrying", false);
             m_animator.SetBool("Crouching", false);
             m_animator.SetTrigger("Dodge");
@@ -974,6 +965,7 @@ public class TheChampion : Conqueror
         {
             m_dodging = true;
             m_crouching = false;
+            m_isParrying = false;
             m_animator.SetBool("isParrying", false);
             m_animator.SetBool("Crouching", false);
             m_animator.SetTrigger("Dodge");

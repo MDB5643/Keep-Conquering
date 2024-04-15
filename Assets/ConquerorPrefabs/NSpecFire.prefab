@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1677783700342477466}
   - component: {fileID: 4901355151693439027}
   - component: {fileID: 4752848560970363787}
+  - component: {fileID: 3245730077671813798}
   m_Layer: 0
   m_Name: NSpecFire1
   m_TagString: AttackHitbox
@@ -163,10 +164,40 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   outlineColor: {r: 0, g: 0, b: 0, a: 1}
   directions:
-    top: 1
-    bottom: 1
+    top: 0
+    bottom: 0
     left: 1
-    right: 1
+    right: 0
+--- !u!114 &3245730077671813798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674120913331074043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 0.7
+  baseKB: 0
+  hitStun: 0.12
+  damageModifier: 0
+  KBModifier: 0
+  modifierY: 0
+  modifierX: 0
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0
+  shakeScreen: 0
+  smash: 0
+  grab: 0
+  continuous: 1
+  groundPound: 0
+  noHitStop: 1
+  soundName: Hurt
+  hitEnemies: []
 --- !u!1 &1069446154348761079
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,6 +212,7 @@ GameObject:
   - component: {fileID: 589966974021778275}
   - component: {fileID: 8222850081737628840}
   - component: {fileID: 5060071003966835593}
+  - component: {fileID: 8404709078223208585}
   m_Layer: 0
   m_Name: NSpecFire2
   m_TagString: AttackHitbox
@@ -330,10 +362,40 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   outlineColor: {r: 0, g: 0, b: 0, a: 1}
   directions:
-    top: 1
-    bottom: 1
+    top: 0
+    bottom: 0
     left: 1
-    right: 1
+    right: 0
+--- !u!114 &8404709078223208585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069446154348761079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 0.7
+  baseKB: 0
+  hitStun: 0.12
+  damageModifier: 0
+  KBModifier: 0
+  modifierY: 0
+  modifierX: 0
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0
+  shakeScreen: 0
+  smash: 0
+  grab: 0
+  continuous: 1
+  groundPound: 0
+  noHitStop: 1
+  soundName: Hurt
+  hitEnemies: []
 --- !u!1 &1292737174817122439
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,6 +410,7 @@ GameObject:
   - component: {fileID: 1034926742914392154}
   - component: {fileID: 1770306936748517267}
   - component: {fileID: 4718262357700996404}
+  - component: {fileID: 3881251770691071363}
   m_Layer: 0
   m_Name: NSpecFire1 (2)
   m_TagString: AttackHitbox
@@ -497,10 +560,40 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   outlineColor: {r: 0, g: 0, b: 0, a: 1}
   directions:
-    top: 1
-    bottom: 1
+    top: 0
+    bottom: 0
     left: 1
-    right: 1
+    right: 0
+--- !u!114 &3881251770691071363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292737174817122439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 0.7
+  baseKB: 0
+  hitStun: 0.12
+  damageModifier: 0
+  KBModifier: 0
+  modifierY: 0
+  modifierX: 0
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0
+  shakeScreen: 0
+  smash: 0
+  grab: 0
+  continuous: 1
+  groundPound: 0
+  noHitStop: 1
+  soundName: Hurt
+  hitEnemies: []
 --- !u!1 &2833174631578268785
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,6 +608,7 @@ GameObject:
   - component: {fileID: 217258368716515103}
   - component: {fileID: 7493070391391439619}
   - component: {fileID: 7439420230062124717}
+  - component: {fileID: 3692023336270564403}
   m_Layer: 0
   m_Name: NSpecFire2 (1)
   m_TagString: AttackHitbox
@@ -664,10 +758,40 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   outlineColor: {r: 0, g: 0, b: 0, a: 1}
   directions:
-    top: 1
-    bottom: 1
+    top: 0
+    bottom: 0
     left: 1
-    right: 1
+    right: 0
+--- !u!114 &3692023336270564403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2833174631578268785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 0.7
+  baseKB: 0
+  hitStun: 0.12
+  damageModifier: 0
+  KBModifier: 0
+  modifierY: 0
+  modifierX: 0
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0
+  shakeScreen: 0
+  smash: 0
+  grab: 0
+  continuous: 1
+  groundPound: 0
+  noHitStop: 1
+  soundName: Hurt
+  hitEnemies: []
 --- !u!1 &3412297053213893287
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,6 +806,7 @@ GameObject:
   - component: {fileID: 2641837786206145636}
   - component: {fileID: 6047937116326039586}
   - component: {fileID: 3868717919487700511}
+  - component: {fileID: 1490120629420318921}
   m_Layer: 0
   m_Name: NSpecFire1 (3)
   m_TagString: AttackHitbox
@@ -831,10 +956,40 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   outlineColor: {r: 0, g: 0, b: 0, a: 1}
   directions:
-    top: 1
-    bottom: 1
+    top: 0
+    bottom: 0
     left: 1
-    right: 1
+    right: 0
+--- !u!114 &1490120629420318921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3412297053213893287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 0.7
+  baseKB: 0
+  hitStun: 0.12
+  damageModifier: 0
+  KBModifier: 0
+  modifierY: 0
+  modifierX: 0
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0
+  shakeScreen: 0
+  smash: 0
+  grab: 0
+  continuous: 1
+  groundPound: 0
+  noHitStop: 1
+  soundName: Hurt
+  hitEnemies: []
 --- !u!1 &5876327908201172152
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,6 +1004,7 @@ GameObject:
   - component: {fileID: 1817638443182184078}
   - component: {fileID: 4514279046683767785}
   - component: {fileID: 8712591741103685391}
+  - component: {fileID: 1427447449720851591}
   m_Layer: 0
   m_Name: NSpecFire1 (1)
   m_TagString: AttackHitbox
@@ -998,10 +1154,40 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   outlineColor: {r: 0, g: 0, b: 0, a: 1}
   directions:
-    top: 1
-    bottom: 1
+    top: 0
+    bottom: 0
     left: 1
-    right: 1
+    right: 0
+--- !u!114 &1427447449720851591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5876327908201172152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 0.7
+  baseKB: 0
+  hitStun: 0.12
+  damageModifier: 0
+  KBModifier: 0
+  modifierY: 0
+  modifierX: 0
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0
+  shakeScreen: 0
+  smash: 0
+  grab: 0
+  continuous: 1
+  groundPound: 0
+  noHitStop: 1
+  soundName: Hurt
+  hitEnemies: []
 --- !u!1 &8161338255959051029
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,6 +1274,7 @@ GameObject:
   - component: {fileID: 609886377362279988}
   - component: {fileID: 6169847521648996175}
   - component: {fileID: 1304534384360947934}
+  - component: {fileID: 2281810197761034032}
   m_Layer: 0
   m_Name: NSpecFire2 (2)
   m_TagString: AttackHitbox
@@ -1237,7 +1424,37 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   outlineColor: {r: 0, g: 0, b: 0, a: 1}
   directions:
-    top: 1
-    bottom: 1
+    top: 0
+    bottom: 0
     left: 1
-    right: 1
+    right: 0
+--- !u!114 &2281810197761034032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9185097608339124217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 0.7
+  baseKB: 0
+  hitStun: 0.12
+  damageModifier: 0
+  KBModifier: 0
+  modifierY: 0
+  modifierX: 0
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0
+  shakeScreen: 0
+  smash: 0
+  grab: 0
+  continuous: 1
+  groundPound: 0
+  noHitStop: 1
+  soundName: Hurt
+  hitEnemies: []

@@ -59,11 +59,30 @@ public class CursorBehavior : MonoBehaviour
             {
                 if (!objectSelected)
                 {
-                    objectSelected = true;
                     playerSelection = target.transform.gameObject;
-                    menu.PreviewConq(playerSelection.tag, gameObject.name.Substring(0,2));
-                    return;
+
+                    if (playerSelection.tag == "FFA")
+                    {
+                        menu.SetMode(2);
+                    }
+                    else if (playerSelection.tag == "Joust")
+                    {
+                        menu.SetMode(3);
+                    }
+                    else if (playerSelection.tag == "BackButton")
+                    {
+
+                    }
+                    else
+                    {
+                        objectSelected = true;
+
+                        menu.PreviewConq(playerSelection.tag, gameObject.name.Substring(0, 2));
+                        return;
+                    }
+                    
                 }
+                
             }
 
             if (objectSelected)

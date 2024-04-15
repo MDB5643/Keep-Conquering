@@ -13,20 +13,29 @@ public class RagingOrc : Conqueror {
     private Rect buttonPos2;
     public GameObject activeDairHitbox;
 
+    public RepelBox _repelBox;
+
     public GameObject currentHookTarget;
     private float crosshairLingerTime = 0.0f;
     public float maxCrosshairLingerTime = 1.5f;
+
+    public bool isInUpSpec = false;
+    public bool isInDSpec = false;
+
+    public float m_TimeSinceFlurry = 0.0f;
 
     public float m_TimeSinceJab2 = 0.0f;
 
     // Use this for initialization
     void Start ()
     {
+        _repelBox = transform.GetComponentInChildren<RepelBox>();
         isPlayer = true;
         m_animator = GetComponentInChildren<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
         m_SR = GetComponentInChildren<SpriteRenderer>();
 
+        striker = true;
 
         m_gravity = m_body2d.gravityScale;
 
@@ -57,7 +66,14 @@ public class RagingOrc : Conqueror {
             }
         }
 
-        if (!m_inHitStun )
+        if (grabbedPlayers.Count > 0)
+        {
+            m_animator.SetTrigger("UpSpec2");
+            isInUpSpec = false;
+            _repelBox.gameObject.SetActive(true);
+        }
+
+        if (!m_inHitStun && !isInUpSpec && !isGrappled)
         {
             if (!m_isInHitStop)
             {
@@ -101,9 +117,10 @@ public class RagingOrc : Conqueror {
                     }
                     //shieldBarFrame.enabled = false;
                 }
-                if (m_timeSinceSideSpecial > .08f && hookActive == true && hookPrefab != null)
+                if (m_timeSinceSideSpecial > .3f && hookActive == true)
                 {
                     hookActive = false;
+                    isInStartUp = false;
                 }
                 if (hookPrefab != null)
                 {
@@ -158,12 +175,20 @@ public class RagingOrc : Conqueror {
                 m_timeSinceNSpec += Time.deltaTime;
                 m_TimeSinceJab2 += Time.deltaTime;
                 m_timeSinceChargeStart += Time.deltaTime;
+                m_TimeSinceFlurry += Time.deltaTime;
 
                 // Decrease timer that checks if we are in parry stance
                 //m_parryTimer -= Time.deltaTime;
 
                 // Decrease timer that disables input movement. Used when attacking
                 m_disableMovementTimer -= Time.deltaTime;
+
+                if (m_TimeSinceFlurry > .5f)
+                {
+                    m_animator.SetBool("JabFlurry", false);
+                    m_TimeSinceFlurry = 0.0f;
+                    m_currentAttack = 1;
+                }
 
                 if (m_StockCount == 0)
                 {
@@ -187,14 +212,20 @@ public class RagingOrc : Conqueror {
                 //Check if character just landed on the ground
                 if (!m_grounded && m_groundSensor.State())
                 {
+                    _repelBox.gameObject.SetActive(true);
                     m_jumpCount = 0;
                     m_grounded = true;
                     m_animator.SetBool("Grounded", m_grounded);
                     m_launched = false;
-                    if (activeDairHitbox)
+                    isInUpSpec = false;
+                    if (isInDSpec && m_body2d.velocity.y <= 0)
                     {
-                        GameObject.Destroy(activeDairHitbox);
+                        isInDSpec = false;
+                        m_animator.SetTrigger("DSpec2");
+                        gameObject.GetComponentInParent<Conqueror>().m_shakeIntensity = .18f;
+                        gameObject.GetComponentInParent<Conqueror>().m_cameraShake = true;
                     }
+                    isInStartUp = false;
                     
                     //m_SpriteShaper.DrawDebug();
                 }
@@ -262,9 +293,11 @@ public class RagingOrc : Conqueror {
                         ledge = null;
                         if (hit)
                             ledge = hit.transform.GetComponent<GrabableLedge>();
+                        
 
                         if (ledge)
                         {
+                            m_inGroundSlam = false;
                             m_ledgeGrab = true;
                             m_body2d.velocity = Vector2.zero;
                             m_body2d.gravityScale = 0;
@@ -342,6 +375,7 @@ public class RagingOrc : Conqueror {
         {
             if (m_inHitStun)
             {
+                isInStartUp = false;
                 m_body2d.velocity = Vector2.zero;
                 m_body2d.gravityScale = 0;
                 m_timeSinceHitStun += Time.deltaTime;
@@ -359,6 +393,7 @@ public class RagingOrc : Conqueror {
             }
             else if (isGrappled)
             {
+                isInStartUp = false;
                 m_animator.speed = 0;
                 if (activeDairHitbox)
                 {
@@ -505,8 +540,39 @@ public class RagingOrc : Conqueror {
 
     protected override void BasicAction(InputAction.CallbackContext ctx)
     {
+        //Up Attack
+        if (inputXY.y > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y)
+            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
+        {
+            m_LagTime = .3f;
+            m_animator.SetTrigger("UpAttack");
+
+            // Reset timer
+            m_timeSinceAttack = 0.0f;
+
+            //Attack(upTiltDamage, upTiltKB, upTiltRange, 0, 2, upTiltPoint);
+
+            // Disable movement 
+            m_disableMovementTimer = 0.35f;
+        }
+        //Down Tilt Attack
+        else if (inputXY.y < 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_grounded && m_timeSinceAttack > m_LagTime && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y)
+            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
+        {
+            m_LagTime = .35f;
+            m_animator.SetTrigger("DTiltAttack");
+
+            // Reset timer
+            m_timeSinceAttack = 0.0f;
+
+            //Attack(upTiltDamage, upTiltKB, upTiltRange, 0, 2, upTiltPoint);
+
+            // Disable movement 
+            m_disableMovementTimer = 0.45f;
+            m_animator.SetBool("Crouching", false);
+        }
         //Dash Attack
-         if (Mathf.Abs(inputX) > 0 && !Input.GetKey("s") && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && m_timeSinceNSpec > 1.1f
+        else if (Mathf.Abs(inputXY.x) > 0 && !Input.GetKey("s") && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && m_timeSinceNSpec > 1.1f
             && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && !isInStartUp && ctx.phase == InputActionPhase.Started)
         {
             m_LagTime = .45f;
@@ -524,7 +590,7 @@ public class RagingOrc : Conqueror {
         }
 
         //Jab Attack
-        else if ( inputX == 0 && inputY == 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && m_TimeSinceJab2 > 0.45f && m_timeSinceNSpec > 1.1f
+        else if ( inputXY.x == 0 && inputXY.y == 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && m_TimeSinceJab2 > 0.1f && m_timeSinceNSpec > 1.1f
             && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
         {
 
@@ -534,54 +600,41 @@ public class RagingOrc : Conqueror {
             if (m_currentAttack == 2)
             {
                 m_TimeSinceJab2 = 0.0f;
+                m_TimeSinceFlurry = 0.0f;
             }
 
-            // Loop back to one after second attack
-            if (m_currentAttack > 2)
-                m_currentAttack = 1;
+            if (m_currentAttack >= 3 && m_TimeSinceJab2 > .25f && m_TimeSinceFlurry > .25f)
+            {
+                m_animator.SetBool("JabFlurry", true);
+                m_TimeSinceFlurry = 0.0f;
+            }
 
             // Reset Attack combo if time since last attack is too large
-            if (m_timeSinceAttack > .5f)
+            if (m_timeSinceAttack > .5f || m_TimeSinceJab2 > .5f || m_TimeSinceFlurry > .5f)
                 m_currentAttack = 1;
 
-            // Call one of the two attack animations "Attack1" or "Attack2"
-            m_animator.SetTrigger("Attack" + m_currentAttack);
-
+            if (m_currentAttack < 3)
+            {
+                // Call one of the two attack animations "Attack1" or "Attack2"
+                m_animator.SetTrigger("Attack" + m_currentAttack);
+            }
             // Reset timer
             m_timeSinceAttack = 0.0f;
             m_disableMovementTimer = 0.45f;
         }
 
         //Air Slam Attack
-        else if (inputY < 0 && !m_ledgeGrab && !m_ledgeClimb && !m_grounded && ctx.phase == InputActionPhase.Started)
+        else if (inputXY.y < 0 && !m_ledgeGrab && !m_ledgeClimb && !m_grounded && ctx.phase == InputActionPhase.Started && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y))
         {
             m_animator.SetTrigger("AttackAirSlam");
-            m_body2d.velocity = new Vector2(0.0f, -m_jumpForce);
             m_disableMovementTimer = 0.8f;
 
             // Reset timer
             m_timeSinceAttack = 0.0f;
         }
 
-        //Down Tilt Attack
-        else if (inputY < 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_grounded && m_timeSinceAttack > m_LagTime
-            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
-        {
-            m_LagTime = .35f;
-            m_animator.SetTrigger("DTiltAttack");
-
-            // Reset timer
-            m_timeSinceAttack = 0.0f;
-
-            //Attack(upTiltDamage, upTiltKB, upTiltRange, 0, 2, upTiltPoint);
-
-            // Disable movement 
-            m_disableMovementTimer = 0.45f;
-            m_animator.SetBool("Crouching", false);
-        }
-
         // Air Attack Up
-        else if (inputY > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && m_timeSinceAttack > m_LagTime && ctx.phase == InputActionPhase.Started)
+        else if (inputXY.y > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && m_timeSinceAttack > m_LagTime && ctx.phase == InputActionPhase.Started && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y))
         {
             m_LagTime = .65f;
             Debug.Log("Air attack up");
@@ -592,7 +645,7 @@ public class RagingOrc : Conqueror {
         }
 
         // Air Attack forward
-        else if (Mathf.Abs(inputX) > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && 
+        else if (Mathf.Abs(inputXY.x) > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && 
             m_timeSinceAttack > m_LagTime && ctx.phase == InputActionPhase.Started)
         {
             if (m_facingDirection == 1 && inputX < 0)
@@ -613,29 +666,13 @@ public class RagingOrc : Conqueror {
         }
 
         // Air Attack Neutral
-        else if (inputX == 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && m_timeSinceAttack > m_LagTime && ctx.phase == InputActionPhase.Started)
+        else if (inputXY.x == 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && m_timeSinceAttack > m_LagTime && ctx.phase == InputActionPhase.Started)
         {
             m_LagTime = .65f;
             m_animator.SetTrigger("Nair");
             //// Reset timer
             m_timeSinceAttack = 0.0f;
             m_disableMovementTimer = .65f;
-        }
-
-        //Up Attack
-        else if (inputY > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime
-            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
-        {
-            m_LagTime = .3f;
-            m_animator.SetTrigger("UpAttack");
-
-            // Reset timer
-            m_timeSinceAttack = 0.0f;
-
-            //Attack(upTiltDamage, upTiltKB, upTiltRange, 0, 2, upTiltPoint);
-
-            // Disable movement 
-            m_disableMovementTimer = 0.35f;
         }
 
         //Ledge Attack
@@ -660,57 +697,68 @@ public class RagingOrc : Conqueror {
 
     protected override void SpecialAction(InputAction.CallbackContext ctx)
     {
-        // Throw
-        if (Mathf.Abs(inputX) > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > 2.0f
-            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
-        {
-            if (m_facingDirection == 1 && inputX < 0)
-            {
-                m_SR.flipX = true;
-                m_facingDirection = -1;
-            }
-            else if (m_facingDirection == -1 && inputX > 0)
-            {
-                m_SR.flipX = false;
-                m_facingDirection = 1;
-            }
-            m_LagTime = .65f;
-            hookDirection = "Side";
-            m_animator.SetTrigger("Throw");
-            hookActive = true;
-            m_timeSinceSideSpecial = 0.0f;
-
-            ThrowHook();
-            // Disable movement 
-            m_disableMovementTimer = 1.0f;
-        }
-
-        else if (inputY < 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > 2.0f
-            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
+        if (inputXY.y < 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > 2.0f && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y)
+            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started && !isInStartUp)
         {
             m_LagTime = .45f;
+            m_animator.ResetTrigger("DSpec2");
             m_animator.SetTrigger("Slide");
-            m_dodging = true;
             m_crouching = false;
+            isInDSpec = true;
             m_animator.SetBool("Crouching", false);
-            m_body2d.velocity = new Vector2(m_facingDirection * 10f, m_body2d.velocity.y);
+            m_body2d.velocity = new Vector2(0, 8);
+            m_disableMovementTimer = .5f;
+            m_timeSinceAttack = 0.0f;
         }
-        else if (inputY > 0  && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > 2.0f
-            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
+        else if (inputXY.y > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > 2.0f && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y)
+            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started && !isInStartUp)
         {
             m_LagTime = .65f;
-            hookDirection = "Up";
-            m_animator.SetTrigger("Throw");
-            hookActive = true;
-            m_timeSinceSideSpecial = 0.0f;
-
-            ThrowHook();
-            // Disable movement 
+            m_animator.SetTrigger("UpSpec");
+            _repelBox.gameObject.SetActive(false);
+            m_body2d.velocity = new Vector2(0, 10);
             m_disableMovementTimer = 1.0f;
+            m_timeSinceAttack = 0.0f;
+        }
+        // Throw
+        else if (Mathf.Abs(inputXY.x) > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > .01f
+            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
+        {
+            if (hookActive == true)
+            {
+                hookActive = false;
+                isInStartUp = false;
+                m_animator.SetTrigger("FSpec2");
+                m_disableMovementTimer = .3f;
+                m_LagTime = .15f;
+                m_timeSinceAttack = 0.0f;
+            }
+            else if (m_timeSinceSideSpecial > .1f && !isInStartUp)
+            {
+                if (m_facingDirection == 1)
+                {
+                    m_body2d.AddForce(new Vector2(8, 0), ForceMode2D.Impulse);
+                }
+                else if (m_facingDirection == -1)
+                {
+                    m_body2d.AddForce(new Vector2(-8, 0), ForceMode2D.Impulse);
+                }
+                m_LagTime = .01f;
+                hookDirection = "Side";
+                m_animator.SetTrigger("Throw");
+                hookActive = true;
+                isInStartUp = true;
+                m_timeSinceSideSpecial = 0.0f;
+                
+
+                //ThrowHook();
+                // Disable movement 
+                m_disableMovementTimer = .5f;
+            }
         }
 
         else if ( !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > 2.0f
-                        && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
+                        && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started && !isInStartUp)
         {
             // Reset timer
 
@@ -731,7 +779,7 @@ public class RagingOrc : Conqueror {
             m_timeSinceAttack = 0.0f;
 
             // Disable movement 
-            m_disableMovementTimer = 0.5f;
+            m_disableMovementTimer = 0.75f;
         }
     }
 
@@ -852,7 +900,7 @@ public class RagingOrc : Conqueror {
 
     protected override void ShieldAction(InputAction.CallbackContext ctx)
     {
-        if (ctx.phase == InputActionPhase.Canceled)
+        if (ctx.phase == InputActionPhase.Canceled && !m_dodging)
         {
             m_animator.SetBool("isParrying", false);
             m_parryTimer = -1.0f;
@@ -887,8 +935,7 @@ public class RagingOrc : Conqueror {
         {
             m_dodging = true;
             m_crouching = false;
-            m_animator.SetBool("isParrying", false);
-            m_animator.SetBool("Crouching", false);
+            m_isParrying = false;
             m_animator.SetTrigger("AirDodge");
         }
     }
@@ -899,6 +946,7 @@ public class RagingOrc : Conqueror {
         {
             m_dodging = true;
             m_crouching = false;
+            m_isParrying = false;
             m_animator.SetBool("isParrying", false);
             m_animator.SetBool("Crouching", false);
             m_animator.SetTrigger("Dodge");
@@ -910,6 +958,7 @@ public class RagingOrc : Conqueror {
         {
             m_dodging = true;
             m_crouching = false;
+            m_isParrying = false;
             m_animator.SetBool("isParrying", false);
             m_animator.SetBool("Crouching", false);
             m_animator.SetTrigger("Dodge");

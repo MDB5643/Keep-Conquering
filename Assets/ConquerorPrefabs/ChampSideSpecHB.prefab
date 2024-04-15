@@ -94,4 +94,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseDamage: 3
+  baseKB: 0
+  hitStun: 0
+  damageModifier: 0
+  KBModifier: 0
+  modifierY: 0
+  modifierX: 0
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0.1
+  shakeScreen: 1
+  smash: 0
+  grab: 1
+  soundName: 
   hitEnemies: []

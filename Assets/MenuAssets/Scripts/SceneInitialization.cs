@@ -84,6 +84,7 @@ public class SceneInitialization : MonoBehaviour
                 var currentObject = Resources.Load<GameObject>(playerObjectName[i]);
                 if (MenuEvents.gameModeSelect == 2)
                 {
+                    MenuEvents.audioManager.PlaySound("Scrap");
                     if (player.Key == 0)
                     {
                         currentObject.transform.position = new Vector3(-5f, 1.5f, 0);
@@ -118,7 +119,56 @@ public class SceneInitialization : MonoBehaviour
                         currentObject.GetComponent<Conqueror>().teamColor = "Green";
                     }
                 }
-                
+
+                if (MenuEvents.gameModeSelect == 3)
+                {
+                    MenuEvents.audioManager.PlaySound("Joust");
+                    if (player.Key == 0)
+                    {
+                        currentObject.transform.position = new Vector3(-31f, 1.5f, 0);
+                        currentObject.GetComponent<Conqueror>().m_StockDisplay = p1StockDisplay;
+                        currentObject.GetComponent<Conqueror>().m_DamageDisplay = p1DamageDisplay;
+                        playerManager.m_conqueror = currentObject;
+                        playerManager.P1isPlayer = true;
+                        playerManager.P1Defeated = false;
+                        currentObject.GetComponent<Conqueror>().teamColor = "Blue";
+
+                    }
+                    if (player.Key == 1)
+                    {
+                        currentObject.transform.position = new Vector3(-29.5f, 1.5f, 0);
+                        currentObject.GetComponent<Conqueror>().m_StockDisplay = p2StockDisplay;
+                        currentObject.GetComponent<Conqueror>().m_DamageDisplay = p2DamageDisplay;
+                        playerManager.m_conqueror2 = currentObject;
+                        playerManager.P2isPlayer = true;
+                        playerManager.P2Defeated = false;
+                        currentObject.GetComponent<Conqueror>().teamColor = "Blue";
+                        //p3DamageDisplay.transform.parent.gameObject.SetActive(true);
+                    }
+                    if (player.Key == 2)
+                    {
+                        currentObject.transform.position = new Vector3(31f, 6f, 0);
+                        currentObject.GetComponent<Conqueror>().m_StockDisplay = p3StockDisplay;
+                        currentObject.GetComponent<Conqueror>().m_DamageDisplay = p3DamageDisplay;
+                        p3DamageDisplay.transform.parent.gameObject.SetActive(true);
+                        playerManager.m_conqueror3 = currentObject;
+                        playerManager.P3isPlayer = true;
+                        playerManager.P3Defeated = false;
+                        currentObject.GetComponent<Conqueror>().teamColor = "Red";
+                    }
+                    if (player.Key == 3)
+                    {
+                        currentObject.transform.position = new Vector3(29.5f, 6f, 0);
+                        currentObject.GetComponent<Conqueror>().m_StockDisplay = p3StockDisplay;
+                        currentObject.GetComponent<Conqueror>().m_DamageDisplay = p3DamageDisplay;
+                        p4DamageDisplay.transform.parent.gameObject.SetActive(true);
+                        playerManager.m_conqueror4 = currentObject;
+                        playerManager.P4isPlayer = true;
+                        playerManager.P4Defeated = false;
+                        currentObject.GetComponent<Conqueror>().teamColor = "Red";
+                    }
+                }
+
                 // Only activate PlayerInput component on the first object (it defines the "player"
                 if (i == 0)
                 {

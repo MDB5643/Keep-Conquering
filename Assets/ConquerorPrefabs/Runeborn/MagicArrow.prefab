@@ -102,6 +102,7 @@ MonoBehaviour:
   speed: 20
   activeTime: 0
   startingYpos: 0
+  teamColor: 
 --- !u!114 &6665552223888079085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,10 +118,10 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   outlineColor: {r: 0, g: 0, b: 0, a: 1}
   directions:
-    top: 1
-    bottom: 1
+    top: 0
+    bottom: 0
     left: 1
-    right: 1
+    right: 0
 --- !u!1 &3370550314178840266
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,6 +135,7 @@ GameObject:
   - component: {fileID: 2866672584808658463}
   - component: {fileID: 2129784596982527639}
   - component: {fileID: 337812749927360304}
+  - component: {fileID: 277524782853243483}
   m_Layer: 15
   m_Name: ChargeBall
   m_TagString: AttackHitbox
@@ -255,9 +257,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
-  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineColor: {r: 0, g: 1, b: 0.99215686, a: 1}
   directions:
-    top: 1
-    bottom: 1
+    top: 0
+    bottom: 0
     left: 1
-    right: 1
+    right: 0
+--- !u!114 &277524782853243483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3370550314178840266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 3
+  baseKB: 0.1
+  hitStun: 0.16
+  damageModifier: 0
+  KBModifier: 0
+  modifierY: 0.09
+  modifierX: 0.09
+  multModY: 0.9
+  multModX: 0.9
+  shakeIntensity: 0
+  shakeScreen: 0
+  smash: 0
+  grab: 0
+  continuous: 0
+  groundPound: 0
+  noHitStop: 1
+  soundName: ArrowHit
+  hitEnemies: []

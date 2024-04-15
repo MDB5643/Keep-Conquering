@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -4259156959672074192, guid: 195196694a2b0e34890339d662e98ee4, type: 3}
-  m_Color: {r: 0.8867924, g: 0.15477037, b: 0.15477037, a: 1}
+  m_Color: {r: 0.98039216, g: 0.23137255, b: 0.2, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -132,7 +132,7 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   outlineColor: {r: 0, g: 0, b: 0, a: 1}
   directions:
-    top: 1
-    bottom: 1
+    top: 0
+    bottom: 0
     left: 1
-    right: 1
+    right: 0

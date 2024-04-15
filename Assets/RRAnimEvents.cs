@@ -212,7 +212,7 @@ public class RRAnimEvents : MonoBehaviour
     void AE_Jump()
     {
         m_audioManager.PlaySound("Jump");
-
+        m_player.m_body2d.velocity = new Vector2(m_player.m_body2d.velocity.x, m_player.m_jumpForce);
         if (!m_player.IsWallSliding())
         {
             float dustYOffset = 0.078125f;
@@ -222,6 +222,7 @@ public class RRAnimEvents : MonoBehaviour
         {
             m_player.SpawnDustEffect(m_WallJumpDust);
         }
+        m_player.m_animator.SetBool("inJumpSquat", false);
     }
 
     void AE_Landing()
@@ -624,6 +625,7 @@ public class RRAnimEvents : MonoBehaviour
         }
         activeHitbox = Instantiate(nSpecHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + .25f, m_player.transform.position.z),
             rotQuat, m_player.transform);
+        activeHitbox.GetComponent<ArrowBehavior>().teamColor = m_player.teamColor;
         if (m_player.transform.CompareTag("PlayerMid"))
         {
             activeHitbox.layer = 19;

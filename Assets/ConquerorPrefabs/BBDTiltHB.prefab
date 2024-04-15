@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 349310394189249046}
   - component: {fileID: 6143188773002961380}
   - component: {fileID: 6369816178052772800}
+  - component: {fileID: 5682133631480851116}
   m_Layer: 15
   m_Name: BBDTiltHB
   m_TagString: AttackHitbox
@@ -75,6 +76,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262f864e5d4c9484fa0ee03fdd9a72aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxLingerTime: 0.05
+--- !u!114 &5682133631480851116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402893045413649122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 5.1
+  baseKB: 0.1
+  hitStun: 0.16
+  damageModifier: 0
+  KBModifier: 0
+  modifierY: 2.2
+  modifierX: 0
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0
+  shakeScreen: 0
+  smash: 0
+  grab: 0
+  soundName: BluntHit
+  hitEnemies: []
 --- !u!1 &903482867419899601
 GameObject:
   m_ObjectHideFlags: 0

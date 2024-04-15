@@ -20,11 +20,11 @@ public class @KeepConqueringP1 : IInputActionCollection, IDisposable
             ""actions"": [
                 {
                     ""name"": ""Move"",
-                    ""type"": ""Button"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""231cce4f-b3b7-4611-8301-aca1946e72e0"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Press(pressPoint=0.1,behavior=2)""
+                    ""expectedControlType"": ""Stick"",
+                    ""processors"": ""StickDeadzone(min=0.6,max=1.2)"",
+                    ""interactions"": """"
                 },
                 {
                     ""name"": ""Look"",
@@ -251,6 +251,61 @@ public class @KeepConqueringP1 : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""4f56692b-1496-4e12-b5f0-d62fcb19ee2c"",
+                    ""path"": ""2DVector(mode=2)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""259c1603-aebb-4251-b84b-e5ad4d151ccb"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
+                    ""interactions"": """",
+                    ""processors"": ""StickDeadzone(min=0.4,max=1)"",
+                    ""groups"": ""Gamepad;Joystick"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""a4f85b87-dc94-450d-8d53-0cc18e639348"",
+                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""interactions"": """",
+                    ""processors"": ""StickDeadzone(min=0.4,max=1)"",
+                    ""groups"": ""Gamepad;Joystick"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""dca1a1e6-119c-4251-9315-a7573d9b881b"",
+                    ""path"": ""<Gamepad>/leftStick/left"",
+                    ""interactions"": """",
+                    ""processors"": ""StickDeadzone(min=0.4,max=1)"",
+                    ""groups"": ""Gamepad;Joystick"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""f0e5553d-e3e4-4240-838a-1216370a530e"",
+                    ""path"": ""<Gamepad>/leftStick/right"",
+                    ""interactions"": """",
+                    ""processors"": ""StickDeadzone(min=0.4,max=1)"",
+                    ""groups"": ""Gamepad;Joystick"",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -678,7 +733,7 @@ public class @KeepConqueringP1 : IInputActionCollection, IDisposable
                     ""id"": ""619d897b-2dbd-468b-91cf-a18dea5fae0e"",
                     ""path"": ""1DAxis"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""AxisDeadzone"",
                     ""groups"": """",
                     ""action"": ""InstantFSmash"",
                     ""isComposite"": true,
@@ -700,7 +755,7 @@ public class @KeepConqueringP1 : IInputActionCollection, IDisposable
                     ""id"": ""90fb0483-f8a5-452c-af60-71d3b9c467af"",
                     ""path"": ""1DAxis"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""AxisDeadzone"",
                     ""groups"": """",
                     ""action"": ""InstantDSmash"",
                     ""isComposite"": true,
@@ -722,7 +777,7 @@ public class @KeepConqueringP1 : IInputActionCollection, IDisposable
                     ""id"": ""f327a7d5-d091-461b-9e1a-9a653c050936"",
                     ""path"": ""1DAxis"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""AxisDeadzone"",
                     ""groups"": """",
                     ""action"": ""InstantUSmash"",
                     ""isComposite"": true,
@@ -744,7 +799,7 @@ public class @KeepConqueringP1 : IInputActionCollection, IDisposable
                     ""id"": ""c94f7f6a-dd84-4adf-b8a6-3af12e83c7cd"",
                     ""path"": ""1DAxis"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""AxisDeadzone"",
                     ""groups"": """",
                     ""action"": ""ReverseFSmash"",
                     ""isComposite"": true,

@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7325197551885992164}
   - component: {fileID: 6089773271900590790}
+  - component: {fileID: 3753715164459469846}
+  - component: {fileID: 5465179099469181690}
   m_Layer: 15
   m_Name: ProtoJab1HB
   m_TagString: AttackHitbox
@@ -61,3 +63,46 @@ PolygonCollider2D:
       - {x: 0.28575915, y: -0.08311397}
       - {x: 1.4490262, y: -0.033900023}
       - {x: 1.5170147, y: 0.124465495}
+--- !u!114 &3753715164459469846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5656061709437811842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 262f864e5d4c9484fa0ee03fdd9a72aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxLingerTime: 0.05
+--- !u!114 &5465179099469181690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5656061709437811842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 3.9
+  baseKB: 0.2
+  hitStun: 0.16
+  damageModifier: 0
+  KBModifier: 0
+  modifierY: 1
+  modifierX: 0.16
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0
+  shakeScreen: 0
+  smash: 0
+  grab: 0
+  continuous: 0
+  groundPound: 0
+  noHitStop: 0
+  soundName: Hurt
+  hitEnemies: []

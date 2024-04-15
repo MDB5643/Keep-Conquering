@@ -9,6 +9,8 @@ public class ArrowBehavior : MonoBehaviour
     public float speed = 20f;
     public float activeTime = 0.0f;
     public float startingYpos;
+    public string teamColor;
+
     // Update is called once per frame
     private void Start()
     {
@@ -46,6 +48,5 @@ public class ArrowBehavior : MonoBehaviour
         {
             transform.GetComponentInChildren<RunebornRanger>().upSpecActive = false;
         }
-        Destroy(gameObject);
     }
 }

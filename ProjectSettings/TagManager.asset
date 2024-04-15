@@ -47,6 +47,10 @@ TagManager:
   - PrototypeHero
   - RunebornRanger
   - RagingOrc
+  - RepelBox
+  - WindBox
+  - FFA
+  - Joust
   layers:
   - Default
   - TransparentFX
@@ -90,6 +94,9 @@ TagManager:
   - name: Mid
     uniqueID: 220495137
     locked: 0
+  - name: Backdrop
+    uniqueID: 3141331925
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -98,4 +105,7 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 3679020567
+    locked: 0
+  - name: New Layer 6
+    uniqueID: 1458079069
     locked: 0

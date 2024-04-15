@@ -41,7 +41,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1843557511754612814}
   - component: {fileID: 5424907364747162415}
-  - component: {fileID: 5406807682162269871}
+  - component: {fileID: 2033198799056638536}
+  - component: {fileID: 8425980855233092251}
   m_Layer: 15
   m_Name: USmashProto
   m_TagString: AttackHitbox
@@ -104,7 +105,7 @@ PolygonCollider2D:
       - {x: 0.4949177, y: -0.4891275}
       - {x: 0.5631784, y: -0.68598247}
       - {x: 0.9510565, y: 0.30901712}
---- !u!114 &5406807682162269871
+--- !u!114 &2033198799056638536
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,6 +114,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 4887369039585660051}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f68a9ae4a3b708743ae6ee2697f4abce, type: 3}
+  m_Script: {fileID: 11500000, guid: 262f864e5d4c9484fa0ee03fdd9a72aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxLingerTime: 0.05
+--- !u!114 &8425980855233092251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4887369039585660051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 5.4
+  baseKB: 0.4
+  hitStun: 0.21
+  damageModifier: 1.2
+  KBModifier: 0.05
+  modifierY: 6
+  modifierX: 0.16
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0.18
+  shakeScreen: 1
+  smash: 1
+  grab: 0
+  continuous: 0
+  groundPound: 0
+  noHitStop: 0
+  soundName: ProxyHeavy
+  hitEnemies: []

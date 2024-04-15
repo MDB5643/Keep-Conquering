@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3425971622869716334}
   - component: {fileID: 1835713662084358068}
   - component: {fileID: 5456752395775503194}
+  - component: {fileID: 1251931792591457020}
   m_Layer: 15
   m_Name: RRDownSmashHB
   m_TagString: AttackHitbox
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7206574740589214359, guid: fd59dd872fd234e468c58757d8d419af, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.71217585, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.99215686, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -112,12 +113,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
-  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineColor: {r: 0, g: 1, b: 0.99215686, a: 1}
   directions:
-    top: 1
-    bottom: 1
+    top: 0
+    bottom: 0
     left: 1
-    right: 1
+    right: 0
 --- !u!95 &1835713662084358068
 Animator:
   serializedVersion: 3
@@ -174,3 +175,33 @@ PolygonCollider2D:
       - {x: 0.359375, y: -0.375}
       - {x: 0.34375, y: -0.328125}
       - {x: 0.5, y: -0.109375}
+--- !u!114 &1251931792591457020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6260341956870047123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 5.4
+  baseKB: 0.3
+  hitStun: 0.16
+  damageModifier: 1.1
+  KBModifier: 0.05
+  modifierY: 0.05
+  modifierX: 0.1
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0.15
+  shakeScreen: 1
+  smash: 0
+  grab: 0
+  continuous: 0
+  groundPound: 0
+  noHitStop: 0
+  soundName: MagicHit
+  hitEnemies: []

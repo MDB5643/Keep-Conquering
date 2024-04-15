@@ -281,7 +281,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6985723770636103460
 Transform:
   m_ObjectHideFlags: 0
@@ -324,6 +324,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 142032a2ce607a44f860880804afbc5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &960846693199824976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5878714300882651865}
+  - component: {fileID: 2958132046541005397}
+  m_Layer: 22
+  m_Name: RepelBoxProne
+  m_TagString: RepelBox
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &5878714300882651865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960846693199824976}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.328, z: 0}
+  m_LocalScale: {x: 2.595469, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7216317338779392757}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2958132046541005397
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960846693199824976}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.49, y: 0.1}
+  m_EdgeRadius: 0
 --- !u!1 &1254912165905175345
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,6 +606,120 @@ MonoBehaviour:
     bottom: 1
     left: 1
     right: 1
+--- !u!1 &3738738836189342290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5408628694579102110}
+  - component: {fileID: 1784022073192296623}
+  m_Layer: 22
+  m_Name: RepelBoxCrouch
+  m_TagString: RepelBox
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &5408628694579102110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3738738836189342290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.437, z: 0}
+  m_LocalScale: {x: 0.6125, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7216317338779392757}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1784022073192296623
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3738738836189342290}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.49, y: 0.1}
+  m_EdgeRadius: 0
+--- !u!1 &4436890075281368427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8035774594297341101}
+  - component: {fileID: 2955792986072010553}
+  m_Layer: 22
+  m_Name: RepelBox
+  m_TagString: RepelBox
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8035774594297341101
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4436890075281368427}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.655, z: 0}
+  m_LocalScale: {x: 0.7120313, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7216317338779392757}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2955792986072010553
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4436890075281368427}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.49, y: 0.1}
+  m_EdgeRadius: 0
 --- !u!1 &4860009054595029925
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,9 +793,11 @@ GameObject:
   - component: {fileID: 611183573}
   - component: {fileID: 7185240633526978859}
   - component: {fileID: 2869304908730796333}
-  - component: {fileID: 1766869181230306621}
   - component: {fileID: 3680700965607065017}
   - component: {fileID: 5466647157245418537}
+  - component: {fileID: 1663331712314776742}
+  - component: {fileID: 8338988937301922950}
+  - component: {fileID: 4864212260624197692}
   m_Layer: 9
   m_Name: RunebornRanger
   m_TagString: Player
@@ -658,6 +831,9 @@ Transform:
   - {fileID: 3183573821175429781}
   - {fileID: 214578561146173387}
   - {fileID: 543004346}
+  - {fileID: 8035774594297341101}
+  - {fileID: 5408628694579102110}
+  - {fileID: 5878714300882651865}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -677,7 +853,7 @@ Rigidbody2D:
   m_LinearDrag: 0.5
   m_AngularDrag: 0.05
   m_GravityScale: 1.25
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3d1a966473fc343448c2149f6ebae904, type: 2}
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -730,7 +906,7 @@ MonoBehaviour:
   teamColor: Red
   playerNumber: 1
   isPlayer: 0
-  m_runSpeed: 4.5
+  m_runSpeed: 6
   m_walkSpeed: 2
   m_jumpForce: 7.5
   m_dodgeForce: 6
@@ -753,7 +929,9 @@ MonoBehaviour:
   m_wallSensorL1: {fileID: 9016615750983731624}
   m_wallSensorL2: {fileID: 1792506090958250915}
   m_wallSensorL0: {fileID: 367635281}
+  velocityState: {x: 0, y: 0}
   heavy: 0
+  striker: 0
   m_grounded: 0
   m_fallingdown: 0
   m_down: 0
@@ -765,6 +943,7 @@ MonoBehaviour:
   m_ledgeClimb: 0
   m_crouching: 0
   m_inHitStun: 0
+  m_inGroundSlam: 0
   m_launched: 0
   m_fSmashCharging: 0
   m_uSmashCharging: 0
@@ -774,6 +953,7 @@ MonoBehaviour:
   m_isInKnockback: 0
   m_isInHotZone: 0
   m_cameraShake: 0
+  m_inJumpSquat: 0
   preview: 0
   m_shakeIntensity: 0.1
   m_maxSmashChargeTime: 2
@@ -808,6 +988,7 @@ MonoBehaviour:
   animSpeed: 0
   inputX: 0
   inputY: 0
+  inputXY: {x: 0, y: 0}
   jump: 0
   attack: 0
   special: 0
@@ -830,7 +1011,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   KnockoutFX: {fileID: 181668162739009514, guid: a281fa3ea3c817d488e3c8dde98f496d, type: 3}
-  LightAttackFX: {fileID: 7739218506307758710, guid: def5e69ebc4224c4798d087ee545a5b0, type: 3}
+  LightAttackFX: {fileID: 7739218506307758710, guid: 05761932de1602a448a1cd5ecb904d2f, type: 3}
   HeavyAttackFX: {fileID: 1724291888056607309, guid: 34e8f2ffa6331ff4b9f7be45413dab33, type: 3}
   ChargeFlashFX: {fileID: 4204095689380797397, guid: 81ead744f7dafc649a696aa3e0018451, type: 3}
   BlockFX: {fileID: 0}
@@ -856,26 +1037,17 @@ MonoBehaviour:
   ReverseFSmashInput: 0
   DSmashInput: 0
   USmashInput: 0
+  NormalCollider: {fileID: 0}
+  ProneCollider: {fileID: 1663331712314776742}
+  CrouchCollider: {fileID: 8338988937301922950}
+  KnockbackCollider: {fileID: 0}
+  RepelBoxNormal: {fileID: 4436890075281368427}
+  RepelBoxProne: {fileID: 960846693199824976}
+  RepelBoxCrouch: {fileID: 3738738836189342290}
   m_audioManager: {fileID: 0}
   m_TimeSinceJab2: 0
   upSpecActive: 0
   m_ActiveArrow: {fileID: 0}
---- !u!70 &1766869181230306621
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5126507520524490402}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.018219352}
-  m_Size: {x: 0.5, y: 1.3635612}
-  m_Direction: 0
 --- !u!114 &3680700965607065017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -902,7 +1074,19 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2869304908730796333}
+        m_TargetAssemblyTypeName: Conqueror, Assembly-CSharp
+        m_MethodName: Move
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 231cce4f-b3b7-4611-8301-aca1946e72e0
     m_ActionName: Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
   - m_PersistentCalls:
@@ -1182,6 +1366,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cc2fca98c7499446a605839729dea45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!70 &1663331712314776742
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5126507520524490402}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.000000060005696, y: -0.5033643}
+  m_Size: {x: 1.3635613, y: 0.32039538}
+  m_Direction: 1
+--- !u!70 &8338988937301922950
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5126507520524490402}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.09060025}
+  m_Size: {x: 0.5, y: 1.145922}
+  m_Direction: 0
+--- !u!70 &4864212260624197692
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5126507520524490402}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.004348412, y: 0.028690338}
+  m_Size: {x: 0.4586968, y: 1.3373804}
+  m_Direction: 0
 --- !u!1 &5291056838949151292
 GameObject:
   m_ObjectHideFlags: 0
@@ -1423,10 +1655,10 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
   outlineColor: {r: 0, g: 0, b: 0, a: 1}
   directions:
-    top: 1
-    bottom: 1
+    top: 0
+    bottom: 0
     left: 1
-    right: 1
+    right: 0
 --- !u!1 &5930689989181052918
 GameObject:
   m_ObjectHideFlags: 0

@@ -37,6 +37,7 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
     public GameObject sideSpec1Hitbox;
     public GameObject sideSpec2Hitbox;
     public GameObject dashAttackHitbox;
+    public GameObject upAirHitbox;
 
     public GameObject activeHitbox;
     private GameObject activeHitbox2;
@@ -56,6 +57,7 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
 
     // Animation Events
     // These functions are called inside the animation files
+
     void AE_resetDodge()
     {
         m_player.ResetDodging();
@@ -183,8 +185,8 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
     void AE_Jump()
     {
         m_audioManager.PlaySound("Jump");
-
-        if(!m_player.IsWallSliding())
+        m_player.m_body2d.velocity = new Vector2(m_player.m_body2d.velocity.x, m_player.m_jumpForce);
+        if (!m_player.IsWallSliding())
         {
             float dustYOffset = 0.078125f;
             m_player.SpawnDustEffect(m_JumpDust, 0.0f, dustYOffset);
@@ -193,6 +195,7 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
         {
             m_player.SpawnDustEffect(m_WallJumpDust);
         }
+        m_player.m_animator.SetBool("inJumpSquat", false);
     }
 
     void AE_Landing()
@@ -237,7 +240,7 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
             rotQuat = new Quaternion(0f, 180f, 0f, 0f);
             //xDisplace = -3.0f;
         }
-
+        m_player.m_inGroundSlam = true;
         m_player.GetComponent<PrototypeHero>().activeDairHitbox = Instantiate(dairHitbox, new Vector3((m_player.transform.position.x), m_player.transform.position.y, m_player.transform.position.z),
             rotQuat, m_player.transform);
         if (m_player.transform.CompareTag("PlayerMid"))
@@ -249,6 +252,7 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
 
     void AE_AttackAirLanding()
     {
+        m_player.m_inGroundSlam = false;
         m_audioManager.PlaySound("AirSlamLanding");
         float dustYOffset = 0.078125f;
         m_player.SpawnDustEffect(m_AirSlamDust, 0.0f, dustYOffset);
@@ -281,20 +285,41 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
         if (m_player.m_facingDirection == 1)
         {
             rotQuat = new Quaternion(0f, 0f, 0f, 0f);
-            xDisplace = 0.3f;
         }
         else
         {
             rotQuat = new Quaternion(0f, 180f, 0f, 0f);
-            xDisplace = -0.3f;
         }
-        activeHitbox = Instantiate(upTiltHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y, m_player.transform.position.z),
+        activeHitbox = Instantiate(upTiltHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + 1.5f, m_player.transform.position.z),
             rotQuat, m_player.transform);
         if (m_player.transform.CompareTag("PlayerMid"))
         {
             activeHitbox.layer = 19;
         }
-        StartCoroutine(Linger(lingerDeltaTime));
+        //StartCoroutine(Linger(lingerDeltaTime));
+        c_Manager.hitEnemy = "None";
+    }
+
+    void AE_UpAir()
+    {
+        m_audioManager.PlaySound("SwordAttack");
+        Quaternion rotQuat = new Quaternion();
+        float xDisplace = 0.0f;
+        if (m_player.m_facingDirection == 1)
+        {
+            rotQuat = new Quaternion(0f, 0f, 0f, 0f);
+        }
+        else
+        {
+            rotQuat = new Quaternion(0f, 180f, 0f, 0f);
+        }
+        activeHitbox = Instantiate(upAirHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y, m_player.transform.position.z),
+            rotQuat, m_player.transform);
+        if (m_player.transform.CompareTag("PlayerMid"))
+        {
+            activeHitbox.layer = 19;
+        }
+        //StartCoroutine(Linger(lingerDeltaTime));
         c_Manager.hitEnemy = "None";
     }
 
@@ -324,12 +349,12 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
         if (m_player.m_facingDirection == 1)
         {
             rotQuat = new Quaternion(0f, 0f, 0f, 0f);
-            xDisplace = .7f;
+            xDisplace = .35f;
         }
         else
         {
             rotQuat = new Quaternion(0f, 180f, 0f, 0f);
-            xDisplace = -.7f;
+            xDisplace = -.35f;
         }
         activeHitbox = Instantiate(dashAttackHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + 1.85f, m_player.transform.position.z),
             rotQuat, m_player.transform);
@@ -337,7 +362,7 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
         {
             activeHitbox.layer = 19;
         }
-        StartCoroutine(Linger(lingerDeltaTime));
+        //StartCoroutine(Linger(lingerDeltaTime));
         c_Manager.hitEnemy = "None";
     }
 
@@ -363,7 +388,7 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
             activeHitbox.layer = 19;
            
         }
-        StartCoroutine(Linger(lingerDeltaTime));
+        //StartCoroutine(Linger(lingerDeltaTime));
         c_Manager.hitEnemy = "None";
     }
 
@@ -393,7 +418,7 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
             }
             
         }
-        StartCoroutine(Linger(lingerDeltaTime));
+        //StartCoroutine(Linger(lingerDeltaTime));
         c_Manager.hitEnemy = "None";
     }
 
@@ -422,7 +447,7 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
                 activeHitbox.transform.GetChild(0).gameObject.layer = 19;
             }
         }
-        StartCoroutine(Linger(lingerDeltaTime));
+        //StartCoroutine(Linger(lingerDeltaTime));
         c_Manager.hitEnemy = "None";
     }
 

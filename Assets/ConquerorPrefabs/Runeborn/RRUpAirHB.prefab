@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5731591093767202639}
   - component: {fileID: 8068051002954155942}
   - component: {fileID: 7931409930717239238}
+  - component: {fileID: 7228414115511484210}
   m_Layer: 15
   m_Name: RRUpAirHB
   m_TagString: AttackHitbox
@@ -167,12 +168,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 7a5375ab047f4c647b654760f10ee781, type: 2}
-  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineColor: {r: 0, g: 1, b: 0.99215686, a: 1}
   directions:
-    top: 1
-    bottom: 1
+    top: 0
+    bottom: 0
     left: 1
-    right: 1
+    right: 0
 --- !u!95 &7931409930717239238
 Animator:
   serializedVersion: 3
@@ -192,3 +193,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7228414115511484210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6260341956870047123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 4.4
+  baseKB: 0.11
+  hitStun: 0.16
+  damageModifier: 0
+  KBModifier: 0
+  modifierY: 0.2
+  modifierX: 0.1
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0
+  shakeScreen: 0
+  smash: 0
+  grab: 0
+  continuous: 0
+  groundPound: 0
+  noHitStop: 0
+  soundName: MagicHit
+  hitEnemies: []

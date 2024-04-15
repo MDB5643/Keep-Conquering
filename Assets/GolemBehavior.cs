@@ -558,7 +558,7 @@ public class GolemBehavior : MonoBehaviour
         }
         else if (collision.transform.tag == "AttackHitbox" || collision.transform.tag == "AttackHitboxMid")
         {
-            collision.GetComponentInParent<CombatManager>().Hit(transform, collision.transform.name);
+            collision.GetComponentInParent<CombatManager>().Hit(transform, collision.GetComponent<CollisionTracker>());
         }
     }
 

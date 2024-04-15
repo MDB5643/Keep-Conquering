@@ -23,6 +23,7 @@ public class PlayerObjectHandler : MonoBehaviour
     // Use this only if persisting cursors to the next screen (if selecting more than one "thing"/object per player)
     // If so, set shouldSpawnSelectedPlayers to false.  We'll just keep the cursors, which will have the PlayerInput components (which define the players)
     public static GameObject[] playerCursors;
+    public MenuEvents menu;
 
     [SerializeField] public static bool shouldSpawnSelectedPlayers = false;
     [SerializeField] public static bool shouldPersistCursors = false;
@@ -43,8 +44,20 @@ public class PlayerObjectHandler : MonoBehaviour
 
     private void PlayersDoneSelecting(object sender, EventArgs e)
     {
+        MenuEvents.levelLoaded = false;
         // UnityEngine.Debug.Log("Player done method tripped");
-
+        if (playerControllers.Count > 0)
+        {
+            playerControllers.Clear();
+        }
+        if (playerControlSchemes.Count > 0)
+        {
+            playerControlSchemes.Clear();
+        }
+        if (playerSelectionNames.Count > 0)
+        {
+            playerSelectionNames.Clear();
+        }
 
         // First, make sure all players have selected their objects (players/vehicles/etc...)
         playerCursors = GameObject.FindGameObjectsWithTag("PlayerCursor");
@@ -94,6 +107,6 @@ public class PlayerObjectHandler : MonoBehaviour
         // with their PlayerInput components over to the next selection screen.
         shouldPersistCursors = false;
 
-        SceneManager.LoadScene("Duel");
+        MenuEvents.LoadLevel();
     }
 }

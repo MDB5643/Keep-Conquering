@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class KeepAlive : MonoBehaviour
 {
-    private GameObject sceneManager;
+    private GameObject audioManager;
 
 
     // Start is called before the first frame update
     private void Awake()
     {
-        if (sceneManager == null)
+        if (audioManager == null)
         {
-            sceneManager = gameObject;
+            audioManager = gameObject;
             DontDestroyOnLoad(gameObject);
         }
         else

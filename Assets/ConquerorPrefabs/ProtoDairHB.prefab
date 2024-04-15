@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7562624716108914733}
   - component: {fileID: 3858614146371911249}
+  - component: {fileID: 7869940341041032036}
   m_Layer: 15
   m_Name: ProtoDairHB
   m_TagString: AttackHitbox
@@ -62,3 +63,33 @@ PolygonCollider2D:
       - {x: -0.046433806, y: -0.9443549}
       - {x: 0.00952363, y: -0.58755493}
       - {x: 0.04060179, y: -0.17081717}
+--- !u!114 &7869940341041032036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377951757860842415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 5.2
+  baseKB: 0.5
+  hitStun: 0.16
+  damageModifier: 0
+  KBModifier: 0
+  modifierY: -3
+  modifierX: 0
+  multModY: 1
+  multModX: 1
+  shakeIntensity: 0
+  shakeScreen: 0
+  smash: 0
+  grab: 0
+  continuous: 0
+  groundPound: 1
+  noHitStop: 0
+  soundName: Hurt
+  hitEnemies: []
