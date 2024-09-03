@@ -1,0 +1,3732 @@
+fileFormatVersion: 2
+guid: fe943683e8367fc4dbcbbc1c37950703
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4832018861239316742
+    second: Burning-Belligerent-sheet-Recovered_0
+  - first:
+      213: 635206765294266605
+    second: Burning-Belligerent-sheet-Recovered_1
+  - first:
+      213: 665479654092014391
+    second: Burning-Belligerent-sheet-Recovered_2
+  - first:
+      213: 4413870335898792865
+    second: Burning-Belligerent-sheet-Recovered_3
+  - first:
+      213: -9057941334575545111
+    second: Burning-Belligerent-sheet-Recovered_4
+  - first:
+      213: -8159504005589722684
+    second: Burning-Belligerent-sheet-Recovered_5
+  - first:
+      213: 755194519144945365
+    second: Burning-Belligerent-sheet-Recovered_6
+  - first:
+      213: 72405472586904053
+    second: Burning-Belligerent-sheet-Recovered_7
+  - first:
+      213: -9071619545438512202
+    second: Burning-Belligerent-sheet-Recovered_8
+  - first:
+      213: 4326332392461986192
+    second: Burning-Belligerent-sheet-Recovered_9
+  - first:
+      213: 8827046726917400173
+    second: Burning-Belligerent-sheet-Recovered_10
+  - first:
+      213: -2162999652325890382
+    second: Burning-Belligerent-sheet-Recovered_11
+  - first:
+      213: -2105412768418745633
+    second: Burning-Belligerent-sheet-Recovered_12
+  - first:
+      213: -9016366661627828400
+    second: Burning-Belligerent-sheet-Recovered_13
+  - first:
+      213: -2364467907477920609
+    second: Burning-Belligerent-sheet-Recovered_14
+  - first:
+      213: -2120977636537230777
+    second: Burning-Belligerent-sheet-Recovered_15
+  - first:
+      213: -9112809150935440583
+    second: Burning-Belligerent-sheet-Recovered_16
+  - first:
+      213: 7064623619561919523
+    second: Burning-Belligerent-sheet-Recovered_17
+  - first:
+      213: 314714368957054826
+    second: Burning-Belligerent-sheet-Recovered_18
+  - first:
+      213: -1275963323667827595
+    second: Burning-Belligerent-sheet-Recovered_19
+  - first:
+      213: -8719342784159404379
+    second: Burning-Belligerent-sheet-Recovered_20
+  - first:
+      213: -6616582182512739001
+    second: Burning-Belligerent-sheet-Recovered_21
+  - first:
+      213: -9170642337047023693
+    second: Burning-Belligerent-sheet-Recovered_22
+  - first:
+      213: 4741276481119197853
+    second: Burning-Belligerent-sheet-Recovered_23
+  - first:
+      213: 1495879422204272743
+    second: Burning-Belligerent-sheet-Recovered_24
+  - first:
+      213: -8457197341334370325
+    second: Burning-Belligerent-sheet-Recovered_25
+  - first:
+      213: -4033711048120211538
+    second: Burning-Belligerent-sheet-Recovered_26
+  - first:
+      213: 2721973381124674089
+    second: Burning-Belligerent-sheet-Recovered_27
+  - first:
+      213: 5155022255424244037
+    second: Burning-Belligerent-sheet-Recovered_28
+  - first:
+      213: -6009545052593870237
+    second: Burning-Belligerent-sheet-Recovered_29
+  - first:
+      213: 774124645339329953
+    second: Burning-Belligerent-sheet-Recovered_30
+  - first:
+      213: 5693476809085969834
+    second: Burning-Belligerent-sheet-Recovered_31
+  - first:
+      213: 6091538393137067830
+    second: Burning-Belligerent-sheet-Recovered_32
+  - first:
+      213: -4708083433193452313
+    second: Burning-Belligerent-sheet-Recovered_33
+  - first:
+      213: 8879388702789394571
+    second: Burning-Belligerent-sheet-Recovered_34
+  - first:
+      213: 3693615838739052684
+    second: Burning-Belligerent-sheet-Recovered_35
+  - first:
+      213: -1822753487066759576
+    second: Burning-Belligerent-sheet-Recovered_36
+  - first:
+      213: 965134561429589518
+    second: Burning-Belligerent-sheet-Recovered_37
+  - first:
+      213: 8216144976696823605
+    second: Burning-Belligerent-sheet-Recovered_38
+  - first:
+      213: 9114677940632817095
+    second: Burning-Belligerent-sheet-Recovered_39
+  - first:
+      213: -1050336062150370544
+    second: Burning-Belligerent-sheet-Recovered_40
+  - first:
+      213: 8438020836526729972
+    second: Burning-Belligerent-sheet-Recovered_41
+  - first:
+      213: -632113210218321267
+    second: Burning-Belligerent-sheet-Recovered_42
+  - first:
+      213: -5795067007635566616
+    second: Burning-Belligerent-sheet-Recovered_43
+  - first:
+      213: 3264924986103880804
+    second: Burning-Belligerent-sheet-Recovered_44
+  - first:
+      213: 319970108809249165
+    second: Burning-Belligerent-sheet-Recovered_45
+  - first:
+      213: 4039862132202148650
+    second: Burning-Belligerent-sheet-Recovered_46
+  - first:
+      213: 8413070703356013272
+    second: Burning-Belligerent-sheet-Recovered_47
+  - first:
+      213: 9104113537703906868
+    second: Burning-Belligerent-sheet-Recovered_48
+  - first:
+      213: -7076253847046580064
+    second: Burning-Belligerent-sheet-Recovered_49
+  - first:
+      213: 8135735987190951167
+    second: Burning-Belligerent-sheet-Recovered_50
+  - first:
+      213: 5196685182552366442
+    second: Burning-Belligerent-sheet-Recovered_51
+  - first:
+      213: -2515778277659471369
+    second: Burning-Belligerent-sheet-Recovered_52
+  - first:
+      213: 767184779552932689
+    second: Burning-Belligerent-sheet-Recovered_53
+  - first:
+      213: 6055312810121566568
+    second: Burning-Belligerent-sheet-Recovered_54
+  - first:
+      213: -6276822245356690123
+    second: Burning-Belligerent-sheet-Recovered_55
+  - first:
+      213: -4760845984432012624
+    second: Burning-Belligerent-sheet-Recovered_56
+  - first:
+      213: -5273006519161562866
+    second: Burning-Belligerent-sheet-Recovered_57
+  - first:
+      213: -2409011822171676605
+    second: Burning-Belligerent-sheet-Recovered_58
+  - first:
+      213: -8632586080031657425
+    second: Burning-Belligerent-sheet-Recovered_59
+  - first:
+      213: -9132933307753191896
+    second: Burning-Belligerent-sheet-Recovered_60
+  - first:
+      213: -3905341268628670121
+    second: Burning-Belligerent-sheet-Recovered_61
+  - first:
+      213: -1489754386277050223
+    second: Burning-Belligerent-sheet-Recovered_62
+  - first:
+      213: 2386223610701933827
+    second: Burning-Belligerent-sheet-Recovered_63
+  - first:
+      213: 684540579287317966
+    second: Burning-Belligerent-sheet-Recovered_64
+  - first:
+      213: 236049294111774183
+    second: Burning-Belligerent-sheet-Recovered_65
+  - first:
+      213: 8235020924239095431
+    second: Burning-Belligerent-sheet-Recovered_66
+  - first:
+      213: 344195877316355183
+    second: Burning-Belligerent-sheet-Recovered_67
+  - first:
+      213: -7946147781081455019
+    second: Burning-Belligerent-sheet-Recovered_68
+  - first:
+      213: -4016717383660489196
+    second: Burning-Belligerent-sheet-Recovered_69
+  - first:
+      213: 383141806155419682
+    second: Burning-Belligerent-sheet-Recovered_70
+  - first:
+      213: 8428599874372244280
+    second: Burning-Belligerent-sheet-Recovered_71
+  - first:
+      213: -1053385925011937150
+    second: Burning-Belligerent-sheet-Recovered_72
+  - first:
+      213: 6509623033543849933
+    second: Burning-Belligerent-sheet-Recovered_73
+  - first:
+      213: -687626055000783067
+    second: Burning-Belligerent-sheet-Recovered_74
+  - first:
+      213: -8074916074374942612
+    second: Burning-Belligerent-sheet-Recovered_75
+  - first:
+      213: 4375954399850480740
+    second: Burning-Belligerent-sheet-Recovered_76
+  - first:
+      213: 120086325822346457
+    second: Burning-Belligerent-sheet-Recovered_77
+  - first:
+      213: 854495977393176483
+    second: Burning-Belligerent-sheet-Recovered_78
+  - first:
+      213: 7699477698481688110
+    second: Burning-Belligerent-sheet-Recovered_79
+  - first:
+      213: -8662241931189499609
+    second: Burning-Belligerent-sheet-Recovered_80
+  - first:
+      213: -4992670820024083177
+    second: Burning-Belligerent-sheet-Recovered_81
+  - first:
+      213: -588012157497135220
+    second: Burning-Belligerent-sheet-Recovered_82
+  - first:
+      213: -1804583946262627282
+    second: Burning-Belligerent-sheet-Recovered_83
+  - first:
+      213: 8117781092577868263
+    second: Burning-Belligerent-sheet-Recovered_84
+  - first:
+      213: 8632712685194146957
+    second: Burning-Belligerent-sheet-Recovered_85
+  - first:
+      213: 8162661946717496837
+    second: Burning-Belligerent-sheet-Recovered_86
+  - first:
+      213: 5173411330738935850
+    second: Burning-Belligerent-sheet-Recovered_87
+  - first:
+      213: -8292301602952682954
+    second: Burning-Belligerent-sheet-Recovered_88
+  - first:
+      213: -4458542682046279291
+    second: Burning-Belligerent-sheet-Recovered_89
+  - first:
+      213: -5078028208737627128
+    second: Burning-Belligerent-sheet-Recovered_90
+  - first:
+      213: 5327526942573274034
+    second: Burning-Belligerent-sheet-Recovered_91
+  - first:
+      213: -4512141744387492018
+    second: Burning-Belligerent-sheet-Recovered_92
+  - first:
+      213: -6149472276458752744
+    second: Burning-Belligerent-sheet-Recovered_93
+  - first:
+      213: -7797811531536329022
+    second: Burning-Belligerent-sheet-Recovered_94
+  - first:
+      213: -2367713310450837514
+    second: Burning-Belligerent-sheet-Recovered_95
+  - first:
+      213: -1860133746532622821
+    second: Burning-Belligerent-sheet-Recovered_96
+  - first:
+      213: 1133681531107220363
+    second: Burning-Belligerent-sheet-Recovered_97
+  - first:
+      213: 7929563258414244700
+    second: Burning-Belligerent-sheet-Recovered_98
+  - first:
+      213: 7969891143408950350
+    second: Burning-Belligerent-sheet-Recovered_99
+  - first:
+      213: 1711989651844077700
+    second: Burning-Belligerent-sheet-Recovered_100
+  - first:
+      213: 8681450571716364611
+    second: Burning-Belligerent-sheet-Recovered_101
+  - first:
+      213: -6926123593029269212
+    second: Burning-Belligerent-sheet-Recovered_102
+  - first:
+      213: -2994327753072828470
+    second: Burning-Belligerent-sheet-Recovered_103
+  - first:
+      213: 6321112957116314206
+    second: Burning-Belligerent-sheet-Recovered_104
+  - first:
+      213: 6975185073594596936
+    second: Burning-Belligerent-sheet-Recovered_105
+  - first:
+      213: 459319236865068824
+    second: Burning-Belligerent-sheet-Recovered_106
+  - first:
+      213: -7993082806580874270
+    second: Burning-Belligerent-sheet-Recovered_107
+  - first:
+      213: -3631813771811424620
+    second: Burning-Belligerent-sheet-Recovered_108
+  - first:
+      213: 6978628219200252852
+    second: Burning-Belligerent-sheet-Recovered_109
+  - first:
+      213: 6564196017461629996
+    second: Burning-Belligerent-sheet-Recovered_110
+  - first:
+      213: -7383817768123247547
+    second: Burning-Belligerent-sheet-Recovered_111
+  - first:
+      213: -2411287535971356352
+    second: Burning-Belligerent-sheet-Recovered_112
+  - first:
+      213: 3002404375990258961
+    second: Burning-Belligerent-sheet-Recovered_113
+  - first:
+      213: -1114081393943751392
+    second: Burning-Belligerent-sheet-Recovered_114
+  - first:
+      213: -767538239557210431
+    second: Burning-Belligerent-sheet-Recovered_115
+  - first:
+      213: 2712942004512392261
+    second: Burning-Belligerent-sheet-Recovered_116
+  - first:
+      213: -4828944919946875093
+    second: Burning-Belligerent-sheet-Recovered_117
+  - first:
+      213: 8340909042012828922
+    second: Burning-Belligerent-sheet-Recovered_118
+  - first:
+      213: 4071024429534384952
+    second: Burning-Belligerent-sheet-Recovered_119
+  - first:
+      213: 8965722007381673988
+    second: Burning-Belligerent-sheet-Recovered_120
+  - first:
+      213: 1015051584026826774
+    second: Burning-Belligerent-sheet-Recovered_121
+  - first:
+      213: 1017953622344966187
+    second: Burning-Belligerent-sheet-Recovered_122
+  - first:
+      213: 5869988919335807141
+    second: Burning-Belligerent-sheet-Recovered_123
+  - first:
+      213: 4578299381747312008
+    second: Burning-Belligerent-sheet-Recovered_124
+  - first:
+      213: 2818450576602547691
+    second: Burning-Belligerent-sheet-Recovered_125
+  - first:
+      213: 4158244367826052233
+    second: Burning-Belligerent-sheet-Recovered_126
+  - first:
+      213: -5526566256424202665
+    second: Burning-Belligerent-sheet-Recovered_127
+  - first:
+      213: 4409718782876483876
+    second: Burning-Belligerent-sheet-Recovered_128
+  - first:
+      213: 459184697903102966
+    second: Burning-Belligerent-sheet-Recovered_129
+  - first:
+      213: 7410200434168882984
+    second: Burning-Belligerent-sheet-Recovered_130
+  - first:
+      213: 8560410222316026038
+    second: Burning-Belligerent-sheet-Recovered_131
+  - first:
+      213: -3419541282717662905
+    second: Burning-Belligerent-sheet-Recovered_132
+  - first:
+      213: 8571621310817206803
+    second: Burning-Belligerent-sheet-Recovered_133
+  - first:
+      213: 8449823034758904792
+    second: Burning-Belligerent-sheet-Recovered_134
+  - first:
+      213: 681408137333672676
+    second: Burning-Belligerent-sheet-Recovered_135
+  - first:
+      213: -1051315920724692008
+    second: Burning-Belligerent-sheet-Recovered_136
+  - first:
+      213: -9126567134863655587
+    second: Burning-Belligerent-sheet-Recovered_137
+  - first:
+      213: 6225648025813391424
+    second: Burning-Belligerent-sheet-Recovered_138
+  - first:
+      213: 6607703570798713969
+    second: Burning-Belligerent-sheet-Recovered_139
+  - first:
+      213: -2698046701566472653
+    second: Burning-Belligerent-sheet-Recovered_140
+  - first:
+      213: -3754350736335130575
+    second: Burning-Belligerent-sheet-Recovered_141
+  - first:
+      213: -7084266226331263775
+    second: Burning-Belligerent-sheet-Recovered_142
+  - first:
+      213: 2769719678917235851
+    second: Burning-Belligerent-sheet-Recovered_143
+  - first:
+      213: 1678660646837834756
+    second: Burning-Belligerent-sheet-Recovered_144
+  - first:
+      213: -6331707534915189924
+    second: Burning-Belligerent-sheet-Recovered_145
+  - first:
+      213: -7258369959213147186
+    second: Burning-Belligerent-sheet-Recovered_146
+  - first:
+      213: -6892285847222221394
+    second: Burning-Belligerent-sheet-Recovered_147
+  - first:
+      213: 14111177283879057
+    second: Burning-Belligerent-sheet-Recovered_148
+  - first:
+      213: 5309293630912132174
+    second: Burning-Belligerent-sheet-Recovered_149
+  - first:
+      213: 2784256994501637162
+    second: Burning-Belligerent-sheet-Recovered_150
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 902
+        width: 47
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afec7d3627831fcb0800000000000000
+      internalID: -4832018861239316742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 902
+        width: 48
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de82a440035b0d800800000000000000
+      internalID: 635206765294266605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 902
+        width: 48
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733876338324c3900800000000000000
+      internalID: 665479654092014391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_3
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 902
+        width: 48
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3b1ef4fa7314d30800000000000000
+      internalID: 4413870335898792865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_4
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 902
+        width: 44
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e40c44e85abb4280800000000000000
+      internalID: -9057941334575545111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_5
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 902
+        width: 55
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9927b765e93ce80800000000000000
+      internalID: -8159504005589722684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_6
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 902
+        width: 55
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6d4f9f96dfa7a00800000000000000
+      internalID: 755194519144945365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_7
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 902
+        width: 55
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f13659c46c310100800000000000000
+      internalID: 72405472586904053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_8
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 902
+        width: 55
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb95a046122b1280800000000000000
+      internalID: -9071619545438512202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_9
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 902
+        width: 55
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09966f893683a0c30800000000000000
+      internalID: 4326332392461986192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_10
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 827
+        width: 67
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66afadfa38ff7a70800000000000000
+      internalID: 8827046726917400173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_11
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 827
+        width: 67
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b662d9b64b7bf1e0800000000000000
+      internalID: -2162999652325890382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_12
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 827
+        width: 66
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd234d8fd3218c2e0800000000000000
+      internalID: -2105412768418745633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_13
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 827
+        width: 66
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057aff0ca4e6fd280800000000000000
+      internalID: -9016366661627828400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_14
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 827
+        width: 66
+        height: 35
+      alignment: 9
+      pivot: {x: 0.25414947, y: -0.0011195592}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94a7f337f8bf2fd0800000000000000
+      internalID: -2364467907477920609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_15
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 827
+        width: 55
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a96a5b316c092e0800000000000000
+      internalID: -2120977636537230777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_16
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 827
+        width: 55
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9336094eb5cc88180800000000000000
+      internalID: -9112809150935440583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_17
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 827
+        width: 55
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32492d380c59a0260800000000000000
+      internalID: 7064623619561919523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_18
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 827
+        width: 55
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f75671d071e5400800000000000000
+      internalID: 314714368957054826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_19
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 827
+        width: 55
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5743a521e1eda4ee0800000000000000
+      internalID: -1275963323667827595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_20
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 752
+        width: 66
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae20535febaef680800000000000000
+      internalID: -8719342784159404379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_21
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 740
+        width: 30
+        height: 47
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d3628af8d2d24a0800000000000000
+      internalID: -6616582182512739001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_22
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 752
+        width: 49
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf6722f1655bb080800000000000000
+      internalID: -9170642337047023693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_23
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 762
+        width: 52
+        height: 34
+      alignment: 9
+      pivot: {x: 0.28028166, y: -0.018005371}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a1607d6d56cc140800000000000000
+      internalID: 4741276481119197853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_24
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 762
+        width: 52
+        height: 35
+      alignment: 9
+      pivot: {x: 0.2505364, y: 0.037311662}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7606d43b86e62c410800000000000000
+      internalID: 1495879422204272743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_25
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 752
+        width: 54
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7036283dff1aa80800000000000000
+      internalID: -8457197341334370325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_26
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 752
+        width: 55
+        height: 46
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7e93a5c216508c0800000000000000
+      internalID: -4033711048120211538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_27
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 752
+        width: 55
+        height: 46
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92251065e5466c520800000000000000
+      internalID: 2721973381124674089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_28
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 752
+        width: 55
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5498bc7cd615a8740800000000000000
+      internalID: 5155022255424244037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_29
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 752
+        width: 55
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36aaf665d9ec99ca0800000000000000
+      internalID: -6009545052593870237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_30
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 681
+        width: 46
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a57351734e3eba00800000000000000
+      internalID: 774124645339329953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_31
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 679
+        width: 55
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa56e761efa430f40800000000000000
+      internalID: 5693476809085969834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_32
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 681
+        width: 44
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637b69ae4ed798450800000000000000
+      internalID: 6091538393137067830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_33
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 680
+        width: 54
+        height: 47
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec4a9fdf0789aeb0800000000000000
+      internalID: -4708083433193452313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_34
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 680
+        width: 54
+        height: 55
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b80e06ceafce93b70800000000000000
+      internalID: 8879388702789394571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_35
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 677
+        width: 55
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c883cc4290c524330800000000000000
+      internalID: 3693615838739052684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_36
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 677
+        width: 54
+        height: 46
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ef7426c5744b6e0800000000000000
+      internalID: -1822753487066759576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_37
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 677
+        width: 52
+        height: 46
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e867625c8d46d00800000000000000
+      internalID: 965134561429589518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_38
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 677
+        width: 51
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53fcf17435c950270800000000000000
+      internalID: 8216144976696823605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_39
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 677
+        width: 51
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd028d9b47dd7e70800000000000000
+      internalID: 9114677940632817095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_40
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 596
+        width: 54
+        height: 46
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b9eb89ae47c61f0800000000000000
+      internalID: -1050336062150370544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_41
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 597
+        width: 31
+        height: 34
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa25888e3fd91570800000000000000
+      internalID: 8438020836526729972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_42
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 597
+        width: 33
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8aea1762684a37f0800000000000000
+      internalID: -632113210218321267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_43
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 529
+        width: 28
+        height: 46
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8efcb489249c39fa0800000000000000
+      internalID: -5795067007635566616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_44
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 599
+        width: 30
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46cd40ff9f75f4d20800000000000000
+      internalID: 3264924986103880804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_45
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 578
+        width: 92
+        height: 92
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8181526e13c07400800000000000000
+      internalID: 319970108809249165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_46
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 527
+        width: 28
+        height: 50
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2316738439701830800000000000000
+      internalID: 4039862132202148650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_47
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 602
+        width: 55
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dae7c7fa3b31c470800000000000000
+      internalID: 8413070703356013272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_48
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 513
+        width: 67
+        height: 87
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e8aa1e60f485e70800000000000000
+      internalID: 9104113537703906868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_49
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 602
+        width: 56
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a81c422e981ccd90800000000000000
+      internalID: -7076253847046580064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_50
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 594
+        width: 10
+        height: 4
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffce0ee76c0f7e070800000000000000
+      internalID: 8135735987190951167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_51
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 591
+        width: 17
+        height: 7
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6dd19be3a55e1840800000000000000
+      internalID: 5196685182552366442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_52
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 585
+        width: 9
+        height: 5
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f196725cf8261dd0800000000000000
+      internalID: -2515778277659471369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_53
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 565
+        width: 7
+        height: 19
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153c6560e7695aa00800000000000000
+      internalID: 767184779552932689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_54
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 578
+        width: 9
+        height: 8
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8691b2b1beac80450800000000000000
+      internalID: 6055312810121566568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_55
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 565
+        width: 5
+        height: 11
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535ae338c6f34e8a0800000000000000
+      internalID: -6276822245356690123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_56
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 596
+        width: 57
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2c59b1dc31eedb0800000000000000
+      internalID: -4760845984432012624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_57
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 590
+        width: 14
+        height: 5
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e095e07228482d6b0800000000000000
+      internalID: -5273006519161562866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_58
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 584
+        width: 6
+        height: 4
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340adbfd288719ed0800000000000000
+      internalID: -2409011822171676605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_59
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 579
+        width: 5
+        height: 4
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f223bb692b4e23880800000000000000
+      internalID: -8632586080031657425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_60
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 563
+        width: 6
+        height: 15
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826a9028b8d414180800000000000000
+      internalID: -9132933307753191896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_61
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 578
+        width: 8
+        height: 6
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759f6bcbec07dc9c0800000000000000
+      internalID: -3905341268628670121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_62
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 565
+        width: 4
+        height: 10
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198506b5744535be0800000000000000
+      internalID: -1489754386277050223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_63
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 569
+        width: 87
+        height: 72
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30de98e2bb19d1120800000000000000
+      internalID: 2386223610701933827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_64
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 569
+        width: 87
+        height: 77
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecdb2cea70aff7900800000000000000
+      internalID: 684540579287317966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_65
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 528
+        width: 33
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e59305159d964300800000000000000
+      internalID: 236049294111774183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_66
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 527
+        width: 29
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7862e2b46eba84270800000000000000
+      internalID: 8235020924239095431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_67
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 524
+        width: 36
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f646898a354d6c400800000000000000
+      internalID: 344195877316355183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_68
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 527
+        width: 61
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556a1ef81bc99b190800000000000000
+      internalID: -7946147781081455019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_69
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 550
+        width: 5
+        height: 15
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416b7cf22d0c148c0800000000000000
+      internalID: -4016717383660489196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_70
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 546
+        width: 5
+        height: 23
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 220de765171315500800000000000000
+      internalID: 383141806155419682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_71
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 544
+        width: 4
+        height: 19
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8331cd9dde668f470800000000000000
+      internalID: 8428599874372244280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_72
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 527
+        width: 66
+        height: 40
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2886440151f9161f0800000000000000
+      internalID: -1053385925011937150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_73
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 562
+        width: 5
+        height: 6
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7f418d8a3d65a50800000000000000
+      internalID: 6509623033543849933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_74
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 527
+        width: 66
+        height: 38
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52700650fbf0576f0800000000000000
+      internalID: -687626055000783067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_75
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 527
+        width: 61
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c603ac3fc9220ff80800000000000000
+      internalID: -8074916074374942612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_76
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 532
+        width: 5
+        height: 5
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464456487538abc30800000000000000
+      internalID: 4375954399850480740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_77
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 444
+        width: 54
+        height: 38
+      alignment: 9
+      pivot: {x: 0.62, y: -0.015727796}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4d50980e1aaa100800000000000000
+      internalID: 120086325822346457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_78
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 440
+        width: 53
+        height: 46
+      alignment: 9
+      pivot: {x: 0.62, y: -0.0029708198}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af358a6097cbdb00800000000000000
+      internalID: 854495977393176483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_79
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 448
+        width: 55
+        height: 46
+      alignment: 9
+      pivot: {x: 0.62, y: -0.012999161}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e0b065c2a0ada60800000000000000
+      internalID: 7699477698481688110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_80
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 451
+        width: 51
+        height: 34
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729c4fcabd889c780800000000000000
+      internalID: -8662241931189499609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_81
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 452
+        width: 48
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d910c675876bab0800000000000000
+      internalID: -4992670820024083177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_82
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 452
+        width: 65
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8fa5c4ee06f6d7f0800000000000000
+      internalID: -588012157497135220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_83
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 452
+        width: 49
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2cb4a34674d4f6e0800000000000000
+      internalID: -1804583946262627282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_84
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 452
+        width: 52
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e97c73d4e628a070800000000000000
+      internalID: 8117781092577868263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_85
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 452
+        width: 54
+        height: 47
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d847109f27e8dc770800000000000000
+      internalID: 8632712685194146957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_86
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 452
+        width: 54
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 506e1bbfac9974170800000000000000
+      internalID: 8162661946717496837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_87
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 433
+        width: 4
+        height: 4
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28dca50236abc740800000000000000
+      internalID: 5173411330738935850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_88
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 382
+        width: 50
+        height: 34
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6326a9960a3dbec80800000000000000
+      internalID: -8292301602952682954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_89
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 381
+        width: 57
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581d6b49d031022c0800000000000000
+      internalID: -4458542682046279291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_90
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 381
+        width: 64
+        height: 34
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804d7caaf383789b0800000000000000
+      internalID: -5078028208737627128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_91
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 379
+        width: 48
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3276f178d2fe940800000000000000
+      internalID: 5327526942573274034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_92
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 377
+        width: 52
+        height: 44
+      alignment: 9
+      pivot: {x: 0.49063814, y: 0.0021521829}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4772956df6a161c0800000000000000
+      internalID: -4512141744387492018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_93
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 377
+        width: 51
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815309dbb8fa8aaa0800000000000000
+      internalID: -6149472276458752744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_94
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 377
+        width: 52
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c615550abb98c390800000000000000
+      internalID: -7797811531536329022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_95
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 377
+        width: 54
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f71d90f941342fd0800000000000000
+      internalID: -2367713310450837514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_96
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 377
+        width: 54
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ed433863a7f26e0800000000000000
+      internalID: -1860133746532622821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_97
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 305
+        width: 40
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b11169855abbf00800000000000000
+      internalID: 1133681531107220363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_98
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 305
+        width: 40
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5325c955c77b0e60800000000000000
+      internalID: 7929563258414244700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_99
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 305
+        width: 48
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c1c65c4cdba9e60800000000000000
+      internalID: 7969891143408950350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_100
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 304
+        width: 48
+        height: 36
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4889f41948532c710800000000000000
+      internalID: 1711989651844077700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_101
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 302
+        width: 63
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34904467c45ba7870800000000000000
+      internalID: 8681450571716364611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_102
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 302
+        width: 35
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429c90fc94771ef90800000000000000
+      internalID: -6926123593029269212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_103
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 302
+        width: 53
+        height: 18
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf1001f5c20276d0800000000000000
+      internalID: -2994327753072828470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_104
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 302
+        width: 54
+        height: 20
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52790a6eba19b750800000000000000
+      internalID: 6321112957116314206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_105
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 302
+        width: 54
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e763a4ed5dcc060800000000000000
+      internalID: 6975185073594596936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_106
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 243
+        width: 48
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f88df8964df5600800000000000000
+      internalID: 459319236865068824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_107
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 245
+        width: 46
+        height: 34
+      alignment: 9
+      pivot: {x: 0.2899974, y: 0.0000017951517}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3f67d598dd21190800000000000000
+      internalID: -7993082806580874270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_108
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 244
+        width: 44
+        height: 34
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496fec0ed94399dc0800000000000000
+      internalID: -3631813771811424620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_109
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 241
+        width: 37
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bba2f8146119d060800000000000000
+      internalID: 6978628219200252852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_110
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 242
+        width: 38
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2495d0df75b81b50800000000000000
+      internalID: 6564196017461629996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_111
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 227
+        width: 52
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544dbcc6cd8678990800000000000000
+      internalID: -7383817768123247547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_112
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 227
+        width: 52
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041b917f2c2698ed0800000000000000
+      internalID: -2411287535971356352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_113
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 227
+        width: 52
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d4afe5fdeaaa920800000000000000
+      internalID: 3002404375990258961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_114
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 227
+        width: 55
+        height: 8
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0255c17ffdcf980f0800000000000000
+      internalID: -1114081393943751392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_115
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 227
+        width: 56
+        height: 8
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cee9a7a9082955f0800000000000000
+      internalID: -767538239557210431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_116
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 175
+        width: 53
+        height: 46
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544823b116e46a520800000000000000
+      internalID: 2712942004512392261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_117
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 161
+        width: 44
+        height: 60
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2fa3ae1e242cfcb0800000000000000
+      internalID: -4828944919946875093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_118
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 159
+        width: 44
+        height: 60
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4b409e49cd0c370800000000000000
+      internalID: 8340909042012828922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_119
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 148
+        width: 39
+        height: 57
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8339552462f2f7830800000000000000
+      internalID: 4071024429534384952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_120
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 152
+        width: 52
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40803ecc9a4ac6c70800000000000000
+      internalID: 8965722007381673988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_121
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 152
+        width: 52
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618dd96a900361e00800000000000000
+      internalID: 1015051584026826774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_122
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 152
+        width: 52
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20a1b91d6f702e00800000000000000
+      internalID: 1017953622344966187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_123
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 152
+        width: 52
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a86d7452d3667150800000000000000
+      internalID: 5869988919335807141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_124
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 152
+        width: 52
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8856074e703698f30800000000000000
+      internalID: 4578299381747312008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_125
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 95
+        width: 53
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5c36bddd52d1720800000000000000
+      internalID: 2818450576602547691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_126
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 95
+        width: 52
+        height: 46
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9846a81a83d05b930800000000000000
+      internalID: 4158244367826052233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_127
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 93
+        width: 23
+        height: 37
+      alignment: 9
+      pivot: {x: 0.48954707, y: -0.031997476}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ecc225541bd43b0800000000000000
+      internalID: -5526566256424202665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_128
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 88
+        width: 22
+        height: 46
+      alignment: 9
+      pivot: {x: 0.45930898, y: 0.004279261}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42188bc8ed7723d30800000000000000
+      internalID: 4409718782876483876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_129
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 84
+        width: 22
+        height: 46
+      alignment: 9
+      pivot: {x: 0.47708684, y: -0.18078497}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb3fc4cc0a5f5600800000000000000
+      internalID: 459184697903102966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_130
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 77
+        width: 52
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827e411b80256d660800000000000000
+      internalID: 7410200434168882984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_131
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 77
+        width: 52
+        height: 44
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8f4c00ebfacc670800000000000000
+      internalID: 8560410222316026038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_132
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 77
+        width: 52
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74184d422595b80d0800000000000000
+      internalID: -3419541282717662905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_133
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 77
+        width: 59
+        height: 45
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3128d64fa2484f670800000000000000
+      internalID: 8571621310817206803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_134
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 77
+        width: 63
+        height: 50
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbb7b1f74dc34570800000000000000
+      internalID: 8449823034758904792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_135
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 8
+        width: 31
+        height: 46
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea85d43719d47900800000000000000
+      internalID: 681408137333672676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_136
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 10
+        width: 45
+        height: 39
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3fd7e7db9f861f0800000000000000
+      internalID: -1051315920724692008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_137
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 7
+        width: 39
+        height: 49
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d72b3ab8be75180800000000000000
+      internalID: -9126567134863655587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_138
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 46
+        width: 7
+        height: 23
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048183305e1f56650800000000000000
+      internalID: 6225648025813391424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_139
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 46
+        width: 6
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c9986736743bb50800000000000000
+      internalID: 6607703570798713969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_140
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 2
+        width: 60
+        height: 70
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e47bdd1dc9e8ad0800000000000000
+      internalID: -2698046701566472653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_141
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 2
+        width: 67
+        height: 52
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130b48e85edd5ebc0800000000000000
+      internalID: -3754350736335130575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_142
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 2
+        width: 69
+        height: 53
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec5a35b661afad90800000000000000
+      internalID: -7084266226331263775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_143
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 1
+        width: 35
+        height: 47
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8455459f55007620800000000000000
+      internalID: 2769719678917235851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_144
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 10
+        width: 48
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4045231e6fccb4710800000000000000
+      internalID: 1678660646837834756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_145
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 35
+        width: 8
+        height: 8
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5347b73b814128a0800000000000000
+      internalID: -6331707534915189924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_146
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 20
+        width: 13
+        height: 18
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecbdbb48af6154b90800000000000000
+      internalID: -7258369959213147186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_147
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 36
+        width: 13
+        height: 10
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea50ed1f98ea950a0800000000000000
+      internalID: -6892285847222221394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_148
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 24
+        width: 21
+        height: 10
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1904e5d7a02223000800000000000000
+      internalID: 14111177283879057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_149
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 10
+        width: 12
+        height: 7
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44f2ce6d666ea940800000000000000
+      internalID: 5309293630912132174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_150
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 14
+        width: 16
+        height: 9
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24baa02cfaa3a620800000000000000
+      internalID: 2784256994501637162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

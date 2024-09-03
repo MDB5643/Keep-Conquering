@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -3757172902363448075}
   - component: {fileID: 7740669382346111767}
   - component: {fileID: 4556512457754477695}
-  m_Layer: 9
+  m_Layer: 15
   m_Name: ChampSideSpecialBomb
   m_TagString: AttackHitbox
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseDamage: 10
   baseKB: 0.6
-  hitStun: 0
+  hitStun: 0.2
   damageModifier: 0
   KBModifier: 0
   modifierY: 1
@@ -135,6 +135,8 @@ MonoBehaviour:
   continuous: 0
   groundPound: 0
   noHitStop: 0
+  noFlinch: 0
+  guardBreak: 0
   soundName: 
   hitEnemies: []
 --- !u!60 &-3757172902363448075

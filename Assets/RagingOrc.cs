@@ -26,6 +26,8 @@ public class RagingOrc : Conqueror {
 
     public float m_TimeSinceJab2 = 0.0f;
 
+    public CollisionTracker UpSpec2Collision;
+
     // Use this for initialization
     void Start ()
     {
@@ -34,8 +36,13 @@ public class RagingOrc : Conqueror {
         m_animator = GetComponentInChildren<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
         m_SR = GetComponentInChildren<SpriteRenderer>();
+        UpSpec2Collision = new CollisionTracker() { baseDamage = 5.5f, baseKB = .45f, multModX = 1, multModY = -1, modifierY = -1, soundName = "Hurt", hitEnemies = new List<string>() };
 
         striker = true;
+        if (m_manaBar)
+        {
+            m_manaBar.gameObject.SetActive(false);
+        }
 
         m_gravity = m_body2d.gravityScale;
 
@@ -56,6 +63,12 @@ public class RagingOrc : Conqueror {
     // Update is called once per frame
     void Update ()
     {
+        // Decrease death respawn timer 
+        m_respawnTimer -= Time.deltaTime;
+        // Respawn Hero if dead
+        if (m_dead && m_respawnTimer < 0.0f && !isEliminated)
+            RespawnHero();
+
         if (currentHookTarget != null)
         {
             crosshairLingerTime += Time.deltaTime;
@@ -68,12 +81,16 @@ public class RagingOrc : Conqueror {
 
         if (grabbedPlayers.Count > 0)
         {
-            m_animator.SetTrigger("UpSpec2");
+            SetLayerRecursively(gameObject, LayerMask.NameToLayer("Grabbed"));
+            grabbedPlayers[0].transform.SetPositionAndRotation(new Vector3(transform.position.x, transform.position.y, transform.position.z), new Quaternion(0f, 0f, 0f, 0f));
+            if (!m_animator.GetCurrentAnimatorClipInfo(0)[0].clip.name.Contains("UpSpec2"))
+            {
+                m_animator.SetTrigger("UpSpec2");
+            }
             isInUpSpec = false;
-            _repelBox.gameObject.SetActive(true);
         }
 
-        if (!m_inHitStun && !isInUpSpec && !isGrappled)
+        if (!m_inHitStun && !isInUpSpec && !isGrappled && !m_dead)
         {
             if (!m_isInHitStop)
             {
@@ -117,7 +134,7 @@ public class RagingOrc : Conqueror {
                     }
                     //shieldBarFrame.enabled = false;
                 }
-                if (m_timeSinceSideSpecial > .3f && hookActive == true)
+                if (m_timeSinceSideSpecial > .45f && hookActive == true)
                 {
                     hookActive = false;
                     isInStartUp = false;
@@ -165,8 +182,6 @@ public class RagingOrc : Conqueror {
                 }
                 // Check for interactable overlapping objects
                 CheckOverlaps();
-                // Decrease death respawn timer 
-                m_respawnTimer -= Time.deltaTime;
 
                 // Increase timer that controls attack combo
                 m_timeSinceAttack += Time.deltaTime;
@@ -195,10 +210,6 @@ public class RagingOrc : Conqueror {
                     isEliminated = true;
                 }
 
-                // Respawn Hero if dead
-                if (m_dead && m_respawnTimer < 0.0f && !isEliminated)
-                    RespawnHero();
-
                 if (m_dead)
                 {
                     if (activeDairHitbox)
@@ -212,18 +223,36 @@ public class RagingOrc : Conqueror {
                 //Check if character just landed on the ground
                 if (!m_grounded && m_groundSensor.State())
                 {
-                    _repelBox.gameObject.SetActive(true);
+                    RepelBoxNormal.gameObject.SetActive(true);
                     m_jumpCount = 0;
                     m_grounded = true;
                     m_animator.SetBool("Grounded", m_grounded);
                     m_launched = false;
                     isInUpSpec = false;
+                    m_freefall = false;
                     if (isInDSpec && m_body2d.velocity.y <= 0)
                     {
                         isInDSpec = false;
                         m_animator.SetTrigger("DSpec2");
                         gameObject.GetComponentInParent<Conqueror>().m_shakeIntensity = .18f;
                         gameObject.GetComponentInParent<Conqueror>().m_cameraShake = true;
+                        inAttack = false;
+                    }
+                    else if (inAttack)
+                    {
+                        inAttack = false;
+                        m_animator.SetTrigger("Land");
+                    }
+                    if (grabbedPlayers.Count == 0)
+                    {
+                        if (transform.position.z == 20)
+                        {
+                            transform.GetComponentInParent<Conqueror>().SetLayerRecursively(transform.gameObject, LayerMask.NameToLayer("PlayerMid"));
+                        }
+                        else
+                        {
+                            transform.GetComponentInParent<Conqueror>().SetLayerRecursively(transform.gameObject, LayerMask.NameToLayer("Player"));
+                        }
                     }
                     isInStartUp = false;
                     
@@ -322,6 +351,7 @@ public class RagingOrc : Conqueror {
                                 SetLayerRecursively(gameObject, LayerMask.NameToLayer("LedgeGrab"));
                             }
                         }
+                        RepelBoxNormal.gameObject.SetActive(true);
                         m_animator.SetBool("LedgeGrab", m_ledgeGrab);
                         
 
@@ -331,7 +361,7 @@ public class RagingOrc : Conqueror {
 
                 // -- Handle Animations --
 
-                if (m_timeSinceStun > 4.0f && !preview && !m_isInKnockback)
+                if (m_timeSinceStun > 4.0f && !preview && !m_isInKnockback && !inAttack)
                 {
                     if (m_animator.GetBool("isStunned"))
                     {
@@ -339,7 +369,7 @@ public class RagingOrc : Conqueror {
                     }
                     
                     //Walk
-                    else if (m_moving && Input.GetKey(KeyCode.LeftControl))
+                    else if (m_moving && Mathf.Abs(inputXY.x) < .45)
                     {
                         m_animator.SetInteger("AnimState", 2);
                         m_maxSpeed = m_walkSpeed;
@@ -376,9 +406,27 @@ public class RagingOrc : Conqueror {
             if (m_inHitStun)
             {
                 isInStartUp = false;
+                bool trembleUp = false;
+                bool trembleBack = false;
                 m_body2d.velocity = Vector2.zero;
                 m_body2d.gravityScale = 0;
                 m_timeSinceHitStun += Time.deltaTime;
+
+                m_timeSinceTremble += Time.deltaTime;
+                if (m_timeSinceTremble > .06)
+                {
+                    transform.localPosition += new Vector3(-.04f, 0, 0);
+                    trembleBack = true;
+                    trembleUp = false;
+                    m_timeSinceTremble = 0;
+                }
+                else if (m_timeSinceTremble > .03)
+                {
+                    transform.localPosition += new Vector3(.02f, 0, 0);
+                    trembleUp = true;
+                }
+
+
                 m_animator.speed = 0;
                 if (activeDairHitbox)
                 {
@@ -386,6 +434,7 @@ public class RagingOrc : Conqueror {
                 }
                 if (m_timeSinceHitStun >= m_hitStunDuration)
                 {
+                    transform.localPosition = preTremblePosition;
                     m_body2d.gravityScale = 1.25f;
                     Knockback(incomingKnockback, incomingAngle, incomingXMod, incomingYMod);
                     m_isInKnockback = true;
@@ -399,6 +448,8 @@ public class RagingOrc : Conqueror {
                 {
                     GameObject.Destroy(activeDairHitbox);
                 }
+                var grabbingPlayerYPos = m_body2d.transform.parent ? m_body2d.transform.parent.position.y : m_body2d.position.y;
+                m_body2d.position = new Vector2(m_body2d.position.x, grabbingPlayerYPos);
             }
         }
     }
@@ -422,13 +473,19 @@ public class RagingOrc : Conqueror {
         {
             currentDamage = 0.0f;
             m_isInKnockback = false;
+            isInStartUp = false;
+            isGrappled = false;
+            transform.parent = null;
+            m_inGroundSlam = false;
+            m_isInHitStop = false;
+            m_isParrying = false;
             m_animator.SetBool("Knockback", false);
             m_animator.SetBool("noBlood", m_noBlood);
             m_animator.SetTrigger("Death");
             m_respawnTimer = 2.5f;
             DisableWallSensors();
             m_dead = true;
-            m_StockCount--;
+            m_StockDisplay.text = "x" + (m_StockCount - 1);
         }
         if (coll.gameObject.CompareTag("RightLauncher"))
         {
@@ -553,7 +610,8 @@ public class RagingOrc : Conqueror {
             //Attack(upTiltDamage, upTiltKB, upTiltRange, 0, 2, upTiltPoint);
 
             // Disable movement 
-            m_disableMovementTimer = 0.35f;
+            m_disableMovementTimer = m_LagTime;
+            inAttack = true;
         }
         //Down Tilt Attack
         else if (inputXY.y < 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_grounded && m_timeSinceAttack > m_LagTime && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y)
@@ -568,8 +626,32 @@ public class RagingOrc : Conqueror {
             //Attack(upTiltDamage, upTiltKB, upTiltRange, 0, 2, upTiltPoint);
 
             // Disable movement 
-            m_disableMovementTimer = 0.45f;
+            m_disableMovementTimer = m_LagTime;
             m_animator.SetBool("Crouching", false);
+            inAttack = true;
+        }
+        //Forward tilt Attack
+        else if (Mathf.Abs(inputX) > 0 && Mathf.Abs(inputXY.x) < .45 && !Input.GetKey("s") && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && m_timeSinceNSpec > 1.1f
+            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && !isInStartUp && ctx.phase == InputActionPhase.Started)
+        {
+            if (m_facingDirection == 1 && inputX < 0)
+            {
+                m_SR.flipX = true;
+                m_facingDirection = -1;
+            }
+            else if (m_facingDirection == -1 && inputX > 0)
+            {
+                m_SR.flipX = false;
+                m_facingDirection = 1;
+            }
+            m_LagTime = .45f;
+            // Reset timer
+            m_timeSinceAttack = 0.0f;
+
+            m_animator.SetTrigger("FTilt");
+
+            m_disableMovementTimer = 0.45f;
+            inAttack = true;
         }
         //Dash Attack
         else if (Mathf.Abs(inputXY.x) > 0 && !Input.GetKey("s") && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && m_timeSinceNSpec > 1.1f
@@ -587,6 +669,7 @@ public class RagingOrc : Conqueror {
             m_body2d.velocity = new Vector2(m_facingDirection * m_dodgeForce + m_facingDirection * 3, m_body2d.velocity.y);
 
             m_disableMovementTimer = 0.45f;
+            inAttack = true;
         }
 
         //Jab Attack
@@ -620,28 +703,31 @@ public class RagingOrc : Conqueror {
             }
             // Reset timer
             m_timeSinceAttack = 0.0f;
-            m_disableMovementTimer = 0.45f;
+            m_disableMovementTimer = m_LagTime;
         }
 
         //Air Slam Attack
         else if (inputXY.y < 0 && !m_ledgeGrab && !m_ledgeClimb && !m_grounded && ctx.phase == InputActionPhase.Started && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y))
         {
+            m_LagTime = .45f;
             m_animator.SetTrigger("AttackAirSlam");
-            m_disableMovementTimer = 0.8f;
+            m_disableMovementTimer = m_LagTime;
 
             // Reset timer
             m_timeSinceAttack = 0.0f;
+            inAttack = true;
         }
 
         // Air Attack Up
         else if (inputXY.y > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && m_timeSinceAttack > m_LagTime && ctx.phase == InputActionPhase.Started && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y))
         {
-            m_LagTime = .65f;
+            m_LagTime = .55f;
             Debug.Log("Air attack up");
             m_animator.SetTrigger("AirAttackUp");
 
             // Reset timer
             m_timeSinceAttack = 0.0f;
+            inAttack = true;
         }
 
         // Air Attack forward
@@ -658,21 +744,22 @@ public class RagingOrc : Conqueror {
                 m_SR.flipX = false;
                 m_facingDirection = 1;
             }
-            m_LagTime = .6f;
+            m_LagTime = .5f;
             m_animator.SetTrigger("AirAttack");
 
             // Reset timer
             m_timeSinceAttack = 0.0f;
+            inAttack = true;
         }
 
         // Air Attack Neutral
         else if (inputXY.x == 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && m_timeSinceAttack > m_LagTime && ctx.phase == InputActionPhase.Started)
         {
-            m_LagTime = .65f;
+            m_LagTime = .55f;
             m_animator.SetTrigger("Nair");
             //// Reset timer
             m_timeSinceAttack = 0.0f;
-            m_disableMovementTimer = .65f;
+            inAttack = true;
         }
 
         //Ledge Attack
@@ -691,7 +778,8 @@ public class RagingOrc : Conqueror {
 
 
             // Disable movement 
-            m_disableMovementTimer = 0.35f;
+            m_disableMovementTimer = m_LagTime;
+            inAttack = true;
         }
     }
 
@@ -707,49 +795,42 @@ public class RagingOrc : Conqueror {
             isInDSpec = true;
             m_animator.SetBool("Crouching", false);
             m_body2d.velocity = new Vector2(0, 8);
-            m_disableMovementTimer = .5f;
+            m_disableMovementTimer = .45f;
             m_timeSinceAttack = 0.0f;
+            inAttack = true;
         }
         else if (inputXY.y > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > 2.0f && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y)
             && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started && !isInStartUp)
         {
-            m_LagTime = .65f;
+            m_LagTime = .55f;
             m_animator.SetTrigger("UpSpec");
             _repelBox.gameObject.SetActive(false);
-            m_body2d.velocity = new Vector2(0, 10);
-            m_disableMovementTimer = 1.0f;
+            m_body2d.velocity = new Vector2(0, 12);
+            m_disableMovementTimer = m_LagTime;
             m_timeSinceAttack = 0.0f;
         }
         // Throw
-        else if (Mathf.Abs(inputXY.x) > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > .01f
+        else if (Mathf.Abs(inputXY.x) > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > .08f
             && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
         {
             if (hookActive == true)
             {
-                hookActive = false;
                 isInStartUp = false;
                 m_animator.SetTrigger("FSpec2");
-                m_disableMovementTimer = .3f;
+                m_disableMovementTimer = .15f;
                 m_LagTime = .15f;
                 m_timeSinceAttack = 0.0f;
+                inAttack = true;
             }
-            else if (m_timeSinceSideSpecial > .1f && !isInStartUp)
+            else if (m_timeSinceSideSpecial > .15f && !isInStartUp && !hookActive)
             {
-                if (m_facingDirection == 1)
-                {
-                    m_body2d.AddForce(new Vector2(8, 0), ForceMode2D.Impulse);
-                }
-                else if (m_facingDirection == -1)
-                {
-                    m_body2d.AddForce(new Vector2(-8, 0), ForceMode2D.Impulse);
-                }
+                m_body2d.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
                 m_LagTime = .01f;
                 hookDirection = "Side";
                 m_animator.SetTrigger("Throw");
-                hookActive = true;
                 isInStartUp = true;
                 m_timeSinceSideSpecial = 0.0f;
-                
+                hookActive = true;
 
                 //ThrowHook();
                 // Disable movement 
@@ -778,8 +859,11 @@ public class RagingOrc : Conqueror {
             m_timeSinceNSpec = 0.0f;
             m_timeSinceAttack = 0.0f;
 
+            RepelBoxNormal.gameObject.SetActive(false);
+
             // Disable movement 
-            m_disableMovementTimer = 0.75f;
+            m_disableMovementTimer = m_LagTime;
+            inAttack = true;
         }
     }
 
@@ -792,6 +876,7 @@ public class RagingOrc : Conqueror {
             m_LagTime = .2f;
             if (m_fSmashCharging != true)
             {
+                m_body2d.velocity = new Vector2(0.0f, 0.0f);
                 m_timeSinceChargeStart = 0.0f;
                 m_fSmashCharging = true;
             }
@@ -816,7 +901,7 @@ public class RagingOrc : Conqueror {
             m_fullCharge = false;
 
             // Call one of the two attack animations "Attack1" or "Attack2"
-
+            inAttack = true;
             m_disableMovementTimer = 0.35f;
         }
     }
@@ -827,9 +912,11 @@ public class RagingOrc : Conqueror {
         if (ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded
                         && m_timeSinceAttack > m_LagTime && m_fSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
         {
-            m_LagTime = .25f;
+            
+            m_LagTime = .2f;
             if (m_uSmashCharging != true)
             {
+                m_body2d.velocity = new Vector2(0.0f, 0.0f);
                 m_timeSinceChargeStart = 0.0f;
                 m_uSmashCharging = true;
             }
@@ -838,13 +925,13 @@ public class RagingOrc : Conqueror {
             m_animator.SetBool("USmashCharge", true);
 
             // Disable movement 
-            m_disableMovementTimer = 0.35f;
+            m_disableMovementTimer = m_LagTime;
         }
 
         else if (ctx.phase == InputActionPhase.Canceled && m_uSmashCharging == true && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime
             && m_timeSinceNSpec > 1.1f)
         {
-            m_LagTime = .4f;
+            m_LagTime = .3f;
             m_animator.SetTrigger("USmash");
             m_animator.SetBool("USmashCharge", false);
             // Reset timer
@@ -853,7 +940,8 @@ public class RagingOrc : Conqueror {
             m_uSmashCharging = false;
             m_fullCharge = false;
 
-            m_disableMovementTimer = 0.35f;
+            inAttack = true;
+            m_disableMovementTimer = m_LagTime;
         }
     }
 
@@ -863,9 +951,10 @@ public class RagingOrc : Conqueror {
         if (ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded
                         && m_timeSinceAttack > m_LagTime && m_fSmashCharging == false && m_uSmashCharging == false && m_isParrying == false)
         {
-            m_LagTime = .25f;
+            m_LagTime = .2f;
             if (m_dSmashCharging != true)
             {
+                m_body2d.velocity = new Vector2(0.0f, 0.0f);
                 m_timeSinceChargeStart = 0.0f;
                 m_dSmashCharging = true;
             }
@@ -874,13 +963,13 @@ public class RagingOrc : Conqueror {
             m_animator.SetBool("DSmashCharge", true);
 
             // Disable movement 
-            m_disableMovementTimer = 0.35f;
+            m_disableMovementTimer = m_LagTime;
         }
 
         else if (ctx.phase == InputActionPhase.Canceled && m_dSmashCharging == true && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime
             && m_timeSinceNSpec > 1.1f)
         {
-            m_LagTime = .4f;
+            m_LagTime = .3f;
             m_animator.SetTrigger("DSmash");
             m_animator.SetBool("DSmashCharge", false);
             // Reset timer
@@ -889,7 +978,8 @@ public class RagingOrc : Conqueror {
             m_dSmashCharging = false;
             m_fullCharge = false;
 
-            m_disableMovementTimer = 0.35f;
+            inAttack = true;
+            m_disableMovementTimer = m_LagTime;
         }
     }
 
@@ -922,6 +1012,7 @@ public class RagingOrc : Conqueror {
             // Ready to parry in case something hits you
             if (!m_animator.GetCurrentAnimatorStateInfo(0).IsName("ParryStance"))
             {
+                m_body2d.velocity = new Vector2(0.0f, 0.0f);
                 m_animator.SetTrigger("ParryStance");
                 m_animator.SetBool("isParrying", true);
                 m_parryTimer = 7.0f / 12.0f;
@@ -936,12 +1027,15 @@ public class RagingOrc : Conqueror {
             m_dodging = true;
             m_crouching = false;
             m_isParrying = false;
+            m_animator.SetBool("isParrying", false);
+            m_animator.SetBool("Crouching", false);
             m_animator.SetTrigger("AirDodge");
         }
     }
 
     protected override void DodgeAction(InputAction.CallbackContext ctx)
     {
+        
         if (ctx.phase == InputActionPhase.Started && m_animator.GetBool("isParrying") && Mathf.Abs(inputX) > 0)
         {
             m_dodging = true;
@@ -952,6 +1046,14 @@ public class RagingOrc : Conqueror {
             m_animator.SetTrigger("Dodge");
             m_body2d.velocity = new Vector2(m_facingDirection * m_dodgeForce, m_body2d.velocity.y);
             m_SR.flipX = !m_SR.flipX;
+            if (m_facingDirection == 1)
+            {
+                m_facingDirection = -1;
+            }
+            else if (m_facingDirection == -1)
+            {
+                m_facingDirection = 1;
+            }
         }
 
         else if (ctx.phase == InputActionPhase.Started && m_animator.GetBool("isParrying"))
@@ -963,7 +1065,14 @@ public class RagingOrc : Conqueror {
             m_animator.SetBool("Crouching", false);
             m_animator.SetTrigger("Dodge");
             m_body2d.velocity = new Vector2(-m_facingDirection * m_dodgeForce, m_body2d.velocity.y);
-
+            if (m_facingDirection == 1)
+            {
+                m_facingDirection = -1;
+            }
+            else if (m_facingDirection == -1)
+            {
+                m_facingDirection = 1;
+            }
         }
     }
 }

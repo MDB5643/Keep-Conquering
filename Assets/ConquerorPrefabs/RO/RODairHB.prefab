@@ -60,11 +60,12 @@ PolygonCollider2D:
     m_Paths:
     - - {x: -0.059147, y: -1.1550372}
       - {x: -0.11602798, y: -1.241986}
-      - {x: 0.20000002, y: -1.7}
-      - {x: 0.45293412, y: -1.7577307}
-      - {x: 0.53673774, y: -1.7472343}
-      - {x: 0.54884344, y: -1.6793115}
-      - {x: 0.50524825, y: -1.450783}
+      - {x: 0.20000002, y: -1.7560298}
+      - {x: 0.50336087, y: -1.8249664}
+      - {x: 0.6095764, y: -1.7864552}
+      - {x: 0.62168217, y: -1.6737086}
+      - {x: 0.61789453, y: -1.5162715}
+      - {x: 0.5556751, y: -1.4115622}
       - {x: 0.31262362, y: -1.091636}
       - {x: 0.20624232, y: -1.0811394}
       - {x: 0.13503814, y: -1.1906419}
@@ -81,6 +82,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLingerTime: 0.05
+  linger: 1
 --- !u!114 &2853337079682727082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseDamage: 5.8
   baseKB: 0.5
-  hitStun: 0.19
+  hitStun: 0.23
   damageModifier: 0
   KBModifier: 0
   modifierY: -0.7

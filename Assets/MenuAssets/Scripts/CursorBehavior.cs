@@ -69,6 +69,18 @@ public class CursorBehavior : MonoBehaviour
                     {
                         menu.SetMode(3);
                     }
+                    else if (playerSelection.tag == "Lab")
+                    {
+                        menu.SetMode(4);
+                    }
+                    else if (playerSelection.tag == "VsCPU")
+                    {
+                        menu.SetCPUs(true);
+                    }
+                    else if (playerSelection.tag == "VsPlayers")
+                    {
+                        menu.SetCPUs(false);
+                    }
                     else if (playerSelection.tag == "BackButton")
                     {
 

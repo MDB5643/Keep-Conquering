@@ -15,7 +15,17 @@ public abstract class Conqueror : MonoBehaviour
 
     public string teamColor = "Blue";
     public int playerNumber = 1;
-    public bool isPlayer = false;
+    public bool isPlayer = true;
+
+    public float mana = 100f;
+    public float mps = 2f;
+
+    public Slider m_manaBar;
+    public Text m_DamageDisplay;
+    public Text m_StockDisplay;
+    public float currentDamage = 0.0f;
+    public float m_StockCount = 3;
+    public bool isEliminated;
 
     public float m_runSpeed = 4.5f;
     public float m_walkSpeed = 2.0f;
@@ -25,13 +35,8 @@ public abstract class Conqueror : MonoBehaviour
     public bool m_noBlood = false;
     public bool m_hideSword = false;
     public Text infoText;
-    public Text m_DamageDisplay;
-    public Text m_StockDisplay;
 
-    //Damage/Stocks
-    public float currentDamage = 0.0f;
-    public float m_StockCount = 3;
-    public bool isEliminated;
+    public bool inAttack = false;
 
     public Animator m_animator;
     public Rigidbody2D m_body2d;
@@ -48,6 +53,10 @@ public abstract class Conqueror : MonoBehaviour
 
     public bool heavy = false;
     public bool striker = false;
+    public bool caster = false;
+    public bool acrobat = false;
+    public bool sharpshooter = false;
+    public bool support = false;
 
     public bool m_grounded = false;
     public bool m_fallingdown = false;
@@ -71,6 +80,8 @@ public abstract class Conqueror : MonoBehaviour
     public bool m_isInHotZone = false;
     public bool m_cameraShake;
     public bool m_inJumpSquat;
+    public bool m_freefall = false;
+
     public bool preview = false;
 
     public float m_shakeIntensity = .1f;
@@ -85,37 +96,52 @@ public abstract class Conqueror : MonoBehaviour
     public float m_disableMovementTimer = 0.0f;
     public float m_parryTimer = 0.0f;
     public float m_respawnTimer = 0.0f;
+
     public Vector3 m_respawnPosition = Vector3.zero;
+
     public int m_currentAttack = 0;
     public int m_currentSpecial = 0;
     public int m_jumpCount = 0;
+    public int upSpecCount = 0;
+
     public float m_timeSinceAttack = 0.0f;
     public float m_LagTime = 0.0f;
     public float m_timeSinceNSpec = 0.0f;
     public float m_timeSinceSideSpecial = 0.0f;
     public float m_timeSinceStun = 5.0f;
     public float m_timeSinceHitStun = 0.0f;
+    public float m_timeSinceTremble = 0.0f;
+    public Vector3 preTremblePosition;
     public float m_timeSinceKnockBack = 0.0f;
-    public float m_KnockBackDuration = 0.2f;
+
+    public float m_KnockBackDuration = 0.3f;
     public float m_KnockBackMomentumX = 0.0f;
     public float m_KnockBackMomentumY = 0.0f;
+
     public float m_hitStunDuration = 0.0f;
+    public float m_AirSpeed = 2.5f;
     public float m_gravity;
     public float m_maxSpeed = 4.5f;
+
     public bool m_isInHitStop;
     public bool isInStartUp = false;
     public float m_hitStopDuration;
     public float m_timeSinceHitStop = 0.0f;
+
     public float animSpeed;
+
     public float inputX;
     public float inputY;
     public Vector2 inputXY;
+
     public bool jump = false;
     public bool attack = false;
     public bool special = false;
     public bool shield = false;
     public bool smash = false;
     public bool submit = false;
+
+    public bool homingIn = false;
 
     //Knockback after hitstun
     public float incomingKnockback = 0.0f;
@@ -138,6 +164,8 @@ public abstract class Conqueror : MonoBehaviour
 
     public GameObject KnockoutFX;
     public GameObject LightAttackFX;
+    public GameObject baseAttackFX;
+    public GameObject baseAttackFX2;
     public GameObject HeavyAttackFX;
     public GameObject ChargeFlashFX;
     public GameObject BlockFX;
@@ -185,6 +213,8 @@ public abstract class Conqueror : MonoBehaviour
     Vector2 _movement;
     Rigidbody2D _rb;
 
+    public CPUBehavior CPUBrain;
+
     private InputAction jumpAction;
 
     private void Awake()
@@ -198,6 +228,10 @@ public abstract class Conqueror : MonoBehaviour
         
         m_animator = GetComponentInChildren<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
+        if (!m_body2d)
+        {
+            m_body2d = GetComponentInChildren<Rigidbody2D>();
+        }
         m_SR = GetComponentInChildren<SpriteRenderer>();
         m_gravity = m_body2d.gravityScale;
         m_SpriteShaper = GetComponentInChildren<SpriteShapeDemo>();
@@ -223,12 +257,23 @@ public abstract class Conqueror : MonoBehaviour
     {
     }
 
-    //Fixed update runs 50 TIMES PER SECOND. Remember this when considering animation frames.
+    //Fixed update runs 50 TIMES PER SECOND
     private void FixedUpdate()
     {
         if (m_StockCount == 0)
         {
             isEliminated = true;
+        }
+        if (caster || support)
+        {
+            if (mana < 100)
+            {
+                mana += Time.deltaTime * mps;
+            }
+            if (m_manaBar)
+            {
+                m_manaBar.value = mana;
+            }
         }
         if (m_disableMovementTimer < 0.0f && !preview && isPlayer)
         {
@@ -243,7 +288,6 @@ public abstract class Conqueror : MonoBehaviour
             {
                 m_moving = true;
                 m_animator.SetBool("StayDown", false);
-                ProneCollider.enabled = false;
             }
 
             else
@@ -251,7 +295,8 @@ public abstract class Conqueror : MonoBehaviour
 
 
             // Swap direction of sprite depending on move direction
-            if (inputXY.x > 0 && !m_dodging && !m_wallSlide && !m_ledgeGrab && !m_ledgeClimb && !preview && m_grounded)
+            if (inputXY.x > 0 && !m_dodging && !m_wallSlide && !m_ledgeGrab && !m_ledgeClimb && m_grounded && m_fSmashCharging == false
+                && m_uSmashCharging == false && m_dSmashCharging == false && !preview && !m_inHitStun && !m_isInHitStop && !inAttack)
             {
                 if (m_SR.flipX == true)
                 {
@@ -261,7 +306,8 @@ public abstract class Conqueror : MonoBehaviour
                 m_facingDirection = 1;
             }
 
-            else if (inputXY.x < 0 && !m_dodging && !m_wallSlide && !m_ledgeGrab && !m_ledgeClimb && !preview && m_grounded)
+            else if (inputXY.x < 0 && !m_dodging && !m_wallSlide && !m_ledgeGrab && !m_ledgeClimb && m_grounded && m_fSmashCharging == false
+                && m_uSmashCharging == false && m_dSmashCharging == false && !preview && !m_inHitStun && !m_isInHitStop && !inAttack)
             {
                 if (m_SR.flipX == false)
                 {
@@ -273,10 +319,10 @@ public abstract class Conqueror : MonoBehaviour
 
             // SlowDownSpeed helps decelerate the characters when stopping
             float SlowDownSpeed = m_moving ? 1.0f : 0.5f;
-            float KBSlowDownSpeed = 0.8f;
+            float KBSlowDownSpeed = 0.82f;
             // Set movement
             if (!m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && (!m_animator.GetBool("isParrying") || heavy) && m_disableMovementTimer < 0.0f && !m_launched && m_fSmashCharging == false
-                && m_uSmashCharging == false && m_dSmashCharging == false && !preview)
+                && m_uSmashCharging == false && m_dSmashCharging == false && !preview && !m_inHitStun && !m_isInHitStop && !homingIn && !inAttack)
             {
                 if (!m_isInKnockback)
                 {
@@ -289,12 +335,40 @@ public abstract class Conqueror : MonoBehaviour
                         }
                         else
                         {
-                            m_body2d.velocity = new Vector2(inputXY.x * m_maxSpeed * SlowDownSpeed, m_body2d.velocity.y);
+                            if (Mathf.Abs(m_body2d.velocity.x) >= 6.5)
+                            {
+                                
+                                if (!m_grounded)
+                                {
+                                    m_body2d.velocity = new Vector2(m_body2d.velocity.x * .4f, m_body2d.velocity.y);
+                                }
+                                else
+                                {
+                                    m_body2d.velocity = new Vector2(m_body2d.velocity.x * .6f, m_body2d.velocity.y);
+                                }
+                                
+                            }
+                            else
+                            {
+                                
+                                // Fast Fall
+                                if (inputY < 0 && m_body2d.velocity.y < 0 && m_body2d.velocity.y > -6.5 && !m_grounded && !m_launched && !m_ledgeGrab && !m_ledgeClimb && m_disableMovementTimer < 0.0f && !m_inHitStun && !m_isInHitStop && !m_isInKnockback)
+                                {
+                                    m_body2d.velocity = new Vector2(m_body2d.velocity.x * .5f, m_body2d.velocity.y * 1.2f);
+                                }
+                                else
+                                {
+                                    //Default ground/air movement
+                                    m_body2d.velocity = new Vector2(inputXY.x * m_runSpeed * SlowDownSpeed, m_body2d.velocity.y);
+                                }
+                            }
+                            
                         }
                         
                     }
                     else
                     {
+
                         m_body2d.velocity = new Vector2(m_KnockBackMomentumX, m_KnockBackMomentumY);
 
 
@@ -312,7 +386,6 @@ public abstract class Conqueror : MonoBehaviour
                         m_KnockBackMomentumX = m_body2d.velocity.x;
                         m_KnockBackMomentumY = m_body2d.velocity.y;
                         m_animator.SetBool("Knockback", false);
-                        //
                     }
 
                 }
@@ -350,6 +423,12 @@ public abstract class Conqueror : MonoBehaviour
                 }
             }
 
+            // Fast Fall
+            else if (inputY < 0 && m_body2d.velocity.y < 0 && !m_grounded && !m_launched && !m_ledgeGrab && !m_ledgeClimb && m_disableMovementTimer < 0.0f && !m_inHitStun && !m_isInHitStop && !m_isInKnockback)
+            {
+                m_body2d.velocity = new Vector2(m_body2d.velocity.x, m_body2d.velocity.y * 1.2f);
+            }
+
             //Crouch / Stand up
             else if (inputY < 0 && m_grounded && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_disableMovementTimer < 0.0f
                 && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
@@ -359,16 +438,15 @@ public abstract class Conqueror : MonoBehaviour
                 m_body2d.velocity = new Vector2(m_body2d.velocity.x / 2.0f, m_body2d.velocity.y);
                 //NormalCollider.enabled = false;
                 RepelBoxNormal.SetActive(false);
-                CrouchCollider.enabled = true;
                 RepelBoxCrouch.SetActive(true);
             }
-            else if (inputY < 0 && m_crouching)
+            else if (inputY >= 0 && m_crouching)
             {
                 m_crouching = false;
                 m_animator.SetBool("Crouching", false);
                 RepelBoxCrouch.SetActive(false);
             }
-            if (!m_crouching && !ProneCollider.isActiveAndEnabled)
+            if (!m_crouching )
             {
                 //NormalCollider.enabled = true;
                 RepelBoxNormal.SetActive(true);
@@ -376,6 +454,39 @@ public abstract class Conqueror : MonoBehaviour
                 RepelBoxCrouch.SetActive(false);
             }
         }
+        else if (!isPlayer)
+        {
+
+        }
+    }
+
+    public void Interrupt()
+    {
+        upSpecCount = 0;
+        m_ledgeGrab = false;
+        m_ledgeClimb = false;
+        m_inGroundSlam = false;
+        m_inJumpSquat = false;
+        m_LagTime += .01f;
+        isInStartUp = false;
+        m_freefall = false;
+        inAttack = false;
+        m_body2d.bodyType = RigidbodyType2D.Dynamic;
+        RepelBoxProne.SetActive(false);
+        RepelBoxCrouch.SetActive(false);
+        RepelBoxNormal.SetActive(true);
+        foreach (var grabbedEnemy in grabbedPlayers)
+        {
+            if (grabbedEnemy.transform.tag == "PlayerMid")
+            {
+                SetLayerRecursively(gameObject, LayerMask.NameToLayer("PlayerMid"));
+            }
+            else if (grabbedEnemy.transform.tag == "Player")
+            {
+                SetLayerRecursively(gameObject, LayerMask.NameToLayer("Player"));
+            }
+        }
+        grabbedPlayers.Clear();
     }
 
     void OnTriggerStay2D(Collider2D coll)
@@ -453,7 +564,11 @@ public abstract class Conqueror : MonoBehaviour
         if (coll.transform.tag == "AttackHitbox")
         {
             string incomingAttackSource;
-            if (coll.GetComponentInParent<ProjectileBehavior>())
+            if (coll.GetComponentInParent<MinionBehavior>())
+            {
+                incomingAttackSource = coll.GetComponentInParent<MinionBehavior>().teamColor;
+            }
+            else if (coll.GetComponentInParent<ProjectileBehavior>())
             {
                 incomingAttackSource = coll.GetComponentInParent<ProjectileBehavior>().teamColor;
             }
@@ -463,8 +578,9 @@ public abstract class Conqueror : MonoBehaviour
             }
             if (incomingAttackSource != teamColor)
             {
-                m_inGroundSlam = false;
-                m_body2d.bodyType = RigidbodyType2D.Dynamic;
+                Interrupt();
+                float rng = Random.Range(1, 10);
+                preTremblePosition = transform.localPosition;
                 if (transform.GetComponent<PrototypeHero>())
                 {
                     GameObject.Destroy(transform.GetComponentInChildren<PrototypeHeroAnimEvents>().activeHitbox);
@@ -479,11 +595,32 @@ public abstract class Conqueror : MonoBehaviour
                 {
                     Instantiate(HeavyAttackFX, new Vector3(midPointX, midPointY, transform.position.z),
                 new Quaternion(0f, 0f, 0f, 0f), transform);
+                    if (rng > 5.5)
+                    {
+                        Instantiate(baseAttackFX, new Vector3(midPointX, midPointY, transform.position.z),
+                new Quaternion(0f, 0f, 0f, 0f), transform);
+                    }
+                    else
+                    {
+                        Instantiate(baseAttackFX2, new Vector3(midPointX, midPointY, transform.position.z),
+                new Quaternion(0f, 0f, 0f, 0f), transform);
+                    }
+                    
                 }
                 else
                 {
                     Instantiate(LightAttackFX, new Vector3(midPointX, midPointY, transform.position.z),
                 new Quaternion(0f, 0f, 0f, 0f), transform);
+                    if (rng > 5.5)
+                    {
+                        Instantiate(baseAttackFX, new Vector3(midPointX, midPointY, transform.position.z),
+                new Quaternion(0f, 0f, 0f, 0f), transform);
+                    }
+                    else
+                    {
+                        Instantiate(baseAttackFX2, new Vector3(midPointX, midPointY, transform.position.z),
+                new Quaternion(0f, 0f, 0f, 0f), transform);
+                    }
                 }
                 //if (coll.transform.name.Contains("ChargeBall"))
                 //{
@@ -494,9 +631,7 @@ public abstract class Conqueror : MonoBehaviour
                 //    GameObject.Destroy(coll.transform.gameObject);
                 //}
                 RepelBoxProne.SetActive(false);
-                ProneCollider.enabled = false;
                 RepelBoxCrouch.SetActive(false);
-                CrouchCollider.enabled = false;
                 RepelBoxNormal.SetActive(true);
                 //NormalCollider.enabled = true;
                 coll.GetComponentInParent<CombatManager>().Hit(transform, coll.GetComponent<CollisionTracker>());
@@ -524,7 +659,7 @@ public abstract class Conqueror : MonoBehaviour
             // Convert the angle to degrees.
             float attackAngle = angleInRadians * Mathf.Rad2Deg;
 
-            TakeDamage(10f);
+            TakeDamage(10f, false);
 
             incomingAngle = attackAngle;
             incomingKnockback = .8f;
@@ -571,6 +706,8 @@ public abstract class Conqueror : MonoBehaviour
         }
         if ((coll.gameObject.CompareTag("BlastZone") || coll.gameObject.CompareTag("BlastZoneMid")) && !m_dead)
         {
+            Interrupt();
+            m_dead = true;
             currentDamage = 0.0f;
             m_isInKnockback = false;
             isInStartUp = false;
@@ -580,11 +717,9 @@ public abstract class Conqueror : MonoBehaviour
             m_isInHitStop = false;
             m_isParrying = false;
             m_animator.SetBool("Knockback", false);
-            m_animator.SetBool("noBlood", m_noBlood);
             m_animator.SetTrigger("Death");
             m_respawnTimer = 2.5f;
             DisableWallSensors();
-            m_dead = true;
             m_StockCount--;
             gameObject.SetActive(false);
         }
@@ -595,7 +730,6 @@ public abstract class Conqueror : MonoBehaviour
             m_fallingdown = true;
             m_isInKnockback = false;
             m_animator.SetBool("Knockback", false);
-            ProneCollider.enabled = true;
             RepelBoxProne.SetActive(true);
         }
     }
@@ -651,59 +785,17 @@ public abstract class Conqueror : MonoBehaviour
         }
     }
 
-    public void Attack(float baseDamage, float baseKnockBack, float baseRange, float KBModX, float KBmodY, Transform attackPoint)
-    {
-        float damageModifier = 0.0f;
-
-        var playerCollider = GetComponent<BoxCollider2D>();
-
-        Vector2 attackHitboxCenter = attackPoint.position;
-
-        //Detect enemy collision with attack
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackHitboxCenter, baseRange, enemyLayers);
-
-        foreach (Collider2D enemy in hitEnemies)
-        {
-            if (enemy.GetComponentInParent<CPUBehavior>() != null && enemy.tag.StartsWith("Player"))
-            {
-                var above = false;
-
-                //Detect impact angle
-                var targetclosestPoint = new Vector2(enemy.transform.position.x, enemy.transform.position.y);
-                var sourceclosestPoint = new Vector2(playerCollider.transform.position.x, playerCollider.transform.position.y);
-                if (sourceclosestPoint.y > targetclosestPoint.y)
-                {
-                    above = true;
-                }
-
-                var positionDifference = targetclosestPoint - sourceclosestPoint;
-
-                //Must be done to detect y axis angle
-                float angleInRadians = Mathf.Atan2(positionDifference.y, positionDifference.x);
-
-                // Convert the angle to degrees.
-                float attackAngle = angleInRadians * Mathf.Rad2Deg;
-
-                //Apply damage
-                enemy.GetComponentInParent<CPUBehavior>().TakeDamage(baseDamage);
-                //Apply Knockback
-                enemy.GetComponentInParent<CPUBehavior>().incomingAngle = attackAngle;
-                enemy.GetComponentInParent<CPUBehavior>().incomingKnockback = jabKB;
-                enemy.GetComponentInParent<CPUBehavior>().incomingXMod = 0f;
-                enemy.GetComponentInParent<CPUBehavior>().incomingYMod = 2f;
-                enemy.GetComponentInParent<CPUBehavior>().HitStun(.15f);
-                //enemy.GetComponentInParent<CPUBehavior>().Knockback(baseKnockBack, attackAngle, KBModX, KBmodY, above);
-
-            }
-        }
-    }
 
     public void SetLayerRecursively(GameObject obj, int newLayer)
     {
-        obj.layer = newLayer;
-
+        if (!(obj.tag == "HotZone") && !(obj.tag == "RepelBox") && !(obj.tag == "HurtBox"))
+        {
+            obj.layer = newLayer;
+        }
+            
         foreach (Transform t in obj.transform)
         {
+            
             SetLayerRecursively(t.gameObject, newLayer);
         }
     }
@@ -784,6 +876,7 @@ public abstract class Conqueror : MonoBehaviour
 
     public void RespawnHero()
     {
+        m_StockCount--;
         SetLayerRecursively(gameObject, LayerMask.NameToLayer("Player"));
         if (playerNumber == 1)
         {
@@ -791,10 +884,22 @@ public abstract class Conqueror : MonoBehaviour
             
             transform.position = spawnPoint.position;
         }
-        else if (playerNumber == 3)
+        else if (playerNumber == 2)
         {
             Transform spawnPoint = GameObject.Find("P2RespawnPoint").transform;
             
+            transform.position = spawnPoint.position;
+        }
+        else if (playerNumber == 3)
+        {
+            Transform spawnPoint = GameObject.Find("P3RespawnPoint").transform;
+
+            transform.position = spawnPoint.position;
+        }
+        else
+        {
+            Transform spawnPoint = GameObject.Find("P4RespawnPoint").transform;
+
             transform.position = spawnPoint.position;
         }
 
@@ -807,17 +912,21 @@ public abstract class Conqueror : MonoBehaviour
         ResetDodging();
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(float damage, bool noFlinch)
     {
         currentDamage += damage;
-        m_launched = false;
-
+        if (!noFlinch)
+        {
+            m_launched = false;
+        }
+        
         //Play hurt animation
         m_animator.SetTrigger("Hurt");
     }
 
     public void HitStun(float stunTime)
     {
+        inAttack = false;
         m_inGroundSlam = false;
         m_fSmashCharging = false;
         m_animator.SetBool("FSmashCharge", false);
@@ -831,6 +940,7 @@ public abstract class Conqueror : MonoBehaviour
         m_animator.SetBool("isParrying", false);
         m_parryTimer = -1.0f;
         m_isParrying = false;
+        homingIn = false;
 
         if (transform.gameObject.layer == 27)
         {
@@ -848,8 +958,10 @@ public abstract class Conqueror : MonoBehaviour
 
             m_disableMovementTimer = stunTime;
             m_hitStunDuration = stunTime;
-
-            m_inHitStun = true;
+            if (stunTime > 0)
+            {
+                m_inHitStun = true;
+            }
         }
         //m_animator.SetTrigger("HitStun");
 
@@ -857,13 +969,15 @@ public abstract class Conqueror : MonoBehaviour
 
     public void Knockback(float BaseKB, float contactAngle, float modifierx, float modifiery)
     {
+        homingIn = false;
+        m_animator.SetBool("inJumpSquat", false);
         m_inHitStun = false;
         m_disableMovementTimer = 0.1f;
 
         //Make a vector inverse of collision angle
         float radians = contactAngle * Mathf.Deg2Rad;
         Vector2 KBVector = new Vector2(Mathf.Cos(radians), Mathf.Sin(radians));
-        BaseKB *= (currentDamage * 0.75f);
+        BaseKB *= (currentDamage * 0.7f);
 
         if (BaseKB > 2)
         {
@@ -923,7 +1037,7 @@ public abstract class Conqueror : MonoBehaviour
         //Jump
         if ((m_grounded || m_wallSlide || m_jumpCount <= 1) && !m_dodging && !m_ledgeClimb && !m_crouching && m_disableMovementTimer < 0.0f && !m_isInHitStop && !m_isInKnockback && !m_inHitStun
              && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && m_launched == false && m_timeSinceAttack > m_LagTime 
-             && ctx.phase == InputActionPhase.Started)
+             && ctx.phase == InputActionPhase.Started && !m_freefall)
         {
             m_LagTime = .08f;
             m_jumpCount++;
@@ -984,8 +1098,9 @@ public abstract class Conqueror : MonoBehaviour
 
     public void Basic(InputAction.CallbackContext ctx)
     {
-        if (!m_isInHitStop && !m_isInKnockback && !m_inHitStun)
+        if (!m_isInHitStop && !m_isInKnockback && !m_inHitStun && !inAttack && !m_freefall && !m_animator.GetBool("inJumpSquat"))
         {
+            
             if (transform.gameObject.layer == 27)
             {
                 SetLayerRecursively(gameObject, LayerMask.NameToLayer("PlayerMid"));
@@ -1016,8 +1131,9 @@ public abstract class Conqueror : MonoBehaviour
 
     public void Special(InputAction.CallbackContext ctx)
     {
-        if (!m_isInHitStop && !m_isInKnockback && !m_inHitStun)
+        if (!m_isInHitStop && !m_isInKnockback && !m_inHitStun && !inAttack && !m_freefall && !m_animator.GetBool("inJumpSquat"))
         {
+
             if (m_isParrying)
             {
                 DodgeAction(ctx);
@@ -1080,7 +1196,7 @@ public abstract class Conqueror : MonoBehaviour
 
     public void InstantForwardSmash(InputAction.CallbackContext ctx)
     {
-        if ((!m_moving || striker) && !m_isInHitStop && !m_isInKnockback && !m_inHitStun && m_timeSinceAttack > m_LagTime)
+        if ((!m_moving || striker) && !inAttack && !m_isInHitStop && !m_isInKnockback && !m_inHitStun && m_timeSinceAttack > m_LagTime && !m_animator.GetBool("inJumpSquat"))
         {
             if (m_facingDirection == -1 && !m_fSmashCharging)
             {
@@ -1094,7 +1210,7 @@ public abstract class Conqueror : MonoBehaviour
 
     public void InstantUpSmash(InputAction.CallbackContext ctx)
     {
-        if ((!m_moving || striker) && !m_isInHitStop && !m_isInKnockback && !m_inHitStun && m_timeSinceAttack > m_LagTime)
+        if ((!m_moving || striker) && !inAttack && !m_isInHitStop && !m_isInKnockback && !m_inHitStun && m_timeSinceAttack > m_LagTime && !m_animator.GetBool("inJumpSquat"))
         {
             UpSmashAction(ctx);
         }
@@ -1102,7 +1218,7 @@ public abstract class Conqueror : MonoBehaviour
 
     public void InstantDownSmash(InputAction.CallbackContext ctx)
     {
-        if ((!m_moving || striker) && !m_isInHitStop && !m_isInKnockback && !m_inHitStun && m_timeSinceAttack > m_LagTime)
+        if ((!m_moving || striker) && !inAttack && !m_isInHitStop && !m_isInKnockback && !m_inHitStun && m_timeSinceAttack > m_LagTime && !m_animator.GetBool("inJumpSquat"))
         {
             DownSmashAction(ctx);
         }
@@ -1110,7 +1226,7 @@ public abstract class Conqueror : MonoBehaviour
 
     public void ReverseForwardSmash(InputAction.CallbackContext ctx)
     {
-        if ((!m_moving || striker) && !m_isInHitStop && !m_isInKnockback && !m_inHitStun && m_timeSinceAttack > m_LagTime)
+        if ((!m_moving || striker) && !m_isInHitStop && !m_isInKnockback && !m_inHitStun && m_timeSinceAttack > m_LagTime && !m_animator.GetBool("inJumpSquat"))
         {
             if (m_facingDirection == 1 && !m_fSmashCharging)
             {
@@ -1124,7 +1240,7 @@ public abstract class Conqueror : MonoBehaviour
 
     public void Shield(InputAction.CallbackContext ctx)
     {
-        if (!m_isInHitStop && !m_isInKnockback && !m_inHitStun)
+        if (!m_isInHitStop && !m_isInKnockback && !inAttack && !m_inHitStun && !m_freefall && !m_animator.GetBool("inJumpSquat"))
         {
             ShieldAction(ctx);
         }
@@ -1132,7 +1248,7 @@ public abstract class Conqueror : MonoBehaviour
 
     public void Dodge(InputAction.CallbackContext ctx)
     {
-        if (!m_dodging && !m_isInHitStop && !m_isInKnockback && !m_inHitStun )
+        if (!m_dodging && !m_isInHitStop && !inAttack && !m_isInKnockback && !m_inHitStun && !m_freefall && !m_animator.GetBool("inJumpSquat"))
         {
             DodgeAction(ctx);
         }

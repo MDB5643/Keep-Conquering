@@ -4,7 +4,8 @@
 AnimationClip:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: LightBandit_Death
   serializedVersion: 6
   m_Legacy: 0
@@ -19,12 +20,20 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300070, guid: f2ed27d6c1c3ccc48959bcca269d88f0, type: 3}
+      value: {fileID: -2845092884550872695, guid: 2f3f82b7c3eb4ff44bc9cef77e15721d, type: 3}
+    - time: 0.125
+      value: {fileID: 5167943779732456223, guid: 39b37ef2629f3794a8051b9bd90406e0, type: 3}
+    - time: 0.25
+      value: {fileID: -8496661248088100039, guid: bb267a253b553984ba89f9f595c804fc, type: 3}
+    - time: 0.375
+      value: {fileID: -7317939089858395317, guid: c0c6c2b6528a39f46b044b8c524750d3, type: 3}
+    - time: 0.45833334
+      value: {fileID: -7317939089858395317, guid: c0c6c2b6528a39f46b044b8c524750d3, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 1
+  m_SampleRate: 24
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -39,13 +48,17 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300070, guid: f2ed27d6c1c3ccc48959bcca269d88f0, type: 3}
+    - {fileID: -2845092884550872695, guid: 2f3f82b7c3eb4ff44bc9cef77e15721d, type: 3}
+    - {fileID: 5167943779732456223, guid: 39b37ef2629f3794a8051b9bd90406e0, type: 3}
+    - {fileID: -8496661248088100039, guid: bb267a253b553984ba89f9f595c804fc, type: 3}
+    - {fileID: -7317939089858395317, guid: c0c6c2b6528a39f46b044b8c524750d3, type: 3}
+    - {fileID: -7317939089858395317, guid: c0c6c2b6528a39f46b044b8c524750d3, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1
+    m_StopTime: 0.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -64,5 +77,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_GenerateMotionCurves: 0
   m_Events: []

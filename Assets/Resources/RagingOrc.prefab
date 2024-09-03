@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 367635280}
   - component: {fileID: 367635282}
   - component: {fileID: 367635281}
-  m_Layer: 9
+  m_Layer: 30
   m_Name: WallSensor_L0
-  m_TagString: Untagged
+  m_TagString: HotZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -215,9 +215,9 @@ GameObject:
   - component: {fileID: 559020599}
   - component: {fileID: 559020601}
   - component: {fileID: 559020600}
-  m_Layer: 9
+  m_Layer: 30
   m_Name: WallSensor_R0
-  m_TagString: Untagged
+  m_TagString: HotZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -335,9 +335,9 @@ GameObject:
   - component: {fileID: 4096299932219503466}
   - component: {fileID: 4210655474100147033}
   - component: {fileID: 5692587709083937071}
-  m_Layer: 9
+  m_Layer: 30
   m_Name: GroundSensor
-  m_TagString: Untagged
+  m_TagString: HotZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -350,8 +350,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1254912165905175345}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.629, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.63707, z: 0}
+  m_LocalScale: {x: 1, y: 1.1282812, z: 1}
   m_Children: []
   m_Father: {fileID: 7216317338779392757}
   m_RootOrder: 1
@@ -403,7 +403,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2727378148215394070}
-  m_Layer: 9
+  m_Layer: 30
   m_Name: BackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -575,7 +575,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3003777739588553118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.692, z: 0}
+  m_LocalPosition: {x: 0, y: 0.663, z: 0}
   m_LocalScale: {x: 0.7579687, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7216317338779392757}
@@ -594,7 +594,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0022960678, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -605,7 +605,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.49, y: 0.1}
+  m_Size: {x: 0.17309485, y: 0.1}
   m_EdgeRadius: 0
 --- !u!114 &4788457577537581938
 MonoBehaviour:
@@ -770,9 +770,9 @@ GameObject:
   - component: {fileID: 7234416123028626362}
   - component: {fileID: 3502039444196788052}
   - component: {fileID: 6131596185185708868}
-  m_Layer: 9
+  m_Layer: 30
   m_Name: WallSensor_R2
-  m_TagString: Untagged
+  m_TagString: HotZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -835,8 +835,6 @@ GameObject:
   - component: {fileID: 4757006421730976581}
   - component: {fileID: -3231269130253305902}
   - component: {fileID: 7713599230248184781}
-  - component: {fileID: 5651148463918860427}
-  - component: {fileID: 8823548263266532891}
   m_Layer: 9
   m_Name: RagingOrc
   m_TagString: Player
@@ -1246,8 +1244,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00896611, y: 0.0522568}
-  m_Size: {x: 0.4679322, y: 1.3845135}
+  m_Offset: {x: 0.0030513243, y: 0.04204799}
+  m_Size: {x: 0.16386552, y: 1.2483418}
   m_Direction: 0
 --- !u!114 &-3231269130253305902
 MonoBehaviour:
@@ -1278,20 +1276,24 @@ MonoBehaviour:
   grabbedMinions: []
   teamColor: Blue
   playerNumber: 1
-  isPlayer: 0
-  m_runSpeed: 6.3
-  m_walkSpeed: 2
+  isPlayer: 1
+  mana: 100
+  mps: 2.5
+  m_manaBar: {fileID: 0}
+  m_DamageDisplay: {fileID: 0}
+  m_StockDisplay: {fileID: 0}
+  currentDamage: 0
+  m_StockCount: 3
+  isEliminated: 0
+  m_runSpeed: 7.3
+  m_walkSpeed: 3
   m_jumpForce: 7.6
   m_dodgeForce: 7
   m_parryKnockbackForce: 4
   m_noBlood: 0
   m_hideSword: 0
   infoText: {fileID: 0}
-  m_DamageDisplay: {fileID: 0}
-  m_StockDisplay: {fileID: 0}
-  currentDamage: 0
-  m_StockCount: 3
-  isEliminated: 0
+  inAttack: 0
   m_animator: {fileID: 3321056260839175058}
   m_body2d: {fileID: 0}
   m_SR: {fileID: 7776102926116477038}
@@ -1305,6 +1307,10 @@ MonoBehaviour:
   velocityState: {x: 0, y: 0}
   heavy: 0
   striker: 0
+  caster: 0
+  acrobat: 0
+  sharpshooter: 0
+  support: 0
   m_grounded: 0
   m_fallingdown: 0
   m_down: 0
@@ -1327,6 +1333,7 @@ MonoBehaviour:
   m_isInHotZone: 0
   m_cameraShake: 0
   m_inJumpSquat: 0
+  m_freefall: 0
   preview: 0
   m_shakeIntensity: 0.1
   m_maxSmashChargeTime: 2
@@ -1341,17 +1348,21 @@ MonoBehaviour:
   m_currentAttack: 0
   m_currentSpecial: 0
   m_jumpCount: 0
+  upSpecCount: 0
   m_timeSinceAttack: 0
   m_LagTime: 0
   m_timeSinceNSpec: 0
   m_timeSinceSideSpecial: 0
   m_timeSinceStun: 5
   m_timeSinceHitStun: 0
+  m_timeSinceTremble: 0
+  preTremblePosition: {x: 0, y: 0, z: 0}
   m_timeSinceKnockBack: 0
   m_KnockBackDuration: 0.2
   m_KnockBackMomentumX: 0
   m_KnockBackMomentumY: 0
   m_hitStunDuration: 0
+  m_AirSpeed: 0
   m_gravity: 0
   m_maxSpeed: 4.5
   m_isInHitStop: 0
@@ -1368,6 +1379,7 @@ MonoBehaviour:
   shield: 0
   smash: 0
   submit: 0
+  homingIn: 0
   incomingKnockback: 0
   incomingAngle: 0
   incomingXMod: 0
@@ -1385,6 +1397,8 @@ MonoBehaviour:
     m_Bits: 0
   KnockoutFX: {fileID: 181668162739009514, guid: a281fa3ea3c817d488e3c8dde98f496d, type: 3}
   LightAttackFX: {fileID: 7739218506307758710, guid: def5e69ebc4224c4798d087ee545a5b0, type: 3}
+  baseAttackFX: {fileID: 5001786435014035624, guid: 9b3b3bac7497678458fa78c02ef9e047, type: 3}
+  baseAttackFX2: {fileID: 5001786435014035624, guid: c5b471a8cc39baf408e9873d154db49f, type: 3}
   HeavyAttackFX: {fileID: 1724291888056607309, guid: 34e8f2ffa6331ff4b9f7be45413dab33, type: 3}
   ChargeFlashFX: {fileID: 4204095689380797397, guid: 81ead744f7dafc649a696aa3e0018451, type: 3}
   BlockFX: {fileID: 3569397387010719113, guid: 9300fb4b08a7c0f448a15475613f22d5, type: 3}
@@ -1411,13 +1425,14 @@ MonoBehaviour:
   DSmashInput: 0
   USmashInput: 0
   NormalCollider: {fileID: 4757006421730976581}
-  ProneCollider: {fileID: 5651148463918860427}
-  CrouchCollider: {fileID: 8823548263266532891}
+  ProneCollider: {fileID: 0}
+  CrouchCollider: {fileID: 0}
   KnockbackCollider: {fileID: 0}
   RepelBoxNormal: {fileID: 3003777739588553118}
   RepelBoxProne: {fileID: 4825584820453612044}
   RepelBoxCrouch: {fileID: 4794451658413123037}
   m_audioManager: {fileID: 0}
+  CPUBrain: {fileID: 0}
   activeDairHitbox: {fileID: 0}
   _repelBox: {fileID: 0}
   currentHookTarget: {fileID: 0}
@@ -1426,38 +1441,7 @@ MonoBehaviour:
   isInDSpec: 0
   m_TimeSinceFlurry: 0
   m_TimeSinceJab2: 0
---- !u!70 &5651148463918860427
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5126507520524490402}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0554949, y: -0.49637154}
-  m_Size: {x: 1.5678936, y: 0.2872581}
-  m_Direction: 1
---- !u!70 &8823548263266532891
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5126507520524490402}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.00896611, y: 0.05225691}
-  m_Size: {x: 0.4679322, y: 1.3845137}
-  m_Direction: 0
+  UpSpec2Collision: {fileID: 0}
 --- !u!1 &5291056838949151292
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,9 +1453,9 @@ GameObject:
   - component: {fileID: 3617823189154450194}
   - component: {fileID: 7246727038309344180}
   - component: {fileID: 1602386506773542423}
-  m_Layer: 9
+  m_Layer: 30
   m_Name: WallSensor_R1
-  m_TagString: Untagged
+  m_TagString: HotZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1531,9 +1515,11 @@ GameObject:
   - component: {fileID: 3163294721534819861}
   - component: {fileID: 3321056260839175058}
   - component: {fileID: 7722795064930395938}
-  m_Layer: 9
+  - component: {fileID: 5900822187010618047}
+  - component: {fileID: 3269538435236655522}
+  m_Layer: 3
   m_Name: Sprite
-  m_TagString: Untagged
+  m_TagString: HurtBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1672,7 +1658,7 @@ MonoBehaviour:
   upTiltHitbox: {fileID: 903482867419899601, guid: a04280e0689bfc84a96972b25acbadf1, type: 3}
   dTiltHitbox: {fileID: 903482867419899601, guid: ce515464df84ab34995ce23824067fa4, type: 3}
   upSpecExplosionHitbox: {fileID: 903482867419899601, guid: 6c80e4cc55110fc43876e20445679cb3, type: 3}
-  upSpecExplosionHitbox2: {fileID: 0}
+  upSpecExplosionHitbox2: {fileID: 903482867419899601, guid: 36b2c2d93ac433042b1383aa2b87b0c8, type: 3}
   upSmashHitbox: {fileID: 903482867419899601, guid: 1f953980e30cf284b8c69de7161ffff8, type: 3}
   dSmashHitbox: {fileID: 903482867419899601, guid: ad184bf6130c61f498cfb91e905d5a79, type: 3}
   dSmashHitboxBack: {fileID: 0}
@@ -1688,6 +1674,232 @@ MonoBehaviour:
   dSpec2: {fileID: 903482867419899601, guid: 65b80aa14262c6b4e80a28c43e7b420d, type: 3}
   lingerDeltaTime: 0
   lingerDurationSeconds: 0
+--- !u!60 &5900822187010618047
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5419930034650718081}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 1}
+    oldSize: {x: 0.56666666, y: 1.3666667}
+    newSize: {x: 0.59375, y: 1.375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.23333333, y: -1.35}
+      - {x: -0.06666667, y: -0.9166667}
+      - {x: 0, y: -1.35}
+      - {x: 0.13333334, y: -1.35}
+      - {x: 0.06666667, y: -0.75}
+      - {x: 0.26666668, y: -0.68333334}
+      - {x: 0.1, y: -0.6166667}
+      - {x: 0, y: -0.083333336}
+      - {x: -0.16666667, y: -0.11666667}
+      - {x: -0.26666668, y: -0.45000002}
+      - {x: -0.23333333, y: -1.2833333}
+--- !u!114 &3269538435236655522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5419930034650718081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c55c83d4c4dd1145ad5fbbab3c3df36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AlphaTolerance: 9
+  DistanceThreshold: 3
+  Scale: 1
+  Decompose: 0
+  cropXMin: 0
+  cropYMin: 0
+  cropXMax: 40
+  cropYMax: 45
+  RunInPlayMode: 1
+  UseCache: 1
+  lastAlphaTolerance: 9
+  lastScale: 1
+  lastDistanceThreshold: 3
+  lastDecompose: 0
+  lastSprite: {fileID: 275201893522592609, guid: cc4503ffa5cb126488abebc50df0703b, type: 3}
+  lastRect:
+    serializedVersion: 2
+    x: 137
+    y: 1344
+    width: 17
+    height: 41
+  lastOffset: {x: 8.5, y: 41}
+  lastPixelsPerUnit: 30
+  lastFlipX: 0
+  lastFlipY: 0
+  editorCache:
+  - Key:
+      Texture: {fileID: 2800000, guid: cc4503ffa5cb126488abebc50df0703b, type: 3}
+      Rect:
+        serializedVersion: 2
+        x: 137
+        y: 1344
+        width: 17
+        height: 41
+    Value:
+      List:
+      - Array:
+        - {x: -0.23333333, y: -1.35}
+        - {x: -0.06666667, y: -0.9166667}
+        - {x: 0, y: -1.35}
+        - {x: 0.13333334, y: -1.35}
+        - {x: 0.06666667, y: -0.75}
+        - {x: 0.26666668, y: -0.68333334}
+        - {x: 0.1, y: -0.6166667}
+        - {x: 0, y: -0.083333336}
+        - {x: -0.16666667, y: -0.11666667}
+        - {x: -0.26666668, y: -0.45000002}
+        - {x: -0.23333333, y: -1.2833333}
+  - Key:
+      Texture: {fileID: 2800000, guid: cc4503ffa5cb126488abebc50df0703b, type: 3}
+      Rect:
+        serializedVersion: 2
+        x: 232
+        y: 1344
+        width: 18
+        height: 41
+    Value:
+      List:
+      - Array:
+        - {x: -0.25, y: -1.35}
+        - {x: -0.050000004, y: -0.9166667}
+        - {x: 0.016666668, y: -1.35}
+        - {x: 0.15, y: -1.35}
+        - {x: 0.08333334, y: -0.75}
+        - {x: 0.28333333, y: -0.68333334}
+        - {x: 0.116666675, y: -0.6166667}
+        - {x: -0.016666668, y: -0.083333336}
+        - {x: -0.18333334, y: -0.11666667}
+        - {x: -0.28333333, y: -0.48333332}
+        - {x: -0.25, y: -1.2833333}
+  - Key:
+      Texture: {fileID: 2800000, guid: cc4503ffa5cb126488abebc50df0703b, type: 3}
+      Rect:
+        serializedVersion: 2
+        x: 422
+        y: 1344
+        width: 22
+        height: 41
+    Value:
+      List:
+      - Array:
+        - {x: -0.25, y: -1.35}
+        - {x: -0.016666668, y: -0.9166667}
+        - {x: 0.016666668, y: -1.35}
+        - {x: 0.15, y: -1.35}
+        - {x: 0.11666667, y: -0.75}
+        - {x: 0.35, y: -0.71666664}
+        - {x: 0.18333334, y: -0.65}
+        - {x: 0.016666668, y: -0.11666667}
+        - {x: -0.15, y: -0.15}
+        - {x: -0.25, y: -0.48333332}
+        - {x: -0.25, y: -1.2833333}
+  - Key:
+      Texture: {fileID: 2800000, guid: cc4503ffa5cb126488abebc50df0703b, type: 3}
+      Rect:
+        serializedVersion: 2
+        x: 711
+        y: 1344
+        width: 20
+        height: 41
+    Value:
+      List:
+      - Array:
+        - {x: -0.25, y: -1.35}
+        - {x: -0.016666668, y: -0.8833333}
+        - {x: 0.016666668, y: -1.35}
+        - {x: 0.15, y: -1.35}
+        - {x: 0.11666667, y: -0.75}
+        - {x: 0.31666666, y: -0.71666664}
+        - {x: 0.016666668, y: -0.083333336}
+        - {x: -0.15, y: -0.11666667}
+        - {x: -0.25, y: -0.48333332}
+        - {x: -0.21666667, y: -1.0833334}
+  - Key:
+      Texture: {fileID: 2800000, guid: cc4503ffa5cb126488abebc50df0703b, type: 3}
+      Rect:
+        serializedVersion: 2
+        x: 328
+        y: 1344
+        width: 18
+        height: 41
+    Value:
+      List:
+      - Array:
+        - {x: -0.25, y: -1.35}
+        - {x: -0.016666668, y: -0.95}
+        - {x: 0.016666668, y: -1.35}
+        - {x: 0.15, y: -1.35}
+        - {x: 0.116666675, y: -0.7833333}
+        - {x: 0.28333333, y: -0.71666664}
+        - {x: -0.016666668, y: -0.083333336}
+        - {x: -0.18333334, y: -0.11666667}
+        - {x: -0.28333333, y: -0.55}
+        - {x: -0.15, y: -0.75}
+        - {x: -0.25, y: -1.2833333}
+  - Key:
+      Texture: {fileID: 2800000, guid: cc4503ffa5cb126488abebc50df0703b, type: 3}
+      Rect:
+        serializedVersion: 2
+        x: 517
+        y: 1344
+        width: 24
+        height: 41
+    Value:
+      List:
+      - Array:
+        - {x: -0.25, y: -1.35}
+        - {x: -0.016666668, y: -0.9166667}
+        - {x: 0.016666668, y: -1.35}
+        - {x: 0.15, y: -1.35}
+        - {x: 0.11666667, y: -0.71666664}
+        - {x: 0.38333333, y: -0.71666664}
+        - {x: 0.083333336, y: -0.45000002}
+        - {x: 0.016666668, y: -0.083333336}
+        - {x: -0.15, y: -0.11666667}
+        - {x: -0.25, y: -0.51666665}
+        - {x: -0.25, y: -1.2833333}
+  - Key:
+      Texture: {fileID: 2800000, guid: cc4503ffa5cb126488abebc50df0703b, type: 3}
+      Rect:
+        serializedVersion: 2
+        x: 614
+        y: 1344
+        width: 22
+        height: 41
+    Value:
+      List:
+      - Array:
+        - {x: -0.25, y: -1.35}
+        - {x: -0.016666668, y: -0.8833333}
+        - {x: 0.016666668, y: -1.35}
+        - {x: 0.15, y: -1.35}
+        - {x: 0.11666667, y: -0.75}
+        - {x: 0.35, y: -0.71666664}
+        - {x: 0.016666668, y: -0.083333336}
+        - {x: -0.15, y: -0.11666667}
+        - {x: -0.25, y: -0.51666665}
+        - {x: -0.21666667, y: -1.1166667}
 --- !u!1 &5930689989181052918
 GameObject:
   m_ObjectHideFlags: 0
@@ -1697,7 +1909,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3445639847473644805}
-  m_Layer: 9
+  m_Layer: 30
   m_Name: JabPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1727,7 +1939,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2776925981775119306}
-  m_Layer: 9
+  m_Layer: 30
   m_Name: UpTiltPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1759,9 +1971,9 @@ GameObject:
   - component: {fileID: 2000575655945704494}
   - component: {fileID: 6083235009728169252}
   - component: {fileID: 9016615750983731624}
-  m_Layer: 9
+  m_Layer: 30
   m_Name: WallSensor_L1
-  m_TagString: Untagged
+  m_TagString: HotZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1849,9 +2061,9 @@ GameObject:
   - component: {fileID: 6602637651529097269}
   - component: {fileID: 6044105343498134028}
   - component: {fileID: 1792506090958250915}
-  m_Layer: 9
+  m_Layer: 30
   m_Name: WallSensor_L2
-  m_TagString: Untagged
+  m_TagString: HotZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

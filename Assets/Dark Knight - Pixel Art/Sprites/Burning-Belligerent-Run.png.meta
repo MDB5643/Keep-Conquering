@@ -1,0 +1,684 @@
+fileFormatVersion: 2
+guid: 5284b0e29390490478fea1d6938a739c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2260813230040225023
+    second: Burning-Belligerent-Run_0
+  - first:
+      213: 249679588196244097
+    second: Burning-Belligerent-Run_1
+  - first:
+      213: -6736173974744855440
+    second: Burning-Belligerent-Run_2
+  - first:
+      213: -6134089507754771066
+    second: Burning-Belligerent-Run_3
+  - first:
+      213: -3363074757285584439
+    second: Burning-Belligerent-Run_4
+  - first:
+      213: -2466816539719907253
+    second: Burning-Belligerent-Run_5
+  - first:
+      213: -2996530314724173407
+    second: Burning-Belligerent-Run_6
+  - first:
+      213: -5037811039307664442
+    second: Burning-Belligerent-Run_7
+  - first:
+      213: 845084390310655358
+    second: Burning-Belligerent-Run_8
+  - first:
+      213: -8376370211650353565
+    second: Burning-Belligerent-Run_9
+  - first:
+      213: 7480263007708836812
+    second: Burning-Belligerent-Run_10
+  - first:
+      213: 4622188731361196492
+    second: Burning-Belligerent-Run_11
+  - first:
+      213: 4360700669329913783
+    second: Burning-Belligerent-Run_12
+  - first:
+      213: 1519270576747307086
+    second: Burning-Belligerent-Run_13
+  - first:
+      213: 7957289462403290679
+    second: Burning-Belligerent-Run_14
+  - first:
+      213: -8228899289420216043
+    second: Burning-Belligerent-Run_15
+  - first:
+      213: -8238904968080671775
+    second: Burning-Belligerent-Run_16
+  - first:
+      213: 7877649567409932191
+    second: Burning-Belligerent-Run_17
+  - first:
+      213: -2993310901530105579
+    second: Burning-Belligerent-Run_18
+  - first:
+      213: 6865356376268367831
+    second: Burning-Belligerent-Run_19
+  - first:
+      213: -6925026516295342511
+    second: Burning-Belligerent-Run_20
+  - first:
+      213: -6183632757268862054
+    second: Burning-Belligerent-Run_21
+  - first:
+      213: -4140652046792003284
+    second: Burning-Belligerent-Run_22
+  - first:
+      213: -2976319110503470141
+    second: Burning-Belligerent-Run_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 445
+        width: 54
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10be2f7785aff90e0800000000000000
+      internalID: -2260813230040225023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_1
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 445
+        width: 55
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a5a1a334a077300800000000000000
+      internalID: 249679588196244097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_2
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 445
+        width: 55
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c0a12b57d4482a0800000000000000
+      internalID: -6736173974744855440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_3
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 445
+        width: 55
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d73dda7165fdaa0800000000000000
+      internalID: -6134089507754771066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_4
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 445
+        width: 55
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1e8ea9355f351d0800000000000000
+      internalID: -3363074757285584439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_5
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 370
+        width: 55
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48cfe74d6b14cdd0800000000000000
+      internalID: -2466816539719907253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_6
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 370
+        width: 54
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a91d281e8f2a66d0800000000000000
+      internalID: -2996530314724173407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_7
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 370
+        width: 52
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3768c1d89161ab0800000000000000
+      internalID: -5037811039307664442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_8
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 370
+        width: 51
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75b1b986c75abb00800000000000000
+      internalID: 845084390310655358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_9
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 370
+        width: 51
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366ca632ca721cb80800000000000000
+      internalID: -8376370211650353565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_10
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 310
+        width: 31
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3faf8c29b3fc760800000000000000
+      internalID: 7480263007708836812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_11
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 310
+        width: 32
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9f8996920552040800000000000000
+      internalID: 4622188731361196492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_12
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 310
+        width: 44
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7b73f9722548c30800000000000000
+      internalID: 4360700669329913783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_13
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 347
+        width: 23
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40e9b44a88851510800000000000000
+      internalID: 1519270576747307086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_14
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 240
+        width: 51
+        height: 44
+      alignment: 9
+      pivot: {x: 0.6810152, y: -0.00000034679067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736d1854b98fd6e60800000000000000
+      internalID: 7957289462403290679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_15
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 241
+        width: 48
+        height: 44
+      alignment: 9
+      pivot: {x: 0.67640907, y: 0.0024372449}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519c4a1e1b31dcd80800000000000000
+      internalID: -8228899289420216043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_16
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 242
+        width: 53
+        height: 44
+      alignment: 9
+      pivot: {x: 0.69162446, y: -0.00048169223}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ebb957459789ad80800000000000000
+      internalID: -8238904968080671775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_17
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 242
+        width: 74
+        height: 44
+      alignment: 9
+      pivot: {x: 0.41406786, y: -0.0000013871627}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f978a724b88035d60800000000000000
+      internalID: 7877649567409932191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_18
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 259
+        width: 18
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5196ef3289f9576d0800000000000000
+      internalID: -2993310901530105579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_19
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 242
+        width: 60
+        height: 44
+      alignment: 9
+      pivot: {x: 0.41177115, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d760ffff35a64f50800000000000000
+      internalID: 6865356376268367831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_20
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 262
+        width: 15
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1562e04e21d55ef90800000000000000
+      internalID: -6925026516295342511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_21
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 173
+        width: 50
+        height: 44
+      alignment: 9
+      pivot: {x: 0.38989326, y: -0.00000034679067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b258105c25f2aa0800000000000000
+      internalID: -6183632757268862054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_22
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 103
+        width: 83
+        height: 35
+      alignment: 9
+      pivot: {x: 0.30675554, y: -0.0032339913}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21f77cc6e27986c0800000000000000
+      internalID: -4140652046792003284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-Run_23
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 103
+        width: 84
+        height: 35
+      alignment: 9
+      pivot: {x: 0.25568458, y: 0.003642273}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cbeb38c98df1b6d0800000000000000
+      internalID: -2976319110503470141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

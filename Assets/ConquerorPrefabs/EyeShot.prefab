@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5697949801499143375}
   - component: {fileID: 4242544758677523585}
   - component: {fileID: 4338890888492892130}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: EyeShot
   m_TagString: EyeShot
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 2124576741167554830}
   - component: {fileID: 1878899137653714604}
   - component: {fileID: 4405284743010798613}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

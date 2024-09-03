@@ -56,6 +56,9 @@ public class PlayerManager : MonoBehaviour
     public bool isBlueChallenging = false;
     public bool isRedChallenging = false;
 
+    public bool isBlueKeepDestroyed = false;
+    public bool isRedKeepDestroyed = false;
+
     public bool challengeStarted = false;
 
     private void Awake()
@@ -63,8 +66,9 @@ public class PlayerManager : MonoBehaviour
         try
         {
             initializer = GameObject.Find("SelectionScreenInputManager").GetComponent<SceneInitialization>();
+            initializer.enabled = true;
             initializer.Init();
-            //m_audioManager.PlaySound("MainMenu");
+            
 
             //characterIndex = 0;
             if (MenuEvents.gameModeSelect == 1)
@@ -99,58 +103,8 @@ public class PlayerManager : MonoBehaviour
                 //    m_conqueror4.GetComponent<Conqueror>().m_StockCount = -1;
                 //}
             }
-            else if (MenuEvents.gameModeSelect == 2)
-            {
-                
-                //m_conqueror = Instantiate(playerPrefabs[MenuEvents.P1Select], new Vector3(-5f, 1.5f, 0),  //Vector3(76f, 6f, 0),
-                //                Quaternion.identity);
-                //P1Defeated = false;
-                //m_conqueror.GetComponent<Conqueror>().m_StockDisplay = p1StockDisplay;
-                //P1isPlayer = true;
-                if (MenuEvents.P2Set && !P2isPlayer)
-                {
-                    //m_conqueror2 = Instantiate(cpuPrefabs[MenuEvents.P2Select], new Vector3(1f, 1.5f, 0),  //Vector3(76f, 6f, 0),
-                    //            Quaternion.identity);
-                    //m_conqueror2.GetComponent<Conqueror>().m_StockDisplay = p2StockDisplay;
-                    //P2Defeated = false;
-                }
-                if (MenuEvents.P3Set && !P3isPlayer)
-                {
-                    //m_conqueror3 = Instantiate(cpuPrefabs[MenuEvents.P3Select], new Vector3(-2f, 6f, 0),  //Vector3(76f, 6f, 0),
-                    //            Quaternion.identity);
-                    //p3DamageDisplay.transform.parent.gameObject.SetActive(true);
-                    //m_conqueror3.GetComponent<Conqueror>().m_StockDisplay = p3StockDisplay;
-                    //P3Defeated = false;
-                }
-                if (MenuEvents.P4Set && !P4isPlayer)
-                {
-                    //m_conqueror4 = Instantiate(cpuPrefabs[MenuEvents.P4Select], new Vector3(0f, 6f, 0),  //Vector3(76f, 6f, 0),
-                    //            Quaternion.identity);
-                    //p3DamageDisplay.transform.parent.gameObject.SetActive(true);
-                    //m_conqueror4.GetComponent<Conqueror>().m_StockDisplay = p4StockDisplay;
-                    //P4Defeated = false;
-                }
-            }
 
             var cam = mainCam.GetComponent<Camera2DFollow>();
-
-            //if (m_conqueror)
-            //{
-            //    m_conqueror.GetComponent<Conqueror>().m_DamageDisplay = p1DamageDisplay;
-            //    m_conqueror.GetComponent<Conqueror>().infoText = infoText;
-            //}
-            //if (m_conqueror2)
-            //{
-            //    m_conqueror2.GetComponent<Conqueror>().m_DamageDisplay = p2DamageDisplay;
-            //}
-            //if (m_conqueror3)
-            //{
-            //    m_conqueror3.GetComponent<Conqueror>().m_DamageDisplay = p3DamageDisplay;
-            //}
-            //if (m_conqueror4)
-            //{
-            //    m_conqueror4.GetComponent<Conqueror>().m_DamageDisplay = p4DamageDisplay;
-            //}
 
             //CHAGE FOLLOW TARGET FOR TESTING
             mainCam.GetComponent<Camera2DFollow>().target = m_conqueror.transform;
@@ -168,6 +122,11 @@ public class PlayerManager : MonoBehaviour
     void Update()
     {
         var cam = mainCam.GetComponent<Camera2DFollow>();
+        if (cam.playerList.Count <= 0 && m_conqueror == null )
+        {
+            //initializer.SpawnSelectedPlayers();
+            PlayerObjectHandler.shouldSpawnSelectedPlayers = false;
+        }
         RenderSettings.skybox.SetFloat("_Rotation", Time.time * skyBoxSpeed);
         //if (m_conqueror.transform.position.z > 10 && !Input.GetKey("m"))
         //{
@@ -319,6 +278,28 @@ public class PlayerManager : MonoBehaviour
             GameOver = true;
         }
 
+        if (MenuEvents.gameModeSelect == 3)
+        {
+            if (isBlueKeepDestroyed)
+            {
+                EndGameText.gameObject.SetActive(true);
+                EndGameText.color = Color.red;
+                EndGameText.text = "RED TEAM WINS!";
+                GameOver = true;
+            }
+            else if (isRedKeepDestroyed)
+            {
+                EndGameText.gameObject.SetActive(true);
+                EndGameText.color = Color.blue;
+                EndGameText.text = "BLUE TEAM WINS!";
+                GameOver = true;
+            }
+        }
+
+        if (GameOver)
+        { 
+            initializer.enabled = false;
+        }
 
         if (minionSpawnElapsedTime > secondsBetweenSpawn && MenuEvents.gameModeSelect == 1)
         {
@@ -351,24 +332,41 @@ public class PlayerManager : MonoBehaviour
             Debug.Log(true);
             if (redMinionCount <= 9)
             {
-                Vector3 spawnPosition = new Vector3(30.5f, 3f, 0);
+                Vector3 spawnPosition = new Vector3(25.5f, 3f, 0);
                 Instantiate(redMinion, spawnPosition, Quaternion.identity).SetActive(true);
-                spawnPosition = new Vector3(32f, 3f, 0);
+                spawnPosition = new Vector3(27f, 3f, 0);
                 Instantiate(redMinion, spawnPosition, Quaternion.identity).SetActive(true);
-                spawnPosition = new Vector3(29f, 3f, 0);
+                spawnPosition = new Vector3(24f, 3f, 0);
                 Instantiate(redMinion, spawnPosition, Quaternion.identity).SetActive(true);
                 redMinionCount += 3;
             }
             if (blueMinionCount <= 9)
             {
-                Vector3 spawnPosition = new Vector3(-30.5f, 3f, 0);
+                Vector3 spawnPosition = new Vector3(-25.5f, 3f, 0);
                 Instantiate(blueMinion, spawnPosition, Quaternion.identity).SetActive(true);
-                spawnPosition = new Vector3(-32f, 3f, 0);
+                spawnPosition = new Vector3(-27f, 3f, 0);
                 Instantiate(blueMinion, spawnPosition, Quaternion.identity).SetActive(true);
-                spawnPosition = new Vector3(-29f, 3f, 0);
+                spawnPosition = new Vector3(-24f, 3f, 0);
                 Instantiate(blueMinion, spawnPosition, Quaternion.identity).SetActive(true);
                 blueMinionCount += 3;
             }
+        }
+        if (minionSpawnElapsedTime > 1 && MenuEvents.gameModeSelect == 4)
+        {
+            //minionSpawnElapsedTime = 0;
+            //Debug.Log(true);
+            //if (blueMinionCount <= 2)
+            //{
+            //    Vector3 spawnPosition = new Vector3(22f, -2.9f, 0);
+            //    Instantiate(blueMinion, spawnPosition, Quaternion.identity).SetActive(true);
+            //    blueMinionCount += 1;
+            //}
+            //if (redMinionCount <= 2)
+            //{
+            //    Vector3 spawnPosition = new Vector3(49f, -2.9f, 0);
+            //    Instantiate(redMinion, spawnPosition, Quaternion.identity).SetActive(true);
+            //    redMinionCount += 1;
+            //}
         }
 
     }

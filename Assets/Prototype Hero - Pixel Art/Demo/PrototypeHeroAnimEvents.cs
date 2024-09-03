@@ -29,6 +29,7 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
     public GameObject dSmashHitbox1;
     public GameObject dSmashHitbox2;
     public GameObject upTiltHitbox;
+    public GameObject fTiltHitbox;
     public GameObject downSpecHitbox;
     public GameObject downTilt1Hitbox;
     public GameObject downTilt2Hitbox;
@@ -58,6 +59,10 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
     // Animation Events
     // These functions are called inside the animation files
 
+    void AE_resetAttack()
+    {
+        m_player.inAttack = false;
+    }
     void AE_resetDodge()
     {
         m_player.ResetDodging();
@@ -325,15 +330,23 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
 
     void AE_Flip()
     {
-        m_player.m_facingDirection = -m_player.m_facingDirection;
-        if (m_player.m_SR.flipX == true)
+        if (m_player.GetComponent<CPUBehavior>())
         {
-            m_player.m_SR.flipX = false;
+            m_player.GetComponent<CPUBehavior>().Flip();
         }
         else
         {
-            m_player.m_SR.flipX = true;
+            m_player.m_facingDirection = -m_player.m_facingDirection;
+            if (m_player.m_SR.flipX == true)
+            {
+                m_player.m_SR.flipX = false;
+            }
+            else
+            {
+                m_player.m_SR.flipX = true;
+            }
         }
+        
     }
 
     void AE_FellDown()
@@ -389,6 +402,40 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
            
         }
         //StartCoroutine(Linger(lingerDeltaTime));
+        c_Manager.hitEnemy = "None";
+    }
+
+    void AE_FTilt()
+    {
+        m_audioManager.PlaySound("SwordAttack");
+        Quaternion rotQuat = new Quaternion();
+        float xDisplace = 0.0f;
+        float pushForce = .55f;
+        if (m_player.m_facingDirection == 1)
+        {
+            rotQuat = new Quaternion(0f, 0f, 0f, 0f);
+            xDisplace = 0.0f;
+        }
+        else
+        {
+            rotQuat = new Quaternion(0f, 180f, 0f, 0f);
+            xDisplace = 0.0f;
+            pushForce = -.55f;
+        }
+        activeHitbox = Instantiate(fTiltHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + 1, m_player.transform.position.z),
+            rotQuat, m_player.transform);
+        m_player.m_body2d.AddForce(new Vector2(pushForce, 0));
+        if (m_player.transform.CompareTag("PlayerMid"))
+        {
+            if (m_player.transform.CompareTag("PlayerMid"))
+            {
+                activeHitbox.layer = 19;
+                if (activeHitbox.transform.GetChild(0) != null)
+                {
+                    activeHitbox.transform.GetChild(0).gameObject.layer = 19;
+                }
+            }
+        }
         c_Manager.hitEnemy = "None";
     }
 

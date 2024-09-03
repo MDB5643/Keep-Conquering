@@ -160,6 +160,10 @@ MonoBehaviour:
   activeTime: 0
   startingYpos: 0
   explosion: {fileID: 0}
+  chargeBall: {fileID: 0}
+  splashBox: {fileID: 6260341956870047123, guid: 5df7d9aae6fcde84390a5c1218aadf4f, type: 3}
+  charged: 0
+  reverse: 0
   teamColor: 
 --- !u!114 &3170445584053373333
 MonoBehaviour:
@@ -208,7 +212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseDamage: 3
   baseKB: 0.1
-  hitStun: 0.16
+  hitStun: 0.2
   damageModifier: 0
   KBModifier: 0
   modifierY: 0.09

@@ -9,16 +9,22 @@ public class HookBehavior : MonoBehaviour
     public float activeTime = 0.0f;
     public bool homing = false;
     public GameObject target;
+    public GameObject latchedObject;
     public Rigidbody2D rb;
     public float rotateSpeed = 1500f;
+    public Vector2 pullForce;
+    Conqueror m_Character;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        m_Character = transform.GetComponentInParent<Conqueror>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (latched == false)
         {
             if (transform.GetComponentInParent<Conqueror>().hookDirection == "Up" && target != null)
@@ -41,24 +47,86 @@ public class HookBehavior : MonoBehaviour
             {
                 transform.position += -transform.right * Time.deltaTime * speed;
             }
+            if (activeTime >= .8f)
+            {
+                m_Character.homingIn = false;
+                Destroy(gameObject);
+            }
+        }
+        else
+        {
+            if (latchedObject != null)
+            {
+                transform.position = latchedObject.transform.position;
+            }
             
+            var targetclosestPoint = transform.position;
+            var sourceclosestPoint = m_Character.transform.position;
+
+            var positionDifference = targetclosestPoint - sourceclosestPoint;
+            float angleInRadians = Mathf.Atan2(positionDifference.y, positionDifference.x);
+            float radians = angleInRadians * Mathf.Deg2Rad;
+            Vector2 KBVector = new Vector2(Mathf.Cos(radians), Mathf.Sin(radians));
+            pullForce = KBVector * positionDifference * 7;
+            if (transform.GetComponentInParent<Conqueror>().hookDirection == "Up")
+            {
+                pullForce.y += 15;
+            }
+
+            pullForce.y += 5;
+            if (Mathf.Abs(positionDifference.x) < 1.8f && Mathf.Abs(positionDifference.y) < 1.8f)
+            {
+                target = null;
+                latchedObject = null;
+                m_Character.homingIn = false;
+                if (transform.GetComponentInParent<Conqueror>().hookDirection == "Side")
+                {
+                    m_Character.m_body2d.AddForce(pullForce * .7f);
+                }
+                Destroy(gameObject);
+            }
+
+            else if (transform.GetComponentInParent<Conqueror>().hookDirection == "Up" && m_Character.transform.position.y > transform.position.y)
+            {
+                target = null;
+                latchedObject = null;
+                m_Character.homingIn = false;
+                Destroy(gameObject);
+            }
+            else if (transform.GetComponentInParent<Conqueror>().hookDirection == "Side" && Mathf.Abs(positionDifference.x) < .8f)
+            {
+                target = null;
+                latchedObject = null;
+                m_Character.homingIn = false;
+                m_Character.m_body2d.AddForce(pullForce*.7f);
+                Destroy(gameObject);
+            }
         }
         activeTime += Time.deltaTime;
-        if(activeTime >= .8f)
+        if (activeTime >= 4.5f )
         {
+            target = null;
+            latchedObject = null;
+            m_Character.homingIn = false;
             Destroy(gameObject);
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (homing == false || (homing == true && target != null && target.name == collision.gameObject.name))
+        if (m_Character == null)
         {
-            Conqueror m_Character = transform.GetComponentInParent<Conqueror>();
+            Destroy(gameObject);
+        }
+        else if ((homing == false || (homing == true && target != null && target.name == collision.gameObject.name)) && collision.gameObject != transform.parent.gameObject && !latched)
+        {
+            if (collision.gameObject.GetComponent<Conqueror>() || collision.gameObject.GetComponent<MinionBehavior>() || collision.gameObject.GetComponent<PlatformMove>())
+            {
+                latchedObject = collision.gameObject;
+            }
+            m_Character.homingIn = true;
             latched = true;
-
             m_Character.m_jumpCount++;
-            m_Character.m_animator.SetTrigger("Jump");
             m_Character.m_grounded = false;
             m_Character.m_animator.SetBool("Grounded", m_Character.m_grounded);
             m_Character.m_groundSensor.Disable(0.2f);
@@ -73,18 +141,15 @@ public class HookBehavior : MonoBehaviour
             float angleInRadians = Mathf.Atan2(positionDifference.y, positionDifference.x);
             float radians = angleInRadians * Mathf.Deg2Rad;
             Vector2 KBVector = new Vector2(Mathf.Cos(radians), Mathf.Sin(radians));
-            Vector2 pullForce = KBVector * positionDifference * 2;
+            pullForce = KBVector * positionDifference * 2;
             if (transform.GetComponentInParent<Conqueror>().hookDirection == "Up")
             {
                 pullForce.y += 10;
             }
 
             pullForce.y += 5;
-            // Convert the angle to degrees.
-            float attackAngle = angleInRadians * Mathf.Rad2Deg;
-            m_Character.GetComponent<Rigidbody2D>().AddForce(pullForce, ForceMode2D.Impulse);
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
-        
+
     }
 }

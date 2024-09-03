@@ -34,6 +34,7 @@ public class RRAnimEvents : MonoBehaviour
     public GameObject downTilt1Hitbox;
     public GameObject downTilt2Hitbox;
     public GameObject downTilt3Hitbox;
+    public GameObject fTiltHitbox;
     public GameObject dairHitbox;
     public GameObject fairHitbox;
     public GameObject uairHitbox;
@@ -66,6 +67,11 @@ public class RRAnimEvents : MonoBehaviour
 
     // Animation Events
     // These functions are called inside the animation files
+
+    void AE_resetAttack()
+    {
+        m_player.inAttack = false;
+    }
     void AE_resetDodge()
     {
         m_player.ResetDodging();
@@ -393,6 +399,41 @@ public class RRAnimEvents : MonoBehaviour
         }
         c_Manager.hitEnemy = "None";
     }
+
+    void AE_FTilt()
+    {
+        m_audioManager.PlaySound("SwordAttack");
+        Quaternion rotQuat = new Quaternion();
+        float xDisplace = 0.0f;
+        float pushForce = 0f;
+        if (m_player.m_facingDirection == 1)
+        {
+            rotQuat = new Quaternion(0f, 0f, 0f, 0f);
+            xDisplace = 0.0f;
+        }
+        else
+        {
+            rotQuat = new Quaternion(0f, 180f, 0f, 0f);
+            xDisplace = 0.0f;
+            pushForce = 0f;
+        }
+        activeHitbox = Instantiate(fTiltHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + 1, m_player.transform.position.z),
+            rotQuat, m_player.transform);
+        m_player.m_body2d.AddForce(new Vector2(pushForce, 0));
+        if (m_player.transform.CompareTag("PlayerMid"))
+        {
+            if (m_player.transform.CompareTag("PlayerMid"))
+            {
+                activeHitbox.layer = 19;
+                if (activeHitbox.transform.GetChild(0) != null)
+                {
+                    activeHitbox.transform.GetChild(0).gameObject.layer = 19;
+                }
+            }
+        }
+        c_Manager.hitEnemy = "None";
+    }
+
     void AE_FairHitbox()
     {
         m_audioManager.PlaySound("RRJab");
@@ -625,7 +666,7 @@ public class RRAnimEvents : MonoBehaviour
         }
         activeHitbox = Instantiate(nSpecHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + .25f, m_player.transform.position.z),
             rotQuat, m_player.transform);
-        activeHitbox.GetComponent<ArrowBehavior>().teamColor = m_player.teamColor;
+        activeHitbox.GetComponent<ProjectileBehavior>().teamColor = m_player.teamColor;
         if (m_player.transform.CompareTag("PlayerMid"))
         {
             activeHitbox.layer = 19;
@@ -634,11 +675,28 @@ public class RRAnimEvents : MonoBehaviour
                 activeHitbox3.transform.GetChild(0).gameObject.layer = 19;
             }
         }
+        if (m_player.mana >= 20)
+        {
+            if (activeHitbox)
+            {
+                activeHitbox.GetComponent<ProjectileBehavior>().charged = true;
+                activeHitbox.GetComponent<ProjectileBehavior>().chargeBall.SetActive(true);
+                m_player.mana -= 20;
+            }
+        }
+        else
+        {
+            if (activeHitbox)
+            {
+                activeHitbox.GetComponent<ProjectileBehavior>().charged = false;
+            }
+        }
     }
     void AE_DownSpecHitbox()
     {
         m_audioManager.PlaySound("Arrow");
         Quaternion rotQuat = new Quaternion();
+        bool reverse = false;
         float xDisplace = 0.0f;
         if (m_player.m_facingDirection == 1)
         {
@@ -649,13 +707,32 @@ public class RRAnimEvents : MonoBehaviour
         {
             rotQuat = new Quaternion(-180f, 180f, 0f, 0f);
             xDisplace = -0.4f;
+            reverse = true;
         }
         activeHitbox = Instantiate(dSpecHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y, m_player.transform.position.z),
             rotQuat, null);
+        activeHitbox.GetComponent<ProjectileBehavior>().reverse = reverse;
         activeHitbox.GetComponent<ProjectileBehavior>().teamColor = m_player.teamColor;
+        
         if (m_player.transform.CompareTag("PlayerMid"))
         {
             activeHitbox.layer = 19;
+        }
+        if (m_player.mana >= 20)
+        {
+            if (activeHitbox)
+            {
+                activeHitbox.GetComponent<ProjectileBehavior>().charged = true;
+                activeHitbox.GetComponent<SpriteRenderer>().color = Color.cyan;
+                m_player.mana -= 20;
+            }
+        }
+        else
+        {
+            if (activeHitbox)
+            {
+                activeHitbox.GetComponent<ProjectileBehavior>().charged = false;
+            }
         }
     }
     void AE_FSpecStart()
@@ -684,6 +761,15 @@ public class RRAnimEvents : MonoBehaviour
         {
             activeDangerZone = Instantiate(fSpecDangerZone, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y-.27f, m_player.transform.position.z),
             rotQuat, null);
+        }
+        if (m_player.mana >= 35)
+        {
+            activeDangerZone.GetComponent<RRFSpecZone>().charged = true;
+            activeDangerZone.GetComponent<SpriteRenderer>().color = Color.blue;
+        }
+        else
+        {
+            activeDangerZone.GetComponent<RRFSpecZone>().charged = false;
         }
     }
 
@@ -720,7 +806,23 @@ public class RRAnimEvents : MonoBehaviour
             }
             activeDangerZone.GetComponent<RRFSpecZone>().released = true;
         }
-        
+        if (m_player.mana >= 35)
+        {
+            if (activeHitbox)
+            {
+                activeHitbox.GetComponent<ProjectileBehavior>().charged = true;
+                activeHitbox.GetComponent<SpriteRenderer>().color = Color.blue;
+                m_player.mana -= 35;
+            }
+        }
+        else
+        {
+            if (activeHitbox)
+            {
+                activeHitbox.GetComponent<ProjectileBehavior>().charged = false;
+            }
+        }
+
     }
 
     void AE_UpSpecHitbox()
@@ -746,6 +848,21 @@ public class RRAnimEvents : MonoBehaviour
         if (m_player.transform.CompareTag("PlayerMid"))
         {
             activeHitbox.layer = 19;
+        }
+        if (m_player.mana >= 20)
+        {
+            if (activeHitbox)
+            {
+                activeHitbox.GetComponent<ProjectileBehavior>().charged = true;
+                activeHitbox.GetComponent<SpriteRenderer>().color = Color.blue;
+            }
+        }
+        else
+        {
+            if (activeHitbox)
+            {
+                activeHitbox.GetComponent<ProjectileBehavior>().charged = false;
+            }
         }
     }
     void AE_SideSpec2Hitbox()

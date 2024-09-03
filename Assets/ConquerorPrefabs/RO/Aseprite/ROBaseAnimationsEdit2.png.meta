@@ -773,7 +773,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -1456,10 +1456,10 @@ TextureImporter:
       name: ROBaseAnimationsEdit2_29
       rect:
         serializedVersion: 2
-        x: 1386
+        x: 1383
         y: 1260
-        width: 22
-        height: 32
+        width: 25
+        height: 41
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1480,7 +1480,7 @@ TextureImporter:
         x: 41
         y: 1176
         width: 17
-        height: 38
+        height: 41
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}

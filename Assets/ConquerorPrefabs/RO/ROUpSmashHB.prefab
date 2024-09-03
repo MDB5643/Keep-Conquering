@@ -58,8 +58,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.4565519, y: -0.5452502}
-      - {x: 0.26901475, y: -1.0820659}
+    - - {x: 0.15350223, y: -0.59795445}
+      - {x: 0.13066599, y: -1.1940626}
       - {x: 0.57550025, y: -0.77234787}
       - {x: 0.6697543, y: -0.50370735}
       - {x: 0.7026114, y: -0.33082893}
@@ -67,8 +67,8 @@ PolygonCollider2D:
       - {x: 0.43835422, y: 0.4151804}
       - {x: 0.27253816, y: 0.38782775}
       - {x: 0.15514198, y: 0.28329867}
-      - {x: 0.408128, y: -0.18011361}
-      - {x: 0.45392108, y: -0.35724553}
+      - {x: 0.15778261, y: -0.14717345}
+      - {x: 0.14428347, y: -0.33089346}
 --- !u!114 &6369816178052772800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,6 +82,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLingerTime: 0.05
+  linger: 1
 --- !u!114 &3808236232974167574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,16 +95,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseDamage: 7.6
-  baseKB: 0.35
-  hitStun: 0.2
+  baseDamage: 7.8
+  baseKB: 0.4
+  hitStun: 0.3
   damageModifier: 1.2
   KBModifier: 0.05
   modifierY: 0.2
   modifierX: 0.05
   multModY: 1
   multModX: 1
-  shakeIntensity: 0.18
+  shakeIntensity: 0.21
   shakeScreen: 1
   smash: 1
   grab: 0

@@ -178,7 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseDamage: 6.5
   baseKB: 0.32
-  hitStun: 0.19
+  hitStun: 0.26
   damageModifier: 1.1
   KBModifier: 0.05
   modifierY: 0.15

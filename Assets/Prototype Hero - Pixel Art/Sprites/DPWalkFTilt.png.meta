@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: b66423e8307e39343b49f55445f7129f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7956506807738958192
+    second: DPWalkFTilt_0
+  - first:
+      213: 6527837295385309337
+    second: DPWalkFTilt_1
+  - first:
+      213: 5582491471082347769
+    second: DPWalkFTilt_2
+  - first:
+      213: 6677802214565256837
+    second: DPWalkFTilt_3
+  - first:
+      213: -5095804284533450383
+    second: DPWalkFTilt_4
+  - first:
+      213: -8537944925213016741
+    second: DPWalkFTilt_5
+  - first:
+      213: 1465733131295522769
+    second: DPWalkFTilt_6
+  - first:
+      213: -482894545968920270
+    second: DPWalkFTilt_7
+  - first:
+      213: 8860416334818324330
+    second: DPWalkFTilt_8
+  - first:
+      213: -4251803033249998745
+    second: DPWalkFTilt_9
+  - first:
+      213: -1626884208604283446
+    second: DPWalkFTilt_10
+  - first:
+      213: 508220560166514373
+    second: DPWalkFTilt_11
+  - first:
+      213: 8750286074910514431
+    second: DPWalkFTilt_12
+  - first:
+      213: 7698899973180643336
+    second: DPWalkFTilt_13
+  - first:
+      213: -5968848815532304418
+    second: DPWalkFTilt_14
+  - first:
+      213: 2056627743671833185
+    second: DPWalkFTilt_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DPWalkFTilt_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 533
+        width: 22
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5149831, y: 1.177125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09efdb7b63fc49190800000000000000
+      internalID: -7956506807738958192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPWalkFTilt_1
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 533
+        width: 18
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5274684, y: 1.1771258}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990fcf62f69879a50800000000000000
+      internalID: 6527837295385309337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPWalkFTilt_2
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 533
+        width: 14
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5301503, y: 1.1764089}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fcd2876a6ef87d40800000000000000
+      internalID: 5582491471082347769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPWalkFTilt_3
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 533
+        width: 16
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5108566, y: 1.1737115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e9a7fcbb15cac50800000000000000
+      internalID: 6677802214565256837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPWalkFTilt_4
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 533
+        width: 21
+        height: 67
+      alignment: 9
+      pivot: {x: 0.52551997, y: 1.1733243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179587f70011849b0800000000000000
+      internalID: -5095804284533450383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPWalkFTilt_5
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 533
+        width: 17
+        height: 67
+      alignment: 9
+      pivot: {x: 0.52824134, y: 1.1815696}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d34d49350238980800000000000000
+      internalID: -8537944925213016741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPWalkFTilt_6
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 459
+        width: 22
+        height: 68
+      alignment: 9
+      pivot: {x: 0.51393217, y: 1.1588808}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dff3626484575410800000000000000
+      internalID: 1465733131295522769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPWalkFTilt_7
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 460
+        width: 23
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5000013, y: 1.1804692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2398c8b08f96c49f0800000000000000
+      internalID: -482894545968920270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPWalkFTilt_8
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 460
+        width: 23
+        height: 70
+      alignment: 9
+      pivot: {x: 0.5095062, y: 1.1320059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f2ae646b586fa70800000000000000
+      internalID: 8860416334818324330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPWalkFTilt_9
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 460
+        width: 45
+        height: 70
+      alignment: 9
+      pivot: {x: 0.40814888, y: 1.1230155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76894341baf8ef4c0800000000000000
+      internalID: -4251803033249998745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPWalkFTilt_10
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 460
+        width: 35
+        height: 70
+      alignment: 9
+      pivot: {x: 0.23203717, y: 1.1238883}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acdf27f8e652c69e0800000000000000
+      internalID: -1626884208604283446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPWalkFTilt_11
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 498
+        width: 17
+        height: 6
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce664428ef8d0700800000000000000
+      internalID: 508220560166514373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPWalkFTilt_12
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 460
+        width: 36
+        height: 69
+      alignment: 9
+      pivot: {x: 0.3394148, y: 1.1387701}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc961af2d24f6970800000000000000
+      internalID: 8750286074910514431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPWalkFTilt_13
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 470
+        width: 9
+        height: 14
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80852be2cbcf7da60800000000000000
+      internalID: 7698899973180643336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPWalkFTilt_14
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 388
+        width: 16
+        height: 63
+      alignment: 9
+      pivot: {x: 0.534744, y: 1.2548537}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed79f2860a36a2da0800000000000000
+      internalID: -5968848815532304418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DPWalkFTilt_15
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 388
+        width: 17
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5229582, y: 1.2195275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162d5c0590c9a8c10800000000000000
+      internalID: 2056627743671833185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -18,7 +18,8 @@ public class MenuEvents : MonoBehaviour
     public static bool P3Set = false;
     public static bool P4Set = false;
 
-    public static bool ReturningToMenu = false;
+    public static bool ReturningToMenu = true;
+    public static bool CPUsActive = false;
 
     public GameObject P1Preview;
     public GameObject P2Preview;
@@ -49,6 +50,9 @@ public class MenuEvents : MonoBehaviour
 
     public Button FFAButton;
     public Button JoustButton;
+    public Button LabButton;
+    public Button CPUButton;
+    public Button PlayersButton;
 
     public bool P3Enabled;
     public bool P4Enabled;
@@ -102,7 +106,31 @@ public class MenuEvents : MonoBehaviour
 
     public void SetMode(int selectedMode)
     {
+        if (!ReturningToMenu)
+        {
+            GameObject[] playerCursors = GameObject.FindGameObjectsWithTag("PlayerCursor");
+            if (playerCursors.Length > 0)
+            {
+                foreach (var cursor in playerCursors)
+                {
+                    cursor.GetComponent<CursorBehavior>().objectSelected = false;
+                    cursor.GetComponent<CursorBehavior>().playerSelection = null;
+                }
+            }
+         
+        }
+        if (ReturningToMenu)
+        {
+            ReturningToMenu = false;
+        }
+
+        ClearConq("P1");
+        ClearConq("P2");
+        ClearConq("P3");
+        ClearConq("P4");
+
         gameModeSelect = selectedMode;
+
         if (selectedMode == 2)
         {
             FFAButton.Select();
@@ -111,7 +139,72 @@ public class MenuEvents : MonoBehaviour
         {
             JoustButton.Select();
         }
+        if (selectedMode == 4)
+        {
+            LabButton.Select();
+        }
     }
+    public void SetCPUs(bool cpu)
+    {
+        GameObject[] playerCursors = GameObject.FindGameObjectsWithTag("PlayerCursor");
+        if (playerCursors.Length > 0)
+        {
+            foreach (var cursor in playerCursors)
+            {
+                cursor.GetComponent<CursorBehavior>().objectSelected = false;
+                cursor.GetComponent<CursorBehavior>().playerSelection = null;
+            }
+        }
+
+        ClearConq("P1");
+        ClearConq("P2");
+        ClearConq("P3");
+        ClearConq("P4");
+
+        if (cpu)
+        {
+            CPUButton.GetComponentInChildren<Text>().color = Color.red;
+            PlayersButton.GetComponentInChildren<Text>().color = Color.black;
+            
+            CPUsActive = true;
+            if (gameModeSelect == 2)
+            {
+                P2Select = 0;
+                PreviewConq("PrototypeHero", "P2");
+                P2Active.GetComponentInChildren<SpriteRenderer>().color = Color.red;
+            }
+            if (gameModeSelect == 3)
+            {
+                P3Select = 0;
+                P4Select = 1;
+                PreviewConq("TheChampion", "P3");
+                PreviewConq("PrototypeHero", "P4");
+                P3Active.GetComponentInChildren<SpriteRenderer>().color = Color.red;
+                P4Active.GetComponentInChildren<SpriteRenderer>().color = Color.red;
+            }
+            if (gameModeSelect == 4)
+            {
+                P2Select = 0;
+                PreviewConq("PrototypeHero", "P2");
+                P2Active.GetComponentInChildren<SpriteRenderer>().color = Color.red;
+            }
+        }
+        else
+        {
+            CPUButton.GetComponentInChildren<Text>().color = Color.black;
+            PlayersButton.GetComponentInChildren<Text>().color = Color.red;
+            CPUsActive = false;
+
+            ClearConq("P3");
+            ClearConq("P4");
+
+            if (gameModeSelect == 4 || gameModeSelect == 2)
+            {
+                ClearConq("P2");
+            }
+        }
+    }
+
 
     public void SetConqueror(int conq, string whichPlayer)
     {

@@ -337,7 +337,7 @@ public class GolemBehavior : MonoBehaviour
                 else
                 {
                     //Apply damage
-                    enemy.GetComponentInParent<PrototypeHero>().TakeDamage(jabDamage);
+                    enemy.GetComponentInParent<PrototypeHero>().TakeDamage(jabDamage, false);
                     //Apply Knockback
                     enemy.GetComponentInParent<PrototypeHero>().incomingAngle = attackAngle;
                     enemy.GetComponentInParent<PrototypeHero>().incomingKnockback = jabKB;

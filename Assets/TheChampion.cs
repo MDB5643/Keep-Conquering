@@ -10,16 +10,24 @@ public class TheChampion : Conqueror
 
     private GrabableLedge ledge;
     public bool isInUpSpecial;
+    public bool upSpecialExhausted = false;
 
     // Use this for initialization
     void Start()
     {
-        isPlayer = true;
         heavy = true;
         m_animator = GetComponentInChildren<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
         m_SR = GetComponentInChildren<SpriteRenderer>();
         m_gravity = m_body2d.gravityScale;
+        if (m_manaBar)
+        {
+            m_manaBar.gameObject.SetActive(false);
+        }
+        if (!isPlayer && !preview)
+        {
+            CPUBrain.enabled = true;
+        }
 
         m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_Prototype>();
         m_wallSensorR1 = transform.Find("WallSensor_R1").GetComponent<Sensor_Prototype>();
@@ -33,7 +41,13 @@ public class TheChampion : Conqueror
     // Update is called once per frame
     void Update()
     {
-        if (!m_inHitStun && !isGrappled)
+        // Decrease death respawn timer 
+        m_respawnTimer -= Time.deltaTime;
+        // Respawn Hero if dead
+        if (m_dead && m_respawnTimer < 0.0f && !isEliminated)
+            RespawnHero();
+
+        if (!m_inHitStun && !isGrappled && !m_dead)
         {
             if (!m_isInHitStop && !m_fallingdown )
             {
@@ -114,8 +128,6 @@ public class TheChampion : Conqueror
                 }
                 // Check for interactable overlapping objects
                 CheckOverlaps();
-                // Decrease death respawn timer 
-                m_respawnTimer -= Time.deltaTime;
 
                 // Increase timer that controls attack combo
                 m_timeSinceAttack += Time.deltaTime;
@@ -135,9 +147,6 @@ public class TheChampion : Conqueror
                     isEliminated = true;
                 }
 
-                // Respawn Hero if dead
-                if (m_dead && m_respawnTimer < 0.0f && !isEliminated)
-                    RespawnHero();
 
                 if (m_dead)
                     return;
@@ -148,8 +157,15 @@ public class TheChampion : Conqueror
                     m_jumpCount = 0;
                     m_grounded = true;
                     m_animator.SetBool("Grounded", m_grounded);
+                    m_freefall = false;
+                    if (inAttack)
+                    {
+                        m_animator.SetTrigger("AttackLanding");
+                        inAttack = false;
+                    }
                     if (!isInUpSpecial)
                     {
+                        inAttack = false;
                         m_animator.SetTrigger("Land");
                     }
                     else
@@ -159,6 +175,7 @@ public class TheChampion : Conqueror
                     }
                     m_launched = false;
                     m_isInKnockback = false;
+                    m_animator.SetBool("Knockback", false);
                 }
 
                 //Check if character just started falling
@@ -244,6 +261,7 @@ public class TheChampion : Conqueror
                             isInStartUp = false;
                             isInUpSpecial = false;
                             m_jumpCount = 0;
+                            upSpecCount = 0;
 
                             if (transform.tag == "PlayerMid")
                             {
@@ -262,22 +280,22 @@ public class TheChampion : Conqueror
 
                 // -- Handle Animations --
 
-                if (m_timeSinceStun > 4.0f && !preview && !m_isInKnockback)
+                if (m_timeSinceStun > 4.0f && !preview && !m_isInKnockback && !inAttack)
                 {
                     if (m_animator.GetBool("isStunned"))
                     {
                         m_animator.SetBool("isStunned", false);
                     }
-                    
 
-                    else if (m_moving && Input.GetKey(KeyCode.LeftControl) && !isInStartUp && !isInUpSpecial)
+                    //Walk
+                    else if (m_moving && Mathf.Abs(inputXY.x) < .45)
                     {
                         m_animator.SetInteger("AnimState", 2);
                         m_maxSpeed = m_walkSpeed;
                     }
 
                     //Run
-                    else if (m_moving && m_disableMovementTimer < 0.0f && !isInStartUp && !isInUpSpecial)
+                    else if (m_moving && m_launched == false && m_timeSinceSideSpecial > 1.0f)
                     {
                         m_animator.SetInteger("AnimState", 1);
                         m_maxSpeed = m_runSpeed;
@@ -286,6 +304,10 @@ public class TheChampion : Conqueror
                     //Idle
                     else
                         m_animator.SetInteger("AnimState", 0);
+                }
+                if (!isPlayer)
+                {
+                    CPUBrain.Move();
                 }
             }
             else
@@ -306,13 +328,32 @@ public class TheChampion : Conqueror
         {
             if (m_inHitStun)
             {
+                isInStartUp = false;
+                bool trembleUp = false;
+                bool trembleBack = false;
                 m_body2d.velocity = Vector2.zero;
                 m_body2d.gravityScale = 0;
-                
                 m_timeSinceHitStun += Time.deltaTime;
+
+                m_timeSinceTremble += Time.deltaTime;
+                if (m_timeSinceTremble > .06)
+                {
+                    transform.localPosition += new Vector3(-.04f, 0, 0);
+                    trembleBack = true;
+                    trembleUp = false;
+                    m_timeSinceTremble = 0;
+                }
+                else if (m_timeSinceTremble > .03)
+                {
+                    transform.localPosition += new Vector3(.02f, 0, 0);
+                    trembleUp = true;
+                }
+
+
                 m_animator.speed = 0;
                 if (m_timeSinceHitStun >= m_hitStunDuration)
                 {
+                    transform.localPosition = preTremblePosition;
                     m_body2d.gravityScale = 1.25f;
                     isInUpSpecial = false;
                     m_animator.SetBool("SideSpecialHold", false);
@@ -324,6 +365,8 @@ public class TheChampion : Conqueror
             else if (isGrappled)
             {
                 m_animator.speed = 0;
+                var grabbingPlayerYPos = m_body2d.transform.parent ? m_body2d.transform.parent.position.y : m_body2d.position.y;
+                m_body2d.position = new Vector2(m_body2d.position.x, grabbingPlayerYPos);
             }
         }
     }
@@ -345,18 +388,22 @@ public class TheChampion : Conqueror
         }
         if ((coll.gameObject.CompareTag("BlastZone") || coll.gameObject.CompareTag("BlastZoneMid")) && !m_dead)
         {
+            currentDamage = 0.0f;
+            m_isInKnockback = false;
             isInStartUp = false;
-            ///
-                currentDamage = 0.0f;
-                m_isInKnockback = false;
-                m_animator.SetBool("Knockback", false);
-                m_animator.SetBool("noBlood", m_noBlood);
-                m_animator.SetTrigger("Death");
-                m_respawnTimer = 2.5f;
-                DisableWallSensors();
-                m_dead = true;
-                m_StockCount--;
-            
+            isGrappled = false;
+            transform.parent = null;
+            m_inGroundSlam = false;
+            m_isInHitStop = false;
+            m_isParrying = false;
+            m_animator.SetBool("Knockback", false);
+            m_animator.SetBool("noBlood", m_noBlood);
+            m_animator.SetTrigger("Death");
+            m_respawnTimer = 2.5f;
+            DisableWallSensors();
+            m_dead = true;
+            m_StockDisplay.text = "x" + (m_StockCount - 1);
+
         }
         if (coll.gameObject.CompareTag("Ground") && m_animator.GetBool("Knockback") && transform.position.y >= coll.transform.position.y && transform.GetComponent<Rigidbody2D>().velocity.y <= 0)
         {
@@ -410,73 +457,6 @@ public class TheChampion : Conqueror
         if (atPortal == false && infoText)
         {
             infoText.text = "";
-        }
-    }
-
-    public void Attack(float baseDamage, float baseKnockBack, float baseRange, float KBModX, float KBmodY, Transform attackPoint)
-    {
-        float damageModifier = 0.0f;
-        baseDamage = jabDamage;
-
-        var playerCollider = GetComponent<BoxCollider2D>();
-
-        Vector2 jab1Hitbox = new Vector2(attackPoint.position.x - .3f, attackPoint.position.y + 1.0f);
-        Vector2 attackHitboxCenter = attackPoint.position;
-        if (m_currentAttack == 1)
-        {
-            attackHitboxCenter = jab1Hitbox;
-        }
-
-        //Detect enemy collision with attack
-        Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(attackHitboxCenter, new Vector2(1.5f, .3f), 0.0f, enemyLayers) ;
-        if (m_currentAttack == 1)
-        {
-            hitEnemies = Physics2D.OverlapBoxAll(attackHitboxCenter, new Vector2(1.5f, 1.2f), 0.0f, enemyLayers);
-        }
-
-        foreach (Collider2D enemy in hitEnemies)
-        {
-            if (enemy.GetComponentInParent<CPUBehavior>() != null && enemy.tag.StartsWith("Player"))
-            {
-                var above = false;
-
-                //Detect impact angle
-                var targetclosestPoint = new Vector2(enemy.transform.position.x, enemy.transform.position.y);
-                var sourceclosestPoint = new Vector2(playerCollider.transform.position.x, playerCollider.transform.position.y);
-                if (sourceclosestPoint.y > targetclosestPoint.y)
-                {
-                    above = true;
-                }
-
-                var positionDifference = targetclosestPoint - sourceclosestPoint;
-
-                //Must be done to detect y axis angle
-                float angleInRadians = Mathf.Atan2(positionDifference.y, positionDifference.x);
-
-                // Convert the angle to degrees.
-                float attackAngle = angleInRadians * Mathf.Rad2Deg;
-
-                //Apply damage
-                enemy.GetComponentInParent<CPUBehavior>().TakeDamage(baseDamage);
-                //Apply Knockback
-                enemy.GetComponentInParent<CPUBehavior>().incomingAngle = attackAngle;
-                enemy.GetComponentInParent<CPUBehavior>().incomingKnockback = baseKnockBack;
-                enemy.GetComponentInParent<CPUBehavior>().incomingXMod = 0f;
-                enemy.GetComponentInParent<CPUBehavior>().incomingYMod = 2f;
-                enemy.GetComponentInParent<CPUBehavior>().HitStun(.15f);
-                //enemy.GetComponentInParent<CPUBehavior>().Knockback(baseKB, attackAngle, modifierx, modifiery, above);
-
-            }
-        }
-    }
-
-    void SetLayerRecursively(GameObject obj, int newLayer)
-    {
-        obj.layer = newLayer;
-
-        foreach (Transform t in obj.transform)
-        {
-            SetLayerRecursively(t.gameObject, newLayer);
         }
     }
 
@@ -579,7 +559,8 @@ public class TheChampion : Conqueror
             //Attack(upTiltDamage, upTiltKB, upTiltRange, 0, 2, upTiltPoint);
 
             // Disable movement 
-            m_disableMovementTimer = 0.45f;
+            m_disableMovementTimer = m_LagTime;
+            inAttack = true;
         }
 
         //Down Tilt Attack
@@ -595,11 +576,36 @@ public class TheChampion : Conqueror
             //Attack(upTiltDamage, upTiltKB, upTiltRange, 0, 2, upTiltPoint);
 
             // Disable movement 
-            m_disableMovementTimer = 0.45f;
+            m_disableMovementTimer = m_LagTime;
             m_animator.SetBool("Crouching", false);
+            inAttack = true;
+        }
+
+        //Forward tilt Attack
+        else if (Mathf.Abs(inputX) > 0 && Mathf.Abs(inputXY.x) < .45 && !Input.GetKey("s") && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime
+            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && !isInStartUp && ctx.phase == InputActionPhase.Started)
+        {
+            if (m_facingDirection == 1 && inputX < 0)
+            {
+                m_SR.flipX = true;
+                m_facingDirection = -1;
+            }
+            else if (m_facingDirection == -1 && inputX > 0)
+            {
+                m_SR.flipX = false;
+                m_facingDirection = 1;
+            }
+            m_LagTime = .45f;
+            // Reset timer
+            m_timeSinceAttack = 0.0f;
+
+            m_animator.SetTrigger("FTilt");
+
+            m_disableMovementTimer = m_LagTime;
+            inAttack = true;
         }
         //Dash Attack
-        if (ctx.phase == InputActionPhase.Started && Mathf.Abs(inputXY.x) > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime
+        else if (ctx.phase == InputActionPhase.Started && Mathf.Abs(inputXY.x) > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime
                         && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && !isInStartUp)
         {
             m_LagTime = .55f;
@@ -611,15 +617,15 @@ public class TheChampion : Conqueror
 
             m_body2d.velocity = new Vector2(m_facingDirection * m_dodgeForce + m_facingDirection * 3, m_body2d.velocity.y);
 
-            m_disableMovementTimer = 0.45f;
+            m_disableMovementTimer = m_LagTime;
         }
         
 
         //Attack
         else if (ctx.phase == InputActionPhase.Started && inputXY.y == 0 && inputXY.x == 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && !m_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack1")
-            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && !m_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack2") && !isInStartUp && !isInUpSpecial)
+            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false  && !isInStartUp && !isInUpSpecial)
         {
-            m_LagTime = .35f;
+            m_LagTime = .32f;
             // Reset timer
             m_timeSinceAttack = 0.0f;
 
@@ -627,7 +633,8 @@ public class TheChampion : Conqueror
             m_animator.SetTrigger("Attack2");
 
             // Disable movement 
-            m_disableMovementTimer = 0.32f;
+            m_disableMovementTimer = m_LagTime;
+            inAttack = true;
         }
 
 
@@ -641,6 +648,7 @@ public class TheChampion : Conqueror
             //
             //// Reset timer
             m_timeSinceAttack = 0.0f;
+            inAttack = true;
         }
 
         // Air Attack Up
@@ -652,6 +660,7 @@ public class TheChampion : Conqueror
             //
             //// Reset timer
             m_timeSinceAttack = 0.0f;
+            inAttack = true;
         }
 
         // Air Attack Forward
@@ -672,7 +681,8 @@ public class TheChampion : Conqueror
             //
             //// Reset timer
             m_timeSinceAttack = 0.0f;
-            m_disableMovementTimer = .8f;
+            m_disableMovementTimer = m_LagTime;
+            inAttack = true;
         }
 
 
@@ -684,6 +694,7 @@ public class TheChampion : Conqueror
             //// Reset timer
             m_timeSinceAttack = 0.0f;
             m_disableMovementTimer = .65f;
+            inAttack = true;
         }
 
 
@@ -702,7 +713,8 @@ public class TheChampion : Conqueror
             m_timeSinceAttack = 0.0f;
 
             // Disable movement 
-            m_disableMovementTimer = 0.35f;
+            m_disableMovementTimer = m_LagTime;
+            inAttack = true;
         }
     }
 
@@ -728,13 +740,14 @@ public class TheChampion : Conqueror
             if (ctx.phase == InputActionPhase.Canceled)
             {
                 m_animator.SetBool("DSpec", false);
+                inAttack = false;
             }
 
             m_timeSinceSideSpecial = 0.0f;
             //
             //SideSpecial();
             //// Disable movement 
-            m_disableMovementTimer = 1.0f;
+            m_disableMovementTimer = .5f;
         }
 
         else if (inputXY.y < 0 && ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && !m_animator.GetBool("isParrying") && !isInStartUp && !isInUpSpecial && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y))
@@ -746,17 +759,30 @@ public class TheChampion : Conqueror
             //m_crouching = false;
             //m_animator.SetBool("Crouching", false);
             //m_body2d.velocity = new Vector2(m_facingDirection * 10f, m_body2d.velocity.y);
+            inAttack = true;
         }
 
-        else if (inputXY.y > 0 && ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_launched && m_timeSinceAttack > m_LagTime && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y)
-            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && !m_launched && !isInStartUp && !isInUpSpecial)
+        else if (inputXY.y > 0 && ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y)
+            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && !isInStartUp)
         {
-            hookDirection = "Up";
-            m_animator.SetTrigger("UpSpecial");
-            m_launched = true;
-            m_disableMovementTimer = 1.0f;
-
-            isInStartUp = true;
+            if (upSpecCount == 1)
+            {
+                hookDirection = "Up";
+                m_animator.SetTrigger("UpSpecial2");
+                m_launched = true;
+                m_disableMovementTimer = 1.0f;
+                upSpecCount++;
+            }
+            if (upSpecCount == 0)
+            {
+                hookDirection = "Up";
+                m_animator.SetTrigger("UpSpecial");
+                m_launched = true;
+                m_disableMovementTimer = 1.0f;
+                upSpecCount++;
+                isInStartUp = true;
+            }
+            
         }
         else if (Mathf.Abs(inputXY.x) > 0 && ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > 2.0f && !m_animator.GetBool("isParrying") && !isInStartUp && !isInUpSpecial)
         {
@@ -793,6 +819,7 @@ public class TheChampion : Conqueror
 
             // Disable movement 
             m_disableMovementTimer = 0.5f;
+            inAttack = true;
         }
     }
 
@@ -802,9 +829,11 @@ public class TheChampion : Conqueror
         if (ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded
                         && m_timeSinceAttack > m_LagTime && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && !isInStartUp && !isInUpSpecial)
         {
+            
             m_LagTime = .2f;
             if (m_fSmashCharging != true)
             {
+                m_body2d.velocity = new Vector2(0.0f, 0.0f);
                 m_timeSinceChargeStart = 0.0f;
                 m_fSmashCharging = true;
             }
@@ -830,7 +859,7 @@ public class TheChampion : Conqueror
             m_fullCharge = false;
 
             // Call one of the two attack animations "Attack1" or "Attack2"
-
+            inAttack = true;
             m_disableMovementTimer = 0.35f;
         }
     }
@@ -841,9 +870,11 @@ public class TheChampion : Conqueror
         if (ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded
                         && m_timeSinceAttack > m_LagTime && m_fSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && !isInStartUp && !isInUpSpecial)
         {
+            
             m_LagTime = .2f;
             if (m_uSmashCharging != true)
             {
+                m_body2d.velocity = new Vector2(0.0f, 0.0f);
                 m_timeSinceChargeStart = 0.0f;
                 m_uSmashCharging = true;
             }
@@ -866,6 +897,7 @@ public class TheChampion : Conqueror
             m_uSmashCharging = false;
             m_fullCharge = false;
 
+            inAttack = true;
             m_disableMovementTimer = 0.35f;
         }
     }
@@ -879,6 +911,7 @@ public class TheChampion : Conqueror
             m_LagTime = .2f;
             if (m_dSmashCharging != true)
             {
+                m_body2d.velocity = new Vector2(0.0f, 0.0f);
                 m_timeSinceChargeStart = 0.0f;
                 m_dSmashCharging = true;
             }
@@ -902,6 +935,7 @@ public class TheChampion : Conqueror
             m_dSmashCharging = false;
             m_fullCharge = false;
 
+            inAttack = true;
             m_disableMovementTimer = 0.35f;
         }
     }
@@ -927,6 +961,7 @@ public class TheChampion : Conqueror
             // Ready to parry in case something hits you
             if (!m_animator.GetCurrentAnimatorStateInfo(0).IsName("ParryStance"))
             {
+                m_body2d.velocity = new Vector2(0.0f, 0.0f);
                 m_animator.SetTrigger("ParryStance");
                 m_animator.SetBool("isParrying", true);
                 m_parryTimer = 7.0f / 12.0f;

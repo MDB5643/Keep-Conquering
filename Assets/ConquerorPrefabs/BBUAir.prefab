@@ -89,15 +89,15 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.3891032, y: 0.040640116}
-      - {x: 1.7867291, y: 0.105369925}
+    - - {x: 1.3805557, y: -0.07047656}
+      - {x: 1.9234881, y: 0.011348128}
       - {x: 1.3670082, y: 0.6606159}
       - {x: 0.6166628, y: 0.8424801}
       - {x: 0.33729473, y: 0.78248}
       - {x: 0.2159794, y: 0.69326615}
-      - {x: 0.17338306, y: 0.5546577}
+      - {x: 0.070813894, y: 0.5803}
       - {x: -0.064617395, y: 0.30854714}
-      - {x: 0.45246902, y: 0.3973452}
+      - {x: 0.4182793, y: 0.14092213}
 --- !u!114 &4717078537876216523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLingerTime: 0.05
+  linger: 1
 --- !u!114 &5879909593460173149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,16 +126,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseDamage: 5
   baseKB: 0.2
-  hitStun: 0.16
+  hitStun: 0.22
   damageModifier: 0
   KBModifier: 0
   modifierY: 4
-  modifierX: 0.16
+  modifierX: 0.12
   multModY: 1
   multModX: 1
   shakeIntensity: 0.1
   shakeScreen: 1
   smash: 0
   grab: 0
+  continuous: 0
+  groundPound: 0
+  noHitStop: 1
+  noFlinch: 0
+  guardBreak: 0
   soundName: Hurt
   hitEnemies: []

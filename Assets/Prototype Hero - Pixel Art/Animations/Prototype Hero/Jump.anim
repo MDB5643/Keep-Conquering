@@ -21,11 +21,11 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: -4959792082495398112, guid: 5149d2bf53b08324aaa163b30155942d, type: 3}
-    - time: 0.083333336
+    - time: 0.041666668
       value: {fileID: -3605731988797320240, guid: 5149d2bf53b08324aaa163b30155942d, type: 3}
-    - time: 0.16666667
+    - time: 0.083333336
       value: {fileID: 2143785083995055597, guid: 5149d2bf53b08324aaa163b30155942d, type: 3}
-    - time: 0.29166666
+    - time: 0.16666667
       value: {fileID: 2143785083995055597, guid: 5149d2bf53b08324aaa163b30155942d, type: 3}
     attribute: m_Sprite
     path: 
@@ -55,7 +55,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.3333333
+    m_StopTime: 0.20833334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -75,7 +75,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.16666667
+  - time: 0.041666668
     functionName: AE_Jump
     data: 
     objectReferenceParameter: {fileID: 0}

@@ -89,7 +89,7 @@ MonoBehaviour:
     m_loop: 0
   - m_name: Hurt
     m_clips:
-    - {fileID: 8300000, guid: 680125810a591ef4b81305b22170f488, type: 3}
+    - {fileID: 8300000, guid: 4acaf282c31675042873963419dc479d, type: 3}
     volume: 0.8
     pitch: 1
     m_randomVolumeRange: {x: 1, y: 1}

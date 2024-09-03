@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7448819397588416913}
   - component: {fileID: 1220112852196671059}
   - component: {fileID: 7089636654121681296}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: BBDSpecHB
   m_TagString: AttackHitbox
   m_Icon: {fileID: 0}
@@ -202,21 +202,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseDamage: 7.7
+  baseDamage: 7.9
   baseKB: 0.3
-  hitStun: 0.2
+  hitStun: 0.24
   damageModifier: 0
   KBModifier: 0
   modifierY: 4
-  modifierX: 0.16
+  modifierX: 0.2
   multModY: 1
   multModX: 1
-  shakeIntensity: 0.22
+  shakeIntensity: 0.24
   shakeScreen: 1
   smash: 0
   grab: 0
   continuous: 0
   groundPound: 0
   noHitStop: 0
+  noFlinch: 0
+  guardBreak: 0
   soundName: Hurt
   hitEnemies: []

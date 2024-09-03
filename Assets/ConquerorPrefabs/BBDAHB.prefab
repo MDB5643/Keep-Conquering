@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLingerTime: 0.05
+  linger: 1
 --- !u!114 &8865375044284866662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,10 +61,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseDamage: 5.5
   baseKB: 0.18
-  hitStun: 0.16
+  hitStun: 0.23
   damageModifier: 0
   KBModifier: 0
-  modifierY: 0.12
+  modifierY: 0.14
   modifierX: 0.16
   multModY: 1
   multModX: 1
@@ -74,6 +75,8 @@ MonoBehaviour:
   continuous: 0
   groundPound: 0
   noHitStop: 0
+  noFlinch: 0
+  guardBreak: 0
   soundName: BluntHit
   hitEnemies: []
 --- !u!60 &6364611899604972299
@@ -101,9 +104,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.032403134, y: 0.8120619}
-      - {x: 0.027517796, y: 0.34142008}
-      - {x: 0.07118075, y: -0.13522148}
-      - {x: 0.0019517094, y: -0.48498583}
+    - - {x: 0.14765847, y: 0.6628657}
+      - {x: -0.6112052, y: 0.8300277}
+      - {x: -0.6851709, y: 0.43333286}
+      - {x: -0.6896978, y: 0.11920641}
+      - {x: -0.69112647, y: -0.1853208}
+      - {x: -0.5773312, y: -0.5466884}
+      - {x: 0.19882476, y: -0.44743657}
       - {x: 0.32856032, y: -0.17391583}
       - {x: 0.32891643, y: 0.42566842}

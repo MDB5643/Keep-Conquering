@@ -8,6 +8,7 @@ public class TowerEye : MonoBehaviour
     private Rigidbody2D m_body2d;
     public float currentDamage;
     private SpriteRenderer m_SR;
+    public PlayerManager playerManager;
 
     public GameObject EyePop;
     public GameObject eyePartner;
@@ -114,12 +115,12 @@ public class TowerEye : MonoBehaviour
 
         if (transform.name == "FrontLeftEye")
         {
-            Instantiate(EyePop, new Vector3(dustSpawnPosition.x + 3.2f, dustSpawnPosition.y + 1.85f), Quaternion.identity);
+            Instantiate(EyePop, new Vector3(dustSpawnPosition.x, dustSpawnPosition.y), Quaternion.identity);
             //Instantiate(Launcher, new Vector3(14.72f, -10.22f, 0), Quaternion.identity).SetActive(true);
         }
         if (transform.name == "FrontRightEye")
         {
-            Instantiate(EyePop, new Vector3(dustSpawnPosition.x + 3.2f, dustSpawnPosition.y + 1.85f), Quaternion.identity);
+            Instantiate(EyePop, new Vector3(dustSpawnPosition.x, dustSpawnPosition.y), Quaternion.identity);
             //Instantiate(Launcher, new Vector3(66.09f, -10.22f, 0), Quaternion.identity).SetActive(true);
         }
 
@@ -151,7 +152,17 @@ public class TowerEye : MonoBehaviour
             //Gondola.GetComponent<PlatformMove>().points[1].SetPositionAndRotation(new Vector3(-25f, 5.5f), new Quaternion(0f, 0f, 0f, 0f));
         }
 
-
+        if (MenuEvents.gameModeSelect == 3)
+        {
+            if (teamColor == "Red")
+            {
+                playerManager.isRedKeepDestroyed = true;
+            }
+            if (teamColor == "Blue")
+            {
+                playerManager.isBlueKeepDestroyed = true;
+            }
+        }
         //ELIMINATE
         Destroy(gameObject);
     }

@@ -25,6 +25,7 @@ public class TheChampionAnimEvents : MonoBehaviour
     public GameObject sideSpecialExplode;
     public GameObject upTiltHitbox;
     public GameObject dTiltHitbox;
+    public GameObject fTiltHitbox;
     public GameObject upSpecExplosionHitbox;
     public GameObject upSpecExplosionHitbox2;
     public GameObject upSmashHitbox;
@@ -35,6 +36,7 @@ public class TheChampionAnimEvents : MonoBehaviour
     public GameObject fAirHitbox;
     public GameObject nAirHitbox;
     public GameObject nSpecHitbox;
+    public GameObject nSpecHitbox2;
     public GameObject dashAttackHitbox;
 
     public GameObject dSpecExplosionHitbox;
@@ -58,7 +60,10 @@ public class TheChampionAnimEvents : MonoBehaviour
     // Animation Events
     // These functions are called inside the animation files
     
-
+    void AE_resetAttack()
+    {
+        m_player.inAttack = false;
+    }
     void AE_resetDodge()
     {
         m_player.ResetDodging();
@@ -144,6 +149,40 @@ public class TheChampionAnimEvents : MonoBehaviour
         c_Manager.hitEnemy = "None";
     }
 
+    void AE_FTilt()
+    {
+        m_audioManager.PlaySound("PunchSwing");
+        Quaternion rotQuat = new Quaternion();
+        float xDisplace = 0.0f;
+        float pushForce = .85f;
+        if (m_player.m_facingDirection == 1)
+        {
+            rotQuat = new Quaternion(0f, 0f, 0f, 0f);
+            xDisplace = 2f;
+        }
+        else
+        {
+            rotQuat = new Quaternion(0f, 180f, 0f, 0f);
+            xDisplace = -2f;
+            pushForce = -.85f;
+        }
+        activeHitbox = Instantiate(fTiltHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y, m_player.transform.position.z),
+            rotQuat, m_player.transform);
+        m_player.m_body2d.AddForce(new Vector2(pushForce, 0));
+        if (m_player.transform.CompareTag("PlayerMid"))
+        {
+            if (m_player.transform.CompareTag("PlayerMid"))
+            {
+                activeHitbox.layer = 19;
+                if (activeHitbox.transform.GetChild(0) != null)
+                {
+                    activeHitbox.transform.GetChild(0).gameObject.layer = 19;
+                }
+            }
+        }
+        c_Manager.hitEnemy = "None";
+    }
+
     void AE_FellDown()
     {
         m_player.m_fallingdown = false;
@@ -165,7 +204,7 @@ public class TheChampionAnimEvents : MonoBehaviour
     {
         m_audioManager.PlaySound("SwordAttack");
         Quaternion rotQuat = new Quaternion();
-        float xDisplace = -0.55f;
+        float xDisplace = -0.65f;
         if (m_player.m_facingDirection == 1)
         {
             rotQuat = new Quaternion(0f, 0f, 0f, 0f);
@@ -173,9 +212,9 @@ public class TheChampionAnimEvents : MonoBehaviour
         else
         {
             rotQuat = new Quaternion(0f, 180f, 0f, 0f);
-            xDisplace = 0.55f;
+            xDisplace = 0.65f;
         }
-        activeHitbox = Instantiate(downAirHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y - 1.3f, m_player.transform.position.z),
+        activeHitbox = Instantiate(downAirHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y - 1.65f, m_player.transform.position.z),
             rotQuat, m_player.transform);
         if (m_player.transform.CompareTag("PlayerMid"))
         {
@@ -404,7 +443,48 @@ public class TheChampionAnimEvents : MonoBehaviour
         m_player.m_disableMovementTimer = 1.0f;
         m_player.transform.GetComponentInChildren<Rigidbody2D>().AddForce(new Vector2(pushForce, 18), ForceMode2D.Impulse);
         m_player.m_launched = true;
-        m_player.m_SR.color = Color.white;
+        m_player.m_SR.color = Color.red;
+        m_player.GetComponent<TheChampion>().isInUpSpecial = true;
+        m_player.isInStartUp = false;
+        if (m_player.transform.CompareTag("PlayerMid"))
+        {
+            if (m_player.transform.CompareTag("PlayerMid"))
+            {
+                activeHitbox.layer = 19;
+            }
+        }
+        c_Manager.hitEnemy = "None";
+    }
+
+    void AE_UpSpec2()
+    {
+        m_audioManager.PlaySound("BBExplode");
+        Quaternion rotQuat = new Quaternion();
+        float xDisplace = 0.0f;
+        float pushForce = 5;
+        if (m_player.m_facingDirection == 1)
+        {
+            rotQuat = new Quaternion(0f, 0f, 0f, 0f);
+            xDisplace = 0f;
+
+        }
+        else
+        {
+            rotQuat = new Quaternion(0f, 180f, 0f, 0f);
+            xDisplace = 0f;
+            pushForce = -pushForce;
+        }
+        activeHitbox = Instantiate(upSpecExplosionHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + .5f, m_player.transform.position.z - .01f),
+            rotQuat, m_player.transform);
+
+        m_player.m_cameraShake = true;
+        m_player.m_shakeIntensity = .22f;
+
+        m_player.transform.GetComponentInChildren<Rigidbody2D>().velocity = new Vector2(0, 0);
+        m_player.m_disableMovementTimer = 1.0f;
+        m_player.transform.GetComponentInChildren<Rigidbody2D>().AddForce(new Vector2(pushForce, 13), ForceMode2D.Impulse);
+        m_player.m_launched = true;
+        m_player.m_SR.color = Color.gray;
         m_player.GetComponent<TheChampion>().isInUpSpecial = true;
         m_player.isInStartUp = false;
         if (m_player.transform.CompareTag("PlayerMid"))
@@ -478,7 +558,7 @@ public class TheChampionAnimEvents : MonoBehaviour
 
     void AE_UpSpecLand()
     {
-        m_audioManager.PlaySound("BBExplode");
+        
         Quaternion rotQuat = new Quaternion();
         float xDisplace = 0.0f;
         if (m_player.m_facingDirection == 1)
@@ -492,18 +572,24 @@ public class TheChampionAnimEvents : MonoBehaviour
             rotQuat = new Quaternion(0f, 180f, 0f, 0f);
             xDisplace = 0f;
         }
-        activeHitbox = Instantiate(upSpecExplosionHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + .5f, m_player.transform.position.z -.01f),
+        if (m_player.upSpecCount > 1)
+        {
+            m_audioManager.PlaySound("Hurt");
+        }
+        else
+        {
+            m_audioManager.PlaySound("BBExplode");
+            activeHitbox = Instantiate(upSpecExplosionHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + .5f, m_player.transform.position.z - .01f),
             rotQuat, m_player.transform);
-        //activeHitbox2 = Instantiate(upSpecExplosionHitbox2, new Vector2(-(m_player.transform.position.x + xDisplace), m_player.transform.position.y),
-        //    rotQuat);
-        m_player.m_cameraShake = true;
-        m_player.m_shakeIntensity = .22f;
-        m_player.m_disableMovementTimer = 1.0f;
+            m_player.m_cameraShake = true;
+            m_player.m_shakeIntensity = .22f;
+            m_player.m_disableMovementTimer = 1.0f;
+        }
+        m_player.upSpecCount = 0;
         m_player.m_SR.color = Color.white;
         if (m_player.transform.CompareTag("PlayerMid"))
         {
             activeHitbox.layer = 19;
-            //activeHitbox2.layer = 19;
         }
         c_Manager.hitEnemy = "None";
     }
@@ -556,6 +642,8 @@ public class TheChampionAnimEvents : MonoBehaviour
             if (m_player.tag == "PlayerMid")
             {
                 Instantiate(nSpecHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y - .41f, m_player.transform.position.z -.01f),
+            rotQuat, m_player.transform).layer = 19;
+                Instantiate(nSpecHitbox2, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y - .41f, m_player.transform.position.z - .01f),
             rotQuat, m_player.transform).layer = 19;
             }
             else
@@ -617,7 +705,7 @@ public class TheChampionAnimEvents : MonoBehaviour
             rotQuat = new Quaternion(0f, 180f, 0f, 0f);
             xDisplace = -1.9f;
         }
-        activeHitbox = Instantiate(jab2Hitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y, m_player.transform.position.z),
+        activeHitbox = Instantiate(jab2Hitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + .18f, m_player.transform.position.z),
             rotQuat, m_player.transform);
         if (m_player.transform.CompareTag("PlayerMid"))
         {

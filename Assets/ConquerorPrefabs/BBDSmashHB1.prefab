@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1220112852196671059}
   - component: {fileID: 7089636654121681296}
   - component: {fileID: 4544330151377251097}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: BBDSmashHB1
   m_TagString: AttackHitbox
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseDamage: 8.8
   baseKB: 0.5
-  hitStun: 0.2
+  hitStun: 0.26
   damageModifier: 1.2
   KBModifier: 0.05
   modifierY: 3
@@ -188,6 +188,8 @@ MonoBehaviour:
   continuous: 0
   groundPound: 0
   noHitStop: 0
+  noFlinch: 0
+  guardBreak: 0
   soundName: Hurt
   hitEnemies: []
 --- !u!58 &4544330151377251097

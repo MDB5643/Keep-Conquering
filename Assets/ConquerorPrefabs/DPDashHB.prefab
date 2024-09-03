@@ -60,8 +60,9 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 0.31862625, y: -1.7671267}
-      - {x: 0.15217094, y: -1.7813251}
-      - {x: -0.015806973, y: -1.9989457}
+      - {x: -0.32006228, y: -1.7455498}
+      - {x: -0.6318934, y: -1.8334113}
+      - {x: -0.65976137, y: -2.0132558}
       - {x: 0.68302524, y: -1.992252}
       - {x: 0.6859556, y: -1.7647647}
       - {x: 0.52362055, y: -1.7558877}
@@ -79,10 +80,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseDamage: 4.1
   baseKB: 0.23
-  hitStun: 0.16
+  hitStun: 0.18
   damageModifier: 0
   KBModifier: 0
-  modifierY: 1.5
+  modifierY: 1.1
   modifierX: 0.16
   multModY: 1
   multModX: 1
@@ -120,3 +121,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLingerTime: 0.05
+  linger: 1

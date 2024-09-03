@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLingerTime: 0.05
+  linger: 1
 --- !u!60 &4898633441550239610
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -94,19 +95,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseDamage: 7.5
+  baseDamage: 7.7
   baseKB: 0.5
-  hitStun: 0.3
+  hitStun: 0.36
   damageModifier: 1.2
   KBModifier: 0.05
   modifierY: 2
   modifierX: 0.16
   multModY: 1
   multModX: 1
-  shakeIntensity: 0.2
+  shakeIntensity: 0.22
   shakeScreen: 1
   smash: 0
   grab: 0
+  continuous: 0
+  groundPound: 0
+  noHitStop: 1
+  noFlinch: 0
+  guardBreak: 0
   soundName: Whack
   hitEnemies: []
 --- !u!1 &8590945499187253257
@@ -155,6 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLingerTime: 0.05
+  linger: 1
 --- !u!60 &1409184222670963766
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -203,19 +210,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseDamage: 7.5
+  baseDamage: 7.7
   baseKB: 0.5
-  hitStun: 0.3
+  hitStun: 0.37
   damageModifier: 1.2
   KBModifier: 0.05
   modifierY: 8
   modifierX: 0.16
   multModY: -1
   multModX: 1
-  shakeIntensity: 0.23
+  shakeIntensity: 0.25
   shakeScreen: 1
   smash: 0
   grab: 0
+  continuous: 0
+  groundPound: 0
+  noHitStop: 1
+  noFlinch: 0
+  guardBreak: 0
   soundName: Whack
   hitEnemies: []
 --- !u!1 &8654348693954206893

@@ -59,10 +59,11 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -0.48188508, y: -0.16432244}
-      - {x: 0.07102896, y: -0.4116335}
-      - {x: -0.26222068, y: -0.03892062}
-      - {x: -0.5248817, y: 0.09441829}
-      - {x: -0.9617673, y: 0.24289522}
+      - {x: 0.3134571, y: -0.41920936}
+      - {x: -0.21676543, y: -0.016192995}
+      - {x: -0.50973, y: 0.13987356}
+      - {x: -1.0072227, y: 0.3868369}
+      - {x: -1.1278515, y: 0.16146407}
       - {x: -0.7677728, y: 0.0059044585}
 --- !u!114 &6369816178052772800
 MonoBehaviour:
@@ -77,6 +78,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLingerTime: 0.05
+  linger: 1
 --- !u!114 &5682133631480851116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,18 +92,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseDamage: 5.1
-  baseKB: 0.1
-  hitStun: 0.16
+  baseKB: 0.2
+  hitStun: 0.2
   damageModifier: 0
   KBModifier: 0
   modifierY: 2.2
   modifierX: 0
   multModY: 1
   multModX: 1
-  shakeIntensity: 0
-  shakeScreen: 0
+  shakeIntensity: 0.11
+  shakeScreen: 1
   smash: 0
   grab: 0
+  continuous: 0
+  groundPound: 0
+  noHitStop: 0
+  noFlinch: 0
+  guardBreak: 0
   soundName: BluntHit
   hitEnemies: []
 --- !u!1 &903482867419899601

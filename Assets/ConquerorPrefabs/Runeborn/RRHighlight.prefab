@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 8677619374169864184, guid: 98d773084ad7b614b9a09ae164029883, type: 3}
-  m_Color: {r: 0.0039215623, g: 0.6471704, b: 0.99215686, a: 0.44705883}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.44705883}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -121,6 +121,7 @@ MonoBehaviour:
   activeTime: 0
   startingYpos: 0
   released: 0
+  charged: 0
 --- !u!114 &8549651318858588407
 MonoBehaviour:
   m_ObjectHideFlags: 0

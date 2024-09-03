@@ -20,6 +20,8 @@ public class CollisionTracker : MonoBehaviour
     public bool continuous;
     public bool groundPound;
     public bool noHitStop;
+    public bool noFlinch;
+    public bool guardBreak;
     public string soundName;
     
 

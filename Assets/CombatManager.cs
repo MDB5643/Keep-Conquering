@@ -34,6 +34,7 @@ public class CombatManager : MonoBehaviour
         var m_player = transform;
         m_audioManager = AudioManager_PrototypeHero.instance;
         Conqueror playerCharacter = GetComponentInParent<Conqueror>();
+        MinionBehavior minion = GetComponentInParent<MinionBehavior>();
         string playerTeamColor = "";
         var animator = GetComponentInParent<Animator>();
         bool alreadyHit = false;
@@ -75,8 +76,12 @@ public class CombatManager : MonoBehaviour
                 collisionData.hitEnemies.Add(enemy.name);
                 baseDmg = collisionData.baseDamage;
                 baseKB = collisionData.baseKB;
-                enemy.GetComponent<Conqueror>().m_shakeIntensity = collisionData.shakeIntensity;
-                enemy.GetComponent<Conqueror>().m_cameraShake = collisionData.shakeScreen;
+                if (enemy.GetComponentInParent<Conqueror>())
+                {
+                    enemy.GetComponent<Conqueror>().m_shakeIntensity = collisionData.shakeIntensity;
+                    enemy.GetComponent<Conqueror>().m_cameraShake = collisionData.shakeScreen;
+                }
+                
 
                 m_audioManager.PlaySound(collisionData.soundName);
 
@@ -85,39 +90,62 @@ public class CombatManager : MonoBehaviour
                 modifiery = collisionData.modifierY;
             }
         }
-
         else if (m_player.GetComponentInChildren<CollisionTracker>())
         {
-            collisionData.hitEnemies.Add(enemy.name);
-            playerTeamColor = playerCharacter.teamColor;
-
-            if (collisionData.smash)
+            if (playerCharacter)
             {
-                baseDmg = collisionData.baseDamage + playerCharacter.m_chargeModifier * collisionData.damageModifier;
-                baseKB = collisionData.baseKB + playerCharacter.m_chargeModifier * collisionData.KBModifier;
+                if (!alreadyHit)
+                {
+                    collisionData.hitEnemies.Add(enemy.name);
+                }
+                
+                playerTeamColor = playerCharacter.teamColor;
 
-                playerCharacter.m_fSmashCharging = false;
-                playerCharacter.m_chargeModifier = 0.0f;
+                if (collisionData.smash)
+                {
+                    baseDmg = collisionData.baseDamage + playerCharacter.m_chargeModifier * collisionData.damageModifier;
+                    baseKB = collisionData.baseKB + playerCharacter.m_chargeModifier * collisionData.KBModifier;
 
+                    playerCharacter.m_fSmashCharging = false;
+                    playerCharacter.m_chargeModifier = 0.0f;
+
+                }
+                else
+                {
+                    baseDmg = collisionData.baseDamage;
+                    baseKB = collisionData.baseKB;
+                }
+
+                playerCharacter.m_shakeIntensity = collisionData.shakeIntensity;
+                playerCharacter.m_cameraShake = collisionData.shakeScreen;
+
+                m_audioManager.PlaySound(collisionData.soundName);
+
+                hitstun = collisionData.hitStun;
+                modifierx = collisionData.modifierX;
+                modifiery = collisionData.modifierY;
             }
-            else
+            else if (minion)
             {
+                if (!alreadyHit)
+                {
+                    collisionData.hitEnemies.Add(enemy.name);
+                }
+                playerTeamColor = minion.teamColor;
                 baseDmg = collisionData.baseDamage;
                 baseKB = collisionData.baseKB;
+
+                m_audioManager.PlaySound(collisionData.soundName);
+
+                hitstun = collisionData.hitStun;
+                modifierx = collisionData.modifierX;
+                modifiery = collisionData.modifierY;
             }
-
-            playerCharacter.m_shakeIntensity = collisionData.shakeIntensity;
-            playerCharacter.m_cameraShake = collisionData.shakeScreen;
-
-            m_audioManager.PlaySound(collisionData.soundName);
-
-            hitstun = collisionData.hitStun;
-            modifierx = collisionData.modifierX;
-            modifiery = collisionData.modifierY;
+            
 
         }
 
-        if (collisionData)
+        if (collisionData && !alreadyHit)
         {
             
             if (collisionData.transform.name.StartsWith("ProtoSideSpec2HB") && m_player.GetComponent<PrototypeHero>().currentHookTarget == null)
@@ -128,661 +156,48 @@ public class CombatManager : MonoBehaviour
 
             else if (collisionData.transform.name.StartsWith("ROUpSpec"))
             {
-            
-                m_player.GetComponentInParent<Conqueror>().m_groundSensor.Disable(0.25f);
-            
-                if (enemy.position.z == 20)
+                if (collisionData.transform.name.StartsWith("ROUpSpecHB2"))
                 {
-                    enemy.GetComponentInParent<Conqueror>().SetLayerRecursively(enemy.gameObject, LayerMask.NameToLayer("iFrameMid"));
+                    if (enemy.GetComponentInParent<Conqueror>())
+                    {
+                        enemy.GetComponentInParent<Conqueror>().transform.parent = null;
+                    }
+                    if (enemy.position.z == 20)
+                    {
+                        enemy.GetComponentInParent<Conqueror>().SetLayerRecursively(enemy.gameObject, LayerMask.NameToLayer("PlayerMid"));
+                    }
+                    else
+                    {
+                        enemy.GetComponentInParent<Conqueror>().SetLayerRecursively(enemy.gameObject, LayerMask.NameToLayer("Player"));
+                    }
+                    multmodifiery = collisionData.multModY;
                 }
-                else
+                else if (enemy.GetComponentInParent<Conqueror>())
                 {
-                    enemy.GetComponentInParent<Conqueror>().SetLayerRecursively(enemy.gameObject, LayerMask.NameToLayer("iFrame"));
+                    m_player.GetComponentInParent<Conqueror>().m_groundSensor.Disable(0.25f);
+
+                    if (enemy.position.z == 20)
+                    {
+                        enemy.GetComponentInParent<Conqueror>().SetLayerRecursively(enemy.gameObject, LayerMask.NameToLayer("Grabbed"));
+                    }
+                    else
+                    {
+                        enemy.GetComponentInParent<Conqueror>().SetLayerRecursively(enemy.gameObject, LayerMask.NameToLayer("Grabbed"));
+                    }
+                    if (m_player.position.z == 20)
+                    {
+                        m_player.GetComponentInParent<Conqueror>().SetLayerRecursively(m_player.gameObject, LayerMask.NameToLayer("Grabbed"));
+                    }
+                    else
+                    {
+                        m_player.GetComponentInParent<Conqueror>().SetLayerRecursively(m_player.gameObject, LayerMask.NameToLayer("Grabbed"));
+                    }
+
+                    enemy.SetPositionAndRotation(new Vector3(m_player.transform.position.x, m_player.transform.position.y, m_player.transform.position.z), new Quaternion(0f, 0f, 0f, 0f));
+
                 }
-            
-                enemy.SetPositionAndRotation(new Vector3(m_player.transform.position.x, m_player.transform.position.y, m_player.transform.position.z), new Quaternion(0f, 0f, 0f, 0f));
+                
             }
-
-                //if (collisionData.transform.name.StartsWith("ROUpSpec2"))
-                //{
-                //    m_player.GetComponentInParent<Conqueror>().m_groundSensor.Disable(0.35f);
-                //    m_player.GetComponentInParent<Conqueror>().m_body2d.velocity = new Vector2(0, 5);
-                //    if (enemy.position.z == 20)
-                //    {
-                //        enemy.GetComponentInParent<Conqueror>().SetLayerRecursively(enemy.gameObject, LayerMask.NameToLayer("PlayerMid"));
-                //    }
-                //    else
-                //    {
-                //        enemy.GetComponentInParent<Conqueror>().SetLayerRecursively(enemy.gameObject, LayerMask.NameToLayer("Player"));
-                //    }
-                //
-                //    enemy.SetPositionAndRotation(new Vector3(m_player.transform.position.x, m_player.transform.position.y - 1f, m_player.transform.position.z), new Quaternion(0f, 0f, 0f, 0f));
-                //
-                //    baseDmg = 5.5f;
-                //    baseKB = .35f;
-                //    multmodifiery = -1f;
-                //    collisionData.grab = false;
-                //    m_audioManager.PlaySound("Hurt");
-                //}
-
-                //else
-                //{
-                //    if (attackType.StartsWith("Jab1Hitbox"))
-                //    {
-                //        baseDmg = 5.5f + playerCharacter.m_chargeModifier * 1.2f;
-                //        baseKB = .5f + playerCharacter.m_chargeModifier * .05f;
-                //
-                //        playerCharacter.m_fSmashCharging = false;
-                //        playerCharacter.m_chargeModifier = 0.0f;
-                //
-                //        m_audioManager.PlaySound("Whack");
-                //        playerCharacter.m_shakeIntensity = .2f;
-                //        playerCharacter.m_cameraShake = true;
-                //
-                //
-                //        hitstun = .3f;
-                //        modifiery = 2f;
-                //    }
-                //    if (attackType.StartsWith("Jab2Hitbox"))
-                //    {
-                //        baseDmg = 4.2f;
-                //        baseKB = 0.1f;
-                //
-                //        modifiery = 2f;
-                //        m_audioManager.PlaySound("Hurt");
-                //    }
-                //    if (attackType.StartsWith("BBDAHB"))
-                //    {
-                //        baseDmg = 3.0f;
-                //        baseKB = .18f;
-                //        modifiery = .14f;
-                //        modifierx = .15f;
-                //        m_audioManager.PlaySound("BluntHit");
-                //    }
-                //    if (attackType.StartsWith("ChampSideSpecialBomb"))
-                //    {
-                //        baseDmg = 9.5f;
-                //        baseKB = .6f;
-                //        modifiery = 2f;
-                //        collisionData.grab = false;
-                //        playerCharacter.m_shakeIntensity = .2f;
-                //
-                //        playerCharacter.m_cameraShake = true;
-                //        if (enemy.GetComponentInParent<Conqueror>() != null)
-                //        {
-                //            enemy.GetComponentInParent<Conqueror>().m_shakeIntensity = .2f;
-                //            enemy.GetComponentInParent<Conqueror>().m_cameraShake = true;
-                //        }
-                //        m_audioManager.PlaySound("Hurt");
-                //
-                //    }
-                //    if (attackType.StartsWith("ChampSideSpecHB"))
-                //    {
-                //        baseDmg = 3.0f;
-                //        baseKB = 0.0f;
-                //        multmodifiery = 0.0f;
-                //        collisionData.grab = true;
-                //        m_audioManager.PlaySound("Hurt");
-                //    }
-                //    if (attackType.StartsWith("BBDair"))
-                //    {
-                //        baseDmg = 3f;
-                //        baseKB = 0.3f;
-                //
-                //        modifiery = -5f;
-                //        m_audioManager.PlaySound("Hurt");
-                //    }
-                //    if (attackType.StartsWith("BBDTilt"))
-                //    {
-                //        baseDmg = 3f;
-                //        baseKB = .1f;
-                //
-                //        modifiery = 2.2f;
-                //        m_audioManager.PlaySound("Hurt");
-                //    }
-                //    if (attackType.StartsWith("BBFairSpike"))
-                //    {
-                //        baseDmg = 6.5f;
-                //        baseKB = .5f;
-                //
-                //        hitstun = .3f;
-                //        modifiery = 8f;
-                //        multmodifiery = -1;
-                //        playerCharacter.m_shakeIntensity = .22f;
-                //        playerCharacter.m_cameraShake = true;
-                //        m_audioManager.PlaySound("Hurt");
-                //    }
-                //    else if (attackType.StartsWith("BBFair"))
-                //    {
-                //        baseDmg = 6.5f;
-                //        baseKB = .5f;
-                //
-                //        hitstun = .3f;
-                //        modifiery = 6f;
-                //        playerCharacter.m_shakeIntensity = .2f;
-                //        playerCharacter.m_cameraShake = true;
-                //        m_audioManager.PlaySound("Hurt");
-                //    }
-                //    if (attackType.StartsWith("BBDSmash"))
-                //    {
-                //        baseDmg = 8.2f + playerCharacter.m_chargeModifier * 1.2f;
-                //        baseKB = 0.5f + playerCharacter.m_chargeModifier * .05f;
-                //
-                //        playerCharacter.m_dSmashCharging = false;
-                //        playerCharacter.m_chargeModifier = 0.0f;
-                //        m_audioManager.PlaySound("Whack");
-                //        playerCharacter.m_shakeIntensity = .2f;
-                //        playerCharacter.m_cameraShake = true;
-                //
-                //        modifiery = 3f;
-                //        m_audioManager.PlaySound("Hurt");
-                //    }
-                //    if (attackType.StartsWith("BBNSpec"))
-                //    {
-                //        baseDmg = 2.5f;
-                //        baseKB = 0.08f;
-                //
-                //        modifiery = .1f;
-                //        m_audioManager.PlaySound("Hurt");
-                //    }
-                //    if (attackType.StartsWith("NSpecFire"))
-                //    {
-                //        baseDmg = .5f;
-                //        baseKB = 0.0f;
-                //
-                //        m_audioManager.PlaySound("Hurt");
-                //        modifiery = 0f;
-                //    }
-                //    if (attackType.StartsWith("BBDSpecHB"))
-                //    {
-                //        baseDmg = 4.5f;
-                //        baseKB = 0.3f;
-                //
-                //        modifiery = 4f;
-                //        playerCharacter.m_cameraShake = true;
-                //        playerCharacter.m_shakeIntensity = .22f;
-                //        m_audioManager.PlaySound("Hurt");
-                //    }
-                //    if (attackType.StartsWith("BBUair"))
-                //    {
-                //        baseDmg = 5.0f;
-                //        baseKB = 0.2f;
-                //
-                //        modifiery = 4f;
-                //        m_audioManager.PlaySound("Hurt");
-                //    }
-                //    if (attackType.StartsWith("BBNair"))
-                //    {
-                //        baseDmg = 2.5f;
-                //        baseKB = 0.1f;
-                //
-                //        modifiery = 1f;
-                //        m_audioManager.PlaySound("Hurt");
-                //    }
-                //    if (attackType.StartsWith("BBUSmash"))
-                //    {
-                //        baseDmg = 8.5f + playerCharacter.m_chargeModifier * 1.2f;
-                //        baseKB = 0.5f + playerCharacter.m_chargeModifier * .05f;
-                //
-                //        playerCharacter.m_uSmashCharging = false;
-                //        playerCharacter.m_chargeModifier = 0.0f;
-                //        m_audioManager.PlaySound("Whack");
-                //        playerCharacter.m_cameraShake = true;
-                //        playerCharacter.m_shakeIntensity = .2f;
-                //        modifiery = 6.5f;
-                //
-                //    }
-                //    if (attackType.StartsWith("BBUTilt"))
-                //    {
-                //        baseDmg = 3.5f;
-                //        baseKB = 0.2f;
-                //        m_audioManager.PlaySound("Hurt");
-                //        modifiery = 6.5f;
-                //    }
-                //    if (attackType.StartsWith("ProtoJab1"))
-                //    {
-                //        baseDmg = 3.0f;
-                //        baseKB = .2f;
-                //        modifiery = 1f;
-                //        m_audioManager.PlaySound("Hurt");
-                //    }
-                //    if (attackType.StartsWith("DPDash"))
-                //    {
-                //        baseDmg = 3.3f;
-                //        baseKB = .23f;
-                //        modifiery = 1.5f;
-                //        m_audioManager.PlaySound("BluntHit");
-                //    }
-                //    if (attackType.StartsWith("ProtoUTilt"))
-                //    {
-                //        baseDmg = 3.2f;
-                //        baseKB = 0.3f;
-                //        modifiery = 3f;
-                //        m_audioManager.PlaySound("Hurt");
-                //    }
-                //    if (attackType.StartsWith("UAirProto"))
-                //    {
-                //        baseDmg = 3.0f;
-                //        baseKB = 0.3f;
-                //        modifiery = 3f;
-                //        m_audioManager.PlaySound("Hurt");
-                //    }
-                //    if (attackType.Contains("DTilt"))
-                //    {
-                //        baseDmg = 2f;
-                //        baseKB = 0.2f;
-                //        modifiery = 3f;
-                //        m_audioManager.PlaySound("Hurt");
-                //    }
-                //    if (attackType.Contains("ProtoDSpec"))
-                //    {
-                //        baseDmg = 1.2f;
-                //        baseKB = 0.2f;
-                //        modifiery = 4f;
-                //        m_audioManager.PlaySound("Hurt");
-                //    }
-                //    if (attackType.StartsWith("ProtoDair"))
-                //    {
-                //        baseDmg = 4.0f;
-                //        baseKB = 0.5f;
-                //
-                //        modifiery = -3f;
-                //        m_audioManager.PlaySound("Hurt");
-                //    }
-                //    if (attackType.StartsWith("ProtoSideSpec1"))
-                //    {
-                //        baseDmg = 3.4f;
-                //        baseKB = 0.0f;
-                //        hitstun = .28f;
-                //        m_audioManager.PlaySound("Hurt");
-                //    }
-                //    if (attackType.StartsWith("ProtoSideSpec2"))
-                //    {
-                //        baseDmg = 3.3f;
-                //        baseKB = 0.1f;
-                //        modifiery = 8f;
-                //        m_audioManager.PlaySound("Hurt");
-                //
-                //        if (m_player.GetComponent<PrototypeHero>().currentHookTarget == null)
-                //        {
-                //            GameObject.Instantiate(crosshair, enemy);
-                //            m_player.GetComponent<PrototypeHero>().currentHookTarget = enemy.gameObject;
-                //        }
-                //        
-                //    }
-                //    if (attackType.StartsWith("FSmash"))
-                //    {
-                //        baseDmg = 5f + playerCharacter.m_chargeModifier * 1.1f;
-                //        baseKB = .7f + playerCharacter.m_chargeModifier * .05f;
-                //
-                //        playerCharacter.m_fSmashCharging = false;
-                //        playerCharacter.m_chargeModifier = 0.0f;
-                //        m_audioManager.PlaySound("ProxyHeavy");
-                //        playerCharacter.m_shakeIntensity = .2f;
-                //
-                //        playerCharacter.m_cameraShake = true;
-                //        if (enemy.GetComponentInParent<Conqueror>() != null)
-                //        {
-                //            enemy.GetComponentInParent<Conqueror>().m_shakeIntensity = .2f;
-                //            enemy.GetComponentInParent<Conqueror>().m_cameraShake = true;
-                //        }
-                //
-                //        //hitstun = .31f;
-                //        modifiery = 2f;
-                //    }
-                //    if (attackType.StartsWith("USmash"))
-                //    {
-                //        baseDmg = 4.8f + playerCharacter.m_chargeModifier * 1.1f;
-                //        baseKB = .5f + playerCharacter.m_chargeModifier * .05f;
-                //
-                //        playerCharacter.m_uSmashCharging = false;
-                //        playerCharacter.m_chargeModifier = 0.0f;
-                //        m_audioManager.PlaySound("ProxyHeavy");
-                //        playerCharacter.m_cameraShake = true;
-                //        if (enemy.GetComponentInParent<Conqueror>() != null)
-                //        {
-                //            enemy.GetComponentInParent<Conqueror>().m_shakeIntensity = .2f;
-                //            enemy.GetComponentInParent<Conqueror>().m_cameraShake = true;
-                //        }
-                //        playerCharacter.m_shakeIntensity = .15f;
-                //        //hitstun = .31f;
-                //        modifiery = 6f;
-                //    }
-                //    if (attackType.StartsWith("DSmash"))
-                //    {
-                //        baseDmg = 5f + playerCharacter.m_chargeModifier * 1.1f;
-                //        baseKB = .6f + playerCharacter.m_chargeModifier * .05f;
-                //
-                //        playerCharacter.m_dSmashCharging = false;
-                //        modifiery = 6f;
-                //        playerCharacter.m_chargeModifier = 0.0f;
-                //        m_audioManager.PlaySound("ProxyHeavy");
-                //        if (enemy.GetComponentInParent<Conqueror>() != null)
-                //        {
-                //            enemy.GetComponentInParent<Conqueror>().m_shakeIntensity = .2f;
-                //            enemy.GetComponentInParent<Conqueror>().m_cameraShake = true;
-                //        }
-                //        enemy.GetComponentInParent<Conqueror>().m_cameraShake = true;
-                //        hitstun = .28f;
-                //
-                //    }
-                //    if (attackType.StartsWith("ChargeBall"))
-                //    {
-                //        baseDmg = 3.0f;
-                //        baseKB = 0.1f;
-                //        modifiery = .1f;
-                //        m_audioManager.PlaySound("Hurt");
-                //    }
-                //    
-                //    if (attackType.StartsWith("RRJabHB"))
-                //    {
-                //        baseDmg = 3.2f;
-                //        baseKB = 0.14f;
-                //        modifiery = .2f;
-                //        m_audioManager.PlaySound("MagicHit");
-                //    }
-                //    if (attackType.StartsWith("RRUptilt"))
-                //    {
-                //        baseDmg = 3.2f;
-                //        baseKB = 0.12f;
-                //        modifiery = .3f;
-                //        m_audioManager.PlaySound("MagicHit");
-                //    }
-                //    if (attackType.StartsWith("RRFSmash"))
-                //    {
-                //        baseDmg = 6.5f + playerCharacter.m_chargeModifier * 1.1f;
-                //        baseKB = .4f + playerCharacter.m_chargeModifier * .05f;
-                //        modifiery = .15f;
-                //
-                //        playerCharacter.m_cameraShake = true;
-                //        if (enemy.GetComponentInParent<Conqueror>() != null)
-                //        {
-                //            enemy.GetComponentInParent<Conqueror>().m_shakeIntensity = .15f;
-                //            enemy.GetComponentInParent<Conqueror>().m_cameraShake = true;
-                //        }
-                //
-                //        m_audioManager.PlaySound("MagicHit");
-                //    }
-                //    if (attackType.StartsWith("RRForwardAir"))
-                //    {
-                //        baseDmg = 3.1f;
-                //        baseKB = .16f;
-                //        modifiery = .2f;
-                //        m_audioManager.PlaySound("MagicHit");
-                //    }
-                //    if (attackType.StartsWith("RRNair"))
-                //    {
-                //        baseDmg = 3.4f;
-                //        baseKB = .11f;
-                //        modifiery = .2f;
-                //        m_audioManager.PlaySound("MagicHit");
-                //    }
-                //    if (attackType.StartsWith("RRUpAir"))
-                //    {
-                //        baseDmg = 3.4f;
-                //        baseKB = .11f;
-                //        modifiery = .2f;
-                //        m_audioManager.PlaySound("MagicHit");
-                //    }
-                //    if (attackType.StartsWith("RRDownAir"))
-                //    {
-                //        baseDmg = 3.1f;
-                //        baseKB = .08f;
-                //        modifiery = -.5f;
-                //        m_audioManager.PlaySound("MagicHit");
-                //    }
-                //    if (attackType.StartsWith("RRDownSmash"))
-                //    {
-                //        baseDmg = 6.3f + playerCharacter.m_chargeModifier * 1.1f;
-                //        baseKB = .35f + playerCharacter.m_chargeModifier * .05f;
-                //        modifiery = .05f;
-                //        modifierx = .1f;
-                //
-                //        playerCharacter.m_cameraShake = true;
-                //        if (enemy.GetComponentInParent<Conqueror>() != null)
-                //        {
-                //            enemy.GetComponentInParent<Conqueror>().m_shakeIntensity = .15f;
-                //            enemy.GetComponentInParent<Conqueror>().m_cameraShake = true;
-                //        }
-                //
-                //        m_audioManager.PlaySound("MagicHit");
-                //    }
-                //    if (attackType.StartsWith("RRDownTilt"))
-                //    {
-                //        baseDmg = 2.0f;
-                //        baseKB = .1f;
-                //        modifiery = .15f;
-                //        modifierx = .1f;
-                //        m_audioManager.PlaySound("MagicHit");
-                //    }
-                //    if (attackType.StartsWith("RRDAHB"))
-                //    {
-                //        baseDmg = 2.0f;
-                //        baseKB = .15f;
-                //        modifiery = .15f;
-                //        modifierx = .1f;
-                //        m_audioManager.PlaySound("MagicHit");
-                //    }
-                //    if (attackType.StartsWith("ROJabHB"))
-                //    {
-                //        baseDmg = 3.0f;
-                //        baseKB = 0.1f;
-                //        modifiery = .1f;
-                //        m_audioManager.PlaySound("BluntHit");
-                //    }
-                //    if (attackType.StartsWith("ROJabFlurry"))
-                //    {
-                //        baseDmg = 1.3f;
-                //        baseKB = 0.09f;
-                //        modifiery = .05f;
-                //        m_audioManager.PlaySound("UnarmedLight");
-                //    }
-                //    if (attackType.StartsWith("ROUTilt"))
-                //    {
-                //        baseDmg = 4.5f;
-                //        baseKB = 0.16f;
-                //        modifiery = .31f;
-                //        m_audioManager.PlaySound("BluntHit");
-                //    }
-                //    if (attackType.StartsWith("ROFSmash"))
-                //    {
-                //        baseDmg = 7.1f + playerCharacter.m_chargeModifier * 1.12f;
-                //        baseKB = .51f + playerCharacter.m_chargeModifier * .05f;
-                //        modifiery = .12f;
-                //
-                //        playerCharacter.m_cameraShake = true;
-                //        if (enemy.GetComponentInParent<Conqueror>() != null)
-                //        {
-                //            enemy.GetComponentInParent<Conqueror>().m_shakeIntensity = .18f;
-                //            enemy.GetComponentInParent<Conqueror>().m_cameraShake = true;
-                //        }
-                //
-                //        m_audioManager.PlaySound("UnarmedSmash");
-                //    }
-                //    if (attackType.StartsWith("RONSpec"))
-                //    {
-                //        baseDmg = 8.8f;
-                //        baseKB = .77f;
-                //        modifiery = .05f;
-                //
-                //        playerCharacter.m_cameraShake = true;
-                //        if (enemy.GetComponentInParent<Conqueror>() != null)
-                //        {
-                //            enemy.GetComponentInParent<Conqueror>().m_shakeIntensity = .22f;
-                //            enemy.GetComponentInParent<Conqueror>().m_cameraShake = true;
-                //        }
-                //
-                //        m_audioManager.PlaySound("UnarmedSmash");
-                //    }
-                //    if (attackType.StartsWith("ROSideSpec"))
-                //    {
-                //        baseDmg = 5.0f;
-                //        baseKB = .2f;
-                //        modifiery = .05f;
-                //
-                //        playerCharacter.m_cameraShake = true;
-                //        if (enemy.GetComponentInParent<Conqueror>() != null)
-                //        {
-                //            enemy.GetComponentInParent<Conqueror>().m_shakeIntensity = .14f;
-                //            enemy.GetComponentInParent<Conqueror>().m_cameraShake = true;
-                //        }
-                //
-                //        m_audioManager.PlaySound("UnarmedSmash");
-                //    }
-                //    if (attackType.StartsWith("ROFair"))
-                //    {
-                //        baseDmg = 4.5f;
-                //        baseKB = .18f;
-                //        modifiery = .21f;
-                //        m_audioManager.PlaySound("BluntHit");
-                //    }
-                //    if (attackType.StartsWith("RONair"))
-                //    {
-                //        baseDmg = 3.0f;
-                //        baseKB = .1f;
-                //        modifiery = .1f;
-                //        m_audioManager.PlaySound("BluntHit");
-                //    }
-                //    if (attackType.StartsWith("ROUpair"))
-                //    {
-                //        baseDmg = 4.2f;
-                //        baseKB = .15f;
-                //        modifiery = .28f;
-                //        m_audioManager.PlaySound("BluntHit");
-                //    }
-                //    if (attackType.StartsWith("RODair"))
-                //    {
-                //        baseDmg = 5.8f;
-                //        baseKB = .5f;
-                //        modifiery = -.7f;
-                //
-                //        playerCharacter.m_cameraShake = true;
-                //        if (enemy.GetComponentInParent<Conqueror>() != null)
-                //        {
-                //            enemy.GetComponentInParent<Conqueror>().m_shakeIntensity = .15f;
-                //            enemy.GetComponentInParent<Conqueror>().m_cameraShake = true;
-                //        }
-                //
-                //        m_audioManager.PlaySound("BluntHit");
-                //    }
-                //    if (attackType.StartsWith("RODSmash"))
-                //    {
-                //        baseDmg = 7.3f + playerCharacter.m_chargeModifier * 1.1f;
-                //        baseKB = .35f + playerCharacter.m_chargeModifier * .05f;
-                //        modifiery = .15f;
-                //        modifierx = .15f;
-                //
-                //        playerCharacter.m_cameraShake = true;
-                //        if (enemy.GetComponentInParent<Conqueror>() != null)
-                //        {
-                //            enemy.GetComponentInParent<Conqueror>().m_shakeIntensity = .18f;
-                //            enemy.GetComponentInParent<Conqueror>().m_cameraShake = true;
-                //        }
-                //
-                //        m_audioManager.PlaySound("UnarmedSmash");
-                //    }
-                //    if (attackType.StartsWith("ROUpSmash"))
-                //    {
-                //        baseDmg = 7.6f + playerCharacter.m_chargeModifier * 1.1f;
-                //        baseKB = .35f + playerCharacter.m_chargeModifier * .05f;
-                //        modifiery = .2f;
-                //        modifierx = .05f;
-                //
-                //        playerCharacter.m_cameraShake = true;
-                //        if (enemy.GetComponentInParent<Conqueror>() != null)
-                //        {
-                //            enemy.GetComponentInParent<Conqueror>().m_shakeIntensity = .18f;
-                //            enemy.GetComponentInParent<Conqueror>().m_cameraShake = true;
-                //        }
-                //
-                //        m_audioManager.PlaySound("UnarmedSmash");
-                //    }
-                //    if (attackType.StartsWith("RODSpecFall"))
-                //    {
-                //        baseDmg = 6.5f;
-                //        baseKB = .25f;
-                //        modifiery = -.15f;
-                //
-                //        playerCharacter.m_cameraShake = true;
-                //        if (enemy.GetComponentInParent<Conqueror>() != null)
-                //        {
-                //            enemy.GetComponentInParent<Conqueror>().m_shakeIntensity = .1f;
-                //            enemy.GetComponentInParent<Conqueror>().m_cameraShake = true;
-                //        }
-                //
-                //        m_audioManager.PlaySound("UnarmedSmash");
-                //    }
-                //    if (attackType.StartsWith("RODSpec1HB"))
-                //    {
-                //        baseDmg = 5.0f;
-                //        baseKB = .2f;
-                //        modifiery = .15f;
-                //
-                //        playerCharacter.m_cameraShake = true;
-                //        if (enemy.GetComponentInParent<Conqueror>() != null)
-                //        {
-                //            enemy.GetComponentInParent<Conqueror>().m_shakeIntensity = .18f;
-                //            enemy.GetComponentInParent<Conqueror>().m_cameraShake = true;
-                //        }
-                //
-                //        m_audioManager.PlaySound("UnarmedSmash");
-                //    }
-                //    if (attackType.StartsWith("RODownTilt"))
-                //    {
-                //        baseDmg = 3.0f;
-                //        baseKB = .15f;
-                //        modifiery = .1f;
-                //        
-                //        m_audioManager.PlaySound("UnarmedLight");
-                //    }
-                //    if (attackType.StartsWith("RODash"))
-                //    {
-                //        baseDmg = 5.2f;
-                //        baseKB = .2f;
-                //        modifiery = .15f;
-                //        modifierx = .12f;
-                //
-                //        playerCharacter.m_cameraShake = true;
-                //        if (enemy.GetComponentInParent<Conqueror>() != null)
-                //        {
-                //            enemy.GetComponentInParent<Conqueror>().m_shakeIntensity = .1f;
-                //            enemy.GetComponentInParent<Conqueror>().m_cameraShake = true;
-                //        }
-                //
-                //        m_audioManager.PlaySound("BluntHit");
-                //    }
-
-                //    else if (attackType.StartsWith("ROUpSpec"))
-                //    {
-                //
-                //        m_player.GetComponentInParent<Conqueror>().m_groundSensor.Disable(0.25f);
-                //
-                //        if (enemy.position.z == 20)
-                //        {
-                //            enemy.GetComponentInParent<Conqueror>().SetLayerRecursively(enemy.gameObject, LayerMask.NameToLayer("iFrameMid"));
-                //        }
-                //        else
-                //        {
-                //            enemy.GetComponentInParent<Conqueror>().SetLayerRecursively(enemy.gameObject, LayerMask.NameToLayer("iFrame"));
-                //        }
-                //
-                //        enemy.SetPositionAndRotation(new Vector3(m_player.transform.position.x, m_player.transform.position.y, m_player.transform.position.z), new Quaternion(0f, 0f, 0f, 0f));
-                //
-                //        baseDmg = 2.0f;
-                //        baseKB = 0.0f;
-                //        multmodifiery = 0.0f;
-                //        collisionData.grab = true;
-                //        m_audioManager.PlaySound("Hurt");
-                //    }
-                //    
-                //    if (attackType.StartsWith("GolemFlick"))
-                //    {
-                //        baseDmg = 7f;
-                //        baseKB = 1f;
-                //        modifiery = 15f;
-                //        m_audioManager.PlaySound("GolemHit");
-                //    }
-                //}
 
 
                 //golem attack
@@ -828,7 +243,7 @@ public class CombatManager : MonoBehaviour
                 if (enemy.GetComponentInParent<Conqueror>() != null)
                 {
                     //Apply damage
-                    enemy.GetComponentInParent<Conqueror>().TakeDamage(baseDmg);
+                    enemy.GetComponentInParent<Conqueror>().TakeDamage(baseDmg, collisionData.noFlinch);
                     //Apply Knockback
                     enemy.GetComponentInParent<Conqueror>().incomingAngle = attackAngle;
                     enemy.GetComponentInParent<Conqueror>().incomingKnockback = baseKB;
@@ -926,32 +341,16 @@ public class CombatManager : MonoBehaviour
                     m_audioManager.PlaySound("Block");
                 }
 
-                else if (enemy.GetComponentInParent<CPUBehavior>() != null)
-                {
-                    //Apply damage
-                    enemy.GetComponentInParent<CPUBehavior>().TakeDamage(baseDmg);
-                    //Apply Knockback
-                    enemy.GetComponentInParent<CPUBehavior>().incomingAngle = attackAngle;
-                    enemy.GetComponentInParent<CPUBehavior>().incomingKnockback = baseKB;
-                    enemy.GetComponentInParent<CPUBehavior>().incomingXMod = modifierx;
-                    enemy.GetComponentInParent<CPUBehavior>().incomingYMod = (modifiery + (enemy.GetComponentInParent<Conqueror>().currentDamage / 4)) * multmodifiery;
-                    enemy.GetComponentInParent<CPUBehavior>().HitStun(hitstun);
-
-                    if (!collisionData.groundPound && !collisionData.noHitStop)
-                    {
-                        playerCharacter.m_isInHitStop = true;
-                        playerCharacter.m_hitStopDuration = enemy.GetComponentInParent<Conqueror>().m_hitStunDuration * .8f;
-                    }
-                }
+                
                 else if (enemy.GetComponentInParent<Conqueror>() != null)
                 {
                     //Apply damage
-                    enemy.GetComponentInParent<Conqueror>().TakeDamage(baseDmg);
+                    enemy.GetComponentInParent<Conqueror>().TakeDamage(baseDmg, collisionData.noFlinch);
                     //Apply Knockback
                     enemy.GetComponentInParent<Conqueror>().incomingAngle = attackAngle;
                     enemy.GetComponentInParent<Conqueror>().incomingKnockback = baseKB;
                     enemy.GetComponentInParent<Conqueror>().incomingXMod = modifierx;
-                    enemy.GetComponentInParent<Conqueror>().incomingYMod = (modifiery + (enemy.GetComponentInParent<Conqueror>().currentDamage / 4)) * multmodifiery;
+                    enemy.GetComponentInParent<Conqueror>().incomingYMod = (modifiery + (enemy.GetComponentInParent<Conqueror>().currentDamage / 6.5f)) * multmodifiery;
                     if (collisionData.grab)
                     {
                         enemy.GetComponentInParent<Conqueror>().incomingYMod = 0;
@@ -961,11 +360,20 @@ public class CombatManager : MonoBehaviour
                     {
                         enemy.GetComponentInParent<Conqueror>().HitStun(hitstun);
                     }
-                    
                     if (!collisionData.groundPound && !collisionData.noHitStop)
                     {
-                        playerCharacter.m_isInHitStop = true;
-                        playerCharacter.m_hitStopDuration = enemy.GetComponentInParent<Conqueror>().m_hitStunDuration * .8f;
+                        if (playerCharacter)
+                        {
+                            playerCharacter.m_isInHitStop = true;
+                            playerCharacter.m_hitStopDuration = enemy.GetComponentInParent<Conqueror>().m_hitStunDuration * .75f;
+                        }
+                        else if (minion)
+                        {
+                            enemy.GetComponentInParent<Conqueror>().incomingYMod = 0;
+                            enemy.GetComponentInParent<Conqueror>().incomingKnockback = .0f;
+                            minion.m_isInHitStop = true;
+                            minion.m_hitStopDuration = enemy.GetComponentInParent<Conqueror>().m_hitStunDuration;
+                        }
                     }
                 }
 
@@ -988,7 +396,9 @@ public class CombatManager : MonoBehaviour
 
             }
             //hit a minion
-            if (enemy.GetComponentInParent<MinionBehavior>() != null && hitEnemy != enemy.name && enemy.GetComponentInParent<MinionBehavior>().teamColor != m_player.GetComponentInParent<Conqueror>().teamColor)
+            if (enemy.GetComponentInParent<MinionBehavior>() != null && hitEnemy != enemy.name && 
+                ((m_player.GetComponentInParent<Conqueror>() && (enemy.GetComponentInParent<MinionBehavior>().teamColor != m_player.GetComponentInParent<Conqueror>().teamColor)) || 
+                (m_player.GetComponentInParent<MinionBehavior>() && (enemy.GetComponentInParent<MinionBehavior>().teamColor != m_player.GetComponentInParent<MinionBehavior>().teamColor))))
             {
                 hitEnemy = enemy.name;
                 var above = false;
@@ -1028,6 +438,12 @@ public class CombatManager : MonoBehaviour
 
                 // Convert the angle to degrees.
                 float attackAngle = angleInRadians * Mathf.Rad2Deg;
+
+                var midPointX = (targetclosestPoint.x + sourceclosestPoint.x) / 2f;
+                var midPointY = (targetclosestPoint.y + sourceclosestPoint.y) / 2f;
+
+                Instantiate(enemy.GetComponentInParent<MinionBehavior>().LightAttackFX, new Vector3(midPointX, midPointY, transform.position.z),
+                new Quaternion(0f, 0f, 0f, 0f), transform);
 
                 //Apply damage
                 enemy.GetComponentInParent<MinionBehavior>().TakeDamage(baseDmg);
@@ -1097,13 +513,36 @@ public class CombatManager : MonoBehaviour
         //This second collisionData check is intentional. Redundancy for potential outside sources of destroying
         if (collisionData)
         {
-            if (collisionData.transform.gameObject.GetComponent<ProjectileBehavior>() || collisionData.transform.gameObject.GetComponent<ArrowBehavior>())
+            if (collisionData.transform.name.StartsWith("ROUpSpecHB2"))
+            {
+
+            }
+            else if (collisionData.transform.name.StartsWith("ROUpSpecHB"))
             {
                 GameObject.Destroy(collisionData.transform.gameObject);
             }
+            if (collisionData.transform.gameObject.GetComponent<ProjectileBehavior>())
+            {
+                if ((collisionData.transform.name.StartsWith("MagicArrow") && collisionData.transform.gameObject.GetComponent<ProjectileBehavior>().charged) || collisionData.transform.name.StartsWith("RRFSpecExplode"))
+                {
+
+                }
+                else
+                {
+                    GameObject.Destroy(collisionData.transform.gameObject);
+                }
+                
+            }
             else if (collisionData.transform.parent && (collisionData.transform.parent.gameObject.GetComponent<ProjectileBehavior>() || collisionData.transform.parent.gameObject.GetComponent<ArrowBehavior>()))
             {
-                GameObject.Destroy(collisionData.transform.parent.gameObject);
+                if ((collisionData.transform.name.StartsWith("MagicArrow") && collisionData.transform.gameObject.GetComponent<ProjectileBehavior>().charged) || collisionData.transform.name.StartsWith("RRFSpecExplode"))
+                {
+
+                }
+                else
+                {
+                    GameObject.Destroy(collisionData.transform.gameObject);
+                }
             }
         }
         
@@ -1170,22 +609,10 @@ public class CombatManager : MonoBehaviour
                 m_audioManager.PlaySound("Block");
             }
 
-            else if (enemy.GetComponentInParent<CPUBehavior>() != null)
-            {
-                //Apply damage
-                enemy.GetComponentInParent<CPUBehavior>().TakeDamage(baseDmg);
-                //Apply Knockback
-                enemy.GetComponentInParent<CPUBehavior>().incomingAngle = attackAngle;
-                enemy.GetComponentInParent<CPUBehavior>().incomingKnockback = baseKB;
-                enemy.GetComponentInParent<CPUBehavior>().incomingXMod = modifierx;
-                enemy.GetComponentInParent<CPUBehavior>().incomingYMod = (modifiery + (enemy.GetComponentInParent<Conqueror>().currentDamage / 4)) * multmodifiery;
-                enemy.GetComponentInParent<CPUBehavior>().HitStun(hitstun);
-
-            }
             else if (enemy.GetComponentInParent<Conqueror>() != null)
             {
                 //Apply damage
-                enemy.GetComponentInParent<Conqueror>().TakeDamage(baseDmg);
+                enemy.GetComponentInParent<Conqueror>().TakeDamage(baseDmg, false);
                 //Apply Knockback
                 enemy.GetComponentInParent<Conqueror>().incomingAngle = attackAngle;
                 enemy.GetComponentInParent<Conqueror>().incomingKnockback = baseKB;

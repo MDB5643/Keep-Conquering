@@ -58,14 +58,21 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.27944946, y: 0.06838143}
-      - {x: 0.26660156, y: 0.49416792}
-      - {x: 0.2652725, y: 0.61130226}
-      - {x: 0.23557648, y: 0.65302044}
+    - - {x: 0.27624813, y: -0.23423846}
+      - {x: 0.38282934, y: -0.075778455}
+      - {x: 0.40548834, y: 0.044807613}
+      - {x: 0.3995121, y: 0.19139846}
+      - {x: 0.42457175, y: 0.46984488}
+      - {x: 0.50334847, y: 0.70546806}
+      - {x: 0.26675838, y: 0.69199777}
       - {x: 0.2159794, y: 0.69326615}
-      - {x: 0.17338306, y: 0.5546577}
-      - {x: 0.12032491, y: 0.23457026}
-      - {x: 0.19354981, y: -0.16672873}
+      - {x: 0.006306112, y: 0.6974115}
+      - {x: 0.044757426, y: 0.39777973}
+      - {x: 0.05924359, y: 0.27072522}
+      - {x: 0.049228966, y: 0.21062183}
+      - {x: 0.060883686, y: 0.03564024}
+      - {x: 0.08957973, y: -0.07611215}
+      - {x: 0.1857543, y: -0.22129703}
 --- !u!114 &6743512578445620878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,6 +86,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLingerTime: 0.05
+  linger: 1
 --- !u!114 &9184792979082347307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,9 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseDamage: 6
-  baseKB: 0.3
-  hitStun: 0.16
+  baseDamage: 5.2
+  baseKB: 0.31
+  hitStun: 0.2
   damageModifier: 0
   KBModifier: 0
   modifierY: -5
@@ -104,6 +112,11 @@ MonoBehaviour:
   shakeScreen: 0
   smash: 0
   grab: 0
+  continuous: 0
+  groundPound: 0
+  noHitStop: 0
+  noFlinch: 0
+  guardBreak: 0
   soundName: Hurt
   hitEnemies: []
 --- !u!1 &4352725372097683147
@@ -130,7 +143,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4352725372097683147}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.254, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7283436379198611578}

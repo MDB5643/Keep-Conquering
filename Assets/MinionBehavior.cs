@@ -31,12 +31,24 @@ public class MinionBehavior : MonoBehaviour
     public GameObject EyeTarget;
     public GameObject KeepEyeTarget;
     public GameObject EyeShotFX;
+    public GameObject LightAttackFX;
     private string CurrentJumpTarget = "";
     public bool inRange; //check if player is in range
     public GameObject hotZone;
     public GameObject triggerArea;
     public bool isGrappled;
     public bool m_isInHotZone = false;
+    public bool m_isInHitStop;
+    bool m_isInKnockback = false;
+    float m_timeSinceKnockBack = 3.0f;
+    public float m_KnockBackDuration = 0.5f;
+    public float m_KnockBackMomentumX = 0.0f;
+    public float m_KnockBackMomentumY = 0.0f;
+    public bool isInStartUp = false;
+    public float m_hitStopDuration;
+    public float m_timeSinceHitStop = 0.0f;
+
+    public CombatManager combatManager;
 
     private Animator m_animator;
     private Rigidbody2D m_body2d;
@@ -60,7 +72,7 @@ public class MinionBehavior : MonoBehaviour
     public bool m_idle = false;
 
     private Vector3 m_climbPosition;
-    private int m_facingDirection = 1;
+    public int m_facingDirection = 1;
     private float m_disableMovementTimer = 0.0f;
     private float m_parryTimer = 0.0f;
     private float m_respawnTimer = 0.0f;
@@ -104,6 +116,8 @@ public class MinionBehavior : MonoBehaviour
         m_SR = GetComponentInChildren<SpriteRenderer>();
         m_gravity = m_body2d.gravityScale;
 
+        combatManager = gameObject.AddComponent<CombatManager>();
+
         m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_Prototype>();
         m_wallSensorR1 = transform.Find("WallSensor_R1").GetComponent<Sensor_Prototype>();
         m_wallSensorR2 = transform.Find("WallSensor_R2").GetComponent<Sensor_Prototype>();
@@ -131,7 +145,7 @@ public class MinionBehavior : MonoBehaviour
             }
             target = firstLauncherTarget.transform;
         }
-        if (MenuEvents.gameModeSelect == 3)
+        if (MenuEvents.gameModeSelect == 3 || MenuEvents.gameModeSelect == 4 || MenuEvents.gameModeSelect == 4)
         {
             if (teamColor == "Red")
             {
@@ -141,7 +155,10 @@ public class MinionBehavior : MonoBehaviour
             {
                 EyeTarget = GameObject.Find("BlueMinionEyeTarget");
             }
-            target = EyeTarget.transform;
+            if (EyeTarget)
+            {
+                target = EyeTarget.transform;
+            }
         }
 
 
@@ -188,11 +205,18 @@ public class MinionBehavior : MonoBehaviour
             }
         }
 
-        else if (MenuEvents.gameModeSelect == 3)
+        else if (MenuEvents.gameModeSelect == 3 || MenuEvents.gameModeSelect == 4)
         {
             if (target == null)
             {
-                target = EyeTarget.transform;
+                if (EyeTarget != null)
+                {
+                    target = EyeTarget.transform;
+                }
+                else
+                {
+                    target = transform;
+                }
             }
         }
 
@@ -213,12 +237,6 @@ public class MinionBehavior : MonoBehaviour
             m_dead = true;
         }
 
-        //m_DamageDisplay.text = currentDamage + "%";
-
-        //if (!InsideofLimits() && !inRange && m_timeSinceAttack > 0.2f)
-        //{
-        //    SelectTarget();
-        //}
 
         // Decrease death respawn timer 
         m_respawnTimer -= Time.deltaTime;
@@ -251,167 +269,243 @@ public class MinionBehavior : MonoBehaviour
 
     public void Move()
     {
-        if (!m_inHitStun && !m_dead)
+        if (!m_inHitStun && !isGrappled && !m_dead)
         {
-            
-            //Check if character just landed on the ground
-            if (!m_grounded && m_groundSensor.State())
+            if (!m_isInHitStop)
             {
-                m_grounded = true;
-                m_animator.SetBool("Grounded", m_grounded);
-                
-            }
 
-            //Check if character just started falling
-            if (m_grounded && !m_groundSensor.State())
-            {
-                m_grounded = false;
-                m_animator.SetBool("Grounded", m_grounded);
-            }
-
-            if (m_grounded)
-            {
-                m_launched = false;
-            }
-
-            // -- Handle input and movement
-            if (m_disableMovementTimer < 0.0f && !m_launched && !m_idle && m_grounded)
-            {
-                Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
-
-                if(target.GetComponentInParent<Conqueror>() != null && Mathf.Abs(targetPosition.x - transform.position.x) <= .5f)
+                //Check if character just landed on the ground
+                if (!m_grounded && m_groundSensor.State())
                 {
-                    //spacing while attacking
+                    m_grounded = true;
+                    m_animator.SetBool("Grounded", m_grounded);
+
                 }
-                else
+
+                //Check if character just started falling
+                if (m_grounded && !m_groundSensor.State())
                 {
-                    transform.position = Vector2.MoveTowards(transform.position, targetPosition, m_runSpeed * Time.deltaTime);
+                    m_grounded = false;
+                    m_animator.SetBool("Grounded", m_grounded);
                 }
-                
 
-                m_moving = true;
-            }
-            else
-            {
-                m_moving = false;
-            }
-
-
-            // Set AirSpeed in animator
-            m_animator.SetFloat("AirSpeedY", m_body2d.velocity.y);
-
-            // Set Animation layer for hiding sword
-            int boolInt = m_hideSword ? 1 : 0;
-            m_animator.SetLayerWeight(1, boolInt);
-
-            // Check if all sensors are setup properly
-            if (m_wallSensorR1 && m_wallSensorR2 && m_wallSensorL1 && m_wallSensorL2)
-            {
-                bool prevWallSlide = m_wallSlide;
-                //Wall Slide
-                // True if either both right sensors are colliding and character is facing right
-                // OR if both left sensors are colliding and character is facing left
-                m_wallSlide = (m_wallSensorR1.State() && m_wallSensorR2.State() && m_facingDirection == 1) || (m_wallSensorL1.State() && m_wallSensorL2.State() && m_facingDirection == -1);
                 if (m_grounded)
-                    m_wallSlide = false;
-                m_animator.SetBool("WallSlide", m_wallSlide);
-                //Play wall slide sound
-                if (prevWallSlide && !m_wallSlide)
-                    AudioManager_PrototypeHero.instance.StopSound("WallSlide");
-
-
-                //Grab Ledge
-                // True if either bottom right sensor is colliding and top right sensor is not colliding 
-                // OR if bottom left sensor is colliding and top left sensor is not colliding 
-                bool shouldGrab = !m_ledgeClimb && !m_ledgeGrab && ((m_wallSensorR1.State() && !m_wallSensorR2.State()) || (m_wallSensorL1.State() && !m_wallSensorL2.State()));
-                if (shouldGrab)
                 {
-                    Vector3 rayStart;
-                    if (m_facingDirection == 1)
-                        rayStart = m_wallSensorR2.transform.position + new Vector3(0.2f, 0.0f, 0.0f);
-                    else
-                        rayStart = m_wallSensorL2.transform.position - new Vector3(0.2f, 0.0f, 0.0f);
+                    m_launched = false;
+                }
 
-                    var hit = Physics2D.Raycast(rayStart, Vector2.down, 1.0f);
-
-                    GrabableLedge ledge = null;
-                    if (hit)
-                        ledge = hit.transform.GetComponent<GrabableLedge>();
-
-                    if (ledge)
+                // -- Handle input and movement
+                // SlowDownSpeed helps decelerate the characters when stopping
+                float SlowDownSpeed = m_moving ? 1.0f : 0.5f;
+                float KBSlowDownSpeed = 0.8f;
+                // Set movement
+                if (!m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_animator.GetBool("isParrying") && m_disableMovementTimer < 0.0f && !m_launched)
+                {
+                    if (!m_isInKnockback)
                     {
-                        m_ledgeGrab = true;
-                        m_body2d.velocity = Vector2.zero;
-                        m_body2d.gravityScale = 0;
+                        m_timeSinceKnockBack = 0.0f;
+                        if (m_KnockBackMomentumX <= 1 && m_KnockBackMomentumY <= 1)
+                        {
+                            if (m_animator.GetBool("isParrying") )
+                            {
+                                m_body2d.velocity = new Vector2(m_walkSpeed * SlowDownSpeed, m_body2d.velocity.y);
+                            }
+                            else
+                            {
+                                if (Mathf.Abs(m_body2d.velocity.x) >= 6.5)
+                                {
 
-                        m_climbPosition = ledge.transform.position + new Vector3(ledge.topClimbPosition.x, ledge.topClimbPosition.y, 0);
-                        if (m_facingDirection == 1)
-                            transform.position = ledge.transform.position + new Vector3(ledge.leftGrabPosition.x, ledge.leftGrabPosition.y, 0);
+                                    if (!m_grounded)
+                                    {
+                                        m_body2d.velocity = new Vector2(m_body2d.velocity.x * .4f, m_body2d.velocity.y);
+                                    }
+                                    else
+                                    {
+                                        m_body2d.velocity = new Vector2(m_body2d.velocity.x * .6f, m_body2d.velocity.y);
+                                    }
+
+                                }
+                                else
+                                {
+                                    //Default ground/air movement
+                                    Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
+                                    if (m_grounded)
+                                    {
+                                        if (target.GetComponentInParent<Conqueror>() != null && Mathf.Abs(targetPosition.x - transform.position.x) <= .5f)
+                                        {
+                                            //spacing while attacking
+                                        }
+                                        else
+                                        {
+                                            transform.position = Vector2.MoveTowards(transform.position, targetPosition, m_runSpeed * Time.deltaTime);
+                                        }
+
+
+                                        m_moving = true;
+                                    }
+                                    
+                                }
+
+                            }
+
+                        }
                         else
-                            transform.position = ledge.transform.position + new Vector3(ledge.rightGrabPosition.x, ledge.rightGrabPosition.y, 0);
+                        {
+                            m_body2d.velocity = new Vector2(m_KnockBackMomentumX, m_KnockBackMomentumY);
+                            
+                            m_KnockBackMomentumX = m_KnockBackMomentumX * KBSlowDownSpeed;
+                            m_KnockBackMomentumY = m_KnockBackMomentumY * KBSlowDownSpeed;
+                        }
+
                     }
-                    m_animator.SetBool("LedgeGrab", m_ledgeGrab);
+                    else
+                    {
+                        m_timeSinceKnockBack += Time.deltaTime;
+                        if (m_timeSinceKnockBack > m_KnockBackDuration)
+                        {
+                            m_moving = false;
+                            m_isInKnockback = false;
+                            m_KnockBackMomentumX = m_body2d.velocity.x;
+                            m_KnockBackMomentumY = m_body2d.velocity.y;
+                            m_animator.SetBool("Knockback", false);
+                        }
+
+                    }
                 }
 
-            }
 
+                // Set AirSpeed in animator
+                m_animator.SetFloat("AirSpeedY", m_body2d.velocity.y);
 
-            // -- Handle Animations --
-            //Death
-            var distance = Vector2.Distance(transform.position, target.position);
+                // Set Animation layer for hiding sword
+                int boolInt = m_hideSword ? 1 : 0;
+                m_animator.SetLayerWeight(1, boolInt);
 
-            //Attack
-
-            if (attackDistance >= distance && inRange && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > 0.8f)
-            {
-                if (target.GetComponentInParent<MinionBehavior>() && target.GetComponentInParent<MinionBehavior>().m_dead)
+                // Check if all sensors are setup properly
+                if (m_wallSensorR1 && m_wallSensorR2 && m_wallSensorL1 && m_wallSensorL2)
                 {
-                    //do nothing
+                    bool prevWallSlide = m_wallSlide;
+                    //Wall Slide
+                    // True if either both right sensors are colliding and character is facing right
+                    // OR if both left sensors are colliding and character is facing left
+                    m_wallSlide = (m_wallSensorR1.State() && m_wallSensorR2.State() && m_facingDirection == 1) || (m_wallSensorL1.State() && m_wallSensorL2.State() && m_facingDirection == -1);
+                    if (m_grounded)
+                        m_wallSlide = false;
+                    m_animator.SetBool("WallSlide", m_wallSlide);
+                    //Play wall slide sound
+                    if (prevWallSlide && !m_wallSlide)
+                        AudioManager_PrototypeHero.instance.StopSound("WallSlide");
+
+
+                    //Grab Ledge
+                    // True if either bottom right sensor is colliding and top right sensor is not colliding 
+                    // OR if bottom left sensor is colliding and top left sensor is not colliding 
+                    bool shouldGrab = !m_ledgeClimb && !m_ledgeGrab && ((m_wallSensorR1.State() && !m_wallSensorR2.State()) || (m_wallSensorL1.State() && !m_wallSensorL2.State()));
+                    if (shouldGrab)
+                    {
+                        Vector3 rayStart;
+                        if (m_facingDirection == 1)
+                            rayStart = m_wallSensorR2.transform.position + new Vector3(0.2f, 0.0f, 0.0f);
+                        else
+                            rayStart = m_wallSensorL2.transform.position - new Vector3(0.2f, 0.0f, 0.0f);
+
+                        var hit = Physics2D.Raycast(rayStart, Vector2.down, 1.0f);
+
+                        GrabableLedge ledge = null;
+                        if (hit)
+                            ledge = hit.transform.GetComponent<GrabableLedge>();
+
+                        if (ledge)
+                        {
+                            m_ledgeGrab = true;
+                            m_body2d.velocity = Vector2.zero;
+                            m_body2d.gravityScale = 0;
+
+                            m_climbPosition = ledge.transform.position + new Vector3(ledge.topClimbPosition.x, ledge.topClimbPosition.y, 0);
+                            if (m_facingDirection == 1)
+                                transform.position = ledge.transform.position + new Vector3(ledge.leftGrabPosition.x, ledge.leftGrabPosition.y, 0);
+                            else
+                                transform.position = ledge.transform.position + new Vector3(ledge.rightGrabPosition.x, ledge.rightGrabPosition.y, 0);
+                        }
+                        m_animator.SetBool("LedgeGrab", m_ledgeGrab);
+                    }
+
                 }
+
+
+                // -- Handle Animations --
+                //Death
+                var distance = Vector2.Distance(transform.position, target.position);
+
+                //Attack
+
+                if (attackDistance >= distance && inRange && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > 1f)
+                {
+                    if (target.GetComponentInParent<MinionBehavior>() && target.GetComponentInParent<MinionBehavior>().m_dead)
+                    {
+                        //do nothing
+                    }
+                    else
+                    {
+                        // Reset timer
+                        m_timeSinceAttack = 0.0f;
+
+                        m_currentAttack++;
+
+                        // Loop back to one after second attack
+                        if (m_currentAttack > 2)
+                            m_currentAttack = 1;
+
+                        // Reset Attack combo if time since last attack is too large
+                        if (m_timeSinceAttack > 1.0f)
+                            m_currentAttack = 1;
+
+                        // Call one of the two attack animations "Attack1" or "Attack2"
+                        m_animator.SetTrigger("Attack");
+
+                        //Attack("jab", jabPoint);
+
+                        // Disable movement 
+                        m_disableMovementTimer = 0.35f;
+                    }
+
+                }
+
+
+                //Run
+                else if (m_moving)
+                {
+                    m_animator.SetInteger("AnimState", 2);
+                    m_maxSpeed = m_runSpeed;
+                }
+
+                //Idle
                 else
-                {
-                    // Reset timer
-                    m_timeSinceAttack = 0.0f;
-
-                    m_currentAttack++;
-
-                    // Loop back to one after second attack
-                    if (m_currentAttack > 2)
-                        m_currentAttack = 1;
-
-                    // Reset Attack combo if time since last attack is too large
-                    if (m_timeSinceAttack > 1.0f)
-                        m_currentAttack = 1;
-
-                    // Call one of the two attack animations "Attack1" or "Attack2"
-                    m_animator.SetTrigger("Attack");
-
-                    Attack("jab", jabPoint);
-
-                    // Disable movement 
-                    m_disableMovementTimer = 0.35f;
-                }
-                
+                    m_animator.SetInteger("AnimState", 0);
             }
-
-            //Run
-            else if (m_moving)
-            {
-                m_animator.SetInteger("AnimState", 2);
-                m_maxSpeed = m_runSpeed;
-            }
-
-            //Idle
             else
-                m_animator.SetInteger("AnimState", 0);
-
+            {
+                m_body2d.velocity = Vector2.zero;
+                m_body2d.gravityScale = 0;
+                m_timeSinceHitStop += Time.deltaTime;
+                m_animator.speed = 0;
+                m_moving = false;
+                if (m_timeSinceHitStop >= m_hitStopDuration)
+                {
+                    m_body2d.gravityScale = 1.25f;
+                    m_isInHitStop = false;
+                    m_animator.speed = 1;
+                }
+            }
         }
         else
         {
+            m_moving = false;
             m_timeSinceHitStun += Time.deltaTime;
             if (m_timeSinceHitStun >= m_hitStunDuration)
             {
                 Knockback(incomingKnockback, incomingAngle, incomingXMod, incomingYMod);
+                m_isInKnockback = true;
             }
         }
     }
@@ -498,11 +592,13 @@ public class MinionBehavior : MonoBehaviour
             {
                 var e_Rigidbody2D = GetComponent<Rigidbody2D>();
                 e_Rigidbody2D.AddForce(new Vector2(0, 3), ForceMode2D.Impulse);
+                m_animator.SetTrigger("Jump");
             }
             if (coll.gameObject.CompareTag("MinionJumpLeft"))
             {
                 var e_Rigidbody2D = GetComponent<Rigidbody2D>();
                 e_Rigidbody2D.AddForce(new Vector2(-8, 3), ForceMode2D.Impulse);
+                m_animator.SetTrigger("Jump");
             }
 
         }
@@ -512,129 +608,6 @@ public class MinionBehavior : MonoBehaviour
         }
     }
 
-    void Attack(string attackType, Transform attackPoint)
-    {
-        float damageModifier = 0.0f;
-
-        var playerCollider = GetComponent<CapsuleCollider2D>();
-
-        Vector2 attackHitboxCenter = attackPoint.position;
-
-        //Detect enemy collision with attack
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackHitboxCenter, jabRange, enemyLayers);
-
-        foreach (Collider2D enemy in hitEnemies)
-        {
-            if (enemy.GetComponentInParent<Conqueror>() != null && enemy.tag == "Player" && enemy.GetComponentInParent<Conqueror>().teamColor != teamColor)
-            {
-                //Detect impact angle
-                var targetclosestPoint = new Vector2(enemy.transform.position.x, enemy.transform.position.y);
-
-                var sourceclosestPoint = new Vector2(playerCollider.transform.position.x, playerCollider.transform.position.y);
-
-                var positionDifference = targetclosestPoint - sourceclosestPoint;
-
-                //Must be done to detect y axis angle
-                float angleInRadians = Mathf.Atan2(positionDifference.y, positionDifference.x);
-
-                // Convert the angle to degrees.
-                float attackAngle = angleInRadians * Mathf.Rad2Deg;
-
-                //Block check
-                if (enemy.GetComponentInParent<Conqueror>().m_animator.GetBool("isParrying") && enemy.GetComponentInParent<Conqueror>().m_facingDirection == 1 && attackAngle > 90 && attackAngle < 225)
-                {
-                    enemy.GetComponentInParent<Conqueror>().Block(jabDamage);
-                }
-                else if (enemy.GetComponentInParent<Conqueror>().m_animator.GetBool("isParrying") && enemy.GetComponentInParent<Conqueror>().m_facingDirection == -1 && (attackAngle < 90 || attackAngle > 315))
-                {
-                    enemy.GetComponentInParent<Conqueror>().Block(jabDamage);
-                }
-                else
-                {
-                    //Apply damage
-                    enemy.GetComponentInParent<Conqueror>().TakeDamage(jabDamage);
-                    //Apply Knockback
-                    enemy.GetComponentInParent<Conqueror>().incomingAngle = attackAngle;
-                    enemy.GetComponentInParent<Conqueror>().incomingKnockback = 0;
-                    enemy.GetComponentInParent<Conqueror>().incomingXMod = 0f;
-                    enemy.GetComponentInParent<Conqueror>().incomingYMod = 2f;
-                    enemy.GetComponentInParent<Conqueror>().HitStun(.1f);
-                    //enemy.GetComponentInParent<PrototypeHero>().Knockback(jabKB, attackAngle, 0, 2);
-                }
-                
-
-            }
-            else if (enemy.GetComponentInParent<TheChampion>() != null && enemy.tag == "Player")
-            {
-                //Detect impact angle
-                var targetclosestPoint = new Vector2(enemy.transform.position.x, enemy.transform.position.y);
-
-                var sourceclosestPoint = new Vector2(playerCollider.transform.position.x, playerCollider.transform.position.y);
-
-                var positionDifference = targetclosestPoint - sourceclosestPoint;
-
-                //Must be done to detect y axis angle
-                float angleInRadians = Mathf.Atan2(positionDifference.y, positionDifference.x);
-
-                // Convert the angle to degrees.
-                float attackAngle = angleInRadians * Mathf.Rad2Deg;
-
-                //Block check
-                if (enemy.GetComponentInParent<TheChampion>().m_animator.GetBool("isParrying") && enemy.GetComponentInParent<TheChampion>().m_facingDirection == 1 && attackAngle > 90 && attackAngle < 225)
-                {
-                    enemy.GetComponentInParent<TheChampion>().Block(jabDamage);
-                }
-                else if (enemy.GetComponentInParent<TheChampion>().m_animator.GetBool("isParrying") && enemy.GetComponentInParent<TheChampion>().m_facingDirection == -1 && (attackAngle < 90 || attackAngle > 315))
-                {
-                    enemy.GetComponentInParent<TheChampion>().Block(jabDamage);
-                }
-                else
-                {
-                    //Apply damage
-                    enemy.GetComponentInParent<TheChampion>().TakeDamage(jabDamage);
-                    enemy.GetComponentInParent<TheChampion>().incomingKnockback = 0;
-                    enemy.GetComponentInParent<TheChampion>().incomingXMod = 0f;
-                    enemy.GetComponentInParent<TheChampion>().incomingYMod = 2f;
-                    enemy.GetComponentInParent<TheChampion>().HitStun(.1f);
-                }
-
-
-            }
-            if (enemy.GetComponent<MinionTowerTarget>() != null)
-            {
-                enemy.GetComponentInParent<TowerEye>().TakeDamage(jabDamage);
-            }
-            if (enemy.GetComponentInParent<MinionBehavior>() && enemy.GetComponentInParent<MinionBehavior>().teamColor != teamColor)
-            {
-                //Detect impact angle
-                var targetclosestPoint = new Vector2(enemy.transform.position.x, enemy.transform.position.y);
-                var sourceclosestPoint = new Vector2(playerCollider.transform.position.x, playerCollider.transform.position.y);
-                if (attackType.StartsWith("ProtoDair"))
-                {
-                    var m_Rigidbody2D = GetComponent<Rigidbody2D>();
-                    m_Rigidbody2D.AddForce(new Vector2(0, 15), ForceMode2D.Impulse);
-                }
-
-
-                var positionDifference = targetclosestPoint - sourceclosestPoint;
-
-                //Must be done to detect y axis angle
-                float angleInRadians = Mathf.Atan2(positionDifference.y, positionDifference.x);
-
-                // Convert the angle to degrees.
-                float attackAngle = angleInRadians * Mathf.Rad2Deg;
-
-                //Apply damage
-                enemy.GetComponentInParent<MinionBehavior>().TakeDamage(jabDamage);
-                //Apply Knockback          
-                enemy.GetComponentInParent<MinionBehavior>().incomingAngle = attackAngle;
-                enemy.GetComponentInParent<MinionBehavior>().incomingKnockback = 0;
-                enemy.GetComponentInParent<MinionBehavior>().incomingXMod = 0;
-                enemy.GetComponentInParent<MinionBehavior>().incomingYMod = 2;
-                enemy.GetComponentInParent<MinionBehavior>().HitStun(.1f);
-            }
-        }
-    }
 
     void SetLayerRecursively(GameObject obj, int newLayer)
     {
@@ -755,7 +728,7 @@ public class MinionBehavior : MonoBehaviour
             }
         }
         
-        else if (MenuEvents.gameModeSelect == 3)
+        else if (MenuEvents.gameModeSelect == 3 || MenuEvents.gameModeSelect == 4)
         {
             target = EyeTarget.transform;
         }
@@ -766,7 +739,14 @@ public class MinionBehavior : MonoBehaviour
     {
         if (target == null)
         {
-            target = TowerPlatformTarget.transform;
+            if (EyeTarget != null)
+            {
+                target = EyeTarget.transform;
+            }
+            else
+            {
+                target = transform; 
+            }
         }
 
         Vector3 rotation = transform.eulerAngles;
@@ -830,7 +810,7 @@ public class MinionBehavior : MonoBehaviour
         //Make a vector inverse of collision angle
         float radians = contactAngle * Mathf.Deg2Rad;
         Vector2 KBVector = new Vector2(Mathf.Cos(radians), Mathf.Sin(radians));
-        BaseKB *= (currentDamage * 0.75f);
+        BaseKB *= (currentDamage);
 
         //Calculate knockback force
         Vector2 KBForce = KBVector * BaseKB;
@@ -839,7 +819,7 @@ public class MinionBehavior : MonoBehaviour
 
         var e_Rigidbody2D = GetComponent<Rigidbody2D>();
         transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-        e_Rigidbody2D.AddForce(KBForce, ForceMode2D.Impulse);
+        e_Rigidbody2D.AddForce(KBForce*3, ForceMode2D.Impulse);
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -986,6 +966,7 @@ public class MinionBehavior : MonoBehaviour
                     //SelectTarget();
                     target = GondolaTarget.transform;
                     CurrentJumpTarget = "Gondola";
+                    m_animator.SetTrigger("Jump");
                 }
                 if (collision.transform.tag == "MinionJumpLeft")
                 {
@@ -993,6 +974,7 @@ public class MinionBehavior : MonoBehaviour
                     transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-6f, 5), ForceMode2D.Impulse);
                     CurrentJumpTarget = "VerticalPlatform";
                     SelectTarget();
+                    m_animator.SetTrigger("Jump");
                 }
                 else if (collision.transform.tag == "MinionJumpUp" && !m_idle && m_grounded && CurrentJumpTarget == "VerticalPlatform")
                 {
@@ -1000,6 +982,7 @@ public class MinionBehavior : MonoBehaviour
                     transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(0, 9), ForceMode2D.Impulse);
                     m_launched = true;
                     CurrentJumpTarget = "MainPlatform";
+                    m_animator.SetTrigger("Jump");
                 }
                 //else if (collision.transform.tag == "MinionBoardGondola" && m_grounded && (target.name == "RedMinionGondolaTarget" || target.name == "MinionAfterEyeTarget" || target.name == "LeftEdge") && !m_launched)
                 //{
@@ -1016,6 +999,7 @@ public class MinionBehavior : MonoBehaviour
                     m_launched = true;
                     target = GondolaEdgeTarget.transform;
                     CurrentJumpTarget = "EnemyPlatform";
+                    m_animator.SetTrigger("Jump");
                 }
                 else if (collision.transform.tag == "Gondola" && m_grounded && transform.position.y > collision.transform.position.y)
                 {
@@ -1029,7 +1013,7 @@ public class MinionBehavior : MonoBehaviour
                     {
                         CurrentJumpTarget = "EnemyKeep";
                     }
-
+                    m_animator.SetTrigger("Jump");
                 }
                 else if (collision.transform.tag == "MinionJumpToEnemyPlat" && m_grounded && CurrentJumpTarget == "EnemyPlatform" && EyeTarget != null)
                 {
@@ -1038,6 +1022,7 @@ public class MinionBehavior : MonoBehaviour
                     m_launched = true;
                     target = EyeTarget.transform;
                     CurrentJumpTarget = "None";
+                    m_animator.SetTrigger("Jump");
                 }
                 else if (collision.transform.tag == "MinionJumpToEnemyKeep" && m_grounded && KeepEyeTarget != null)
                 {
@@ -1045,6 +1030,7 @@ public class MinionBehavior : MonoBehaviour
                     transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-3f, 4), ForceMode2D.Impulse);
                     target = KeepEyeTarget.transform;
                     CurrentJumpTarget = "None";
+                    m_animator.SetTrigger("Jump");
                 }
                 else if (collision.transform.tag == "MinionJumpSmall" && m_grounded && CurrentJumpTarget == "None" && EyeTarget != null)
                 {
@@ -1052,6 +1038,7 @@ public class MinionBehavior : MonoBehaviour
                     transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-.5f, 0), ForceMode2D.Impulse);
                     target = EyeTarget.transform;
                     CurrentJumpTarget = "None";
+                    m_animator.SetTrigger("Jump");
                 }
             }
             else if (teamColor == "Blue")
@@ -1068,6 +1055,7 @@ public class MinionBehavior : MonoBehaviour
                     m_launched = true;
                     DisableWallSensors();
                     m_groundSensor.Disable(.2f);
+                    m_animator.SetTrigger("Jump");
                 }
                 if (collision.transform.tag == "MinionBoardLeft" && m_grounded && target.name != "BlueMinionPlatformTarget" && !target.name.Contains("EyeTarget"))
                 {
@@ -1081,6 +1069,7 @@ public class MinionBehavior : MonoBehaviour
                     m_launched = true;
                     DisableWallSensors();
                     m_groundSensor.Disable(.2f);
+                    m_animator.SetTrigger("Jump");
                 }
                 if (collision.transform.tag == "MinionJumpToMainPlatform" && m_grounded && target.name != "BlueMinionGondolaTarget" && CurrentJumpTarget == "MainPlatform")
                 {
@@ -1091,6 +1080,7 @@ public class MinionBehavior : MonoBehaviour
                     //SelectTarget();
                     target = GondolaTarget.transform;
                     CurrentJumpTarget = "Gondola";
+                    m_animator.SetTrigger("Jump");
                 }
                 if (collision.transform.tag == "MinionJumpRight")
                 {
@@ -1098,6 +1088,7 @@ public class MinionBehavior : MonoBehaviour
                     transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(6.5f, 5), ForceMode2D.Impulse);
                     CurrentJumpTarget = "VerticalPlatform";
                     SelectTarget();
+                    m_animator.SetTrigger("Jump");
                 }
                 else if (collision.transform.tag == "MinionJumpUp" && !m_idle && m_grounded && CurrentJumpTarget == "VerticalPlatform")
                 {
@@ -1105,6 +1096,7 @@ public class MinionBehavior : MonoBehaviour
                     transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(0, 9), ForceMode2D.Impulse);
                     m_launched = true;
                     CurrentJumpTarget = "MainPlatform";
+                    m_animator.SetTrigger("Jump");
                 }
                 //else if (collision.transform.tag == "MinionBoardGondola" && m_grounded && (target.name == "RedMinionGondolaTarget" || target.name == "MinionAfterEyeTarget" || target.name == "LeftEdge") && !m_launched)
                 //{
@@ -1121,6 +1113,7 @@ public class MinionBehavior : MonoBehaviour
                     m_launched = true;
                     target = GondolaEdgeTarget.transform;
                     CurrentJumpTarget = "EnemyPlatform";
+                    m_animator.SetTrigger("Jump");
                 }
                 else if (collision.transform.tag == "Gondola" && m_grounded && transform.position.y > collision.transform.position.y)
                 {
@@ -1134,6 +1127,7 @@ public class MinionBehavior : MonoBehaviour
                     {
                         CurrentJumpTarget = "EnemyKeep";
                     }
+                    m_animator.SetTrigger("Jump");
 
                 }
                 else if (collision.transform.tag == "MinionJumpToEnemyPlat" && m_grounded && CurrentJumpTarget == "EnemyPlatform" && EyeTarget != null)
@@ -1143,6 +1137,7 @@ public class MinionBehavior : MonoBehaviour
                     m_launched = true;
                     target = EyeTarget.transform;
                     CurrentJumpTarget = "None";
+                    m_animator.SetTrigger("Jump");
                 }
                 else if (collision.transform.tag == "MinionJumpToEnemyKeep" && m_grounded && KeepEyeTarget != null)
                 {
@@ -1150,6 +1145,7 @@ public class MinionBehavior : MonoBehaviour
                     transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(3f, 4), ForceMode2D.Impulse);
                     target = KeepEyeTarget.transform;
                     CurrentJumpTarget = "None";
+                    m_animator.SetTrigger("Jump");
                 }
                 else if (collision.transform.tag == "MinionJumpSmall" && m_grounded && CurrentJumpTarget == "None" && EyeTarget != null)
                 {
@@ -1157,25 +1153,19 @@ public class MinionBehavior : MonoBehaviour
                     transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(.5f, 0), ForceMode2D.Impulse);
                     target = EyeTarget.transform;
                     CurrentJumpTarget = "None";
+                    m_animator.SetTrigger("Jump");
                 }
             }
         }
         
-        else if (MenuEvents.gameModeSelect == 3)
+        else if (MenuEvents.gameModeSelect == 3 || MenuEvents.gameModeSelect == 4)
         {
             if (collision.transform.tag == "MinionJumpRight" && teamColor == "Blue" && m_grounded && EyeTarget != null)
             {
                 transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
                 transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(7f, 8), ForceMode2D.Impulse);
                 m_launched = true;
-                target = EyeTarget.transform;
-                CurrentJumpTarget = "None";
-            }
-            else if (collision.transform.tag == "MinionJumpRight" && teamColor == "Red" && m_grounded && EyeTarget != null)
-            {
-                transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-7f, 8), ForceMode2D.Impulse);
-                m_launched = true;
+                m_animator.SetTrigger("Jump");
                 target = EyeTarget.transform;
                 CurrentJumpTarget = "None";
             }
@@ -1184,14 +1174,7 @@ public class MinionBehavior : MonoBehaviour
                 transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
                 transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(-7f, 8), ForceMode2D.Impulse);
                 m_launched = true;
-                target = EyeTarget.transform;
-                CurrentJumpTarget = "None";
-            }
-            else if (collision.transform.tag == "MinionJumpLeft" && teamColor == "Blue" && m_grounded && EyeTarget != null)
-            {
-                transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                transform.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(7f, 8), ForceMode2D.Impulse);
-                m_launched = true;
+                m_animator.SetTrigger("Jump");
                 target = EyeTarget.transform;
                 CurrentJumpTarget = "None";
             }

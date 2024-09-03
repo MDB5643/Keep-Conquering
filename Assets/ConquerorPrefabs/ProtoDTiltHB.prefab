@@ -232,12 +232,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseDamage: 2
   baseKB: 0.2
-  hitStun: 0.16
+  hitStun: 0.2
   damageModifier: 0
   KBModifier: 0
-  modifierY: 3
+  modifierY: 2
   modifierX: 0.16
-  multModY: 1
+  multModY: 0.5
   multModX: 1
   shakeIntensity: 0
   shakeScreen: 0

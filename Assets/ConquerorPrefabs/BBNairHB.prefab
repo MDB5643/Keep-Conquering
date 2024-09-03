@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5190107738245236110}
   - component: {fileID: 1486586722489630864}
   - component: {fileID: 291994474718951365}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: BBNairHB
   m_TagString: AttackHitbox
   m_Icon: {fileID: 0}
@@ -113,20 +113,23 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.20878564, y: -0.11535849}
-      - {x: 0.10540541, y: -0.09313434}
+    - - {x: 0.1995253, y: -0.08757744}
+      - {x: 0.10540541, y: -0.07924382}
       - {x: 0.016820572, y: -0.07824938}
-      - {x: -0.08718124, y: -0.0850157}
+      - {x: -0.07792089, y: -0.07112517}
       - {x: -0.26506764, y: -0.080477804}
-      - {x: -0.34095362, y: -0.18591689}
-      - {x: -0.2850295, y: -0.3362215}
-      - {x: -0.11634737, y: -0.39087105}
-      - {x: 0.018543111, y: -0.40063697}
-      - {x: 0.11339915, y: -0.39225212}
-      - {x: 0.21064974, y: -0.37522617}
-      - {x: 0.28754586, y: -0.34021154}
-      - {x: 0.3123139, y: -0.18184969}
-      - {x: 0.26819837, y: -0.13345538}
+      - {x: -0.34877625, y: -0.102518156}
+      - {x: -0.37336484, y: -0.18591689}
+      - {x: -0.35438246, y: -0.29651517}
+      - {x: -0.30355018, y: -0.34085166}
+      - {x: -0.14875859, y: -0.43254262}
+      - {x: -0.018498285, y: -0.4608292}
+      - {x: 0.09487845, y: -0.44781423}
+      - {x: 0.19212903, y: -0.43078828}
+      - {x: 0.31532687, y: -0.3726228}
+      - {x: 0.35354993, y: -0.2908823}
+      - {x: 0.36324587, y: -0.15406862}
+      - {x: 0.28208888, y: -0.105674334}
 --- !u!114 &2393527030927264821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,19 +194,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseDamage: 3
   baseKB: 0.1
-  hitStun: 0.16
+  hitStun: 0.23
   damageModifier: 0
   KBModifier: 0
-  modifierY: 1
-  modifierX: 0.16
+  modifierY: 1.1
+  modifierX: 0.18
   multModY: 1
   multModX: 1
-  shakeIntensity: 0.2
-  shakeScreen: 1
+  shakeIntensity: 0
+  shakeScreen: 0
   smash: 0
   grab: 0
   continuous: 0
   groundPound: 0
-  noHitStop: 0
+  noHitStop: 1
+  noFlinch: 0
+  guardBreak: 0
   soundName: Hurt
   hitEnemies: []

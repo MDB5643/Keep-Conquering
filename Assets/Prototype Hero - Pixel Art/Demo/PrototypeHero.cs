@@ -12,22 +12,30 @@ public class PrototypeHero : Conqueror {
     private Rect buttonPos1;
     private Rect buttonPos2;
     public GameObject activeDairHitbox;
+    HookBehavior hookShot;
 
     public GameObject currentHookTarget;
     private float crosshairLingerTime = 0.0f;
     public float maxCrosshairLingerTime = 1.5f;
+    public bool hookLatched = false;
 
     public float m_TimeSinceJab2 = 0.0f;
 
     // Use this for initialization
     void Start ()
     {
-        isPlayer = true;
+        acrobat = true;
         m_animator = GetComponentInChildren<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
         m_SR = GetComponentInChildren<SpriteRenderer>();
-
-
+        if (m_manaBar)
+        {
+            m_manaBar.gameObject.SetActive(false);
+        }
+        if (!isPlayer && !preview)
+        {
+            CPUBrain.enabled = true;
+        }
         m_gravity = m_body2d.gravityScale;
 
         buttonPos1 = new Rect(10.0f, 10.0f, 200.0f, 30.0f);
@@ -47,8 +55,24 @@ public class PrototypeHero : Conqueror {
     // Update is called once per frame
     void Update ()
     {
+        // Decrease death respawn timer 
+        m_respawnTimer -= Time.deltaTime;
+        // Respawn Hero if dead
+        if (m_dead && m_respawnTimer < 0.0f && !isEliminated)
+            RespawnHero();
+
         if (currentHookTarget != null)
         {
+            if (currentHookTarget.GetComponent<MinionBehavior>() && currentHookTarget.GetComponent<MinionBehavior>().m_dead)
+            {
+                currentHookTarget = null;
+                crosshairLingerTime = 0;
+            }
+            else if (currentHookTarget.GetComponent<Conqueror>() && currentHookTarget.GetComponent<Conqueror>().m_dead)
+            {
+                currentHookTarget = null;
+                crosshairLingerTime = 0;
+            }
             crosshairLingerTime += Time.deltaTime;
             if (crosshairLingerTime >= maxCrosshairLingerTime && gameObject != null)
             {
@@ -57,7 +81,7 @@ public class PrototypeHero : Conqueror {
             }
         }
 
-        if (!m_inHitStun && !isGrappled)
+        if (!m_inHitStun && !isGrappled && !m_dead)
         {
             if (!m_isInHitStop)
             {
@@ -101,19 +125,15 @@ public class PrototypeHero : Conqueror {
                     }
                     //shieldBarFrame.enabled = false;
                 }
-                if (m_timeSinceSideSpecial > .08f && hookActive == true && hookPrefab != null)
+                if (m_timeSinceSideSpecial > 4.5f && hookActive == true && hookPrefab != null)
                 {
                     hookActive = false;
                 }
-                if (hookPrefab != null)
+                if (hookShot != null && hookShot.latched == true)
                 {
-                    //Actions while hook is out
-                    if (hookPrefab.latched == true)
-                    {
-
-                    }
-
+                    m_body2d.velocity = hookShot.pullForce;
                 }
+                
                 if ((m_fSmashCharging || m_uSmashCharging || m_dSmashCharging) && m_timeSinceChargeStart <= m_maxSmashChargeTime)
                 {
                     m_chargeModifier += .01f;
@@ -148,8 +168,6 @@ public class PrototypeHero : Conqueror {
                 }
                 // Check for interactable overlapping objects
                 CheckOverlaps();
-                // Decrease death respawn timer 
-                m_respawnTimer -= Time.deltaTime;
 
                 // Increase timer that controls attack combo
                 m_timeSinceAttack += Time.deltaTime;
@@ -170,12 +188,10 @@ public class PrototypeHero : Conqueror {
                     isEliminated = true;
                 }
 
-                // Respawn Hero if dead
-                if (m_dead && m_respawnTimer < 0.0f && !isEliminated)
-                    RespawnHero();
 
                 if (m_dead)
                 {
+                    m_freefall = false;
                     if (activeDairHitbox)
                     {
                         GameObject.Destroy(activeDairHitbox);
@@ -191,11 +207,16 @@ public class PrototypeHero : Conqueror {
                     m_grounded = true;
                     m_animator.SetBool("Grounded", m_grounded);
                     m_launched = false;
+                    m_freefall = false;
                     if (activeDairHitbox)
                     {
                         GameObject.Destroy(activeDairHitbox);
                     }
-                    
+                    if (inAttack)
+                    {
+                        inAttack = false;
+                        m_animator.SetTrigger("Land");
+                    }
                     //m_SpriteShaper.DrawDebug();
                 }
 
@@ -265,6 +286,7 @@ public class PrototypeHero : Conqueror {
 
                         if (ledge)
                         {
+                            m_freefall = false;
                             m_ledgeGrab = true;
                             m_body2d.velocity = Vector2.zero;
                             m_body2d.gravityScale = 0;
@@ -298,15 +320,15 @@ public class PrototypeHero : Conqueror {
 
                 // -- Handle Animations --
 
-                if (m_timeSinceStun > 4.0f && !preview && !m_isInKnockback)
+                if (m_timeSinceStun > 4.0f && !preview && !m_isInKnockback && !inAttack)
                 {
                     if (m_animator.GetBool("isStunned"))
                     {
                         m_animator.SetBool("isStunned", false);
                     }
-                    
+
                     //Walk
-                    else if (m_moving && Input.GetKey(KeyCode.LeftControl))
+                    else if (m_moving && Mathf.Abs(inputXY.x) < .45)
                     {
                         m_animator.SetInteger("AnimState", 2);
                         m_maxSpeed = m_walkSpeed;
@@ -319,9 +341,16 @@ public class PrototypeHero : Conqueror {
                         m_maxSpeed = m_runSpeed;
                     }
 
+
                     //Idle
                     else
                         m_animator.SetInteger("AnimState", 0);
+
+                    
+                }
+                if (!isPlayer && !(hookShot != null && hookShot.latched == true))
+                {
+                    CPUBrain.Move();
                 }
             }
             else
@@ -340,11 +369,30 @@ public class PrototypeHero : Conqueror {
         }
         else
         {
+            hookLatched = false;
             if (m_inHitStun)
             {
+                bool trembleUp = false;
+                bool trembleBack = false;
                 m_body2d.velocity = Vector2.zero;
                 m_body2d.gravityScale = 0;
                 m_timeSinceHitStun += Time.deltaTime;
+
+                m_timeSinceTremble += Time.deltaTime;
+                if (m_timeSinceTremble > .06)
+                {
+                    transform.localPosition += new Vector3(-.04f, 0, 0);
+                    trembleBack = true;
+                    trembleUp = false;
+                    m_timeSinceTremble = 0;
+                }
+                else if (m_timeSinceTremble > .03)
+                {
+                    transform.localPosition += new Vector3(.02f, 0, 0);
+                    trembleUp = true;
+                }
+                
+
                 m_animator.speed = 0;
                 if (activeDairHitbox)
                 {
@@ -352,6 +400,7 @@ public class PrototypeHero : Conqueror {
                 }
                 if (m_timeSinceHitStun >= m_hitStunDuration)
                 {
+                    transform.localPosition = preTremblePosition;
                     m_body2d.gravityScale = 1.25f;
                     Knockback(incomingKnockback, incomingAngle, incomingXMod, incomingYMod);
                     m_isInKnockback = true;
@@ -364,8 +413,11 @@ public class PrototypeHero : Conqueror {
                 {
                     GameObject.Destroy(activeDairHitbox);
                 }
+                var grabbingPlayerYPos = m_body2d.transform.parent ? m_body2d.transform.parent.position.y : m_body2d.position.y;
+                m_body2d.position = new Vector2(m_body2d.position.x, grabbingPlayerYPos);
             }
         }
+        
     }
     //
     //Handle collisions w/o sensor
@@ -387,13 +439,20 @@ public class PrototypeHero : Conqueror {
         {
             currentDamage = 0.0f;
             m_isInKnockback = false;
+            isInStartUp = false;
+            isGrappled = false;
+            transform.parent = null;
+            m_inGroundSlam = false;
+            m_isInHitStop = false;
+            m_isParrying = false;
             m_animator.SetBool("Knockback", false);
             m_animator.SetBool("noBlood", m_noBlood);
             m_animator.SetTrigger("Death");
             m_respawnTimer = 2.5f;
             DisableWallSensors();
             m_dead = true;
-            m_StockCount--;
+            m_StockDisplay.text = "x" + (m_StockCount - 1);
+
         }
         if (coll.gameObject.CompareTag("RightLauncher"))
         {
@@ -421,7 +480,7 @@ public class PrototypeHero : Conqueror {
 
     private void CheckOverlaps()
     {
-        Collider2D collider = gameObject.GetComponent<Collider2D>();
+        Collider2D collider = gameObject.GetComponentInChildren<Collider2D>();
         ContactFilter2D contactFilter2D = new ContactFilter2D();
         contactFilter2D.useLayerMask = true;
         contactFilter2D.SetLayerMask(m_WhatIsPortal);
@@ -478,11 +537,16 @@ public class PrototypeHero : Conqueror {
             rotQuat = new Quaternion(0f, 0f, 0f, 0f);
         }
 
-        HookBehavior hookShot = Instantiate(hookPrefab, launchOffset.position, rotQuat);
+        hookShot = Instantiate(hookPrefab, launchOffset.position, rotQuat);
 
         if (hookDirection == "Up")
         {
             hookShot.transform.rotation *= Quaternion.Euler(0, 0, -90);
+        }
+        else
+        {
+            hookShot.target = null;
+            currentHookTarget = null;
         }
         if (hookDirection == "Up" && currentHookTarget != null)
         {
@@ -510,7 +574,7 @@ public class PrototypeHero : Conqueror {
         if (inputXY.y > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y)
             && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
         {
-            m_LagTime = .3f;
+            m_LagTime = .18f;
             m_animator.SetTrigger("UpAttack");
 
             // Reset timer
@@ -519,14 +583,15 @@ public class PrototypeHero : Conqueror {
             //Attack(upTiltDamage, upTiltKB, upTiltRange, 0, 2, upTiltPoint);
 
             // Disable movement 
-            m_disableMovementTimer = 0.35f;
+            m_disableMovementTimer = m_LagTime;
+            inAttack = true;
         }
 
         //Down Tilt Attack
         else if (inputXY.y < 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_grounded && m_timeSinceAttack > m_LagTime && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y)
             && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
         {
-            m_LagTime = .35f;
+            m_LagTime = .25f;
             m_animator.SetTrigger("DTiltAttack");
 
             // Reset timer
@@ -535,16 +600,40 @@ public class PrototypeHero : Conqueror {
             //Attack(upTiltDamage, upTiltKB, upTiltRange, 0, 2, upTiltPoint);
 
             // Disable movement 
-            m_disableMovementTimer = 0.45f;
+            m_disableMovementTimer = m_LagTime;
             m_animator.SetBool("Crouching", false);
+            inAttack = true;
         }
 
+        //Forward tilt Attack
+        else if (Mathf.Abs(inputX) > 0 && Mathf.Abs(inputXY.x) < .45 && !Input.GetKey("s") && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && m_timeSinceNSpec > 1.1f
+            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && !isInStartUp && ctx.phase == InputActionPhase.Started)
+        {
+            if (m_facingDirection == 1 && inputX < 0)
+            {
+                m_SR.flipX = true;
+                m_facingDirection = -1;
+            }
+            else if (m_facingDirection == -1 && inputX > 0)
+            {
+                m_SR.flipX = false;
+                m_facingDirection = 1;
+            }
+            m_LagTime = .22f;
+            // Reset timer
+            m_timeSinceAttack = 0.0f;
+
+            m_animator.SetTrigger("FTilt");
+
+            m_disableMovementTimer = m_LagTime;
+            inAttack = true;
+        }
 
         //Dash Attack
         else if (Mathf.Abs(inputXY.x) > 0 && !Input.GetKey("s") && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && m_timeSinceNSpec > 1.1f
             && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && !isInStartUp && ctx.phase == InputActionPhase.Started)
         {
-            m_LagTime = .45f;
+            m_LagTime = .4f;
             // Reset timer
             m_timeSinceAttack = 0.0f;
 
@@ -555,7 +644,8 @@ public class PrototypeHero : Conqueror {
 
             m_body2d.velocity = new Vector2(m_facingDirection * m_dodgeForce + m_facingDirection * 3, m_body2d.velocity.y);
 
-            m_disableMovementTimer = 0.45f;
+            m_disableMovementTimer = 0.4f;
+            inAttack = true;
         }
 
         //Jab Attack
@@ -563,7 +653,7 @@ public class PrototypeHero : Conqueror {
             && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
         {
 
-            m_LagTime = .24f;
+            m_LagTime = .2f;
             m_currentAttack++;
 
             if (m_currentAttack == 2)
@@ -576,7 +666,7 @@ public class PrototypeHero : Conqueror {
                 m_currentAttack = 1;
 
             // Reset Attack combo if time since last attack is too large
-            if (m_timeSinceAttack > .5f)
+            if (m_timeSinceAttack > .6f)
                 m_currentAttack = 1;
 
             // Call one of the two attack animations "Attack1" or "Attack2"
@@ -584,7 +674,8 @@ public class PrototypeHero : Conqueror {
 
             // Reset timer
             m_timeSinceAttack = 0.0f;
-            m_disableMovementTimer = 0.45f;
+            m_disableMovementTimer = m_LagTime;
+            inAttack = true;
         }
 
         //Air Slam Attack
@@ -593,20 +684,18 @@ public class PrototypeHero : Conqueror {
             m_animator.SetTrigger("AttackAirSlam");
             m_body2d.velocity = new Vector2(0.0f, -m_jumpForce);
             m_disableMovementTimer = 0.8f;
-
-            // Reset timer
             m_timeSinceAttack = 0.0f;
         }
 
         // Air Attack Up
         else if (inputXY.y > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && m_timeSinceAttack > m_LagTime && ctx.phase == InputActionPhase.Started && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y))
         {
-            m_LagTime = .65f;
+            m_LagTime = .45f;
             Debug.Log("Air attack up");
             m_animator.SetTrigger("AirAttackUp");
 
-            // Reset timer
             m_timeSinceAttack = 0.0f;
+            inAttack = true;
         }
 
         // Air Attack forward
@@ -623,21 +712,19 @@ public class PrototypeHero : Conqueror {
                 m_SR.flipX = false;
                 m_facingDirection = 1;
             }
-            m_LagTime = .6f;
+            m_LagTime = .4f;
             m_animator.SetTrigger("AirAttack");
-
-            // Reset timer
             m_timeSinceAttack = 0.0f;
+            inAttack = true;
         }
 
         // Air Attack Neutral
         else if (inputXY.x == 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && m_timeSinceAttack > m_LagTime && ctx.phase == InputActionPhase.Started)
         {
-            m_LagTime = .65f;
+            m_LagTime = .4f;
             m_animator.SetTrigger("Nair");
-            //// Reset timer
             m_timeSinceAttack = 0.0f;
-            m_disableMovementTimer = .65f;
+            inAttack = true;
         }
 
         //Ledge Attack
@@ -650,13 +737,9 @@ public class PrototypeHero : Conqueror {
             m_disableMovementTimer = 6.0f / 14.0f;
             m_LagTime = .3f;
             m_animator.SetTrigger("LedgeAttack");
-
-            // Reset timer
             m_timeSinceAttack = 0.0f;
-
-
-            // Disable movement 
-            m_disableMovementTimer = 0.35f;
+            m_disableMovementTimer = m_LagTime;
+            inAttack = true;
         }
     }
 
@@ -673,19 +756,21 @@ public class PrototypeHero : Conqueror {
             m_crouching = false;
             m_animator.SetBool("Crouching", false);
             m_body2d.velocity = new Vector2(m_facingDirection * 10f, m_body2d.velocity.y);
+            inAttack = true;
         }
         else if (inputXY.y > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > 2.0f && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y)
             && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
         {
-            m_LagTime = .65f;
+            m_LagTime = .45f;
             hookDirection = "Up";
-            m_animator.SetTrigger("Throw");
+            m_animator.SetTrigger("UpThrow");
             hookActive = true;
             m_timeSinceSideSpecial = 0.0f;
 
             ThrowHook();
             // Disable movement 
-            m_disableMovementTimer = 1.0f;
+            m_disableMovementTimer = m_LagTime;
+            inAttack = true;
         }
         // Throw
         else if (Mathf.Abs(inputXY.x) > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > 2.0f
@@ -701,7 +786,7 @@ public class PrototypeHero : Conqueror {
                 m_SR.flipX = false;
                 m_facingDirection = 1;
             }
-            m_LagTime = .65f;
+            m_LagTime = .45f;
             hookDirection = "Side";
             m_animator.SetTrigger("Throw");
             hookActive = true;
@@ -709,16 +794,17 @@ public class PrototypeHero : Conqueror {
 
             ThrowHook();
             // Disable movement 
-            m_disableMovementTimer = 1.0f;
+            m_disableMovementTimer = m_LagTime;
+            inAttack = true;
         }
 
 
-        else if ( !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > 2.0f
+        else if ( !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > 1.8f
                         && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && ctx.phase == InputActionPhase.Started)
         {
             // Reset timer
 
-            m_LagTime = .45f;
+            m_LagTime = .35f;
             m_currentSpecial++;
 
             // Loop back to one after second attack
@@ -735,7 +821,8 @@ public class PrototypeHero : Conqueror {
             m_timeSinceAttack = 0.0f;
 
             // Disable movement 
-            m_disableMovementTimer = 0.5f;
+            m_disableMovementTimer = m_LagTime;
+            inAttack = true;
         }
     }
 
@@ -745,9 +832,10 @@ public class PrototypeHero : Conqueror {
         if (ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded
             && m_timeSinceAttack > m_LagTime && m_timeSinceNSpec > 1.1f && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
         {
-            m_LagTime = .2f;
+            m_LagTime = .15f;
             if (m_fSmashCharging != true)
             {
+                m_body2d.velocity = new Vector2(0.0f, 0.0f);
                 m_timeSinceChargeStart = 0.0f;
                 m_fSmashCharging = true;
             }
@@ -756,12 +844,12 @@ public class PrototypeHero : Conqueror {
 
 
             // Disable movement 
-            m_disableMovementTimer = 0.35f;
+            m_disableMovementTimer = m_LagTime;
         }
 
         else if (ctx.phase == InputActionPhase.Canceled && m_fSmashCharging == true && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime)
         {
-            m_LagTime = .4f;
+            m_LagTime = .33f;
             m_animator.SetTrigger("FSmash");
             m_animator.SetBool("FSmashCharge", false);
             // Reset timer
@@ -773,7 +861,8 @@ public class PrototypeHero : Conqueror {
 
             // Call one of the two attack animations "Attack1" or "Attack2"
 
-            m_disableMovementTimer = 0.35f;
+            m_disableMovementTimer = m_LagTime;
+            inAttack = true;
         }
     }
 
@@ -783,9 +872,10 @@ public class PrototypeHero : Conqueror {
         if (ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded
                         && m_timeSinceAttack > m_LagTime && m_fSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
         {
-            m_LagTime = .25f;
+            m_LagTime = .15f;
             if (m_uSmashCharging != true)
             {
+                m_body2d.velocity = new Vector2(0.0f, 0.0f);
                 m_timeSinceChargeStart = 0.0f;
                 m_uSmashCharging = true;
             }
@@ -794,13 +884,13 @@ public class PrototypeHero : Conqueror {
             m_animator.SetBool("USmashCharge", true);
 
             // Disable movement 
-            m_disableMovementTimer = 0.35f;
+            m_disableMovementTimer = m_LagTime;
         }
 
         else if (ctx.phase == InputActionPhase.Canceled && m_uSmashCharging == true && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime
             && m_timeSinceNSpec > 1.1f)
         {
-            m_LagTime = .4f;
+            m_LagTime = .33f;
             m_animator.SetTrigger("USmash");
             m_animator.SetBool("USmashCharge", false);
             // Reset timer
@@ -809,7 +899,8 @@ public class PrototypeHero : Conqueror {
             m_uSmashCharging = false;
             m_fullCharge = false;
 
-            m_disableMovementTimer = 0.35f;
+            m_disableMovementTimer = m_LagTime;
+            inAttack = true;
         }
     }
 
@@ -819,9 +910,10 @@ public class PrototypeHero : Conqueror {
         if (ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded
                         && m_timeSinceAttack > m_LagTime && m_fSmashCharging == false && m_uSmashCharging == false && m_isParrying == false)
         {
-            m_LagTime = .25f;
+            m_LagTime = .15f;
             if (m_dSmashCharging != true)
             {
+                m_body2d.velocity = new Vector2(0.0f, 0.0f);
                 m_timeSinceChargeStart = 0.0f;
                 m_dSmashCharging = true;
             }
@@ -830,13 +922,13 @@ public class PrototypeHero : Conqueror {
             m_animator.SetBool("DSmashCharge", true);
 
             // Disable movement 
-            m_disableMovementTimer = 0.35f;
+            m_disableMovementTimer = m_LagTime;
         }
 
         else if (ctx.phase == InputActionPhase.Canceled && m_dSmashCharging == true && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime
             && m_timeSinceNSpec > 1.1f)
         {
-            m_LagTime = .4f;
+            m_LagTime = .33f;
             m_animator.SetTrigger("DSmash");
             m_animator.SetBool("DSmashCharge", false);
             // Reset timer
@@ -845,7 +937,8 @@ public class PrototypeHero : Conqueror {
             m_dSmashCharging = false;
             m_fullCharge = false;
 
-            m_disableMovementTimer = 0.35f;
+            m_disableMovementTimer = m_LagTime;
+            inAttack = true;
         }
     }
 
@@ -878,6 +971,7 @@ public class PrototypeHero : Conqueror {
             // Ready to parry in case something hits you
             if (!m_animator.GetCurrentAnimatorStateInfo(0).IsName("ParryStance"))
             {
+                m_body2d.velocity = new Vector2(0.0f, 0.0f);
                 m_animator.SetTrigger("ParryStance");
                 m_animator.SetBool("isParrying", true);
                 m_parryTimer = 7.0f / 12.0f;
@@ -890,6 +984,7 @@ public class PrototypeHero : Conqueror {
             && !m_isInKnockback && !m_inHitStun && !m_isInHitStop)
         {
             m_dodging = true;
+            m_isParrying = false;
             m_crouching = false;
             m_animator.SetBool("isParrying", false);
             m_animator.SetBool("Crouching", false);

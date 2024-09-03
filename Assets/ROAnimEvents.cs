@@ -62,6 +62,11 @@ public class ROAnimEvents : MonoBehaviour
 
     // Animation Events
     // These functions are called inside the animation files
+
+    void AE_resetAttack()
+    {
+        m_player.inAttack = false;
+    }
     void AE_resetDodge()
     {
         m_player.ResetDodging();
@@ -132,14 +137,14 @@ public class ROAnimEvents : MonoBehaviour
         if (m_player.m_facingDirection == 1)
         {
             rotQuat = new Quaternion(0f, 0f, 0f, 0f);
-            xDisplace = 0f;
+            xDisplace = 0.08f;
         }
         else
         {
             rotQuat = new Quaternion(0f, 180f, 0f, 0f);
             xDisplace = -.08f;
         }
-        activeHitbox = Instantiate(dashAttackHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + 1f, m_player.transform.position.z),
+        activeHitbox = Instantiate(dashAttackHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + .5f, m_player.transform.position.z),
             rotQuat, m_player.transform);
         if (m_player.transform.CompareTag("PlayerMid"))
         {
@@ -292,7 +297,7 @@ public class ROAnimEvents : MonoBehaviour
 
     void AE_DSmash()
     {
-        m_audioManager.PlaySound("UnarmedHeavy");
+        m_audioManager.PlaySound("Whack");
         Quaternion rotQuat = new Quaternion();
         float xDisplace = 0f;
         if (m_player.m_facingDirection == 1)
@@ -384,6 +389,41 @@ public class ROAnimEvents : MonoBehaviour
         }
         c_Manager.hitEnemy = "None";
     }
+
+    void AE_FTilt()
+    {
+        m_audioManager.PlaySound("PunchSwing");
+        Quaternion rotQuat = new Quaternion();
+        float xDisplace = 0.0f;
+        float pushForce = .85f;
+        if (m_player.m_facingDirection == 1)
+        {
+            rotQuat = new Quaternion(0f, 0f, 0f, 0f);
+            xDisplace = 0.0f;
+        }
+        else
+        {
+            rotQuat = new Quaternion(0f, 180f, 0f, 0f);
+            xDisplace = 0.0f;
+            pushForce = -.85f;
+        }
+        activeHitbox = Instantiate(dashAttackHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + 1f, m_player.transform.position.z),
+            rotQuat, m_player.transform);
+        m_player.m_body2d.AddForce(new Vector2(pushForce, 0));
+        if (m_player.transform.CompareTag("PlayerMid"))
+        {
+            if (m_player.transform.CompareTag("PlayerMid"))
+            {
+                activeHitbox.layer = 19;
+                if (activeHitbox.transform.GetChild(0) != null)
+                {
+                    activeHitbox.transform.GetChild(0).gameObject.layer = 19;
+                }
+            }
+        }
+        c_Manager.hitEnemy = "None";
+    }
+
     void AE_UpSpec()
     {
         m_audioManager.PlaySound("Jump");
@@ -391,6 +431,7 @@ public class ROAnimEvents : MonoBehaviour
         float xDisplace = 0.0f;
         float pushForce = 5;
         m_player.GetComponent<RagingOrc>().isInUpSpec = false;
+        m_player.m_freefall = true;
         if (m_player.m_facingDirection == 1)
         {
             rotQuat = new Quaternion(0f, 0f, 0f, 0f);
@@ -403,7 +444,7 @@ public class ROAnimEvents : MonoBehaviour
             xDisplace = 0f;
             pushForce = -pushForce;
         }
-        activeHitbox = Instantiate(upSpecExplosionHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + .5f, m_player.transform.position.z -.01f),
+        activeHitbox = Instantiate(upSpecExplosionHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + 1f, m_player.transform.position.z -.01f),
             rotQuat, m_player.transform);
         //activeHitbox2 = Instantiate(upSpecExplosionHitbox2, new Vector2(-(m_player.transform.position.x + xDisplace), m_player.transform.position.y),
         //    rotQuat);
@@ -442,38 +483,21 @@ public class ROAnimEvents : MonoBehaviour
         m_audioManager.PlaySound("Whooshing");
         m_player.GetComponent<RagingOrc>().isInUpSpec = false;
         m_player.m_body2d.AddForce(new Vector2(0, 7));
-        if (m_player.grabbedPlayers.Count > 0)
-        {
-            foreach(Conqueror enemy in m_player.grabbedPlayers)
-            {
-                enemy.isGrappled = false;
-                if (enemy.transform.position.z == 20)
-                {
-                    enemy.GetComponentInParent<Conqueror>().SetLayerRecursively(enemy.gameObject, LayerMask.NameToLayer("PlayerMid"));
-                }
-                else
-                {
-                    enemy.GetComponentInParent<Conqueror>().SetLayerRecursively(enemy.gameObject, LayerMask.NameToLayer("Player"));
-                }
-
-                enemy.transform.SetPositionAndRotation(new Vector3(m_player.transform.position.x, m_player.transform.position.y - 1f, m_player.transform.position.z), new Quaternion(0f, 0f, 0f, 0f));
-                m_player.GetComponentInParent<CombatManager>().Hit(enemy.transform, new CollisionTracker() { baseDamage = 5.5f, baseKB = .35f, multModX = 1, multModY = -1, modifierY = 1, soundName = "Hurt", hitEnemies = new List<string>() }) ;
-                m_player.GetComponentInParent<Conqueror>().m_groundSensor.Disable(0.35f);
-                m_player.GetComponentInParent<Conqueror>().m_body2d.velocity = new Vector2(0, 5);
-                if (enemy.transform.position.z == 20)
-                {
-                    enemy.GetComponentInParent<Conqueror>().SetLayerRecursively(enemy.gameObject, LayerMask.NameToLayer("PlayerMid"));
-                }
-                else
-                {
-                    enemy.GetComponentInParent<Conqueror>().SetLayerRecursively(enemy.gameObject, LayerMask.NameToLayer("Player"));
-                }
-            }
-        }
+        activeHitbox = Instantiate(upSpecExplosionHitbox2, new Vector3((m_player.transform.position.x), m_player.transform.position.y + 1.2f, m_player.transform.position.z - .01f),
+            new Quaternion(0f, 0f, 0f, 0f), m_player.transform);
+        
+        m_player.GetComponentInParent<Conqueror>().m_groundSensor.Disable(0.35f);
+        m_player.GetComponentInParent<Conqueror>().m_body2d.velocity = new Vector2(0, 5);
+        m_player.RepelBoxNormal.SetActive(true);
         m_player.grabbedPlayers.Clear();
-
+        
         m_player.m_disableMovementTimer = .3f;
         c_Manager.hitEnemy = "None";
+    }
+
+    void AE_USpec2End()
+    {
+        m_player.SetLayerRecursively(m_player.gameObject, LayerMask.NameToLayer("Player"));
     }
 
     void AE_DSpec()
@@ -827,32 +851,17 @@ public class ROAnimEvents : MonoBehaviour
     {
         m_audioManager.PlaySound("Whooshing");
         Quaternion rotQuat = new Quaternion();
-        float xDisplace = -1f;
-        float xDisplaceExplode = .9f;
-        float pushForce = 1f;
+        float pushForce = 15f;
         if (m_player.m_facingDirection == 1)
         {
             rotQuat = new Quaternion(0f, 0f, 0f, 0f);
         }
         else
         {
-            rotQuat = new Quaternion(0f, 180f, 0f, 0f);
-            xDisplace = 1f;
             pushForce = -pushForce;
-            xDisplaceExplode = -xDisplaceExplode;
         }
-        activeHitbox = Instantiate(sideSpecialHitbox, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + .4f, m_player.transform.position.z),
-            rotQuat, m_player.transform);
-        m_player.GetComponent<Rigidbody2D>().AddForce(new Vector2(pushForce, 0.0f), ForceMode2D.Impulse);
-        if (m_player.transform.CompareTag("PlayerMid"))
-        {
-            activeHitbox.layer = 19;
-            if (activeHitbox.transform.GetChild(0) != null)
-            {
-                activeHitbox.transform.GetChild(0).gameObject.layer = 19;
-            }
-        }
-        //c_Manager.hitEnemy = "None";
+        m_player.hookActive = true;
+        m_player.GetComponent<Rigidbody2D>().AddForce(new Vector2(pushForce, 0.5f), ForceMode2D.Impulse);
     }
 
     void SideSpecialExplode()
@@ -860,7 +869,7 @@ public class ROAnimEvents : MonoBehaviour
         m_audioManager.PlaySound("ShieldBash");
         Quaternion rotQuat = new Quaternion();
         float xDisplaceExplode = .4f;
-        float pushForce = 2.5f;
+        float pushForce = 1f;
         if (m_player.m_facingDirection == 1)
         {
             rotQuat = new Quaternion(0f, 0f, 0f, 0f);
@@ -874,6 +883,7 @@ public class ROAnimEvents : MonoBehaviour
         m_player.m_disableMovementTimer = .15f;
         m_player.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
         m_player.GetComponent<Rigidbody2D>().AddForce(new Vector2(-pushForce, 0.0f), ForceMode2D.Impulse);
+        m_player.hookActive = false;
 
         if (m_player.transform.CompareTag("PlayerMid"))
         {

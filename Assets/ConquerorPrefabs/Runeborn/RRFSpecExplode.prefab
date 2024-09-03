@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7209487516264346233, guid: 2fbaf1d5a728add46a820f8dd1c5da91, type: 3}
-  m_Color: {r: 0, g: 0.8615718, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.41188765, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -168,6 +168,10 @@ MonoBehaviour:
   activeTime: 0
   startingYpos: 0
   explosion: {fileID: 0}
+  chargeBall: {fileID: 0}
+  splashBox: {fileID: 0}
+  charged: 0
+  reverse: 0
   teamColor: 
 --- !u!114 &1629326089108387601
 MonoBehaviour:
@@ -202,7 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseDamage: 5.1
   baseKB: 0.15
-  hitStun: 0.12
+  hitStun: 0.2
   damageModifier: 0
   KBModifier: 0
   modifierY: 0.1

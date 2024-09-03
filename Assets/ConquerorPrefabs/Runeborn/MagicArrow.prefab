@@ -10,8 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 476066568592810516}
   - component: {fileID: 8928037522972363180}
-  - component: {fileID: 8263043355369797224}
   - component: {fileID: 6665552223888079085}
+  - component: {fileID: 3852483744144924453}
+  - component: {fileID: 2360715442132968712}
+  - component: {fileID: 5515181968571020458}
   m_Layer: 15
   m_Name: MagicArrow
   m_TagString: AttackHitbox
@@ -86,23 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8263043355369797224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1484496523145175099}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f2590721bce38345a4efbc1456a7380, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  latched: 0
-  speed: 20
-  activeTime: 0
-  startingYpos: 0
-  teamColor: 
 --- !u!114 &6665552223888079085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,6 +107,84 @@ MonoBehaviour:
     bottom: 0
     left: 1
     right: 0
+--- !u!114 &3852483744144924453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484496523145175099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 3
+  baseKB: 0.1
+  hitStun: 0.2
+  damageModifier: 0
+  KBModifier: 0
+  modifierY: 0.09
+  modifierX: 0.09
+  multModY: 0.9
+  multModX: 0.9
+  shakeIntensity: 0
+  shakeScreen: 0
+  smash: 0
+  grab: 0
+  continuous: 0
+  groundPound: 0
+  noHitStop: 1
+  soundName: ArrowHit
+  hitEnemies: []
+--- !u!61 &2360715442132968712
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484496523145175099}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.21976486, y: 0.002707133}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.09375, y: 1.09375}
+    newSize: {x: 0.35, y: 0.35}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7462304, y: 0.10610525}
+  m_EdgeRadius: 0
+--- !u!114 &5515181968571020458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484496523145175099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3626d1067387f4b9a736358c059c60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  latched: 0
+  speed: 20
+  activeTime: 0
+  startingYpos: 0
+  explosion: {fileID: 0}
+  chargeBall: {fileID: 3370550314178840266}
+  splashBox: {fileID: 0}
+  charged: 0
+  reverse: 0
+  teamColor: 
 --- !u!1 &3370550314178840266
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,16 +196,14 @@ GameObject:
   - component: {fileID: 7641428874289578145}
   - component: {fileID: 7812811417199694609}
   - component: {fileID: 2866672584808658463}
-  - component: {fileID: 2129784596982527639}
   - component: {fileID: 337812749927360304}
-  - component: {fileID: 277524782853243483}
   m_Layer: 15
   m_Name: ChargeBall
   m_TagString: AttackHitbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7641428874289578145
 Transform:
   m_ObjectHideFlags: 0
@@ -151,8 +212,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3370550314178840266}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.042, y: -0.018, z: -0.01}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.0526, y: -0.0021, z: -0.01}
+  m_LocalScale: {x: 1.0136, y: 0.9796, z: 1}
   m_Children: []
   m_Father: {fileID: 476066568592810516}
   m_RootOrder: 0
@@ -228,22 +289,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!58 &2129784596982527639
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3370550314178840266}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.030285418, y: 0.021199793}
-  serializedVersion: 2
-  m_Radius: 0.1482842
 --- !u!114 &337812749927360304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,33 +308,3 @@ MonoBehaviour:
     bottom: 0
     left: 1
     right: 0
---- !u!114 &277524782853243483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3370550314178840266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a9f48777822b2d438dbc06592caafca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  baseDamage: 3
-  baseKB: 0.1
-  hitStun: 0.16
-  damageModifier: 0
-  KBModifier: 0
-  modifierY: 0.09
-  modifierX: 0.09
-  multModY: 0.9
-  multModX: 0.9
-  shakeIntensity: 0
-  shakeScreen: 0
-  smash: 0
-  grab: 0
-  continuous: 0
-  groundPound: 0
-  noHitStop: 1
-  soundName: ArrowHit
-  hitEnemies: []

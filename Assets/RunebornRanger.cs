@@ -9,15 +9,18 @@ public class RunebornRanger : Conqueror
     public float m_TimeSinceJab2 = 0.0f;
     public bool upSpecActive = false;
     public ProjectileBehavior m_ActiveArrow;
+    
 
     // Use this for initialization
     void Start()
     {
         isPlayer = true;
+        caster = true;
+        sharpshooter = true;
         m_animator = GetComponentInChildren<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
         m_SR = GetComponentInChildren<SpriteRenderer>();
-
+        mana = 100;
 
         m_gravity = m_body2d.gravityScale;
 
@@ -36,9 +39,13 @@ public class RunebornRanger : Conqueror
     // Update is called once per frame
     void Update()
     {
+        // Decrease death respawn timer 
+        m_respawnTimer -= Time.deltaTime;
+        // Respawn Hero if dead
+        if (m_dead && m_respawnTimer < 0.0f && !isEliminated)
+            RespawnHero();
 
-
-        if (!m_inHitStun && !isGrappled)
+        if (!m_inHitStun && !isGrappled && !m_dead)
         {
             if (!m_isInHitStop && !m_fallingdown)
             {
@@ -129,8 +136,7 @@ public class RunebornRanger : Conqueror
                 }
                 // Check for interactable overlapping objects
                 CheckOverlaps();
-                // Decrease death respawn timer 
-                m_respawnTimer -= Time.deltaTime;
+                
 
                 // Increase timer that controls attack combo
                 m_timeSinceAttack += Time.deltaTime;
@@ -150,9 +156,7 @@ public class RunebornRanger : Conqueror
                     isEliminated = true;
                 }
 
-                // Respawn Hero if dead
-                if (m_dead && m_respawnTimer < 0.0f && !isEliminated)
-                    RespawnHero();
+                
 
                 if (m_dead)
                     return;
@@ -165,12 +169,19 @@ public class RunebornRanger : Conqueror
                 //Check if character just landed on the ground
                 if (!m_grounded && m_groundSensor.State())
                 {
+                    m_freefall = false;
                     m_jumpCount = 0;
                     m_grounded = true;
                     m_animator.SetBool("Grounded", m_grounded);
                     m_launched = false;
+                    m_isInKnockback = false;
                     //m_SpriteShaper.DrawDebug();
-                    
+                    if (inAttack)
+                    {
+                        inAttack = false;
+                        m_animator.SetTrigger("Land");
+                    }
+
                 }
 
                 //Check if character just started falling
@@ -280,11 +291,18 @@ public class RunebornRanger : Conqueror
 
                 // -- Handle Animations --
 
-                if (m_timeSinceStun > 4.0f && !preview && !m_isInKnockback)
+                if (m_timeSinceStun > 4.0f && !preview && !m_isInKnockback && !inAttack)
                 {
                     if (m_animator.GetBool("isStunned"))
                     {
                         m_animator.SetBool("isStunned", false);
+                    }
+
+                    //Walk
+                    else if (m_moving && Mathf.Abs(inputXY.x) < .45)
+                    {
+                        m_animator.SetInteger("AnimState", 2);
+                        m_maxSpeed = m_walkSpeed;
                     }
 
                     //Run
@@ -317,12 +335,30 @@ public class RunebornRanger : Conqueror
         {
             if (m_inHitStun)
             {
+                bool trembleUp = false;
+                bool trembleBack = false;
                 m_body2d.velocity = Vector2.zero;
                 m_body2d.gravityScale = 0;
                 m_timeSinceHitStun += Time.deltaTime;
+
+                m_timeSinceTremble += Time.deltaTime;
+                if (m_timeSinceTremble > .06)
+                {
+                    transform.localPosition += new Vector3(-.04f, 0, 0);
+                    trembleBack = true;
+                    trembleUp = false;
+                    m_timeSinceTremble = 0;
+                }
+                else if (m_timeSinceTremble > .03)
+                {
+                    transform.localPosition += new Vector3(.02f, 0, 0);
+                    trembleUp = true;
+                }
+
                 m_animator.speed = 0;
                 if (m_timeSinceHitStun >= m_hitStunDuration)
                 {
+                    transform.localPosition = preTremblePosition;
                     m_body2d.gravityScale = 1.25f;
                     Knockback(incomingKnockback, incomingAngle, incomingXMod, incomingYMod);
                     m_isInKnockback = true;
@@ -331,6 +367,8 @@ public class RunebornRanger : Conqueror
             else if (isGrappled)
             {
                 m_animator.speed = 0;
+                var grabbingPlayerYPos = m_body2d.transform.parent ? m_body2d.transform.parent.position.y : m_body2d.position.y;
+                m_body2d.position = new Vector2(m_body2d.position.x, grabbingPlayerYPos);
             }
         }
     }
@@ -354,13 +392,19 @@ public class RunebornRanger : Conqueror
         {
             currentDamage = 0.0f;
             m_isInKnockback = false;
+            isInStartUp = false;
+            isGrappled = false;
+            transform.parent = null;
+            m_inGroundSlam = false;
+            m_isInHitStop = false;
+            m_isParrying = false;
             m_animator.SetBool("Knockback", false);
             m_animator.SetBool("noBlood", m_noBlood);
             m_animator.SetTrigger("Death");
             m_respawnTimer = 2.5f;
             DisableWallSensors();
             m_dead = true;
-            m_StockCount--;
+            m_StockDisplay.text = "x" + (m_StockCount - 1);
         }
         if (coll.gameObject.CompareTag("RightLauncher"))
         {
@@ -479,6 +523,7 @@ public class RunebornRanger : Conqueror
 
             // Disable movement 
             m_disableMovementTimer = 0.35f;
+            inAttack = true;
         }
         //Down Tilt Attack
         else if (ctx.phase == InputActionPhase.Started && inputXY.y < 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_grounded && m_timeSinceAttack > m_LagTime && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y)
@@ -495,7 +540,33 @@ public class RunebornRanger : Conqueror
             // Disable movement 
             m_disableMovementTimer = 0.45f;
             m_animator.SetBool("Crouching", false);
+            inAttack = true;
         }
+
+        //Forward tilt Attack
+        else if (Mathf.Abs(inputX) > 0 && Mathf.Abs(inputXY.x) < .45 && !Input.GetKey("s") && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime 
+            && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && !isInStartUp && ctx.phase == InputActionPhase.Started)
+        {
+            if (m_facingDirection == 1 && inputX < 0)
+            {
+                m_SR.flipX = true;
+                m_facingDirection = -1;
+            }
+            else if (m_facingDirection == -1 && inputX > 0)
+            {
+                m_SR.flipX = false;
+                m_facingDirection = 1;
+            }
+            m_LagTime = .45f;
+            // Reset timer
+            m_timeSinceAttack = 0.0f;
+
+            m_animator.SetTrigger("FTilt");
+
+            m_disableMovementTimer = 0.45f;
+            inAttack = true;
+        }
+
         //Dash Attack
         else if (ctx.phase == InputActionPhase.Started && Mathf.Abs(inputXY.x) > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && m_timeSinceNSpec > 1.1f
                         && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && !isInStartUp)
@@ -512,6 +583,7 @@ public class RunebornRanger : Conqueror
             m_body2d.velocity = new Vector2(m_facingDirection * m_dodgeForce + m_facingDirection * 2.5f, m_body2d.velocity.y);
 
             m_disableMovementTimer = 0.45f;
+            inAttack = true;
         }
         
 
@@ -529,6 +601,7 @@ public class RunebornRanger : Conqueror
             m_animator.SetTrigger("Attack" + m_currentAttack);
 
             m_disableMovementTimer = 0.45f;
+            inAttack = true;
         }
 
 
@@ -542,6 +615,7 @@ public class RunebornRanger : Conqueror
 
             // Reset timer
             m_timeSinceAttack = 0.0f;
+            inAttack = true;
         }
 
 
@@ -554,6 +628,7 @@ public class RunebornRanger : Conqueror
 
             // Reset timer
             m_timeSinceAttack = 0.0f;
+            inAttack = true;
         }
         // Air Attack forward
         else if (ctx.phase == InputActionPhase.Started && Mathf.Abs(inputXY.x) > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && !m_grounded && m_timeSinceAttack > m_LagTime && !isInStartUp)
@@ -570,6 +645,7 @@ public class RunebornRanger : Conqueror
             }
             m_LagTime = .55f;
             m_animator.SetTrigger("AirAttack");
+            inAttack = true;
 
             // Reset timer
             m_timeSinceAttack = 0.0f;
@@ -585,6 +661,7 @@ public class RunebornRanger : Conqueror
             //// Reset timer
             m_timeSinceAttack = 0.0f;
             m_disableMovementTimer = .65f;
+            inAttack = true;
         }
 
         //Ledge Attack
@@ -603,6 +680,7 @@ public class RunebornRanger : Conqueror
 
             // Disable movement 
             m_disableMovementTimer = 0.35f;
+            inAttack = true;
         }
     }
 
@@ -611,12 +689,14 @@ public class RunebornRanger : Conqueror
         if (ctx.phase == InputActionPhase.Started && inputXY.y < 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > 2.0f && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y)
             && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && !isInStartUp)
         {
+            
             m_LagTime = .75f;
             m_animator.SetTrigger("Slide");
             m_crouching = false;
             m_animator.SetBool("Crouching", false);
             m_timeSinceAttack = 0.0f;
             m_body2d.velocity = new Vector2(0, m_body2d.velocity.y);
+            inAttack = true;
         }
         else if (ctx.phase == InputActionPhase.Started && inputXY.y > 0 && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_timeSinceAttack > m_LagTime && m_timeSinceSideSpecial > m_LagTime && Mathf.Abs(inputXY.x) < Mathf.Abs(inputXY.y)
             && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false && upSpecActive == false && !isInStartUp)
@@ -672,6 +752,7 @@ public class RunebornRanger : Conqueror
             if (m_ActiveArrow)
             {
                 transform.position = m_ActiveArrow.transform.position;
+                m_freefall = true;
                 GameObject.Destroy(m_ActiveArrow.gameObject);
                 AudioManager_PrototypeHero.instance.PlaySound("Teleport");
                 //hookActive = true;
@@ -680,7 +761,22 @@ public class RunebornRanger : Conqueror
                 // Disable movement 
                 m_timeSinceAttack = 0;
                 m_disableMovementTimer = 1.0f;
-                m_body2d.velocity = new Vector2(0, m_body2d.velocity.y);
+                if (m_ActiveArrow.charged)
+                {
+                    mana -= 20;
+                    if (m_facingDirection == 1)
+                    {
+                        m_body2d.velocity = new Vector2(6.5f, 6.5f);
+                    }
+                    else
+                    {
+                        m_body2d.velocity = new Vector2(-6.5f, 6.5f);
+                    }
+                }
+                else
+                {
+                    m_body2d.velocity = new Vector2(0, m_body2d.velocity.y);
+                }
             }
 
         }
@@ -697,6 +793,7 @@ public class RunebornRanger : Conqueror
             // Disable movement 
             m_disableMovementTimer = 0.5f;
             m_body2d.velocity = new Vector2(0, m_body2d.velocity.y);
+            inAttack = true;
         }
     }
 
@@ -734,6 +831,7 @@ public class RunebornRanger : Conqueror
 
             // Call one of the two attack animations "Attack1" or "Attack2"
 
+            inAttack = true;
             m_disableMovementTimer = 0.35f;
         }
     }
@@ -770,6 +868,7 @@ public class RunebornRanger : Conqueror
             m_uSmashCharging = false;
             m_fullCharge = false;
 
+            inAttack = true;
             m_disableMovementTimer = 0.35f;
         }
     }
@@ -806,6 +905,7 @@ public class RunebornRanger : Conqueror
             m_dSmashCharging = false;
             m_fullCharge = false;
 
+            inAttack = true;
             m_disableMovementTimer = 0.35f;
         }
     }
@@ -831,6 +931,7 @@ public class RunebornRanger : Conqueror
             // Ready to parry in case something hits you
             if (!m_animator.GetCurrentAnimatorStateInfo(0).IsName("ParryStance"))
             {
+                m_body2d.velocity = new Vector2(0.0f, 0.0f);
                 m_animator.SetTrigger("ParryStance");
                 m_animator.SetBool("isParrying", true);
                 m_parryTimer = 7.0f / 12.0f;

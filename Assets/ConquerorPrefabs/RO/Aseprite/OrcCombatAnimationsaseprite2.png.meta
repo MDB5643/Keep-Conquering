@@ -473,7 +473,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -2773,9 +2773,9 @@ TextureImporter:
       name: OrcCombatAnimationsaseprite2_106
       rect:
         serializedVersion: 2
-        x: 1269
+        x: 1267
         y: 252
-        width: 57
+        width: 61
         height: 33
       alignment: 2
       pivot: {x: 0.5, y: 1}
@@ -2815,9 +2815,9 @@ TextureImporter:
       name: OrcCombatAnimationsaseprite2_108
       rect:
         serializedVersion: 2
-        x: 1370
+        x: 1363
         y: 252
-        width: 56
+        width: 69
         height: 30
       alignment: 2
       pivot: {x: 0.5, y: 1}

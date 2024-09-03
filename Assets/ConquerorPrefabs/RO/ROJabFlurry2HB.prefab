@@ -80,6 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLingerTime: 0.05
+  linger: 1
 --- !u!114 &1331008577861870033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,7 +95,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseDamage: 1.3
   baseKB: 0.09
-  hitStun: 0.16
+  hitStun: 0.19
   damageModifier: 0
   KBModifier: 0
   modifierY: 0.05

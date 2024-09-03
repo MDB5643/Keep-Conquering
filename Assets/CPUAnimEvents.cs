@@ -15,9 +15,12 @@ public class CPUAnimEvents : MonoBehaviour
     public GameObject m_AirSlamDust;
     public GameObject m_ParryEffect;
 
+    public GameObject attack1HB;
+    public GameObject attack2HB;
+
     public GameObject m_GolemFlick;
 
-    private CPUBehavior m_player;
+    private MinionBehavior m_player;
     private GolemBehavior m_Golem;
     public CombatManager c_Manager;
     private AudioManager_PrototypeHero m_audioManager;
@@ -29,7 +32,7 @@ public class CPUAnimEvents : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        m_player = GetComponentInParent<CPUBehavior>();
+        m_player = GetComponentInParent<MinionBehavior>();
         m_Golem = GetComponentInParent<GolemBehavior>();
         c_Manager = GetComponentInParent<CombatManager>();
         m_audioManager = AudioManager_PrototypeHero.instance;
@@ -44,7 +47,6 @@ public class CPUAnimEvents : MonoBehaviour
         float dustYOffset = 0.078125f;
         m_player.SpawnDustEffect(m_RunStopDust, dustXOffset, dustYOffset);
     }
-
     void AE_setPositionToClimbPosition()
     {
         m_player.SetPositionToClimbPosition();
@@ -134,7 +136,28 @@ public class CPUAnimEvents : MonoBehaviour
 
     void AE_SwordAttack()
     {
-        m_audioManager.PlaySound("SwordAttack");
+        m_audioManager.PlaySound("PunchSwing");
+        Quaternion rotQuat = new Quaternion();
+        float xDisplace = -.18f;
+        if (m_player.m_facingDirection == 1)
+        {
+            rotQuat = new Quaternion(0f, 0f, 0f, 0f);
+        }
+        else
+        {
+            rotQuat = new Quaternion(0f, 180f, 0f, 0f);
+            xDisplace = .18f;
+        }
+        activeHitbox = Instantiate(attack1HB, new Vector3((m_player.transform.position.x + xDisplace), m_player.transform.position.y + .25f, m_player.transform.position.z),
+            rotQuat, m_player.transform);
+        if (m_player.transform.CompareTag("PlayerMid"))
+        {
+            activeHitbox.layer = 19;
+            if (activeHitbox.transform.GetChild(0) != null)
+            {
+                activeHitbox.transform.GetChild(0).gameObject.layer = 19;
+            }
+        }
     }
 
     void AE_JabHitbox()

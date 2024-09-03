@@ -59,16 +59,23 @@ public class PlatformMove : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!collision.gameObject.name.Contains("Hook1"))
+        if (!collision.gameObject.name.Contains("Hook"))
         {
             collision.transform.SetParent(transform);
             collision.rigidbody.interpolation = RigidbodyInterpolation2D.None;
+        }
+        else
+        {
+            collision.gameObject.GetComponent<HookBehavior>().latchedObject = transform.gameObject;
         }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        collision.transform.SetParent(null);
-        collision.rigidbody.interpolation = RigidbodyInterpolation2D.Interpolate;
+        if (!collision.gameObject.name.Contains("Hook"))
+        {
+            collision.transform.SetParent(null);
+            collision.rigidbody.interpolation = RigidbodyInterpolation2D.Interpolate;
+        }
     }
 }

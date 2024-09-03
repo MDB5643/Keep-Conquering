@@ -205,11 +205,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseDamage: 1.2
-  baseKB: 0.18
-  hitStun: 0.16
+  baseKB: 0.15
+  hitStun: 0.15
   damageModifier: 0
   KBModifier: 0
-  modifierY: 3
+  modifierY: 2
   modifierX: 0.16
   multModY: 1
   multModX: 1

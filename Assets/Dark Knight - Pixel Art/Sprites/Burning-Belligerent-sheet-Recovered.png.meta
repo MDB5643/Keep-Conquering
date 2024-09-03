@@ -455,6 +455,54 @@ TextureImporter:
   - first:
       213: 2784256994501637162
     second: Burning-Belligerent-sheet-Recovered_150
+  - first:
+      213: 4939955946973288688
+    second: Burning-Belligerent-sheet-Recovered_151
+  - first:
+      213: 4481881206656183127
+    second: Burning-Belligerent-sheet-Recovered_152
+  - first:
+      213: 2501361248894557839
+    second: Burning-Belligerent-sheet-Recovered_153
+  - first:
+      213: 4510246629822766236
+    second: Burning-Belligerent-sheet-Recovered_154
+  - first:
+      213: 6827952588299677010
+    second: Burning-Belligerent-sheet-Recovered_155
+  - first:
+      213: -1527557046396435607
+    second: Burning-Belligerent-sheet-Recovered_156
+  - first:
+      213: 8625532532595897187
+    second: Burning-Belligerent-sheet-Recovered_157
+  - first:
+      213: -238541025793256666
+    second: Burning-Belligerent-sheet-Recovered_158
+  - first:
+      213: -4101781818684083824
+    second: Burning-Belligerent-sheet-Recovered_159
+  - first:
+      213: -4300712052395553285
+    second: Burning-Belligerent-sheet-Recovered_160
+  - first:
+      213: 6130507936210821803
+    second: Burning-Belligerent-sheet-Recovered_161
+  - first:
+      213: -3992145351140495333
+    second: Burning-Belligerent-sheet-Recovered_162
+  - first:
+      213: 8119656457874531010
+    second: Burning-Belligerent-sheet-Recovered_163
+  - first:
+      213: 8423118829104080547
+    second: Burning-Belligerent-sheet-Recovered_164
+  - first:
+      213: -6609746290595817694
+    second: Burning-Belligerent-sheet-Recovered_165
+  - first:
+      213: 5348952744047210630
+    second: Burning-Belligerent-sheet-Recovered_166
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -473,7 +521,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -551,8 +599,8 @@ TextureImporter:
         y: 902
         width: 47
         height: 45
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -572,8 +620,8 @@ TextureImporter:
         y: 902
         width: 48
         height: 45
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -593,8 +641,8 @@ TextureImporter:
         y: 902
         width: 48
         height: 45
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -614,8 +662,8 @@ TextureImporter:
         y: 902
         width: 48
         height: 45
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -635,8 +683,8 @@ TextureImporter:
         y: 902
         width: 44
         height: 44
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -656,8 +704,8 @@ TextureImporter:
         y: 902
         width: 55
         height: 45
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -677,8 +725,8 @@ TextureImporter:
         y: 902
         width: 55
         height: 45
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -698,8 +746,8 @@ TextureImporter:
         y: 902
         width: 55
         height: 44
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -719,8 +767,8 @@ TextureImporter:
         y: 902
         width: 55
         height: 43
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -740,8 +788,8 @@ TextureImporter:
         y: 902
         width: 55
         height: 43
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -761,8 +809,8 @@ TextureImporter:
         y: 827
         width: 67
         height: 35
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.2812482, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -782,8 +830,8 @@ TextureImporter:
         y: 827
         width: 67
         height: 35
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.2812482, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -803,8 +851,8 @@ TextureImporter:
         y: 827
         width: 66
         height: 35
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.2812482, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -822,10 +870,10 @@ TextureImporter:
         serializedVersion: 2
         x: 333
         y: 827
-        width: 66
+        width: 75
         height: 35
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.2447697, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -841,12 +889,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_14
       rect:
         serializedVersion: 2
-        x: 433
+        x: 426
         y: 827
-        width: 66
+        width: 82
         height: 35
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.2447697, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -866,8 +914,8 @@ TextureImporter:
         y: 827
         width: 55
         height: 43
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -887,8 +935,8 @@ TextureImporter:
         y: 827
         width: 55
         height: 43
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -908,8 +956,8 @@ TextureImporter:
         y: 827
         width: 55
         height: 43
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -929,8 +977,8 @@ TextureImporter:
         y: 827
         width: 55
         height: 44
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -950,8 +998,8 @@ TextureImporter:
         y: 827
         width: 55
         height: 45
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -971,8 +1019,8 @@ TextureImporter:
         y: 752
         width: 66
         height: 35
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.2702527, y: -0.0000017438616}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -991,9 +1039,9 @@ TextureImporter:
         x: 133
         y: 740
         width: 30
-        height: 47
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        height: 55
+      alignment: 9
+      pivot: {x: 0.6899999, y: 0.18978271}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1013,8 +1061,8 @@ TextureImporter:
         y: 752
         width: 49
         height: 43
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1030,12 +1078,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_23
       rect:
         serializedVersion: 2
-        x: 308
+        x: 298
         y: 762
-        width: 52
+        width: 67
         height: 34
       alignment: 9
-      pivot: {x: 0.28028166, y: -0.018005371}
+      pivot: {x: 0.3452747, y: -0.011984432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1056,7 +1104,7 @@ TextureImporter:
         width: 52
         height: 35
       alignment: 9
-      pivot: {x: 0.2505364, y: 0.037311662}
+      pivot: {x: 0.3844481, y: -0.0000017438616}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1076,8 +1124,8 @@ TextureImporter:
         y: 752
         width: 54
         height: 45
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1097,8 +1145,8 @@ TextureImporter:
         y: 752
         width: 55
         height: 46
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1118,8 +1166,8 @@ TextureImporter:
         y: 752
         width: 55
         height: 46
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1139,8 +1187,8 @@ TextureImporter:
         y: 752
         width: 55
         height: 44
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1160,8 +1208,8 @@ TextureImporter:
         y: 752
         width: 55
         height: 44
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1177,12 +1225,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_30
       rect:
         serializedVersion: 2
-        x: 39
+        x: 22
         y: 681
-        width: 46
-        height: 57
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 64
+        height: 58
+      alignment: 9
+      pivot: {x: 0.33335438, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1202,8 +1250,8 @@ TextureImporter:
         y: 679
         width: 55
         height: 44
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1219,12 +1267,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_32
       rect:
         serializedVersion: 2
-        x: 221
+        x: 215
         y: 681
-        width: 44
+        width: 51
         height: 57
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.38198817, y: 0.006256639}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1244,8 +1292,8 @@ TextureImporter:
         y: 680
         width: 54
         height: 47
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1265,8 +1313,8 @@ TextureImporter:
         y: 680
         width: 54
         height: 55
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1286,8 +1334,8 @@ TextureImporter:
         y: 677
         width: 55
         height: 45
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1307,8 +1355,8 @@ TextureImporter:
         y: 677
         width: 54
         height: 46
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1328,8 +1376,8 @@ TextureImporter:
         y: 677
         width: 52
         height: 46
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1349,8 +1397,8 @@ TextureImporter:
         y: 677
         width: 51
         height: 44
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1370,8 +1418,8 @@ TextureImporter:
         y: 677
         width: 51
         height: 44
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1391,8 +1439,8 @@ TextureImporter:
         y: 596
         width: 54
         height: 46
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1412,8 +1460,8 @@ TextureImporter:
         y: 597
         width: 31
         height: 34
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1433,8 +1481,8 @@ TextureImporter:
         y: 597
         width: 33
         height: 35
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1454,8 +1502,8 @@ TextureImporter:
         y: 529
         width: 28
         height: 46
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69000024, y: -0.093797766}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1475,8 +1523,8 @@ TextureImporter:
         y: 599
         width: 30
         height: 35
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1493,11 +1541,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 387
-        y: 578
-        width: 92
-        height: 92
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        y: 598
+        width: 62
+        height: 72
+      alignment: 9
+      pivot: {x: 0.6550175, y: -0.0000008477105}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1517,8 +1565,8 @@ TextureImporter:
         y: 527
         width: 28
         height: 50
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1536,10 +1584,10 @@ TextureImporter:
         serializedVersion: 2
         x: 510
         y: 602
-        width: 55
+        width: 57
         height: 43
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.6710782, y: -0.0000014194222}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1556,11 +1604,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 533
-        y: 513
+        y: 529
         width: 67
-        height: 87
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        height: 71
+      alignment: 9
+      pivot: {x: 0.3058891, y: -0.0000008596501}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1576,12 +1624,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_49
       rect:
         serializedVersion: 2
-        x: 608
+        x: 605
         y: 602
-        width: 56
+        width: 69
         height: 40
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.60862476, y: 0.0052627563}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1601,8 +1649,8 @@ TextureImporter:
         y: 594
         width: 10
         height: 4
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1622,8 +1670,8 @@ TextureImporter:
         y: 591
         width: 17
         height: 7
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1643,8 +1691,8 @@ TextureImporter:
         y: 585
         width: 9
         height: 5
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1664,8 +1712,8 @@ TextureImporter:
         y: 565
         width: 7
         height: 19
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1685,8 +1733,8 @@ TextureImporter:
         y: 578
         width: 9
         height: 8
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1706,8 +1754,8 @@ TextureImporter:
         y: 565
         width: 5
         height: 11
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1723,12 +1771,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_56
       rect:
         serializedVersion: 2
-        x: 707
-        y: 596
-        width: 57
-        height: 45
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 705
+        y: 602
+        width: 66
+        height: 39
+      alignment: 9
+      pivot: {x: 0.6606655, y: 0.0019265199}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1748,8 +1796,8 @@ TextureImporter:
         y: 590
         width: 14
         height: 5
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1769,8 +1817,8 @@ TextureImporter:
         y: 584
         width: 6
         height: 4
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1790,8 +1838,8 @@ TextureImporter:
         y: 579
         width: 5
         height: 4
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1811,8 +1859,8 @@ TextureImporter:
         y: 563
         width: 6
         height: 15
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1832,8 +1880,8 @@ TextureImporter:
         y: 578
         width: 8
         height: 6
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1853,8 +1901,8 @@ TextureImporter:
         y: 565
         width: 4
         height: 10
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1871,11 +1919,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 807
-        y: 569
-        width: 87
-        height: 72
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        y: 602
+        width: 63
+        height: 39
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1892,11 +1940,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 907
-        y: 569
-        width: 87
-        height: 77
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        y: 602
+        width: 63
+        height: 44
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1916,8 +1964,8 @@ TextureImporter:
         y: 528
         width: 33
         height: 35
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1937,8 +1985,8 @@ TextureImporter:
         y: 527
         width: 29
         height: 37
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1958,8 +2006,8 @@ TextureImporter:
         y: 524
         width: 36
         height: 39
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1977,10 +2025,10 @@ TextureImporter:
         serializedVersion: 2
         x: 633
         y: 527
-        width: 61
-        height: 36
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 68
+        height: 71
+      alignment: 9
+      pivot: {x: 0.3058891, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2000,8 +2048,8 @@ TextureImporter:
         y: 550
         width: 5
         height: 15
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2021,8 +2069,8 @@ TextureImporter:
         y: 546
         width: 5
         height: 23
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2042,8 +2090,8 @@ TextureImporter:
         y: 544
         width: 4
         height: 19
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2060,11 +2108,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 833
-        y: 527
+        y: 528
         width: 66
-        height: 40
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        height: 71
+      alignment: 9
+      pivot: {x: 0.3058891, y: 0.002798161}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2084,8 +2132,8 @@ TextureImporter:
         y: 562
         width: 5
         height: 6
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2102,11 +2150,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 933
-        y: 527
+        y: 528
         width: 66
-        height: 38
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        height: 70
+      alignment: 9
+      pivot: {x: 0.3058891, y: 0.0028381348}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2124,10 +2172,10 @@ TextureImporter:
         serializedVersion: 2
         x: 733
         y: 527
-        width: 61
-        height: 35
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 66
+        height: 71
+      alignment: 9
+      pivot: {x: 0.3058891, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2147,8 +2195,8 @@ TextureImporter:
         y: 532
         width: 5
         height: 5
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2165,11 +2213,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 21
-        y: 444
+        y: 443
         width: 54
-        height: 38
+        height: 39
       alignment: 9
-      pivot: {x: 0.62, y: -0.015727796}
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2190,7 +2238,7 @@ TextureImporter:
         width: 53
         height: 46
       alignment: 9
-      pivot: {x: 0.62, y: -0.0029708198}
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2211,7 +2259,7 @@ TextureImporter:
         width: 55
         height: 46
       alignment: 9
-      pivot: {x: 0.62, y: -0.012999161}
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2231,8 +2279,8 @@ TextureImporter:
         y: 451
         width: 51
         height: 34
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.55933994, y: 0.0000017951517}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2252,8 +2300,8 @@ TextureImporter:
         y: 452
         width: 48
         height: 36
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.4123465, y: 0.0000008477105}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2272,9 +2320,9 @@ TextureImporter:
         x: 533
         y: 452
         width: 65
-        height: 43
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        height: 64
+      alignment: 9
+      pivot: {x: 0.3058891, y: 0.004952364}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2294,8 +2342,8 @@ TextureImporter:
         y: 452
         width: 49
         height: 43
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2315,8 +2363,8 @@ TextureImporter:
         y: 452
         width: 52
         height: 44
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2336,8 +2384,8 @@ TextureImporter:
         y: 452
         width: 54
         height: 47
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2357,8 +2405,8 @@ TextureImporter:
         y: 452
         width: 54
         height: 45
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2374,12 +2422,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_87
       rect:
         serializedVersion: 2
-        x: 58
-        y: 433
-        width: 4
-        height: 4
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 74
+        y: 382
+        width: 50
+        height: 34
+      alignment: 9
+      pivot: {x: 0.65523607, y: -0.00000089757583}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2395,12 +2443,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_88
       rect:
         serializedVersion: 2
-        x: 74
-        y: 382
-        width: 50
-        height: 34
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 204
+        y: 381
+        width: 57
+        height: 37
+      alignment: 9
+      pivot: {x: 0.4930744, y: -0.00000082479943}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2416,12 +2464,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_89
       rect:
         serializedVersion: 2
-        x: 204
+        x: 303
         y: 381
-        width: 57
-        height: 37
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 64
+        height: 34
+      alignment: 9
+      pivot: {x: 0.4543047, y: 0.0011435116}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2437,12 +2485,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_90
       rect:
         serializedVersion: 2
-        x: 303
-        y: 381
-        width: 64
-        height: 34
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 426
+        y: 379
+        width: 48
+        height: 36
+      alignment: 9
+      pivot: {x: 0.3890114, y: 0.000001695421}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2458,12 +2506,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_91
       rect:
         serializedVersion: 2
-        x: 426
-        y: 379
-        width: 48
-        height: 36
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 513
+        y: 377
+        width: 52
+        height: 44
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2479,12 +2527,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_92
       rect:
         serializedVersion: 2
-        x: 513
+        x: 612
         y: 377
-        width: 52
-        height: 44
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 56
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5996722, y: -0.0056840484}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2500,12 +2548,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_93
       rect:
         serializedVersion: 2
-        x: 613
+        x: 712
         y: 377
-        width: 51
-        height: 47
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 52
+        height: 45
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2521,12 +2569,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_94
       rect:
         serializedVersion: 2
-        x: 712
+        x: 813
         y: 377
-        width: 52
-        height: 45
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 54
+        height: 36
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2542,12 +2590,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_95
       rect:
         serializedVersion: 2
-        x: 813
+        x: 914
         y: 377
         width: 54
         height: 36
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2563,12 +2611,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_96
       rect:
         serializedVersion: 2
-        x: 914
-        y: 377
-        width: 54
-        height: 36
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 88
+        y: 305
+        width: 40
+        height: 43
+      alignment: 9
+      pivot: {x: 0.4672306, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2584,12 +2632,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_97
       rect:
         serializedVersion: 2
-        x: 88
+        x: 211
         y: 305
         width: 40
         height: 43
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.4672306, y: -0.0000014194222}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2605,12 +2653,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_98
       rect:
         serializedVersion: 2
-        x: 211
+        x: 312
         y: 305
-        width: 40
-        height: 43
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 48
+        height: 36
+      alignment: 9
+      pivot: {x: 0.3890114, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2626,12 +2674,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_99
       rect:
         serializedVersion: 2
-        x: 312
-        y: 305
+        x: 424
+        y: 304
         width: 48
         height: 36
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.3890114, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2647,12 +2695,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_100
       rect:
         serializedVersion: 2
-        x: 424
-        y: 304
-        width: 48
-        height: 36
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 505
+        y: 302
+        width: 63
+        height: 39
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2668,12 +2716,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_101
       rect:
         serializedVersion: 2
-        x: 505
+        x: 634
         y: 302
-        width: 63
-        height: 39
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 35
+        height: 35
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2689,12 +2737,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_102
       rect:
         serializedVersion: 2
-        x: 634
+        x: 732
         y: 302
-        width: 35
-        height: 35
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 53
+        height: 18
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2710,12 +2758,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_103
       rect:
         serializedVersion: 2
-        x: 732
+        x: 831
         y: 302
-        width: 53
-        height: 18
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 54
+        height: 20
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2731,12 +2779,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_104
       rect:
         serializedVersion: 2
-        x: 831
+        x: 931
         y: 302
         width: 54
-        height: 20
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        height: 13
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2752,12 +2800,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_105
       rect:
         serializedVersion: 2
-        x: 931
-        y: 302
-        width: 54
-        height: 13
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 68
+        y: 243
+        width: 48
+        height: 44
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2773,12 +2821,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_106
       rect:
         serializedVersion: 2
-        x: 68
-        y: 243
-        width: 48
-        height: 44
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 186
+        y: 245
+        width: 46
+        height: 34
+      alignment: 9
+      pivot: {x: 0.38628322, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2794,12 +2842,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_107
       rect:
         serializedVersion: 2
-        x: 186
-        y: 245
-        width: 46
+        x: 291
+        y: 244
+        width: 44
         height: 34
       alignment: 9
-      pivot: {x: 0.2899974, y: 0.0000017951517}
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2815,12 +2863,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_108
       rect:
         serializedVersion: 2
-        x: 291
-        y: 244
-        width: 44
-        height: 34
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 418
+        y: 241
+        width: 38
+        height: 45
+      alignment: 9
+      pivot: {x: 0.54975027, y: 0.008870781}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2836,12 +2884,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_109
       rect:
         serializedVersion: 2
-        x: 419
-        y: 241
-        width: 37
+        x: 484
+        y: 242
+        width: 38
         height: 45
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.53243214, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2857,12 +2905,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_110
       rect:
         serializedVersion: 2
-        x: 484
-        y: 242
-        width: 38
-        height: 45
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 714
+        y: 227
+        width: 52
+        height: 43
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2878,12 +2926,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_111
       rect:
         serializedVersion: 2
-        x: 714
+        x: 814
         y: 227
         width: 52
         height: 43
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2899,12 +2947,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_112
       rect:
         serializedVersion: 2
-        x: 814
+        x: 914
         y: 227
         width: 52
         height: 43
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2920,12 +2968,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_113
       rect:
         serializedVersion: 2
-        x: 914
+        x: 527
         y: 227
-        width: 52
-        height: 43
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 59
+        height: 10
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2941,12 +2989,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_114
       rect:
         serializedVersion: 2
-        x: 531
+        x: 626
         y: 227
-        width: 55
-        height: 8
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 61
+        height: 10
+      alignment: 9
+      pivot: {x: 0.6453611, y: -0.000004577637}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2962,12 +3010,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_115
       rect:
         serializedVersion: 2
-        x: 630
-        y: 227
-        width: 56
-        height: 8
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 61
+        y: 175
+        width: 53
+        height: 46
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2983,12 +3031,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_116
       rect:
         serializedVersion: 2
-        x: 61
-        y: 175
-        width: 53
-        height: 46
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 180
+        y: 161
+        width: 52
+        height: 60
+      alignment: 9
+      pivot: {x: 0.4735697, y: -0.00000025431316}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3004,12 +3052,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_117
       rect:
         serializedVersion: 2
-        x: 188
-        y: 161
-        width: 44
-        height: 60
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 245
+        y: 164
+        width: 55
+        height: 45
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3025,12 +3073,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_118
       rect:
         serializedVersion: 2
-        x: 323
+        x: 314
         y: 159
-        width: 44
+        width: 53
         height: 60
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.4735697, y: -0.006348928}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3046,12 +3094,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_119
       rect:
         serializedVersion: 2
-        x: 420
+        x: 419
         y: 148
-        width: 39
+        width: 40
         height: 57
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.4262883, y: 0.00000026769806}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3071,8 +3119,8 @@ TextureImporter:
         y: 152
         width: 52
         height: 44
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3092,8 +3140,8 @@ TextureImporter:
         y: 152
         width: 52
         height: 44
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3113,8 +3161,8 @@ TextureImporter:
         y: 152
         width: 52
         height: 44
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3134,8 +3182,8 @@ TextureImporter:
         y: 152
         width: 52
         height: 45
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3155,8 +3203,8 @@ TextureImporter:
         y: 152
         width: 52
         height: 45
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3174,10 +3222,10 @@ TextureImporter:
         serializedVersion: 2
         x: 63
         y: 95
-        width: 53
+        width: 56
         height: 45
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3195,10 +3243,10 @@ TextureImporter:
         serializedVersion: 2
         x: 164
         y: 95
-        width: 52
+        width: 55
         height: 46
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3214,12 +3262,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_127
       rect:
         serializedVersion: 2
-        x: 325
-        y: 93
-        width: 23
-        height: 37
+        x: 242
+        y: 95
+        width: 55
+        height: 46
       alignment: 9
-      pivot: {x: 0.48954707, y: -0.031997476}
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3235,12 +3283,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_128
       rect:
         serializedVersion: 2
-        x: 421
-        y: 88
-        width: 22
-        height: 46
+        x: 325
+        y: 93
+        width: 23
+        height: 37
       alignment: 9
-      pivot: {x: 0.45930898, y: 0.004279261}
+      pivot: {x: 0.69000113, y: -0.23839755}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3256,12 +3304,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_129
       rect:
         serializedVersion: 2
-        x: 470
-        y: 84
-        width: 22
-        height: 46
+        x: 418
+        y: 87
+        width: 25
+        height: 48
       alignment: 9
-      pivot: {x: 0.47708684, y: -0.18078497}
+      pivot: {x: 0.6925978, y: -0.03757261}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3277,12 +3325,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_130
       rect:
         serializedVersion: 2
-        x: 514
-        y: 77
-        width: 52
-        height: 45
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 467
+        y: 84
+        width: 25
+        height: 46
+      alignment: 9
+      pivot: {x: 0.669109, y: -0.09491}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3298,12 +3346,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_131
       rect:
         serializedVersion: 2
-        x: 614
+        x: 514
         y: 77
         width: 52
-        height: 44
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        height: 45
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3319,12 +3367,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_132
       rect:
         serializedVersion: 2
-        x: 714
+        x: 614
         y: 77
         width: 52
-        height: 41
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        height: 44
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3340,12 +3388,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_133
       rect:
         serializedVersion: 2
-        x: 814
+        x: 714
         y: 77
-        width: 59
-        height: 45
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 52
+        height: 41
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3361,12 +3409,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_134
       rect:
         serializedVersion: 2
-        x: 914
+        x: 814
         y: 77
-        width: 63
-        height: 50
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 59
+        height: 45
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3382,12 +3430,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_135
       rect:
         serializedVersion: 2
-        x: 78
-        y: 8
-        width: 31
-        height: 46
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 914
+        y: 77
+        width: 63
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5742827, y: -0.008100128}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3403,12 +3451,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_136
       rect:
         serializedVersion: 2
-        x: 190
-        y: 10
-        width: 45
-        height: 39
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 17
+        y: 19
+        width: 38
+        height: 35
+      alignment: 9
+      pivot: {x: 0.49754062, y: 0.00497491}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3424,12 +3472,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_137
       rect:
         serializedVersion: 2
-        x: 302
-        y: 7
-        width: 39
-        height: 49
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 75
+        y: 8
+        width: 57
+        height: 65
+      alignment: 9
+      pivot: {x: 0.21723342, y: 0.07103136}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3445,12 +3493,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_138
       rect:
         serializedVersion: 2
-        x: 356
-        y: 46
-        width: 7
-        height: 23
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 121
+        y: 47
+        width: 9
+        height: 12
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3466,12 +3514,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_139
       rect:
         serializedVersion: 2
-        x: 362
-        y: 46
-        width: 6
-        height: 13
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 136
+        y: 15
+        width: 35
+        height: 38
+      alignment: 9
+      pivot: {x: 0.61759424, y: -0.00000042664377}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3487,12 +3535,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_140
       rect:
         serializedVersion: 2
-        x: 416
-        y: 2
-        width: 60
-        height: 70
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 190
+        y: 10
+        width: 45
+        height: 39
+      alignment: 9
+      pivot: {x: 0.26200086, y: 0.0064979945}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3508,12 +3556,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_141
       rect:
         serializedVersion: 2
-        x: 513
-        y: 2
-        width: 67
-        height: 52
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 302
+        y: 6
+        width: 68
+        height: 67
+      alignment: 9
+      pivot: {x: 0.30378184, y: 0.15169066}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3529,12 +3577,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_142
       rect:
         serializedVersion: 2
-        x: 613
-        y: 2
-        width: 69
-        height: 53
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 356
+        y: 46
+        width: 7
+        height: 23
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3550,12 +3598,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_143
       rect:
         serializedVersion: 2
-        x: 740
-        y: 1
-        width: 35
-        height: 47
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 362
+        y: 46
+        width: 6
+        height: 13
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3571,12 +3619,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_144
       rect:
         serializedVersion: 2
-        x: 803
-        y: 10
-        width: 48
-        height: 37
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 413
+        y: 0
+        width: 66
+        height: 73
+      alignment: 9
+      pivot: {x: 0.1723743, y: -0.00000063495503}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3592,12 +3640,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_145
       rect:
         serializedVersion: 2
-        x: 348
-        y: 35
-        width: 8
-        height: 8
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 513
+        y: 2
+        width: 67
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5742827, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3613,12 +3661,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_146
       rect:
         serializedVersion: 2
-        x: 354
-        y: 20
-        width: 13
-        height: 18
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 613
+        y: 2
+        width: 69
+        height: 53
+      alignment: 9
+      pivot: {x: 0.5742827, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3634,12 +3682,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_147
       rect:
         serializedVersion: 2
-        x: 356
-        y: 36
-        width: 13
-        height: 10
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 735
+        y: 1
+        width: 40
+        height: 47
+      alignment: 9
+      pivot: {x: 0.47065952, y: -0.0077777025}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3655,12 +3703,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_148
       rect:
         serializedVersion: 2
-        x: 336
-        y: 24
-        width: 21
-        height: 10
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 113
+        y: 36
+        width: 8
+        height: 8
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3676,12 +3724,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_149
       rect:
         serializedVersion: 2
-        x: 209
-        y: 10
-        width: 12
-        height: 7
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 121
+        y: 37
+        width: 8
+        height: 8
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3697,12 +3745,12 @@ TextureImporter:
       name: Burning-Belligerent-sheet-Recovered_150
       rect:
         serializedVersion: 2
-        x: 338
-        y: 14
-        width: 16
-        height: 9
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 125
+        y: 37
+        width: 4
+        height: 5
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3710,6 +3758,321 @@ TextureImporter:
       bones: []
       spriteID: a24baa02cfaa3a620800000000000000
       internalID: 2784256994501637162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_151
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 29
+        width: 4
+        height: 9
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8db61c2cf3e8440800000000000000
+      internalID: 4939955946973288688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_152
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 35
+        width: 8
+        height: 8
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75bad302637d23e30800000000000000
+      internalID: 4481881206656183127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_153
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 20
+        width: 13
+        height: 18
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e99479dce96b220800000000000000
+      internalID: 2501361248894557839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_154
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 36
+        width: 13
+        height: 10
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c1dfbd96d979e30800000000000000
+      internalID: 4510246629822766236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_155
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 10
+        width: 48
+        height: 37
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25dafc8f3b2c1ce50800000000000000
+      internalID: 6827952588299677010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_156
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 30
+        width: 6
+        height: 5
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963456ba5f60dcae0800000000000000
+      internalID: -1527557046396435607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_157
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 28
+        width: 4
+        height: 7
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36334fb632c04b770800000000000000
+      internalID: 8625532532595897187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_158
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 28
+        width: 4
+        height: 7
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6235c3d633880bcf0800000000000000
+      internalID: -238541025793256666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_159
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 24
+        width: 21
+        height: 10
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091fd270b2b8317c0800000000000000
+      internalID: -4101781818684083824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_160
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 26
+        width: 6
+        height: 4
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfdc8bbac2dc054c0800000000000000
+      internalID: -4300712052395553285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_161
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 24
+        width: 5
+        height: 4
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba22f86bc70f31550800000000000000
+      internalID: 6130507936210821803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_162
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 21
+        width: 7
+        height: 6
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b103b8554fc0998c0800000000000000
+      internalID: -3992145351140495333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_163
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 16
+        width: 15
+        height: 7
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c261d55780dea070800000000000000
+      internalID: 8119656457874531010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_164
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 10
+        width: 12
+        height: 7
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a627ad82fde4e470800000000000000
+      internalID: 8423118829104080547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burning-Belligerent-sheet-Recovered_165
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 14
+        width: 16
+        height: 9
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2279495c4c67544a0800000000000000
+      internalID: -6609746290595817694
       vertices: []
       indices: 
       edges: []

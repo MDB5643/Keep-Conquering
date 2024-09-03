@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964820301091128306}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.64, y: 0.11, z: 0}
+  m_LocalPosition: {x: 0.64, y: 0.11, z: 0}
   m_LocalScale: {x: 0.66, y: 0.7, z: 0.17}
   m_Children: []
   m_Father: {fileID: 8027770208182965427}
@@ -227,7 +227,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705711045938312061}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.613, z: 0}
+  m_LocalPosition: {x: 0, y: -0.425, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8027770208182965427}
@@ -300,7 +300,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898239111491598386}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.68, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8027770208182965427}
@@ -347,9 +347,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f2ed27d6c1c3ccc48959bcca269d88f0, type: 3}
-  m_Color: {r: 1, g: 0.7311321, b: 0.7311321, a: 1}
-  m_FlipX: 0
+  m_Sprite: {fileID: -9150983205339442847, guid: 63ba46456b3409a49892ae73cd15e92c, type: 3}
+  m_Color: {r: 1, g: 0.7783019, b: 0.7783019, a: 1}
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 3.125, y: 2.5}
@@ -368,7 +368,7 @@ Animator:
   m_GameObject: {fileID: 1898239111491598386}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b95265f99b6d90e438df1308a89c8bab, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2e3af7939b594f84394f2b9bc6180bc7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -413,6 +413,8 @@ MonoBehaviour:
   m_WallJumpDust: {fileID: 7972526843131001964, guid: 2a6283ef7fbba594caf7888f051f4a2b, type: 3}
   m_AirSlamDust: {fileID: 2943720192077617830, guid: 27cb532070b8c2b4e97001c33cf37429, type: 3}
   m_ParryEffect: {fileID: 3569397387010719113, guid: 9300fb4b08a7c0f448a15475613f22d5, type: 3}
+  attack1HB: {fileID: 2322443322813051480, guid: 80f03493d2fa9f94c95ee98657a3a155, type: 3}
+  attack2HB: {fileID: 0}
   m_GolemFlick: {fileID: 0}
   c_Manager: {fileID: 0}
   lingerDeltaTime: 0
@@ -450,7 +452,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4421686617800032254
 Transform:
   m_ObjectHideFlags: 0
@@ -875,8 +877,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teamColor: Red
-  m_runSpeed: 3.5
-  m_walkSpeed: 2
+  m_runSpeed: 2.7
+  m_walkSpeed: 1.5
   m_jumpForce: 7.5
   m_dodgeForce: 8
   m_parryKnockbackForce: 4
@@ -903,11 +905,17 @@ MonoBehaviour:
   triggerArea: {fileID: 964820301091128306}
   isGrappled: 0
   m_isInHotZone: 0
+  m_isInHitStop: 0
+  isInStartUp: 0
+  m_hitStopDuration: 0
+  m_timeSinceHitStop: 0
+  combatManager: {fileID: 0}
   m_grounded: 0
   m_dead: 0
   m_inHitStun: 0
   m_launched: 0
   m_idle: 0
+  m_facingDirection: 1
   m_timeSinceAttack: 0
   m_maxSpeed: 3.5
   m_WhatIsPortal:
@@ -943,6 +951,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.03}
-  m_Size: {x: 0.5, y: 1.2}
+  m_Offset: {x: 0, y: 0.0060243607}
+  m_Size: {x: 0.5, y: 0.93924356}
   m_Direction: 0

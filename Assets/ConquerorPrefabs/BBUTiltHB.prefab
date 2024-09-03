@@ -90,20 +90,22 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 0.41486156, y: 1.8551145}
-      - {x: 0.5821713, y: 1.6993998}
+      - {x: 0.6546497, y: 1.7718782}
+      - {x: 0.9324584, y: 1.3535379}
       - {x: 0.8625651, y: 0.79114807}
-      - {x: 0.66903913, y: 0.7423152}
-      - {x: 0.45837593, y: 1.1797192}
-      - {x: 0.49571624, y: 0.6952425}
+      - {x: 0.7978896, y: 0.6778899}
+      - {x: 0.69191736, y: 0.6482111}
+      - {x: 0.57461905, y: 0.6189191}
+      - {x: 0.47960994, y: 0.5905515}
       - {x: 0.31022954, y: 0.6176455}
-      - {x: 0.32579824, y: 1.1475939}
-      - {x: 0.25432014, y: 1.2148504}
-      - {x: 0.1801481, y: 1.1702279}
-      - {x: 0.15935212, y: 1.1858071}
+      - {x: 0.23721352, y: 0.8576803}
+      - {x: 0.18989493, y: 0.9168838}
+      - {x: 0.12377605, y: 0.93668646}
+      - {x: 0.014395356, y: 0.968372}
       - {x: -0.10434419, y: 1.03915}
       - {x: -0.16680539, y: 1.235466}
       - {x: -0.20478126, y: 1.4294531}
-      - {x: 0.19238329, y: 1.6107649}
+      - {x: 0.04742652, y: 1.7718278}
 --- !u!114 &7726895896116564145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLingerTime: 0.05
+  linger: 1
 --- !u!114 &8182017992828182498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,16 +134,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseDamage: 4.2
   baseKB: 0.2
-  hitStun: 0.16
+  hitStun: 0.22
   damageModifier: 0
   KBModifier: 0
   modifierY: 6.5
   modifierX: 0.16
   multModY: 1
   multModX: 1
-  shakeIntensity: 0
-  shakeScreen: 0
+  shakeIntensity: 0.11
+  shakeScreen: 1
   smash: 0
   grab: 0
+  continuous: 0
+  groundPound: 0
+  noHitStop: 0
+  noFlinch: 0
+  guardBreak: 0
   soundName: Hurt
   hitEnemies: []

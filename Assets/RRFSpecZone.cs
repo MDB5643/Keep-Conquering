@@ -8,11 +8,16 @@ public class RRFSpecZone : MonoBehaviour
     public float activeTime = 0.0f;
     public float startingYpos;
     public bool released = false;
+    public bool charged;
 
     // Update is called once per frame
     private void Start()
     {
-            startingYpos = transform.position.y;
+        startingYpos = transform.position.y;
+        if (charged)
+        {
+            gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
+        }
     }
 
     // Update is called once per frame

@@ -66,6 +66,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentDamage: 0
+  playerManager: {fileID: 0}
   EyePop: {fileID: 3598523154694509901, guid: 4186a8507c8e2dc42a97d7745f3942f8, type: 3}
   eyePartner: {fileID: 0}
   Launcher: {fileID: 0}
@@ -149,7 +150,7 @@ GameObject:
   - component: {fileID: 8458564025062811987}
   - component: {fileID: 8458564025062811986}
   - component: {fileID: 8458564025062811985}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: RedMinionEyeTarget
   m_TagString: EyeTarget
   m_Icon: {fileID: 0}

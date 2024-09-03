@@ -51,11 +51,15 @@ TagManager:
   - WindBox
   - FFA
   - Joust
+  - Lab
+  - VsCPU
+  - VsPlayers
+  - HurtBox
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Hurtbox
   - Water
   - UI
   - PortalForeground
@@ -81,8 +85,8 @@ TagManager:
   - LedgeGrab
   - LedgeGrabMid
   - PlayerObjects
-  - 
-  - 
+  - Grabbed
+  - GroundSensor
   - 
   m_SortingLayers:
   - name: backback

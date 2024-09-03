@@ -7,6 +7,7 @@ public class ChampJab2 : MonoBehaviour
     private PolygonCollider2D pCollider;
     private float lingerTime = 0.0f;
     public float maxLingerTime = 0.05f;
+    public bool linger = true;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +19,7 @@ public class ChampJab2 : MonoBehaviour
     void Update()
     {
         lingerTime += Time.deltaTime;
-        if (lingerTime >= maxLingerTime && gameObject != null)
+        if (lingerTime >= maxLingerTime && gameObject != null && linger)
         {
             GameObject.Destroy(gameObject);
         }

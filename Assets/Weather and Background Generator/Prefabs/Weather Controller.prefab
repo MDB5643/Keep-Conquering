@@ -1,0 +1,388 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9212088068021487385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9212088068021487386}
+  - component: {fileID: 9212088068021487384}
+  m_Layer: 0
+  m_Name: Weather Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9212088068021487386
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9212088068021487385}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9212088068021487384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9212088068021487385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccb0021bdae98a04d9fb4523887c0c53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeAndSkyScript: {fileID: 0}
+  isWindOn: 0
+  windDirectionAndMagnitude: {x: -1, y: 0}
+  isLighteningOn: 0
+  myLightening:
+    myLighteningPrefab: {fileID: 8844953945568718186, guid: e2331d7e33b81b6498cb2fefa4a8f421,
+      type: 3}
+    lighteningFrequency: 3
+    lighteningCollisionLayers:
+      serializedVersion: 2
+      m_Bits: 256
+    lighteningOrderInLayer: 0
+    currentLightening: {fileID: 0}
+  weatherParticleEffects:
+  - prefabParticleEffect: {fileID: 0}
+    spawnLocation: 0
+    customSpawnLocation: {x: -1, y: -1}
+    effectName: Light Rain
+    particleLifetime: 3
+    particleColor: {r: 1, g: 1, b: 1, a: 1}
+    particleStartSpeed: 0
+    particleMinMaxSize: {x: 0.1, y: 0.5}
+    gravityModifier: 3
+    emissionRate: 80
+    shapeType: 12
+    shapeSizeMultiplier: 2
+    changeSizeWithSpeed: 1
+    minMaxXSizeChangeWithSpeed: {x: 0.1, y: 0.5}
+    minMaxYSizeChangeWithSpeed: {x: 1, y: 3}
+    swayParticle: 0
+    xSwayAmount: 0
+    ySwayAmount: 0
+    enableParticleCollisions: 1
+    dampenOnCollision: 1
+    bounceOnCollision: 0
+    lifetimeLossOnCollision: 1
+    collisionLayers:
+      serializedVersion: 2
+      m_Bits: 1
+    particleCollisionForce: 1
+    prewarmParticleEffect: 1
+    effectedByWind: 1
+    windEffectMultiplier: 1
+    rotatesWithWind: 1
+    doesParticleSplash: 1
+    splashName: Splash
+    splashStartSpeed: 0
+    splashLife: 0.2
+    splashColor: {r: 1, g: 1, b: 1, a: 1}
+    splashSize: 0.075
+    splashOffset: {x: 0, y: -1}
+    splashGravityModifer: -0.5
+    splashBurstAmount: 10
+    splashShapeType: 18
+    splashShapeSize: 0.1
+    splashCanCollide: 1
+    splashDampenOnCollision: 0
+    splashBounceOnCollision: 1
+    spawnOrderInLayer: 30
+    effectMaterial: {fileID: 2100000, guid: 22c5c5afc8eacc04b91ff3afb04d03a1, type: 2}
+    splashMaterial: {fileID: 2100000, guid: 22c5c5afc8eacc04b91ff3afb04d03a1, type: 2}
+  - prefabParticleEffect: {fileID: 0}
+    spawnLocation: 0
+    customSpawnLocation: {x: 0, y: 0}
+    effectName: Moderate Rain
+    particleLifetime: 3
+    particleColor: {r: 1, g: 1, b: 1, a: 1}
+    particleStartSpeed: 0
+    particleMinMaxSize: {x: 0.1, y: 0.5}
+    gravityModifier: 3
+    emissionRate: 240
+    shapeType: 12
+    shapeSizeMultiplier: 1
+    changeSizeWithSpeed: 1
+    minMaxXSizeChangeWithSpeed: {x: 0.1, y: 0.5}
+    minMaxYSizeChangeWithSpeed: {x: 1, y: 3}
+    swayParticle: 0
+    xSwayAmount: 0
+    ySwayAmount: 0
+    enableParticleCollisions: 1
+    dampenOnCollision: 1
+    bounceOnCollision: 0
+    lifetimeLossOnCollision: 1
+    collisionLayers:
+      serializedVersion: 2
+      m_Bits: 1
+    particleCollisionForce: 1
+    prewarmParticleEffect: 1
+    effectedByWind: 1
+    windEffectMultiplier: 1
+    rotatesWithWind: 1
+    doesParticleSplash: 1
+    splashName: Splash
+    splashStartSpeed: 0
+    splashLife: 0.2
+    splashColor: {r: 1, g: 1, b: 1, a: 1}
+    splashSize: 0.075
+    splashOffset: {x: 0, y: -1}
+    splashGravityModifer: -0.5
+    splashBurstAmount: 10
+    splashShapeType: 18
+    splashShapeSize: 0.1
+    splashCanCollide: 1
+    splashDampenOnCollision: 0
+    splashBounceOnCollision: 1
+    spawnOrderInLayer: 30
+    effectMaterial: {fileID: 2100000, guid: 22c5c5afc8eacc04b91ff3afb04d03a1, type: 2}
+    splashMaterial: {fileID: 2100000, guid: 22c5c5afc8eacc04b91ff3afb04d03a1, type: 2}
+  - prefabParticleEffect: {fileID: 0}
+    spawnLocation: 0
+    customSpawnLocation: {x: 0, y: 0}
+    effectName: Heavy Rain
+    particleLifetime: 3
+    particleColor: {r: 1, g: 1, b: 1, a: 1}
+    particleStartSpeed: 0
+    particleMinMaxSize: {x: 0.1, y: 0.5}
+    gravityModifier: 3
+    emissionRate: 600
+    shapeType: 12
+    shapeSizeMultiplier: 2
+    changeSizeWithSpeed: 1
+    minMaxXSizeChangeWithSpeed: {x: 0.1, y: 0.5}
+    minMaxYSizeChangeWithSpeed: {x: 1, y: 3}
+    swayParticle: 0
+    xSwayAmount: 0
+    ySwayAmount: 0
+    enableParticleCollisions: 1
+    dampenOnCollision: 1
+    bounceOnCollision: 0
+    lifetimeLossOnCollision: 1
+    collisionLayers:
+      serializedVersion: 2
+      m_Bits: 1
+    particleCollisionForce: 1
+    prewarmParticleEffect: 1
+    effectedByWind: 1
+    windEffectMultiplier: 1
+    rotatesWithWind: 1
+    doesParticleSplash: 1
+    splashName: Splash
+    splashStartSpeed: 0
+    splashLife: 0.2
+    splashColor: {r: 1, g: 1, b: 1, a: 1}
+    splashSize: 0.075
+    splashOffset: {x: 0, y: -1}
+    splashGravityModifer: -0.5
+    splashBurstAmount: 10
+    splashShapeType: 18
+    splashShapeSize: 0.1
+    splashCanCollide: 1
+    splashDampenOnCollision: 0
+    splashBounceOnCollision: 1
+    spawnOrderInLayer: -5
+    effectMaterial: {fileID: 2100000, guid: 22c5c5afc8eacc04b91ff3afb04d03a1, type: 2}
+    splashMaterial: {fileID: 2100000, guid: 22c5c5afc8eacc04b91ff3afb04d03a1, type: 2}
+  - prefabParticleEffect: {fileID: 0}
+    spawnLocation: 0
+    customSpawnLocation: {x: 0, y: 0}
+    effectName: Light Rain - Type 2
+    particleLifetime: 3
+    particleColor: {r: 1, g: 1, b: 1, a: 1}
+    particleStartSpeed: 0
+    particleMinMaxSize: {x: 0.1, y: 0.5}
+    gravityModifier: 3
+    emissionRate: 80
+    shapeType: 12
+    shapeSizeMultiplier: 2
+    changeSizeWithSpeed: 1
+    minMaxXSizeChangeWithSpeed: {x: 0.1, y: 0.5}
+    minMaxYSizeChangeWithSpeed: {x: 1, y: 3}
+    swayParticle: 0
+    xSwayAmount: 0
+    ySwayAmount: 0
+    enableParticleCollisions: 1
+    dampenOnCollision: 1
+    bounceOnCollision: 0
+    lifetimeLossOnCollision: 1
+    collisionLayers:
+      serializedVersion: 2
+      m_Bits: 1
+    particleCollisionForce: 1
+    prewarmParticleEffect: 1
+    effectedByWind: 1
+    windEffectMultiplier: 0.01
+    rotatesWithWind: 1
+    doesParticleSplash: 1
+    splashName: Splash
+    splashStartSpeed: 0
+    splashLife: 0.2
+    splashColor: {r: 1, g: 1, b: 1, a: 1}
+    splashSize: 0.075
+    splashOffset: {x: 0, y: -1}
+    splashGravityModifer: -0.5
+    splashBurstAmount: 10
+    splashShapeType: 18
+    splashShapeSize: 0.1
+    splashCanCollide: 1
+    splashDampenOnCollision: 0
+    splashBounceOnCollision: 1
+    spawnOrderInLayer: 30
+    effectMaterial: {fileID: 2100000, guid: efb493c9f633bf04d9b7f7f1fd6712aa, type: 2}
+    splashMaterial: {fileID: 2100000, guid: efb493c9f633bf04d9b7f7f1fd6712aa, type: 2}
+  - prefabParticleEffect: {fileID: 0}
+    spawnLocation: 0
+    customSpawnLocation: {x: 0, y: 0}
+    effectName: Snow
+    particleLifetime: 15
+    particleColor: {r: 1, g: 1, b: 1, a: 1}
+    particleStartSpeed: 0
+    particleMinMaxSize: {x: 0.1, y: 0.5}
+    gravityModifier: 0.05
+    emissionRate: 100
+    shapeType: 12
+    shapeSizeMultiplier: 3
+    changeSizeWithSpeed: 0
+    minMaxXSizeChangeWithSpeed: {x: 0.1, y: 0.5}
+    minMaxYSizeChangeWithSpeed: {x: 1, y: 3}
+    swayParticle: 1
+    xSwayAmount: 3
+    ySwayAmount: 0
+    enableParticleCollisions: 1
+    dampenOnCollision: 1
+    bounceOnCollision: 0
+    lifetimeLossOnCollision: 1
+    collisionLayers:
+      serializedVersion: 2
+      m_Bits: 33
+    particleCollisionForce: 0
+    prewarmParticleEffect: 1
+    effectedByWind: 1
+    windEffectMultiplier: 2
+    rotatesWithWind: 0
+    doesParticleSplash: 1
+    splashName: SnowFlake
+    splashStartSpeed: 0
+    splashLife: 0.2
+    splashColor: {r: 1, g: 1, b: 1, a: 1}
+    splashSize: 0.075
+    splashOffset: {x: 0, y: -1}
+    splashGravityModifer: -0.5
+    splashBurstAmount: 5
+    splashShapeType: 18
+    splashShapeSize: 0.1
+    splashCanCollide: 1
+    splashDampenOnCollision: 0
+    splashBounceOnCollision: 1
+    spawnOrderInLayer: 30
+    effectMaterial: {fileID: 2100000, guid: e4635abef1c7fef45ac0676b577a92da, type: 2}
+    splashMaterial: {fileID: 2100000, guid: e4635abef1c7fef45ac0676b577a92da, type: 2}
+  - prefabParticleEffect: {fileID: 0}
+    spawnLocation: 2
+    customSpawnLocation: {x: 1.5, y: 0}
+    effectName: Fog
+    particleLifetime: 30
+    particleColor: {r: 1, g: 1, b: 1, a: 0.101960786}
+    particleStartSpeed: 0.5
+    particleMinMaxSize: {x: 5, y: 10}
+    gravityModifier: 0
+    emissionRate: 10
+    shapeType: 18
+    shapeSizeMultiplier: 2
+    changeSizeWithSpeed: 1
+    minMaxXSizeChangeWithSpeed: {x: 1, y: 5}
+    minMaxYSizeChangeWithSpeed: {x: 1, y: 5}
+    swayParticle: 0
+    xSwayAmount: 0
+    ySwayAmount: 0
+    enableParticleCollisions: 0
+    dampenOnCollision: 1
+    bounceOnCollision: 0
+    lifetimeLossOnCollision: 1
+    collisionLayers:
+      serializedVersion: 2
+      m_Bits: 0
+    particleCollisionForce: 0
+    prewarmParticleEffect: 1
+    effectedByWind: 1
+    windEffectMultiplier: 0.1
+    rotatesWithWind: 0
+    doesParticleSplash: 0
+    splashName: 
+    splashStartSpeed: 0
+    splashLife: 0.2
+    splashColor: {r: 1, g: 1, b: 1, a: 1}
+    splashSize: 0.075
+    splashOffset: {x: 0, y: 0}
+    splashGravityModifer: -0.5
+    splashBurstAmount: 5
+    splashShapeType: 5
+    splashShapeSize: 0.1
+    splashCanCollide: 1
+    splashDampenOnCollision: 0
+    splashBounceOnCollision: 1
+    spawnOrderInLayer: -5
+    effectMaterial: {fileID: 2100000, guid: 3df33677686aa9244831df1da799610e, type: 2}
+    splashMaterial: {fileID: 0}
+  - prefabParticleEffect: {fileID: 0}
+    spawnLocation: 5
+    customSpawnLocation: {x: 2.5, y: 0.5}
+    effectName: Dark Storm Clouds
+    particleLifetime: 40
+    particleColor: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 0.24705882}
+    particleStartSpeed: 0.5
+    particleMinMaxSize: {x: 10, y: 15}
+    gravityModifier: 0
+    emissionRate: 30
+    shapeType: 18
+    shapeSizeMultiplier: 2
+    changeSizeWithSpeed: 1
+    minMaxXSizeChangeWithSpeed: {x: 1, y: 5}
+    minMaxYSizeChangeWithSpeed: {x: 1, y: 5}
+    swayParticle: 0
+    xSwayAmount: 0
+    ySwayAmount: 0
+    enableParticleCollisions: 0
+    dampenOnCollision: 1
+    bounceOnCollision: 0
+    lifetimeLossOnCollision: 1
+    collisionLayers:
+      serializedVersion: 2
+      m_Bits: 0
+    particleCollisionForce: 0
+    prewarmParticleEffect: 0
+    effectedByWind: 1
+    windEffectMultiplier: 0.05
+    rotatesWithWind: 0
+    doesParticleSplash: 0
+    splashName: 
+    splashStartSpeed: 0
+    splashLife: 0.2
+    splashColor: {r: 1, g: 1, b: 1, a: 1}
+    splashSize: 0.075
+    splashOffset: {x: 0, y: 0}
+    splashGravityModifer: -0.5
+    splashBurstAmount: 5
+    splashShapeType: 5
+    splashShapeSize: 0.1
+    splashCanCollide: 1
+    splashDampenOnCollision: 0
+    splashBounceOnCollision: 1
+    spawnOrderInLayer: -5
+    effectMaterial: {fileID: 2100000, guid: 3df33677686aa9244831df1da799610e, type: 2}
+    splashMaterial: {fileID: 0}
