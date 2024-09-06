@@ -432,7 +432,8 @@ public class CPUBehavior : MonoBehaviour
             {
                 enemyBehind = true;
             }
-            if (Mathf.Abs(distance) <= attackDistance)
+            if (Mathf.Abs(distance) <= attackDistance && (!gameObject.GetComponentInParent<Conqueror>().inAttack && !gameObject.GetComponentInParent<Conqueror>().m_isInKnockback && !gameObject.GetComponentInParent<Conqueror>().m_isInHitStop 
+                && !gameObject.GetComponentInParent<Conqueror>().m_inHitStun && !gameObject.GetComponentInParent<Conqueror>().m_inJumpSquat && !gameObject.GetComponentInParent<Conqueror>().m_isParrying))
             {
                 Basic(enemyAbove, enemyBehind, enemyBelow);
             }

@@ -62,6 +62,7 @@ public class PrototypeHeroAnimEvents : MonoBehaviour
     void AE_resetAttack()
     {
         m_player.inAttack = false;
+        GetComponentInParent<Conqueror>().m_animator.SetBool("Crouching", false);
     }
     void AE_resetDodge()
     {

@@ -1,0 +1,7236 @@
+fileFormatVersion: 2
+guid: c0a0feaac2c286748a6ca3a98f66e84e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6601518163941809744
+    second: MonkWizard_0
+  - first:
+      213: 4997711145942452072
+    second: MonkWizard_1
+  - first:
+      213: 6731835231290122636
+    second: MonkWizard_2
+  - first:
+      213: -5770946618705285112
+    second: MonkWizard_3
+  - first:
+      213: 1407517891272127704
+    second: MonkWizard_4
+  - first:
+      213: -6743371387844651336
+    second: MonkWizard_5
+  - first:
+      213: -9189595739463103696
+    second: MonkWizard_6
+  - first:
+      213: -3765882844983242484
+    second: MonkWizard_7
+  - first:
+      213: 3281593241012727211
+    second: MonkWizard_8
+  - first:
+      213: -4334730562707795603
+    second: MonkWizard_9
+  - first:
+      213: -1303380403969745847
+    second: MonkWizard_10
+  - first:
+      213: 8735391402742045706
+    second: MonkWizard_11
+  - first:
+      213: 6997041222124791960
+    second: MonkWizard_12
+  - first:
+      213: -8972562183944075888
+    second: MonkWizard_13
+  - first:
+      213: 5649441473302301809
+    second: MonkWizard_14
+  - first:
+      213: -6458082941699778862
+    second: MonkWizard_15
+  - first:
+      213: 1766658845156527310
+    second: MonkWizard_16
+  - first:
+      213: 1112913235685536018
+    second: MonkWizard_17
+  - first:
+      213: 7475136990314259125
+    second: MonkWizard_18
+  - first:
+      213: 8090284953425112866
+    second: MonkWizard_19
+  - first:
+      213: -5115875340771889898
+    second: MonkWizard_20
+  - first:
+      213: 1123031377022454392
+    second: MonkWizard_21
+  - first:
+      213: -7671704597147218257
+    second: MonkWizard_22
+  - first:
+      213: -6829441481585033576
+    second: MonkWizard_23
+  - first:
+      213: 4685354396513012014
+    second: MonkWizard_24
+  - first:
+      213: 2255284646017688027
+    second: MonkWizard_25
+  - first:
+      213: 6401682923176875704
+    second: MonkWizard_26
+  - first:
+      213: 6651372115010557911
+    second: MonkWizard_27
+  - first:
+      213: -3873936908101716202
+    second: MonkWizard_28
+  - first:
+      213: -2030397707526954995
+    second: MonkWizard_29
+  - first:
+      213: 7458856289078421409
+    second: MonkWizard_30
+  - first:
+      213: 777478535414478144
+    second: MonkWizard_31
+  - first:
+      213: 1238941506424565586
+    second: MonkWizard_32
+  - first:
+      213: -8129621647305128097
+    second: MonkWizard_33
+  - first:
+      213: 477278936411781100
+    second: MonkWizard_34
+  - first:
+      213: -2968803288913951698
+    second: MonkWizard_35
+  - first:
+      213: 3710217498426713060
+    second: MonkWizard_36
+  - first:
+      213: -7997100532739146444
+    second: MonkWizard_37
+  - first:
+      213: -5564192234940119275
+    second: MonkWizard_38
+  - first:
+      213: -4535687305018487157
+    second: MonkWizard_39
+  - first:
+      213: 2389777301271794447
+    second: MonkWizard_40
+  - first:
+      213: 2346492064946384465
+    second: MonkWizard_41
+  - first:
+      213: -5499602372141156675
+    second: MonkWizard_42
+  - first:
+      213: 4158555709791792481
+    second: MonkWizard_43
+  - first:
+      213: 2564370665303076597
+    second: MonkWizard_44
+  - first:
+      213: 4618416998178937121
+    second: MonkWizard_45
+  - first:
+      213: -6965823061900636356
+    second: MonkWizard_46
+  - first:
+      213: 536046617807545076
+    second: MonkWizard_47
+  - first:
+      213: 3979416798794723773
+    second: MonkWizard_48
+  - first:
+      213: 7990317877246331861
+    second: MonkWizard_49
+  - first:
+      213: 4371830279348268699
+    second: MonkWizard_50
+  - first:
+      213: -4524295225652196335
+    second: MonkWizard_51
+  - first:
+      213: -1754826455782737555
+    second: MonkWizard_52
+  - first:
+      213: 8687171700348528887
+    second: MonkWizard_53
+  - first:
+      213: -1745002528167433869
+    second: MonkWizard_54
+  - first:
+      213: 2249801678302338990
+    second: MonkWizard_55
+  - first:
+      213: 3484092731765661138
+    second: MonkWizard_56
+  - first:
+      213: 3349673442918320011
+    second: MonkWizard_57
+  - first:
+      213: -4335517901635379403
+    second: MonkWizard_58
+  - first:
+      213: -4245572709301882023
+    second: MonkWizard_59
+  - first:
+      213: 1299729728159249322
+    second: MonkWizard_60
+  - first:
+      213: -3447325855718078686
+    second: MonkWizard_61
+  - first:
+      213: -7687579707970669880
+    second: MonkWizard_62
+  - first:
+      213: 6543705303306187223
+    second: MonkWizard_63
+  - first:
+      213: -5865967367199592989
+    second: MonkWizard_64
+  - first:
+      213: -7894855162883417462
+    second: MonkWizard_65
+  - first:
+      213: -3287609501430670567
+    second: MonkWizard_66
+  - first:
+      213: -7817979557403673333
+    second: MonkWizard_67
+  - first:
+      213: 8370529995810572917
+    second: MonkWizard_68
+  - first:
+      213: 4674766713562367060
+    second: MonkWizard_69
+  - first:
+      213: -5884297859879003320
+    second: MonkWizard_70
+  - first:
+      213: 7776689497013578862
+    second: MonkWizard_71
+  - first:
+      213: 9032355810564107587
+    second: MonkWizard_72
+  - first:
+      213: -348622479616104579
+    second: MonkWizard_73
+  - first:
+      213: -4480828916402214839
+    second: MonkWizard_74
+  - first:
+      213: 4354532683046586593
+    second: MonkWizard_75
+  - first:
+      213: -7425318295729863542
+    second: MonkWizard_76
+  - first:
+      213: 8093097713034349313
+    second: MonkWizard_77
+  - first:
+      213: -5647113375185778652
+    second: MonkWizard_78
+  - first:
+      213: 3217843415023345421
+    second: MonkWizard_79
+  - first:
+      213: -2709714668113120104
+    second: MonkWizard_80
+  - first:
+      213: 3660386564655159359
+    second: MonkWizard_81
+  - first:
+      213: -3110448468227772976
+    second: MonkWizard_82
+  - first:
+      213: 2108676756839186638
+    second: MonkWizard_83
+  - first:
+      213: -2508866959033396440
+    second: MonkWizard_84
+  - first:
+      213: 8552789582621001168
+    second: MonkWizard_85
+  - first:
+      213: -6443029294510194666
+    second: MonkWizard_86
+  - first:
+      213: -6614897559056198669
+    second: MonkWizard_87
+  - first:
+      213: -2770592737894544879
+    second: MonkWizard_88
+  - first:
+      213: 8626345913879420282
+    second: MonkWizard_89
+  - first:
+      213: -3832917968436321228
+    second: MonkWizard_90
+  - first:
+      213: -49528558396984093
+    second: MonkWizard_91
+  - first:
+      213: 1170594039605192051
+    second: MonkWizard_92
+  - first:
+      213: 4451877801985575389
+    second: MonkWizard_93
+  - first:
+      213: -2140739880520491529
+    second: MonkWizard_94
+  - first:
+      213: -4052869069307064866
+    second: MonkWizard_95
+  - first:
+      213: -2197970700325138869
+    second: MonkWizard_96
+  - first:
+      213: 8143328049780089382
+    second: MonkWizard_97
+  - first:
+      213: 8666424276595387358
+    second: MonkWizard_98
+  - first:
+      213: 28894723624961953
+    second: MonkWizard_99
+  - first:
+      213: -8161147464743703554
+    second: MonkWizard_100
+  - first:
+      213: 4581998650488537745
+    second: MonkWizard_101
+  - first:
+      213: 4089163738231459809
+    second: MonkWizard_102
+  - first:
+      213: -2109751393613891940
+    second: MonkWizard_103
+  - first:
+      213: -280594624621783744
+    second: MonkWizard_104
+  - first:
+      213: 2888278293661430158
+    second: MonkWizard_105
+  - first:
+      213: 8643107703946866434
+    second: MonkWizard_106
+  - first:
+      213: -1148361849987596012
+    second: MonkWizard_107
+  - first:
+      213: 1624200984254652999
+    second: MonkWizard_108
+  - first:
+      213: -2548467451972715242
+    second: MonkWizard_109
+  - first:
+      213: -99220603205835335
+    second: MonkWizard_110
+  - first:
+      213: -8860905230384385899
+    second: MonkWizard_111
+  - first:
+      213: -6073370933955994086
+    second: MonkWizard_112
+  - first:
+      213: 2507022168022446179
+    second: MonkWizard_113
+  - first:
+      213: 8992505978420502048
+    second: MonkWizard_114
+  - first:
+      213: -1319964468104174172
+    second: MonkWizard_115
+  - first:
+      213: -2858950304268007260
+    second: MonkWizard_116
+  - first:
+      213: -4559914433422496400
+    second: MonkWizard_117
+  - first:
+      213: 5782645528722467520
+    second: MonkWizard_118
+  - first:
+      213: 6054270049685763236
+    second: MonkWizard_119
+  - first:
+      213: -3019769709907879658
+    second: MonkWizard_120
+  - first:
+      213: 3790951236135294106
+    second: MonkWizard_121
+  - first:
+      213: -819437494393393999
+    second: MonkWizard_122
+  - first:
+      213: 6124925265645939285
+    second: MonkWizard_123
+  - first:
+      213: -6982261884741205829
+    second: MonkWizard_124
+  - first:
+      213: 1555581796204438054
+    second: MonkWizard_125
+  - first:
+      213: 3878023225833381839
+    second: MonkWizard_126
+  - first:
+      213: -5000215550026386458
+    second: MonkWizard_127
+  - first:
+      213: -3217582934025048608
+    second: MonkWizard_128
+  - first:
+      213: -4530637314823805935
+    second: MonkWizard_129
+  - first:
+      213: 1772784552093500401
+    second: MonkWizard_130
+  - first:
+      213: -8098112660723192600
+    second: MonkWizard_131
+  - first:
+      213: -2007415371704034986
+    second: MonkWizard_132
+  - first:
+      213: -6815822387056348836
+    second: MonkWizard_133
+  - first:
+      213: -560911488329596271
+    second: MonkWizard_134
+  - first:
+      213: -8243339976364954183
+    second: MonkWizard_135
+  - first:
+      213: 130427601998671322
+    second: MonkWizard_136
+  - first:
+      213: 1360956142726179657
+    second: MonkWizard_137
+  - first:
+      213: -4530402645928557875
+    second: MonkWizard_138
+  - first:
+      213: -3617106930158851394
+    second: MonkWizard_139
+  - first:
+      213: 5681655716883510522
+    second: MonkWizard_140
+  - first:
+      213: 9116504408770528718
+    second: MonkWizard_141
+  - first:
+      213: -153303710388098345
+    second: MonkWizard_142
+  - first:
+      213: -8360617781837787122
+    second: MonkWizard_143
+  - first:
+      213: -5093130420146682344
+    second: MonkWizard_144
+  - first:
+      213: -8660022836150110538
+    second: MonkWizard_145
+  - first:
+      213: -5508300545052697564
+    second: MonkWizard_146
+  - first:
+      213: -1788847412009993772
+    second: MonkWizard_147
+  - first:
+      213: 4146313935742070903
+    second: MonkWizard_148
+  - first:
+      213: -6029928917682925222
+    second: MonkWizard_149
+  - first:
+      213: -4632835994848859839
+    second: MonkWizard_150
+  - first:
+      213: 8199547310896303195
+    second: MonkWizard_151
+  - first:
+      213: -4276618983016593599
+    second: MonkWizard_152
+  - first:
+      213: 613115529637819901
+    second: MonkWizard_153
+  - first:
+      213: -469959592162469155
+    second: MonkWizard_154
+  - first:
+      213: 9085645331696470639
+    second: MonkWizard_155
+  - first:
+      213: 8005858154543810062
+    second: MonkWizard_156
+  - first:
+      213: -366319405854375864
+    second: MonkWizard_157
+  - first:
+      213: -7479886254265422049
+    second: MonkWizard_158
+  - first:
+      213: -8774465328126110456
+    second: MonkWizard_159
+  - first:
+      213: -4501911379368207437
+    second: MonkWizard_160
+  - first:
+      213: -3389439464859400563
+    second: MonkWizard_161
+  - first:
+      213: 3385390479624758240
+    second: MonkWizard_162
+  - first:
+      213: -5208031552841668059
+    second: MonkWizard_163
+  - first:
+      213: 7679613168437904468
+    second: MonkWizard_164
+  - first:
+      213: 7264687751978758609
+    second: MonkWizard_165
+  - first:
+      213: -1903098677571408502
+    second: MonkWizard_166
+  - first:
+      213: -9077159655688860033
+    second: MonkWizard_167
+  - first:
+      213: -2997390954671351119
+    second: MonkWizard_168
+  - first:
+      213: 2319282715012281981
+    second: MonkWizard_169
+  - first:
+      213: 1955642970554528909
+    second: MonkWizard_170
+  - first:
+      213: -4204654206025255626
+    second: MonkWizard_171
+  - first:
+      213: -517195664897062737
+    second: MonkWizard_172
+  - first:
+      213: 6934707894399818772
+    second: MonkWizard_173
+  - first:
+      213: 8125368651464018239
+    second: MonkWizard_174
+  - first:
+      213: -7980624809804105200
+    second: MonkWizard_175
+  - first:
+      213: 6393338004923009604
+    second: MonkWizard_176
+  - first:
+      213: -9010589368689493997
+    second: MonkWizard_177
+  - first:
+      213: -7583852236517721079
+    second: MonkWizard_178
+  - first:
+      213: -6111711420138685650
+    second: MonkWizard_179
+  - first:
+      213: 960729872842621899
+    second: MonkWizard_180
+  - first:
+      213: 4787518300443918993
+    second: MonkWizard_181
+  - first:
+      213: 6348309750736093131
+    second: MonkWizard_182
+  - first:
+      213: 6326864218471834726
+    second: MonkWizard_183
+  - first:
+      213: 903804566233870612
+    second: MonkWizard_184
+  - first:
+      213: 9126750586175850278
+    second: MonkWizard_185
+  - first:
+      213: 5486145285826509972
+    second: MonkWizard_186
+  - first:
+      213: 3511160292341596224
+    second: MonkWizard_187
+  - first:
+      213: 7843686460863369010
+    second: MonkWizard_188
+  - first:
+      213: -8757177849627215516
+    second: MonkWizard_189
+  - first:
+      213: -9153408718389328349
+    second: MonkWizard_190
+  - first:
+      213: -7648092852205209535
+    second: MonkWizard_191
+  - first:
+      213: 6847399529020224046
+    second: MonkWizard_192
+  - first:
+      213: 2935991638587310765
+    second: MonkWizard_193
+  - first:
+      213: -4749941951377305209
+    second: MonkWizard_194
+  - first:
+      213: -771156762792342384
+    second: MonkWizard_195
+  - first:
+      213: -9132747710631723067
+    second: MonkWizard_196
+  - first:
+      213: 7087177517558261855
+    second: MonkWizard_197
+  - first:
+      213: 5186086107981856724
+    second: MonkWizard_198
+  - first:
+      213: 1301674314532583306
+    second: MonkWizard_199
+  - first:
+      213: -5665782151635172803
+    second: MonkWizard_200
+  - first:
+      213: 4015521502698571439
+    second: MonkWizard_201
+  - first:
+      213: 8568374924436963438
+    second: MonkWizard_202
+  - first:
+      213: 4740409086777721427
+    second: MonkWizard_203
+  - first:
+      213: 3866185240954364191
+    second: MonkWizard_204
+  - first:
+      213: -1769519549130342212
+    second: MonkWizard_205
+  - first:
+      213: 1774316046057006454
+    second: MonkWizard_206
+  - first:
+      213: 4575551074201761800
+    second: MonkWizard_207
+  - first:
+      213: -8318071298709307226
+    second: MonkWizard_208
+  - first:
+      213: -7998460227562830146
+    second: MonkWizard_209
+  - first:
+      213: 8642822980841203515
+    second: MonkWizard_210
+  - first:
+      213: -1372551826255985913
+    second: MonkWizard_211
+  - first:
+      213: -5096774784613640336
+    second: MonkWizard_212
+  - first:
+      213: 8439072042127771173
+    second: MonkWizard_213
+  - first:
+      213: 8868739975363248753
+    second: MonkWizard_214
+  - first:
+      213: 6962604495922987428
+    second: MonkWizard_215
+  - first:
+      213: -4074229496512386435
+    second: MonkWizard_216
+  - first:
+      213: 790735166383183716
+    second: MonkWizard_217
+  - first:
+      213: 2488655986028526011
+    second: MonkWizard_218
+  - first:
+      213: -8957588754382707555
+    second: MonkWizard_219
+  - first:
+      213: 7727623854612503198
+    second: MonkWizard_220
+  - first:
+      213: -3003873140619372651
+    second: MonkWizard_221
+  - first:
+      213: 7648182312865253
+    second: MonkWizard_222
+  - first:
+      213: -6172481415482934542
+    second: MonkWizard_223
+  - first:
+      213: -3410720808245182966
+    second: MonkWizard_224
+  - first:
+      213: 737325637104174063
+    second: MonkWizard_225
+  - first:
+      213: -4333866171404481232
+    second: MonkWizard_226
+  - first:
+      213: 5911838062832446554
+    second: MonkWizard_227
+  - first:
+      213: -555986641409540556
+    second: MonkWizard_228
+  - first:
+      213: -6224442371689972829
+    second: MonkWizard_229
+  - first:
+      213: 3317414183940191858
+    second: MonkWizard_230
+  - first:
+      213: -1191815262656953264
+    second: MonkWizard_231
+  - first:
+      213: -2571026706195221093
+    second: MonkWizard_232
+  - first:
+      213: -30127524750677027
+    second: MonkWizard_233
+  - first:
+      213: 5858830748154433562
+    second: MonkWizard_234
+  - first:
+      213: -7262352727939231161
+    second: MonkWizard_235
+  - first:
+      213: 5752838684235048253
+    second: MonkWizard_236
+  - first:
+      213: 3377085242023064579
+    second: MonkWizard_237
+  - first:
+      213: -8920966515087132637
+    second: MonkWizard_238
+  - first:
+      213: -2776075718300488456
+    second: MonkWizard_239
+  - first:
+      213: 4163202087340766185
+    second: MonkWizard_240
+  - first:
+      213: 972627871783391365
+    second: MonkWizard_241
+  - first:
+      213: -5199736752179099395
+    second: MonkWizard_242
+  - first:
+      213: -3447880133193857052
+    second: MonkWizard_243
+  - first:
+      213: 7303279822444386282
+    second: MonkWizard_244
+  - first:
+      213: 7654817954352686146
+    second: MonkWizard_245
+  - first:
+      213: -1375794515056614133
+    second: MonkWizard_246
+  - first:
+      213: -5504392117403434560
+    second: MonkWizard_247
+  - first:
+      213: 6038723482961523256
+    second: MonkWizard_248
+  - first:
+      213: 573876830961333830
+    second: MonkWizard_249
+  - first:
+      213: 6369545811016141343
+    second: MonkWizard_250
+  - first:
+      213: 513579167326359882
+    second: MonkWizard_251
+  - first:
+      213: -3037418588896889076
+    second: MonkWizard_252
+  - first:
+      213: 2817064218951725802
+    second: MonkWizard_253
+  - first:
+      213: 3067977061953636866
+    second: MonkWizard_254
+  - first:
+      213: 1986194669140672107
+    second: MonkWizard_255
+  - first:
+      213: 5892337660069070241
+    second: MonkWizard_256
+  - first:
+      213: -2275940414953367953
+    second: MonkWizard_257
+  - first:
+      213: -4627584081009423663
+    second: MonkWizard_258
+  - first:
+      213: -1153305940236599021
+    second: MonkWizard_259
+  - first:
+      213: 4413024996864994695
+    second: MonkWizard_260
+  - first:
+      213: 8516149365027720128
+    second: MonkWizard_261
+  - first:
+      213: 2236172893229379454
+    second: MonkWizard_262
+  - first:
+      213: 6369468144500712124
+    second: MonkWizard_263
+  - first:
+      213: -7128076410686464775
+    second: MonkWizard_264
+  - first:
+      213: -7284573330650943186
+    second: MonkWizard_265
+  - first:
+      213: 6661361940556657377
+    second: MonkWizard_266
+  - first:
+      213: -27816109769330827
+    second: MonkWizard_267
+  - first:
+      213: -2736006910522438865
+    second: MonkWizard_268
+  - first:
+      213: 3927066854605651073
+    second: MonkWizard_269
+  - first:
+      213: 8928600174167933177
+    second: MonkWizard_270
+  - first:
+      213: 6222629399570785908
+    second: MonkWizard_271
+  - first:
+      213: 2705153340652580486
+    second: MonkWizard_272
+  - first:
+      213: 7352785781944618384
+    second: MonkWizard_273
+  - first:
+      213: 585601731327317214
+    second: MonkWizard_274
+  - first:
+      213: 5379998833297303226
+    second: MonkWizard_275
+  - first:
+      213: 7425143476333199613
+    second: MonkWizard_276
+  - first:
+      213: 6232166822079877931
+    second: MonkWizard_277
+  - first:
+      213: 6541426201270239744
+    second: MonkWizard_278
+  - first:
+      213: -8225954541252098879
+    second: MonkWizard_279
+  - first:
+      213: -614008506398379639
+    second: MonkWizard_280
+  - first:
+      213: 5705143421401001312
+    second: MonkWizard_281
+  - first:
+      213: -5751374663766261081
+    second: MonkWizard_282
+  - first:
+      213: -8243238535907732839
+    second: MonkWizard_283
+  - first:
+      213: -3713065789882425629
+    second: MonkWizard_284
+  - first:
+      213: -3534872939481559596
+    second: MonkWizard_285
+  - first:
+      213: -5254179221283009357
+    second: MonkWizard_286
+  - first:
+      213: 3735145535035711191
+    second: MonkWizard_287
+  - first:
+      213: -8003500585688841609
+    second: MonkWizard_288
+  - first:
+      213: 5526284933104997943
+    second: MonkWizard_289
+  - first:
+      213: 7556812859000010345
+    second: MonkWizard_290
+  - first:
+      213: -7239112090580720987
+    second: MonkWizard_291
+  - first:
+      213: -8297963435438740370
+    second: MonkWizard_292
+  - first:
+      213: 1294230516805363421
+    second: MonkWizard_293
+  - first:
+      213: 7608148400233093987
+    second: MonkWizard_294
+  - first:
+      213: 7435049730848254302
+    second: MonkWizard_295
+  - first:
+      213: -3193257647328832858
+    second: MonkWizard_296
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MonkWizard_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1655
+        width: 15
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e5a043bcd4d9b50800000000000000
+      internalID: 6601518163941809744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1656
+        width: 30
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86709e7eecf6b5540800000000000000
+      internalID: 4997711145942452072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1662
+        width: 36
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81e18fd9784c6d50800000000000000
+      internalID: 6731835231290122636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_3
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1651
+        width: 41
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800745640aa79efa0800000000000000
+      internalID: -5770946618705285112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1607
+        width: 4
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d438449012888310800000000000000
+      internalID: 1407517891272127704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_5
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1608
+        width: 9
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b69cfe537bba62a0800000000000000
+      internalID: -6743371387844651336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_6
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1618
+        width: 30
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03bcbdf0d5ff77080800000000000000
+      internalID: -9189595739463103696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_7
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1614
+        width: 36
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0159074185ecbbc0800000000000000
+      internalID: -3765882844983242484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_8
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1600
+        width: 22
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bade2e38aaf8a8d20800000000000000
+      internalID: 3281593241012727211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_9
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 1600
+        width: 22
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61d5c40581f7d3c0800000000000000
+      internalID: -4334730562707795603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_10
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1600
+        width: 22
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c9d2e9d6679ede0800000000000000
+      internalID: -1303380403969745847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_11
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 1600
+        width: 22
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0cd07ed2385a3970800000000000000
+      internalID: 8735391402742045706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_12
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1600
+        width: 22
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898638b6beb7a1160800000000000000
+      internalID: 6997041222124791960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_13
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 1600
+        width: 22
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09509ec7b3e0b7380800000000000000
+      internalID: -8972562183944075888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_14
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 1600
+        width: 22
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c0b838619d66e40800000000000000
+      internalID: 5649441473302301809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_15
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1600
+        width: 22
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d699f9e7c74066a0800000000000000
+      internalID: -6458082941699778862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_16
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1600
+        width: 22
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc4bd80cde648810800000000000000
+      internalID: 1766658845156527310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_17
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 1600
+        width: 19
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211fddef0bcd17f00800000000000000
+      internalID: 1112913235685536018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_18
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1600
+        width: 20
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2601bdc750db760800000000000000
+      internalID: 7475136990314259125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_19
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 1600
+        width: 23
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f679c0d47764070800000000000000
+      internalID: 8090284953425112866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_20
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 1600
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d6c1e8b72c009b0800000000000000
+      internalID: -5115875340771889898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_21
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 1600
+        width: 22
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a8a0b561fc59f00800000000000000
+      internalID: 1123031377022454392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_22
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1500
+        width: 26
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae0f49b051a88590800000000000000
+      internalID: -7671704597147218257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_23
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 1500
+        width: 20
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e7ecb0823f831a0800000000000000
+      internalID: -6829441481585033576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_24
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 1500
+        width: 22
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2909f2eff8b50140800000000000000
+      internalID: 4685354396513012014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_25
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1500
+        width: 25
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1e641cf616c4f10800000000000000
+      internalID: 2255284646017688027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_26
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1500
+        width: 29
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b654a873b857d850800000000000000
+      internalID: 6401682923176875704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_27
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1500
+        width: 30
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d79428b2bb6e4c50800000000000000
+      internalID: 6651372115010557911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_28
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1500
+        width: 30
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617725638e20d3ac0800000000000000
+      internalID: -3873936908101716202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_29
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 1503
+        width: 24
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00a612ea0492d3e0800000000000000
+      internalID: -2030397707526954995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_30
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 1503
+        width: 23
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a72535b64e238760800000000000000
+      internalID: 7458856289078421409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_31
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 1501
+        width: 22
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045fed3db982aca00800000000000000
+      internalID: 777478535414478144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_32
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 1501
+        width: 21
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f6ce36cba913110800000000000000
+      internalID: 1238941506424565586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_33
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 1500
+        width: 25
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f574d023f28cd2f80800000000000000
+      internalID: -8129621647305128097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_34
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 1500
+        width: 34
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7b997f9a2af9600800000000000000
+      internalID: 477278936411781100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_35
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 1500
+        width: 33
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24c54c5321bcc6d0800000000000000
+      internalID: -2968803288913951698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_36
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 1500
+        width: 32
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3a92148275d7330800000000000000
+      internalID: 3710217498426713060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_37
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1400
+        width: 42
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43dfef89f67940190800000000000000
+      internalID: -7997100532739146444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_38
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1400
+        width: 42
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517486684a408c2b0800000000000000
+      internalID: -5564192234940119275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_39
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1400
+        width: 41
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ecf1c5d600e01c0800000000000000
+      internalID: -4535687305018487157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_40
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1400
+        width: 39
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03d89e3bc13a2120800000000000000
+      internalID: 2389777301271794447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_41
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1400
+        width: 36
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ee66fc91a609020800000000000000
+      internalID: 2346492064946384465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_42
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1400
+        width: 33
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db671aad7cc7da3b0800000000000000
+      internalID: -5499602372141156675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_43
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 1400
+        width: 24
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16defc4926826b930800000000000000
+      internalID: 4158555709791792481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_44
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 1400
+        width: 23
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe62d19889769320800000000000000
+      internalID: 2564370665303076597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_45
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 1400
+        width: 34
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129d4195ac9e71040800000000000000
+      internalID: 4618416998178937121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_46
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1400
+        width: 41
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f403be4dc645f90800000000000000
+      internalID: -6965823061900636356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_47
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1400
+        width: 43
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2e77d0f8b607700800000000000000
+      internalID: 536046617807545076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_48
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 1400
+        width: 62
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1b161ae7ab93730800000000000000
+      internalID: 3979416798794723773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_49
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 1400
+        width: 58
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db88bb56cf43ee60800000000000000
+      internalID: 7990317877246331861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_50
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 1400
+        width: 36
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ea9d2e97cdbac30800000000000000
+      internalID: 4371830279348268699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_51
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 1420
+        width: 11
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c410886797631c0800000000000000
+      internalID: -4524295225652196335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_52
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 1432
+        width: 4
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69bc9cc2aa95a7e0800000000000000
+      internalID: -1754826455782737555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_53
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 1431
+        width: 8
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8a91682a80f8870800000000000000
+      internalID: 8687171700348528887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_54
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 1400
+        width: 43
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379eb60327188c7e0800000000000000
+      internalID: -1745002528167433869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_55
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 1426
+        width: 4
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafd94ad4b6e83f10800000000000000
+      internalID: 2249801678302338990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_56
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 1421
+        width: 4
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd996941ebf95030800000000000000
+      internalID: 3484092731765661138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_57
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 1417
+        width: 11
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87c4bebf3e6c7e20800000000000000
+      internalID: 3349673442918320011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_58
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1300
+        width: 33
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f1da3607525d3c0800000000000000
+      internalID: -4335517901635379403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_59
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1300
+        width: 31
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953f7f96d12b415c0800000000000000
+      internalID: -4245572709301882023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_60
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1300
+        width: 36
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa372fe2d41990210800000000000000
+      internalID: 1299729728159249322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_61
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1300
+        width: 36
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22787e02663a820d0800000000000000
+      internalID: -3447325855718078686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_62
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 1300
+        width: 41
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c238e37cfa305590800000000000000
+      internalID: -7687579707970669880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_63
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1300
+        width: 41
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1b766ad49efca50800000000000000
+      internalID: 6543705303306187223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_64
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 1300
+        width: 59
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ede80e32c5e79ea0800000000000000
+      internalID: -5865967367199592989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_65
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1300
+        width: 59
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8adc2fde07df6290800000000000000
+      internalID: -7894855162883417462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_66
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1300
+        width: 59
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b9603b3901062d0800000000000000
+      internalID: -3287609501430670567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_67
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1300
+        width: 54
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d30b39305f08390800000000000000
+      internalID: -7817979557403673333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_68
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 1300
+        width: 54
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a8a06aea81a2470800000000000000
+      internalID: 8370529995810572917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_69
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 1311
+        width: 7
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45484b9de8b10e040800000000000000
+      internalID: 4674766713562367060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_70
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 1309
+        width: 5
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b1255d546c65ea0800000000000000
+      internalID: -5884297859879003320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_71
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 1300
+        width: 44
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c610615e95ceb60800000000000000
+      internalID: 7776689497013578862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_72
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1300
+        width: 42
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34deb9511cf595d70800000000000000
+      internalID: 9032355810564107587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_73
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 1300
+        width: 24
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7724cda3b1792bf0800000000000000
+      internalID: -348622479616104579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_74
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 1300
+        width: 30
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9482c8a47d5e0d1c0800000000000000
+      internalID: -4480828916402214839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_75
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1200
+        width: 36
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e802d767686e6c30800000000000000
+      internalID: 4354532683046586593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_76
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1200
+        width: 41
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8400ded958f3f890800000000000000
+      internalID: -7425318295729863542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_77
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 1200
+        width: 41
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b40fdad75705070800000000000000
+      internalID: 8093097713034349313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_78
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1200
+        width: 41
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428c1b11e4c61a1b0800000000000000
+      internalID: -5647113375185778652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_79
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 1200
+        width: 41
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0fdb4f798318ac20800000000000000
+      internalID: 3217843415023345421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_80
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1200
+        width: 41
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894b374bdd8256ad0800000000000000
+      internalID: -2709714668113120104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_81
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 1200
+        width: 41
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3812eedf2e4cc230800000000000000
+      internalID: 3660386564655159359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_82
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 1200
+        width: 41
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd2027199775d4d0800000000000000
+      internalID: -3110448468227772976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_83
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 1200
+        width: 41
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0c58d8656834d10800000000000000
+      internalID: 2108676756839186638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_84
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 1200
+        width: 42
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82399161bc6be2dd0800000000000000
+      internalID: -2508866959033396440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_85
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 1200
+        width: 41
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d549ce8fcc91b670800000000000000
+      internalID: 8552789582621001168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_86
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1200
+        width: 30
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 610c8474ef2c596a0800000000000000
+      internalID: -6443029294510194666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_87
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 1200
+        width: 36
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f35bde97b92334a0800000000000000
+      internalID: -6614897559056198669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_88
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 1200
+        width: 41
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ac4888590ec89d0800000000000000
+      internalID: -2770592737894544879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_89
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 1200
+        width: 41
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ddc6287efe6b770800000000000000
+      internalID: 8626345913879420282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_90
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1100
+        width: 41
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43424265a6dbecac0800000000000000
+      internalID: -3832917968436321228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_91
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1100
+        width: 50
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4b28ed90a005ff0800000000000000
+      internalID: -49528558396984093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_92
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1100
+        width: 49
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3756bd2b319ce3010800000000000000
+      internalID: 1170594039605192051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_93
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1100
+        width: 45
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd90cca164f38cd30800000000000000
+      internalID: 4451877801985575389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_94
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1100
+        width: 24
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd5019bb609a42e0800000000000000
+      internalID: -2140739880520491529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_95
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 1100
+        width: 20
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eddc8c2fd0151c7c0800000000000000
+      internalID: -4052869069307064866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_96
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 1100
+        width: 22
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e476c1b4d3f71e0800000000000000
+      internalID: -2197970700325138869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_97
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 1100
+        width: 25
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622ed9057b9e20170800000000000000
+      internalID: 8143328049780089382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_98
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 1100
+        width: 31
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb2a4f76f2554870800000000000000
+      internalID: 8666424276595387358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_99
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 1100
+        width: 26
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a78c891997a66000800000000000000
+      internalID: 28894723624961953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_100
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1100
+        width: 23
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb2f54de97cdbe80800000000000000
+      internalID: -8161147464743703554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_101
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 1100
+        width: 23
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19240b30f77869f30800000000000000
+      internalID: 4581998650488537745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_102
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 1100
+        width: 21
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1efc1bd21c0afb830800000000000000
+      internalID: 4089163738231459809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_103
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 1100
+        width: 27
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9632431948a8b2e0800000000000000
+      internalID: -2109751393613891940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_104
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 1100
+        width: 39
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045d881fca02b1cf0800000000000000
+      internalID: -280594624621783744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_105
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1000
+        width: 44
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81392a2ec9351820800000000000000
+      internalID: 2888278293661430158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_106
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1000
+        width: 50
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20fe131e9ac72f770800000000000000
+      internalID: 8643107703946866434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_107
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1000
+        width: 49
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41101e15bf23010f0800000000000000
+      internalID: -1148361849987596012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_108
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1000
+        width: 42
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742a65690325a8610800000000000000
+      internalID: 1624200984254652999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_109
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 1002
+        width: 45
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d7583da5602acd0800000000000000
+      internalID: -2548467451972715242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_110
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 1007
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b52487136f7f9ef0800000000000000
+      internalID: -99220603205835335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_111
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 1007
+        width: 41
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590b98ad3adb70580800000000000000
+      internalID: -8860905230384385899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_112
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 1000
+        width: 69
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ede5c405d07bba0800000000000000
+      internalID: -6073370933955994086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_113
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 1000
+        width: 69
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360f109016bbac220800000000000000
+      internalID: 2507022168022446179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_114
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 1000
+        width: 63
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e94540b8ccbcc70800000000000000
+      internalID: 8992505978420502048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_115
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 1040
+        width: 7
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5638a4f4b8eade0800000000000000
+      internalID: -1319964468104174172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_116
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 1034
+        width: 9
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a84c9b78d7f258d0800000000000000
+      internalID: -2858950304268007260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_117
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1000
+        width: 42
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07deca57bfde7b0c0800000000000000
+      internalID: -4559914433422496400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_118
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1000
+        width: 42
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cae0897875104050800000000000000
+      internalID: 5782645528722467520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_119
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1000
+        width: 51
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a47ec58886150450800000000000000
+      internalID: 6054270049685763236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_120
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 1000
+        width: 49
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619d471c27f9716d0800000000000000
+      internalID: -3019769709907879658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_121
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 1000
+        width: 43
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a941cae501a2c9430800000000000000
+      internalID: 3790951236135294106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_122
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 1021
+        width: 4
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bcab0fb0f5c0a4f0800000000000000
+      internalID: -819437494393393999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_123
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 1009
+        width: 8
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a24aee31b100550800000000000000
+      internalID: 6124925265645939285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_124
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 900
+        width: 67
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb040473fc50a1f90800000000000000
+      internalID: -6982261884741205829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_125
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 900
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62264ddd669869510800000000000000
+      internalID: 1555581796204438054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_126
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 900
+        width: 24
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf5386c39181d530800000000000000
+      internalID: 3878023225833381839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_127
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 900
+        width: 26
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3fa44137aab9ab0800000000000000
+      internalID: -5000215550026386458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_128
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 900
+        width: 39
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ede3167e59d853d0800000000000000
+      internalID: -3217582934025048608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_129
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 900
+        width: 45
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1142cc3dd51ff11c0800000000000000
+      internalID: -4530637314823805935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_130
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 900
+        width: 46
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f345d258223a9810800000000000000
+      internalID: 1772784552093500401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_131
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 900
+        width: 38
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec2082d079bd9f80800000000000000
+      internalID: -8098112660723192600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_132
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 900
+        width: 39
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6591cecea5a3424e0800000000000000
+      internalID: -2007415371704034986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_133
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 900
+        width: 39
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51f95796a55961a0800000000000000
+      internalID: -6815822387056348836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_134
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 900
+        width: 72
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192cda329fd3738f0800000000000000
+      internalID: -560911488329596271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_135
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 918
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd6df177f5c99d80800000000000000
+      internalID: -8243339976364954183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_136
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 900
+        width: 68
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add6906863f5fc100800000000000000
+      internalID: 130427601998671322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_137
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 900
+        width: 53
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b6412b66613e210800000000000000
+      internalID: 1360956142726179657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_138
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 919
+        width: 15
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc240ffebc6c021c0800000000000000
+      internalID: -4530402645928557875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_139
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 900
+        width: 48
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eba274949647dcdc0800000000000000
+      internalID: -3617106930158851394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_140
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 919
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4b8e495cb49de40800000000000000
+      internalID: 5681655716883510522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_141
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 900
+        width: 37
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5cc0e5574548e70800000000000000
+      internalID: 9116504408770528718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_142
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 800
+        width: 32
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da619f661b5fddf0800000000000000
+      internalID: -153303710388098345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_143
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 800
+        width: 31
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e009eb28c6e19fb80800000000000000
+      internalID: -8360617781837787122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_144
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 800
+        width: 31
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816cb601ed09159b0800000000000000
+      internalID: -5093130420146682344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_145
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 800
+        width: 32
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b670800d1b61d780800000000000000
+      internalID: -8660022836150110538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_146
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 800
+        width: 26
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c1b08a6d59e83b0800000000000000
+      internalID: -5508300545052697564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_147
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 800
+        width: 25
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d974c9a1ccbc27e0800000000000000
+      internalID: -1788847412009993772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_148
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 800
+        width: 41
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77078237e8aaa8930800000000000000
+      internalID: 4146313935742070903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_149
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 800
+        width: 47
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5157a8e893615ca0800000000000000
+      internalID: -6029928917682925222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_150
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 800
+        width: 46
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149e360653cd4bfb0800000000000000
+      internalID: -4632835994848859839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_151
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 800
+        width: 65
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ccbf016d4aac170800000000000000
+      internalID: 8199547310896303195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_152
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 813
+        width: 9
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1478a9581b566a4c0800000000000000
+      internalID: -4276618983016593599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_153
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 800
+        width: 54
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df576566359328800800000000000000
+      internalID: 613115529637819901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_154
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 800
+        width: 54
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda5e5aad3e5a79f0800000000000000
+      internalID: -469959592162469155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_155
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 800
+        width: 51
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a44f69a42b61e70800000000000000
+      internalID: 9085645331696470639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_156
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 800
+        width: 66
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e068fbf13958a1f60800000000000000
+      internalID: 8005858154543810062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_157
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 800
+        width: 55
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840c7b3f0729aeaf0800000000000000
+      internalID: -366319405854375864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_158
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 700
+        width: 45
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1fae26f41b123890800000000000000
+      internalID: -7479886254265422049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_159
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 700
+        width: 46
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805df0fe546da3680800000000000000
+      internalID: -8774465328126110456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_160
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 700
+        width: 24
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb187ed37ff581c0800000000000000
+      internalID: -4501911379368207437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_161
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 700
+        width: 23
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d868d55c3ca46f0d0800000000000000
+      internalID: -3389439464859400563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_162
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 700
+        width: 24
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3e50464b25bfe20800000000000000
+      internalID: 3385390479624758240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_163
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 700
+        width: 25
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52aa8d165ea59b7b0800000000000000
+      internalID: -5208031552841668059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_164
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 700
+        width: 35
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45447250d77739a60800000000000000
+      internalID: 7679613168437904468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_165
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 700
+        width: 34
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d133dc350b51d460800000000000000
+      internalID: 7264687751978758609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_166
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 700
+        width: 33
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d27d6f5d5d695e0800000000000000
+      internalID: -1903098677571408502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_167
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 700
+        width: 32
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e8821d263770280800000000000000
+      internalID: -9077159655688860033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_168
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 700
+        width: 28
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba58ddbec02766d0800000000000000
+      internalID: -2997390954671351119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_169
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 700
+        width: 26
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76b20a575fbf2020800000000000000
+      internalID: 2319282715012281981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_170
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 700
+        width: 25
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8474679be6d32b10800000000000000
+      internalID: 1955642970554528909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_171
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 700
+        width: 25
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635338ed64116a5c0800000000000000
+      internalID: -4204654206025255626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_172
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 700
+        width: 38
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa84072784d82d8f0800000000000000
+      internalID: -517195664897062737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_173
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 600
+        width: 53
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c5cca96180d3060800000000000000
+      internalID: 6934707894399818772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_174
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 600
+        width: 53
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f398b9b0dbb13c070800000000000000
+      internalID: 8125368651464018239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_175
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 641
+        width: 8
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01af4f5c4002f3190800000000000000
+      internalID: -7980624809804105200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_176
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 600
+        width: 38
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ac078ca03b9b850800000000000000
+      internalID: 6393338004923009604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_177
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 648
+        width: 18
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318f95695b4f3f280800000000000000
+      internalID: -9010589368689493997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_178
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 643
+        width: 24
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c3f45629eb0c690800000000000000
+      internalID: -7583852236517721079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_179
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 600
+        width: 17
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b7fe838d6de2ba0800000000000000
+      internalID: -6111711420138685650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_180
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 600
+        width: 16
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc304ebaab2355d00800000000000000
+      internalID: 960729872842621899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_181
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 600
+        width: 16
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19244a5678ea07240800000000000000
+      internalID: 4787518300443918993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_182
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 600
+        width: 16
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcff5c0651ab91850800000000000000
+      internalID: 6348309750736093131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_183
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 600
+        width: 16
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664a42c4c798dc750800000000000000
+      internalID: 6326864218471834726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_184
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 600
+        width: 17
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411feb4e675fa8c00800000000000000
+      internalID: 903804566233870612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_185
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 600
+        width: 44
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62789927d4bb8ae70800000000000000
+      internalID: 9126750586175850278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_186
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 635
+        width: 15
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c7fd31214b22c40800000000000000
+      internalID: 5486145285826509972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_187
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 641
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0404a76dea52ab030800000000000000
+      internalID: 3511160292341596224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_188
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 600
+        width: 41
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f4d4d474f5adc60800000000000000
+      internalID: 7843686460863369010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_189
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 600
+        width: 41
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469fc0ea421487680800000000000000
+      internalID: -8757177849627215516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_190
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 600
+        width: 21
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326c078744f88f080800000000000000
+      internalID: -9153408718389328349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_191
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 600
+        width: 18
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148ba1f72148cd590800000000000000
+      internalID: -7648092852205209535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_192
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 600
+        width: 19
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e227d62b799d60f50800000000000000
+      internalID: 6847399529020224046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_193
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 500
+        width: 30
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da28389f6dcbeb820800000000000000
+      internalID: 2935991638587310765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_194
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 500
+        width: 50
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7811e6426f0d41eb0800000000000000
+      internalID: -4749941951377305209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_195
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 500
+        width: 32
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c4f9f820d4c45f0800000000000000
+      internalID: -771156762792342384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_196
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 504
+        width: 18
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cfb8843856f14180800000000000000
+      internalID: -9132747710631723067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_197
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 500
+        width: 27
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58e13a1766ba5260800000000000000
+      internalID: 7087177517558261855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_198
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 501
+        width: 17
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dfb8d096dda8f740800000000000000
+      internalID: 5186086107981856724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_199
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 502
+        width: 14
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87f6fa74e9701210800000000000000
+      internalID: 1301674314532583306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_200
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 502
+        width: 15
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d328905d6291f51b0800000000000000
+      internalID: -5665782151635172803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_201
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 502
+        width: 14
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa68a44188ff9b730800000000000000
+      internalID: 4015521502698571439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_202
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 500
+        width: 21
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e600e69b89bf8e670800000000000000
+      internalID: 8568374924436963438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_203
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 500
+        width: 17
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3528b6bd2f059c140800000000000000
+      internalID: 4740409086777721427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_204
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 500
+        width: 18
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1161f22ef277a530800000000000000
+      internalID: 3866185240954364191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_205
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 500
+        width: 39
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb00afa68576177e0800000000000000
+      internalID: -1769519549130342212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_206
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 500
+        width: 49
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675e08c0b03af9810800000000000000
+      internalID: 1774316046057006454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_207
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 500
+        width: 52
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808f37da57f9f7f30800000000000000
+      internalID: 4575551074201761800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_208
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 500
+        width: 47
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a04f009936409c80800000000000000
+      internalID: -8318071298709307226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_209
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 500
+        width: 45
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6070afcc2cff090800000000000000
+      internalID: -7998460227562830146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_210
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 400
+        width: 37
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b376f9d95b971f770800000000000000
+      internalID: 8642822980841203515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_211
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 400
+        width: 29
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703c238d267b3fce0800000000000000
+      internalID: -1372551826255985913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_212
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 400
+        width: 26
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0779fe6565e9449b0800000000000000
+      internalID: -5096774784613640336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_213
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 400
+        width: 30
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526c4f86f4b9d1570800000000000000
+      internalID: 8439072042127771173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_214
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 400
+        width: 41
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17245dcd408141b70800000000000000
+      internalID: 8868739975363248753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_215
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 400
+        width: 51
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1070b46e320a060800000000000000
+      internalID: 6962604495922987428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_216
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 400
+        width: 50
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ae5feebdd6577c0800000000000000
+      internalID: -4074229496512386435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_217
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 400
+        width: 47
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467ddafb17149fa00800000000000000
+      internalID: 790735166383183716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_218
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 400
+        width: 29
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9316f0f6b798220800000000000000
+      internalID: 2488655986028526011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_219
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 400
+        width: 37
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d942cfabc7040b380800000000000000
+      internalID: -8957588754382707555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_220
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 401
+        width: 35
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a530cf3f80e3b60800000000000000
+      internalID: 7727623854612503198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_221
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 401
+        width: 35
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5979b073b491056d0800000000000000
+      internalID: -3003873140619372651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_222
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 403
+        width: 37
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ed8fe53bfb2b1000800000000000000
+      internalID: 7648182312865253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_223
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 403
+        width: 37
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa70771bd0f65aa0800000000000000
+      internalID: -6172481415482934542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_224
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 404
+        width: 40
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e3384ee7faaa0d0800000000000000
+      internalID: -3410720808245182966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_225
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 304
+        width: 40
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3026ba2c18b3a00800000000000000
+      internalID: 737325637104174063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_226
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 304
+        width: 40
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d8a5dcda30bd3c0800000000000000
+      internalID: -4333866171404481232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_227
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 304
+        width: 40
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ce2c855611b0250800000000000000
+      internalID: 5911838062832446554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_228
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 302
+        width: 43
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43efbea681db848f0800000000000000
+      internalID: -555986641409540556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_229
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 302
+        width: 43
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab778634a65e99a0800000000000000
+      internalID: -6224442371689972829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_230
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 302
+        width: 43
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276f896bf92d90e20800000000000000
+      internalID: 3317414183940191858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_231
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 300
+        width: 36
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05481774552d57fe0800000000000000
+      internalID: -1191815262656953264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_232
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 300
+        width: 35
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95f03525d0e15cd0800000000000000
+      internalID: -2571026706195221093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_233
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 301
+        width: 37
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb26450d27f49ff0800000000000000
+      internalID: -30127524750677027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_234
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 304
+        width: 41
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1091e6268fbe4150800000000000000
+      internalID: 5858830748154433562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_235
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 304
+        width: 52
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742d799eba0f63b90800000000000000
+      internalID: -7262352727939231161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_236
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 302
+        width: 41
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35a4ffad4036df40800000000000000
+      internalID: 5752838684235048253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_237
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 316
+        width: 30
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304bff29221ddde20800000000000000
+      internalID: 3377085242023064579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_238
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 302
+        width: 59
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328b317483c523480800000000000000
+      internalID: -8920966515087132637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_239
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 304
+        width: 54
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fcac1da7d56979d0800000000000000
+      internalID: -2776075718300488456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_240
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 300
+        width: 46
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e37c18ad3aa6c930800000000000000
+      internalID: 4163202087340766185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_241
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 204
+        width: 43
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5801b4c65e77f7d00800000000000000
+      internalID: 972627871783391365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_242
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 204
+        width: 36
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df842d829f2d6d7b0800000000000000
+      internalID: -5199736752179099395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_243
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 202
+        width: 36
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e78ad8594ba620d0800000000000000
+      internalID: -3447880133193857052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_244
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 200
+        width: 26
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae75318dd467a5560800000000000000
+      internalID: 7303279822444386282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_245
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 200
+        width: 26
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244697d5f506b3a60800000000000000
+      internalID: 7654817954352686146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_246
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 200
+        width: 28
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05ae168d2238ece0800000000000000
+      internalID: -1375794515056614133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_247
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 200
+        width: 28
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c145b168887c93b0800000000000000
+      internalID: -5504392117403434560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_248
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 200
+        width: 40
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8323bb2630bddc350800000000000000
+      internalID: 6038723482961523256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_249
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 200
+        width: 36
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646f64eefe1d6f700800000000000000
+      internalID: 573876830961333830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_250
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 232
+        width: 27
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ac136fa2c256850800000000000000
+      internalID: 6369545811016141343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_251
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 234
+        width: 5
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4157881889902700800000000000000
+      internalID: 513579167326359882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_252
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 200
+        width: 39
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07f1a6e2ebe8d5d0800000000000000
+      internalID: -3037418588896889076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_253
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 239
+        width: 12
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2b4105bf8381720800000000000000
+      internalID: 2817064218951725802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_254
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 237
+        width: 15
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a0bcc02e4a39a20800000000000000
+      internalID: 3067977061953636866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_255
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 200
+        width: 44
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e77ec3781609b10800000000000000
+      internalID: 1986194669140672107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_256
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 200
+        width: 4
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5c21502e9c5c150800000000000000
+      internalID: 5892337660069070241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_257
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 200
+        width: 4
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66dfb4404c3a60e0800000000000000
+      internalID: -2275940414953367953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_258
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 207
+        width: 40
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da4e2bdbc487cfb0800000000000000
+      internalID: -4627584081009423663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_259
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 207
+        width: 40
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31189da9b52aeffe0800000000000000
+      internalID: -1153305940236599021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_260
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 215
+        width: 8
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78dae0b7ad63e3d30800000000000000
+      internalID: 4413024996864994695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_261
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 213
+        width: 4
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb45ac1ab07f2670800000000000000
+      internalID: 8516149365027720128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_262
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 232
+        width: 4
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f6b4d066b780f10800000000000000
+      internalID: 2236172893229379454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_263
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 215
+        width: 8
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2a121d785e46850800000000000000
+      internalID: 6369468144500712124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_264
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 200
+        width: 22
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc1139454cf31d90800000000000000
+      internalID: -7128076410686464775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_265
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 200
+        width: 21
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21344ea62ff7ea90800000000000000
+      internalID: -7284573330650943186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_266
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 103
+        width: 40
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2bf2b3469e17c50800000000000000
+      internalID: 6661361940556657377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_267
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 104
+        width: 39
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f6a22456d2d9ff0800000000000000
+      internalID: -27816109769330827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_268
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 107
+        width: 40
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2bcb4bf530c70ad0800000000000000
+      internalID: -2736006910522438865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_269
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 102
+        width: 42
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18cfafd6f7ebf7630800000000000000
+      internalID: 3927066854605651073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_270
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 103
+        width: 42
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f045ca7d82c8eb70800000000000000
+      internalID: 8928600174167933177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_271
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 107
+        width: 40
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476a15258783b5650800000000000000
+      internalID: 6222629399570785908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_272
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 104
+        width: 36
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68eee8c71a2aa8520800000000000000
+      internalID: 2705153340652580486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_273
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 104
+        width: 36
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d0a5246b75a0660800000000000000
+      internalID: 7352785781944618384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_274
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 104
+        width: 30
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed45e970ca9702800800000000000000
+      internalID: 585601731327317214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_275
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 104
+        width: 31
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6a3b63f6899aa40800000000000000
+      internalID: 5379998833297303226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_276
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 104
+        width: 30
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df04621d6a86b0760800000000000000
+      internalID: 7425143476333199613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_277
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 104
+        width: 41
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23db0b84ba1d7650800000000000000
+      internalID: 6232166822079877931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_278
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 104
+        width: 41
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002452bd870d7ca50800000000000000
+      internalID: 6541426201270239744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_279
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 104
+        width: 36
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4482e7de987dd80800000000000000
+      internalID: -8225954541252098879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_280
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 107
+        width: 24
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9817e0f348a9a77f0800000000000000
+      internalID: -614008506398379639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_281
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 8
+        width: 32
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d6341f6bdbc2f40800000000000000
+      internalID: 5705143421401001312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_282
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 9
+        width: 44
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2c70427330f20b0800000000000000
+      internalID: -5751374663766261081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_283
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 9
+        width: 44
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9929864e9322a9d80800000000000000
+      internalID: -8243238535907732839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_284
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 9
+        width: 44
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee1766365a887cc0800000000000000
+      internalID: -3713065789882425629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_285
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 9
+        width: 44
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd8f044acb91fec0800000000000000
+      internalID: -3534872939481559596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_286
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 9
+        width: 44
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc003906d76517b0800000000000000
+      internalID: -5254179221283009357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_287
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 0
+        width: 19
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de90301317e5d330800000000000000
+      internalID: 3735145535035711191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_288
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 0
+        width: 19
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772c2662f9adde090800000000000000
+      internalID: -8003500585688841609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_289
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 0
+        width: 19
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736115dfdde41bc40800000000000000
+      internalID: 5526284933104997943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_290
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 0
+        width: 22
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966bccee1413fd860800000000000000
+      internalID: 7556812859000010345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_291
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 0
+        width: 18
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a263b778e1898b90800000000000000
+      internalID: -7239112090580720987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_292
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 2
+        width: 4
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c6e7f4836b7dc80800000000000000
+      internalID: -8297963435438740370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_293
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 0
+        width: 17
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd667a34cc706f110800000000000000
+      internalID: 1294230516805363421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_294
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 2
+        width: 4
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b995a09a2959960800000000000000
+      internalID: 7608148400233093987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_295
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 0
+        width: 17
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59e29e665a9e2760800000000000000
+      internalID: 7435049730848254302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkWizard_296
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 2
+        width: 4
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a25aae96154fa3d0800000000000000
+      internalID: -3193257647328832858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -87,7 +87,7 @@ TagManager:
   - PlayerObjects
   - Grabbed
   - GroundSensor
-  - 
+  - RepelBox
   m_SortingLayers:
   - name: backback
     uniqueID: 1341584773

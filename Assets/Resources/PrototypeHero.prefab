@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 367635280}
   - component: {fileID: 367635282}
   - component: {fileID: 367635281}
-  m_Layer: 30
+  m_Layer: 1
   m_Name: WallSensor_L0
   m_TagString: HotZone
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 559020599}
   - component: {fileID: 559020601}
   - component: {fileID: 559020600}
-  m_Layer: 30
+  m_Layer: 1
   m_Name: WallSensor_R0
   m_TagString: HotZone
   m_Icon: {fileID: 0}
@@ -584,7 +584,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4074117857925385416}
   - component: {fileID: 2198496164606069314}
-  m_Layer: 22
+  m_Layer: 31
   m_Name: RepelBox
   m_TagString: RepelBox
   m_Icon: {fileID: 0}
@@ -1001,7 +1001,7 @@ GameObject:
   - component: {fileID: 7234416123028626362}
   - component: {fileID: 3502039444196788052}
   - component: {fileID: 6131596185185708868}
-  m_Layer: 30
+  m_Layer: 1
   m_Name: WallSensor_R2
   m_TagString: HotZone
   m_Icon: {fileID: 0}
@@ -1082,7 +1082,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5126507520524490402}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 1.5, z: 0}
+  m_LocalPosition: {x: 1, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5621027181052171597}
@@ -1128,7 +1128,7 @@ MonoBehaviour:
   grabbedMinions: []
   teamColor: Red
   playerNumber: 1
-  isPlayer: 0
+  isPlayer: 1
   mana: 100
   mps: 2
   m_manaBar: {fileID: 0}
@@ -1720,7 +1720,7 @@ GameObject:
   - component: {fileID: 3617823189154450194}
   - component: {fileID: 7246727038309344180}
   - component: {fileID: 1602386506773542423}
-  m_Layer: 30
+  m_Layer: 1
   m_Name: WallSensor_R1
   m_TagString: HotZone
   m_Icon: {fileID: 0}
@@ -1782,9 +1782,9 @@ GameObject:
   - component: {fileID: 5059640110764062290}
   - component: {fileID: 6746062820692134485}
   - component: {fileID: 1936868647360563618}
-  - component: {fileID: 6755837817724122127}
   - component: {fileID: 6781220855443454950}
   - component: {fileID: 1805976674316708190}
+  - component: {fileID: 2016199001560113265}
   m_Layer: 3
   m_Name: Sprite
   m_TagString: HurtBox
@@ -11614,25 +11614,6 @@ MonoBehaviour:
     bottom: 0
     left: 1
     right: 0
---- !u!95 &6755837817724122127
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5419930034650718081}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d6c8afd3f2bf7a6419f8f3043556a01c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &6781220855443454950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11688,6 +11669,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxLingerTime: 0.05
   linger: 0
+--- !u!95 &2016199001560113265
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5419930034650718081}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d6c8afd3f2bf7a6419f8f3043556a01c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5930689989181052918
 GameObject:
   m_ObjectHideFlags: 0
@@ -11830,7 +11830,7 @@ GameObject:
   - component: {fileID: 2000575655945704494}
   - component: {fileID: 6083235009728169252}
   - component: {fileID: 9016615750983731624}
-  m_Layer: 30
+  m_Layer: 1
   m_Name: WallSensor_L1
   m_TagString: HotZone
   m_Icon: {fileID: 0}
@@ -11920,7 +11920,7 @@ GameObject:
   - component: {fileID: 6602637651529097269}
   - component: {fileID: 6044105343498134028}
   - component: {fileID: 1792506090958250915}
-  m_Layer: 30
+  m_Layer: 1
   m_Name: WallSensor_L2
   m_TagString: HotZone
   m_Icon: {fileID: 0}

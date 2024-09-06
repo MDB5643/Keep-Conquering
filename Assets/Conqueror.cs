@@ -430,7 +430,7 @@ public abstract class Conqueror : MonoBehaviour
             }
 
             //Crouch / Stand up
-            else if (inputY < 0 && m_grounded && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_disableMovementTimer < 0.0f
+            if (inputY < 0 && m_grounded && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_disableMovementTimer < 0.0f && !m_inHitStun && !m_isInHitStop && !inAttack && !m_isInKnockback
                 && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
             {
                 m_crouching = true;
@@ -440,7 +440,8 @@ public abstract class Conqueror : MonoBehaviour
                 RepelBoxNormal.SetActive(false);
                 RepelBoxCrouch.SetActive(true);
             }
-            else if (inputY >= 0 && m_crouching)
+            else if (inputY >= 0 && m_crouching && m_grounded && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && m_disableMovementTimer < 0.0f && !m_inHitStun && !m_isInHitStop && !inAttack && !m_isInKnockback
+                && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
             {
                 m_crouching = false;
                 m_animator.SetBool("Crouching", false);
@@ -522,7 +523,7 @@ public abstract class Conqueror : MonoBehaviour
         {
             Rigidbody2D thisBody = GetComponent<Rigidbody2D>();
             velocityState = thisBody.velocity;
-            m_groundSensor.Disable(.1f);
+            //m_groundSensor.Disable(.1f);
         }
         if (coll.gameObject.tag == "RepelBox" && !m_inGroundSlam)
         {
@@ -996,16 +997,16 @@ public abstract class Conqueror : MonoBehaviour
 
     public void Block(float shieldDamage)
     {
-        shieldBar.shieldHealth -= shieldDamage * 0.75f;
+        shieldBar.shieldHealth -= shieldDamage * 0.65f;
         var e_Rigidbody2D = GetComponent<Rigidbody2D>();
         transform.GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
         if (m_facingDirection == 1)
         {
-            e_Rigidbody2D.AddForce(new Vector2(-shieldDamage * 0.3f, 0), ForceMode2D.Impulse);
+            e_Rigidbody2D.AddForce(new Vector2(-shieldDamage * 0.2f, 0), ForceMode2D.Force);
         }
         if (m_facingDirection == -1)
         {
-            e_Rigidbody2D.AddForce(new Vector2(shieldDamage * 0.3f, 0), ForceMode2D.Impulse);
+            e_Rigidbody2D.AddForce(new Vector2(shieldDamage * 0.2f, 0), ForceMode2D.Force);
         }
 
     }
@@ -1100,7 +1101,7 @@ public abstract class Conqueror : MonoBehaviour
     {
         if (!m_isInHitStop && !m_isInKnockback && !m_inHitStun && !inAttack && !m_freefall && !m_animator.GetBool("inJumpSquat"))
         {
-            
+            m_animator.SetBool("Crouching", false);
             if (transform.gameObject.layer == 27)
             {
                 SetLayerRecursively(gameObject, LayerMask.NameToLayer("PlayerMid"));

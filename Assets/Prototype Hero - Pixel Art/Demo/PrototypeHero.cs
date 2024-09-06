@@ -601,7 +601,6 @@ public class PrototypeHero : Conqueror {
 
             // Disable movement 
             m_disableMovementTimer = m_LagTime;
-            m_animator.SetBool("Crouching", false);
             inAttack = true;
         }
 
@@ -829,7 +828,7 @@ public class PrototypeHero : Conqueror {
     protected override void ForwardSmashAction(InputAction.CallbackContext ctx)
     {
         //Forward Smash Attack
-        if (ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded
+        if (ctx.phase == InputActionPhase.Started && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && !m_isInKnockback
             && m_timeSinceAttack > m_LagTime && m_timeSinceNSpec > 1.1f && m_fSmashCharging == false && m_uSmashCharging == false && m_dSmashCharging == false && m_isParrying == false)
         {
             m_LagTime = .15f;
@@ -847,7 +846,7 @@ public class PrototypeHero : Conqueror {
             m_disableMovementTimer = m_LagTime;
         }
 
-        else if (ctx.phase == InputActionPhase.Canceled && m_fSmashCharging == true && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime)
+        else if (ctx.phase == InputActionPhase.Canceled && m_fSmashCharging == true && !m_dodging && !m_ledgeGrab && !m_ledgeClimb && !m_crouching && m_grounded && m_timeSinceAttack > m_LagTime && !m_isInKnockback)
         {
             m_LagTime = .33f;
             m_animator.SetTrigger("FSmash");
